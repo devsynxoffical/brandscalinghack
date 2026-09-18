@@ -1,66 +1,66 @@
 export const caseStudies = [
   {
     id: 'luxe-eyewear',
-    brand: 'Solaris Optics',
-    niche: 'Fashion & Eyewear',
-    scale: '$0 → $1.4M / month',
-    roas: '4.85x ROAS',
-    adSpend: '$285,000 / mo',
-    timeframe: '6 Months',
-    image: '/assets/ugc_sunglasses.jpg',
-    headline: 'Scaling polarized sunglasses from dropshipping test to 8-figure global brand',
-    summary: 'Built dedicated UGC hook testing framework, custom high-speed Shopify landing page with 4.2% CVR, and scaled Meta Advantage+ with TikTok Spark Ads.',
+    brand: 'Sleep & Wellness DTC',
+    niche: 'Health & Wellness',
+    scale: '€0 → €118,000 / month',
+    roas: '4.90x ROAS',
+    adSpend: '€24,000 / mo',
+    timeframe: 'Month 1',
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
+    headline: 'Scaling wellness brand to €118,000 in Month 1 with direct-response hook architecture',
+    summary: 'Built dedicated UGC hook testing framework, custom high-speed Shopify landing page with 4.2% CVR, and scaled Meta Advantage+ campaigns.',
     metrics: [
-      { label: 'Monthly Revenue', value: '$1,420,000' },
-      { label: 'Blended ROAS', value: '4.85x' },
+      { label: 'Monthly Revenue', value: '€118,000' },
+      { label: 'Blended ROAS', value: '4.90x' },
       { label: 'Store CVR', value: '4.2%' },
       { label: 'AOV Increase', value: '+38%' }
     ],
     growthPoints: [
-      'Engineered 45+ variation UGC angle matrix addressing blue light + polarization',
-      'Implemented 1-click bundle upsells boosting AOV from $48 to $76',
-      'Scaled daily spend from $300/day to $10,000/day with consistent CPA'
+      'Engineered 45+ variation UGC angle matrix addressing root problems',
+      'Implemented 1-click bundle upsells boosting AOV',
+      'Scaled daily spend from $300/day to $5,000/day with consistent CPA'
     ]
   },
   {
     id: 'glow-skincare',
-    brand: 'Aura Derma Labs',
-    niche: 'Beauty & Skincare',
-    scale: '$15k → $480k / month',
-    roas: '3.92x ROAS',
-    adSpend: '$122,000 / mo',
-    timeframe: '90 Days',
-    image: '/assets/city_skyline.jpg',
-    headline: 'Revitalizing stagnant skincare brand with doctor-approved creative hooks',
-    summary: 'Restructured broken media buying funnel into a high-intent Google Search + Meta retargeting flywheel with clinical comparison video creatives.',
+    brand: 'DTC Fitness & Recovery',
+    niche: 'Fitness & Recovery',
+    scale: '€0 → €123,000 / 20 Days',
+    roas: '5.20x ROAS',
+    adSpend: '€23,500 / 20d',
+    timeframe: '20 Days',
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
+    headline: 'Scaling fitness recovery brand to €123,000 in 20 days with Advantage+ scale systems',
+    summary: 'Restructured media buying funnel into a high-intent Meta retargeting flywheel with problem/solution video creatives.',
     metrics: [
-      { label: 'Monthly Revenue', value: '$480,000' },
-      { label: 'Blended ROAS', value: '3.92x' },
+      { label: 'Revenue in 20 Days', value: '€123,000' },
+      { label: 'Blended ROAS', value: '5.20x' },
       { label: 'CAC Reduction', value: '-42%' },
       { label: 'Repeat Customer Rate', value: '29%' }
     ],
     growthPoints: [
-      'Eliminated audience overlap fatigue across 18 ad sets',
-      'Created split-screen problem/solution reels generating 12M+ views',
+      'Eliminated audience overlap fatigue across ad sets',
+      'Created split-screen problem/solution reels generating millions of views',
       'Built automated Klaviyo flow recovering 18% of abandoned checkouts'
     ]
   },
   {
     id: 'zen-sleep-tech',
-    brand: 'Somna Rest Co.',
-    niche: 'Health & Wellness',
-    scale: '$40k → $1.85M / month',
-    roas: '5.10x ROAS',
-    adSpend: '$360,000 / mo',
-    timeframe: '5 Months',
-    image: '/assets/gaurav_portrait.jpg',
-    headline: 'Scaling ergonomic sleep system to 9-figures with creator-led UGC engines',
-    summary: 'Combined unboxing reels, founder storytelling, and conversion rate optimization to turn a single winning SKU into a multi-million dollar category leader.',
+    brand: 'DTC Brand Portfolio',
+    niche: 'Multi-Brand Scaling',
+    scale: '$50k → $3.5M Portfolio',
+    roas: '4.80x ROAS',
+    adSpend: '$720,000 / yr',
+    timeframe: 'Scaled Track Record',
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
+    headline: 'Scaling 8-figure eCommerce portfolio to $100k/mo net profit with proprietary creative engine',
+    summary: 'Combined unboxing reels, founder direct-response storytelling, and conversion rate optimization to turn winner SKUs into category leaders.',
     metrics: [
-      { label: 'Monthly Revenue', value: '$1,850,000' },
-      { label: 'Blended ROAS', value: '5.10x' },
-      { label: 'LTV (90 Day)', value: '$240' },
-      { label: 'Orders Scaled', value: '24,000+' }
+      { label: 'Portfolio Value', value: '$3,500,000' },
+      { label: 'Blended ROAS', value: '4.80x' },
+      { label: 'Net Profit Target', value: '$100k/mo' },
+      { label: 'Managed Ad Spend', value: '$50M+' }
     ],
     growthPoints: [
       'Generated 80+ creator assets per month on a fixed delivery cadence',
@@ -77,8 +77,8 @@ export const liveSessionsData = [
     host: 'Gaurav Kapoor • 8-Figure Masterclass',
     duration: '48:20',
     date: 'Sept 14',
-    thumbnail: '/assets/ugc_sunglasses.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    thumbnail: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
+    videoUrl: 'https://www.instagram.com/reel/Db3hW_mupo1/',
     description: 'Deep dive into account structure, creative testing cadences, budgeting rules, and when to scale bids vs duplicate winners.'
   },
   {
@@ -87,8 +87,8 @@ export const liveSessionsData = [
     host: 'Gaurav Kapoor • Live Workshop',
     duration: '35:15',
     date: 'Sept 08',
-    thumbnail: '/assets/gaurav_portrait.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    thumbnail: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
+    videoUrl: 'https://www.instagram.com/reel/DbBMshACSuX/',
     description: 'How to script, shoot, and iterate high-converting UGC concepts without burning budget on random unvetted creators.'
   },
   {
@@ -97,8 +97,8 @@ export const liveSessionsData = [
     host: 'Gaurav Kapoor & Growth Team',
     duration: '52:40',
     date: 'Aug 29',
-    thumbnail: '/assets/city_skyline.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    thumbnail: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
+    videoUrl: 'https://www.instagram.com/reel/C9CPs88t1qa/',
     description: 'Live website teardowns analyzing product pages, trust badges, checkout velocity, and offer architecture that converts at 4%+.'
   },
   {
@@ -107,8 +107,8 @@ export const liveSessionsData = [
     host: 'Gaurav Kapoor • Keynote',
     duration: '1:12:00',
     date: 'Aug 18',
-    thumbnail: '/assets/ugc_sunglasses.jpg',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    thumbnail: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg',
+    videoUrl: 'https://www.instagram.com/reel/DbCVqzFhiLU/',
     description: 'The step-by-step framework to transition from supplier arbitrage to custom tooling, proprietary branding, and private equity exits.'
   }
 ];
@@ -116,35 +116,38 @@ export const liveSessionsData = [
 export const viralCreativesData = [
   {
     id: 'c1',
-    title: 'Cheaper Than Your Gym Membership',
-    hookType: 'Price-Anchor Shock',
-    format: 'TikTok / Meta Reel (9:16)',
+    title: 'Now I Wake Up Calm, Focused & Rested',
+    hookType: 'Problem-Solution Relief',
+    format: 'Instagram Reel (9:16)',
     views: '4.8M Views',
     roas: '4.9x',
     angle: 'Contrarian Value Comparison',
-    image: '/assets/ugc_sunglasses.jpg',
-    scriptSnippet: 'Stop paying $150/mo for fancy gym gear when this single daily habit replaces 80% of your recovery routine...'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
+    url: 'https://www.instagram.com/reel/Db3hW_mupo1/',
+    scriptSnippet: 'Stop paying for fragmented routines when this single daily formula replaces 80% of your morning stress...'
   },
   {
     id: 'c2',
-    title: 'The 3-Second Visual Hook Test',
+    title: 'Tension, Stress & Recovery Breakdown',
     hookType: 'Pattern Interrupt',
-    format: 'Meta Feed / Story',
+    format: 'Instagram Reel (9:16)',
     views: '3.2M Views',
     roas: '5.2x',
     angle: 'Curiosity & Before/After Contrast',
-    image: '/assets/gaurav_portrait.jpg',
-    scriptSnippet: 'If your morning looks like this, your circadian rhythm is completely off. Watch what happens after day 3...'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
+    url: 'https://www.instagram.com/reel/DbBMshACSuX/',
+    scriptSnippet: 'If your muscle recovery looks like this, your routine is broken. Watch what happens after day 3...'
   },
   {
     id: 'c3',
-    title: 'Why 99% Of Brands Get This Wrong',
-    hookType: 'Expert Authority Teardown',
-    format: 'YouTube Shorts & Reels',
+    title: 'Scale to $100k/mo Net Profit',
+    hookType: '8-Figure Authority Breakdown',
+    format: 'Instagram Reel (9:16)',
     views: '6.1M Views',
-    roas: '4.4x',
+    roas: '4.8x',
     angle: 'Insider Secret Unveiling',
-    image: '/assets/city_skyline.jpg',
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
+    url: 'https://www.instagram.com/reel/C9CPs88t1qa/',
     scriptSnippet: 'Most eCommerce founders think more ad spend fixes low sales. Here is the bottleneck destroying your margins...'
   }
 ];
@@ -208,7 +211,7 @@ export const liveResultsProof = [
     roas: '4.4x ROAS',
     badge: 'Shopify CRO',
     category: 'CRO & Funnels',
-    image: '/assets/ugc_sunglasses.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-6',
@@ -256,7 +259,7 @@ export const liveResultsProof = [
     roas: '4.7x ROAS',
     badge: 'Growth System',
     category: 'Meta Scaling',
-    image: '/assets/gaurav_portrait.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-10',
@@ -268,7 +271,7 @@ export const liveResultsProof = [
     roas: '5.0x ROAS',
     badge: 'High-Converting UGC',
     category: 'Creative Hooks',
-    image: '/assets/ugc_sunglasses.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-11',
@@ -280,7 +283,7 @@ export const liveResultsProof = [
     roas: '4.6x ROAS',
     badge: 'Capital Scaling',
     category: 'Meta Scaling',
-    image: '/assets/city_skyline.jpg'
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
   },
   {
     id: 'reel-12',
@@ -304,7 +307,7 @@ export const liveResultsProof = [
     roas: '4.9x ROAS',
     badge: 'Brand Architecture',
     category: '8-Figure Proof',
-    image: '/assets/gaurav_portrait.jpg'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
   {
     id: 'reel-14',
@@ -316,7 +319,7 @@ export const liveResultsProof = [
     roas: '5.1x ROAS',
     badge: 'Account Audit',
     category: 'Meta Scaling',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-15',
@@ -352,7 +355,7 @@ export const liveResultsProof = [
     roas: '4.75x ROAS',
     badge: 'Multi-Channel',
     category: 'Meta Scaling',
-    image: '/assets/ugc_sunglasses.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-18',
@@ -364,7 +367,7 @@ export const liveResultsProof = [
     roas: '5.3x ROAS',
     badge: 'Retention Engine',
     category: 'CRO & Funnels',
-    image: '/assets/city_skyline.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-19',
@@ -388,7 +391,7 @@ export const liveResultsProof = [
     roas: '4.5x ROAS',
     badge: 'High AOV DTC',
     category: '8-Figure Proof',
-    image: '/assets/gaurav_portrait.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-21',
@@ -412,19 +415,19 @@ export const liveResultsProof = [
     roas: '4.9x ROAS',
     badge: 'Media Buying Rules',
     category: 'Meta Scaling',
-    image: '/assets/ugc_sunglasses.jpg'
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
   },
   {
     id: 'reel-23',
     shortcode: 'DH6I05IynDN',
     url: 'https://www.instagram.com/reel/DH6I05IynDN/',
-    brand: 'DTC Eyewear',
-    hook: 'Cheaper Than Your Gym Membership 🌿',
+    brand: 'DTC Brand Scale',
+    hook: 'Verified Ad Spend & Profit Proof',
     revenue: '$1.4M / Month',
     roas: '4.85x ROAS',
-    badge: 'Solaris Optics Case',
+    badge: 'Verified Scale',
     category: '8-Figure Proof',
-    image: '/assets/ugc_sunglasses.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-24',
@@ -436,7 +439,7 @@ export const liveResultsProof = [
     roas: '5.1x ROAS',
     badge: 'Cash Flow Shield',
     category: 'Zero to Scale',
-    image: '/assets/city_skyline.jpg'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
   {
     id: 'reel-25',
@@ -455,10 +458,10 @@ export const liveResultsProof = [
     shortcode: 'DHPy8S_Mml_',
     url: 'https://www.instagram.com/reel/DHPy8S_Mml_/',
     brand: 'TikTok & Meta Funnels',
-    hook: 'How to Bridge TikTok Attention to Shopify Checkouts',
+    hook: 'How to Bridge Attention to Shopify Checkouts',
     revenue: '$780k Scaled',
     roas: '4.6x ROAS',
-    badge: 'TikTok Spark Ads',
+    badge: 'Meta Ads Scale',
     category: 'Meta Scaling',
     image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
@@ -472,7 +475,7 @@ export const liveResultsProof = [
     roas: '5.0x ROAS',
     badge: 'Brand Authority',
     category: '8-Figure Proof',
-    image: '/assets/gaurav_portrait.jpg'
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
   },
   {
     id: 'reel-28',
@@ -496,7 +499,7 @@ export const liveResultsProof = [
     roas: '6.5x ROAS',
     badge: 'Q4 Record Scaling',
     category: '8-Figure Proof',
-    image: '/assets/ugc_sunglasses.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-30',
@@ -520,7 +523,7 @@ export const liveResultsProof = [
     roas: '4.85x Blended',
     badge: 'Verified Live Dashboards',
     category: '8-Figure Proof',
-    image: '/assets/gaurav_portrait.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   }
 ];
 

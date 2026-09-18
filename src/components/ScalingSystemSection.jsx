@@ -49,14 +49,14 @@ export default function ScalingSystemSection({ onOpenBooking }) {
 
               <div className="phone-screen-content">
                 <img
-                  src="/assets/ugc_sunglasses.jpg"
-                  alt="Live UGC Creative Testing"
+                  src="/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg"
+                  alt="Live Instagram Reel Performance"
                   className="phone-screen-img"
                 />
 
-                {/* Screenshot 2 Caption Pill */}
+                {/* Verified Instagram Caption Pill */}
                 <div className="phone-caption-pill">
-                  Cheaper than your gym membership 🌿
+                  Scale to $100k/mo Net Profit • Meta Ads Framework
                 </div>
 
                 {/* Reaction Icons */}
