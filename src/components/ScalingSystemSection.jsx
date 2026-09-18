@@ -49,8 +49,8 @@ export default function ScalingSystemSection({ onOpenBooking }) {
 
               <div className="phone-screen-content">
                 <img
-                  src="/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg"
-                  alt="Live Instagram Reel Performance"
+                  src="/assets/ugc_ad_sunglasses_1789546635157.jpg"
+                  alt="High-Converting UGC Creative Ad"
                   className="phone-screen-img"
                 />
 
