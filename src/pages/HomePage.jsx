@@ -3,7 +3,6 @@ import HeroSection from '../components/HeroSection';
 import LiveResultsSection from '../components/LiveResultsSection';
 import RepeatableGrowthSection from '../components/RepeatableGrowthSection';
 import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
-import BottleneckFinderSection from '../components/BottleneckFinderSection';
 import ScalingSystemSection from '../components/ScalingSystemSection';
 import VideoTestimonialsSection from '../components/VideoTestimonialsSection';
 import ClientCoachesCarouselSection from '../components/ClientCoachesCarouselSection';
@@ -34,9 +33,6 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
       />
-
-      {/* 05 — EXISTING ECOMMERCE BRANDS (Interactive Bottleneck Audit) */}
-      <BottleneckFinderSection onOpenBooking={onOpenBooking} />
 
       {/* 06 — THE SCALING SYSTEM (Screenshot 2 "How We Win / Systemize" Style) */}
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
