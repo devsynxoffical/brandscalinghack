@@ -37,7 +37,7 @@ export default function InstagramModal({ item, onClose }) {
               <InstagramIcon size={18} color="#fff" />
             </span>
             <div>
-              <div style={{ fontSize: '1rem', fontWeight: 800, color: '#fff' }}>{item.brand}</div>
+              <div style={{ fontSize: '1rem', fontWeight: 800, color: '#fff' }}>{item.title || item.brand}</div>
               <div style={{ fontSize: '0.78rem', color: '#ff7043', fontWeight: 700 }}>{item.badge} • {item.revenue}</div>
             </div>
           </div>

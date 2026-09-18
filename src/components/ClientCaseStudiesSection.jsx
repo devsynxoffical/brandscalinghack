@@ -78,10 +78,10 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
               {/* Bottom Card Content */}
               <div className="showcase-card-body">
                 <div className="showcase-card-category">
-                  {study.brand} • {study.category}
+                  {study.category} • {study.badge}
                 </div>
-                <div className="showcase-card-metric">{study.revenue}</div>
-                <p className="showcase-card-desc">"{study.hook}"</p>
+                <div className="showcase-card-metric">{study.title}</div>
+                <p className="showcase-card-desc">{study.description}</p>
                 
                 <div className="showcase-card-link">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
