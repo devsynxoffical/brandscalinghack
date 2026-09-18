@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, ArrowUpRight } from 'lucide-react';
+import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
 
 export default function Footer({ onNavigate, onOpenBooking }) {
   const [email, setEmail] = useState('');
@@ -108,12 +109,8 @@ export default function Footer({ onNavigate, onOpenBooking }) {
           </div>
         </div>
 
-        {/* Giant Dotted / Halftone Matrix Brand Typographic Watermark (Screenshot Match) */}
-        <div className="streettalk-watermark-wrap">
-          <div className="streettalk-dot-matrix-text">
-            BRAND SCALING HACKS
-          </div>
-        </div>
+        {/* Interactive Dot Matrix Brand Typographic Watermark (Exact StreetTalk.com Hover Effect) */}
+        <InteractiveDotMatrixFooter />
 
         {/* Bottom Small Cookie Pill (Screenshot Match) */}
         <div className="streettalk-bottom-bar">

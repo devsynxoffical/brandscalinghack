@@ -3227,15 +3227,16 @@ button {
   line-height: 1.4;
 }
 
-/* Giant Dot Matrix / Halftone Typographic Watermark (Brand Scaling Hacks Match) */
+/* Giant Dot Matrix / Halftone Typographic Watermark (Exact StreetTalk.com Interactive Match) */
 .streettalk-watermark-wrap {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 50px 0 20px 0;
+  padding: 30px 0 10px 0;
   text-align: center;
   user-select: none;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: crosshair;
 }
 
 .streettalk-dot-matrix-text {
