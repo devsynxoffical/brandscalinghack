@@ -1,11 +1,10 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { liveResultsProof } from '../data/mockData';
-import { ArrowRight, ExternalLink, Sparkles } from 'lucide-react';
+import { Play, ArrowRight, ExternalLink, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [activeTab, setActiveTab] = useState('All');
-  const videoRefs = useRef({});
 
   const categories = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale'];
 
@@ -13,16 +12,6 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
     if (activeTab === 'All') return true;
     return item.category === activeTab;
   });
-
-  // Ensure all visible videos autoplay seamlessly
-  useEffect(() => {
-    Object.values(videoRefs.current).forEach((videoEl) => {
-      if (videoEl) {
-        videoEl.muted = true;
-        videoEl.play().catch(() => {});
-      }
-    });
-  }, [activeTab, filteredStudies]);
 
   return (
     <section className="client-case-studies-section" id="case-studies">
@@ -50,8 +39,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
           {categories.map((tab) => {
             const count = tab === 'All' 
               ? liveResultsProof.length 
-              : liveResultsProof.filter(item => item.category === tab).length;
-
+              : liveResultsProof.filter((i) => i.category === tab).length;
             return (
               <button
                 key={tab}
@@ -72,43 +60,33 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
               className="showcase-study-card"
               onClick={() => onOpenInstagramModal ? onOpenInstagramModal(study) : window.open(study.url, '_blank')}
             >
-              {/* Image / Video Container without any play icon */}
+              {/* Image Container with Brand Logo Badge */}
               <div className="showcase-img-wrap">
-                {study.videoSrc ? (
-                  <video
-                    ref={(el) => (videoRefs.current[study.id] = el)}
-                    src={study.videoSrc}
-                    poster={study.posterSrc || study.image}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    className="showcase-card-img"
-                  />
-                ) : (
-                  <img src={study.image} alt={study.hook} className="showcase-card-img" loading="lazy" />
-                )}
+                <img src={study.image} alt={study.hook} className="showcase-card-img" loading="lazy" />
+                
+                {/* Play Button Overlay */}
+                <div className="showcase-play-btn">
+                  <Play size={18} fill="#ff7043" color="#ff7043" style={{ marginLeft: '3px' }} />
+                </div>
 
-                {/* Top Brand / Concept Badge */}
+                {/* Top Badge */}
                 <div className="showcase-brand-badge">
                   <span>{study.badge}</span>
                 </div>
 
-                {/* Bottom ROAS / Scale Tag */}
+                {/* Bottom ROAS Tag */}
                 <div className="showcase-roas-tag">
                   <span>{study.roas}</span>
                 </div>
               </div>
 
-              {/* Bottom Card Content with Matching Descriptions */}
+              {/* Bottom Card Content */}
               <div className="showcase-card-body">
                 <div className="showcase-card-category">
                   {study.brand} • {study.category}
                 </div>
                 <div className="showcase-card-metric">{study.revenue}</div>
-                <h3 className="showcase-card-title-hook">"{study.hook}"</h3>
-                <p className="showcase-card-desc">{study.description}</p>
+                <p className="showcase-card-desc">"{study.hook}"</p>
                 
                 <div className="showcase-card-link">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>

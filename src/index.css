@@ -2846,17 +2846,17 @@ button {
 
 .showcase-studies-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+  gap: 22px;
   text-align: left;
 }
 
 .showcase-study-card {
   background: linear-gradient(145deg, rgba(20, 26, 38, 0.85) 0%, rgba(11, 15, 23, 0.95) 100%);
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
   display: flex;
@@ -2864,16 +2864,17 @@ button {
 }
 
 .showcase-study-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 112, 67, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 112, 67, 0.15);
   border-color: rgba(255, 112, 67, 0.45);
 }
 
 .showcase-img-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 9 / 13.5;
-  min-height: 440px;
+  aspect-ratio: 9 / 13;
+  min-height: 310px;
+  max-height: 380px;
   overflow: hidden;
   background: #080c14;
   display: flex;
@@ -2898,10 +2899,10 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 52px;
-  height: 52px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: rgba(8, 12, 20, 0.8);
+  background: rgba(8, 12, 20, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
@@ -2913,7 +2914,7 @@ button {
 }
 
 .showcase-study-card:hover .showcase-play-btn {
-  transform: translate(-50%, -50%) scale(1.15);
+  transform: translate(-50%, -50%) scale(1.12);
   background: rgba(255, 112, 67, 0.9);
   border-color: #ff7043;
 }
@@ -2925,14 +2926,14 @@ button {
 
 .showcase-roas-tag {
   position: absolute;
-  bottom: 16px;
-  right: 16px;
-  background: rgba(16, 185, 129, 0.2);
+  bottom: 12px;
+  right: 12px;
+  background: rgba(16, 185, 129, 0.25);
   color: #4ade80;
   border: 1px solid rgba(74, 222, 128, 0.4);
-  padding: 4px 12px;
+  padding: 3px 10px;
   border-radius: 9999px;
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 800;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -2941,14 +2942,14 @@ button {
 
 .showcase-brand-badge {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 12px;
+  left: 12px;
   background: rgba(15, 20, 32, 0.88);
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 9999px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   font-weight: 800;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: #ffb300;
   border: 1px solid rgba(255, 179, 0, 0.35);
   backdrop-filter: blur(10px);
@@ -2958,16 +2959,16 @@ button {
 }
 
 .showcase-card-category {
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   color: #ff7043;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 6px;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
 }
 
 .showcase-card-body {
-  padding: 24px 22px;
+  padding: 16px 18px 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2976,44 +2977,41 @@ button {
 }
 
 .showcase-card-metric {
-  font-size: 1.85rem;
+  font-size: 1.45rem;
   font-weight: 900;
   background: linear-gradient(135deg, #ffb300, #ff7043);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.02em;
-  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
   font-family: var(--font-primary);
 }
 
-.showcase-card-title-hook {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.35;
-  margin-bottom: 8px;
-}
-
 .showcase-card-desc {
-  font-size: 0.85rem;
-  color: #94a3b8;
-  line-height: 1.5;
-  margin-bottom: 18px;
-  font-weight: 400;
+  font-size: 0.84rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-style: italic;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .showcase-card-link {
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   font-weight: 800;
   color: #ff7043;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 14px;
+  padding-top: 10px;
 }
 
 .showcase-study-card:hover .showcase-card-link {
