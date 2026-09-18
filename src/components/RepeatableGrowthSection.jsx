@@ -73,30 +73,6 @@ export const creativeGridItems = [
     bannerBg: '#ffffff',
     textColor: '#0f172a',
     isVideo: true
-  },
-  {
-    id: 'ad-7',
-    topBanner: 'PROVEN 3-SECOND HOOK FRAMEWORKS',
-    topSub: 'HIGH CONVERTING CREATIVE TESTING',
-    hook: 'Direct-Response Creative',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
-    url: 'https://www.instagram.com/reel/DAK4iLGSGI_/',
-    tag: '5.2x ROAS',
-    bannerBg: '#fbcfe8',
-    textColor: '#9d174d',
-    isVideo: true
-  },
-  {
-    id: 'ad-8',
-    topBanner: 'META ADVANTAGE+ BUDGET SCALING',
-    topSub: 'PREDICTABLE CUSTOMER ACQUISITION',
-    hook: '8-Figure Scaling Systems',
-    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
-    url: 'https://www.instagram.com/reel/C9RU-C9yhfU/',
-    tag: '4.8x ROAS',
-    bannerBg: '#ffffff',
-    textColor: '#0f172a',
-    isVideo: true
   }
 ];
 
