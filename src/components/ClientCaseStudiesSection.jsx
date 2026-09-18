@@ -62,7 +62,11 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
             >
               {/* Image Container with Brand Logo Badge */}
               <div className="showcase-img-wrap">
-                <img src={study.image} alt={study.hook} className="showcase-card-img" loading="lazy" />
+                {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
+                <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
+
+                {/* Main Image Contained 100% Inside Box */}
+                <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
 
                 {/* Top Badge */}
                 <div className="showcase-brand-badge">
