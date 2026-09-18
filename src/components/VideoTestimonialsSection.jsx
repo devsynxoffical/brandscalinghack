@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { 
   Volume2, 
   VolumeX, 
@@ -6,8 +6,10 @@ import {
   Sparkles, 
   X, 
   ArrowRight,
-  Star
+  Star,
+  ExternalLink
 } from 'lucide-react';
+import { InstagramIcon } from './Icons';
 
 export default function VideoTestimonialsSection({ onOpenBooking }) {
   const [activeAudioId, setActiveAudioId] = useState(null);
@@ -20,76 +22,92 @@ export default function VideoTestimonialsSection({ onOpenBooking }) {
       type: 'portrait',
       videoSrc: '/testimonials/portrait-1.mp4',
       posterSrc: '/testimonials/portrait-1.mp4.jpg',
-      name: 'Mohanded',
-      role: 'Social Media Marketing Agency',
-      location: 'Germany',
-      quote: 'Massive ROAS Growth Across eCommerce, Skincare, Supplements & More',
-      badge: 'MASSIVE ROAS SCALE',
+      name: 'Gaurav Kapoor',
+      role: 'Head of Growth Engine',
+      location: '• @gauravecomm',
+      quote: 'Scaling Advantage+ campaigns to 7-figures using broad targeting, weekly creative testing cadences, and cash flow architecture.',
+      badge: '7-FIGURE ADVANTAGE+',
       badgeColor: '#ff7043',
-      stats: '4.8x Blended ROAS'
+      stats: '$1.4M Scaled • 5.2x ROAS',
+      url: 'https://www.instagram.com/reel/DAK4iLGSGI_/'
     },
     {
       id: 'landscape-1',
       type: 'landscape',
       videoSrc: '/testimonials/landscape-1.mp4',
       posterSrc: '/testimonials/landscape-1.mp4.jpg',
-      name: 'Giulia',
-      role: 'MVA Marketing Agency Founder',
-      quote: 'From 1 Lead in 3 Months to 2 Verified MVA Leads in Under 24 Hours',
-      badge: 'RAPID ACQUISITION',
+      name: 'Creative Engine',
+      role: 'Direct-Response UGC Studio',
+      quote: 'Why the first 3 seconds dictate 80% of ad spend profitability. 45+ variation direct-response matrix.',
+      badge: 'VIRAL HOOK MATRIX',
       badgeColor: '#38bdf8',
-      stats: '24hr Lead Velocity'
+      stats: '€180k Month 1 • 4.8x ROAS',
+      url: 'https://www.instagram.com/reel/C9RU-C9yhfU/'
     },
     {
       id: 'landscape-2',
       type: 'landscape',
       videoSrc: '/testimonials/landscape-2.mp4',
       posterSrc: '/testimonials/landscape-2.mp4.jpg',
-      name: 'Edgar & Jeremi',
-      role: 'Co-Founders, High-Ticket Funnel Agency',
-      quote: 'Winning High-Ticket Clients While Generating Incredible Results for Their Clients Too',
-      badge: '1:1 LIVE CASE STUDY',
+      name: 'Profit Accelerate',
+      role: 'DTC Brand Portfolio',
+      quote: 'Guaranteed system to help you scale your eCommerce brand to $100k/month with $30k-$40k net margin.',
+      badge: '$3.5M CASE STUDY',
       badgeColor: '#a855f7',
-      stats: 'High-Ticket Scaling'
+      stats: '$3,500,000 Portfolio',
+      url: 'https://www.instagram.com/reel/C9CPs88t1qa/'
     },
     {
       id: 'portrait-2',
       type: 'portrait',
       videoSrc: '/testimonials/portrait-2.mp4',
       posterSrc: '/testimonials/portrait-2.mp4.jpg',
-      name: 'Edgar',
-      role: 'Agency Owner',
-      quote: 'Landed a $4,500 High-Ticket Client at Just $7 Per Lead',
-      badge: '$4,500 CLIENT CLOSED',
+      name: 'Zero to $10k/mo',
+      role: 'Foundational eCommerce Blueprint',
+      quote: 'If I had to start from ZERO today and build compounding monthly revenue, these are the 5 exact systems I bet on.',
+      badge: 'ZERO TO $10K/MO',
       badgeColor: '#10b981',
-      stats: '$1,500/mo > 3-month retainer',
-      hasSubPill: true
+      stats: '$10,000 / mo Blueprint',
+      hasSubPill: true,
+      url: 'https://www.instagram.com/reel/DcO79UbMIFx/'
     },
     {
       id: 'square-1',
       type: 'square',
       videoSrc: '/testimonials/square-1.mp4',
       posterSrc: '/testimonials/square-1.mp4.jpg',
-      name: 'Marie Grace Berg',
-      role: 'High-Ticket Coach',
-      quote: 'From Zero Results to 2,000+ Online Summit Registrations',
-      badge: '2,000+ REGISTRATIONS',
+      name: 'Offer Architecture & CRO',
+      role: 'Shopify Funnel Optimization',
+      quote: 'How to double average order value with 1-click Shopify bundle upsells without increasing acquisition spend.',
+      badge: '1-CLICK BUNDLES',
       badgeColor: '#ffb300',
-      stats: '2,000+ Summit Signups'
+      stats: '+38% AOV Lift • 4.4x ROAS',
+      url: 'https://www.instagram.com/reel/DcLYkuoBQbo/'
     },
     {
       id: 'landscape-3',
       type: 'landscape-wide',
       videoSrc: '/testimonials/landscape-3.mp4',
       posterSrc: '/testimonials/landscape-3.mp4.jpg',
-      name: 'Muhammad Ghattas',
-      role: 'Roofing Marketing Agency',
-      quote: 'Cut CPL by 50% & Getting Amazing Results for His Roofing Clients',
-      badge: '58% CPL REDUCTION',
+      name: 'Live Revenue Dashboards',
+      role: '8 & 9-Figure Proof',
+      quote: 'Real ad accounts. Real ad spend. Live revenue dashboards. Some people talk eCommerce, we engineer predictable scale.',
+      badge: 'VERIFIED LIVE ACCOUNTS',
       badgeColor: '#ec4899',
-      stats: '50% CPA Drop'
+      stats: '$50M+ Ad Spend Managed',
+      url: 'https://www.instagram.com/reel/DGV7gMeNXYM/'
     }
   ];
+
+  // Guaranteed video autoplay across all browsers
+  useEffect(() => {
+    Object.values(videoRefs.current).forEach((videoEl) => {
+      if (videoEl) {
+        videoEl.muted = true;
+        videoEl.play().catch(() => {});
+      }
+    });
+  }, []);
 
   const toggleAudio = (id, e) => {
     e.stopPropagation();
@@ -566,6 +584,22 @@ export default function VideoTestimonialsSection({ onOpenBooking }) {
 
               <h3 className="vt-modal-title">{selectedVideoModal.name} — {selectedVideoModal.role}</h3>
               <p className="vt-modal-quote">"{selectedVideoModal.quote}"</p>
+
+              {selectedVideoModal.url && (
+                <div style={{ marginTop: '16px', display: 'flex', justifyContent: 'flex-end' }}>
+                  <a
+                    href={selectedVideoModal.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                    style={{ padding: '8px 20px', fontSize: '0.82rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                  >
+                    <InstagramIcon size={14} color="#fff" />
+                    <span>Watch Full Post on Instagram</span>
+                    <ExternalLink size={13} />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
