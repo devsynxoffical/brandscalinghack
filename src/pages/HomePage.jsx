@@ -28,10 +28,11 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onNavigate={onNavigate}
       />
 
-      {/* 04 — CASE STUDIES (Screenshot Exact 3x4 Grid & Champagne Canvas) */}
+      {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}
       <ClientCaseStudiesSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
+        onOpenInstagramModal={onOpenInstagramModal}
       />
 
       {/* 06 — THE SCALING SYSTEM (Screenshot 2 "How We Win / Systemize" Style) */}
