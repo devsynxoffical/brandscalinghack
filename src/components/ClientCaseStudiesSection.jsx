@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { liveResultsProof } from '../data/mockData';
-import { Play, ArrowRight, ExternalLink, Sparkles } from 'lucide-react';
+import { ArrowRight, ExternalLink, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [activeTab, setActiveTab] = useState('All');
+  const videoRefs = useRef({});
 
   const categories = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale'];
 
@@ -12,6 +13,16 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
     if (activeTab === 'All') return true;
     return item.category === activeTab;
   });
+
+  // Ensure all visible videos autoplay seamlessly
+  useEffect(() => {
+    Object.values(videoRefs.current).forEach((videoEl) => {
+      if (videoEl) {
+        videoEl.muted = true;
+        videoEl.play().catch(() => {});
+      }
+    });
+  }, [activeTab, filteredStudies]);
 
   return (
     <section className="client-case-studies-section" id="case-studies">
@@ -36,15 +47,21 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
 
         {/* Interactive Filter Pills */}
         <div className="case-studies-filter-row">
-          {categories.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`case-filter-pill ${activeTab === tab ? 'active' : ''}`}
-            >
-              {tab} {tab === 'All' ? `(${liveResultsProof.length})` : ''}
-            </button>
-          ))}
+          {categories.map((tab) => {
+            const count = tab === 'All' 
+              ? liveResultsProof.length 
+              : liveResultsProof.filter(item => item.category === tab).length;
+
+            return (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`case-filter-pill ${activeTab === tab ? 'active' : ''}`}
+              >
+                {tab} ({count})
+              </button>
+            );
+          })}
         </div>
 
         {/* Instagram Reels Grid */}
@@ -55,33 +72,43 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
               className="showcase-study-card"
               onClick={() => onOpenInstagramModal ? onOpenInstagramModal(study) : window.open(study.url, '_blank')}
             >
-              {/* Image Container with Brand Logo Badge */}
+              {/* Image / Video Container without any play icon */}
               <div className="showcase-img-wrap">
-                <img src={study.image} alt={study.hook} className="showcase-card-img" loading="lazy" />
-                
-                {/* Play Button Overlay */}
-                <div className="showcase-play-btn">
-                  <Play size={18} fill="#ff7043" color="#ff7043" style={{ marginLeft: '3px' }} />
-                </div>
+                {study.videoSrc ? (
+                  <video
+                    ref={(el) => (videoRefs.current[study.id] = el)}
+                    src={study.videoSrc}
+                    poster={study.posterSrc || study.image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    className="showcase-card-img"
+                  />
+                ) : (
+                  <img src={study.image} alt={study.hook} className="showcase-card-img" loading="lazy" />
+                )}
 
-                {/* Top Badge */}
+                {/* Top Brand / Concept Badge */}
                 <div className="showcase-brand-badge">
                   <span>{study.badge}</span>
                 </div>
 
-                {/* Bottom ROAS Tag */}
+                {/* Bottom ROAS / Scale Tag */}
                 <div className="showcase-roas-tag">
                   <span>{study.roas}</span>
                 </div>
               </div>
 
-              {/* Bottom Card Content */}
+              {/* Bottom Card Content with Matching Descriptions */}
               <div className="showcase-card-body">
                 <div className="showcase-card-category">
                   {study.brand} • {study.category}
                 </div>
                 <div className="showcase-card-metric">{study.revenue}</div>
-                <p className="showcase-card-desc">"{study.hook}"</p>
+                <h3 className="showcase-card-title-hook">"{study.hook}"</h3>
+                <p className="showcase-card-desc">{study.description}</p>
                 
                 <div className="showcase-card-link">
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>

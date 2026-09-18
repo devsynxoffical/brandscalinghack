@@ -2986,13 +2986,20 @@ button {
   font-family: var(--font-primary);
 }
 
+.showcase-card-title-hook {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
 .showcase-card-desc {
-  font-size: 0.9rem;
-  color: #cbd5e1;
-  line-height: 1.45;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.5;
   margin-bottom: 18px;
-  font-weight: 500;
-  font-style: italic;
+  font-weight: 400;
 }
 
 .showcase-card-link {
