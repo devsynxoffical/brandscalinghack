@@ -199,7 +199,7 @@ export const liveResultsProof = [
     roas: '6.1x ROAS',
     badge: 'Zero to $10k Blueprint',
     category: 'Zero to Scale',
-    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
   },
   {
     id: 'reel-5',
@@ -211,7 +211,7 @@ export const liveResultsProof = [
     roas: '4.4x ROAS',
     badge: 'Shopify 1-Click Bundles',
     category: 'CRO & Funnels',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
   },
   {
     id: 'reel-6',
@@ -223,7 +223,7 @@ export const liveResultsProof = [
     roas: '4.9x ROAS',
     badge: 'Verified First Month',
     category: 'Creative Hooks',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-7',
@@ -235,7 +235,7 @@ export const liveResultsProof = [
     roas: '5.6x ROAS',
     badge: 'Six Figures in 20 Days',
     category: 'Meta Scaling',
-    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-8',
@@ -271,7 +271,7 @@ export const liveResultsProof = [
     roas: '5.0x ROAS',
     badge: 'High-Converting UGC',
     category: 'Creative Hooks',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
   },
   {
     id: 'reel-11',
@@ -283,7 +283,7 @@ export const liveResultsProof = [
     roas: '4.6x ROAS',
     badge: 'Capital Scaling',
     category: 'Meta Scaling',
-    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
   },
   {
     id: 'reel-12',
@@ -295,7 +295,7 @@ export const liveResultsProof = [
     roas: '5.4x ROAS',
     badge: 'Shopify Speed',
     category: 'CRO & Funnels',
-    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-13',
@@ -307,7 +307,7 @@ export const liveResultsProof = [
     roas: '4.9x ROAS',
     badge: 'Brand Architecture',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-14',
@@ -319,7 +319,7 @@ export const liveResultsProof = [
     roas: '5.1x ROAS',
     badge: 'Account Audit',
     category: 'Meta Scaling',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
   {
     id: 'reel-15',
@@ -331,7 +331,7 @@ export const liveResultsProof = [
     roas: '5.8x ROAS',
     badge: 'Viral Hook Matrix',
     category: 'Creative Hooks',
-    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-16',
@@ -343,7 +343,7 @@ export const liveResultsProof = [
     roas: '6.2x ROAS',
     badge: 'Winner Scaling',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
   },
   {
     id: 'reel-17',
@@ -355,7 +355,7 @@ export const liveResultsProof = [
     roas: '4.75x ROAS',
     badge: 'Multi-Channel Scale',
     category: 'Meta Scaling',
-    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
   },
   {
     id: 'reel-18',
@@ -367,7 +367,7 @@ export const liveResultsProof = [
     roas: '5.3x ROAS',
     badge: 'Retention Architecture',
     category: 'CRO & Funnels',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-19',
@@ -379,7 +379,7 @@ export const liveResultsProof = [
     roas: '4.85x ROAS',
     badge: 'Broad Scale System',
     category: 'Meta Scaling',
-    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-20',
@@ -391,7 +391,7 @@ export const liveResultsProof = [
     roas: '4.5x ROAS',
     badge: 'High AOV DTC',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
   {
     id: 'reel-21',
@@ -403,7 +403,7 @@ export const liveResultsProof = [
     roas: '5.5x ROAS',
     badge: 'Angle Matrix',
     category: 'Creative Hooks',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-22',
@@ -427,7 +427,7 @@ export const liveResultsProof = [
     roas: '4.85x ROAS',
     badge: 'Verified Scale',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
   },
   {
     id: 'reel-24',
@@ -439,7 +439,7 @@ export const liveResultsProof = [
     roas: '5.1x ROAS',
     badge: 'Cash Flow Shield',
     category: 'Zero to Scale',
-    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-25',
@@ -451,7 +451,7 @@ export const liveResultsProof = [
     roas: '5.7x ROAS',
     badge: 'Creative Velocity',
     category: 'Creative Hooks',
-    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-26',
@@ -475,7 +475,7 @@ export const liveResultsProof = [
     roas: '5.0x ROAS',
     badge: 'Brand Authority',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-28',
@@ -487,7 +487,7 @@ export const liveResultsProof = [
     roas: '5.4x ROAS',
     badge: 'Consumer Psychology',
     category: 'Creative Hooks',
-    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg'
   },
   {
     id: 'reel-29',
@@ -499,7 +499,7 @@ export const liveResultsProof = [
     roas: '6.5x ROAS',
     badge: 'Q4 Record Scaling',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg'
   },
   {
     id: 'reel-30',
@@ -511,7 +511,7 @@ export const liveResultsProof = [
     roas: '5.2x ROAS',
     badge: 'Checkout Architecture',
     category: 'CRO & Funnels',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-31',
@@ -523,7 +523,7 @@ export const liveResultsProof = [
     roas: '4.85x Blended',
     badge: 'Verified Live Dashboards',
     category: '8-Figure Proof',
-    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   }
 ];
 

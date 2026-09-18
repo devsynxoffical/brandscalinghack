@@ -63,11 +63,6 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
               {/* Image Container with Brand Logo Badge */}
               <div className="showcase-img-wrap">
                 <img src={study.image} alt={study.hook} className="showcase-card-img" loading="lazy" />
-                
-                {/* Play Button Overlay */}
-                <div className="showcase-play-btn">
-                  <Play size={18} fill="#ff7043" color="#ff7043" style={{ marginLeft: '3px' }} />
-                </div>
 
                 {/* Top Badge */}
                 <div className="showcase-brand-badge">
