@@ -4,7 +4,6 @@ import LiveResultsSection from '../components/LiveResultsSection';
 import RepeatableGrowthSection from '../components/RepeatableGrowthSection';
 import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
 import ScalingSystemSection from '../components/ScalingSystemSection';
-import VideoTestimonialsSection from '../components/VideoTestimonialsSection';
 import ClientCoachesCarouselSection from '../components/ClientCoachesCarouselSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ImpactScaleBannerSection from '../components/ImpactScaleBannerSection';
@@ -37,9 +36,6 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
 
       {/* 06 — THE SCALING SYSTEM (Screenshot 2 "How We Win / Systemize" Style) */}
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
-
-      {/* 07 — VIDEO TESTIMONIALS (Bento Masonry Video Proof) */}
-      <VideoTestimonialsSection onOpenBooking={onOpenBooking} />
 
       {/* LIVE SESSIONS & MASTERCLASSES (Screenshot 4 Video Theater Style) */}
       <LiveSessionsSection onOpenVideo={onOpenVideo} />

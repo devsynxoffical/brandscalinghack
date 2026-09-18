@@ -163,7 +163,7 @@ export const liveResultsProof = [
     roas: '5.2x ROAS',
     badge: 'Advantage+ Architecture',
     category: 'Meta Scaling',
-    image: '/testimonials/portrait-1.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg'
   },
   {
     id: 'reel-2',
@@ -175,7 +175,7 @@ export const liveResultsProof = [
     roas: '4.8x ROAS',
     badge: 'Viral Hook Matrix',
     category: 'Creative Hooks',
-    image: '/testimonials/landscape-1.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
   {
     id: 'reel-3',
@@ -211,7 +211,7 @@ export const liveResultsProof = [
     roas: '4.4x ROAS',
     badge: 'Shopify 1-Click Bundles',
     category: 'CRO & Funnels',
-    image: '/testimonials/square-1.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-6',
@@ -259,7 +259,7 @@ export const liveResultsProof = [
     roas: '4.7x ROAS',
     badge: 'Growth System',
     category: 'Meta Scaling',
-    image: '/testimonials/portrait-2.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   },
   {
     id: 'reel-10',
@@ -307,7 +307,7 @@ export const liveResultsProof = [
     roas: '4.9x ROAS',
     badge: 'Brand Architecture',
     category: '8-Figure Proof',
-    image: '/testimonials/landscape-2.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg'
   },
   {
     id: 'reel-14',
@@ -391,7 +391,7 @@ export const liveResultsProof = [
     roas: '4.5x ROAS',
     badge: 'High AOV DTC',
     category: '8-Figure Proof',
-    image: '/testimonials/landscape-3.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg'
   },
   {
     id: 'reel-21',
@@ -523,7 +523,7 @@ export const liveResultsProof = [
     roas: '4.85x Blended',
     badge: 'Verified Live Dashboards',
     category: '8-Figure Proof',
-    image: '/testimonials/landscape-3.mp4.jpg'
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg'
   }
 ];
 
