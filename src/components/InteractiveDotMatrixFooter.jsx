@@ -14,11 +14,12 @@ export default function InteractiveDotMatrixFooter() {
     let dots = [];
     const mouse = { x: -1000, y: -1000, targetX: -1000, targetY: -1000, active: false };
 
-    // Function to initialize dot grid from rendered text
+    // Function to calculate and render dense, chunky dot matrix
     const initDots = () => {
       const rect = container.getBoundingClientRect();
-      const width = rect.width || 1100;
-      const height = Math.max(rect.height || 0, 320);
+      const width = Math.max(rect.width || 0, 320);
+      const isMobile = width < 768;
+      const height = isMobile ? 360 : 460;
 
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = width * dpr;
@@ -27,34 +28,46 @@ export default function InteractiveDotMatrixFooter() {
       canvas.style.height = `${height}px`;
       ctx.scale(dpr, dpr);
 
-      // Create an offscreen canvas to sample typography pixels
+      // Create high-res offscreen canvas for crisp typography sampling
       const offscreen = document.createElement('canvas');
       offscreen.width = width;
       offscreen.height = height;
       const offCtx = offscreen.getContext('2d');
 
-      // Determine text and layout
-      const isMobile = width < 680;
-      const fontSize = isMobile ? Math.floor(width * 0.16) : Math.floor(Math.min(width * 0.13, 140));
-      const line1 = 'BRAND SCALING';
-      const line2 = 'HACKS';
+      const line1 = 'BRAND';
+      const line2 = 'SCALING';
+
+      // Auto-fit font size to fill ~85% of container width
+      const baseFontSize = isMobile ? 120 : 180;
+      const fontFamily = '"Impact", "Arial Black", "Space Grotesk", sans-serif';
+
+      offCtx.font = `950 ${baseFontSize}px ${fontFamily}`;
+      const w1 = offCtx.measureText(line1).width;
+      const w2 = offCtx.measureText(line2).width;
+
+      const targetWidth1 = width * (isMobile ? 0.82 : 0.75);
+      const targetWidth2 = width * (isMobile ? 0.88 : 0.84);
+
+      const f1 = Math.min(baseFontSize * (targetWidth1 / w1), isMobile ? 130 : 190);
+      const f2 = Math.min(baseFontSize * (targetWidth2 / w2), isMobile ? 120 : 175);
 
       offCtx.fillStyle = '#ffffff';
-      offCtx.font = `900 ${fontSize}px "Space Grotesk", "Inter", -apple-system, sans-serif`;
       offCtx.textAlign = 'center';
       offCtx.textBaseline = 'middle';
 
-      if (isMobile) {
-        offCtx.fillText(line1, width / 2, height * 0.35);
-        offCtx.fillText(line2, width / 2, height * 0.7);
-      } else {
-        offCtx.fillText(line1, width / 2, height * 0.34);
-        offCtx.fillText(line2, width / 2, height * 0.72);
-      }
+      // Render Line 1 ("BRAND")
+      offCtx.font = `950 ${f1}px ${fontFamily}`;
+      const y1 = height * 0.28;
+      offCtx.fillText(line1, width / 2, y1);
 
-      // Sample pixels
+      // Render Line 2 ("SCALING")
+      offCtx.font = `950 ${f2}px ${fontFamily}`;
+      const y2 = height * 0.74;
+      offCtx.fillText(line2, width / 2, y2);
+
+      // Sample pixels with tight dense grid for chunky dots (StreetTalk Match)
       const imgData = offCtx.getImageData(0, 0, width, height).data;
-      const spacing = isMobile ? 12 : 14;
+      const spacing = isMobile ? 10 : 13;
       const newDots = [];
 
       for (let y = 0; y < height; y += spacing) {
@@ -62,13 +75,13 @@ export default function InteractiveDotMatrixFooter() {
           const index = (y * width + x) * 4;
           const alpha = imgData[index + 3];
 
-          if (alpha > 120) {
+          if (alpha > 70) {
             newDots.push({
               x,
               y,
-              baseRadius: isMobile ? 3 : 4,
-              currentRadius: isMobile ? 3 : 4,
-              maxRadius: isMobile ? 11 : 15,
+              baseRadius: isMobile ? 3.8 : 5.4,
+              currentRadius: isMobile ? 3.8 : 5.4,
+              maxRadius: isMobile ? 10.5 : 15.5,
               glowIntensity: 0
             });
           }
@@ -78,7 +91,6 @@ export default function InteractiveDotMatrixFooter() {
       dots = newDots;
     };
 
-    // Run initial dot calculation after fonts load or brief timeout
     if (document.fonts) {
       document.fonts.ready.then(() => {
         initDots();
@@ -87,7 +99,7 @@ export default function InteractiveDotMatrixFooter() {
       setTimeout(initDots, 50);
     }
 
-    // Mouse & Touch listeners
+    // Pointer Tracking
     const handleMouseMove = (e) => {
       const rect = canvas.getBoundingClientRect();
       mouse.targetX = e.clientX - rect.left;
@@ -122,7 +134,7 @@ export default function InteractiveDotMatrixFooter() {
     containerEl.addEventListener('touchmove', handleTouchMove, { passive: true });
     containerEl.addEventListener('touchend', handleTouchEnd);
 
-    // Resize observer
+    // Resize Handler
     let resizeTimer;
     const handleResize = () => {
       clearTimeout(resizeTimer);
@@ -133,13 +145,13 @@ export default function InteractiveDotMatrixFooter() {
 
     window.addEventListener('resize', handleResize);
 
-    // Animation Render Loop with Elastic Spring Physics
-    const EFFECT_RADIUS = 135;
+    // Physics Animation Render Loop
+    const EFFECT_RADIUS = 150;
 
     const render = () => {
-      // Smooth mouse interpolation for liquid feel
-      mouse.x += (mouse.targetX - mouse.x) * 0.25;
-      mouse.y += (mouse.targetY - mouse.y) * 0.25;
+      // Liquid mouse interpolation
+      mouse.x += (mouse.targetX - mouse.x) * 0.22;
+      mouse.y += (mouse.targetY - mouse.y) * 0.22;
 
       const width = canvas.width / (window.devicePixelRatio || 1);
       const height = canvas.height / (window.devicePixelRatio || 1);
@@ -156,34 +168,33 @@ export default function InteractiveDotMatrixFooter() {
         let targetGlow = 0;
 
         if (dist < EFFECT_RADIUS) {
-          const factor = Math.cos((dist / EFFECT_RADIUS) * (Math.PI / 2)); // Smooth cosine falloff
+          const factor = Math.cos((dist / EFFECT_RADIUS) * (Math.PI / 2));
           targetRadius = dot.baseRadius + (dot.maxRadius - dot.baseRadius) * factor;
           targetGlow = factor;
         }
 
         // Smooth physics easing
-        dot.currentRadius += (targetRadius - dot.currentRadius) * 0.22;
-        dot.glowIntensity += (targetGlow - dot.glowIntensity) * 0.22;
+        dot.currentRadius += (targetRadius - dot.currentRadius) * 0.25;
+        dot.glowIntensity += (targetGlow - dot.glowIntensity) * 0.25;
 
         ctx.beginPath();
         ctx.arc(dot.x, dot.y, Math.max(0.5, dot.currentRadius), 0, Math.PI * 2);
 
-        // Color interpolation from resting dark subtle obsidian/orange to brilliant white
-        if (dot.glowIntensity > 0.05) {
-          // Hovered / illuminated state (Pure White & glowing core like StreetTalk)
-          const alpha = 0.25 + dot.glowIntensity * 0.75;
+        if (dot.glowIntensity > 0.04) {
+          // Hovered illuminated state: Pure luminous white with fiery amber outer glow
+          const alpha = 0.35 + dot.glowIntensity * 0.65;
           ctx.fillStyle = `rgba(255, 255, 255, ${alpha.toFixed(2)})`;
-          
-          if (dot.glowIntensity > 0.4) {
-            ctx.shadowColor = 'rgba(255, 112, 67, 0.85)';
-            ctx.shadowBlur = 14 * dot.glowIntensity;
+
+          if (dot.glowIntensity > 0.35) {
+            ctx.shadowColor = 'rgba(255, 112, 67, 0.9)';
+            ctx.shadowBlur = 16 * dot.glowIntensity;
           } else {
             ctx.shadowColor = 'transparent';
             ctx.shadowBlur = 0;
           }
         } else {
-          // Resting state (Subtle luxury brand watermark dots)
-          ctx.fillStyle = 'rgba(255, 112, 67, 0.18)';
+          // Resting state: Bold, rich amber/orange dot matrix
+          ctx.fillStyle = 'rgba(255, 112, 67, 0.32)';
           ctx.shadowColor = 'transparent';
           ctx.shadowBlur = 0;
         }
@@ -216,8 +227,8 @@ export default function InteractiveDotMatrixFooter() {
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '340px',
-        margin: '20px 0',
+        minHeight: '440px',
+        margin: '10px 0 20px 0',
         cursor: 'crosshair',
         userSelect: 'none'
       }}
@@ -233,3 +244,4 @@ export default function InteractiveDotMatrixFooter() {
     </div>
   );
 }
+
