@@ -194,6 +194,45 @@ export const liveResultsProof = [
   },
   {
     id: 'reel-4',
+    shortcode: 'C9CPs88t1qa',
+    url: 'https://www.instagram.com/reel/C9CPs88t1qa/',
+    title: '$3.5M Case Study: Revealed Whole System',
+    metric: '$3,553,858 Total Sales',
+    revenue: '$3,553,858.35 Sales',
+    roas: '8-Figure System',
+    badge: '$3.5M CASE STUDY',
+    category: '8-Figure Proof',
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
+    description: 'Full breakdown of an 8-figure brand showing $3,553,858.35 in verified sales and the exact profit acceleration system.'
+  },
+  {
+    id: 'reel-5',
+    shortcode: 'DcO79UbMIFx',
+    url: 'https://www.instagram.com/reel/DcO79UbMIFx/',
+    title: '5 Online Businesses That I Would Consider',
+    metric: 'Zero to Scale Blueprint',
+    revenue: '5 Online Business Models',
+    roas: 'High-Margin Scale',
+    badge: 'BUSINESS BLUEPRINT',
+    category: 'Zero to Scale',
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg',
+    description: 'Gaurav shares the 5 high-leverage online business models and eCommerce opportunities he would personally start today.'
+  },
+  {
+    id: 'reel-6',
+    shortcode: 'DZcJNI0EhWY',
+    url: 'https://www.instagram.com/p/DZcJNI0EhWY/',
+    title: 'Facebook Ads Are Dead For Ecom... They Said',
+    metric: '$50M+ Ad Spend Managed',
+    revenue: 'Meta Growth Proof',
+    roas: 'Proven Performance',
+    badge: 'ECOMM STRATEGY',
+    category: 'CRO & Funnels',
+    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg',
+    description: 'Debunking the myth that Facebook ads are dead with live ad account data, creative testing systems, and high-converting funnels.'
+  },
+  {
+    id: 'reel-7',
     shortcode: 'DUROF3LCFVO',
     url: 'https://www.instagram.com/reel/DUROF3LCFVO/',
     title: 'DWY Agency Client Onboarding Breakdown',
@@ -206,7 +245,7 @@ export const liveResultsProof = [
     description: 'Sneak peek from a DWY onboarding session breaking down buyer journey drop-offs, tracking fixes, and ad account restructuring.'
   },
   {
-    id: 'reel-5',
+    id: 'reel-8',
     shortcode: 'DP74SV-jYX2',
     url: 'https://www.instagram.com/reel/DP74SV-jYX2/',
     title: '63.98 ROAS Post-Andromeda Update',
@@ -219,7 +258,7 @@ export const liveResultsProof = [
     description: 'While everyone else was panicking about Meta Andromeda updates, we pulled 63.98 ROAS for our LTO brand client.'
   },
   {
-    id: 'reel-6',
+    id: 'reel-9',
     shortcode: 'DPI2h3TARq_',
     url: 'https://www.instagram.com/reel/DPI2h3TARq_/',
     title: '$146,184.29 Revenue in 27 Days',
@@ -232,7 +271,7 @@ export const liveResultsProof = [
     description: 'Generated $146,184.29 in revenue for our skincare client spending $40,123.73 with 957 units sold and $152.75 AOV in 27 days.'
   },
   {
-    id: 'reel-7',
+    id: 'reel-10',
     shortcode: 'DOkyKKYjFbs',
     url: 'https://www.instagram.com/reel/DOkyKKYjFbs/',
     title: '$252K+ Revenue & $196K+ Net Profit',
@@ -245,7 +284,7 @@ export const liveResultsProof = [
     description: 'Onboarded luxury skincare brand and generated $252K+ revenue and $196K+ profit after $56K ad spend in just 72 days.'
   },
   {
-    id: 'reel-8',
+    id: 'reel-11',
     shortcode: 'DN6X3QjDZBD',
     url: 'https://www.instagram.com/reel/DN6X3QjDZBD/',
     title: '1,111 Leads at $4.92 CPL Nationwide',
@@ -258,7 +297,7 @@ export const liveResultsProof = [
     description: 'Scaled one of the biggest names in the MVA industry with $5,462 spent and 1,111 high-intent website leads at $4.92 CPL.'
   },
   {
-    id: 'reel-9',
+    id: 'reel-12',
     shortcode: 'DN6WAbIkwOZ',
     url: 'https://www.instagram.com/reel/DN6WAbIkwOZ/',
     title: '$102,190 Generated from $17,289 Spend',
@@ -271,7 +310,7 @@ export const liveResultsProof = [
     description: 'In the last 28 days, spent $17,289 and generated $102,190 with a 5.91 ROAS—meaning every $1 invested returned nearly $6.'
   },
   {
-    id: 'reel-10',
+    id: 'reel-13',
     shortcode: 'DNnJohXymjy',
     url: 'https://www.instagram.com/reel/DNnJohXymjy/',
     title: '$90,597.25 in 30 Days on Athleisure',
