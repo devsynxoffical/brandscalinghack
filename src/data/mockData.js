@@ -219,19 +219,6 @@ export const liveResultsProof = [
     description: 'Gaurav shares the 5 high-leverage online business models and eCommerce opportunities he would personally start today.'
   },
   {
-    id: 'reel-6',
-    shortcode: 'DZcJNI0EhWY',
-    url: 'https://www.instagram.com/p/DZcJNI0EhWY/',
-    title: 'Facebook Ads Are Dead For Ecom... They Said',
-    metric: '$50M+ Ad Spend Managed',
-    revenue: 'Meta Growth Proof',
-    roas: 'Proven Performance',
-    badge: 'ECOMM STRATEGY',
-    category: 'CRO & Funnels',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg',
-    description: 'Debunking the myth that Facebook ads are dead with live ad account data, creative testing systems, and high-converting funnels.'
-  },
-  {
     id: 'reel-7',
     shortcode: 'DUROF3LCFVO',
     url: 'https://www.instagram.com/reel/DUROF3LCFVO/',

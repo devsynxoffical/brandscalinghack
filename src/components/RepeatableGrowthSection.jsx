@@ -64,12 +64,12 @@ export const creativeGridItems = [
   },
   {
     id: 'ad-6',
-    topBanner: 'FACEBOOK ADS ARE DEAD... THEY SAID',
-    topSub: '$50M+ AD SPEND ARCHITECTURE',
-    hook: 'Meta Scaling Proof',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg',
-    url: 'https://www.instagram.com/p/DZcJNI0EhWY/',
-    tag: '$50M+ Managed',
+    topBanner: '$102,190 GENERATED IN 28 DAYS',
+    topSub: '$17,289 SPEND • 5.91X BLENDED ROAS',
+    hook: 'DTC Scale Formula',
+    image: '/assets/instagram_thumbs/insta_9_DN6WAbIkwOZ.jpg',
+    url: 'https://www.instagram.com/reel/DN6WAbIkwOZ/',
+    tag: '5.91x ROAS',
     bannerBg: '#ffffff',
     textColor: '#0f172a',
     isVideo: true
