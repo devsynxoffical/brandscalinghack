@@ -36,7 +36,12 @@ function App() {
       case 'case-studies':
         return <CaseStudiesPage onOpenBooking={() => setIsBookingOpen(true)} />;
       case 'viral-creatives':
-        return <ViralCreativesPage onOpenBooking={() => setIsBookingOpen(true)} />;
+        return (
+          <ViralCreativesPage
+            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
+          />
+        );
       case 'growth':
         return <GrowthPage onOpenBooking={() => setIsBookingOpen(true)} />;
       case 'about':

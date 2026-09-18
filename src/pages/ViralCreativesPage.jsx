@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
-import { viralCreativesData } from '../data/mockData';
-import { Video, Play, Sparkles, Flame, CheckCircle2, ArrowRight, Eye, RefreshCw, Zap } from 'lucide-react';
+import { liveResultsProof, viralCreativesData } from '../data/mockData';
+import { 
+  Play, 
+  Sparkles, 
+  ArrowRight, 
+  ExternalLink,
+  Flame,
+  Search,
+  Filter
+} from 'lucide-react';
+import { InstagramIcon } from '../components/Icons';
 
-export default function ViralCreativesPage({ onOpenBooking }) {
-  const [activeTab, setActiveTab] = useState('all');
+export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal }) {
+  const [activeCategory, setActiveCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const categories = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale'];
 
   const creativePillars = [
     {
@@ -24,10 +36,19 @@ export default function ViralCreativesPage({ onOpenBooking }) {
     }
   ];
 
+  const filteredReels = liveResultsProof.filter((reel) => {
+    const matchesCat = activeCategory === 'All' || reel.category === activeCategory;
+    const matchesSearch = 
+      reel.hook.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      reel.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      reel.badge.toLowerCase().includes(searchQuery.toLowerCase());
+    return matchesCat && matchesSearch;
+  });
+
   return (
     <div style={{ paddingTop: '100px', minHeight: '100vh', background: '#080a0f' }}>
       {/* Header */}
-      <section className="section-padding" style={{ paddingBottom: '40px', textAlign: 'center' }}>
+      <section className="section-padding" style={{ paddingBottom: '30px', textAlign: 'center' }}>
         <div className="container">
           <span className="badge badge-red" style={{ marginBottom: '16px' }}>
             PERFORMANCE CREATIVE ENGINE
@@ -39,10 +60,22 @@ export default function ViralCreativesPage({ onOpenBooking }) {
             Creative is the new targeting. We deliver end-to-end direct-response creative production—from competitor research and psychological scripting to creator sourcing and rapid video editing.
           </p>
 
-          <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '14px 34px' }}>
-            <span>GET CREATIVES FOR YOUR BRAND</span>
-            <ArrowRight size={18} />
-          </button>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '14px', flexWrap: 'wrap' }}>
+            <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '14px 34px' }}>
+              <span>GET CREATIVES FOR YOUR BRAND</span>
+              <ArrowRight size={18} />
+            </button>
+            <a
+              href="https://www.instagram.com/gauravecomm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 28px' }}
+            >
+              <InstagramIcon size={18} color="#ff5722" />
+              <span>Follow @gauravecomm</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -66,6 +99,211 @@ export default function ViralCreativesPage({ onOpenBooking }) {
               <p style={{ fontSize: '0.92rem', color: '#94a3b8', lineHeight: 1.5 }}>
                 {pillar.desc}
               </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 31 INSTAGRAM REELS & CREATIVE VAULT */}
+      <section className="container" style={{ paddingBottom: '80px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '36px' }}>
+          <span className="badge badge-orange" style={{ marginBottom: '12px' }}>
+            <InstagramIcon size={14} color="#ff7043" />
+            <span>LIVE INSTAGRAM REELS LIBRARY ({liveResultsProof.length} REELS)</span>
+          </span>
+          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: '#fff', marginBottom: '10px' }}>
+            Proven Winning Hooks & Masterclasses
+          </h2>
+          <p style={{ color: '#94a3b8', maxWidth: '700px', margin: '0 auto' }}>
+            Click on any reel to watch the full breakdown, hook script, and revenue scaling architecture.
+          </p>
+        </div>
+
+        {/* Filter & Search Bar */}
+        <div 
+          style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            gap: '16px', 
+            marginBottom: '32px',
+            flexWrap: 'wrap'
+          }}
+        >
+          {/* Category Tabs */}
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                style={{
+                  padding: '8px 18px',
+                  borderRadius: '30px',
+                  fontSize: '0.85rem',
+                  fontWeight: 700,
+                  background: activeCategory === cat ? 'var(--gradient-fire)' : '#121722',
+                  color: '#fff',
+                  border: activeCategory === cat ? '1px solid #ff7043' : '1px solid rgba(255,255,255,0.08)',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                {cat} {cat === 'All' ? `(${liveResultsProof.length})` : ''}
+              </button>
+            ))}
+          </div>
+
+          {/* Search Box */}
+          <div 
+            style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '8px', 
+              background: '#121722', 
+              border: '1px solid rgba(255,255,255,0.1)', 
+              borderRadius: '30px', 
+              padding: '6px 16px',
+              minWidth: '220px'
+            }}
+          >
+            <Search size={15} color="#94a3b8" />
+            <input 
+              type="text" 
+              placeholder="Search reels..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: '#fff',
+                fontSize: '0.85rem',
+                outline: 'none',
+                width: '100%'
+              }}
+            />
+          </div>
+        </div>
+
+        {/* Reels Grid (31 Cards) */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
+          {filteredReels.map((reel, idx) => (
+            <div
+              key={reel.id}
+              onClick={() => onOpenInstagramModal ? onOpenInstagramModal(reel) : null}
+              style={{
+                background: '#0d111a',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '20px',
+                overflow: 'hidden',
+                cursor: 'pointer',
+                transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+                display: 'flex',
+                flexDirection: 'column',
+                boxShadow: '0 12px 30px rgba(0,0,0,0.4)'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-6px)';
+                e.currentTarget.style.borderColor = 'rgba(255, 112, 67, 0.45)';
+                e.currentTarget.style.boxShadow = '0 20px 45px rgba(0,0,0,0.6), 0 0 25px rgba(255, 112, 67, 0.15)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+                e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.4)';
+              }}
+            >
+              {/* Thumbnail with Overlay */}
+              <div style={{ position: 'relative', height: '240px', overflow: 'hidden', background: '#05080e' }}>
+                <img 
+                  src={reel.image} 
+                  alt={reel.hook} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                  loading="lazy"
+                />
+
+                {/* Play Button Badge */}
+                <div 
+                  style={{ 
+                    position: 'absolute', 
+                    top: '50%', 
+                    left: '50%', 
+                    transform: 'translate(-50%, -50%)',
+                    width: '46px',
+                    height: '46px',
+                    borderRadius: '50%',
+                    background: 'rgba(0,0,0,0.7)',
+                    backdropFilter: 'blur(8px)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    border: '1px solid rgba(255,255,255,0.2)'
+                  }}
+                >
+                  <Play size={18} fill="#ff7043" color="#ff7043" style={{ marginLeft: '3px' }} />
+                </div>
+
+                {/* Top Category Badge */}
+                <div 
+                  style={{ 
+                    position: 'absolute', 
+                    top: '12px', 
+                    left: '12px', 
+                    background: 'rgba(8, 12, 20, 0.85)',
+                    backdropFilter: 'blur(8px)',
+                    padding: '4px 10px',
+                    borderRadius: '20px',
+                    fontSize: '0.72rem',
+                    fontWeight: 800,
+                    color: '#ffb300',
+                    border: '1px solid rgba(255, 179, 0, 0.3)'
+                  }}
+                >
+                  {reel.badge}
+                </div>
+
+                {/* Bottom Revenue & ROAS Bar */}
+                <div 
+                  style={{ 
+                    position: 'absolute', 
+                    bottom: '10px', 
+                    left: '10px', 
+                    right: '10px',
+                    background: 'rgba(5, 7, 12, 0.85)',
+                    backdropFilter: 'blur(8px)',
+                    padding: '6px 12px',
+                    borderRadius: '10px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    border: '1px solid rgba(255,255,255,0.1)'
+                  }}
+                >
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#fff' }}>{reel.revenue}</span>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#4ade80' }}>{reel.roas}</span>
+                </div>
+              </div>
+
+              {/* Card Details */}
+              <div style={{ padding: '18px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flexGrow: 1 }}>
+                <div>
+                  <div style={{ fontSize: '0.75rem', color: '#ff7043', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
+                    {reel.brand} • {reel.category}
+                  </div>
+                  <h3 style={{ fontSize: '0.98rem', color: '#fff', lineHeight: 1.45, fontWeight: 700, margin: '0 0 14px 0' }}>
+                    "{reel.hook}"
+                  </h3>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '12px' }}>
+                  <span style={{ fontSize: '0.78rem', color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                    <InstagramIcon size={14} color="#ff5722" />
+                    <span>Watch Reel</span>
+                  </span>
+                  <div style={{ color: '#ff7043', display: 'flex', alignItems: 'center' }}>
+                    <ExternalLink size={14} />
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -175,3 +413,4 @@ export default function ViralCreativesPage({ onOpenBooking }) {
     </div>
   );
 }
+
