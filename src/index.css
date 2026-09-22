@@ -3215,20 +3215,47 @@ button {
   line-height: 1.4;
 }
 
-/* Modern Bold Single-Line Brand Watermark (Static High-Impact Display) */
-.footer-bold-brand-wrap {
+/* Interactive Cursor Dynamic Lighting & Liquid Fire Sheen Engine */
+.footer-interactive-brand-container {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 35px 0;
   text-align: center;
   user-select: none;
   display: flex;
   align-items: center;
   justifyContent: center;
+  perspective: 1200px;
+  cursor: default;
 }
 
-.footer-bold-brand-text {
+.footer-brand-cursor-glow {
+  position: absolute;
+  left: var(--cursor-x, -500px);
+  top: var(--cursor-y, -500px);
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 112, 67, 0.45) 0%, rgba(255, 87, 34, 0.2) 40%, transparent 70%);
+  filter: blur(45px);
+  transform: translate(-50%, -50%);
+  opacity: var(--cursor-opacity, 0);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.footer-brand-3d-stage {
+  position: relative;
+  display: inline-block;
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  z-index: 2;
+}
+
+.footer-brand-base-text {
   font-family: var(--font-primary), 'Space Grotesk', 'Impact', sans-serif;
   font-size: clamp(2.8rem, 11vw, 12.5rem);
   font-weight: 950;
@@ -3236,19 +3263,45 @@ button {
   text-transform: uppercase;
   letter-spacing: -0.04em;
   white-space: nowrap;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.4) 70%, rgba(255, 87, 34, 0.3) 100%);
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.12) 65%, rgba(255, 87, 34, 0.08) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  display: inline-block;
-  cursor: default;
+  display: block;
 }
 
-.footer-bold-brand-wrap:hover .footer-bold-brand-text {
-  filter: drop-shadow(0 0 45px rgba(255, 87, 34, 0.5)) drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
-  transform: scale(1.015);
+.footer-brand-illuminated-text {
+  position: absolute;
+  inset: 0;
+  font-family: var(--font-primary), 'Space Grotesk', 'Impact', sans-serif;
+  font-size: clamp(2.8rem, 11vw, 12.5rem);
+  font-weight: 950;
+  line-height: 0.88;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #fff7ed 25%, #ff7043 65%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 35px rgba(255, 112, 67, 0.95)) drop-shadow(0 0 70px rgba(255, 87, 34, 0.6));
+  pointer-events: none;
+  z-index: 3;
+  display: block;
+  mask-image: radial-gradient(circle 240px at var(--cursor-x, -500px) var(--cursor-y, -500px), black 25%, rgba(0, 0, 0, 0.6) 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 240px at var(--cursor-x, -500px) var(--cursor-y, -500px), black 25%, rgba(0, 0, 0, 0.6) 55%, transparent 100%);
+  opacity: var(--cursor-opacity, 0);
+  transition: opacity 0.25s ease;
+}
+
+.footer-letter-span {
+  display: inline-block;
+  will-change: transform;
 }
 
 .streettalk-bottom-bar {
