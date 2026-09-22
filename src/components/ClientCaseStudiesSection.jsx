@@ -5,6 +5,7 @@ import { InstagramIcon } from './Icons';
 
 export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [activeTab, setActiveTab] = useState('All');
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const categories = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale'];
 
@@ -12,6 +13,13 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
     if (activeTab === 'All') return true;
     return item.category === activeTab;
   });
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setVisibleCount(12);
+  };
+
+  const displayedStudies = filteredStudies.slice(0, visibleCount);
 
   return (
     <section className="client-case-studies-section" id="case-studies">
@@ -43,7 +51,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
             return (
               <button
                 key={tab}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => handleTabChange(tab)}
                 className={`case-filter-pill ${activeTab === tab ? 'active' : ''}`}
               >
                 {tab} ({count})
@@ -54,7 +62,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
 
         {/* Instagram Reels Grid */}
         <div className="showcase-studies-grid">
-          {filteredStudies.map((study) => (
+          {displayedStudies.map((study) => (
             <div
               key={study.id}
               className="showcase-study-card"
@@ -98,6 +106,19 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
             </div>
           ))}
         </div>
+
+        {/* Load More Button */}
+        {visibleCount < filteredStudies.length && (
+          <div style={{ marginTop: '36px', display: 'flex', justifyContent: 'center' }}>
+            <button
+              className="btn-secondary"
+              onClick={() => setVisibleCount((prev) => prev + 12)}
+              style={{ padding: '12px 32px', fontSize: '0.9rem', fontWeight: 600 }}
+            >
+              <span>Load More Breakdown Reels ({displayedStudies.length} of {filteredStudies.length})</span>
+            </button>
+          </div>
+        )}
 
         {/* Bottom CTA Action */}
         <div style={{ marginTop: '48px', display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
