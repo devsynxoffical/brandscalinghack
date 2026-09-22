@@ -507,10 +507,6 @@ button {
   animation: heroLogosScroll 42s linear infinite;
 }
 
-.hero-logos-track:hover {
-  animation-play-state: paused;
-}
-
 .hero-logo-item {
   flex-shrink: 0;
   display: flex;
@@ -682,10 +678,6 @@ button {
   width: max-content;
   animation: infiniteUGCScroll 38s linear infinite;
   will-change: transform;
-}
-
-.ss3-reels-marquee-container:hover {
-  animation-play-state: paused;
 }
 
 .ss3-reels-scroll-track {
@@ -2577,10 +2569,6 @@ button {
 
 .tilted-row-3 {
   animation: tiltedRowScrollLeft 48s linear infinite;
-}
-
-.tilted-grid-plane:hover .tilted-row {
-  animation-play-state: paused;
 }
 
 .tilted-card {
