@@ -14,11 +14,46 @@ export default function InteractiveDotMatrixFooter() {
     let dots = [];
     const mouse = { x: -2000, y: -2000, targetX: -2000, targetY: -2000, active: false };
 
+    // Function to render justified bold characters perfectly spanning targetWidth
+    const drawJustifiedText = (targetCtx, text, centerX, centerY, fontSize, targetWidth, fontFamily) => {
+      targetCtx.font = `950 ${fontSize}px ${fontFamily}`;
+      targetCtx.textAlign = 'center';
+      targetCtx.textBaseline = 'middle';
+
+      if (text.length <= 1) {
+        targetCtx.fillText(text, centerX, centerY);
+        return;
+      }
+
+      let totalCharWidth = 0;
+      const charWidths = [];
+      for (let i = 0; i < text.length; i++) {
+        const w = targetCtx.measureText(text[i]).width;
+        charWidths.push(w);
+        totalCharWidth += w;
+      }
+
+      // If text naturally exceeds target width, adjust or use single block
+      if (totalCharWidth >= targetWidth) {
+        targetCtx.fillText(text, centerX, centerY);
+        return;
+      }
+
+      const gap = (targetWidth - totalCharWidth) / (text.length - 1);
+      let currentX = centerX - targetWidth / 2;
+
+      for (let i = 0; i < text.length; i++) {
+        const charCenterX = currentX + charWidths[i] / 2;
+        targetCtx.fillText(text[i], charCenterX, centerY);
+        currentX += charWidths[i] + gap;
+      }
+    };
+
     const initDots = () => {
       const rect = container.getBoundingClientRect();
       const width = Math.max(rect.width || 0, window.innerWidth || 1200);
       const isMobile = width < 768;
-      const height = isMobile ? 380 : 520;
+      const height = isMobile ? 360 : 540;
 
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = width * dpr;
@@ -27,7 +62,7 @@ export default function InteractiveDotMatrixFooter() {
       canvas.style.height = `${height}px`;
       ctx.scale(dpr, dpr);
 
-      // Offscreen canvas for precise bold pixel sampling
+      // Offscreen canvas for crisp pixel sampling
       const offscreen = document.createElement('canvas');
       offscreen.width = width;
       offscreen.height = height;
@@ -38,34 +73,33 @@ export default function InteractiveDotMatrixFooter() {
 
       const fontFamily = '"Impact", "Arial Black", "Cabinet Grotesk", "Space Grotesk", sans-serif';
 
-      // Measure line 1 & line 2 to scale to 96% full container width
+      // Width span for both lines (e.g. 92% of container width on desktop, 94% on mobile)
+      const targetSpanWidth = width * (isMobile ? 0.94 : 0.92);
+
+      // Height cap so both lines never overlap and never clip canvas borders
+      const maxLineHeight = height * (isMobile ? 0.34 : 0.36);
+      
+      // Calculate font size based on the longer word ("SCALING") fitting targetSpanWidth & maxLineHeight
       offCtx.font = `950 100px ${fontFamily}`;
-      const m1 = offCtx.measureText(line1).width;
-      const m2 = offCtx.measureText(line2).width;
-
-      const targetWidth1 = width * (isMobile ? 0.94 : 0.96);
-      const targetWidth2 = width * (isMobile ? 0.95 : 0.98);
-
-      const f1 = 100 * (targetWidth1 / m1);
-      const f2 = 100 * (targetWidth2 / m2);
+      const mScaling = offCtx.measureText(line2).width;
+      const calculatedFontSize = Math.min(
+        100 * (targetSpanWidth / mScaling),
+        maxLineHeight
+      );
 
       offCtx.fillStyle = '#ffffff';
-      offCtx.textAlign = 'center';
-      offCtx.textBaseline = 'middle';
 
-      // Render Line 1 ("BRAND")
-      offCtx.font = `950 ${f1}px ${fontFamily}`;
-      const y1 = height * 0.28;
-      offCtx.fillText(line1, width / 2, y1);
+      // Position Line 1 ("BRAND") in top half with safe margins
+      const y1 = height * 0.27;
+      drawJustifiedText(offCtx, line1, width / 2, y1, calculatedFontSize, targetSpanWidth, fontFamily);
 
-      // Render Line 2 ("SCALING")
-      offCtx.font = `950 ${f2}px ${fontFamily}`;
-      const y2 = height * 0.74;
-      offCtx.fillText(line2, width / 2, y2);
+      // Position Line 2 ("SCALING") in bottom half with safe margins
+      const y2 = height * 0.73;
+      drawJustifiedText(offCtx, line2, width / 2, y2, calculatedFontSize, targetSpanWidth, fontFamily);
 
-      // Sample pixels with dense grid to form thick, prominent dots (StreetTalk reference match)
+      // Dot sampling grid matching StreetTalk reference
       const imgData = offCtx.getImageData(0, 0, width, height).data;
-      const spacing = isMobile ? 12 : 16;
+      const spacing = isMobile ? 13 : 17;
       const newDots = [];
 
       for (let y = 0; y < height; y += spacing) {
@@ -73,13 +107,13 @@ export default function InteractiveDotMatrixFooter() {
           const index = (y * width + x) * 4;
           const alpha = imgData[index + 3];
 
-          if (alpha > 60) {
+          if (alpha > 70) {
             newDots.push({
               x,
               y,
-              baseRadius: isMobile ? 4.8 : 6.8,
-              currentRadius: isMobile ? 4.8 : 6.8,
-              maxRadius: isMobile ? 12.5 : 18.5,
+              baseRadius: isMobile ? 4.8 : 6.6,
+              currentRadius: isMobile ? 4.8 : 6.6,
+              maxRadius: isMobile ? 9.5 : 13.0,
               glowIntensity: 0
             });
           }
@@ -141,7 +175,7 @@ export default function InteractiveDotMatrixFooter() {
 
     window.addEventListener('resize', handleResize);
 
-    const EFFECT_RADIUS = 180;
+    const EFFECT_RADIUS = 160;
 
     const render = () => {
       mouse.x += (mouse.targetX - mouse.x) * 0.22;
@@ -174,19 +208,20 @@ export default function InteractiveDotMatrixFooter() {
         ctx.arc(dot.x, dot.y, Math.max(0.5, dot.currentRadius), 0, Math.PI * 2);
 
         if (dot.glowIntensity > 0.04) {
-          const alpha = 0.4 + dot.glowIntensity * 0.6;
+          // Luminous hover state with crisp circular dot outline (StreetTalk match)
+          const alpha = 0.45 + dot.glowIntensity * 0.55;
           ctx.fillStyle = `rgba(255, 255, 255, ${alpha.toFixed(2)})`;
 
           if (dot.glowIntensity > 0.3) {
-            ctx.shadowColor = 'rgba(255, 112, 67, 0.95)';
-            ctx.shadowBlur = 18 * dot.glowIntensity;
+            ctx.shadowColor = 'rgba(255, 112, 67, 0.85)';
+            ctx.shadowBlur = 14 * dot.glowIntensity;
           } else {
             ctx.shadowColor = 'transparent';
             ctx.shadowBlur = 0;
           }
         } else {
-          // Resting state: prominent, bold, glowing dot matrix
-          ctx.fillStyle = 'rgba(255, 112, 67, 0.38)';
+          // Resting state: bold, dark amber/copper halftone dots
+          ctx.fillStyle = 'rgba(255, 112, 67, 0.36)';
           ctx.shadowColor = 'transparent';
           ctx.shadowBlur = 0;
         }
@@ -219,8 +254,8 @@ export default function InteractiveDotMatrixFooter() {
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '480px',
-        margin: '20px 0 30px 0',
+        minHeight: '520px',
+        margin: '10px 0 20px 0',
         cursor: 'crosshair',
         userSelect: 'none'
       }}
