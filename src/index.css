@@ -3215,32 +3215,40 @@ button {
   line-height: 1.4;
 }
 
-/* Giant Dot Matrix / Halftone Typographic Watermark (Exact StreetTalk.com Interactive Match) */
-.streettalk-watermark-wrap {
+/* Modern Bold Single-Line Brand Watermark (Static High-Impact Display) */
+.footer-bold-brand-wrap {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 30px 0 10px 0;
+  padding: 60px 0 30px 0;
   text-align: center;
   user-select: none;
-  pointer-events: auto;
-  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justifyContent: center;
 }
 
-.streettalk-dot-matrix-text {
-  font-family: var(--font-primary);
-  font-size: clamp(3.5rem, 8.5vw, 9.5rem);
+.footer-bold-brand-text {
+  font-family: var(--font-primary), 'Space Grotesk', 'Impact', sans-serif;
+  font-size: clamp(2.8rem, 11vw, 12.5rem);
   font-weight: 950;
-  line-height: 0.85;
+  line-height: 0.88;
   text-transform: uppercase;
   letter-spacing: -0.04em;
-  color: rgba(255, 112, 67, 0.08);
-  background: linear-gradient(180deg, rgba(255, 112, 67, 0.15) 0%, rgba(255, 179, 0, 0.03) 100%);
+  white-space: nowrap;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.4) 70%, rgba(255, 87, 34, 0.3) 100%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-shadow: 
-    0 0 30px rgba(255, 87, 34, 0.06),
-    2px 2px 0 rgba(255, 112, 67, 0.04);
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-block;
+  cursor: default;
+}
+
+.footer-bold-brand-wrap:hover .footer-bold-brand-text {
+  filter: drop-shadow(0 0 45px rgba(255, 87, 34, 0.5)) drop-shadow(0 15px 35px rgba(0, 0, 0, 0.9));
+  transform: scale(1.015);
 }
 
 .streettalk-bottom-bar {
