@@ -3225,8 +3225,7 @@ button {
   width: 100%;
   height: auto;
   display: block;
-  filter: invert(48%) sepia(78%) saturate(1500%) hue-rotate(345deg) brightness(95%) contrast(98%);
-  opacity: 0.25;
+  color: rgba(255, 112, 67, 0.32);
 }
 
 .st-footer-dots {
