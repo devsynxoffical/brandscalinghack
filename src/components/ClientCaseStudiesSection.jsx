@@ -35,16 +35,17 @@ function CaseStudyCard({ study, onOpenModal }) {
         {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
         <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
 
-        {/* Video Player (plays on hover or fallback to poster image) */}
+        {/* Video Player (autoplays smoothly in loop) */}
         {study.video ? (
           <video
             ref={videoRef}
             src={study.video}
             poster={study.image}
+            autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             className="showcase-card-img"
             style={{
               position: 'relative',
