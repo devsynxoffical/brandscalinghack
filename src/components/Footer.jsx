@@ -8,7 +8,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (email.trim()) {
-      setStatus('Thanks for signing up.');
+      setStatus('Thanks for subscribing!');
       setTimeout(() => {
         setEmail('');
         setStatus(null);
@@ -25,7 +25,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
             {/* Meta */}
             <div className="st-footer-group st-footer-group-meta">
               <p className="st-footer-heading">
-                © 2026 Street Talk LLC. All rights reserved. AI training prohibited.
+                © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved. AI training prohibited.
               </p>
               <p className="st-footer-address">
                 27 W 24 Street<br />
@@ -38,11 +38,11 @@ export default function Footer({ onNavigate, onOpenBooking }) {
             <div className="st-footer-group">
               <h3 className="st-footer-heading">Site</h3>
               <a className="st-footer-link" href="#home" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }}>Home</a>
-              <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Careers</a>
-              <a className="st-footer-link" href="#viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>StreetBlog</a>
-              <a className="st-footer-link" href="#growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Video Library</a>
-              <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Terms of Service</a>
-              <a className="st-footer-link" href="#about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>Privacy</a>
+              <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Case Studies</a>
+              <a className="st-footer-link" href="#viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
+              <a className="st-footer-link" href="#growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Growth Engine</a>
+              <a className="st-footer-link" href="#viral-products" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-products'); }}>Find Viral Products</a>
+              <a className="st-footer-link" href="#about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
             </div>
 
             {/* Find Us */}
@@ -51,7 +51,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               <a className="st-footer-link" href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
               <a className="st-footer-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a className="st-footer-link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
-              <a className="st-footer-link" href="https://www.instagram.com/gauravecomm/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className="st-footer-link" href="https://www.instagram.com/gauravecomm/" target="_blank" rel="noopener noreferrer">Instagram (@gauravecomm)</a>
               <a className="st-footer-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
               <a className="st-footer-link" href="https://reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a>
             </div>
@@ -97,7 +97,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               Terms of Service
             </a>
             <p className="st-footer-copyright">
-              © 2026 StreetTalk. All Rights Reserved.
+              © {new Date().getFullYear()} Brand Scaling Hacks. All Rights Reserved.
             </p>
           </div>
         </div>
