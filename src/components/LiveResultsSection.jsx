@@ -4,14 +4,15 @@ import { liveResultsProof } from '../data/mockData';
 
 export const ugcCreativesList = [
   {
-    id: 'insta-1',
+    id: 'reel-76',
     hook: 'Now I wake up calm, focused, and actually rested',
     niche: 'Sleep & Wellness DTC',
-    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
+    image: '/assets/instagram_thumbs/reel_Db3hW_mupo1.jpg',
+    video: '/assets/instagram_videos/reel_Db3hW_mupo1.mp4',
     url: 'https://www.instagram.com/reel/Db3hW_mupo1/',
     revenue: '€118,000 in Month 1',
     roas: '4.9x ROAS',
-    badge: 'Verified First Month',
+    badge: 'Verified Scale',
     width: '240px',
     height: '410px',
     offsetY: '-25px',
@@ -19,14 +20,15 @@ export const ugcCreativesList = [
     zIndex: 3
   },
   {
-    id: 'insta-2',
-    hook: 'Tension, Stress & Recovery Breakdown',
-    niche: 'Stress Relief & Recovery',
-    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
-    url: 'https://www.instagram.com/reel/DbBMshACSuX/',
-    revenue: '€123,000 in 20 Days',
-    roas: '5.2x ROAS',
-    badge: 'Meta Ads Framework',
+    id: 'reel-77',
+    hook: 'Deficiencies in: iron, zinc, b-vitamins...',
+    niche: 'Nutraceuticals & Health',
+    image: '/assets/instagram_thumbs/reel_DbCVqzFhiLU.jpg',
+    video: '/assets/instagram_videos/reel_DbCVqzFhiLU.mp4',
+    url: 'https://www.instagram.com/reel/DbCVqzFhiLU/',
+    revenue: '$100,000+ in 20 Days',
+    roas: '5.6x ROAS',
+    badge: 'Six Figures Scale',
     width: '225px',
     height: '385px',
     offsetY: '20px',
@@ -34,10 +36,11 @@ export const ugcCreativesList = [
     zIndex: 2
   },
   {
-    id: 'insta-3',
+    id: 'reel-75',
     hook: 'Profit Accelerate: Scale to $100k/mo Net Profit',
     niche: 'DTC Brand Portfolio',
-    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
+    image: '/assets/instagram_thumbs/reel_C9CPs88t1qa.jpg',
+    video: '/assets/instagram_videos/reel_C9CPs88t1qa.mp4',
     url: 'https://www.instagram.com/reel/C9CPs88t1qa/',
     revenue: '$3,500,000 Portfolio',
     roas: '4.8x ROAS',
@@ -50,14 +53,15 @@ export const ugcCreativesList = [
     isHero: true
   },
   {
-    id: 'insta-4',
-    hook: 'Deficiencies in: iron, zinc, b-vitamins...',
-    niche: 'Nutraceuticals & Health',
-    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg',
-    url: 'https://www.instagram.com/reel/DbCVqzFhiLU/',
-    revenue: '$100,000+ in 20 Days',
-    roas: '5.6x ROAS',
-    badge: 'Six Figures Scale',
+    id: 'reel-78',
+    hook: 'Live Ad Account Scaling Framework',
+    niche: 'Meta Ads Framework',
+    image: '/assets/instagram_thumbs/reel_DPI2h3TARq_.jpg',
+    video: '/assets/instagram_videos/reel_DPI2h3TARq_.mp4',
+    url: 'https://www.instagram.com/reel/DPI2h3TARq_/',
+    revenue: 'High-Impact Scale',
+    roas: '5.2x ROAS',
+    badge: 'Live Ad Account',
     width: '240px',
     height: '410px',
     offsetY: '-20px',
@@ -65,14 +69,15 @@ export const ugcCreativesList = [
     zIndex: 4
   },
   {
-    id: 'insta-5',
-    hook: 'If I had to start from ZERO to $10k/mo',
-    niche: 'Start from Zero',
-    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg',
-    url: 'https://www.instagram.com/reel/DcO79UbMIFx/',
-    revenue: '$10,000 / mo Blueprint',
-    roas: '6.1x ROAS',
-    badge: 'Zero to $10k/mo',
+    id: 'reel-79',
+    hook: 'High Converting Creative Structure',
+    niche: 'Creative Testing Engine',
+    image: '/assets/instagram_thumbs/reel_C9RU-C9yhfU.jpg',
+    video: '/assets/instagram_videos/reel_C9RU-C9yhfU.mp4',
+    url: 'https://www.instagram.com/reel/C9RU-C9yhfU/',
+    revenue: '380% ROAS Jump',
+    roas: '4.9x ROAS',
+    badge: 'Creative Engine',
     width: '225px',
     height: '385px',
     offsetY: '25px',
@@ -80,11 +85,12 @@ export const ugcCreativesList = [
     zIndex: 2
   },
   {
-    id: 'insta-6',
-    hook: 'Your Competitors Are Still Sleeping',
+    id: 'reel-64',
+    hook: 'Meta Advantage+ Scaling Strategy Breakdown',
     niche: 'Live Revenue Dashboards',
-    image: '/assets/instagram_thumbs/insta_6_DZcJNI0EhWY.jpg',
-    url: 'https://www.instagram.com/p/DZcJNI0EhWY/',
+    image: '/assets/instagram_thumbs/reel_DBE4BLBo-U-.jpg',
+    video: '/assets/instagram_videos/reel_DBE4BLBo-U-.mp4',
+    url: 'https://www.instagram.com/reel/DBE4BLBo-U-/',
     revenue: 'Live Dashboard Proof',
     roas: 'Verified Accounts',
     badge: 'Live Ad Accounts',
@@ -102,17 +108,17 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
       <div className="results-glow-orb"></div>
 
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
-        {/* Screenshot 3 Styled Bold Headline */}
+        {/* Bold Headline */}
         <h2 className="results-title-bold" style={{ marginTop: '10px' }}>
           We Craft <span style={{ fontStyle: 'italic', fontWeight: 600 }}>World Class</span> <span className="results-title-highlight">Performance Creatives</span> To Hit Your Revenue Goals.
         </h2>
 
-        {/* Minimal Subtext matching reference */}
+        {/* Minimal Subtext */}
         <p className="results-subtext">
           We help eCommerce brands scale through a repeatable creative system, not random ads. We offer <strong>full service ad creative from research and ideation to execution</strong> and delivery.
         </p>
 
-        {/* Action Buttons matching screenshot exactly */}
+        {/* Action Buttons */}
         <div className="results-cta-group" style={{ marginBottom: '40px' }}>
           <button className="btn-ss3-orange" onClick={onOpenBooking}>
             <span>Book A Discovery Call</span>
@@ -126,7 +132,7 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
         </div>
       </div>
 
-      {/* Screenshot 3 Infinite Auto-Scrolling / Interactive Marquee Track */}
+      {/* Infinite Auto-Scrolling / Interactive Marquee Track with LIVE VIDEO REELS */}
       <div className="ss3-reels-full-strip">
         <div className="ss3-reels-marquee-container">
           {/* Track 1 */}
@@ -140,11 +146,21 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
                   width: item.width || '220px',
                   height: item.height || '320px',
                   transform: `translateY(${item.offsetY || '0px'}) rotate(${item.rotate || '0deg'})`,
-                  zIndex: item.zIndex || 2
+                  zIndex: item.zIndex || 2,
+                  cursor: 'pointer'
                 }}
                 title={`Click to preview: ${item.hook}`}
               >
-                <img src={item.image} alt={item.hook} className="ss3-clean-img" />
+                <video
+                  src={item.video}
+                  poster={item.image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="ss3-clean-img"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
                 
                 {/* Play icon badge */}
                 <div className="ss3-clean-play-badge">
@@ -176,11 +192,21 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
                   width: item.width || '220px',
                   height: item.height || '320px',
                   transform: `translateY(${item.offsetY || '0px'}) rotate(${item.rotate || '0deg'})`,
-                  zIndex: item.zIndex || 2
+                  zIndex: item.zIndex || 2,
+                  cursor: 'pointer'
                 }}
                 title={`Click to preview: ${item.hook}`}
               >
-                <img src={item.image} alt={item.hook} className="ss3-clean-img" />
+                <video
+                  src={item.video}
+                  poster={item.image}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="ss3-clean-img"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
                 
                 {/* Play icon badge */}
                 <div className="ss3-clean-play-badge">
@@ -211,4 +237,3 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
     </section>
   );
 }
-

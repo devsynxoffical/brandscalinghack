@@ -1,7 +1,120 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { liveResultsProof } from '../data/mockData';
 import { Play, ArrowRight, ExternalLink, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
+
+function CaseStudyCard({ study, onOpenModal }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
+  return (
+    <div
+      className="showcase-study-card"
+      onClick={() => onOpenModal(study)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      style={{ cursor: 'pointer' }}
+    >
+      {/* Image / Video Container with Brand Logo Badge */}
+      <div className="showcase-img-wrap">
+        {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
+        <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
+
+        {/* Video Player (plays on hover or fallback to poster image) */}
+        {study.video ? (
+          <video
+            ref={videoRef}
+            src={study.video}
+            poster={study.image}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="showcase-card-img"
+            style={{
+              position: 'relative',
+              zIndex: 2,
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain'
+            }}
+          />
+        ) : (
+          <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
+        )}
+
+        {/* Center Play Button Overlay (fades out on hover when video is active) */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            zIndex: 5,
+            width: '48px',
+            height: '48px',
+            borderRadius: '50%',
+            background: 'rgba(0, 0, 0, 0.65)',
+            border: '1.5px solid rgba(255, 87, 34, 0.8)',
+            backdropFilter: 'blur(6px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 8px 20px rgba(0,0,0,0.7)',
+            transition: 'all 0.25s ease',
+            opacity: isHovered ? 0.2 : 1,
+            pointerEvents: 'none'
+          }}
+          className="card-play-hover-btn"
+        >
+          <Play size={20} color="#ff7043" fill="#ff7043" style={{ marginLeft: '2px' }} />
+        </div>
+
+        {/* Top Badge */}
+        <div className="showcase-brand-badge">
+          <span>{study.badge}</span>
+        </div>
+
+        {/* Bottom ROAS Tag */}
+        <div className="showcase-roas-tag">
+          <span>{study.roas}</span>
+        </div>
+      </div>
+
+      {/* Bottom Card Content */}
+      <div className="showcase-card-body">
+        <div className="showcase-card-category">
+          {study.category} • {study.badge}
+        </div>
+        <div className="showcase-card-metric">{study.title}</div>
+        <p className="showcase-card-desc">{study.description}</p>
+        
+        <div className="showcase-card-link">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <InstagramIcon size={14} color="#ff7043" />
+            <span>PLAY REEL & BREAKDOWN</span>
+          </div>
+          <ExternalLink size={14} color="#ff7043" />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [activeTab, setActiveTab] = useState('All');
@@ -60,75 +173,14 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
           })}
         </div>
 
-        {/* Instagram Reels Grid */}
+        {/* Instagram Reels Grid with Hover-to-play Video Cards */}
         <div className="showcase-studies-grid">
           {displayedStudies.map((study) => (
-            <div
+            <CaseStudyCard
               key={study.id}
-              className="showcase-study-card"
-              onClick={() => onOpenInstagramModal ? onOpenInstagramModal(study) : window.open(study.url, '_blank')}
-            >
-              {/* Image Container with Brand Logo Badge */}
-              <div className="showcase-img-wrap">
-                {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
-                <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
-
-                {/* Main Image Contained 100% Inside Box */}
-                <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
-
-                {/* Center Play Button Overlay */}
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    zIndex: 5,
-                    width: '48px',
-                    height: '48px',
-                    borderRadius: '50%',
-                    background: 'rgba(0, 0, 0, 0.65)',
-                    border: '1.5px solid rgba(255, 87, 34, 0.8)',
-                    backdropFilter: 'blur(6px)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 8px 20px rgba(0,0,0,0.7)',
-                    transition: 'all 0.25s ease'
-                  }}
-                  className="card-play-hover-btn"
-                >
-                  <Play size={20} color="#ff7043" fill="#ff7043" style={{ marginLeft: '2px' }} />
-                </div>
-
-                {/* Top Badge */}
-                <div className="showcase-brand-badge">
-                  <span>{study.badge}</span>
-                </div>
-
-                {/* Bottom ROAS Tag */}
-                <div className="showcase-roas-tag">
-                  <span>{study.roas}</span>
-                </div>
-              </div>
-
-              {/* Bottom Card Content */}
-              <div className="showcase-card-body">
-                <div className="showcase-card-category">
-                  {study.category} • {study.badge}
-                </div>
-                <div className="showcase-card-metric">{study.title}</div>
-                <p className="showcase-card-desc">{study.description}</p>
-                
-                <div className="showcase-card-link">
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                    <InstagramIcon size={14} color="#ff7043" />
-                    <span>WATCH REEL ON INSTAGRAM</span>
-                  </div>
-                  <ExternalLink size={14} color="#ff7043" />
-                </div>
-              </div>
-            </div>
+              study={study}
+              onOpenModal={(item) => onOpenInstagramModal ? onOpenInstagramModal(item) : window.open(item.url, '_blank')}
+            />
           ))}
         </div>
 

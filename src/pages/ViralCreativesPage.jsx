@@ -38,10 +38,8 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
 
   const filteredReels = liveResultsProof.filter((reel) => {
     const matchesCat = activeCategory === 'All' || reel.category === activeCategory;
-    const matchesSearch = 
-      reel.hook.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      reel.brand.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      reel.badge.toLowerCase().includes(searchQuery.toLowerCase());
+    const searchTarget = `${reel.title || ''} ${reel.description || ''} ${reel.badge || ''} ${reel.category || ''}`.toLowerCase();
+    const matchesSearch = searchTarget.includes(searchQuery.toLowerCase());
     return matchesCat && matchesSearch;
   });
 
@@ -213,12 +211,17 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
               }}
             >
               {/* Thumbnail with Overlay */}
-              <div style={{ position: 'relative', height: '240px', overflow: 'hidden', background: '#05080e' }}>
-                <img 
-                  src={reel.image} 
-                  alt={reel.hook} 
+              <div style={{ position: 'relative', height: '260px', overflow: 'hidden', background: '#05080e' }}>
+                <video 
+                  src={reel.video} 
+                  poster={reel.image}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  onMouseEnter={(e) => e.target.play().catch(() => {})}
+                  onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                  loading="lazy"
                 />
 
                 {/* Play Button Badge */}
@@ -236,7 +239,8 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    border: '1px solid rgba(255,255,255,0.2)'
+                    border: '1px solid rgba(255,255,255,0.2)',
+                    pointerEvents: 'none'
                   }}
                 >
                   <Play size={18} fill="#ff7043" color="#ff7043" style={{ marginLeft: '3px' }} />
@@ -255,7 +259,8 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
                     fontSize: '0.72rem',
                     fontWeight: 800,
                     color: '#ffb300',
-                    border: '1px solid rgba(255, 179, 0, 0.3)'
+                    border: '1px solid rgba(255, 179, 0, 0.3)',
+                    zIndex: 3
                   }}
                 >
                   {reel.badge}
@@ -275,7 +280,8 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    border: '1px solid rgba(255,255,255,0.1)'
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    zIndex: 3
                   }}
                 >
                   <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#fff' }}>{reel.revenue}</span>
@@ -287,11 +293,14 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
               <div style={{ padding: '18px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flexGrow: 1 }}>
                 <div>
                   <div style={{ fontSize: '0.75rem', color: '#ff7043', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
-                    {reel.brand} • {reel.category}
+                    {reel.category} • {reel.badge}
                   </div>
-                  <h3 style={{ fontSize: '0.98rem', color: '#fff', lineHeight: 1.45, fontWeight: 700, margin: '0 0 14px 0' }}>
-                    "{reel.hook}"
+                  <h3 style={{ fontSize: '0.95rem', color: '#fff', lineHeight: 1.45, fontWeight: 700, margin: '0 0 10px 0' }}>
+                    {reel.title}
                   </h3>
+                  <p style={{ fontSize: '0.82rem', color: '#94a3b8', lineHeight: 1.45, margin: '0 0 14px 0', maxHeight: '58px', overflow: 'hidden' }}>
+                    {reel.description}
+                  </p>
                 </div>
 
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '12px' }}>
