@@ -1,271 +1,180 @@
 import React, { useRef, useEffect } from 'react';
 
+// Exact 662 dot coordinates from StreetTalk.com
+const DOT_COORDINATES = [{x:228.077,y:7.296},{x:228.077,y:2.88},{x:232.493,y:7.296},{x:232.493,y:2.88},{x:223.661,y:29.376},{x:223.661,y:24.96},{x:223.661,y:20.544},{x:223.661,y:16.128},{x:236.909,y:42.624},{x:236.909,y:38.208},{x:236.909,y:33.792},{x:223.661,y:38.208},{x:228.077,y:29.376},{x:228.077,y:24.96},{x:228.077,y:38.208},{x:228.077,y:33.792},{x:245.741,y:38.208},{x:245.741,y:33.792},{x:250.157,y:38.208},{x:250.157,y:33.792},{x:228.077,y:20.544},{x:228.077,y:16.128},{x:241.325,y:42.624},{x:241.325,y:38.208},{x:241.325,y:33.792},{x:228.077,y:42.624},{x:232.493,y:29.376},{x:232.493,y:24.96},{x:232.493,y:38.208},{x:232.493,y:33.792},{x:232.493,y:20.544},{x:232.493,y:16.128},{x:245.741,y:42.624},{x:232.493,y:42.624},{x:254.573,y:38.208},{x:254.573,y:33.792},{x:258.989,y:38.208},{x:258.989,y:33.792},{x:223.661,y:7.296},{x:223.661,y:2.88},{x:223.661,y:11.712},{x:250.157,y:42.624},{x:228.077,y:11.712},{x:254.573,y:42.624},{x:232.493,y:11.712},{x:258.989,y:42.624},{x:245.741,y:20.544},{x:245.741,y:16.128},{x:250.157,y:20.544},{x:250.157,y:16.128},{x:254.573,y:20.544},{x:254.573,y:16.128},{x:236.909,y:16.128},{x:236.909,y:20.544},{x:241.325,y:20.544},{x:241.325,y:16.128},{x:258.989,y:20.544},{x:258.989,y:16.128},{x:236.909,y:11.712},{x:241.325,y:11.712},{x:245.741,y:11.712},{x:250.157,y:11.712},{x:254.573,y:11.712},{x:258.989,y:11.712},{x:223.661,y:33.792},{x:179.505,y:38.208},{x:179.505,y:33.792},{x:179.505,y:29.376},{x:179.505,y:24.96},{x:179.505,y:20.544},{x:179.505,y:16.128},{x:179.505,y:11.712},{x:179.505,y:7.296},{x:179.505,y:42.624},{x:183.921,y:38.208},{x:183.921,y:33.792},{x:183.921,y:2.88},{x:183.921,y:42.624},{x:201.585,y:38.208},{x:201.585,y:24.96},{x:201.585,y:20.544},{x:201.585,y:7.296},{x:201.585,y:2.88},{x:201.585,y:42.624},{x:206.001,y:24.96},{x:206.001,y:20.544},{x:206.001,y:7.296},{x:206.001,y:2.88},{x:206.001,y:42.624},{x:183.921,y:29.376},{x:183.921,y:24.96},{x:183.921,y:20.544},{x:183.921,y:16.128},{x:183.921,y:11.712},{x:183.921,y:7.296},{x:206.001,y:38.208},{x:210.417,y:24.96},{x:210.417,y:20.544},{x:210.417,y:7.296},{x:210.417,y:2.88},{x:210.417,y:42.624},{x:210.417,y:38.208},{x:188.337,y:38.208},{x:188.337,y:33.792},{x:188.337,y:2.88},{x:188.337,y:42.624},{x:188.337,y:29.376},{x:188.337,y:24.96},{x:188.337,y:20.544},{x:188.337,y:16.128},{x:188.337,y:11.712},{x:188.337,y:7.296},{x:192.753,y:24.96},{x:192.753,y:20.544},{x:192.753,y:7.296},{x:192.753,y:2.88},{x:192.753,y:42.624},{x:192.753,y:38.208},{x:197.169,y:24.96},{x:197.169,y:20.544},{x:197.169,y:7.296},{x:197.169,y:2.88},{x:197.169,y:42.624},{x:197.169,y:38.208},{x:214.833,y:24.96},{x:214.833,y:20.544},{x:214.833,y:7.296},{x:214.833,y:2.88},{x:214.833,y:42.624},{x:214.833,y:38.208},{x:192.753,y:33.792},{x:192.753,y:11.712},{x:201.585,y:11.712},{x:206.001,y:11.712},{x:210.417,y:11.712},{x:197.169,y:11.712},{x:214.833,y:11.712},{x:201.585,y:33.792},{x:206.001,y:33.792},{x:210.417,y:33.792},{x:197.169,y:33.792},{x:214.833,y:33.792},{x:206.001,y:16.128},{x:210.417,y:16.128},{x:214.833,y:16.128},{x:135.349,y:38.208},{x:135.349,y:33.792},{x:135.349,y:29.376},{x:135.349,y:24.96},{x:135.349,y:20.544},{x:135.349,y:16.128},{x:135.349,y:11.712},{x:135.349,y:7.296},{x:135.349,y:42.624},{x:139.765,y:38.208},{x:139.765,y:33.792},{x:139.765,y:2.88},{x:139.765,y:42.624},{x:157.429,y:38.208},{x:157.429,y:24.96},{x:157.429,y:20.544},{x:157.429,y:7.296},{x:157.429,y:2.88},{x:157.429,y:42.624},{x:161.845,y:24.96},{x:161.845,y:20.544},{x:161.845,y:7.296},{x:161.845,y:2.88},{x:161.845,y:42.624},{x:139.765,y:29.376},{x:139.765,y:24.96},{x:139.765,y:20.544},{x:139.765,y:16.128},{x:139.765,y:11.712},{x:139.765,y:7.296},{x:161.845,y:38.208},{x:166.261,y:24.96},{x:166.261,y:20.544},{x:166.261,y:7.296},{x:166.261,y:2.88},{x:166.261,y:42.624},{x:166.261,y:38.208},{x:144.181,y:38.208},{x:144.181,y:33.792},{x:144.181,y:2.88},{x:144.181,y:42.624},{x:144.181,y:29.376},{x:144.181,y:24.96},{x:144.181,y:20.544},{x:144.181,y:16.128},{x:144.181,y:11.712},{x:144.181,y:7.296},{x:148.597,y:24.96},{x:148.597,y:20.544},{x:148.597,y:7.296},{x:148.597,y:2.88},{x:148.597,y:42.624},{x:148.597,y:38.208},{x:153.013,y:24.96},{x:153.013,y:20.544},{x:153.013,y:7.296},{x:153.013,y:2.88},{x:153.013,y:42.624},{x:153.013,y:38.208},{x:170.677,y:24.96},{x:170.677,y:20.544},{x:170.677,y:7.296},{x:170.677,y:2.88},{x:170.677,y:42.624},{x:170.677,y:38.208},{x:148.597,y:33.792},{x:148.597,y:11.712},{x:157.429,y:11.712},{x:161.845,y:11.712},{x:166.261,y:11.712},{x:153.013,y:11.712},{x:170.677,y:11.712},{x:157.429,y:33.792},{x:161.845,y:33.792},{x:166.261,y:33.792},{x:153.013,y:33.792},{x:170.677,y:33.792},{x:161.845,y:16.128},{x:166.261,y:16.128},{x:170.677,y:16.128},{x:95.6085,y:42.624},{x:95.6085,y:38.208},{x:95.6085,y:33.792},{x:95.6085,y:29.376},{x:95.6085,y:24.96},{x:95.6085,y:20.544},{x:95.6085,y:16.128},{x:95.6085,y:11.712},{x:95.6085,y:7.296},{x:100.0242,y:42.624},{x:100.0242,y:38.208},{x:100.0242,y:33.792},{x:100.0242,y:29.376},{x:100.0242,y:24.96},{x:100.0242,y:20.544},{x:100.0242,y:16.128},{x:100.0242,y:11.712},{x:100.0242,y:7.296},{x:100.0242,y:2.88},{x:113.272,y:7.296},{x:113.272,y:2.88},{x:122.1045,y:16.128},{x:122.1045,y:11.712},{x:122.1045,y:7.296},{x:122.1045,y:2.88},{x:126.5205,y:16.128},{x:126.5205,y:11.712},{x:126.5205,y:7.296},{x:126.5205,y:2.88},{x:104.4405,y:11.712},{x:104.4405,y:7.296},{x:104.4405,y:2.88},{x:108.856,y:7.296},{x:108.856,y:2.88},{x:117.6885,y:7.296},{x:117.6885,y:2.88},{x:117.6885,y:16.128},{x:117.6885,y:11.712},{x:91.1925,y:42.624},{x:91.1925,y:38.208},{x:91.1925,y:33.792},{x:91.1925,y:29.376},{x:91.1925,y:24.96},{x:91.1925,y:20.544},{x:91.1925,y:16.128},{x:91.1925,y:11.712},{x:91.1925,y:7.296},{x:95.6085,y:2.88},{x:113.272,y:11.712},{x:122.1045,y:20.544},{x:126.5205,y:20.544},{x:108.856,y:11.712},{x:117.6885,y:20.544},{x:51.4523,y:7.296},{x:51.4523,y:2.88},{x:55.8683,y:7.296},{x:55.8683,y:2.88},{x:47.0363,y:29.376},{x:47.0363,y:24.96},{x:47.0363,y:20.544},{x:47.0363,y:16.128},{x:60.2843,y:42.624},{x:60.2843,y:38.208},{x:60.2843,y:33.792},{x:47.0363,y:38.208},{x:51.4523,y:29.376},{x:51.4523,y:24.96},{x:51.4523,y:38.208},{x:51.4523,y:33.792},{x:69.1163,y:38.208},{x:69.1163,y:33.792},{x:73.5323,y:38.208},{x:73.5323,y:33.792},{x:51.4523,y:20.544},{x:51.4523,y:16.128},{x:64.7003,y:42.624},{x:64.7003,y:38.208},{x:64.7003,y:33.792},{x:51.4523,y:42.624},{x:55.8683,y:29.376},{x:55.8683,y:24.96},{x:55.8683,y:38.208},{x:55.8683,y:33.792},{x:55.8683,y:20.544},{x:55.8683,y:16.128},{x:69.1163,y:42.624},{x:55.8683,y:42.624},{x:77.9484,y:38.208},{x:77.9484,y:33.792},{x:82.3643,y:38.208},{x:82.3643,y:33.792},{x:47.0363,y:7.296},{x:47.0363,y:2.88},{x:47.0363,y:11.712},{x:73.5323,y:42.624},{x:51.4523,y:11.712},{x:77.9484,y:42.624},{x:55.8683,y:11.712},{x:82.3643,y:42.624},{x:69.1163,y:20.544},{x:69.1163,y:16.128},{x:73.5323,y:20.544},{x:73.5323,y:16.128},{x:77.9484,y:20.544},{x:77.9484,y:16.128},{x:60.2843,y:16.128},{x:60.2843,y:20.544},{x:64.7003,y:20.544},{x:64.7003,y:16.128},{x:82.3643,y:20.544},{x:82.3643,y:16.128},{x:60.2843,y:11.712},{x:64.7003,y:11.712},{x:69.1163,y:11.712},{x:73.5323,y:11.712},{x:77.9484,y:11.712},{x:82.3643,y:11.712},{x:47.0363,y:33.792},{x:7.296,y:38.208},{x:7.296,y:33.792},{x:7.296,y:24.96},{x:7.296,y:20.544},{x:7.296,y:16.128},{x:7.296,y:11.712},{x:7.296,y:7.296},{x:7.296,y:42.624},{x:11.712,y:33.792},{x:11.712,y:24.96},{x:11.712,y:20.544},{x:11.712,y:16.128},{x:11.712,y:11.712},{x:11.712,y:7.296},{x:11.712,y:2.88},{x:11.712,y:42.624},{x:11.712,y:38.208},{x:20.544,y:24.96},{x:20.544,y:20.544},{x:20.544,y:7.296},{x:20.544,y:2.88},{x:20.544,y:42.624},{x:20.544,y:38.208},{x:33.792,y:29.376},{x:33.792,y:24.96},{x:33.792,y:20.544},{x:33.792,y:11.712},{x:33.792,y:7.296},{x:33.792,y:2.88},{x:33.792,y:42.624},{x:33.792,y:38.208},{x:33.792,y:33.792},{x:38.208,y:29.376},{x:38.208,y:24.96},{x:38.208,y:38.208},{x:38.208,y:33.792},{x:38.208,y:20.544},{x:38.208,y:11.712},{x:38.208,y:7.296},{x:38.208,y:2.88},{x:16.128,y:24.96},{x:16.128,y:20.544},{x:16.128,y:11.712},{x:16.128,y:7.296},{x:16.128,y:2.88},{x:16.128,y:42.624},{x:16.128,y:38.208},{x:16.128,y:33.792},{x:24.96,y:24.96},{x:24.96,y:20.544},{x:24.96,y:7.296},{x:24.96,y:2.88},{x:24.96,y:42.624},{x:24.96,y:38.208},{x:29.376,y:24.96},{x:29.376,y:20.544},{x:29.376,y:11.712},{x:29.376,y:7.296},{x:29.376,y:2.88},{x:29.376,y:42.624},{x:29.376,y:38.208},{x:29.376,y:33.792},{x:29.376,y:29.376},{x:24.96,y:11.712},{x:24.96,y:33.792},{x:20.544,y:11.712},{x:20.544,y:33.792},{x:2.88,y:38.208},{x:2.88,y:33.792},{x:2.88,y:24.96},{x:2.88,y:20.544},{x:2.88,y:16.128},{x:2.88,y:11.712},{x:2.88,y:7.296},{x:2.88,y:42.624},{x:7.296,y:2.88},{x:188.337,y:90.7119},{x:188.337,y:86.2959},{x:188.337,y:81.8799},{x:188.337,y:77.4639},{x:188.337,y:73.0479},{x:188.337,y:68.6319},{x:188.337,y:64.2159},{x:188.337,y:59.7999},{x:188.337,y:55.3839},{x:188.337,y:95.1279},{x:192.753,y:73.0479},{x:192.753,y:77.4639},{x:206.001,y:90.7119},{x:206.001,y:86.2959},{x:206.001,y:81.8799},{x:210.417,y:77.4639},{x:206.001,y:64.2159},{x:206.001,y:59.7999},{x:206.001,y:55.3839},{x:206.001,y:95.1279},{x:214.833,y:81.8799},{x:214.833,y:77.4639},{x:214.833,y:64.2159},{x:214.833,y:59.7999},{x:214.833,y:55.3839},{x:214.833,y:95.1279},{x:197.169,y:73.0479},{x:197.169,y:68.6319},{x:214.833,y:90.7119},{x:206.001,y:77.4639},{x:206.001,y:73.0479},{x:206.001,y:68.6319},{x:201.585,y:77.4639},{x:183.921,y:77.4639},{x:183.921,y:73.0479},{x:183.921,y:68.6319},{x:183.921,y:64.2159},{x:183.921,y:59.7999},{x:183.921,y:55.3839},{x:183.921,y:95.1279},{x:183.921,y:90.7119},{x:183.921,y:86.2959},{x:183.921,y:81.8799},{x:201.585,y:73.0479},{x:201.585,y:68.6319},{x:179.505,y:90.7119},{x:179.505,y:86.2959},{x:179.505,y:81.8799},{x:179.505,y:77.4639},{x:179.505,y:73.0479},{x:179.505,y:68.6319},{x:179.505,y:64.2159},{x:179.505,y:59.7999},{x:179.505,y:55.3839},{x:179.505,y:95.1279},{x:210.417,y:90.7119},{x:210.417,y:86.2959},{x:210.417,y:81.8799},{x:210.417,y:68.6319},{x:210.417,y:64.2159},{x:210.417,y:59.7999},{x:210.417,y:55.3839},{x:210.417,y:95.1279},{x:197.169,y:77.4639},{x:201.585,y:64.2159},{x:214.833,y:86.2959},{x:201.585,y:81.8799},{x:192.753,y:81.8799},{x:197.169,y:81.8799},{x:135.349,y:77.4639},{x:135.349,y:73.0479},{x:135.349,y:68.6319},{x:135.349,y:64.2159},{x:135.349,y:59.7999},{x:135.349,y:55.3839},{x:135.349,y:95.1279},{x:135.349,y:90.7119},{x:135.349,y:86.2959},{x:135.349,y:81.8799},{x:139.765,y:77.4639},{x:139.765,y:73.0479},{x:139.765,y:86.2959},{x:139.765,y:81.8799},{x:153.013,y:95.1279},{x:153.013,y:90.7119},{x:157.429,y:95.1279},{x:157.429,y:90.7119},{x:139.765,y:68.6319},{x:139.765,y:64.2159},{x:139.765,y:59.7999},{x:139.765,y:55.3839},{x:139.765,y:95.1279},{x:139.765,y:90.7119},{x:161.845,y:90.7119},{x:161.845,y:95.1279},{x:144.181,y:90.7119},{x:144.181,y:86.2959},{x:144.181,y:81.8799},{x:144.181,y:77.4639},{x:144.181,y:73.0479},{x:144.181,y:68.6319},{x:144.181,y:64.2159},{x:144.181,y:59.7999},{x:144.181,y:55.3839},{x:144.181,y:95.1279},{x:148.597,y:95.1279},{x:148.597,y:90.7119},{x:166.261,y:95.1279},{x:166.261,y:90.7119},{x:170.677,y:95.1279},{x:170.677,y:90.7119},{x:148.597,y:86.2959},{x:157.429,y:86.2959},{x:161.845,y:86.2959},{x:166.261,y:86.2959},{x:153.013,y:86.2959},{x:170.677,y:86.2959},{x:91.1925,y:90.7119},{x:91.1925,y:86.2959},{x:91.1925,y:77.4639},{x:104.44,y:95.1279},{x:104.44,y:90.7119},{x:91.1925,y:64.2159},{x:91.1925,y:59.7999},{x:95.6085,y:90.7119},{x:95.6085,y:86.2959},{x:95.6085,y:77.4639},{x:95.6085,y:73.0479},{x:108.8565,y:95.1279},{x:108.8565,y:90.7119},{x:95.6085,y:64.2159},{x:95.6085,y:59.7999},{x:95.6085,y:55.3839},{x:95.6085,y:95.1279},{x:108.8565,y:77.4639},{x:108.8565,y:73.0479},{x:108.8565,y:59.7999},{x:108.8565,y:55.3839},{x:113.272,y:86.2959},{x:113.272,y:77.4639},{x:113.272,y:73.0479},{x:113.272,y:64.2159},{x:113.272,y:59.7999},{x:113.272,y:55.3839},{x:117.6885,y:90.7119},{x:117.6885,y:86.2959},{x:117.6885,y:55.3839},{x:117.6885,y:95.1279},{x:117.6885,y:81.8799},{x:117.6885,y:77.4639},{x:117.6885,y:73.0479},{x:117.6885,y:68.6319},{x:117.6885,y:64.2159},{x:117.6885,y:59.7999},{x:122.104,y:90.7119},{x:122.104,y:86.2959},{x:122.104,y:81.8799},{x:122.104,y:77.4639},{x:122.104,y:73.0479},{x:122.104,y:68.6319},{x:122.104,y:64.2159},{x:122.104,y:59.7999},{x:122.104,y:55.3839},{x:122.104,y:95.1279},{x:100.0242,y:90.7119},{x:100.0242,y:86.2959},{x:100.0242,y:77.4639},{x:100.0242,y:73.0479},{x:113.272,y:95.1279},{x:113.272,y:90.7119},{x:100.0242,y:64.2159},{x:100.0242,y:59.7999},{x:100.0242,y:55.3839},{x:100.0242,y:95.1279},{x:104.44,y:77.4639},{x:104.44,y:73.0479},{x:104.44,y:59.7999},{x:104.44,y:55.3839},{x:126.5205,y:90.7119},{x:126.5205,y:86.2959},{x:126.5205,y:81.8799},{x:126.5205,y:77.4639},{x:126.5205,y:73.0479},{x:126.5205,y:68.6319},{x:126.5205,y:64.2159},{x:126.5205,y:59.7999},{x:126.5205,y:95.1279},{x:104.44,y:86.2959},{x:104.44,y:64.2159},{x:108.8565,y:86.2959},{x:108.8565,y:64.2159},{x:91.1925,y:55.3839},{x:91.1925,y:81.8799},{x:95.6085,y:81.8799},{x:100.0242,y:81.8799},{x:91.1925,y:95.1279},{x:51.4522,y:59.7999},{x:51.4522,y:55.3839},{x:55.8683,y:59.7999},{x:55.8683,y:55.3839},{x:60.2843,y:81.8799},{x:60.2843,y:77.4639},{x:60.2843,y:73.0479},{x:60.2843,y:68.6319},{x:60.2843,y:64.2159},{x:60.2843,y:59.7999},{x:60.2843,y:55.3839},{x:60.2843,y:95.1279},{x:60.2843,y:90.7119},{x:60.2843,y:86.2959},{x:64.7003,y:81.8799},{x:64.7003,y:77.4639},{x:64.7003,y:90.7119},{x:64.7003,y:86.2959},{x:69.1163,y:59.7999},{x:69.1163,y:55.3839},{x:73.5323,y:59.7999},{x:73.5323,y:55.3839},{x:64.7003,y:73.0479},{x:64.7003,y:68.6319},{x:64.7003,y:64.2159},{x:64.7003,y:59.7999},{x:64.7003,y:55.3839},{x:64.7003,y:95.1279},{x:69.1163,y:81.8799},{x:69.1163,y:77.4639},{x:69.1163,y:90.7119},{x:69.1163,y:86.2959},{x:69.1163,y:73.0479},{x:69.1163,y:68.6319},{x:69.1163,y:64.2159},{x:69.1163,y:95.1279},{x:77.9483,y:59.7999},{x:77.9483,y:55.3839},{x:82.3643,y:59.7999},{x:82.3643,y:55.3839},{x:47.0362,y:59.7999},{x:47.0362,y:55.3839},{x:47.0362,y:64.2159},{x:73.5323,y:64.2159},{x:51.4522,y:64.2159},{x:77.9483,y:64.2159},{x:55.8683,y:64.2159}];
+
+const VIEW_BOX = { width: 262, height: 98 };
+const BASE_RADIUS = 2.88;
+const RADIUS_MULTIPLIER = 2.5;
+const DURATION_MS = 250;
+
 export default function InteractiveDotMatrixFooter() {
-  const canvasRef = useRef(null);
   const containerRef = useRef(null);
+  const canvasRef = useRef(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
     const container = containerRef.current;
-    if (!canvas || !container) return;
+    const canvas = canvasRef.current;
+    if (!container || !canvas) return;
 
     const ctx = canvas.getContext('2d');
-    let animationFrameId;
+    if (!ctx) return;
+
+    let animId = 0;
     let dots = [];
-    const mouse = { x: -2000, y: -2000, targetX: -2000, targetY: -2000, active: false };
+    let scaledRadius = BASE_RADIUS;
+    let isMouseOver = false;
 
-    // Function to render justified bold characters perfectly spanning targetWidth
-    const drawJustifiedText = (targetCtx, text, centerX, centerY, fontSize, targetWidth, fontFamily) => {
-      targetCtx.font = `950 ${fontSize}px ${fontFamily}`;
-      targetCtx.textAlign = 'center';
-      targetCtx.textBaseline = 'middle';
-
-      if (text.length <= 1) {
-        targetCtx.fillText(text, centerX, centerY);
-        return;
-      }
-
-      let totalCharWidth = 0;
-      const charWidths = [];
-      for (let i = 0; i < text.length; i++) {
-        const w = targetCtx.measureText(text[i]).width;
-        charWidths.push(w);
-        totalCharWidth += w;
-      }
-
-      // If text naturally exceeds target width, adjust or use single block
-      if (totalCharWidth >= targetWidth) {
-        targetCtx.fillText(text, centerX, centerY);
-        return;
-      }
-
-      const gap = (targetWidth - totalCharWidth) / (text.length - 1);
-      let currentX = centerX - targetWidth / 2;
-
-      for (let i = 0; i < text.length; i++) {
-        const charCenterX = currentX + charWidths[i] / 2;
-        targetCtx.fillText(text[i], charCenterX, centerY);
-        currentX += charWidths[i] + gap;
-      }
+    const clearCanvas = () => {
+      const dpr = window.devicePixelRatio || 1;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, container.clientWidth, container.clientHeight);
     };
 
-    const initDots = () => {
-      const rect = container.getBoundingClientRect();
-      const width = Math.max(rect.width || 0, window.innerWidth || 1200);
-      const isMobile = width < 768;
-      const height = isMobile ? 360 : 540;
+    const renderDots = (now) => {
+      clearCanvas();
+      ctx.fillStyle = '#ffffff';
+      let hasActive = false;
 
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      canvas.width = width * dpr;
-      canvas.height = height * dpr;
-      canvas.style.width = `${width}px`;
-      canvas.style.height = `${height}px`;
-      ctx.scale(dpr, dpr);
-
-      // Offscreen canvas for crisp pixel sampling
-      const offscreen = document.createElement('canvas');
-      offscreen.width = width;
-      offscreen.height = height;
-      const offCtx = offscreen.getContext('2d');
-
-      const line1 = 'BRAND';
-      const line2 = 'SCALING';
-
-      const fontFamily = '"Impact", "Arial Black", "Cabinet Grotesk", "Space Grotesk", sans-serif';
-
-      // Width span for both lines (e.g. 92% of container width on desktop, 94% on mobile)
-      const targetSpanWidth = width * (isMobile ? 0.94 : 0.92);
-
-      // Height cap so both lines never overlap and never clip canvas borders
-      const maxLineHeight = height * (isMobile ? 0.34 : 0.36);
-      
-      // Calculate font size based on the longer word ("SCALING") fitting targetSpanWidth & maxLineHeight
-      offCtx.font = `950 100px ${fontFamily}`;
-      const mScaling = offCtx.measureText(line2).width;
-      const calculatedFontSize = Math.min(
-        100 * (targetSpanWidth / mScaling),
-        maxLineHeight
-      );
-
-      offCtx.fillStyle = '#ffffff';
-
-      // Position Line 1 ("BRAND") in top half with safe margins
-      const y1 = height * 0.27;
-      drawJustifiedText(offCtx, line1, width / 2, y1, calculatedFontSize, targetSpanWidth, fontFamily);
-
-      // Position Line 2 ("SCALING") in bottom half with safe margins
-      const y2 = height * 0.73;
-      drawJustifiedText(offCtx, line2, width / 2, y2, calculatedFontSize, targetSpanWidth, fontFamily);
-
-      // Dot sampling grid matching StreetTalk reference
-      const imgData = offCtx.getImageData(0, 0, width, height).data;
-      const spacing = isMobile ? 13 : 17;
-      const newDots = [];
-
-      for (let y = 0; y < height; y += spacing) {
-        for (let x = 0; x < width; x += spacing) {
-          const index = (y * width + x) * 4;
-          const alpha = imgData[index + 3];
-
-          if (alpha > 70) {
-            newDots.push({
-              x,
-              y,
-              baseRadius: isMobile ? 4.8 : 6.6,
-              currentRadius: isMobile ? 4.8 : 6.6,
-              maxRadius: isMobile ? 9.5 : 13.0,
-              glowIntensity: 0
-            });
-          }
+      for (let dot of dots) {
+        if (dot.offAt > now) {
+          ctx.beginPath();
+          ctx.arc(dot.x, dot.y, scaledRadius, 0, Math.PI * 2);
+          ctx.fill();
+          hasActive = true;
         }
       }
-
-      dots = newDots;
+      return hasActive;
     };
 
-    if (document.fonts) {
-      document.fonts.ready.then(() => {
-        initDots();
-      });
-    } else {
-      setTimeout(initDots, 50);
-    }
-
-    const handleMouseMove = (e) => {
-      const rect = canvas.getBoundingClientRect();
-      mouse.targetX = e.clientX - rect.left;
-      mouse.targetY = e.clientY - rect.top;
-      mouse.active = true;
-    };
-
-    const handleMouseLeave = () => {
-      mouse.active = false;
-      mouse.targetX = -2000;
-      mouse.targetY = -2000;
-    };
-
-    const handleTouchMove = (e) => {
-      if (e.touches.length > 0) {
-        const rect = canvas.getBoundingClientRect();
-        mouse.targetX = e.touches[0].clientX - rect.left;
-        mouse.targetY = e.touches[0].clientY - rect.top;
-        mouse.active = true;
+    const loop = (now) => {
+      const active = renderDots(now);
+      if (active) {
+        animId = requestAnimationFrame(loop);
+      } else {
+        animId = 0;
       }
     };
 
-    const handleTouchEnd = () => {
-      mouse.active = false;
-      mouse.targetX = -2000;
-      mouse.targetY = -2000;
+    const startLoop = () => {
+      if (!animId) {
+        animId = requestAnimationFrame(loop);
+      }
     };
 
-    const containerEl = container;
-    containerEl.addEventListener('mousemove', handleMouseMove);
-    containerEl.addEventListener('mouseleave', handleMouseLeave);
-    containerEl.addEventListener('touchmove', handleTouchMove, { passive: true });
-    containerEl.addEventListener('touchend', handleTouchEnd);
-
-    let resizeTimer;
     const handleResize = () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(() => {
-        initDots();
-      }, 100);
-    };
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      if (w < 8 || h < 8) return;
 
-    window.addEventListener('resize', handleResize);
+      const dpr = window.devicePixelRatio || 1;
+      const pixelW = Math.round(w * dpr);
+      const pixelH = Math.round(h * dpr);
 
-    const EFFECT_RADIUS = 160;
-
-    const render = () => {
-      mouse.x += (mouse.targetX - mouse.x) * 0.22;
-      mouse.y += (mouse.targetY - mouse.y) * 0.22;
-
-      const width = canvas.width / (window.devicePixelRatio || 1);
-      const height = canvas.height / (window.devicePixelRatio || 1);
-
-      ctx.clearRect(0, 0, width, height);
-
-      for (let i = 0; i < dots.length; i++) {
-        const dot = dots[i];
-        const dx = mouse.x - dot.x;
-        const dy = mouse.y - dot.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        let targetRadius = dot.baseRadius;
-        let targetGlow = 0;
-
-        if (dist < EFFECT_RADIUS) {
-          const factor = Math.cos((dist / EFFECT_RADIUS) * (Math.PI / 2));
-          targetRadius = dot.baseRadius + (dot.maxRadius - dot.baseRadius) * factor;
-          targetGlow = factor;
-        }
-
-        dot.currentRadius += (targetRadius - dot.currentRadius) * 0.25;
-        dot.glowIntensity += (targetGlow - dot.glowIntensity) * 0.25;
-
-        ctx.beginPath();
-        ctx.arc(dot.x, dot.y, Math.max(0.5, dot.currentRadius), 0, Math.PI * 2);
-
-        if (dot.glowIntensity > 0.04) {
-          // Luminous hover state with crisp circular dot outline (StreetTalk match)
-          const alpha = 0.45 + dot.glowIntensity * 0.55;
-          ctx.fillStyle = `rgba(255, 255, 255, ${alpha.toFixed(2)})`;
-
-          if (dot.glowIntensity > 0.3) {
-            ctx.shadowColor = 'rgba(255, 112, 67, 0.85)';
-            ctx.shadowBlur = 14 * dot.glowIntensity;
-          } else {
-            ctx.shadowColor = 'transparent';
-            ctx.shadowBlur = 0;
-          }
-        } else {
-          // Resting state: bold, dark amber/copper halftone dots
-          ctx.fillStyle = 'rgba(255, 112, 67, 0.36)';
-          ctx.shadowColor = 'transparent';
-          ctx.shadowBlur = 0;
-        }
-
-        ctx.fill();
+      if (canvas.width !== pixelW || canvas.height !== pixelH) {
+        canvas.width = pixelW;
+        canvas.height = pixelH;
       }
 
-      ctx.shadowColor = 'transparent';
-      ctx.shadowBlur = 0;
+      const scaleX = w / VIEW_BOX.width;
+      const scaleY = h / VIEW_BOX.height;
+      scaledRadius = BASE_RADIUS * scaleX;
 
-      animationFrameId = requestAnimationFrame(render);
+      dots = DOT_COORDINATES.map((d) => ({
+        x: d.x * scaleX,
+        y: d.y * scaleY,
+        offAt: 0
+      }));
+
+      if (animId) cancelAnimationFrame(animId);
+      animId = 0;
+      clearCanvas();
     };
 
-    render();
+    const handlePointerMove = (e) => {
+      if (dots.length === 0) return;
+      const rect = canvas.getBoundingClientRect();
+      if (rect.width === 0 || rect.height === 0) return;
+
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      const hitRadius = scaledRadius * 2 * RADIUS_MULTIPLIER;
+      const hitRadiusSq = hitRadius * hitRadius;
+      const offTime = performance.now() + DURATION_MS;
+
+      let triggered = false;
+      for (let dot of dots) {
+        const dx = dot.x - mouseX;
+        const dy = dot.y - mouseY;
+        if (dx * dx + dy * dy < hitRadiusSq) {
+          dot.offAt = offTime;
+          triggered = true;
+        }
+      }
+
+      if (triggered) {
+        startLoop();
+      }
+    };
+
+    handleResize();
+
+    const resizeObserver = new ResizeObserver(() => {
+      handleResize();
+    });
+    resizeObserver.observe(container);
+
+    container.addEventListener('pointermove', handlePointerMove);
+    container.addEventListener('pointerenter', handlePointerMove);
 
     return () => {
-      cancelAnimationFrame(animationFrameId);
-      containerEl.removeEventListener('mousemove', handleMouseMove);
-      containerEl.removeEventListener('mouseleave', handleMouseLeave);
-      containerEl.removeEventListener('touchmove', handleTouchMove);
-      containerEl.removeEventListener('touchend', handleTouchEnd);
-      window.removeEventListener('resize', handleResize);
+      if (animId) cancelAnimationFrame(animId);
+      resizeObserver.disconnect();
+      container.removeEventListener('pointermove', handlePointerMove);
+      container.removeEventListener('pointerenter', handlePointerMove);
     };
   }, []);
 
   return (
     <div
       ref={containerRef}
-      className="streettalk-watermark-wrap"
+      className="st-footer-logo"
       style={{
         position: 'relative',
         width: '100%',
-        minHeight: '520px',
-        margin: '10px 0 20px 0',
-        cursor: 'crosshair',
+        maxWidth: '1600px',
+        margin: '0 auto',
+        display: 'flex',
+        justifyContent: 'center',
+        cursor: 'default',
         userSelect: 'none'
       }}
     >
+      {/* Base wordmark svg underlay */}
+      <img
+        src="/assets/street_talk_logo.svg"
+        alt="StreetTalk"
+        className="st-footer-wordmark"
+        style={{
+          width: '100%',
+          height: 'auto',
+          display: 'block',
+          opacity: 0.18,
+          pointerEvents: 'none'
+        }}
+      />
+
+      {/* Interactive Canvas on Top */}
       <canvas
         ref={canvasRef}
+        className="st-footer-dots"
         style={{
-          display: 'block',
+          position: 'absolute',
+          inset: 0,
           width: '100%',
-          height: '100%'
+          height: '100%',
+          pointerEvents: 'none'
         }}
       />
     </div>

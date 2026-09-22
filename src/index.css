@@ -3033,207 +3033,229 @@ button {
 }
 
 /* ==========================================================================
-   BRAND SCALING HACKS LUXURY FOOTER (STREETTALK REFERENCE MATCH)
+   STREETTALK EXACT FOOTER REPLICA (https://www.streettalk.com/)
    ========================================================================== */
-.streettalk-footer {
-  background: #06090f;
-  background-image: radial-gradient(ellipse at 50% 100%, rgba(255, 112, 67, 0.08) 0%, transparent 70%);
-  color: #ffffff;
-  padding: 70px 0 30px 0;
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+.st-footer {
+  padding: 1rem;
+  background: #080b11;
 }
 
-.streettalk-container {
-  max-width: 1440px;
-  width: 92%;
+.st-footer-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 4.5rem 2rem 2rem;
+  background-color: #4141ee;
+  border-radius: 24px;
+  overflow: hidden;
+  color: #ffffff;
+  width: 100%;
+}
+
+.st-footer-container {
+  width: 100%;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
-.streettalk-grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.6fr;
-  gap: 50px;
-  margin-bottom: 20px;
-  text-align: left;
+.st-footer-groups {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
 }
 
-.streettalk-col-title {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 18px;
-  letter-spacing: -0.01em;
-}
-
-.streettalk-legal-p {
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: #94a3b8;
-  font-weight: 500;
-}
-
-.streettalk-links-list {
-  list-style: none;
+.st-footer-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 0;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.st-footer-group-meta {
+  flex: 1.2;
+}
+
+.st-footer-group-newsletter {
+  min-width: 21.25rem;
+  flex: 1.4;
+}
+
+.st-footer-heading,
+.st-footer-address,
+.st-footer-link {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  text-transform: none;
   margin: 0;
 }
 
-.streettalk-links-list button,
-.streettalk-links-list a {
-  color: #cbd5e1;
-  font-size: 0.92rem;
-  font-weight: 500;
+.st-footer-link {
   text-decoration: none;
-  background: none;
-  border: none;
-  padding: 0;
   cursor: pointer;
-  text-align: left;
-  transition: all 0.2s ease;
+  transition: opacity 0.2s ease;
+  width: fit-content;
 }
 
-.streettalk-links-list button:hover,
-.streettalk-links-list a:hover {
-  color: #ff7043;
-  transform: translateX(2px);
+.st-footer-link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
 }
 
-.streettalk-newsletter-form {
-  margin-bottom: 12px;
+.st-footer-link-small {
+  font-size: 0.875rem;
 }
 
-.streettalk-input-wrap {
+.st-footer-form {
   display: flex;
-  align-items: center;
-  border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
-  padding-bottom: 8px;
-  justify-content: space-between;
-  gap: 12px;
-  transition: border-color 0.25s ease;
+  flex-direction: column;
+  width: 100%;
+  max-width: 36.375rem;
 }
 
-.streettalk-input-wrap:focus-within {
-  border-bottom-color: #ff7043;
+.st-newsletter-form {
+  width: 100%;
 }
 
-.streettalk-email-input {
+.st-newsletter-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  width: 100%;
+}
+
+.st-newsletter-input {
+  appearance: none;
+  width: 100%;
+  min-width: 0;
+  box-shadow: none;
+  flex: auto;
+  margin: 0;
+  border: none;
+  border-bottom: 1.5px solid #ffffff;
+  height: 2.2rem;
+  color: #ffffff;
+  caret-color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 500;
   background: transparent;
-  border: none;
+  border-radius: 0;
+  padding: 0 0 0.5rem;
+  line-height: 1;
   outline: none;
-  color: #ffffff;
-  font-size: 1rem;
-  width: 100%;
-  font-weight: 500;
 }
 
-.streettalk-email-input::placeholder {
-  color: #64748b;
+.st-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.streettalk-subscribe-btn {
+.st-newsletter-submit {
+  appearance: none;
+  cursor: pointer;
+  flex: none;
+  margin: 0;
+  padding: 0.5625rem 1.5rem;
   background: #ffffff;
-  color: #090d16;
-  font-weight: 800;
-  font-size: 0.85rem;
-  padding: 7px 22px;
   border-radius: 9999px;
+  color: #4141ee;
+  font-size: 0.85rem;
+  font-weight: 700;
   border: none;
-  cursor: pointer;
-  transition: all 0.25s ease;
-  white-space: nowrap;
-  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.15);
+  line-height: 1;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.streettalk-subscribe-btn:hover {
-  background: #ff7043;
-  color: #ffffff;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 112, 67, 0.5);
+.st-newsletter-submit:hover {
+  opacity: 0.92;
+  transform: scale(1.02);
 }
 
-.streettalk-disclaimer {
+.st-newsletter-status {
+  margin: 0.5rem 0 0;
   font-size: 0.8rem;
-  color: #64748b;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.st-footer-form-note {
+  margin: 0.75rem 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
   line-height: 1.4;
-  margin-top: 8px;
 }
 
-/* Giant Dot Matrix / Halftone Typographic Watermark (Exact StreetTalk.com Interactive Match) */
-.streettalk-watermark-wrap {
-  position: relative;
+.st-footer-logo {
   width: 100%;
-  overflow: hidden;
-  padding: 10px 0 0 0;
-  text-align: center;
-  user-select: none;
-  pointer-events: auto;
-  cursor: crosshair;
+  max-width: 90rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
 }
 
-.streettalk-bottom-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 14px;
-  padding-top: 10px;
+.st-footer-wordmark {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.streettalk-bottom-links {
+.st-footer-dots {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.st-footer-policy {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 2rem;
   flex-wrap: wrap;
+  align-items: center;
+  padding-top: 1rem;
 }
 
-.streettalk-bottom-btn {
-  background: none;
-  border: none;
-  color: #64748b;
-  font-size: 0.82rem;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 0;
-  transition: color 0.2s ease;
-}
-
-.streettalk-bottom-btn:hover {
-  color: #cbd5e1;
-}
-
-.streettalk-bottom-copy {
-  color: #64748b;
-  font-size: 0.82rem;
-  font-weight: 500;
+.st-footer-copyright {
+  color: #ffffff;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {
-  .streettalk-grid {
+  .st-footer-groups {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 36px;
+    gap: 2.5rem;
+  }
+  .st-footer-group-meta,
+  .st-footer-group-newsletter {
+    grid-column: 1 / -1;
   }
 }
 
 @media (max-width: 640px) {
-  .streettalk-grid {
+  .st-footer-card {
+    padding: 3rem 1.25rem 1.5rem;
+    border-radius: 16px;
+    gap: 2rem;
+  }
+  .st-footer-groups {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 2rem;
   }
-  .footer-top-pill-bar {
+  .st-footer-policy {
     flex-direction: column;
-    border-radius: 20px;
-    padding: 14px;
-    width: 100%;
-  }
-  .footer-pill-menu-btn {
-    border-left: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-    padding-top: 8px;
+    align-items: flex-start;
+    gap: 0.75rem;
   }
 }
 

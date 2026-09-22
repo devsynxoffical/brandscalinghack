@@ -3,96 +3,102 @@ import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
 
 export default function Footer({ onNavigate, onOpenBooking }) {
   const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
+  const [status, setStatus] = useState(null);
 
   const handleSubscribe = (e) => {
     e.preventDefault();
     if (email.trim()) {
-      setSubscribed(true);
+      setStatus('Thanks for signing up.');
       setTimeout(() => {
-        setSubscribed(false);
         setEmail('');
-      }, 3500);
+        setStatus(null);
+      }, 4000);
     }
   };
 
   return (
-    <footer className="streettalk-footer">
-      <div className="container streettalk-container">
-        {/* Top 4 Columns Main Grid (Exact Reference Match) */}
-        <div className="streettalk-grid">
-          {/* Column 1: Copyright & Legal Address */}
-          <div className="streettalk-col">
-            <p className="streettalk-legal-p">
-              © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved.<br />
-              AI training prohibited.
-            </p>
-            <p className="streettalk-legal-p" style={{ marginTop: '20px' }}>
-              27 W 24 Street<br />
-              Suite 702<br />
-              New York, NY 10010
-            </p>
-          </div>
+    <footer className="st-footer">
+      <div className="st-footer-card">
+        <div className="st-footer-container">
+          {/* Top 4 Navigation & Info Groups */}
+          <div className="st-footer-groups">
+            {/* Meta */}
+            <div className="st-footer-group st-footer-group-meta">
+              <p className="st-footer-heading">
+                © 2026 Street Talk LLC. All rights reserved. AI training prohibited.
+              </p>
+              <p className="st-footer-address">
+                27 W 24 Street<br />
+                Suite 702<br />
+                New York, NY 10010
+              </p>
+            </div>
 
-          {/* Column 2: Site Navigation */}
-          <div className="streettalk-col">
-            <h4 className="streettalk-col-title">Site</h4>
-            <ul className="streettalk-links-list">
-              <li><button onClick={() => onNavigate('home')}>Home</button></li>
-              <li><button onClick={() => onNavigate('case-studies')}>Case Studies</button></li>
-              <li><button onClick={() => onNavigate('viral-creatives')}>Viral Creatives</button></li>
-              <li><button onClick={() => onNavigate('growth')}>Video Library</button></li>
-              <li><button onClick={() => onNavigate('case-studies')}>Terms of Service</button></li>
-              <li><button onClick={() => onNavigate('about')}>Privacy</button></li>
-            </ul>
-          </div>
+            {/* Site */}
+            <div className="st-footer-group">
+              <h3 className="st-footer-heading">Site</h3>
+              <a className="st-footer-link" href="#home" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }}>Home</a>
+              <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Careers</a>
+              <a className="st-footer-link" href="#viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>StreetBlog</a>
+              <a className="st-footer-link" href="#growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Video Library</a>
+              <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Terms of Service</a>
+              <a className="st-footer-link" href="#about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>Privacy</a>
+            </div>
 
-          {/* Column 3: Find Us / Socials */}
-          <div className="streettalk-col">
-            <h4 className="streettalk-col-title">Find Us</h4>
-            <ul className="streettalk-links-list">
-              <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li><a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a></li>
-              <li><a href="https://www.instagram.com/gauravecomm/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-              <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-              <li><a href="https://reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a></li>
-            </ul>
-          </div>
+            {/* Find Us */}
+            <div className="st-footer-group">
+              <h3 className="st-footer-heading">Find Us</h3>
+              <a className="st-footer-link" href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
+              <a className="st-footer-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a className="st-footer-link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+              <a className="st-footer-link" href="https://www.instagram.com/gauravecomm/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className="st-footer-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a className="st-footer-link" href="https://reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a>
+            </div>
 
-          {/* Column 4: Newsletter Subscription */}
-          <div className="streettalk-col">
-            <h4 className="streettalk-col-title">Newsletter</h4>
-            <form onSubmit={handleSubscribe} className="streettalk-newsletter-form">
-              <div className="streettalk-input-wrap">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="streettalk-email-input"
-                  required
-                />
-                <button type="submit" className="streettalk-subscribe-btn">
-                  {subscribed ? 'Joined!' : 'Subscribe'}
-                </button>
+            {/* Newsletter */}
+            <div className="st-footer-group st-footer-group-newsletter">
+              <h3 className="st-footer-heading">Newsletter</h3>
+              <div className="st-footer-form">
+                <form onSubmit={handleSubscribe} className="st-newsletter-form">
+                  <div className="st-newsletter-row">
+                    <input
+                      className="st-newsletter-input"
+                      type="email"
+                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                    />
+                    <button className="st-newsletter-submit" type="submit">
+                      Subscribe
+                    </button>
+                  </div>
+                  {status && <p className="st-newsletter-status">{status}</p>}
+                </form>
+                <p className="st-footer-form-note">
+                  By signing up, you agree to our Privacy Policy
+                </p>
               </div>
-            </form>
-            <p className="streettalk-disclaimer">
-              By signing up, you agree to our Privacy Policy
-            </p>
+            </div>
           </div>
         </div>
 
-        {/* Full-Width Giant Interactive Dot Matrix Typography (Reference StreetTalk Style) */}
+        {/* Center Giant Interactive Dot Matrix Wordmark */}
         <InteractiveDotMatrixFooter />
 
-        {/* Bottom Sub-Bar */}
-        <div className="streettalk-bottom-bar">
-          <div className="streettalk-bottom-links">
-            <button onClick={() => onNavigate('about')} className="streettalk-bottom-btn">Privacy Policy</button>
-            <button onClick={() => onNavigate('case-studies')} className="streettalk-bottom-btn">Terms of Service</button>
-            <span className="streettalk-bottom-copy">© {new Date().getFullYear()} BrandScaling. All Rights Reserved.</span>
+        {/* Bottom Policy Row */}
+        <div className="st-footer-container">
+          <div className="st-footer-policy">
+            <a className="st-footer-link st-footer-link-small" href="#privacy" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>
+              Privacy Policy
+            </a>
+            <a className="st-footer-link st-footer-link-small" href="#terms" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>
+              Terms of Service
+            </a>
+            <p className="st-footer-copyright">
+              © 2026 StreetTalk. All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>
