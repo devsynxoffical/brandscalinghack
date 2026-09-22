@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { liveResultsProof } from '../data/mockData';
 
 export const ugcCreativesList = [
@@ -161,11 +161,6 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
                   className="ss3-clean-img"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
-                
-                {/* Play icon badge */}
-                <div className="ss3-clean-play-badge">
-                  <Play size={14} fill="#fff" />
-                </div>
 
                 {/* UGC On-Screen Hook Pill */}
                 <div className="ss3-clean-hook-pill">
@@ -207,11 +202,6 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
                   className="ss3-clean-img"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
-                
-                {/* Play icon badge */}
-                <div className="ss3-clean-play-badge">
-                  <Play size={14} fill="#fff" />
-                </div>
 
                 {/* UGC On-Screen Hook Pill */}
                 <div className="ss3-clean-hook-pill">

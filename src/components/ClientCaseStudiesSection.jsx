@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { liveResultsProof } from '../data/mockData';
-import { Play, ArrowRight, ExternalLink, Sparkles } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 function CaseStudyCard({ study, onOpenModal }) {
@@ -35,17 +35,16 @@ function CaseStudyCard({ study, onOpenModal }) {
         {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
         <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
 
-        {/* Video Player (autoplays smoothly in loop) */}
+        {/* Video Player (plays on hover or fallback to poster image) */}
         {study.video ? (
           <video
             ref={videoRef}
             src={study.video}
             poster={study.image}
-            autoPlay
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             className="showcase-card-img"
             style={{
               position: 'relative',
@@ -58,33 +57,6 @@ function CaseStudyCard({ study, onOpenModal }) {
         ) : (
           <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
         )}
-
-        {/* Center Play Button Overlay (fades out on hover when video is active) */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 5,
-            width: '48px',
-            height: '48px',
-            borderRadius: '50%',
-            background: 'rgba(0, 0, 0, 0.65)',
-            border: '1.5px solid rgba(255, 87, 34, 0.8)',
-            backdropFilter: 'blur(6px)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 8px 20px rgba(0,0,0,0.7)',
-            transition: 'all 0.25s ease',
-            opacity: isHovered ? 0.2 : 1,
-            pointerEvents: 'none'
-          }}
-          className="card-play-hover-btn"
-        >
-          <Play size={20} color="#ff7043" fill="#ff7043" style={{ marginLeft: '2px' }} />
-        </div>
 
         {/* Top Badge */}
         <div className="showcase-brand-badge">

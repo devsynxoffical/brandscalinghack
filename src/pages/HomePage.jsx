@@ -25,7 +25,6 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
       <RepeatableGrowthSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
-        onOpenInstagramModal={onOpenInstagramModal}
       />
 
       {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}

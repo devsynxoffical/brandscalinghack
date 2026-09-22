@@ -1,106 +1,82 @@
 import React from 'react';
-import { ArrowUpRight, Play } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export const creativeGridItems = [
   {
-    id: 'reel-76',
+    id: 'ad-1',
     topBanner: '€118,838.09 LIVE META ADS PROOF',
     topSub: 'COLUMNS: BRAND SCALING HACKS™',
     hook: 'Meta Ads Manager Live',
-    image: '/assets/instagram_thumbs/reel_Db3hW_mupo1.jpg',
-    video: '/assets/instagram_videos/reel_Db3hW_mupo1.mp4',
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
     url: 'https://www.instagram.com/reel/Db3hW_mupo1/',
     tag: '€118,838.09 Sales',
-    roas: '4.90x ROAS',
-    badge: 'Meta Ads Framework',
-    category: 'Meta Scaling',
     bannerBg: '#ffffff',
     textColor: '#0f172a',
     isVideo: true
   },
   {
-    id: 'reel-75',
-    topBanner: '$3.5M CASE STUDY: REVEALED',
-    topSub: '$3,553,858.35 TOTAL REVENUE',
-    hook: '8-Figure System',
-    image: '/assets/instagram_thumbs/reel_C9CPs88t1qa.jpg',
-    video: '/assets/instagram_videos/reel_C9CPs88t1qa.mp4',
-    url: 'https://www.instagram.com/reel/C9CPs88t1qa/',
-    tag: '$3.5M Case Study',
-    roas: '4.80x ROAS',
-    badge: '$3.5M Case Study',
-    category: '8-Figure Proof',
-    bannerBg: 'rgba(0,0,0,0.75)',
-    textColor: '#ffffff',
-    isVideo: true
-  },
-  {
-    id: 'reel-77',
-    topBanner: 'YOUR COMPETITORS ARE STILL SLEEPING',
-    topSub: '€126,168.44 IN 20 DAYS • 1,523 PURCHASES',
-    hook: '20-Day Sprint',
-    image: '/assets/instagram_thumbs/reel_DbCVqzFhiLU.jpg',
-    video: '/assets/instagram_videos/reel_DbCVqzFhiLU.mp4',
-    url: 'https://www.instagram.com/reel/DbCVqzFhiLU/',
-    tag: '€126,168 in 20d',
-    roas: '5.60x ROAS',
-    badge: 'Six Figures Scale',
-    category: 'Meta Scaling',
-    bannerBg: '#ffffff',
-    textColor: '#0f172a',
-    isVideo: true
-  },
-  {
-    id: 'reel-78',
+    id: 'ad-2',
     topBanner: 'SCALING DTC MEDIA BUYING',
     topSub: 'GAURAV KAPOOR STRATEGY BREAKDOWN',
     hook: 'Founder Breakdown',
-    image: '/assets/instagram_thumbs/reel_DPI2h3TARq_.jpg',
-    video: '/assets/instagram_videos/reel_DPI2h3TARq_.mp4',
-    url: 'https://www.instagram.com/reel/DPI2h3TARq_/',
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
+    url: 'https://www.instagram.com/reel/DbBMshACSuX/',
     tag: 'Strategy Engine',
-    roas: '5.20x ROAS',
-    badge: 'Live Ad Accounts',
-    category: 'CRO & Funnels',
     bannerBg: '#fef08a',
     textColor: '#854d0e',
     isVideo: true
   },
   {
-    id: 'reel-79',
-    topBanner: 'CREATIVE TESTING BLUEPRINT',
+    id: 'ad-3',
+    topBanner: '$3.5M CASE STUDY: REVEALED',
+    topSub: '$3,553,858.35 TOTAL REVENUE',
+    hook: '8-Figure System',
+    image: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
+    url: 'https://www.instagram.com/reel/C9CPs88t1qa/',
+    tag: '$3.5M Case Study',
+    bannerBg: 'rgba(0,0,0,0.75)',
+    textColor: '#ffffff',
+    isVideo: true
+  },
+  {
+    id: 'ad-4',
+    topBanner: 'YOUR COMPETITORS ARE STILL SLEEPING',
+    topSub: '€126,168.44 IN 20 DAYS • 1,523 PURCHASES',
+    hook: '20-Day Sprint',
+    image: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg',
+    url: 'https://www.instagram.com/reel/DbCVqzFhiLU/',
+    tag: '€126,168 in 20d',
+    bannerBg: '#ffffff',
+    textColor: '#0f172a',
+    isVideo: true
+  },
+  {
+    id: 'ad-5',
+    topBanner: '5 ONLINE BUSINESSES TO CONSIDER',
     topSub: 'ZERO TO SCALE METHODOLOGY',
-    hook: 'Creative Engine',
-    image: '/assets/instagram_thumbs/reel_C9RU-C9yhfU.jpg',
-    video: '/assets/instagram_videos/reel_C9RU-C9yhfU.mp4',
-    url: 'https://www.instagram.com/reel/C9RU-C9yhfU/',
-    tag: 'Creative Scale',
-    roas: '4.90x ROAS',
-    badge: 'Creative Testing',
-    category: 'Creative Hooks',
+    hook: 'Business Blueprint',
+    image: '/assets/instagram_thumbs/insta_5_DcO79UbMIFx.jpg',
+    url: 'https://www.instagram.com/reel/DcO79UbMIFx/',
+    tag: 'Zero to Scale',
     bannerBg: 'rgba(0,0,0,0.85)',
     textColor: '#ffffff',
     isVideo: true
   },
   {
-    id: 'reel-64',
+    id: 'ad-6',
     topBanner: '$102,190 GENERATED IN 28 DAYS',
     topSub: '$17,289 SPEND • 5.91X BLENDED ROAS',
     hook: 'DTC Scale Formula',
-    image: '/assets/instagram_thumbs/reel_DBE4BLBo-U-.jpg',
-    video: '/assets/instagram_videos/reel_DBE4BLBo-U-.mp4',
-    url: 'https://www.instagram.com/reel/DBE4BLBo-U-/',
+    image: '/assets/instagram_thumbs/insta_9_DN6WAbIkwOZ.jpg',
+    url: 'https://www.instagram.com/reel/DN6WAbIkwOZ/',
     tag: '5.91x ROAS',
-    roas: '5.91x ROAS',
-    badge: 'Meta Ads Framework',
-    category: 'Meta Scaling',
     bannerBg: '#ffffff',
     textColor: '#0f172a',
     isVideo: true
   }
 ];
 
-export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
+export default function RepeatableGrowthSection({ onOpenBooking, onNavigate }) {
   return (
     <section className="repeatable-growth-section">
       <div className="container">
@@ -144,7 +120,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
         </div>
       </div>
 
-      {/* 3D Tilted Isometric Creative Collage Grid with AUTOPLAYING VIDEOS */}
+      {/* 3D Tilted Isometric Creative Collage Grid (Screenshot 2) */}
       <div className="tilted-grid-viewport">
         {/* Top and Bottom Seamless Gradient Masks */}
         <div className="tilted-mask-top" />
@@ -154,12 +130,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
           {/* Row 1 - Scrolling Left */}
           <div className="tilted-row tilted-row-1">
             {[...creativeGridItems, ...creativeGridItems].map((item, idx) => (
-              <div
-                key={`row1-${item.id}-${idx}`}
-                className="tilted-card"
-                onClick={() => onOpenInstagramModal ? onOpenInstagramModal(item) : window.open(item.url, '_blank')}
-                style={{ cursor: 'pointer' }}
-              >
+              <div key={`row1-${item.id}-${idx}`} className="tilted-card">
                 {/* Top Ad Banner Header */}
                 <div
                   className="tilted-card-top-banner"
@@ -170,22 +141,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
                 </div>
 
                 <div className="tilted-card-img-wrap">
-                  <video
-                    src={item.video}
-                    poster={item.image}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="tilted-card-img"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                  
-                  {item.isVideo && (
-                    <div className="tilted-play-circle">
-                      <Play size={18} fill="#ffffff" color="#ffffff" style={{ marginLeft: '3px' }} />
-                    </div>
-                  )}
+                  <img src={item.image} alt={item.topBanner} className="tilted-card-img" />
                 </div>
 
                 {/* Bottom Pill Badge Overlay */}
@@ -200,12 +156,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
           {/* Row 2 - Scrolling Right */}
           <div className="tilted-row tilted-row-2">
             {[...creativeGridItems, ...creativeGridItems].reverse().map((item, idx) => (
-              <div
-                key={`row2-${item.id}-${idx}`}
-                className="tilted-card"
-                onClick={() => onOpenInstagramModal ? onOpenInstagramModal(item) : window.open(item.url, '_blank')}
-                style={{ cursor: 'pointer' }}
-              >
+              <div key={`row2-${item.id}-${idx}`} className="tilted-card">
                 {/* Top Ad Banner Header */}
                 <div
                   className="tilted-card-top-banner"
@@ -216,22 +167,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
                 </div>
 
                 <div className="tilted-card-img-wrap">
-                  <video
-                    src={item.video}
-                    poster={item.image}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="tilted-card-img"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                  
-                  {item.isVideo && (
-                    <div className="tilted-play-circle">
-                      <Play size={18} fill="#ffffff" color="#ffffff" style={{ marginLeft: '3px' }} />
-                    </div>
-                  )}
+                  <img src={item.image} alt={item.topBanner} className="tilted-card-img" />
                 </div>
 
                 {/* Bottom Pill Badge Overlay */}
@@ -246,12 +182,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
           {/* Row 3 - Scrolling Left (Fills the entire bottom with zero empty space) */}
           <div className="tilted-row tilted-row-3">
             {[...creativeGridItems, ...creativeGridItems].map((item, idx) => (
-              <div
-                key={`row3-${item.id}-${idx}`}
-                className="tilted-card"
-                onClick={() => onOpenInstagramModal ? onOpenInstagramModal(item) : window.open(item.url, '_blank')}
-                style={{ cursor: 'pointer' }}
-              >
+              <div key={`row3-${item.id}-${idx}`} className="tilted-card">
                 {/* Top Ad Banner Header */}
                 <div
                   className="tilted-card-top-banner"
@@ -262,22 +193,7 @@ export default function RepeatableGrowthSection({ onOpenBooking, onNavigate, onO
                 </div>
 
                 <div className="tilted-card-img-wrap">
-                  <video
-                    src={item.video}
-                    poster={item.image}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="tilted-card-img"
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                  />
-                  
-                  {item.isVideo && (
-                    <div className="tilted-play-circle">
-                      <Play size={18} fill="#ffffff" color="#ffffff" style={{ marginLeft: '3px' }} />
-                    </div>
-                  )}
+                  <img src={item.image} alt={item.topBanner} className="tilted-card-img" />
                 </div>
 
                 {/* Bottom Pill Badge Overlay */}
