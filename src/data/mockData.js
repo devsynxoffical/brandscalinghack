@@ -164,7 +164,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CaAuCiJBY61.jpg",
-    "description": "Today I am BEYOND excited to show you guys how I have been scaling this Brand to The Moon\ud83e\udd11\ud83d\udc4a . . . . Hit Me Up With \"SCALING\" \ud83d\ude80 I look forward to helping your business become the absolute BEST IT CAN BE."
+    "description": "Today I am BEYOND excited to show you guys how I have been scaling this Brand to The Moon\ud83e\udd11\ud83d\udc4a . . . . Hit Me Up With \"SCALING\" \ud83d\ude80 I look forward to helping your business become the absolute BEST IT CAN BE.",
+    "video": "/assets/instagram_videos/reel_CaAuCiJBY61.mp4"
   },
   {
     "id": "reel-2",
@@ -177,7 +178,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CaF8d61BZSO.jpg",
-    "description": "Do not be embarrassed by your failures, learn from them and start again.\ud83e\udd11 6K$ Day was not a joke for me it's a years of hardwork that i put into the things to make it happen\ud83e\udd13 . . . . Keep Going, I BELIEVE IN YOU, you sho"
+    "description": "Do not be embarrassed by your failures, learn from them and start again.\ud83e\udd11 6K$ Day was not a joke for me it's a years of hardwork that i put into the things to make it happen\ud83e\udd13 . . . . Keep Going, I BELIEVE IN YOU, you sho",
+    "video": "/assets/instagram_videos/reel_CaF8d61BZSO.mp4"
   },
   {
     "id": "reel-3",
@@ -190,7 +192,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CaU8rUvBBBm.jpg",
-    "description": "\ud83e\udd47 Work harder than you think you did yesterday...YES I have been doing this today we are still left with a few hrs of the day The ONLY way to scale is to CONTINUALLY deliver the UNEXPECTED RESULTS to your Clients. \u2063 Ther"
+    "description": "\ud83e\udd47 Work harder than you think you did yesterday...YES I have been doing this today we are still left with a few hrs of the day The ONLY way to scale is to CONTINUALLY deliver the UNEXPECTED RESULTS to your Clients. \u2063 Ther",
+    "video": "/assets/instagram_videos/reel_CaU8rUvBBBm.mp4"
   },
   {
     "id": "reel-4",
@@ -203,7 +206,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CaZWmNEMev9.jpg",
-    "description": "My E-Commerce Clients are killing the game. Just PURE VALUE...LIVE VIEW OF 4KDAY\ud83e\udd11 Still, we have 12 hrs left to finish this day...\ud83e\udd13 Message me for more information on how you can create a large passive income online. Thi"
+    "description": "My E-Commerce Clients are killing the game. Just PURE VALUE...LIVE VIEW OF 4KDAY\ud83e\udd11 Still, we have 12 hrs left to finish this day...\ud83e\udd13 Message me for more information on how you can create a large passive income online. Thi",
+    "video": "/assets/instagram_videos/reel_CaZWmNEMev9.mp4"
   },
   {
     "id": "reel-5",
@@ -216,7 +220,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Ca19JaMse_i.jpg",
-    "description": "Positivity and motivation come from hard work. That's why I always say Find your passion, set and achieve realistic goals, then give it your all! \ud83d\ude4c This year I\u2019m looking forward to dropping a ton of gems \ud83d\udc8e to help people"
+    "description": "Positivity and motivation come from hard work. That's why I always say Find your passion, set and achieve realistic goals, then give it your all! \ud83d\ude4c This year I\u2019m looking forward to dropping a ton of gems \ud83d\udc8e to help people",
+    "video": "/assets/instagram_videos/reel_Ca19JaMse_i.mp4"
   },
   {
     "id": "reel-6",
@@ -229,7 +234,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CbCOGFmAE4U.jpg",
-    "description": "Numbers don\u2019t lie, you know what\u2019s dope\ud83d\udcaf \ud83d\udd25 Q1 is still Going ON, make sure you are taking right action and \ud83d\udc63 following those that actually do this for all living. Let\u2019s go \ud83d\ude4b Want to hit number like this as our other clie"
+    "description": "Numbers don\u2019t lie, you know what\u2019s dope\ud83d\udcaf \ud83d\udd25 Q1 is still Going ON, make sure you are taking right action and \ud83d\udc63 following those that actually do this for all living. Let\u2019s go \ud83d\ude4b Want to hit number like this as our other clie",
+    "video": "/assets/instagram_videos/reel_CbCOGFmAE4U.mp4"
   },
   {
     "id": "reel-7",
@@ -242,7 +248,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CbLZYRHMxi-.jpg",
-    "description": "Grind, grind, grind - Woke up today with some value bombs in mind, I thought I\u2019d share with y\u2019all because you all really need that in your e-commerce journey...\ud83c\udfc6 \ud83e\udd1c A mental and physical dedication to the task at hand is "
+    "description": "Grind, grind, grind - Woke up today with some value bombs in mind, I thought I\u2019d share with y\u2019all because you all really need that in your e-commerce journey...\ud83c\udfc6 \ud83e\udd1c A mental and physical dedication to the task at hand is ",
+    "video": "/assets/instagram_videos/reel_CbLZYRHMxi-.mp4"
   },
   {
     "id": "reel-8",
@@ -255,7 +262,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CbQB5nxNFeS.jpg",
-    "description": "\ud83c\udfc6 This is how we are SCALING brands from SCRATCH & absolutely killing the game. I love being in the position to help you all day by day, learn how to build generational wealth through e-commerce, and take steps towards c"
+    "description": "\ud83c\udfc6 This is how we are SCALING brands from SCRATCH & absolutely killing the game. I love being in the position to help you all day by day, learn how to build generational wealth through e-commerce, and take steps towards c",
+    "video": "/assets/instagram_videos/reel_CbQB5nxNFeS.mp4"
   },
   {
     "id": "reel-9",
@@ -268,7 +276,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CbdJlDwrpNV.jpg",
-    "description": "If you are willing to invest in yourself, your dreams can come true.\ud83d\udcaf \ud83d\ude0e You choose to work towards them every single day, but if you want it bad enough then why don't give a little push in the desired direction? \ud83d\udcaa Whethe"
+    "description": "If you are willing to invest in yourself, your dreams can come true.\ud83d\udcaf \ud83d\ude0e You choose to work towards them every single day, but if you want it bad enough then why don't give a little push in the desired direction? \ud83d\udcaa Whethe",
+    "video": "/assets/instagram_videos/reel_CbdJlDwrpNV.mp4"
   },
   {
     "id": "reel-10",
@@ -281,7 +290,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CbdLX--rkaU.jpg",
-    "description": "\ud83d\ude0e For most people, jumping into something new that they\u2019ve never done, seems VERY RISKY. But the BITTER truth is, all the people who have made a change for the world weren\u2019t in their \ud83d\udcaa COMFORT ZONE! Learn to be comfortab"
+    "description": "\ud83d\ude0e For most people, jumping into something new that they\u2019ve never done, seems VERY RISKY. But the BITTER truth is, all the people who have made a change for the world weren\u2019t in their \ud83d\udcaa COMFORT ZONE! Learn to be comfortab",
+    "video": "/assets/instagram_videos/reel_CbdLX--rkaU.mp4"
   },
   {
     "id": "reel-11",
@@ -294,7 +304,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CeO7YI3Ow7C.jpg",
-    "description": "\ud83d\udca5 In our lab we use battle-tested strategies to scale skincare brands to atleast \ud83e\uddf2 50-100K$ every single month\u2026 Numbers says everything if you are doing right things in a consistent way\u2026You can achive anything..\ud83e\udded Long St"
+    "description": "\ud83d\udca5 In our lab we use battle-tested strategies to scale skincare brands to atleast \ud83e\uddf2 50-100K$ every single month\u2026 Numbers says everything if you are doing right things in a consistent way\u2026You can achive anything..\ud83e\udded Long St",
+    "video": "/assets/instagram_videos/reel_CeO7YI3Ow7C.mp4"
   },
   {
     "id": "reel-12",
@@ -307,7 +318,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CeZA8zlj0HL.jpg",
-    "description": "\ud83d\udcafScaling Mode is ON!! Its 4th June and this SkinCare Brand has passed the 10K$ Mark\u2026\ud83d\ude80 This Client is On the way to hit atleast 50K$ This MONTH with our battle-tested fb ads strategies where people in the industry are sti"
+    "description": "\ud83d\udcafScaling Mode is ON!! Its 4th June and this SkinCare Brand has passed the 10K$ Mark\u2026\ud83d\ude80 This Client is On the way to hit atleast 50K$ This MONTH with our battle-tested fb ads strategies where people in the industry are sti",
+    "video": "/assets/instagram_videos/reel_CeZA8zlj0HL.mp4"
   },
   {
     "id": "reel-13",
@@ -320,7 +332,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Cesci1roztT.jpg",
-    "description": "\ud835\udfef\ud835\udff1% \ud835\udde1\ud835\uddf2\ud835\ude01 \ud835\udde3\ud835\uddff\ud835\uddfc\ud835\uddf3\ud835\uddf6\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\uddff\ud835\uddf4\ud835\uddf6\ud835\uddfb Its 12th June and We have crossed the 20K$ Barrier With Tiktok Ads for this Brand in just 12days \ud83d\udd25 This brand is on the way to atleast 50K$ this month\ud83e\udd76\ud83d\udcb8\ud83d\udcb8\ud83d\udcb8 Many will say I\u2019ve lost my mind\ud83d\ude0e but to me "
+    "description": "\ud835\udfef\ud835\udff1% \ud835\udde1\ud835\uddf2\ud835\ude01 \ud835\udde3\ud835\uddff\ud835\uddfc\ud835\uddf3\ud835\uddf6\ud835\ude01 \ud835\udde0\ud835\uddee\ud835\uddff\ud835\uddf4\ud835\uddf6\ud835\uddfb Its 12th June and We have crossed the 20K$ Barrier With Tiktok Ads for this Brand in just 12days \ud83d\udd25 This brand is on the way to atleast 50K$ this month\ud83e\udd76\ud83d\udcb8\ud83d\udcb8\ud83d\udcb8 Many will say I\u2019ve lost my mind\ud83d\ude0e but to me ",
+    "video": "/assets/instagram_videos/reel_Cesci1roztT.mp4"
   },
   {
     "id": "reel-14",
@@ -333,7 +346,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Ce4RHMZBmfi.jpg",
-    "description": "\ud835\uddd4\ud835\uddf4\ud835\uddf4\ud835\uddff\ud835\uddf2\ud835\ude00\ud835\ude00\ud835\uddf6\ud835\ude03\ud835\uddf2\ud835\uddf9\ud835\ude06 \ud835\udde6\ud835\uddf0\ud835\uddee\ud835\uddf9\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\udde7\ud835\uddfc\ud835\ude04\ud835\uddee\ud835\uddff\ud835\uddf1\ud835\ude00 \ud835\udff2\ud835\uddf8$ \ud835\uddd7\ud835\uddee\ud835\ude06\ud83d\udd25\ud83d\udc4a \ud83e\udd11 You might be wondering how I have been scaling this brand to like these big numbers using Facebook ads especially in the scenario of IOS update where everyone is still struggling "
+    "description": "\ud835\uddd4\ud835\uddf4\ud835\uddf4\ud835\uddff\ud835\uddf2\ud835\ude00\ud835\ude00\ud835\uddf6\ud835\ude03\ud835\uddf2\ud835\uddf9\ud835\ude06 \ud835\udde6\ud835\uddf0\ud835\uddee\ud835\uddf9\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\udde7\ud835\uddfc\ud835\ude04\ud835\uddee\ud835\uddff\ud835\uddf1\ud835\ude00 \ud835\udff2\ud835\uddf8$ \ud835\uddd7\ud835\uddee\ud835\ude06\ud83d\udd25\ud83d\udc4a \ud83e\udd11 You might be wondering how I have been scaling this brand to like these big numbers using Facebook ads especially in the scenario of IOS update where everyone is still struggling ",
+    "video": "/assets/instagram_videos/reel_Ce4RHMZBmfi.mp4"
   },
   {
     "id": "reel-15",
@@ -346,7 +360,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Ce5RGG1BVT7.jpg",
-    "description": "\ud83d\udd25Final Update After Few Hrs\u2026 \ud83d\udcb8\ud83d\udcb8Closing the Day with Almost 10K$ Day with That Client!!!"
+    "description": "\ud83d\udd25Final Update After Few Hrs\u2026 \ud83d\udcb8\ud83d\udcb8Closing the Day with Almost 10K$ Day with That Client!!!",
+    "video": "/assets/instagram_videos/reel_Ce5RGG1BVT7.mp4"
   },
   {
     "id": "reel-16",
@@ -359,7 +374,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CfQ6ZWxPGwy.jpg",
-    "description": "\ud835\udc01\ud835\udc0e\ud835\udc0c\ud835\udc01\ud835\udc12\ud835\udc07\ud835\udc04\ud835\udc0b\ud835\udc0b \ud835\udc14\ud835\udc0f\ud835\udc03\ud835\udc00\ud835\udc13\ud835\udc04 \ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udc0a$ \ud835\udc07\ud835\udc08\ud835\udc13 \ud835\udc13\ud835\udc07\ud835\udc08\ud835\udc12 \ud835\udc0c\ud835\udc0e\ud835\udc0d\ud835\udc13\ud835\udc07!!! Hey, fam! Hope you all are having a great weekend. Just wanted to drop a progress update. Finally, We Hit our $100K month in sales in June for this Skincare Client THIS, amongst M"
+    "description": "\ud835\udc01\ud835\udc0e\ud835\udc0c\ud835\udc01\ud835\udc12\ud835\udc07\ud835\udc04\ud835\udc0b\ud835\udc0b \ud835\udc14\ud835\udc0f\ud835\udc03\ud835\udc00\ud835\udc13\ud835\udc04 \ud835\udfcf\ud835\udfce\ud835\udfce\ud835\udc0a$ \ud835\udc07\ud835\udc08\ud835\udc13 \ud835\udc13\ud835\udc07\ud835\udc08\ud835\udc12 \ud835\udc0c\ud835\udc0e\ud835\udc0d\ud835\udc13\ud835\udc07!!! Hey, fam! Hope you all are having a great weekend. Just wanted to drop a progress update. Finally, We Hit our $100K month in sales in June for this Skincare Client THIS, amongst M",
+    "video": "/assets/instagram_videos/reel_CfQ6ZWxPGwy.mp4"
   },
   {
     "id": "reel-17",
@@ -372,7 +388,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CfYM_4POBEi.jpg",
-    "description": "\ud835\udc13\ud835\udc21\ud835\udc22\ud835\udc2c \ud835\udfd4\ud835\udfce\ud835\udc0a$ \ud835\udc0c\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21 \ud835\udc02\ud835\udc25\ud835\udc22\ud835\udc1e\ud835\udc27\ud835\udc2d \ud835\udc22\ud835\udc2c \ud835\udc0b\ud835\udc22\ud835\udc2d\ud835\udc1e\ud835\udc2b\ud835\udc1a\ud835\udc25\ud835\udc25\ud835\udc32 \ud835\udc02\ud835\udc2b\ud835\udc2e\ud835\udc2c\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc12\ud835\udc24\ud835\udc22\ud835\udc27\ud835\udc02\ud835\udc1a\ud835\udc2b\ud835\udc1e \ud835\udc06\ud835\udc1a\ud835\udc26\ud835\udc1e\ud83d\udca5\ud83c\udf89 If people like you they will listen to you, But if they trust you, they will do business with you..\ud83e\udd10 \ud83e\uddd0 The same methodology applies over in the e-commerce "
+    "description": "\ud835\udc13\ud835\udc21\ud835\udc22\ud835\udc2c \ud835\udfd4\ud835\udfce\ud835\udc0a$ \ud835\udc0c\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21 \ud835\udc02\ud835\udc25\ud835\udc22\ud835\udc1e\ud835\udc27\ud835\udc2d \ud835\udc22\ud835\udc2c \ud835\udc0b\ud835\udc22\ud835\udc2d\ud835\udc1e\ud835\udc2b\ud835\udc1a\ud835\udc25\ud835\udc25\ud835\udc32 \ud835\udc02\ud835\udc2b\ud835\udc2e\ud835\udc2c\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc12\ud835\udc24\ud835\udc22\ud835\udc27\ud835\udc02\ud835\udc1a\ud835\udc2b\ud835\udc1e \ud835\udc06\ud835\udc1a\ud835\udc26\ud835\udc1e\ud83d\udca5\ud83c\udf89 If people like you they will listen to you, But if they trust you, they will do business with you..\ud83e\udd10 \ud83e\uddd0 The same methodology applies over in the e-commerce ",
+    "video": "/assets/instagram_videos/reel_CfYM_4POBEi.mp4"
   },
   {
     "id": "reel-18",
@@ -385,7 +402,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Cfbs-73Bbw8.jpg",
-    "description": "\ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\uddfc\ud835\uddf3 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddef\ud835\uddf6\ud835\uddf4\ud835\uddf4\ud835\uddf2\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf5\ud835\uddf6\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfa\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\uddfa\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5 \ud83e\udd11\ud83d\udd25\ud83d\udd25\ud83d\udd25 Patience + Hardwork + Consistency = Phenomenal Results \ud83c\udfaf\ud83e\udd11 Our greatest weakness is lies in GIVING UP\ud83c\udfc3 The most certain way to SUCCEED is always to try just One More Time"
+    "description": "\ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\uddfc\ud835\uddf3 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddef\ud835\uddf6\ud835\uddf4\ud835\uddf4\ud835\uddf2\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf5\ud835\uddf6\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfa\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\uddfa\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5 \ud83e\udd11\ud83d\udd25\ud83d\udd25\ud83d\udd25 Patience + Hardwork + Consistency = Phenomenal Results \ud83c\udfaf\ud83e\udd11 Our greatest weakness is lies in GIVING UP\ud83c\udfc3 The most certain way to SUCCEED is always to try just One More Time",
+    "video": "/assets/instagram_videos/reel_Cfbs-73Bbw8.mp4"
   },
   {
     "id": "reel-19",
@@ -398,7 +416,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CfbtjBprLrd.jpg",
-    "description": "\ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\uddfc\ud835\uddf3 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddef\ud835\uddf6\ud835\uddf4\ud835\uddf4\ud835\uddf2\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf5\ud835\uddf6\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfa\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\uddfa\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5 \ud83e\udd11\ud83d\udd25\ud83d\udd25\ud83d\udd25 Patience + Hardwork + Consistency = Phenomenal Results \ud83c\udfaf\ud83e\udd11 Our greatest weakness is lies in GIVING UP\ud83c\udfc3 The most certain way to SUCCEED is always to try just One More Time"
+    "description": "\ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\uddfc\ud835\uddf3 \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddef\ud835\uddf6\ud835\uddf4\ud835\uddf4\ud835\uddf2\ud835\ude00\ud835\ude01 \ud835\uddee\ud835\uddf0\ud835\uddf5\ud835\uddf6\ud835\uddf2\ud835\ude03\ud835\uddf2\ud835\uddfa\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddf3\ud835\uddfc\ud835\uddff \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\uddfa\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5 \ud83e\udd11\ud83d\udd25\ud83d\udd25\ud83d\udd25 Patience + Hardwork + Consistency = Phenomenal Results \ud83c\udfaf\ud83e\udd11 Our greatest weakness is lies in GIVING UP\ud83c\udfc3 The most certain way to SUCCEED is always to try just One More Time",
+    "video": "/assets/instagram_videos/reel_CfbtjBprLrd.mp4"
   },
   {
     "id": "reel-20",
@@ -411,7 +430,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CfdomKIgr8Y.jpg",
-    "description": "\ud835\uddd4\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\udddb\ud835\uddee\ud835\uddfd\ud835\uddfd\ud835\ude06 \ud835\uddd6\ud835\uddf9\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddd6\ud835\uddf9\ud835\uddfc\ud835\ude00\ud835\uddf2\ud835\ude00 \ud835\udfed\ud835\udfed\ud835\udff2\ud835\uddde$ \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udddd\ud835\ude02\ud835\uddfb\ud835\uddf2\ud83d\udd25 I\u2019m never stopping or slowing diwn, thats on everything I love\u2026 It\u2019s All possible\u2026Only If You belive in Yourself\ud83d\udcaf"
+    "description": "\ud835\uddd4\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\udddb\ud835\uddee\ud835\uddfd\ud835\uddfd\ud835\ude06 \ud835\uddd6\ud835\uddf9\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddd6\ud835\uddf9\ud835\uddfc\ud835\ude00\ud835\uddf2\ud835\ude00 \ud835\udfed\ud835\udfed\ud835\udff2\ud835\uddde$ \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udddd\ud835\ude02\ud835\uddfb\ud835\uddf2\ud83d\udd25 I\u2019m never stopping or slowing diwn, thats on everything I love\u2026 It\u2019s All possible\u2026Only If You belive in Yourself\ud83d\udcaf",
+    "video": "/assets/instagram_videos/reel_CfdomKIgr8Y.mp4"
   },
   {
     "id": "reel-21",
@@ -424,7 +444,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Cfe4exnBL9a.jpg",
-    "description": "\ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\udddb\ud835\uddf6\ud835\ude01 \ud835\uddea\ud835\uddf6\ud835\ude01\ud835\uddf5 \ud835\udff2\ud835\udfed\ud835\uddde$ \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\udde7\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udddd\ud835\ude02\ud835\uddfb\ud835\uddf2 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udfee\ud83e\udd11\ud83e\udd11 This time we bombarded the Store With 5.25% Coversion Rate..\ud83c\udfaf Where Industry claims the preferred rate should be atleast 2%\ud83c\udfc5 This is how we Break the RULES\ud83d\udd25 Planning to Ta"
+    "description": "\ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\udddb\ud835\uddf6\ud835\ude01 \ud835\uddea\ud835\uddf6\ud835\ude01\ud835\uddf5 \ud835\udff2\ud835\udfed\ud835\uddde$ \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\udde7\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udddd\ud835\ude02\ud835\uddfb\ud835\uddf2 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udfee\ud83e\udd11\ud83e\udd11 This time we bombarded the Store With 5.25% Coversion Rate..\ud83c\udfaf Where Industry claims the preferred rate should be atleast 2%\ud83c\udfc5 This is how we Break the RULES\ud83d\udd25 Planning to Ta",
+    "video": "/assets/instagram_videos/reel_Cfe4exnBL9a.mp4"
   },
   {
     "id": "reel-22",
@@ -437,7 +458,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CflE6qHj4-b.jpg",
-    "description": "When you have a dream, you've got to grab it and never let go\ud83d\udd25\ud83d\udd25 A Proper Foundation & Infrastructure is the \ud83d\udd11 to long term scale & consistency \ud83e\udd29"
+    "description": "When you have a dream, you've got to grab it and never let go\ud83d\udd25\ud83d\udd25 A Proper Foundation & Infrastructure is the \ud83d\udd11 to long term scale & consistency \ud83e\udd29",
+    "video": "/assets/instagram_videos/reel_CflE6qHj4-b.mp4"
   },
   {
     "id": "reel-23",
@@ -450,7 +472,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Cft79TLpxyk.jpg",
-    "description": "\ud83d\udcaa \ud835\uddd9\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddea\ud835\uddf2 \ud835\udde6\ud835\uddf0\ud835\uddee\ud835\uddf9\ud835\uddf2 \ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd6\ud835\uddf9\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\ude01\ud835\uddfc \ud835\uddd4\ud835\uddf9\ud835\uddfa\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\udfed\ud835\udde0$ \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\uddf6\ud835\uddfb \ud835\udddd\ud835\ude02\ud835\ude00\ud835\ude01 \ud835\udff2 \ud835\udde0\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5\ud835\ude00 There's a lot of challenges that come along with this type of phenomenal success..\u2060\ud83d\ude80 \u2060 But still...reaching $1 million in just 6 months was not a"
+    "description": "\ud83d\udcaa \ud835\uddd9\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\uddea\ud835\uddf2 \ud835\udde6\ud835\uddf0\ud835\uddee\ud835\uddf9\ud835\uddf2 \ud835\udde2\ud835\uddfb\ud835\uddf2 \ud835\udde0\ud835\uddfc\ud835\uddff\ud835\uddf2 \ud835\uddd6\ud835\uddf9\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\ude01\ud835\uddfc \ud835\uddd4\ud835\uddf9\ud835\uddfa\ud835\uddfc\ud835\ude00\ud835\ude01 \ud835\udfed\ud835\udde0$ \ud835\uddf6\ud835\uddfb \ud835\udde6\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 \ud835\uddf6\ud835\uddfb \ud835\udddd\ud835\ude02\ud835\ude00\ud835\ude01 \ud835\udff2 \ud835\udde0\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5\ud835\ude00 There's a lot of challenges that come along with this type of phenomenal success..\u2060\ud83d\ude80 \u2060 But still...reaching $1 million in just 6 months was not a",
+    "video": "/assets/instagram_videos/reel_Cft79TLpxyk.mp4"
   },
   {
     "id": "reel-24",
@@ -463,7 +486,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CggL7dHhkQW.jpg",
-    "description": "How Far in Your E-Commerce Journey Are You? \ud83e\uddd0 Starting From Scratch \ud83c\udfc3 Making Consistent $1K \ud83d\udcb0 Growing Towards $5K - $10K \ud83d\udcb5 Made Beyond $10K \ud83d\udcaa"
+    "description": "How Far in Your E-Commerce Journey Are You? \ud83e\uddd0 Starting From Scratch \ud83c\udfc3 Making Consistent $1K \ud83d\udcb0 Growing Towards $5K - $10K \ud83d\udcb5 Made Beyond $10K \ud83d\udcaa",
+    "video": "/assets/instagram_videos/reel_CggL7dHhkQW.mp4"
   },
   {
     "id": "reel-25",
@@ -476,7 +500,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CgvlkTVBTDj.jpg",
-    "description": "\ud83d\udd25 \ud835\udc05\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc25\ud835\udc25\ud835\udc32, \ud835\udc08 \ud835\udc04\ud835\udc27\ud835\udc1d\ud835\udc1e\ud835\udc1d \ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc2c \ud835\udc06\ud835\udc2b\ud835\udc1e\ud835\udc1a\ud835\udc2d \ud835\udc26\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21 \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 $\ud835\udfcf\ud835\udfd4\ud835\udfce\ud835\udc0a. \ud83d\udcb0 We work consistent cash flow, not just one month shit; it all happens by fixing all of those touchpoints under the phase of the buyers' journey. Your Ecom Guy Gaurav Ecom"
+    "description": "\ud83d\udd25 \ud835\udc05\ud835\udc22\ud835\udc27\ud835\udc1a\ud835\udc25\ud835\udc25\ud835\udc32, \ud835\udc08 \ud835\udc04\ud835\udc27\ud835\udc1d\ud835\udc1e\ud835\udc1d \ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc2c \ud835\udc06\ud835\udc2b\ud835\udc1e\ud835\udc1a\ud835\udc2d \ud835\udc26\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21 \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 $\ud835\udfcf\ud835\udfd4\ud835\udfce\ud835\udc0a. \ud83d\udcb0 We work consistent cash flow, not just one month shit; it all happens by fixing all of those touchpoints under the phase of the buyers' journey. Your Ecom Guy Gaurav Ecom",
+    "video": "/assets/instagram_videos/reel_CgvlkTVBTDj.mp4"
   },
   {
     "id": "reel-26",
@@ -489,7 +514,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_ChT2HgvP4ce.jpg",
-    "description": "Vision without Execution is delusion\ud83d\udc4a How many of you agree to this? \ud83e\ude80"
+    "description": "Vision without Execution is delusion\ud83d\udc4a How many of you agree to this? \ud83e\ude80",
+    "video": "/assets/instagram_videos/reel_ChT2HgvP4ce.mp4"
   },
   {
     "id": "reel-27",
@@ -502,7 +528,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Ch-08rOh7Ly.jpg",
-    "description": "Another $161K in the Books\ud83d\udd25 \ud83d\udc81 It\u2019s just Q3, preparing something big for this Q4! How many of you are in dropshipping or e-commerce? \ud83e\udd2f I have something special for you that will change the game for you!\ud83c\udfaf"
+    "description": "Another $161K in the Books\ud83d\udd25 \ud83d\udc81 It\u2019s just Q3, preparing something big for this Q4! How many of you are in dropshipping or e-commerce? \ud83e\udd2f I have something special for you that will change the game for you!\ud83c\udfaf",
+    "video": "/assets/instagram_videos/reel_Ch-08rOh7Ly.mp4"
   },
   {
     "id": "reel-28",
@@ -515,7 +542,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CiF19_MJwhT.jpg",
-    "description": "\ud83e\udd11Finally We have closed $117K this month with another client HARD WORK forever pays\ud83d\udcaa Consistency is the key in this game.. \ud83d\udc4a Let's crush this Q4 \ud83d\ude09"
+    "description": "\ud83e\udd11Finally We have closed $117K this month with another client HARD WORK forever pays\ud83d\udcaa Consistency is the key in this game.. \ud83d\udc4a Let's crush this Q4 \ud83d\ude09",
+    "video": "/assets/instagram_videos/reel_CiF19_MJwhT.mp4"
   },
   {
     "id": "reel-29",
@@ -528,7 +556,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CifaEj9INCy.jpg",
-    "description": "\ud83c\udfc6 What It Takes To Scale Beyond $63K in 14 Days In Dropshipping What is going on, ladies and gents!! \ud83c\udfc1 Not everyone is born with the qualities of an entrepreneur. However, anyone can become a successful entrepreneur by d"
+    "description": "\ud83c\udfc6 What It Takes To Scale Beyond $63K in 14 Days In Dropshipping What is going on, ladies and gents!! \ud83c\udfc1 Not everyone is born with the qualities of an entrepreneur. However, anyone can become a successful entrepreneur by d",
+    "video": "/assets/instagram_videos/reel_CifaEj9INCy.mp4"
   },
   {
     "id": "reel-30",
@@ -541,7 +570,8 @@ export const liveResultsProof = [
     "badge": "CREATIVE TESTING",
     "category": "Creative Hooks",
     "image": "/assets/instagram_thumbs/reel_CifhS7gt6qW.jpg",
-    "description": "\ud83c\udfc6How to Find Winning Shopify Dropshipping Products? (Formula Leaked) \ud83c\udfc6 Identifying WINNING products will make or break this business for you. \ud83d\udcaf This information is crucial to long-term success in this business. What is g"
+    "description": "\ud83c\udfc6How to Find Winning Shopify Dropshipping Products? (Formula Leaked) \ud83c\udfc6 Identifying WINNING products will make or break this business for you. \ud83d\udcaf This information is crucial to long-term success in this business. What is g",
+    "video": "/assets/instagram_videos/reel_CifhS7gt6qW.mp4"
   },
   {
     "id": "reel-31",
@@ -554,7 +584,8 @@ export const liveResultsProof = [
     "badge": "CREATIVE TESTING",
     "category": "Creative Hooks",
     "image": "/assets/instagram_thumbs/reel_CjIsfV-Py1A.jpg",
-    "description": "\ud83c\udfc6 How I Find $100K/Month Winning Shopify Dropshipping Products (Leaked) \ud83d\udc68\u200d\ud83d\udcbb Are you fed up with old product search methods, That are outdated and don't work anymore for Shopify Dropshipping In 2022 \ud83d\udca5 Why does this method"
+    "description": "\ud83c\udfc6 How I Find $100K/Month Winning Shopify Dropshipping Products (Leaked) \ud83d\udc68\u200d\ud83d\udcbb Are you fed up with old product search methods, That are outdated and don't work anymore for Shopify Dropshipping In 2022 \ud83d\udca5 Why does this method",
+    "video": "/assets/instagram_videos/reel_CjIsfV-Py1A.mp4"
   },
   {
     "id": "reel-32",
@@ -567,7 +598,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CjN4BunLvt-.jpg",
-    "description": "\ud83d\udd25\ud835\uddd4\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\udde6\ud835\ude02\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00 \ud835\udde6\ud835\ude01\ud835\uddfc\ud835\uddff\ud835\ude06 \ud835\uddf6\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddd5\ud835\uddfc\ud835\uddfc\ud835\uddf8\ud835\ude00. \ud835\uddd9\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06, \ud835\udde7\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\uddd5\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddd8\ud835\uddfb\ud835\uddf1\ud835\uddf2\ud835\uddf1 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 $\ud835\udfed\ud835\udfef\ud835\udfef\ud835\uddde \ud835\udde7\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde0\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5! Being an e-commerce entrepreneur means being alone. \ud83e\uddd0 The solution? Joining free/paid communities with other lonely people! \ud83d\ude02 Join the"
+    "description": "\ud83d\udd25\ud835\uddd4\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\udde6\ud835\ude02\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00 \ud835\udde6\ud835\ude01\ud835\uddfc\ud835\uddff\ud835\ude06 \ud835\uddf6\ud835\uddfb \ud835\ude01\ud835\uddf5\ud835\uddf2 \ud835\uddd5\ud835\uddfc\ud835\uddfc\ud835\uddf8\ud835\ude00. \ud835\uddd9\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06, \ud835\udde7\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\uddd5\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\uddd8\ud835\uddfb\ud835\uddf1\ud835\uddf2\ud835\uddf1 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 $\ud835\udfed\ud835\udfef\ud835\udfef\ud835\uddde \ud835\udde7\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udde0\ud835\uddfc\ud835\uddfb\ud835\ude01\ud835\uddf5! Being an e-commerce entrepreneur means being alone. \ud83e\uddd0 The solution? Joining free/paid communities with other lonely people! \ud83d\ude02 Join the",
+    "video": "/assets/instagram_videos/reel_CjN4BunLvt-.mp4"
   },
   {
     "id": "reel-33",
@@ -580,7 +612,8 @@ export const liveResultsProof = [
     "badge": "CREATIVE TESTING",
     "category": "Creative Hooks",
     "image": "/assets/instagram_thumbs/reel_Cja7UXHthJz.jpg",
-    "description": "Just passed $100,000 on my Dropshipping Store this September 2022 And Here in this Video, I'm pulling back the curtain behind why you should focus on these things when you start your Dropshipping Journey! \ud83d\udc4d You won't fin"
+    "description": "Just passed $100,000 on my Dropshipping Store this September 2022 And Here in this Video, I'm pulling back the curtain behind why you should focus on these things when you start your Dropshipping Journey! \ud83d\udc4d You won't fin",
+    "video": "/assets/instagram_videos/reel_Cja7UXHthJz.mp4"
   },
   {
     "id": "reel-34",
@@ -593,7 +626,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CjzpP7YDfjP.jpg",
-    "description": "Another Happy Dropshipping Client breaks the $50K Month Barrier With Us!"
+    "description": "Another Happy Dropshipping Client breaks the $50K Month Barrier With Us!",
+    "video": "/assets/instagram_videos/reel_CjzpP7YDfjP.mp4"
   },
   {
     "id": "reel-35",
@@ -606,7 +640,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CkaJ5hCju2s.jpg",
-    "description": "\ud83d\udd25\ud83d\udd25$\ud835\udfcf\ud835\udfd2\ud835\udfd6\ud835\udc0a \ud835\udc22\ud835\udc27 \ud835\udc0e\ud835\udc27\ud835\udc1e \ud835\udc03\ud835\udc1a\ud835\udc32 - \ud835\udc13\ud835\udc21\ud835\udc1e \ud835\udc01\ud835\udc1e\ud835\udc2c\ud835\udc2d \ud835\udc03\ud835\udc1a\ud835\udc32 \ud835\udc22\ud835\udc27 \ud835\udc26\ud835\udc32 \ud835\udc16\ud835\udc21\ud835\udc28\ud835\udc25\ud835\udc1e \ud835\udc02\ud835\udc1a\ud835\udc2b\ud835\udc1e\ud835\udc1e\ud835\udc2b! \ud835\udc04\ud835\udc27\ud835\udc1d\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc14\ud835\udc29 \ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc2c \ud835\udc0f\ud835\udc21\ud835\udc1e\ud835\udc27\ud835\udc28\ud835\udc26\ud835\udc1e\ud835\udc27\ud835\udc1a\ud835\udc25 \ud835\udc0c\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21 \ud835\udc16\ud835\udc22\ud835\udc2d\ud835\udc21 $\ud835\udfd0\ud835\udfd7\ud835\udfd2\ud835\udc0a \ud835\udc1a \ud835\udfd1\ud835\udfd5% \ud835\udc0c\ud835\udc1a\ud835\udc2b\ud835\udc20\ud835\udc22\ud835\udc27\ud83d\udd25\ud83d\udd25 \ud83e\udd47 I like to think that the bags under my eyes represent how hard I\u2019ve worked these past years \ud83d\ude34 lol It takes"
+    "description": "\ud83d\udd25\ud83d\udd25$\ud835\udfcf\ud835\udfd2\ud835\udfd6\ud835\udc0a \ud835\udc22\ud835\udc27 \ud835\udc0e\ud835\udc27\ud835\udc1e \ud835\udc03\ud835\udc1a\ud835\udc32 - \ud835\udc13\ud835\udc21\ud835\udc1e \ud835\udc01\ud835\udc1e\ud835\udc2c\ud835\udc2d \ud835\udc03\ud835\udc1a\ud835\udc32 \ud835\udc22\ud835\udc27 \ud835\udc26\ud835\udc32 \ud835\udc16\ud835\udc21\ud835\udc28\ud835\udc25\ud835\udc1e \ud835\udc02\ud835\udc1a\ud835\udc2b\ud835\udc1e\ud835\udc1e\ud835\udc2b! \ud835\udc04\ud835\udc27\ud835\udc1d\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc14\ud835\udc29 \ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc2c \ud835\udc0f\ud835\udc21\ud835\udc1e\ud835\udc27\ud835\udc28\ud835\udc26\ud835\udc1e\ud835\udc27\ud835\udc1a\ud835\udc25 \ud835\udc0c\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21 \ud835\udc16\ud835\udc22\ud835\udc2d\ud835\udc21 $\ud835\udfd0\ud835\udfd7\ud835\udfd2\ud835\udc0a \ud835\udc1a \ud835\udfd1\ud835\udfd5% \ud835\udc0c\ud835\udc1a\ud835\udc2b\ud835\udc20\ud835\udc22\ud835\udc27\ud83d\udd25\ud83d\udd25 \ud83e\udd47 I like to think that the bags under my eyes represent how hard I\u2019ve worked these past years \ud83d\ude34 lol It takes",
+    "video": "/assets/instagram_videos/reel_CkaJ5hCju2s.mp4"
   },
   {
     "id": "reel-36",
@@ -619,7 +654,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CkdyaHbst7s.jpg",
-    "description": "\ud83d\udd25\ud835\udfcf\ud835\udc2c\ud835\udc2d \ud835\udc03\ud835\udc1a\ud835\udc32 \ud835\udc28\ud835\udc1f \ud835\udc0d\ud835\udc28\ud835\udc2f\ud835\udc1e\ud835\udc26\ud835\udc1b\ud835\udc1e\ud835\udc2b \ud835\udc12\ud835\udc1e\ud835\udc1e\ud835\udc26\ud835\udc2c \ud835\udc15\ud835\udc1e\ud835\udc2b\ud835\udc32 \ud835\udc06\ud835\udc2b\ud835\udc1e\ud835\udc1a\ud835\udc2d..$\ud835\udfd2\ud835\udfd0\ud835\udc0a \ud835\udc1a \ud835\udc03\ud835\udc1a\ud835\udc32 \ud83d\udd25 Q4 IS GOING ON!!!!! - Don\u2019t WASTE IT! WOOOOOOOO As you know we are absolutely crushing this Q4 with massive clients success, so I thought it would be fitting to write a"
+    "description": "\ud83d\udd25\ud835\udfcf\ud835\udc2c\ud835\udc2d \ud835\udc03\ud835\udc1a\ud835\udc32 \ud835\udc28\ud835\udc1f \ud835\udc0d\ud835\udc28\ud835\udc2f\ud835\udc1e\ud835\udc26\ud835\udc1b\ud835\udc1e\ud835\udc2b \ud835\udc12\ud835\udc1e\ud835\udc1e\ud835\udc26\ud835\udc2c \ud835\udc15\ud835\udc1e\ud835\udc2b\ud835\udc32 \ud835\udc06\ud835\udc2b\ud835\udc1e\ud835\udc1a\ud835\udc2d..$\ud835\udfd2\ud835\udfd0\ud835\udc0a \ud835\udc1a \ud835\udc03\ud835\udc1a\ud835\udc32 \ud83d\udd25 Q4 IS GOING ON!!!!! - Don\u2019t WASTE IT! WOOOOOOOO As you know we are absolutely crushing this Q4 with massive clients success, so I thought it would be fitting to write a",
+    "video": "/assets/instagram_videos/reel_CkdyaHbst7s.mp4"
   },
   {
     "id": "reel-37",
@@ -632,7 +668,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Ckg2XwHB4BU.jpg",
-    "description": "\ud83d\udd25\ud83d\udd25Hot Dropshipping Niches List For This Q4\ud83d\udd25\ud83d\udd25 Hey Guys & Girls, Gaurav Ecom once again! \ud83d\ude80As you already know, we have scaled one of our clients\u2019 dropshipping brands to over $148K in one day in sales while closing the mont"
+    "description": "\ud83d\udd25\ud83d\udd25Hot Dropshipping Niches List For This Q4\ud83d\udd25\ud83d\udd25 Hey Guys & Girls, Gaurav Ecom once again! \ud83d\ude80As you already know, we have scaled one of our clients\u2019 dropshipping brands to over $148K in one day in sales while closing the mont",
+    "video": "/assets/instagram_videos/reel_Ckg2XwHB4BU.mp4"
   },
   {
     "id": "reel-38",
@@ -645,7 +682,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_ClHh5REOg2D.jpg",
-    "description": "\ud835\uddd4\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\uddf0\ud835\uddf9\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddfd\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf2\ud835\uddf1 $\ud835\udff3\ud835\udff3,\ud835\udfec\ud835\udfec\ud835\udfec \ud835\uddf6\ud835\uddfb \ud835\udfed\ud835\udff4 \ud835\uddf1\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 \ud835\udff0\ud835\uddeb+ \ud835\udde5\ud835\udde2\ud835\udddc! I am posting this today to mark another HUGE milestone for our Elite Shopify Dropshipping Mastermind Community. LET'S CRUSH THIS Q4 TOGETHER @gauravecomm"
+    "description": "\ud835\uddd4\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\uddf0\ud835\uddf9\ud835\uddf6\ud835\uddf2\ud835\uddfb\ud835\ude01 \ud835\uddfd\ud835\uddee\ud835\ude00\ud835\ude00\ud835\uddf2\ud835\uddf1 $\ud835\udff3\ud835\udff3,\ud835\udfec\ud835\udfec\ud835\udfec \ud835\uddf6\ud835\uddfb \ud835\udfed\ud835\udff4 \ud835\uddf1\ud835\uddee\ud835\ude06\ud835\ude00 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 \ud835\udff0\ud835\uddeb+ \ud835\udde5\ud835\udde2\ud835\udddc! I am posting this today to mark another HUGE milestone for our Elite Shopify Dropshipping Mastermind Community. LET'S CRUSH THIS Q4 TOGETHER @gauravecomm",
+    "video": "/assets/instagram_videos/reel_ClHh5REOg2D.mp4"
   },
   {
     "id": "reel-39",
@@ -658,7 +696,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_ClNmKjfuASL.jpg",
-    "description": "Have such a RICH & FULFILLING life that your \u201cawake\u201d is better than your \u201cdreams\u201d \ud83d\ude09 The amount of clients results posted every day in our Elite Shopify Dropshipping Mastermind Facebook group is UNMATCHED. Clearly, we\u2019re "
+    "description": "Have such a RICH & FULFILLING life that your \u201cawake\u201d is better than your \u201cdreams\u201d \ud83d\ude09 The amount of clients results posted every day in our Elite Shopify Dropshipping Mastermind Facebook group is UNMATCHED. Clearly, we\u2019re ",
+    "video": "/assets/instagram_videos/reel_ClNmKjfuASL.mp4"
   },
   {
     "id": "reel-40",
@@ -671,7 +710,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_ClalPbeN0Xz.jpg",
-    "description": "\ud835\udc00\ud835\udc27\ud835\udc28\ud835\udc2d\ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc01\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc22\ud835\udc2c \ud835\udc1e\ud835\udc31\ud835\udc29\ud835\udc25\ud835\udc28\ud835\udc1d\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc01\ud835\udc25\ud835\udc1a\ud835\udc1c\ud835\udc24 \ud835\udc05\ud835\udc2b\ud835\udc22\ud835\udc1d\ud835\udc1a\ud835\udc32 \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 $\ud835\udfd0\ud835\udfce\ud835\udc0a \ud835\udc03\ud835\udc1a\ud835\udc32 & \ud835\udfd1\ud835\udfd7% \ud835\udc07\ud835\udc1e\ud835\udc1a\ud835\udc25\ud835\udc2d\ud835\udc21\ud835\udc32 \ud835\udc0c\ud835\udc1a\ud835\udc2b\ud835\udc20\ud835\udc22\ud835\udc27\ud835\udc2c!\ud83d\udd25\ud83d\udd25\ud83d\udd25 Imagine just how easy it would be to scale your ecom store if you were getting a healthy margin on your ads every day\u2026\u2063 \u2063 It\u2019s like living l"
+    "description": "\ud835\udc00\ud835\udc27\ud835\udc28\ud835\udc2d\ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc01\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc22\ud835\udc2c \ud835\udc1e\ud835\udc31\ud835\udc29\ud835\udc25\ud835\udc28\ud835\udc1d\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc01\ud835\udc25\ud835\udc1a\ud835\udc1c\ud835\udc24 \ud835\udc05\ud835\udc2b\ud835\udc22\ud835\udc1d\ud835\udc1a\ud835\udc32 \ud835\udc30\ud835\udc22\ud835\udc2d\ud835\udc21 $\ud835\udfd0\ud835\udfce\ud835\udc0a \ud835\udc03\ud835\udc1a\ud835\udc32 & \ud835\udfd1\ud835\udfd7% \ud835\udc07\ud835\udc1e\ud835\udc1a\ud835\udc25\ud835\udc2d\ud835\udc21\ud835\udc32 \ud835\udc0c\ud835\udc1a\ud835\udc2b\ud835\udc20\ud835\udc22\ud835\udc27\ud835\udc2c!\ud83d\udd25\ud83d\udd25\ud83d\udd25 Imagine just how easy it would be to scale your ecom store if you were getting a healthy margin on your ads every day\u2026\u2063 \u2063 It\u2019s like living l",
+    "video": "/assets/instagram_videos/reel_ClalPbeN0Xz.mp4"
   },
   {
     "id": "reel-41",
@@ -684,7 +724,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_ClzYLasvGb7.jpg",
-    "description": "\ud835\udc07\ud835\udc2e\ud835\udc20\ud835\udc1e \ud835\udc13\ud835\udc1a\ud835\udc24\ud835\udc1e\ud835\udc1a\ud835\udc30\ud835\udc1a\ud835\udc32\ud835\udc2c \ud835\udc1f\ud835\udc2b\ud835\udc28\ud835\udc26 $\ud835\udfd2,\ud835\udfd0\ud835\udfd0,\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc0d\ud835\udc28\ud835\udc2f\ud835\udc1e\ud835\udc26\ud835\udc1b\ud835\udc1e\ud835\udc2b: Just Revealed That Phenomenal Strategy in Our Fb Group! Want that strategy? Get that from our exclusive Elite Shopify Dropshipping Mastermind group! Link is in the BIO! I hope y'al"
+    "description": "\ud835\udc07\ud835\udc2e\ud835\udc20\ud835\udc1e \ud835\udc13\ud835\udc1a\ud835\udc24\ud835\udc1e\ud835\udc1a\ud835\udc30\ud835\udc1a\ud835\udc32\ud835\udc2c \ud835\udc1f\ud835\udc2b\ud835\udc28\ud835\udc26 $\ud835\udfd2,\ud835\udfd0\ud835\udfd0,\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc0d\ud835\udc28\ud835\udc2f\ud835\udc1e\ud835\udc26\ud835\udc1b\ud835\udc1e\ud835\udc2b: Just Revealed That Phenomenal Strategy in Our Fb Group! Want that strategy? Get that from our exclusive Elite Shopify Dropshipping Mastermind group! Link is in the BIO! I hope y'al",
+    "video": "/assets/instagram_videos/reel_ClzYLasvGb7.mp4"
   },
   {
     "id": "reel-42",
@@ -697,7 +738,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CmtNAAPjT8g.jpg",
-    "description": "\ud835\udddf\ud835\uddee\ud835\ude00\ud835\ude01 \ud835\uddd6\ud835\uddf5\ud835\uddee\ud835\uddfb\ud835\uddf0\ud835\uddf2! [\ud835\udde0\ud835\udde8\ud835\udde6\ud835\udde7-\ud835\udde5\ud835\uddd8\ud835\uddd4\ud835\uddd7]\u2063 We are Taking on the LAST FEW spots to build & scale a world-class eCommerce store with me personally this 2023, and things are getting serious this new year.\u2063 We've seen the crazy rush that com"
+    "description": "\ud835\udddf\ud835\uddee\ud835\ude00\ud835\ude01 \ud835\uddd6\ud835\uddf5\ud835\uddee\ud835\uddfb\ud835\uddf0\ud835\uddf2! [\ud835\udde0\ud835\udde8\ud835\udde6\ud835\udde7-\ud835\udde5\ud835\uddd8\ud835\uddd4\ud835\uddd7]\u2063 We are Taking on the LAST FEW spots to build & scale a world-class eCommerce store with me personally this 2023, and things are getting serious this new year.\u2063 We've seen the crazy rush that com",
+    "video": "/assets/instagram_videos/reel_CmtNAAPjT8g.mp4"
   },
   {
     "id": "reel-43",
@@ -710,7 +752,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Cm_skHlDG4T.jpg",
-    "description": "\ud835\uddd9\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06, \ud835\uddea\ud835\uddf2 \ud835\uddef\ud835\ude02\ud835\uddf6\ud835\uddf9\ud835\ude01 \ud835\uddee\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf9\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddd7\ud835\uddfc\ud835\uddf9\ud835\uddf9\ud835\uddee\ud835\uddff \ud835\uddd5\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udfee, \ud835\uddf2\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 $\ud835\udfee.\ud835\udfef \ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf9\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddf6\ud835\uddfb \ud835\ude00\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 & \ud835\udfed\ud835\udfed.\ud835\udff2\ud835\uddeb \ud835\udde5\ud835\udde2\ud835\uddd4\ud835\udde6 \ud835\uddee\ud835\uddf3\ud835\ude01\ud835\uddf2\ud835\uddff \ud835\ude00\ud835\ude02\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00\ud835\uddf3\ud835\ude02\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\ude00\ud835\uddfd\ud835\uddf2\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddfb\ud835\uddf4 $\ud835\udfee\ud835\udfec\ud835\udfec\ud835\uddde \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\ude06\ud835\uddf2\ud835\uddee\ud835\uddff! At Elite Shopify Dropshipping Mastermind, we take ambitious people who"
+    "description": "\ud835\uddd9\ud835\uddf6\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\uddf9\ud835\ude06, \ud835\uddea\ud835\uddf2 \ud835\uddef\ud835\ude02\ud835\uddf6\ud835\uddf9\ud835\ude01 \ud835\uddee\ud835\uddfb\ud835\uddfc\ud835\ude01\ud835\uddf5\ud835\uddf2\ud835\uddff \ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf9\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddd7\ud835\uddfc\ud835\uddf9\ud835\uddf9\ud835\uddee\ud835\uddff \ud835\uddd5\ud835\uddff\ud835\uddee\ud835\uddfb\ud835\uddf1 \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\udfee\ud835\udfec\ud835\udfee\ud835\udfee, \ud835\uddf2\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddfb\ud835\uddf4 \ud835\ude04\ud835\uddf6\ud835\ude01\ud835\uddf5 $\ud835\udfee.\ud835\udfef \ud835\udde0\ud835\uddf6\ud835\uddf9\ud835\uddf9\ud835\uddf6\ud835\uddfc\ud835\uddfb \ud835\uddf6\ud835\uddfb \ud835\ude00\ud835\uddee\ud835\uddf9\ud835\uddf2\ud835\ude00 & \ud835\udfed\ud835\udfed.\ud835\udff2\ud835\uddeb \ud835\udde5\ud835\udde2\ud835\uddd4\ud835\udde6 \ud835\uddee\ud835\uddf3\ud835\ude01\ud835\uddf2\ud835\uddff \ud835\ude00\ud835\ude02\ud835\uddf0\ud835\uddf0\ud835\uddf2\ud835\ude00\ud835\ude00\ud835\uddf3\ud835\ude02\ud835\uddf9\ud835\uddf9\ud835\ude06 \ud835\ude00\ud835\uddfd\ud835\uddf2\ud835\uddfb\ud835\uddf1\ud835\uddf6\ud835\uddfb\ud835\uddf4 $\ud835\udfee\ud835\udfec\ud835\udfec\ud835\uddde \ud835\ude01\ud835\uddf5\ud835\uddf6\ud835\ude00 \ud835\ude06\ud835\uddf2\ud835\uddee\ud835\uddff! At Elite Shopify Dropshipping Mastermind, we take ambitious people who",
+    "video": "/assets/instagram_videos/reel_Cm_skHlDG4T.mp4"
   },
   {
     "id": "reel-44",
@@ -723,7 +766,8 @@ export const liveResultsProof = [
     "badge": "CREATIVE TESTING",
     "category": "Creative Hooks",
     "image": "/assets/instagram_thumbs/reel_Cn360snLy84.jpg",
-    "description": "Does Dropshipping Still Work In 2023? Let's find out! What's going on, Guys and Girls ? Finally, we are in 2023! With the introduction of new ways to make money online, people are raising an important question from our d"
+    "description": "Does Dropshipping Still Work In 2023? Let's find out! What's going on, Guys and Girls ? Finally, we are in 2023! With the introduction of new ways to make money online, people are raising an important question from our d",
+    "video": "/assets/instagram_videos/reel_Cn360snLy84.mp4"
   },
   {
     "id": "reel-45",
@@ -736,7 +780,8 @@ export const liveResultsProof = [
     "badge": "CREATIVE TESTING",
     "category": "Creative Hooks",
     "image": "/assets/instagram_thumbs/reel_CoUCFM1PIlN.jpg",
-    "description": "\ud835\udfd3 \ud835\udc02\ud835\udc2b\ud835\udc2e\ud835\udc1c\ud835\udc22\ud835\udc1a\ud835\udc25 \ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc20\ud835\udc2c \ud835\udc30\ud835\udc1e \ud835\udc25\ud835\udc1e\ud835\udc1a\ud835\udc2b\ud835\udc27\ud835\udc1e\ud835\udc1d \ud835\udc30\ud835\udc21\ud835\udc22\ud835\udc25\ud835\udc1e \ud835\udc2c\ud835\udc1c\ud835\udc1a\ud835\udc25\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc1b\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc2d\ud835\udc28 \ud835\udfcf\ud835\udfce\ud835\udfd3,\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc22\ud835\udc27 \ud835\udfd0\ud835\udfd1 \ud835\udc1d\ud835\udc1a\ud835\udc32\ud835\udc2c! The dropshipping business is booming in 2023 & thanks to the ease of use with Shopify, and there are specific things you need to do to profit wit"
+    "description": "\ud835\udfd3 \ud835\udc02\ud835\udc2b\ud835\udc2e\ud835\udc1c\ud835\udc22\ud835\udc1a\ud835\udc25 \ud835\udc2d\ud835\udc21\ud835\udc22\ud835\udc27\ud835\udc20\ud835\udc2c \ud835\udc30\ud835\udc1e \ud835\udc25\ud835\udc1e\ud835\udc1a\ud835\udc2b\ud835\udc27\ud835\udc1e\ud835\udc1d \ud835\udc30\ud835\udc21\ud835\udc22\ud835\udc25\ud835\udc1e \ud835\udc2c\ud835\udc1c\ud835\udc1a\ud835\udc25\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc1b\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc2d\ud835\udc28 \ud835\udfcf\ud835\udfce\ud835\udfd3,\ud835\udfce\ud835\udfce\ud835\udfce \ud835\udc22\ud835\udc27 \ud835\udfd0\ud835\udfd1 \ud835\udc1d\ud835\udc1a\ud835\udc32\ud835\udc2c! The dropshipping business is booming in 2023 & thanks to the ease of use with Shopify, and there are specific things you need to do to profit wit",
+    "video": "/assets/instagram_videos/reel_CoUCFM1PIlN.mp4"
   },
   {
     "id": "reel-46",
@@ -749,7 +794,8 @@ export const liveResultsProof = [
     "badge": "VERIFIED PERFORMANCE",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CpSA2DYIUeU.jpg",
-    "description": "Another Success Story in the Books\ud83c\udfaf\ud83c\udfc6"
+    "description": "Another Success Story in the Books\ud83c\udfaf\ud83c\udfc6",
+    "video": "/assets/instagram_videos/reel_CpSA2DYIUeU.mp4"
   },
   {
     "id": "reel-47",
@@ -762,7 +808,8 @@ export const liveResultsProof = [
     "badge": "CREATIVE TESTING",
     "category": "Creative Hooks",
     "image": "/assets/instagram_thumbs/reel_CquiFM0uqQb.jpg",
-    "description": "\ud835\udc0c\ud835\udc1a\ud835\udc2c\ud835\udc2c\ud835\udc22\ud835\udc2f\ud835\udc1e \ud835\udc12\ud835\udc2e\ud835\udc1c\ud835\udc1c\ud835\udc1e\ud835\udc2c\ud835\udc2c \ud835\udc0e\ud835\udc27\ud835\udc1c\ud835\udc1e \ud835\udc00\ud835\udc20\ud835\udc1a\ud835\udc22\ud835\udc27 (\ud835\udc03\ud835\udc08\ud835\udc03\ud835\udc0d'\ud835\udc13 \ud835\udc04\ud835\udc17\ud835\udc0f\ud835\udc04\ud835\udc02\ud835\udc13\ud835\udc04\ud835\udc03 \ud835\udc16\ud835\udc08\ud835\udc13\ud835\udc07 \ud835\udc0e\ud835\udc14\ud835\udc11 \ud835\udc03\ud835\udc05\ud835\udc18 \ud835\udc0f\ud835\udc11\ud835\udc0e\ud835\udc06\ud835\udc11\ud835\udc00\ud835\udc0c) \u270b Meet Albert: From $100per day to $153,163 per month within a few short months inside our New Launched \"DFY\" BrandScalingHacks Program! \u27a1\ufe0f Before Shaking"
+    "description": "\ud835\udc0c\ud835\udc1a\ud835\udc2c\ud835\udc2c\ud835\udc22\ud835\udc2f\ud835\udc1e \ud835\udc12\ud835\udc2e\ud835\udc1c\ud835\udc1c\ud835\udc1e\ud835\udc2c\ud835\udc2c \ud835\udc0e\ud835\udc27\ud835\udc1c\ud835\udc1e \ud835\udc00\ud835\udc20\ud835\udc1a\ud835\udc22\ud835\udc27 (\ud835\udc03\ud835\udc08\ud835\udc03\ud835\udc0d'\ud835\udc13 \ud835\udc04\ud835\udc17\ud835\udc0f\ud835\udc04\ud835\udc02\ud835\udc13\ud835\udc04\ud835\udc03 \ud835\udc16\ud835\udc08\ud835\udc13\ud835\udc07 \ud835\udc0e\ud835\udc14\ud835\udc11 \ud835\udc03\ud835\udc05\ud835\udc18 \ud835\udc0f\ud835\udc11\ud835\udc0e\ud835\udc06\ud835\udc11\ud835\udc00\ud835\udc0c) \u270b Meet Albert: From $100per day to $153,163 per month within a few short months inside our New Launched \"DFY\" BrandScalingHacks Program! \u27a1\ufe0f Before Shaking",
+    "video": "/assets/instagram_videos/reel_CquiFM0uqQb.mp4"
   },
   {
     "id": "reel-48",
@@ -775,7 +822,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Cra8LBbphRB.jpg",
-    "description": "\ud83e\udd2f \ud835\udc0c\ud835\udc1e\ud835\udc1e\ud835\udc2d \ud835\udc28\ud835\udc27\ud835\udc1e \ud835\udc28\ud835\udc1f \ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc04-\ud835\udc02\ud835\udc28\ud835\udc26 \ud835\udc02\ud835\udc25\ud835\udc22\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc2c, \"\ud835\udc12\ud835\udc1a\ud835\udc2c\ud835\udc21\ud835\udc1a,\" \ud835\udc30\ud835\udc21\ud835\udc28\ud835\udc26 \ud835\udc30\ud835\udc1e \ud835\udc21\ud835\udc1a\ud835\udc2f\ud835\udc1e \ud835\udc1b\ud835\udc1e\ud835\udc1e\ud835\udc27 \ud835\udc21\ud835\udc1e\ud835\udc25\ud835\udc29\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc1f\ud835\udc28\ud835\udc2b \ud835\udc1f\ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc26\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21\ud835\udc2c, \ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc27\ud835\udc28\ud835\udc30 \ud835\udc30\ud835\udc1e \ud835\udc21\ud835\udc1a\ud835\udc2f\ud835\udc1e \ud835\udc2c\ud835\udc1c\ud835\udc1a\ud835\udc25\ud835\udc1e\ud835\udc1d \ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc1b\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc2d\ud835\udc28 $\ud835\udfcf\ud835\udfd4\ud835\udfd3\ud835\udc0a \ud835\udc22\ud835\udc27 \ud835\udfd0\ud835\udfd0\ud835\udc03\ud835\udc00\ud835\udc18\ud835\udc12! If you are getting Sick & tired of spending time inside Facebook Ads Manager to ac"
+    "description": "\ud83e\udd2f \ud835\udc0c\ud835\udc1e\ud835\udc1e\ud835\udc2d \ud835\udc28\ud835\udc27\ud835\udc1e \ud835\udc28\ud835\udc1f \ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc04-\ud835\udc02\ud835\udc28\ud835\udc26 \ud835\udc02\ud835\udc25\ud835\udc22\ud835\udc1e\ud835\udc27\ud835\udc2d\ud835\udc2c, \"\ud835\udc12\ud835\udc1a\ud835\udc2c\ud835\udc21\ud835\udc1a,\" \ud835\udc30\ud835\udc21\ud835\udc28\ud835\udc26 \ud835\udc30\ud835\udc1e \ud835\udc21\ud835\udc1a\ud835\udc2f\ud835\udc1e \ud835\udc1b\ud835\udc1e\ud835\udc1e\ud835\udc27 \ud835\udc21\ud835\udc1e\ud835\udc25\ud835\udc29\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc1f\ud835\udc28\ud835\udc2b \ud835\udc1f\ud835\udc28\ud835\udc2e\ud835\udc2b \ud835\udc26\ud835\udc28\ud835\udc27\ud835\udc2d\ud835\udc21\ud835\udc2c, \ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc27\ud835\udc28\ud835\udc30 \ud835\udc30\ud835\udc1e \ud835\udc21\ud835\udc1a\ud835\udc2f\ud835\udc1e \ud835\udc2c\ud835\udc1c\ud835\udc1a\ud835\udc25\ud835\udc1e\ud835\udc1d \ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc1b\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc2d\ud835\udc28 $\ud835\udfcf\ud835\udfd4\ud835\udfd3\ud835\udc0a \ud835\udc22\ud835\udc27 \ud835\udfd0\ud835\udfd0\ud835\udc03\ud835\udc00\ud835\udc18\ud835\udc12! If you are getting Sick & tired of spending time inside Facebook Ads Manager to ac",
+    "video": "/assets/instagram_videos/reel_Cra8LBbphRB.mp4"
   },
   {
     "id": "reel-49",
@@ -788,7 +836,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Cr---6lOagu.jpg",
-    "description": "Meet Riley: After joining BrandScalingHacks, she went from $40K per Month to making $237K per Month In Sales with a 42% Net Margin Within a few short weeks! Before Working With Us: She was running a typical eCom store\u2026 \u2026"
+    "description": "Meet Riley: After joining BrandScalingHacks, she went from $40K per Month to making $237K per Month In Sales with a 42% Net Margin Within a few short weeks! Before Working With Us: She was running a typical eCom store\u2026 \u2026",
+    "video": "/assets/instagram_videos/reel_Cr---6lOagu.mp4"
   },
   {
     "id": "reel-50",
@@ -801,7 +850,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_CsVfgXouvaF.jpg",
-    "description": "Once you see the powerful results of running your own online business, it becomes an addiction like no other\ud83d\udcaa Picture this: the exhilaration of watching your sales soar, the satisfaction of happy customers, and the freed"
+    "description": "Once you see the powerful results of running your own online business, it becomes an addiction like no other\ud83d\udcaa Picture this: the exhilaration of watching your sales soar, the satisfaction of happy customers, and the freed",
+    "video": "/assets/instagram_videos/reel_CsVfgXouvaF.mp4"
   },
   {
     "id": "reel-51",
@@ -814,7 +864,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Ctw_14qvH0z.jpg",
-    "description": "\ud83d\udce3 Heads Up! \ud83d\udce3 Scaling This Brand to $21K Day with Facebook Ads I truly enjoy sharing strategies that have been successful for me, just because I can... \ud83d\ude0e Currently, we are MASSIVELY EXPANDING using Highly-Targeted traffi"
+    "description": "\ud83d\udce3 Heads Up! \ud83d\udce3 Scaling This Brand to $21K Day with Facebook Ads I truly enjoy sharing strategies that have been successful for me, just because I can... \ud83d\ude0e Currently, we are MASSIVELY EXPANDING using Highly-Targeted traffi",
+    "video": "/assets/instagram_videos/reel_Ctw_14qvH0z.mp4"
   },
   {
     "id": "reel-52",
@@ -827,7 +878,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_CxqUP36gaEo.jpg",
-    "description": "Finally we have taken this brand to $128K in Just 14Days with Insane Profits...This store is going through its first Q4, and will start to boss up over the next few weeks. \ud83d\udcaf I will be showcasing how we truly scale in Q4."
+    "description": "Finally we have taken this brand to $128K in Just 14Days with Insane Profits...This store is going through its first Q4, and will start to boss up over the next few weeks. \ud83d\udcaf I will be showcasing how we truly scale in Q4.",
+    "video": "/assets/instagram_videos/reel_CxqUP36gaEo.mp4"
   },
   {
     "id": "reel-53",
@@ -840,7 +892,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_Cz0k0L3yRS8.jpg",
-    "description": "Have you ever wished for a foolproof plan for how every 6& 7 Figure Brands scale them wildly during the BFCM Shopping Season like countless of my clients are already doing? \ud83d\udd25 (Want to use mine?) It's not just a game-chan"
+    "description": "Have you ever wished for a foolproof plan for how every 6& 7 Figure Brands scale them wildly during the BFCM Shopping Season like countless of my clients are already doing? \ud83d\udd25 (Want to use mine?) It's not just a game-chan",
+    "video": "/assets/instagram_videos/reel_Cz0k0L3yRS8.mp4"
   },
   {
     "id": "reel-54",
@@ -853,7 +906,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_C0QPPA5hHS4.jpg",
-    "description": "Turned $11,886 into $86,272 this November\ud83d\udd25 Want to know my exact strategies i have been using for this client, which you can repeat the same and scale your brand by atleast 10X?"
+    "description": "Turned $11,886 into $86,272 this November\ud83d\udd25 Want to know my exact strategies i have been using for this client, which you can repeat the same and scale your brand by atleast 10X?",
+    "video": "/assets/instagram_videos/reel_C0QPPA5hHS4.mp4"
   },
   {
     "id": "reel-55",
@@ -866,7 +920,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C2J6Xe5Ml-E.jpg",
-    "description": "Finally, Another Client touched the $1.6M Year Mark with Insane ROAS Hey Guys, Gaurav Ecom here:) Hope you had a phenomenal 2023 and a having a blasting 2024. Today, I will reveal some inner stuff that I never prefer to "
+    "description": "Finally, Another Client touched the $1.6M Year Mark with Insane ROAS Hey Guys, Gaurav Ecom here:) Hope you had a phenomenal 2023 and a having a blasting 2024. Today, I will reveal some inner stuff that I never prefer to ",
+    "video": "/assets/instagram_videos/reel_C2J6Xe5Ml-E.mp4"
   },
   {
     "id": "reel-56",
@@ -879,7 +934,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C2hk_plyrcZ.jpg",
-    "description": "Journey of This Client Behind Touching the way to the $100,000/Month mark with this brand in 24 days of Jan 2024? (\ud835\udc03\ud835\udc1e\ud835\udc2d\ud835\udc1a\ud835\udc22\ud835\udc25\ud835\udc2c \ud835\udc01\ud835\udc1e\ud835\udc25\ud835\udc28\ud835\udc30) Welcome, Guys. I am excited to share my secret sauce on this new case study with you about"
+    "description": "Journey of This Client Behind Touching the way to the $100,000/Month mark with this brand in 24 days of Jan 2024? (\ud835\udc03\ud835\udc1e\ud835\udc2d\ud835\udc1a\ud835\udc22\ud835\udc25\ud835\udc2c \ud835\udc01\ud835\udc1e\ud835\udc25\ud835\udc28\ud835\udc30) Welcome, Guys. I am excited to share my secret sauce on this new case study with you about",
+    "video": "/assets/instagram_videos/reel_C2hk_plyrcZ.mp4"
   },
   {
     "id": "reel-57",
@@ -892,7 +948,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_C8BoEiWvQPX.jpg",
-    "description": "\ud835\udc00\ud835\udc27\ud835\udc28\ud835\udc2d\ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc12\ud835\udc22\ud835\udc31 \ud835\udc05\ud835\udc22\ud835\udc20\ud835\udc2e\ud835\udc2b\ud835\udc1e\ud835\udc2c \ud835\udc05\ud835\udc22\ud835\udc2d\ud835\udc27\ud835\udc1e\ud835\udc2c\ud835\udc2c \ud835\udc01\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc22\ud835\udc27 \ud835\udc13\ud835\udc21\ud835\udc1e \ud835\udc01\ud835\udc28\ud835\udc28\ud835\udc24\ud835\udc2c: \ud835\udfd1 \ud835\udc06\ud835\udc1a\ud835\udc26\ud835\udc1e-\ud835\udc02\ud835\udc21\ud835\udc1a\ud835\udc27\ud835\udc20\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc13\ud835\udc1a\ud835\udc1c\ud835\udc2d\ud835\udc22\ud835\udc1c\ud835\udc2c \ud835\udc1f\ud835\udc28\ud835\udc2b \ud835\udc08\ud835\udc27\ud835\udc2c\ud835\udc2d\ud835\udc1a\ud835\udc27\ud835\udc2d \ud835\udc06\ud835\udc2b\ud835\udc28\ud835\udc30\ud835\udc2d\ud835\udc21 Running ads is essential for every brand to have massive exposure in front of your customers, but if you are solely focused on th"
+    "description": "\ud835\udc00\ud835\udc27\ud835\udc28\ud835\udc2d\ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc12\ud835\udc22\ud835\udc31 \ud835\udc05\ud835\udc22\ud835\udc20\ud835\udc2e\ud835\udc2b\ud835\udc1e\ud835\udc2c \ud835\udc05\ud835\udc22\ud835\udc2d\ud835\udc27\ud835\udc1e\ud835\udc2c\ud835\udc2c \ud835\udc01\ud835\udc2b\ud835\udc1a\ud835\udc27\ud835\udc1d \ud835\udc22\ud835\udc27 \ud835\udc13\ud835\udc21\ud835\udc1e \ud835\udc01\ud835\udc28\ud835\udc28\ud835\udc24\ud835\udc2c: \ud835\udfd1 \ud835\udc06\ud835\udc1a\ud835\udc26\ud835\udc1e-\ud835\udc02\ud835\udc21\ud835\udc1a\ud835\udc27\ud835\udc20\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc13\ud835\udc1a\ud835\udc1c\ud835\udc2d\ud835\udc22\ud835\udc1c\ud835\udc2c \ud835\udc1f\ud835\udc28\ud835\udc2b \ud835\udc08\ud835\udc27\ud835\udc2c\ud835\udc2d\ud835\udc1a\ud835\udc27\ud835\udc2d \ud835\udc06\ud835\udc2b\ud835\udc28\ud835\udc30\ud835\udc2d\ud835\udc21 Running ads is essential for every brand to have massive exposure in front of your customers, but if you are solely focused on th",
+    "video": "/assets/instagram_videos/reel_C8BoEiWvQPX.mp4"
   },
   {
     "id": "reel-58",
@@ -905,7 +962,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C8rGKA8Sk-R.jpg",
-    "description": "\ud835\udc00\ud835\udc27\ud835\udc28\ud835\udc2d\ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc0c\ud835\udc1a\ud835\udc2c\ud835\udc2c\ud835\udc22\ud835\udc2f\ud835\udc1e \ud835\udc16\ud835\udc22\ud835\udc27 \ud835\udc22\ud835\udc27 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc01\ud835\udc28\ud835\udc28\ud835\udc24\ud835\udc2c: $\ud835\udfd7\ud835\udfd6\ud835\udc0a \ud835\udc22\ud835\udc27 \ud835\udc09\ud835\udc2e\ud835\udc2c\ud835\udc2d \ud835\udfd0\ud835\udfd1 \ud835\udc03\ud835\udc1a\ud835\udc32\ud835\udc2c \ud835\udc08\ud835\udc27\ud835\udc2d\ud835\udc2b\ud835\udc28\ud835\udc1d\ud835\udc2e\ud835\udc1c\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc02\ud835\udc1a\ud835\udc25\ud835\udc2b\ud835\udc1a: Her Journey of Scaling Her Fashion Apparel Brand to $98K in 23 Days! \ud835\udc01\ud835\udc1e\ud835\udc1f\ud835\udc28\ud835\udc2b\ud835\udc1e \ud835\udc02\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc1a\ud835\udc1b\ud835\udc28\ud835\udc2b\ud835\udc1a\ud835\udc2d\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc16\ud835\udc22\ud835\udc2d\ud835\udc21 \ud835\udc0c\ud835\udc1e: Carla\u2019s Facebook ads were struggling to convert"
+    "description": "\ud835\udc00\ud835\udc27\ud835\udc28\ud835\udc2d\ud835\udc21\ud835\udc1e\ud835\udc2b \ud835\udc0c\ud835\udc1a\ud835\udc2c\ud835\udc2c\ud835\udc22\ud835\udc2f\ud835\udc1e \ud835\udc16\ud835\udc22\ud835\udc27 \ud835\udc22\ud835\udc27 \ud835\udc2d\ud835\udc21\ud835\udc1e \ud835\udc01\ud835\udc28\ud835\udc28\ud835\udc24\ud835\udc2c: $\ud835\udfd7\ud835\udfd6\ud835\udc0a \ud835\udc22\ud835\udc27 \ud835\udc09\ud835\udc2e\ud835\udc2c\ud835\udc2d \ud835\udfd0\ud835\udfd1 \ud835\udc03\ud835\udc1a\ud835\udc32\ud835\udc2c \ud835\udc08\ud835\udc27\ud835\udc2d\ud835\udc2b\ud835\udc28\ud835\udc1d\ud835\udc2e\ud835\udc1c\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc02\ud835\udc1a\ud835\udc25\ud835\udc2b\ud835\udc1a: Her Journey of Scaling Her Fashion Apparel Brand to $98K in 23 Days! \ud835\udc01\ud835\udc1e\ud835\udc1f\ud835\udc28\ud835\udc2b\ud835\udc1e \ud835\udc02\ud835\udc28\ud835\udc25\ud835\udc25\ud835\udc1a\ud835\udc1b\ud835\udc28\ud835\udc2b\ud835\udc1a\ud835\udc2d\ud835\udc22\ud835\udc27\ud835\udc20 \ud835\udc16\ud835\udc22\ud835\udc2d\ud835\udc21 \ud835\udc0c\ud835\udc1e: Carla\u2019s Facebook ads were struggling to convert",
+    "video": "/assets/instagram_videos/reel_C8rGKA8Sk-R.mp4"
   },
   {
     "id": "reel-59",
@@ -918,7 +976,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C83tKltSXUp.jpg",
-    "description": "The KEY to a successful E-commerce business is CONSISTENCY. Being consistent is one of the most vital and surefire ways to continually grow a successful business, however, it is also something that is often overlooked .."
+    "description": "The KEY to a successful E-commerce business is CONSISTENCY. Being consistent is one of the most vital and surefire ways to continually grow a successful business, however, it is also something that is often overlooked ..",
+    "video": "/assets/instagram_videos/reel_C83tKltSXUp.mp4"
   },
   {
     "id": "reel-60",
@@ -931,7 +990,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C9VEBK8y-0r.jpg",
-    "description": "How to Scale on Meta Aggressively and Profitably Especially When Your E-commerce Brand Is totally New? Let\u2019s crush this Q3 together \ud83d\udd25"
+    "description": "How to Scale on Meta Aggressively and Profitably Especially When Your E-commerce Brand Is totally New? Let\u2019s crush this Q3 together \ud83d\udd25",
+    "video": "/assets/instagram_videos/reel_C9VEBK8y-0r.mp4"
   },
   {
     "id": "reel-61",
@@ -944,7 +1004,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C9b-l3yS6GW.jpg",
-    "description": "Happy Monday Everyone! Get ready for some incredible dropshipping value bomb for you reading this right now... When you dive into dropshipping advice, you\u2019ll encounter endless suggestions on what you \u201cshould be doing.\u201d I"
+    "description": "Happy Monday Everyone! Get ready for some incredible dropshipping value bomb for you reading this right now... When you dive into dropshipping advice, you\u2019ll encounter endless suggestions on what you \u201cshould be doing.\u201d I",
+    "video": "/assets/instagram_videos/reel_C9b-l3yS6GW.mp4"
   },
   {
     "id": "reel-62",
@@ -957,7 +1018,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C9y8opPyus2.jpg",
-    "description": "Planning to Host a 2Hr E-commerce Profit Accelerator Bootcamp for You Guys for FREE! How many of you want me to do it if I cover these topics in-depth on the problems you were never able to solve & get insider tips on lo"
+    "description": "Planning to Host a 2Hr E-commerce Profit Accelerator Bootcamp for You Guys for FREE! How many of you want me to do it if I cover these topics in-depth on the problems you were never able to solve & get insider tips on lo",
+    "video": "/assets/instagram_videos/reel_C9y8opPyus2.mp4"
   },
   {
     "id": "reel-63",
@@ -970,7 +1032,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C-S182hyHAS.jpg",
-    "description": "Another Massive Win of One of Our E-commerce Agency Clients One thing that is hard to find in this industry is genuine care for the client, consistent success, & scale that matters \u2014 that\u2019s our only mission here. A satis"
+    "description": "Another Massive Win of One of Our E-commerce Agency Clients One thing that is hard to find in this industry is genuine care for the client, consistent success, & scale that matters \u2014 that\u2019s our only mission here. A satis",
+    "video": "/assets/instagram_videos/reel_C-S182hyHAS.mp4"
   },
   {
     "id": "reel-64",
@@ -983,7 +1046,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DBE4BLBo-U-.jpg",
-    "description": "It\u2019s 12:57 AM Here & We have successfully scaled this brand\u2019s Early BFCM Offers to $112,866 & $28,391 spent on Meta Ads in the Last 13 Days. \ud83d\ude80 We\u2019re only getting started! Curious about the exact strategies we used?"
+    "description": "It\u2019s 12:57 AM Here & We have successfully scaled this brand\u2019s Early BFCM Offers to $112,866 & $28,391 spent on Meta Ads in the Last 13 Days. \ud83d\ude80 We\u2019re only getting started! Curious about the exact strategies we used?",
+    "video": "/assets/instagram_videos/reel_DBE4BLBo-U-.mp4"
   },
   {
     "id": "reel-65",
@@ -996,7 +1060,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DBHKX5TooJZ.jpg",
-    "description": "\ud83d\udea8Massive Alert Guys: It\u2019s 9:11 PM, and we\u2019ve already crossed $53,387.33 in sales on $12,943.33 in ad spend with a ROAS of 4.12! \ud83d\udd25\ud83d\udcb0 \ud83d\udc4a Q4 is shaping up to be an absolute game-changer for us. I can\u2019t thank this incredible e"
+    "description": "\ud83d\udea8Massive Alert Guys: It\u2019s 9:11 PM, and we\u2019ve already crossed $53,387.33 in sales on $12,943.33 in ad spend with a ROAS of 4.12! \ud83d\udd25\ud83d\udcb0 \ud83d\udc4a Q4 is shaping up to be an absolute game-changer for us. I can\u2019t thank this incredible e",
+    "video": "/assets/instagram_videos/reel_DBHKX5TooJZ.mp4"
   },
   {
     "id": "reel-66",
@@ -1009,7 +1074,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DBJ9ZuTIgnG.jpg",
-    "description": "\ud83d\ude80 After 8 months of optimizing, testing, and refining strategies, we helped a client hit $68,510 in a single day with just $17,764 in ad spend. \ud83d\ude24 If you\u2019re tired of agencies overpromising and underdelivering, this is you"
+    "description": "\ud83d\ude80 After 8 months of optimizing, testing, and refining strategies, we helped a client hit $68,510 in a single day with just $17,764 in ad spend. \ud83d\ude24 If you\u2019re tired of agencies overpromising and underdelivering, this is you",
+    "video": "/assets/instagram_videos/reel_DBJ9ZuTIgnG.mp4"
   },
   {
     "id": "reel-67",
@@ -1022,7 +1088,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DBTXySHSrJa.jpg",
-    "description": "\ud83c\udf96\ufe0f Q4 is shaping up to be incredible! While many slow down for the weekend, we\u2019ve been grinding hard\u2014and it\u2019s paying off. Over the past 7 days, we spent $32,857 for one of our dropshipping clients and generated $133,420 "
+    "description": "\ud83c\udf96\ufe0f Q4 is shaping up to be incredible! While many slow down for the weekend, we\u2019ve been grinding hard\u2014and it\u2019s paying off. Over the past 7 days, we spent $32,857 for one of our dropshipping clients and generated $133,420 ",
+    "video": "/assets/instagram_videos/reel_DBTXySHSrJa.mp4"
   },
   {
     "id": "reel-68",
@@ -1035,7 +1102,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_DBTl4HjMqFI.jpg",
-    "description": "\ud83c\udf96\ufe0f Q4 is shaping up to be incredible! While many slow down for the weekend, we\u2019ve been grinding hard\u2014and it\u2019s paying off. Over the past 7 days, we spent $32,857 for one of our dropshipping clients and generated $133,420 "
+    "description": "\ud83c\udf96\ufe0f Q4 is shaping up to be incredible! While many slow down for the weekend, we\u2019ve been grinding hard\u2014and it\u2019s paying off. Over the past 7 days, we spent $32,857 for one of our dropshipping clients and generated $133,420 ",
+    "video": "/assets/instagram_videos/reel_DBTl4HjMqFI.mp4"
   },
   {
     "id": "reel-69",
@@ -1048,7 +1116,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DBWiTtwSvgw.jpg",
-    "description": "These 5days has been on fire! \ud83d\ude80Spent: $26,594 \ud83d\udcb5 Generated: $99,576 \ud83d\udd25 Profit Margin: 67% What\u2019s the Secret to Scaling in Q4? \ud83c\udfaf We\u2019re laser-focused on scaling the number of orders, not testing anymore. Our systems are dial"
+    "description": "These 5days has been on fire! \ud83d\ude80Spent: $26,594 \ud83d\udcb5 Generated: $99,576 \ud83d\udd25 Profit Margin: 67% What\u2019s the Secret to Scaling in Q4? \ud83c\udfaf We\u2019re laser-focused on scaling the number of orders, not testing anymore. Our systems are dial",
+    "video": "/assets/instagram_videos/reel_DBWiTtwSvgw.mp4"
   },
   {
     "id": "reel-70",
@@ -1061,7 +1130,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_DBqQlIBy-ma.jpg",
-    "description": "What\u2019s up, everyone? Are You BFCM Ready?! \ud83d\ude09 I hope you\u2019re all having a super productive weekend! \ud83d\udcaa We just helped another dropshipping client scaled his store beyond $150,000 in sales over the last 30 days\u2014spending $42,7"
+    "description": "What\u2019s up, everyone? Are You BFCM Ready?! \ud83d\ude09 I hope you\u2019re all having a super productive weekend! \ud83d\udcaa We just helped another dropshipping client scaled his store beyond $150,000 in sales over the last 30 days\u2014spending $42,7",
+    "video": "/assets/instagram_videos/reel_DBqQlIBy-ma.mp4"
   },
   {
     "id": "reel-71",
@@ -1074,7 +1144,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_DBve7QoIiI9.jpg",
-    "description": "\ud83d\ude80 Record-Breaking Month: Generating $137,620.25 in Revenue with a ROAS of 3.89 for Our Supplement Client! \ud83d\udcb0"
+    "description": "\ud83d\ude80 Record-Breaking Month: Generating $137,620.25 in Revenue with a ROAS of 3.89 for Our Supplement Client! \ud83d\udcb0",
+    "video": "/assets/instagram_videos/reel_DBve7QoIiI9.mp4"
   },
   {
     "id": "reel-72",
@@ -1087,7 +1158,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DB8LF0QyepD.jpg",
-    "description": "Happy Monday, everyone! \ud83c\udf1f Let\u2019s kick off the week with some serious momentum. I\u2019ve spent millions of dollars on ads, testing, refining, and optimizing\u2014so you don\u2019t have to! Imagine getting $$43,970 in sales from $10,077 "
+    "description": "Happy Monday, everyone! \ud83c\udf1f Let\u2019s kick off the week with some serious momentum. I\u2019ve spent millions of dollars on ads, testing, refining, and optimizing\u2014so you don\u2019t have to! Imagine getting $$43,970 in sales from $10,077 ",
+    "video": "/assets/instagram_videos/reel_DB8LF0QyepD.mp4"
   },
   {
     "id": "reel-73",
@@ -1100,7 +1172,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DCGFd2wShEV.jpg",
-    "description": "\ud83d\ude80 $24,846 in 1Day \u2013 The Exact Strategy That Turned $8K Ad Spend into Massive Profits in the Nutra Market! From hyper targeted audiences to high-converting creatives, ad copy secrets, and powerful scaling strategies \u2013 you"
+    "description": "\ud83d\ude80 $24,846 in 1Day \u2013 The Exact Strategy That Turned $8K Ad Spend into Massive Profits in the Nutra Market! From hyper targeted audiences to high-converting creatives, ad copy secrets, and powerful scaling strategies \u2013 you",
+    "video": "/assets/instagram_videos/reel_DCGFd2wShEV.mp4"
   },
   {
     "id": "reel-74",
@@ -1113,7 +1186,8 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_DCIbOc6SN5I.jpg",
-    "description": "\ud83d\udd08 Another Massive Fitness Client win: $69,513 in just 6.5 hours of heavy spending ($15,919) and already hitting a 4.37 ROAS. It\u2019s 6:29 AM, and we\u2019re scaling at full speed. \ud83d\udcccToday\u2019s goal: smash $100,000 in sales! Orders a"
+    "description": "\ud83d\udd08 Another Massive Fitness Client win: $69,513 in just 6.5 hours of heavy spending ($15,919) and already hitting a 4.37 ROAS. It\u2019s 6:29 AM, and we\u2019re scaling at full speed. \ud83d\udcccToday\u2019s goal: smash $100,000 in sales! Orders a",
+    "video": "/assets/instagram_videos/reel_DCIbOc6SN5I.mp4"
   },
   {
     "id": "reel-75",
@@ -1126,7 +1200,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_C9CPs88t1qa.jpg",
-    "description": "Just launched my Profit Accelerate Mastermind for DTC Brand Owners Making At Least $10K/Month: I'll Guarantee to Help You Scale Your Brand to $100k/month with at Least $30K-$40K Profit in Less Than 180 Days or I Help You"
+    "description": "Just launched my Profit Accelerate Mastermind for DTC Brand Owners Making At Least $10K/Month: I'll Guarantee to Help You Scale Your Brand to $100k/month with at Least $30K-$40K Profit in Less Than 180 Days or I Help You",
+    "video": "/assets/instagram_videos/reel_C9CPs88t1qa.mp4"
   },
   {
     "id": "reel-76",
@@ -1139,7 +1214,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_Db3hW_mupo1.jpg",
-    "description": "\u20ac118K in our FIRST month scaling this UK Skincare brand. \ud83d\udcc8 Not luck. Just knowing what to fix before pushing more ad spend. Save this and steal these scaling hacks for your own brand. \ud83d\udd25"
+    "description": "\u20ac118K in our FIRST month scaling this UK Skincare brand. \ud83d\udcc8 Not luck. Just knowing what to fix before pushing more ad spend. Save this and steal these scaling hacks for your own brand. \ud83d\udd25",
+    "video": "/assets/instagram_videos/reel_Db3hW_mupo1.mp4"
   },
   {
     "id": "reel-77",
@@ -1152,7 +1228,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DbCVqzFhiLU.jpg",
-    "description": "6 AM. Rain\u2019s about to hit. \ud83c\udf27\ufe0fI\u2019m sitting in my balcony. The park in front of me is completely quiet. The sky is filled with clouds, and it looks like it\u2019s about to rain. While the world is still asleep... our ad account "
+    "description": "6 AM. Rain\u2019s about to hit. \ud83c\udf27\ufe0fI\u2019m sitting in my balcony. The park in front of me is completely quiet. The sky is filled with clouds, and it looks like it\u2019s about to rain. While the world is still asleep... our ad account ",
+    "video": "/assets/instagram_videos/reel_DbCVqzFhiLU.mp4"
   },
   {
     "id": "reel-78",
@@ -1165,7 +1242,8 @@ export const liveResultsProof = [
     "badge": "META ADS FRAMEWORK",
     "category": "Meta Scaling",
     "image": "/assets/instagram_thumbs/reel_DPI2h3TARq_.jpg",
-    "description": "\ud83d\udcc8 Q4 is here and it\u2019s the biggest money-making season of the year. In the last 27 days alone, we\u2019ve generated $146,184.29 in revenue for our skincare client while spending just $40,123.73. That\u2019s 957 units sold, an AOV o"
+    "description": "\ud83d\udcc8 Q4 is here and it\u2019s the biggest money-making season of the year. In the last 27 days alone, we\u2019ve generated $146,184.29 in revenue for our skincare client while spending just $40,123.73. That\u2019s 957 units sold, an AOV o",
+    "video": "/assets/instagram_videos/reel_DPI2h3TARq_.mp4"
   },
   {
     "id": "reel-79",
@@ -1178,8 +1256,7 @@ export const liveResultsProof = [
     "badge": "8-FIGURE SCALE",
     "category": "8-Figure Proof",
     "image": "/assets/instagram_thumbs/reel_C9RU-C9yhfU.jpg",
-    "description": "From Good to Great: How Following Your Agency\u2019s Rules Leads to Success As an marketing agency I find that most of the brands that leave us, because THEY can\u2019t approve things on time, don\u2019t show up for meetings and commun"
+    "description": "From Good to Great: How Following Your Agency\u2019s Rules Leads to Success As an marketing agency I find that most of the brands that leave us, because THEY can\u2019t approve things on time, don\u2019t show up for meetings and commun",
+    "video": "/assets/instagram_videos/reel_C9RU-C9yhfU.mp4"
   }
 ];
-
-export const instagramReelsData = liveResultsProof;
