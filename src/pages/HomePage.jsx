@@ -1,56 +1,54 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import LiveResultsSection from '../components/LiveResultsSection';
-import WhatWeBuildSection from '../components/WhatWeBuildSection';
-import StartingFromZeroSection from '../components/StartingFromZeroSection';
-import ExistingBrandsSection from '../components/ExistingBrandsSection';
+import RepeatableGrowthSection from '../components/RepeatableGrowthSection';
+import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
 import ScalingSystemSection from '../components/ScalingSystemSection';
-import TestimonialsSection from '../components/TestimonialsSection';
-import ExperienceFinalCtaSection from '../components/ExperienceFinalCtaSection';
+import VideoTestimonialsSection from '../components/VideoTestimonialsSection';
 import ClientCoachesCarouselSection from '../components/ClientCoachesCarouselSection';
+import LiveSessionsSection from '../components/LiveSessionsSection';
+import ImpactScaleBannerSection from '../components/ImpactScaleBannerSection';
 
 export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpenInstagramModal }) {
   return (
     <div className="page-wrapper">
-      {/* 01 — HERO */}
+      {/* 01 — HERO (Screenshot 1 Style) */}
       <HeroSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
 
-      {/* 02 — RESULTS */}
+      {/* 02 — RESULTS & PROOF (Screenshot 3 Style + Instagram Live Proof) */}
       <LiveResultsSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
         onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* 03 — WHAT WE BUILD */}
-      <WhatWeBuildSection
+      {/* REPEATABLE GROWTH ENGINE (High Beam 3D Creative Grid Style) */}
+      <RepeatableGrowthSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
       />
 
-      {/* 04 — STARTING FROM ZERO */}
-      <StartingFromZeroSection
+      {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}
+      <ClientCaseStudiesSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
+        onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* 05 — EXISTING ECOMMERCE BRANDS */}
-      <ExistingBrandsSection
-        onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
-      />
-
-      {/* 06 — THE SCALING SYSTEM */}
+      {/* 06 — THE SCALING SYSTEM (03 What We Build Engine) */}
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
 
-      {/* 07 — TESTIMONIALS */}
-      <TestimonialsSection
+      {/* LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
+      <LiveSessionsSection onOpenVideo={onOpenVideo} />
+
+      {/* VIDEO TESTIMONIALS & CASE PROOF (Bento Masonry Video Showcase) */}
+      <VideoTestimonialsSection
         onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
+        onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* 08 — EXPERIENCE + FINAL CTA */}
-      <ExperienceFinalCtaSection
+      {/* EXPERIENCE + FINAL CTA AUTHORITY BANNER */}
+      <ImpactScaleBannerSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
       />
