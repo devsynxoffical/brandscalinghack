@@ -1,47 +1,56 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import LiveResultsSection from '../components/LiveResultsSection';
-import RepeatableGrowthSection from '../components/RepeatableGrowthSection';
-import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
+import WhatWeBuildSection from '../components/WhatWeBuildSection';
+import StartingFromZeroSection from '../components/StartingFromZeroSection';
+import ExistingBrandsSection from '../components/ExistingBrandsSection';
 import ScalingSystemSection from '../components/ScalingSystemSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import ExperienceFinalCtaSection from '../components/ExperienceFinalCtaSection';
 import ClientCoachesCarouselSection from '../components/ClientCoachesCarouselSection';
-import LiveSessionsSection from '../components/LiveSessionsSection';
-import ImpactScaleBannerSection from '../components/ImpactScaleBannerSection';
 
 export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpenInstagramModal }) {
   return (
     <div className="page-wrapper">
-      {/* 01 — HERO (Screenshot 1 Style) */}
+      {/* 01 — HERO */}
       <HeroSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
 
-      {/* 02 — RESULTS & PROOF (Screenshot 3 Style + Instagram Live Proof) */}
+      {/* 02 — RESULTS */}
       <LiveResultsSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
         onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* REPEATABLE GROWTH ENGINE (High Beam 3D Creative Grid Style) */}
-      <RepeatableGrowthSection
+      {/* 03 — WHAT WE BUILD */}
+      <WhatWeBuildSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
       />
 
-      {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}
-      <ClientCaseStudiesSection
+      {/* 04 — STARTING FROM ZERO */}
+      <StartingFromZeroSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
-        onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* 06 — THE SCALING SYSTEM (Screenshot 2 "How We Win / Systemize" Style) */}
+      {/* 05 — EXISTING ECOMMERCE BRANDS */}
+      <ExistingBrandsSection
+        onOpenBooking={onOpenBooking}
+        onNavigate={onNavigate}
+      />
+
+      {/* 06 — THE SCALING SYSTEM */}
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
 
-      {/* LIVE SESSIONS & MASTERCLASSES (Screenshot 4 Video Theater Style) */}
-      <LiveSessionsSection onOpenVideo={onOpenVideo} />
+      {/* 07 — TESTIMONIALS */}
+      <TestimonialsSection
+        onOpenBooking={onOpenBooking}
+        onNavigate={onNavigate}
+      />
 
-      {/* HIGH-IMPACT SCALE HERO BANNER (Jabz Boxing 3D Typography Style) */}
-      <ImpactScaleBannerSection
+      {/* 08 — EXPERIENCE + FINAL CTA */}
+      <ExperienceFinalCtaSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
       />
