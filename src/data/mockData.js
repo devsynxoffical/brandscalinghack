@@ -142,7 +142,7 @@ export const liveSessionsData = [
     host: 'Gaurav Kapoor • 8-Figure Masterclass',
     duration: '48:20',
     date: 'Sept 14',
-    thumbnail: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
+    thumbnail: 'https://i.ytimg.com/vi/X-L8GQjHOYA/maxresdefault.jpg',
     videoType: 'youtube',
     videoUrl: 'https://www.youtube.com/watch?v=X-L8GQjHOYA',
     embedUrl: 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA',

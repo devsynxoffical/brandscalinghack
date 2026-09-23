@@ -1,16 +1,34 @@
 import React, { useState } from 'react';
-import { Play, ArrowUpRight } from 'lucide-react';
-import { YoutubeIcon } from './Icons';
+import { Play, ArrowUpRight, Maximize2 } from 'lucide-react';
 import { liveSessionsData } from '../data/mockData';
 
 export default function LiveSessionsSection({ onOpenVideo }) {
   const [selectedSession, setSelectedSession] = useState(liveSessionsData[0]);
+  const [isPlayingInline, setIsPlayingInline] = useState(false);
+
+  const handleSelectSession = (session) => {
+    setSelectedSession(session);
+    setIsPlayingInline(false);
+  };
+
+  const isMp4 = selectedSession.videoType === 'mp4' || (selectedSession.videoUrl && selectedSession.videoUrl.endsWith('.mp4'));
+
+  const getEmbedUrl = () => {
+    if (selectedSession.embedUrl) {
+      return selectedSession.embedUrl.includes('?') ? `${selectedSession.embedUrl}&autoplay=1` : `${selectedSession.embedUrl}?autoplay=1&rel=0`;
+    }
+    if (selectedSession.videoUrl && selectedSession.videoUrl.includes('youtube.com/watch?v=')) {
+      const vidId = selectedSession.videoUrl.split('v=')[1]?.split('&')[0];
+      return `https://www.youtube-nocookie.com/embed/${vidId}?autoplay=1&rel=0`;
+    }
+    return 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA?autoplay=1&rel=0';
+  };
 
   return (
     <section className="videos-section-theater">
       <div className="container">
-        {/* Screenshot 4 Header */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px' }}>
+        {/* Header */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px', flexWrap: 'wrap', gap: '12px' }}>
           <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#ffffff' }}>
             Videos
           </h2>
@@ -19,7 +37,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
           </span>
         </div>
 
-        {/* Screenshot 4 Grid Layout */}
+        {/* Grid Layout */}
         <div className="videos-layout-grid">
           {/* Left Column: Playlist */}
           <div className="video-sidebar-playlist">
@@ -27,7 +45,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
               <div
                 key={session.id}
                 className={`video-playlist-item ${selectedSession.id === session.id ? 'active' : ''}`}
-                onClick={() => setSelectedSession(session)}
+                onClick={() => handleSelectSession(session)}
               >
                 <div className="video-thumb-mini">
                   <img src={session.thumbnail} alt={session.title} />
@@ -35,7 +53,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                     style={{
                       position: 'absolute',
                       inset: 0,
-                      background: 'rgba(0,0,0,0.3)',
+                      background: 'rgba(0,0,0,0.35)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center'
@@ -57,7 +75,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
               </div>
             ))}
 
-            {/* Screenshot 4 Bottom Green Pill Button */}
+            {/* Bottom Green Pill Button */}
             <button
               onClick={() => onOpenVideo(selectedSession)}
               style={{
@@ -74,7 +92,9 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                 gap: '8px',
                 marginTop: '10px',
                 transition: 'all 0.25s ease',
-                boxShadow: '0 4px 15px rgba(22, 163, 74, 0.4)'
+                boxShadow: '0 4px 15px rgba(22, 163, 74, 0.4)',
+                border: 'none',
+                cursor: 'pointer'
               }}
             >
               <span>All Videos</span>
@@ -82,26 +102,111 @@ export default function LiveSessionsSection({ onOpenVideo }) {
             </button>
           </div>
 
-          {/* Right Column: Main Featured Video Cinema Player (Screenshot 4) */}
+          {/* Right Column: Main Featured Video Cinema Player */}
           <div className="main-player-wrapper">
             <div className="main-player-card">
-              <div className="main-player-screen" onClick={() => onOpenVideo(selectedSession)} style={{ cursor: 'pointer' }}>
-                <img src={selectedSession.thumbnail} alt={selectedSession.title} />
-                <div className="player-geo-pattern"></div>
+              <div className="main-player-screen">
+                {isPlayingInline ? (
+                  isMp4 ? (
+                    <video
+                      src={selectedSession.videoUrl}
+                      controls
+                      autoPlay
+                      playsInline
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'contain',
+                        background: '#000000',
+                        position: 'relative',
+                        zIndex: 10
+                      }}
+                    />
+                  ) : (
+                    <iframe
+                      src={getEmbedUrl()}
+                      title={selectedSession.title}
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        border: 0,
+                        zIndex: 10,
+                        background: '#000000'
+                      }}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  )
+                ) : (
+                  <>
+                    {/* Ambient Blurred Backdrop for seamless box fit */}
+                    <div
+                      className="main-player-bg-ambient"
+                      style={{ backgroundImage: `url(${selectedSession.thumbnail})` }}
+                    />
+                    
+                    {/* Crisp Fitted Image Container */}
+                    <img
+                      src={selectedSession.thumbnail}
+                      alt={selectedSession.title}
+                      onClick={() => setIsPlayingInline(true)}
+                      style={{ cursor: 'pointer' }}
+                    />
 
-                {/* White Play Button with Black Arrow (Screenshot 4) */}
-                <div className="player-play-btn">
-                  <Play size={30} fill="#000000" color="#000000" style={{ marginLeft: '4px' }} />
-                </div>
+                    {/* White Play Button with Black Arrow */}
+                    <button
+                      type="button"
+                      className="player-play-btn"
+                      onClick={() => setIsPlayingInline(true)}
+                      aria-label="Play video"
+                    >
+                      <Play size={30} fill="#000000" color="#000000" style={{ marginLeft: '4px' }} />
+                    </button>
 
-                {/* Duration Badge */}
-                <div className="player-duration-badge">
-                  {selectedSession.duration}
-                </div>
+                    {/* Duration Badge */}
+                    <div className="player-duration-badge">
+                      {selectedSession.duration}
+                    </div>
+
+                    {/* Expand/Modal Button in top left */}
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onOpenVideo(selectedSession);
+                      }}
+                      title="Open in Theatre Modal"
+                      style={{
+                        position: 'absolute',
+                        top: '16px',
+                        left: '16px',
+                        background: 'rgba(0, 0, 0, 0.75)',
+                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        borderRadius: '8px',
+                        padding: '6px 10px',
+                        color: '#fff',
+                        fontSize: '0.8rem',
+                        fontWeight: 700,
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        cursor: 'pointer',
+                        zIndex: 10,
+                        backdropFilter: 'blur(8px)'
+                      }}
+                    >
+                      <Maximize2 size={14} />
+                      <span>Full View</span>
+                    </button>
+                  </>
+                )}
               </div>
             </div>
 
-            {/* Below Player Headline & Metadata (Screenshot 4 Exact Match) */}
+            {/* Below Player Headline & Metadata */}
             <div className="main-player-external-info">
               <h3 className="main-player-title-big">{selectedSession.title}</h3>
               <div className="main-player-host-line">
