@@ -215,12 +215,11 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
                 <video 
                   src={reel.video} 
                   poster={reel.image}
+                  autoPlay
                   muted
                   loop
                   playsInline
-                  preload="metadata"
-                  onMouseEnter={(e) => e.target.play().catch(() => {})}
-                  onMouseLeave={(e) => { e.target.pause(); e.target.currentTime = 0; }}
+                  preload="auto"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />
 

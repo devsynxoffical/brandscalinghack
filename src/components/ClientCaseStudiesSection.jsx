@@ -1,33 +1,21 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { liveResultsProof } from '../data/mockData';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 function CaseStudyCard({ study, onOpenModal }) {
-  const [isHovered, setIsHovered] = useState(false);
   const videoRef = useRef(null);
 
-  const handleMouseEnter = () => {
-    setIsHovered(true);
+  useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(() => {});
     }
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  };
+  }, [study.video]);
 
   return (
     <div
       className="showcase-study-card"
       onClick={() => onOpenModal(study)}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       style={{ cursor: 'pointer' }}
     >
       {/* Image / Video Container with Brand Logo Badge */}
@@ -35,16 +23,17 @@ function CaseStudyCard({ study, onOpenModal }) {
         {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
         <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
 
-        {/* Video Player (plays on hover or fallback to poster image) */}
+        {/* Video Player (Always Autoplaying in continuous loop) */}
         {study.video ? (
           <video
             ref={videoRef}
             src={study.video}
             poster={study.image}
+            autoPlay
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             className="showcase-card-img"
             style={{
               position: 'relative',
