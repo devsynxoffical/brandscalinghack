@@ -1201,6 +1201,22 @@ button {
   object-fit: cover;
 }
 
+@media (max-width: 900px) {
+  .videos-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .main-player-screen {
+    min-height: 220px;
+  }
+  .video-sidebar-playlist {
+    order: 2;
+  }
+  .main-player-wrapper {
+    order: 1;
+  }
+}
+
 /* ==========================================================================
    03 — WHAT WE BUILD & 04 — STARTING FROM ZERO BESPOKE LUXURY CARDS
    ========================================================================== */
@@ -3528,6 +3544,26 @@ button {
   font-size: 0.74rem;
   color: rgba(255, 255, 255, 0.82);
   margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .intro-arc-viewport {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 0 16px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .intro-arc-track {
+    padding: 10px 10px 30px 10px;
+    gap: 12px;
+  }
+  .intro-coach-card {
+    width: 170px;
+    height: 275px;
+    scroll-snap-align: center;
+    transform: perspective(1000px) translateY(calc(var(--card-ty) * 0.5)) rotateY(calc(var(--card-ry) * 0.4)) scale(var(--card-scale));
+  }
 }
 
 /* ==========================================================================
