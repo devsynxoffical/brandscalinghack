@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { liveResultsProof } from '../data/mockData';
 import { ArrowRight, ExternalLink } from 'lucide-react';
 import { InstagramIcon } from './Icons';
