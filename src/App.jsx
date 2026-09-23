@@ -88,6 +88,8 @@ function App() {
           <CaseStudiesPage
             onOpenBooking={() => setIsBookingOpen(true)}
             onNavigate={handleNavigate}
+            onOpenVideo={(video) => setActiveVideo(video)}
+            onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
           />
         );
       case 'viral-creatives':
