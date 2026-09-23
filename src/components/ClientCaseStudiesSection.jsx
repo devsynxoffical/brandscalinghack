@@ -114,36 +114,23 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
         <div style={{ marginBottom: '16px' }}>
           <span className="case-studies-kicker">
             <InstagramIcon size={14} color="#ff7043" />
-            <span>04 — LIVE INSTAGRAM REELS & CASE BREAKDOWNS</span>
+            <span>WE DON'T JUST TALK ABOUT SCALING.</span>
           </span>
         </div>
 
         {/* Headline */}
-        <h2 className="case-studies-serif-heading">
-          Real Brands. Real Ad Spend. <span className="text-gradient-orange">Verified Results.</span>
+        <h2 className="case-studies-serif-heading" style={{ textTransform: 'uppercase', letterSpacing: '-0.02em', marginBottom: '14px' }}>
+          WE SHOW YOU <span className="text-gradient-orange">THE NUMBERS.</span>
         </h2>
 
         {/* Subtitle */}
-        <p className="case-studies-sub-copy">
-          Explore authentic video breakdowns and live revenue dashboards directly from @gauravecomm.
+        <p className="case-studies-sub-copy" style={{ maxWidth: '820px', margin: '0 auto 16px auto', fontSize: '1.05rem', lineHeight: 1.6 }}>
+          From customer acquisition to revenue growth, we've helped eCommerce brands turn paid traffic into serious businesses.
         </p>
 
-        {/* Interactive Filter Pills */}
-        <div className="case-studies-filter-row">
-          {categories.map((tab) => {
-            const count = tab === 'All' 
-              ? liveResultsProof.length 
-              : liveResultsProof.filter((i) => i.category === tab).length;
-            return (
-              <button
-                key={tab}
-                onClick={() => handleTabChange(tab)}
-                className={`case-filter-pill ${activeTab === tab ? 'active' : ''}`}
-              >
-                {tab} ({count})
-              </button>
-            );
-          })}
+        {/* Highlight Tagline */}
+        <div style={{ fontSize: '0.95rem', fontWeight: 900, letterSpacing: '0.1em', color: '#ff5722', marginBottom: '36px', textTransform: 'uppercase' }}>
+          REAL BRANDS. REAL AD SPEND. REAL RESULTS.
         </div>
 
         {/* Instagram Reels Grid with Hover-to-play Video Cards */}
