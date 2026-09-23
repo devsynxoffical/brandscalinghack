@@ -373,12 +373,12 @@ button {
 
 .ss1-cutout-img {
   width: auto;
-  max-width: 440px;
-  height: clamp(380px, 62vh, 580px);
+  max-width: clamp(340px, 45vw, 560px);
+  height: clamp(380px, 64vh, 620px);
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.85));
-  margin-bottom: -58px; /* Legs hang naturally onto the white deck */
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 40px rgba(255, 87, 34, 0.2));
+  margin-bottom: 0;
   position: relative;
   z-index: 10;
 }
@@ -386,7 +386,7 @@ button {
 /* Overlaid Crisp Serif Headline Across Subject (Screenshot 1: "EXECUTIVE COACH NEW YORK NY") */
 .ss1-center-overlay-title {
   position: absolute;
-  bottom: 23%;
+  bottom: 16%;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -398,8 +398,8 @@ button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #ffffff;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.95), 0 0 30px rgba(0, 0, 0, 0.9);
-  z-index: 7;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 0 35px rgba(0, 0, 0, 0.9);
+  z-index: 12;
   pointer-events: none;
 }
 
