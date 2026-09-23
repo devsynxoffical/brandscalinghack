@@ -3,27 +3,48 @@ import { ArrowRight, Search } from 'lucide-react';
 
 export const coachesList = [
   {
-    id: 't-1',
+    id: 't-gaurav',
+    name: 'Gaurav Kapoor',
+    role: 'Founder & Head of Growth',
+    brand: 'Brand Scaling Hacks',
+    scale: '$50M+ Ad Spend Managed',
+    bg: '#d97706', // Golden Amber
+    image: '/team/gaurav.jpeg',
+    isCutout: true,
+    isCenter: true
+  },
+  {
+    id: 't-rahul',
+    name: 'Rahul',
+    role: 'Head of Client Success & Scaling',
+    brand: 'Brand Scaling Hacks',
+    scale: '$12M+ Portfolio Scaled',
+    bg: '#f59e0b', // Amber
+    image: '/team/rahul.jpeg',
+    isCutout: true
+  },
+  {
+    id: 't-taqi',
+    name: 'Taqi',
+    role: 'Direct-Response Creative & Motion Lead',
+    brand: 'Brand Scaling Hacks',
+    scale: '$1.09M Scaled',
+    bg: '#0f766e', // Emerald Teal
+    image: '/team/taqi.webp',
+    isCutout: true
+  },
+  {
+    id: 't-ali',
     name: 'Ali',
     role: 'Media Buying & Acquisition Lead',
     brand: 'Brand Scaling Hacks',
     scale: '$1.4M / mo',
-    bg: '#ea580c', // Vibrant Tangerine Orange
+    bg: '#ea580c', // Tangerine Orange
     image: '/team/ali.webp',
     isCutout: true
   },
   {
-    id: 't-2',
-    name: 'Daniel Brooks',
-    role: 'Creative Strategist & UGC Director',
-    brand: 'Brand Scaling Hacks',
-    scale: '€118k Month 1',
-    bg: '#854d0e', // Warm Mocha / Bronze
-    image: '/team/daniel-brooks.webp',
-    isCutout: true
-  },
-  {
-    id: 't-3',
+    id: 't-ethan',
     name: 'Ethan Carter',
     role: 'Conversion Rate Architect',
     brand: 'Brand Scaling Hacks',
@@ -33,54 +54,13 @@ export const coachesList = [
     isCutout: true
   },
   {
-    id: 't-4',
+    id: 't-frank',
     name: 'Frank Miller',
     role: 'Shopify Speed & Funnel Engineer',
     brand: 'Brand Scaling Hacks',
     scale: '$179k / mo',
     bg: '#831843', // Deep Crimson / Burgundy
     image: '/team/frank-miller.webp',
-    isCutout: true
-  },
-  {
-    id: 't-5',
-    name: 'Gaurav Kapoor',
-    role: 'Founder & Head of Growth',
-    brand: 'Brand Scaling Hacks',
-    scale: '$50M+ Ad Spend Managed',
-    bg: '#d9921b', // Golden Amber (MAIN CENTER CARD)
-    image: '/team/gaurav.webp',
-    isCutout: true,
-    isCenter: true
-  },
-  {
-    id: 't-6',
-    name: 'Jake Wilson',
-    role: 'Meta Advantage+ Specialist',
-    brand: 'Brand Scaling Hacks',
-    scale: '$1.85M / mo',
-    bg: '#c2410c', // Terracotta Fire
-    image: '/team/jake-wilson.webp',
-    isCutout: true
-  },
-  {
-    id: 't-7',
-    name: 'Ryan Cooper',
-    role: 'Google Search & PMax Strategist',
-    brand: 'Brand Scaling Hacks',
-    scale: '€123,000 Surge',
-    bg: '#4338ca', // Deep Indigo
-    image: '/team/ryan-cooper.webp',
-    isCutout: true
-  },
-  {
-    id: 't-8',
-    name: 'Taqi',
-    role: 'Direct-Response Motion Designer',
-    brand: 'Brand Scaling Hacks',
-    scale: '$1.09M Scaled',
-    bg: '#0f766e', // Emerald Teal
-    image: '/team/taqi.webp',
     isCutout: true
   }
 ];
@@ -127,14 +107,12 @@ export default function ClientCoachesCarouselSection({ onOpenBooking, onNavigate
             // Cards on the left rotate Y positive (facing inward right)
             // Cards on the right rotate Y negative (facing inward left)
             const transforms = [
-              { rotateY: 26, rotateZ: -2.5, translateY: 14, scale: 0.95, zIndex: 1 },
-              { rotateY: 19, rotateZ: -1.8, translateY: 4, scale: 0.98, zIndex: 2 },
-              { rotateY: 11, rotateZ: -0.9, translateY: -4, scale: 0.99, zIndex: 3 },
-              { rotateY: 4, rotateZ: -0.2, translateY: -9, scale: 1.0, zIndex: 4 },
-              { rotateY: -4, rotateZ: 0.2, translateY: -9, scale: 1.0, zIndex: 4 },
-              { rotateY: -11, rotateZ: 0.9, translateY: -4, scale: 0.99, zIndex: 3 },
-              { rotateY: -19, rotateZ: 1.8, translateY: 4, scale: 0.98, zIndex: 2 },
-              { rotateY: -26, rotateZ: 2.5, translateY: 14, scale: 0.95, zIndex: 1 }
+              { rotateY: 18, rotateZ: -1.6, translateY: 6, scale: 0.96, zIndex: 1 },
+              { rotateY: 10, rotateZ: -0.9, translateY: -2, scale: 0.99, zIndex: 2 },
+              { rotateY: 3, rotateZ: -0.2, translateY: -8, scale: 1.02, zIndex: 3 },
+              { rotateY: -3, rotateZ: 0.2, translateY: -8, scale: 1.02, zIndex: 3 },
+              { rotateY: -10, rotateZ: 0.9, translateY: -2, scale: 0.99, zIndex: 2 },
+              { rotateY: -18, rotateZ: 1.6, translateY: 6, scale: 0.96, zIndex: 1 }
             ];
 
             const t = transforms[idx] || { rotateY: 0, rotateZ: 0, translateY: 0, scale: 1, zIndex: 1 };
