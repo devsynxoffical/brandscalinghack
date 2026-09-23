@@ -1,3 +1,68 @@
+export const flagshipCaseStudies = [
+  {
+    id: '1-52m-case-study',
+    slug: '1-52m-case-study',
+    path: '/cases/1-52m-case-study',
+    title: '$1,520,000 Generated in 19 Months With MDF™',
+    headline: '$1,520,000 Generated in 19 Months With MDF™',
+    brand: 'Million Dollar Funnel™ (MDF)',
+    niche: 'eCommerce Scaling & VSL',
+    videoType: 'youtube',
+    videoUrl: 'https://www.youtube.com/watch?v=X-L8GQjHOYA',
+    embedUrl: 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA',
+    revenue: '$1,520,000',
+    timeframe: '19 Months',
+    system: 'Million Dollar Funnel™ (MDF™)',
+    badge: '$1.52M GENERATED • MDF™ SYSTEM',
+    badgeColor: '#ff5722',
+    image: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
+    summary: 'A complete breakdown of how the Million Dollar Funnel™ (MDF) generated $1,520,000 in revenue in 19 months through direct-response VSL acquisition, cold traffic scaling, and cash-flow architecture.',
+    metrics: [
+      { label: 'Total Revenue Generated', value: '$1,520,000' },
+      { label: 'Campaign Timeframe', value: '19 Months' },
+      { label: 'Proprietary System', value: 'MDF™ (Million Dollar Funnel)' },
+      { label: 'Acquisition Channel', value: 'YouTube & Meta Direct VSL' }
+    ],
+    growthPoints: [
+      'Engineered a high-converting Direct-Response VSL tailored to customer pain points, awareness stages, and buyer psychology.',
+      'Implemented front-end cash-flow positive acquisition architecture to liquidate ad costs immediately on cold traffic.',
+      'Scaled spend predictably without fatigue using automated retargeting funnels, high-converting offer bumps, and backend retention loops.'
+    ]
+  },
+  {
+    id: 'coaching-lto',
+    slug: 'coaching-lto',
+    path: '/cases/coaching-lto',
+    title: 'The Real Magic Of Million Dollar Funnel™ System (13,630 Sales · $847,307 Revenue · 3.32 ROAS)',
+    headline: 'The Real Magic Of Million Dollar Funnel™ System',
+    brand: 'High-Ticket & Coaching LTO',
+    niche: 'Coaching & Low-Ticket Offers',
+    videoType: 'mp4',
+    videoUrl: 'https://storage.googleapis.com/msgsndr/HWyar6Z3u3aF6ydghkCx/media/695da2543a532d67105ad96c.mp4',
+    embedUrl: 'https://storage.googleapis.com/msgsndr/HWyar6Z3u3aF6ydghkCx/media/695da2543a532d67105ad96c.mp4',
+    revenue: '$847,307',
+    sales: '13,630 Sales',
+    roas: '3.32 ROAS',
+    timeframe: 'Proven Campaign Run',
+    system: 'Million Dollar Funnel™ (MDF™)',
+    badge: '13,630 SALES • $847K REVENUE • 3.32 ROAS',
+    badgeColor: '#eab308',
+    image: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
+    summary: 'Discover how 13,630 units were sold generating $847,307 in revenue at 3.32 ROAS using our proven Low-Ticket Offer (LTO) to High-Ticket backend funnel system.',
+    metrics: [
+      { label: 'Total Sales Generated', value: '13,630 Orders' },
+      { label: 'Total Revenue', value: '$847,307' },
+      { label: 'Blended ROAS', value: '3.32x' },
+      { label: 'Funnel Architecture', value: 'Low-Ticket Offer (LTO) to Backend' }
+    ],
+    growthPoints: [
+      'Acquired 13,630 buyers profitably on cold traffic with a seamless impulse-priced front-end offer.',
+      'Maximized Average Order Value (AOV) with high-converting order bumps and 1-click upsell sequences.',
+      'Achieved a massive 3.32 ROAS while scaling ad budget aggressively on cold audiences.'
+    ]
+  }
+];
+
 export const caseStudies = [
   {
     id: 'luxe-eyewear',
