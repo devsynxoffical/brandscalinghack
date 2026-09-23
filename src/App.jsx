@@ -18,22 +18,32 @@ function App() {
   const [activeVideo, setActiveVideo] = useState(null);
   const [activeInstagramReel, setActiveInstagramReel] = useState(null);
 
-  // Initialize route from current window path on load
+  // Initialize route from current window path on load and handle popstate
   useEffect(() => {
-    const path = window.location.pathname;
-    if (path.includes('1-52m-case-study')) {
-      setActivePage('case-1-52m-case-study');
-    } else if (path.includes('coaching-lto')) {
-      setActivePage('case-coaching-lto');
-    } else if (path.includes('case-studies') || path === '/cases') {
-      setActivePage('case-studies');
-    } else if (path.includes('viral-creatives')) {
-      setActivePage('viral-creatives');
-    } else if (path.includes('growth')) {
-      setActivePage('growth');
-    } else if (path.includes('about')) {
-      setActivePage('about');
-    }
+    const handleLocationChange = () => {
+      const path = window.location.pathname;
+      if (path.includes('1-52m-case-study')) {
+        setActivePage('case-1-52m-case-study');
+      } else if (path.includes('coaching-lto')) {
+        setActivePage('case-coaching-lto');
+      } else if (path.includes('case-studies') || path === '/cases') {
+        setActivePage('case-studies');
+      } else if (path.includes('viral-creatives')) {
+        setActivePage('viral-creatives');
+      } else if (path.includes('growth')) {
+        setActivePage('growth');
+      } else if (path.includes('about')) {
+        setActivePage('about');
+      } else if (path.includes('viral-products')) {
+        setActivePage('viral-products');
+      } else {
+        setActivePage('home');
+      }
+    };
+
+    handleLocationChange();
+    window.addEventListener('popstate', handleLocationChange);
+    return () => window.removeEventListener('popstate', handleLocationChange);
   }, []);
 
   const handleNavigate = (pageId) => {

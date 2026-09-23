@@ -317,6 +317,150 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
         </div>
       </section>
 
+      {/* 5 Proven Hook Formulas Masterclass */}
+      <section style={{ background: '#0a0e16', padding: '80px 0', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 48px auto' }}>
+            <span className="badge badge-orange" style={{ marginBottom: '12px' }}>
+              DIRECT RESPONSE HOOK ARSENAL
+            </span>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
+              The 5 High-Converting Hook Frameworks
+            </h2>
+            <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
+              The first 3 seconds dictate 80% of your CAC. Here are the 5 exact psychological hooks we deploy to achieve 35%+ 3-second thumbstop rates.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+            {[
+              {
+                number: '01',
+                name: 'The "Us vs. Them" Split Screen',
+                description: 'Juxtaposes ordinary generic competitors (slow, frustrating, high-priced) directly against your seamless, instantaneous solution.',
+                script: '"Stop buying $80 drug store creams that just sit on your skin. Watch what happens when you use active peptides instead..."',
+                bestFor: 'Physical Gadgets & Skincare'
+              },
+              {
+                number: '02',
+                name: 'The Negative Pattern Interrupt',
+                description: 'Attacks a widespread assumption or common mistake that the customer is currently making.',
+                script: '"If you’re still waking up with lower back tightness, your mattress isn’t the problem. It’s this single alignment angle..."',
+                bestFor: 'Health, Sleep & Ergonomics'
+              },
+              {
+                number: '03',
+                name: 'The Sensory ASMR & Macro Detail',
+                description: 'No voiceover initially—pure high-fidelity textures, satisfying clicks, satisfying unboxings, and tactile satisfaction.',
+                script: '[Crisp unboxing click sound] "I genuinely thought this was a gimmick until day 3..."',
+                bestFor: 'Aesthetics, Home & High-AOV DTC'
+              },
+              {
+                number: '04',
+                name: 'The Honest Skeptic / Unfiltered Review',
+                description: 'Disarms customer defensive guard by openly admitting initial skepticism before proving unmistakable value.',
+                script: '"I saw this all over TikTok for 6 months and thought it was complete hype. Here is my 100% honest 30-day breakdown..."',
+                bestFor: 'Apparel, Supplements & Tech'
+              },
+              {
+                number: '05',
+                name: 'The Drastic Problem Aggravation',
+                description: 'Directly spotlights the daily acute pain point the user tolerates, visualizing the frustration immediately.',
+                script: '"Raise your hand if you’ve thrown away 4 pairs of workout shoes this year because your arches collapse..."',
+                bestFor: 'Fitness, Footwear & Pain Relief'
+              }
+            ].map((hook, idx) => (
+              <div
+                key={idx}
+                style={{
+                  background: '#0f141f',
+                  border: '1.5px solid rgba(255,255,255,0.08)',
+                  borderRadius: '20px',
+                  padding: '28px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between'
+                }}
+              >
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#ff7043' }}>{hook.number}</span>
+                    <span className="badge badge-gold" style={{ fontSize: '0.72rem' }}>{hook.bestFor}</span>
+                  </div>
+                  <h3 style={{ fontSize: '1.2rem', color: '#fff', fontWeight: 800, marginBottom: '10px' }}>
+                    {hook.name}
+                  </h3>
+                  <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
+                    {hook.description}
+                  </p>
+                  <div style={{ background: 'rgba(255,255,255,0.04)', borderLeft: '3px solid #ffb300', padding: '10px 14px', borderRadius: '8px' }}>
+                    <div style={{ fontSize: '0.72rem', color: '#ffb300', fontWeight: 800, textTransform: 'uppercase', marginBottom: '4px' }}>Example Script:</div>
+                    <div style={{ fontSize: '0.84rem', color: '#cbd5e1', fontStyle: 'italic', lineHeight: 1.4 }}>{hook.script}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Production Studio Pipeline (4 Stages) */}
+      <section className="container" style={{ padding: '80px 20px' }}>
+        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 48px auto' }}>
+          <span className="badge badge-gold" style={{ marginBottom: '12px' }}>
+            CREATIVE SPRINT CADENCE
+          </span>
+          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
+            From Concept To Live Scaling In 10 Days
+          </h2>
+          <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
+            Our streamlined creator pipeline ensures you receive fresh, conversion-tested creative assets every single week without delays.
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '22px' }}>
+          {[
+            {
+              step: 'Step 01',
+              title: 'Customer Psychology & Scripting',
+              desc: 'We mine your reviews, Reddit forums, and competitor comment sections to write 15-30 battle-tested direct-response video scripts.'
+            },
+            {
+              step: 'Step 02',
+              title: 'Vetted Creator Sourcing',
+              desc: 'We match your brand with hand-picked UGC creators representing your core buyer demographic, handling all product shipping logistics.'
+            },
+            {
+              step: 'Step 03',
+              title: 'Kinetic Direct-Response Editing',
+              desc: 'Our in-house video editors build TikTok & Meta native edits with kinetic subtitles, visual zooms, Sound FX, and pattern interrupts.'
+            },
+            {
+              step: 'Step 04',
+              title: 'Advantage+ Launch & Iteration',
+              desc: 'We launch across broad Meta Advantage+ campaigns and immediately cut 6-12 rapid iterations of the highest ROAS winning hooks.'
+            }
+          ].map((st, idx) => (
+            <div
+              key={idx}
+              style={{
+                background: '#0f141f',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '20px',
+                padding: '28px 22px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px'
+              }}
+            >
+              <span style={{ fontSize: '0.8rem', color: '#ff7043', fontWeight: 900, textTransform: 'uppercase' }}>{st.step}</span>
+              <h3 style={{ fontSize: '1.15rem', color: '#ffffff', fontWeight: 800, margin: 0 }}>{st.title}</h3>
+              <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.55, margin: 0 }}>{st.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Creative Breakdown Showcase */}
       <section className="container" style={{ paddingBottom: '100px' }}>
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>

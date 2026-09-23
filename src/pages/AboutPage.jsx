@@ -282,6 +282,124 @@ export default function AboutPage({ onOpenBooking, onNavigate }) {
         </div>
       </section>
 
+      {/* Gaurav's 5 Core Scaling Principles */}
+      <section className="container" style={{ padding: '80px 20px' }}>
+        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 48px auto' }}>
+          <span className="badge badge-gold" style={{ marginBottom: '12px' }}>
+            OPERATING PHILOSOPHY
+          </span>
+          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
+            The 5 Principles of 8-Figure Scale
+          </h2>
+          <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
+            In an industry full of temporary hacks and noisy gurus, here are the evergreen economic principles that have governed our $50M+ in ad spend.
+          </p>
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
+          {[
+            {
+              num: '01',
+              title: 'Creative Is The New Targeting',
+              desc: 'With Meta and TikTok AI algorithms mastering broad audience delivery, your creative hook is your targeting filter. High-converting creative out-competes manual hacks every time.'
+            },
+            {
+              num: '02',
+              title: 'Cash Flow Over Vanity Revenue',
+              desc: 'Generating $1M/mo is meaningless if you net $20k with stressed inventory. We obsess over net contribution margin, landed COGS, and immediate front-end cash liquidation.'
+            },
+            {
+              num: '03',
+              title: 'Friction Elimination At Every Touchpoint',
+              desc: 'Every millisecond of page load latency, confusing button layout, or unnecessary checkout field costs you tens of thousands in lost revenue. Ruthlessly simplify UX.'
+            },
+            {
+              num: '04',
+              title: 'Speed of Iteration Dictates Market Share',
+              desc: 'The brand that tests 30 distinct hook angles a month will effortlessly crush the brand that launches 2 ads every 60 days. Speed of testing is the ultimate moat.'
+            },
+            {
+              num: '05',
+              title: 'Build Assets, Not Just Campaigns',
+              desc: 'Transitioning from short-lived dropship trends into custom branded molds, proprietary formulations, and bespoke packaging builds durable enterprise value ready for 8-figure exits.'
+            }
+          ].map((principle, idx) => (
+            <div
+              key={idx}
+              style={{
+                background: '#0f141f',
+                border: '1.5px solid rgba(255,255,255,0.08)',
+                borderRadius: '22px',
+                padding: '30px 26px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px'
+              }}
+            >
+              <div style={{ fontSize: '1.5rem', fontWeight: 900, color: '#ff7043' }}>{principle.num}</div>
+              <h3 style={{ fontSize: '1.2rem', color: '#ffffff', fontWeight: 800, margin: 0 }}>{principle.title}</h3>
+              <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.6, margin: 0 }}>{principle.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 2012-2026 Timeline Journey */}
+      <section style={{ background: '#0a0e16', padding: '80px 0', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 48px auto' }}>
+            <span className="badge badge-orange" style={{ marginBottom: '12px' }}>
+              CHRONOLOGY
+            </span>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
+              12 Years In The Scaling Trenches
+            </h2>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '22px' }}>
+            {[
+              {
+                year: '2012 – 2016',
+                title: 'Early DTC & Arbitrage Foundations',
+                desc: 'Launched first eCommerce stores on early Shopify, testing raw consumer psychology and early Facebook direct-response advertising.'
+              },
+              {
+                year: '2017 – 2020',
+                title: '7-Figure Multi-Store Operations',
+                desc: 'Scaled multiple international brands across EU, UK, and US markets, refining rapid creative production and high-volume supplier logistics.'
+              },
+              {
+                year: '2021 – 2023',
+                title: 'Development of the MDF™ Framework',
+                desc: 'Engineered the Million Dollar Funnel™ system, orchestrating $50M+ in cumulative ad spend across Meta Advantage+ and TikTok.'
+              },
+              {
+                year: '2024 – 2026+',
+                title: 'Brand Scaling Hacks & Global Expansion',
+                desc: 'Partnering directly with high-growth brand founders to build sustainable 8 & 9-figure category leaders with enterprise private equity valuation.'
+              }
+            ].map((era, idx) => (
+              <div
+                key={idx}
+                style={{
+                  background: '#0f141f',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  borderRadius: '20px',
+                  padding: '28px 22px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '10px'
+                }}
+              >
+                <span style={{ fontSize: '1.1rem', fontWeight: 900, color: '#ffb300' }}>{era.year}</span>
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 800, color: '#ffffff', margin: 0 }}>{era.title}</h3>
+                <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.55, margin: 0 }}>{era.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Gaurav's Experience Breakdown & Checklist */}
       <section className="container" style={{ padding: '80px 20px' }}>
         <div

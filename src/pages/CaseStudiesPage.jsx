@@ -188,6 +188,65 @@ export default function CaseStudiesPage({ onOpenBooking, onNavigate, onOpenInsta
         </div>
       </section>
 
+      {/* 4-Step Million Dollar Funnel™ Scaling Architecture */}
+      <section style={{ background: '#0a0e16', padding: '80px 0', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 48px auto' }}>
+            <span className="badge badge-gold" style={{ marginBottom: '12px' }}>
+              SCALING ARCHITECTURE
+            </span>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
+              The 4-Step MDF™ Scale Playbook
+            </h2>
+            <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
+              Every case study on this page was executed using this identical, predictable 4-phase framework.
+            </p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
+            {[
+              {
+                step: 'Phase 01',
+                title: 'Unit Economics & Offer Reconstruction',
+                desc: 'We engineer 75%+ gross margin pricing, dynamic multi-quantity tier bundles, and high-margin order bumps to guarantee healthy front-end customer acquisition cost (CAC).'
+              },
+              {
+                step: 'Phase 02',
+                title: 'High-Velocity Hook Testing Matrix',
+                desc: 'Deploying 15-30 creator UGC angles testing 5-10 distinct scroll-stopping 3-second visual pattern interrupts to identify clear statistical winners.'
+              },
+              {
+                step: 'Phase 03',
+                title: 'Lightweight CRO Landing Page Build',
+                desc: 'Directing cold ad traffic away from generic multi-product catalog pages to high-speed (<1.5s) conversion landing pages with 4.2%+ verified conversion rates.'
+              },
+              {
+                step: 'Phase 04',
+                title: 'Meta Advantage+ Algorithmic Scale',
+                desc: 'Consolidating ad spend into simplified broad-targeting campaigns, scaling daily budgets horizontally and vertically from $300/day to $5,000–$15,000/day.'
+              }
+            ].map((p, idx) => (
+              <div
+                key={idx}
+                style={{
+                  background: '#0f141f',
+                  border: '1px solid rgba(255,255,255,0.08)',
+                  borderRadius: '20px',
+                  padding: '30px 24px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '12px'
+                }}
+              >
+                <span style={{ fontSize: '0.8rem', color: '#ff7043', fontWeight: 900, textTransform: 'uppercase' }}>{p.step}</span>
+                <h3 style={{ fontSize: '1.2rem', color: '#ffffff', fontWeight: 800, margin: 0, lineHeight: 1.3 }}>{p.title}</h3>
+                <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.6, margin: 0 }}>{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* LIVE INSTAGRAM REELS & CASE BREAKDOWNS SECTION */}
       <ClientCaseStudiesSection
         onOpenBooking={onOpenBooking}
