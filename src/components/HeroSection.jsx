@@ -57,10 +57,6 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
               <span>•</span>
               <span>Scaling</span>
             </div>
-            {/* Authority Kicker */}
-            <div className="ss1-authority-kicker">
-              12+ YEARS • $50M+ AD SPEND • 8 & 9-FIGURE ECOMMERCE EXPERIENCE
-            </div>
           </div>
 
           {/* Right Orange Pill Button (Exact User CTA: [SCALE MY BRAND]) */}

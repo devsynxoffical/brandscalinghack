@@ -106,7 +106,11 @@ export default function LiveSessionsSection({ onOpenVideo }) {
               <h3 className="main-player-title-big">{selectedSession.title}</h3>
               <div className="main-player-host-line">
                 <div className="host-icon-badge">
-                  <img src="/assets/gaurav_portrait.jpg" alt="Host" />
+                  <img
+                    src="/team/gaurav.jpeg"
+                    alt="Host"
+                    onError={(e) => { e.target.src = '/assets/gaurav_portrait.jpg'; }}
+                  />
                 </div>
                 <span style={{ color: '#ffffff', fontWeight: 700, fontSize: '0.92rem' }}>{selectedSession.host}</span>
                 <span style={{ color: '#64748b' }}>•</span>

@@ -108,36 +108,25 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
       <div className="results-glow-orb"></div>
 
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
-        {/* Section Kicker */}
-        <div className="section-kicker-badge">
-          02 — RESULTS
-        </div>
-
         {/* Bold Headline */}
-        <h2 className="results-title-bold" style={{ marginTop: '12px' }}>
-          WE DON'T JUST TALK ABOUT SCALING.<br />
-          <span className="results-title-highlight">WE SHOW YOU THE NUMBERS.</span>
+        <h2 className="results-title-bold" style={{ marginTop: '10px' }}>
+          We Craft <span style={{ fontStyle: 'italic', fontWeight: 600 }}>World Class</span> <span className="results-title-highlight">Performance Creatives</span> To Hit Your Revenue Goals.
         </h2>
 
         {/* Minimal Subtext */}
         <p className="results-subtext">
-          From customer acquisition to revenue growth, we've helped eCommerce brands turn paid traffic into serious businesses.
+          We help eCommerce brands scale through a repeatable creative system, not random ads. We offer <strong>full service ad creative from research and ideation to execution</strong> and delivery.
         </p>
-
-        {/* Real Proof Tag */}
-        <div className="results-proof-tag-pill">
-          <span>REAL BRANDS • REAL AD SPEND • REAL RESULTS</span>
-        </div>
 
         {/* Action Buttons */}
         <div className="results-cta-group" style={{ marginBottom: '40px' }}>
           <button className="btn-ss3-orange" onClick={onOpenBooking}>
-            <span>Scale My Brand</span>
+            <span>Book A Discovery Call</span>
             <ArrowRight size={18} />
           </button>
 
-          <button className="btn-ss3-transparent" onClick={() => onNavigate('case-studies')}>
-            <span>View Verified Case Studies</span>
+          <button className="btn-ss3-transparent" onClick={() => onNavigate('viral-creatives')}>
+            <span>See How We Work</span>
             <ArrowRight size={18} />
           </button>
         </div>
