@@ -161,54 +161,6 @@ export const liveSessionsData = [
     embedUrl: 'https://storage.googleapis.com/msgsndr/HWyar6Z3u3aF6ydghkCx/media/695da2543a532d67105ad96c.mp4',
     path: '/cases/coaching-lto',
     description: 'Discover how 13,630 units were sold generating $847,307 in revenue at 3.32 ROAS using our proven Low-Ticket Offer (LTO) to High-Ticket backend funnel system.'
-  },
-  {
-    id: 'session-1',
-    title: 'How We Scaled From $0 to $1M/Month: The Exact Media Buying Blueprint',
-    host: 'Gaurav Kapoor • 8-Figure Masterclass',
-    duration: '48:20',
-    date: 'Aug 29',
-    thumbnail: '/assets/instagram_thumbs/insta_1_Db3hW_mupo1.jpg',
-    videoType: 'youtube',
-    videoUrl: 'https://www.youtube.com/watch?v=X-L8GQjHOYA',
-    embedUrl: 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA',
-    description: 'Deep dive into account structure, creative testing cadences, budgeting rules, and when to scale bids vs duplicate winners.'
-  },
-  {
-    id: 'session-2',
-    title: 'The 2026 Creative Engine: Finding Winning Hooks That Cut CAC in Half',
-    host: 'Gaurav Kapoor • Live Workshop',
-    duration: '35:15',
-    date: 'Aug 18',
-    thumbnail: '/assets/instagram_thumbs/insta_2_DbBMshACSuX.jpg',
-    videoType: 'mp4',
-    videoUrl: 'https://storage.googleapis.com/msgsndr/HWyar6Z3u3aF6ydghkCx/media/695da2543a532d67105ad96c.mp4',
-    embedUrl: 'https://storage.googleapis.com/msgsndr/HWyar6Z3u3aF6ydghkCx/media/695da2543a532d67105ad96c.mp4',
-    description: 'How to script, shoot, and iterate high-converting UGC concepts without burning budget on random unvetted creators.'
-  },
-  {
-    id: 'session-3',
-    title: 'Shopify CRO Masterclass: Turning Cold Traffic into High-AOV Buyers',
-    host: 'Gaurav Kapoor & Growth Team',
-    duration: '52:40',
-    date: 'Aug 10',
-    thumbnail: '/assets/instagram_thumbs/insta_3_C9CPs88t1qa.jpg',
-    videoType: 'youtube',
-    videoUrl: 'https://www.youtube.com/watch?v=X-L8GQjHOYA',
-    embedUrl: 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA',
-    description: 'Live website teardowns analyzing product pages, trust badges, checkout velocity, and offer architecture that converts at 4%+.'
-  },
-  {
-    id: 'session-4',
-    title: 'From Dropshipping to 9-Figure Real Brand: Transition Blueprint',
-    host: 'Gaurav Kapoor • Keynote',
-    duration: '1:12:00',
-    date: 'July 24',
-    thumbnail: '/assets/instagram_thumbs/insta_4_DbCVqzFhiLU.jpg',
-    videoType: 'youtube',
-    videoUrl: 'https://www.youtube.com/watch?v=X-L8GQjHOYA',
-    embedUrl: 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA',
-    description: 'The step-by-step framework to transition from supplier arbitrage to custom tooling, proprietary branding, and private equity exits.'
   }
 ];
 
