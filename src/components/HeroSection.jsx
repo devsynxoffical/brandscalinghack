@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, TrendingUp, Sparkles, Zap } from 'lucide-react';
 
 // Row 1 & Row 2 Logos
 const row1Logos = [
@@ -116,39 +116,19 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="mdf-hero-capabilities-bar">
           <div className="container">
             <div className="mdf-capabilities-grid">
-              {/* 01 Creative Engine */}
-              <div
-                className="mdf-cap-card"
-                onClick={() => onNavigate ? onNavigate('viral-creatives') : null}
-              >
-                <div className="mdf-cap-left">
-                  <div className="mdf-cap-icon-box">
-                    <img src="/images/hero-link-ico1.png" alt="" className="mdf-cap-icon" />
-                  </div>
-                  <div className="mdf-cap-info">
-                    <span className="mdf-cap-num">01</span>
-                    <h3 className="mdf-cap-title">Creative Engine</h3>
-                    <p className="mdf-cap-sub">High-Converting UGC, Hooks & Direct-Response Ads</p>
-                  </div>
-                </div>
-                <div className="mdf-cap-arrow-btn">
-                  <ArrowUpRight size={16} />
-                </div>
-              </div>
-
-              {/* 02 Meta & Media Buying */}
+              {/* 01 Paid Media & Scaling */}
               <div
                 className="mdf-cap-card"
                 onClick={() => onNavigate ? onNavigate('growth') : null}
               >
                 <div className="mdf-cap-left">
-                  <div className="mdf-cap-icon-box">
-                    <img src="/images/hero-link-ico2.png" alt="" className="mdf-cap-icon" />
+                  <div className="mdf-cap-icon-box mdf-icon-flame">
+                    <TrendingUp size={22} color="#ff5722" />
                   </div>
                   <div className="mdf-cap-info">
-                    <span className="mdf-cap-num">02</span>
-                    <h3 className="mdf-cap-title">Meta & Media Buying</h3>
-                    <p className="mdf-cap-sub">Advantage+ Scaling, Scientific CAC & Daily Budgets</p>
+                    <span className="mdf-cap-num">01</span>
+                    <h3 className="mdf-cap-title">Paid Media & Scaling</h3>
+                    <p className="mdf-cap-sub">Meta Advantage+, Scientific CAC & Scale</p>
                   </div>
                 </div>
                 <div className="mdf-cap-arrow-btn">
@@ -156,19 +136,39 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                 </div>
               </div>
 
-              {/* 03 Brand Scaling Architecture */}
+              {/* 02 Viral Creative Studio */}
+              <div
+                className="mdf-cap-card"
+                onClick={() => onNavigate ? onNavigate('viral-creatives') : null}
+              >
+                <div className="mdf-cap-left">
+                  <div className="mdf-cap-icon-box mdf-icon-sparkle">
+                    <Sparkles size={22} color="#ff7043" />
+                  </div>
+                  <div className="mdf-cap-info">
+                    <span className="mdf-cap-num">02</span>
+                    <h3 className="mdf-cap-title">Viral Creative Studio</h3>
+                    <p className="mdf-cap-sub">High-Converting UGC, Hooks & Pattern Interrupts</p>
+                  </div>
+                </div>
+                <div className="mdf-cap-arrow-btn">
+                  <ArrowUpRight size={16} />
+                </div>
+              </div>
+
+              {/* 03 Conversion & High-AOV Funnels */}
               <div
                 className="mdf-cap-card"
                 onClick={() => onNavigate ? onNavigate('cases') : (onOpenBooking ? onOpenBooking() : null)}
               >
                 <div className="mdf-cap-left">
-                  <div className="mdf-cap-icon-box">
-                    <img src="/images/hero-link-ico3.png" alt="" className="mdf-cap-icon" />
+                  <div className="mdf-cap-icon-box mdf-icon-zap">
+                    <Zap size={22} color="#ffb300" />
                   </div>
                   <div className="mdf-cap-info">
                     <span className="mdf-cap-num">03</span>
-                    <h3 className="mdf-cap-title">Brand Scaling Architecture</h3>
-                    <p className="mdf-cap-sub">High-AOV Funnels, Shopify Stores & Retention</p>
+                    <h3 className="mdf-cap-title">Conversion & High-AOV Funnels</h3>
+                    <p className="mdf-cap-sub">Shopify Optimization, Multi-Tier Bundles & CRO</p>
                   </div>
                 </div>
                 <div className="mdf-cap-arrow-btn">

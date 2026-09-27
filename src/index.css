@@ -5541,17 +5541,26 @@ button {
   transition: all 0.25s ease;
 }
 
-.mdf-cap-card:hover .mdf-cap-icon-box {
-  border-color: rgba(255, 87, 34, 0.6);
-  background: rgba(255, 87, 34, 0.14);
-  box-shadow: 0 10px 25px rgba(255, 87, 34, 0.28);
-  transform: scale(1.05);
+.mdf-icon-flame {
+  border-color: rgba(255, 87, 34, 0.35);
+  background: radial-gradient(circle at center, rgba(255, 87, 34, 0.18) 0%, rgba(220, 38, 38, 0.05) 100%);
 }
 
-.mdf-cap-icon {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
+.mdf-icon-sparkle {
+  border-color: rgba(255, 112, 67, 0.35);
+  background: radial-gradient(circle at center, rgba(255, 112, 67, 0.18) 0%, rgba(255, 87, 34, 0.05) 100%);
+}
+
+.mdf-icon-zap {
+  border-color: rgba(255, 179, 0, 0.35);
+  background: radial-gradient(circle at center, rgba(255, 179, 0, 0.18) 0%, rgba(255, 87, 34, 0.05) 100%);
+}
+
+.mdf-cap-card:hover .mdf-cap-icon-box {
+  border-color: rgba(255, 87, 34, 0.65);
+  background: rgba(255, 87, 34, 0.18);
+  box-shadow: 0 10px 25px rgba(255, 87, 34, 0.32);
+  transform: scale(1.06);
 }
 
 .mdf-cap-info {
