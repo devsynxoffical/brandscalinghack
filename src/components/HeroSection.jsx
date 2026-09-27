@@ -40,7 +40,13 @@ const marqueeWords = [
 ];
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {
-  const videoRef = useRef(null);
+  const videoRef = React.useRef(null);
+
+  React.useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
 
   return (
     <div className="mdf-hero-root">
