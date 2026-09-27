@@ -260,7 +260,9 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="container">
           <div className="bsh-trusted-heading-row">
             <span className="bsh-trusted-line" />
-            <h2 className="bsh-trusted-title">Trusted by 100+ scaling eCommerce founders</h2>
+            <h2 className="bsh-trusted-title">
+              Trusted by <span className="bsh-trusted-title-accent">100+ scaling eCommerce</span> founders
+            </h2>
             <span className="bsh-trusted-line" />
           </div>
 

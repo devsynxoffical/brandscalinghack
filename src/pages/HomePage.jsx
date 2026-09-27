@@ -21,6 +21,9 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onOpenVideo={onOpenVideo}
       />
 
+      {/* 03 — THE SCALING SYSTEM (03 What We Build Engine - Tilted Phone & 6 Pillars) */}
+      <ScalingSystemSection onOpenBooking={onOpenBooking} />
+
       {/* 02 — RESULTS & PROOF (Screenshot 3 Style + Instagram Live Proof) */}
       <LiveResultsSection
         onOpenBooking={onOpenBooking}
@@ -41,9 +44,6 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onNavigate={onNavigate}
         onOpenInstagramModal={onOpenInstagramModal}
       />
-
-      {/* 06 — THE SCALING SYSTEM (03 What We Build Engine) */}
-      <ScalingSystemSection onOpenBooking={onOpenBooking} />
 
       {/* 08 — EXPERIENCE ($50M+ IN AD SPEND & 4 RED CREDENTIAL CARDS) */}
       <ExperienceStatsSection />
