@@ -151,18 +151,22 @@ export default function VideoTestimonialsSection({ onOpenBooking }) {
         {/* Section Header */}
         <div className="vt-header-block">
           <div className="vt-badge-row">
-            <span className="badge badge-orange">
-              <Sparkles size={14} />
+            <span className="hero-home-pill-badge" style={{ fontSize: '0.92rem', padding: '6px 18px', transform: 'none', margin: '0 0 12px 0' }}>
+              <Sparkles size={15} style={{ marginRight: '6px' }} />
               <span>REAL CLIENT RESULTS & CASE STUDIES</span>
             </span>
           </div>
 
           <h2 className="vt-main-title">
-            HEAR DIRECTLY FROM THE <span className="text-gradient-orange">FOUNDERS WE SCALE.</span>
+            HEAR DIRECTLY FROM THE{' '}
+            <span className="hero-home-pill-badge vt-title-creative-badge">
+              FOUNDERS WE SCALE.
+            </span>
           </h2>
 
           <p className="vt-subtitle">
-            Raw, unfiltered video proof from eCommerce brands and agency leaders scaling with our growth architecture.
+            Raw, unfiltered video proof from <strong style={{ color: '#ffffff', fontWeight: 800 }}>eCommerce brands</strong> and{' '}
+            <strong style={{ color: '#ffffff', fontWeight: 800 }}>agency leaders</strong> scaling with our growth architecture.
           </p>
         </div>
 

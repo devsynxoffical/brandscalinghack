@@ -21,20 +21,25 @@ function App() {
   // Initialize route from current window path on load and handle popstate
   useEffect(() => {
     const handleLocationChange = () => {
-      const path = window.location.pathname;
-      if (path.includes('1-52m-case-study')) {
-        setActivePage('case-1-52m-case-study');
-      } else if (path.includes('coaching-lto')) {
-        setActivePage('case-coaching-lto');
-      } else if (path.includes('case-studies') || path === '/cases') {
+      const rawPath = window.location.pathname.replace(/\/$/, '');
+      if (rawPath === '/case-studies' || rawPath === '/cases' || rawPath === '/cases/studies' || rawPath === '/case') {
         setActivePage('case-studies');
-      } else if (path.includes('viral-creatives')) {
+      } else if (rawPath.startsWith('/cases/')) {
+        const caseId = rawPath.replace('/cases/', '');
+        if (caseId && caseId !== 'studies') {
+          setActivePage(`case-${caseId}`);
+        } else {
+          setActivePage('case-studies');
+        }
+      } else if (rawPath.includes('case-studies')) {
+        setActivePage('case-studies');
+      } else if (rawPath.includes('viral-creatives')) {
         setActivePage('viral-creatives');
-      } else if (path.includes('growth')) {
+      } else if (rawPath.includes('growth')) {
         setActivePage('growth');
-      } else if (path.includes('about')) {
+      } else if (rawPath.includes('about')) {
         setActivePage('about');
-      } else if (path.includes('viral-products')) {
+      } else if (rawPath.includes('viral-products')) {
         setActivePage('viral-products');
       } else {
         setActivePage('home');
@@ -51,10 +56,11 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // Update browser history URL cleanly without full reload
-    if (pageId === 'case-1-52m-case-study') {
-      window.history.pushState({}, '', '/cases/1-52m-case-study');
-    } else if (pageId === 'case-coaching-lto') {
-      window.history.pushState({}, '', '/cases/coaching-lto');
+    if (pageId.startsWith('case-') && pageId !== 'case-studies') {
+      const caseId = pageId.replace('case-', '');
+      window.history.pushState({}, '', `/cases/${caseId}`);
+    } else if (pageId === 'case-studies') {
+      window.history.pushState({}, '', '/case-studies');
     } else if (pageId === 'home') {
       window.history.pushState({}, '', '/');
     } else {
@@ -63,20 +69,11 @@ function App() {
   };
 
   const renderActivePage = () => {
-    if (activePage === 'case-1-52m-case-study' || activePage === '1-52m-case-study') {
+    if (activePage.startsWith('case-') && activePage !== 'case-studies') {
+      const caseId = activePage.replace('case-', '');
       return (
         <CaseStudyDetailPage
-          caseStudyId="1-52m-case-study"
-          onNavigate={handleNavigate}
-          onOpenBooking={() => setIsBookingOpen(true)}
-        />
-      );
-    }
-
-    if (activePage === 'case-coaching-lto' || activePage === 'coaching-lto') {
-      return (
-        <CaseStudyDetailPage
-          caseStudyId="coaching-lto"
+          caseStudyId={caseId}
           onNavigate={handleNavigate}
           onOpenBooking={() => setIsBookingOpen(true)}
         />
@@ -107,6 +104,7 @@ function App() {
           <ViralCreativesPage
             onOpenBooking={() => setIsBookingOpen(true)}
             onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
+            onNavigate={handleNavigate}
           />
         );
       case 'growth':
@@ -119,7 +117,12 @@ function App() {
           />
         );
       case 'viral-products':
-        return <FindViralProductsPage onOpenBooking={() => setIsBookingOpen(true)} />;
+        return (
+          <FindViralProductsPage 
+            onOpenBooking={() => setIsBookingOpen(true)} 
+            onNavigate={handleNavigate} 
+          />
+        );
       default:
         return (
           <HomePage
@@ -162,10 +165,11 @@ function App() {
         onClose={() => setActiveVideo(null)}
       />
 
-      {/* Live Instagram Reel Player Modal */}
+      {/* Live Instagram Proof & Lightbox Modal */}
       <InstagramModal
         item={activeInstagramReel}
         onClose={() => setActiveInstagramReel(null)}
+        onOpenBooking={() => setIsBookingOpen(true)}
       />
     </div>
   );

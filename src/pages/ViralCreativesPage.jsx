@@ -1,21 +1,345 @@
 import React, { useState } from 'react';
-import { liveResultsProof, viralCreativesData } from '../data/mockData';
 import { 
   Play, 
   Sparkles, 
   ArrowRight, 
   ExternalLink,
-  Flame,
   Search,
-  Filter
+  ShoppingBag,
+  Image as ImageIcon,
+  Video as VideoIcon,
+  TrendingUp,
+  Eye,
+  CheckCircle2
 } from 'lucide-react';
-import { InstagramIcon } from '../components/Icons';
 
-export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal }) {
+export const curatedViralCreatives = [
+  {
+    id: 'vc-1',
+    type: 'video',
+    title: 'The 3-Second Visual Hook That Slashed CPA by 44%',
+    category: 'Video Ad Hooks',
+    badge: '4.62x ROAS',
+    revenue: '$184K Generated',
+    roas: '4.62x ROAS',
+    video: '/assets/insta-video/C9CPs88t1qa.mp4',
+    image: '/assets/insta-video/C9CPs88t1qa.jpg',
+    description: 'High-velocity visual pattern interrupt leveraging a raw macro problem agitation in the first 2.5 seconds, immediately qualifying high-intent cold buyers.',
+    strategy: 'Hook Retention: 54% • Conversion Rate: 4.8%'
+  },
+  {
+    id: 'vc-2',
+    type: 'static',
+    title: 'Direct-Response "Us vs Them" Feature Comparison Matrix',
+    category: 'Static Ad Creatives',
+    badge: 'STATIC POST',
+    revenue: '$96K Generated',
+    roas: '3.95x ROAS',
+    video: '',
+    image: '/assets/insta-video/DBTXySHSrJa.jpg',
+    description: 'High-converting split comparison graphic contrasting cheap market alternatives against our client’s premium formulation, eliminating buyer hesitation instantly.',
+    strategy: 'Click-Through Rate: 3.9% • Middle of Funnel Asset'
+  },
+  {
+    id: 'vc-3',
+    type: 'video',
+    title: 'Raw Creator Unboxing & Sensory Reaction Flow',
+    category: 'UGC & TikTok Ads',
+    badge: '5.10x ROAS',
+    revenue: '$248K Generated',
+    roas: '5.10x ROAS',
+    video: '/assets/insta-video/Ca19JaMse_i.mp4',
+    image: '/assets/insta-video/Ca19JaMse_i.jpg',
+    description: 'Authentic customer perspective with natural home lighting and ASMR packaging cues, achieving a 52% 3-second hook retention rate on TikTok and Reels.',
+    strategy: 'TikTok Native • 52% 3s Hook Rate'
+  },
+  {
+    id: 'vc-4',
+    type: 'static',
+    title: 'High-AOV Dynamic 3-Tier Bundle Value Stack',
+    category: 'Offer & Bundle Stacks',
+    badge: 'OFFER POST',
+    revenue: '$132K Generated',
+    roas: '4.35x ROAS',
+    video: '',
+    image: '/assets/insta-video/C2hk_plyrcZ.jpg',
+    description: 'Clear visual hierarchy showcasing Buy 2 Get 1 Free tiered pricing, increasing storefront average order value from $42 to $78 on cold Meta traffic.',
+    strategy: 'AOV Lift: +85% • Front-End Liquidation'
+  },
+  {
+    id: 'vc-5',
+    type: 'video',
+    title: 'Advantage+ Broad Creative with Dynamic Text Overlays',
+    category: 'Meta Advantage+ Assets',
+    badge: '4.80x ROAS',
+    revenue: '$310K Generated',
+    roas: '4.80x ROAS',
+    video: '/assets/insta-video/Ce4RHMZBmfi.mp4',
+    image: '/assets/insta-video/Ce4RHMZBmfi.jpg',
+    description: 'Native short-form captions combined with fast-cut b-roll demonstration, maintaining a sub-$14 Customer Acquisition Cost across $2,500/day ad spend.',
+    strategy: 'Advantage+ Shopping • $2,500/day Scale'
+  },
+  {
+    id: 'vc-6',
+    type: 'static',
+    title: 'Verified 5-Star Social Proof & Customer Review Wall',
+    category: 'Static Ad Creatives',
+    badge: 'STATIC POST',
+    revenue: '$84K Generated',
+    roas: '3.70x ROAS',
+    video: '',
+    image: '/assets/insta-video/DB8LF0QyepD.jpg',
+    description: 'Authentic quote callouts and verified buyer badges positioned for retargeting, converting hesitant cart abandoners within 24 hours of first view.',
+    strategy: 'Retargeting ROAS: 6.2x • Cart Recovery'
+  },
+  {
+    id: 'vc-7',
+    type: 'video',
+    title: 'Problem-Agitation-Solution Narrative Script',
+    category: 'Video Ad Hooks',
+    badge: '4.40x ROAS',
+    revenue: '$165K Generated',
+    roas: '4.40x ROAS',
+    video: '/assets/insta-video/Cft79TLpxyk.mp4',
+    image: '/assets/insta-video/Cft79TLpxyk.jpg',
+    description: 'Structured 45-second direct-response storytelling that exposes daily routine friction and introduces the client product as the obvious relief.',
+    strategy: 'P-A-S Framework • 4.1% CVR'
+  },
+  {
+    id: 'vc-8',
+    type: 'video',
+    title: 'Day-In-The-Life Micro-Vlog Creator Angle',
+    category: 'UGC & TikTok Ads',
+    badge: '4.92x ROAS',
+    revenue: '$215K Generated',
+    roas: '4.92x ROAS',
+    video: '/assets/insta-video/CjIsfV-Py1A.mp4',
+    image: '/assets/insta-video/CjIsfV-Py1A.jpg',
+    description: 'Seamless lifestyle integration showing product application during a morning routine, blending organically into user feeds with zero ad resistance.',
+    strategy: 'Organic Style UGC • 4.2% CTR'
+  },
+  {
+    id: 'vc-9',
+    type: 'static',
+    title: 'Clinical Ingredient & Laboratory Certification Breakdown',
+    category: 'Static Ad Creatives',
+    badge: 'STATIC POST',
+    revenue: '$112K Generated',
+    roas: '3.85x ROAS',
+    video: '',
+    image: '/assets/insta-video/DBWiTtwSvgw.jpg',
+    description: 'Clean infographic detailing pure bio-availability and third-party laboratory verification, establishing instant category authority.',
+    strategy: 'Authority Building • High-Trust DTC'
+  },
+  {
+    id: 'vc-10',
+    type: 'video',
+    title: 'Extreme Stress-Test & Durability Demonstration',
+    category: 'Video Ad Hooks',
+    badge: '5.40x ROAS',
+    revenue: '$390K Generated',
+    roas: '5.40x ROAS',
+    video: '/assets/insta-video/ClNmKjfuASL.mp4',
+    image: '/assets/insta-video/ClNmKjfuASL.jpg',
+    description: 'Visual proof mechanism testing product under intense pressure, creating an undeniable visual demonstration that eliminates buyer skepticism.',
+    strategy: 'Visual Proof Engine • Cold Traffic Winner'
+  },
+  {
+    id: 'vc-11',
+    type: 'static',
+    title: 'Limited-Time VIP Launch & BOGO Offer Architecture',
+    category: 'Offer & Bundle Stacks',
+    badge: 'OFFER POST',
+    revenue: '$145K Generated',
+    roas: '4.15x ROAS',
+    video: '',
+    image: '/assets/insta-video/C8BoEiWvQPX.jpg',
+    description: 'High-contrast promotional visual emphasizing flash scarcity and free express shipping, generating over 1,200 orders in a 48-hour scaling push.',
+    strategy: 'Flash Launch • 1,200 Orders / 48h'
+  },
+  {
+    id: 'vc-12',
+    type: 'video',
+    title: 'Myth-Busting Industry Lie Direct-to-Camera Script',
+    category: 'Meta Advantage+ Assets',
+    badge: '4.25x ROAS',
+    revenue: '$195K Generated',
+    roas: '4.25x ROAS',
+    video: '/assets/insta-video/ClzYLasvGb7.mp4',
+    image: '/assets/insta-video/ClzYLasvGb7.jpg',
+    description: 'Contrarian hook calling out misleading legacy competitor marketing, capturing high-curiosity viewers and driving them to an educational landing page.',
+    strategy: 'Contrarian Hook • 5.1% Outbound CTR'
+  },
+  {
+    id: 'vc-13',
+    type: 'video',
+    title: 'Instant Before vs After Split-Screen Demo',
+    category: 'Video Ad Hooks',
+    badge: '5.20x ROAS',
+    revenue: '$420K Generated',
+    roas: '5.20x ROAS',
+    video: '/assets/insta-video/CaF8d61BZSO.mp4',
+    image: '/assets/insta-video/CaF8d61BZSO.jpg',
+    description: 'Side-by-side synchronized comparison demonstrating immediate transformation in under 4 seconds, producing the campaign’s lowest cost-per-acquisition.',
+    strategy: 'Side-by-Side Hook • $9.80 CPA'
+  },
+  {
+    id: 'vc-14',
+    type: 'static',
+    title: 'National Press Features & Editorial Quote Collage',
+    category: 'Static Ad Creatives',
+    badge: 'STATIC POST',
+    revenue: '$78K Generated',
+    roas: '3.60x ROAS',
+    video: '',
+    image: '/assets/insta-video/DCIbOc6SN5I.jpg',
+    description: 'Prestigious media publication badges and verified press quotes establishing massive credibility for first-time buyers exploring the brand.',
+    strategy: 'PR Endorsement • 32% Lower Bounce'
+  },
+  {
+    id: 'vc-15',
+    type: 'video',
+    title: 'Founder Story & Behind-The-Scenes Formulation Journey',
+    category: 'UGC & TikTok Ads',
+    badge: '4.55x ROAS',
+    revenue: '$175K Generated',
+    roas: '4.55x ROAS',
+    video: '/assets/insta-video/CfYM_4POBEi.mp4',
+    image: '/assets/insta-video/CfYM_4POBEi.jpg',
+    description: 'Raw founder monologue detailing 18 months of rigorous testing before launching the final formula, creating strong emotional connection and high LTV.',
+    strategy: 'Founder Brand Story • +40% Repeat Rate'
+  },
+  {
+    id: 'vc-16',
+    type: 'video',
+    title: 'TikTok Sound Tempo & Rapid Product Variation Teaser',
+    category: 'UGC & TikTok Ads',
+    badge: '4.75x ROAS',
+    revenue: '$230K Generated',
+    roas: '4.75x ROAS',
+    video: '/assets/insta-video/C9RU-C9yhfU.mp4',
+    image: '/assets/insta-video/C9RU-C9yhfU.jpg',
+    description: 'Leveraged high-energy sound design to showcase 5 product colorways in 7 seconds, driving over 2.4 million views with minimal production overhead.',
+    strategy: 'Viral Sound Sync • 2.4M Views'
+  },
+  {
+    id: 'vc-17',
+    type: 'static',
+    title: 'Anatomy of a Winning Product Feature Callout',
+    category: 'Static Ad Creatives',
+    badge: 'STATIC POST',
+    revenue: '$128K Generated',
+    roas: '4.05x ROAS',
+    video: '',
+    image: '/assets/insta-video/Db3hW_mupo1.jpg',
+    description: 'Detailed callout pointers highlighting custom ergonomic construction, aerospace-grade alloy, and proprietary waterproof sealing.',
+    strategy: 'Feature Breakdown • 4.6% CVR'
+  },
+  {
+    id: 'vc-18',
+    type: 'video',
+    title: 'High-Spend Broad Horizontal Scaling Matrix Asset',
+    category: 'Meta Advantage+ Assets',
+    badge: '4.88x ROAS',
+    revenue: '$510K Generated',
+    roas: '4.88x ROAS',
+    video: '/assets/insta-video/DbCVqzFhiLU.mp4',
+    image: '/assets/insta-video/DbCVqzFhiLU.jpg',
+    description: 'Open broad-targeting creative asset engineered with 4 distinct intro variations running concurrently inside Meta Advantage+ scaling campaigns.',
+    strategy: 'Multi-Angle Scale • $510K Campaign'
+  },
+  {
+    id: 'vc-19',
+    type: 'static',
+    title: 'Multi-Quantity Tiered Bundle with Free Gift Incentive',
+    category: 'Offer & Bundle Stacks',
+    badge: 'OFFER POST',
+    revenue: '$160K Generated',
+    roas: '4.45x ROAS',
+    video: '',
+    image: '/assets/insta-video/CeZA8zlj0HL.jpg',
+    description: 'Clear visual bundling displaying "Buy 3 = 40% OFF + Free Travel Pouch", driving multi-pack purchase rate to 68% of total storefront order volume.',
+    strategy: 'Bundle Maximizer • 68% Multi-Pack Take'
+  },
+  {
+    id: 'vc-20',
+    type: 'video',
+    title: 'Customer Street Interview & Real-Time Blind Test',
+    category: 'UGC & TikTok Ads',
+    badge: '4.65x ROAS',
+    revenue: '$290K Generated',
+    roas: '4.65x ROAS',
+    video: '/assets/insta-video/CbCOGFmAE4U.mp4',
+    image: '/assets/insta-video/CbCOGFmAE4U.jpg',
+    description: 'Spontaneous real-world reactions from everyday customers choosing our client’s product over legacy retail brands in an unscripted blind comparison.',
+    strategy: 'Street Intercept UGC • 64% 3s Hook'
+  },
+  {
+    id: 'vc-21',
+    type: 'video',
+    title: 'Stop-Motion Unpacking & Tactile Product Showcase',
+    category: 'Video Ad Hooks',
+    badge: '4.10x ROAS',
+    revenue: '$140K Generated',
+    roas: '4.10x ROAS',
+    video: '/assets/insta-video/C9VEBK8y-0r.mp4',
+    image: '/assets/insta-video/C9VEBK8y-0r.jpg',
+    description: 'Clean frame-by-frame stop-motion video highlighting premium tactile packaging, custom unboxing cards, and magnetic accessories.',
+    strategy: 'Stop-Motion Craft • High Brand Value'
+  },
+  {
+    id: 'vc-22',
+    type: 'static',
+    title: 'Risk-Free 90-Day Money-Back Guarantee Seal Card',
+    category: 'Static Ad Creatives',
+    badge: 'STATIC POST',
+    revenue: '$92K Generated',
+    roas: '3.90x ROAS',
+    video: '',
+    image: '/assets/insta-video/CbdLX--rkaU.jpg',
+    description: 'Bold guarantee banner with clear return terms, eradicating pre-purchase hesitation on high-ticket $120+ direct-response checkouts.',
+    strategy: 'Friction Removal • +28% Checkout Rate'
+  },
+  {
+    id: 'vc-23',
+    type: 'video',
+    title: 'Step-By-Step How-To Tutorial & Morning Protocol',
+    category: 'Meta Advantage+ Assets',
+    badge: '4.70x ROAS',
+    revenue: '$340K Generated',
+    roas: '4.70x ROAS',
+    video: '/assets/insta-video/CkaJ5hCju2s.mp4',
+    image: '/assets/insta-video/CkaJ5hCju2s.jpg',
+    description: 'Educational 30-second workflow demonstrating exact dosage and ease of use, establishing effortless daily habits for new subscribers.',
+    strategy: 'Educational Flow • Subscriptions +45%'
+  },
+  {
+    id: 'vc-24',
+    type: 'static',
+    title: 'Seasonal Limited Bundle Guide & Gift Presentation',
+    category: 'Offer & Bundle Stacks',
+    badge: 'OFFER POST',
+    revenue: '$465K Generated',
+    roas: '5.05x ROAS',
+    video: '',
+    image: '/assets/insta-video/CxqUP36gaEo.jpg',
+    description: 'Curated gift set layout with custom festive packaging graphics, driving massive Q4 shopping momentum and repeat customer orders.',
+    strategy: 'Holiday Gift Guide • $465K Volume'
+  }
+];
+
+export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal, onNavigate }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const categories = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale'];
+  const categories = [
+    'All', 
+    'Video Ad Hooks', 
+    'Static Ad Creatives', 
+    'Meta Advantage+ Assets', 
+    'UGC & TikTok Ads', 
+    'Offer & Bundle Stacks'
+  ];
 
   const creativePillars = [
     {
@@ -24,11 +348,11 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
     },
     {
       title: '02. Authentic Creator UGC Studio',
-      desc: 'No cheesy sponsored influencer vibes. We script and direct real customers and vetted creators to deliver natural, high-converting objection handling.'
+      desc: 'No cheesy sponsored influencer vibes. We script and direct real customers and vetted creators to deliver natural objection handling.'
     },
     {
-      title: '03. Motion Graphics & High-Paced Editing',
-      desc: 'TikTok-native kinetic typography, sound design, split screens, and dynamic zooms engineered specifically for short attention spans.'
+      title: '03. High-Converting Static Graphics',
+      desc: 'Split-comparisons, PR feature quote walls, and tiered bundle offer graphics engineered to extract high CTR and lower CPA.'
     },
     {
       title: '04. Rapid Iteration Matrix',
@@ -36,26 +360,66 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
     }
   ];
 
-  const filteredReels = liveResultsProof.filter((reel) => {
-    const matchesCat = activeCategory === 'All' || reel.category === activeCategory;
-    const searchTarget = `${reel.title || ''} ${reel.description || ''} ${reel.badge || ''} ${reel.category || ''}`.toLowerCase();
+  const filteredCreatives = curatedViralCreatives.filter((item) => {
+    const matchesCat = activeCategory === 'All' || item.category === activeCategory;
+    const searchTarget = `${item.title || ''} ${item.description || ''} ${item.badge || ''} ${item.category || ''} ${item.strategy || ''}`.toLowerCase();
     const matchesSearch = searchTarget.includes(searchQuery.toLowerCase());
     return matchesCat && matchesSearch;
   });
 
+  const handleCardClick = (item) => {
+    if (onOpenInstagramModal) {
+      onOpenInstagramModal({
+        id: item.id,
+        title: item.title,
+        revenue: item.revenue,
+        roas: item.roas,
+        category: item.category,
+        badge: item.badge,
+        video: item.video,
+        image: item.image,
+        description: item.description,
+        notes: item.strategy
+      });
+    }
+  };
+
   return (
-    <div style={{ paddingTop: '100px', minHeight: '100vh', background: '#080a0f' }}>
+    <div style={{ paddingTop: '80px', minHeight: '100vh', background: '#ffffff', color: '#0f172a' }}>
       {/* Header */}
       <section className="section-padding" style={{ paddingBottom: '30px', textAlign: 'center' }}>
         <div className="container">
-          <span className="badge badge-red" style={{ marginBottom: '16px' }}>
-            PERFORMANCE CREATIVE ENGINE
-          </span>
-          <h1 style={{ fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', color: '#fff', marginBottom: '18px' }}>
-            We Don't Make "Pretty Ads". <br /><span style={{ color: '#ff5722' }}>We Make High-Converting Assets.</span>
+          <div style={{ marginBottom: '14px', display: 'flex', justifyContent: 'center' }}>
+            <span 
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: 'rgba(220, 38, 38, 0.08)',
+                color: '#dc2626',
+                border: '1px solid rgba(220, 38, 38, 0.25)',
+                borderRadius: '9999px',
+                padding: '6px 18px',
+                fontWeight: 800,
+                fontSize: '0.82rem',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase'
+              }}
+            >
+              <Sparkles size={14} />
+              PERFORMANCE CREATIVE & VIRAL PRODUCT ENGINE
+            </span>
+          </div>
+
+          <h1 style={{ fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', color: '#0f172a', marginBottom: '18px', textTransform: 'uppercase', letterSpacing: '-0.025em', fontWeight: 900, lineHeight: 1.15 }}>
+            We Don't Make "Pretty Ads". <br />
+            <span style={{ background: 'linear-gradient(135deg, #dc2626 0%, #ea580c 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              We Make High-Converting Assets.
+            </span>
           </h1>
-          <p style={{ maxWidth: '820px', margin: '0 auto 30px auto', fontSize: '1.15rem', color: '#94a3b8', lineHeight: 1.6 }}>
-            Creative is the new targeting. We deliver end-to-end direct-response creative production—from competitor research and psychological scripting to creator sourcing and rapid video editing.
+
+          <p style={{ maxWidth: '820px', margin: '0 auto 30px auto', fontSize: '1.1rem', color: '#475569', lineHeight: 1.6 }}>
+            Creative is the new targeting. We deliver end-to-end direct-response creative production—from competitor research and psychological scripting to creator UGC sourcing, motion graphic videos, and high-CTR static advertorials.
           </p>
 
           <div style={{ display: 'flex', justifyContent: 'center', gap: '14px', flexWrap: 'wrap' }}>
@@ -63,16 +427,25 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
               <span>GET CREATIVES FOR YOUR BRAND</span>
               <ArrowRight size={18} />
             </button>
-            <a
-              href="https://www.instagram.com/gauravecomm/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 28px' }}
+            <button
+              onClick={() => onNavigate && onNavigate('viral-products')}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '14px 28px',
+                background: 'linear-gradient(135deg, #c41224 0%, #990a16 100%)',
+                color: '#ffffff',
+                border: 'none',
+                borderRadius: '9999px',
+                fontWeight: 900,
+                cursor: 'pointer',
+                boxShadow: '0 4px 14px rgba(185,28,28,0.25)'
+              }}
             >
-              <InstagramIcon size={18} color="#ff5722" />
-              <span>Follow @gauravecomm</span>
-            </a>
+              <ShoppingBag size={18} />
+              <span>EXPLORE VIRAL PRODUCTS SPY TOOL</span>
+            </button>
           </div>
         </div>
       </section>
@@ -84,17 +457,26 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
             <div
               key={idx}
               style={{
-                background: '#0f131a',
-                border: '1px solid rgba(255,255,255,0.08)',
+                background: '#f8fafc',
+                border: '1.5px solid #e2e8f0',
                 borderRadius: '18px',
                 padding: '24px',
-                transition: 'all 0.3s ease'
+                boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
+                transition: 'all 0.25s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-4px)';
+                e.currentTarget.style.borderColor = 'rgba(220, 38, 38, 0.4)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.borderColor = '#e2e8f0';
               }}
             >
-              <div style={{ fontSize: '1.1rem', fontWeight: 800, color: '#ff7043', marginBottom: '10px' }}>
+              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#dc2626', marginBottom: '10px' }}>
                 {pillar.title}
               </div>
-              <p style={{ fontSize: '0.92rem', color: '#94a3b8', lineHeight: 1.5 }}>
+              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.55, margin: 0 }}>
                 {pillar.desc}
               </p>
             </div>
@@ -102,18 +484,35 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
         </div>
       </section>
 
-      {/* 31 INSTAGRAM REELS & CREATIVE VAULT */}
+      {/* 24 CURATED UNIQUE VIRAL CREATIVES VAULT */}
       <section className="container" style={{ paddingBottom: '80px' }}>
         <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-          <span className="badge badge-orange" style={{ marginBottom: '12px' }}>
-            <InstagramIcon size={14} color="#ff7043" />
-            <span>LIVE INSTAGRAM REELS LIBRARY ({liveResultsProof.length} REELS)</span>
-          </span>
-          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: '#fff', marginBottom: '10px' }}>
-            Proven Winning Hooks & Masterclasses
+          <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'center' }}>
+            <span 
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: 'rgba(220, 38, 38, 0.08)',
+                color: '#dc2626',
+                border: '1px solid rgba(220, 38, 38, 0.25)',
+                borderRadius: '9999px',
+                padding: '6px 18px',
+                fontWeight: 800,
+                fontSize: '0.82rem',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase'
+              }}
+            >
+              <Sparkles size={14} />
+              <span>TESTED PERFORMANCE VAULT ({curatedViralCreatives.length} CREATIVE ASSETS)</span>
+            </span>
+          </div>
+          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', marginBottom: '10px' }}>
+            Winning Video Ads & High-Converting Static Graphics
           </h2>
-          <p style={{ color: '#94a3b8', maxWidth: '700px', margin: '0 auto' }}>
-            Click on any reel to watch the full breakdown, hook script, and revenue scaling architecture.
+          <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto', fontSize: '1.02rem' }}>
+            Explore our battle-tested direct-response video hooks and high-CTR static advertorials. Click on any asset to view its full scaling strategy.
           </p>
         </div>
 
@@ -125,7 +524,11 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
             alignItems: 'center', 
             gap: '16px', 
             marginBottom: '32px',
-            flexWrap: 'wrap'
+            flexWrap: 'wrap',
+            background: '#f8fafc',
+            border: '1.5px solid #e2e8f0',
+            borderRadius: '20px',
+            padding: '16px 20px'
           }}
         >
           {/* Category Tabs */}
@@ -138,15 +541,16 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
                   padding: '8px 18px',
                   borderRadius: '30px',
                   fontSize: '0.85rem',
-                  fontWeight: 700,
-                  background: activeCategory === cat ? 'var(--gradient-fire)' : '#121722',
-                  color: '#fff',
-                  border: activeCategory === cat ? '1px solid #ff7043' : '1px solid rgba(255,255,255,0.08)',
+                  fontWeight: 800,
+                  background: activeCategory === cat ? '#dc2626' : '#ffffff',
+                  color: activeCategory === cat ? '#ffffff' : '#334155',
+                  border: activeCategory === cat ? '1.5px solid #dc2626' : '1px solid #e2e8f0',
                   cursor: 'pointer',
-                  transition: 'all 0.2s ease'
+                  transition: 'all 0.2s ease',
+                  boxShadow: activeCategory === cat ? '0 3px 10px rgba(220,38,38,0.3)' : 'none'
                 }}
               >
-                {cat} {cat === 'All' ? `(${liveResultsProof.length})` : ''}
+                {cat} {cat === 'All' ? `(${curatedViralCreatives.length})` : ''}
               </button>
             ))}
           </div>
@@ -157,24 +561,25 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
               display: 'flex', 
               alignItems: 'center', 
               gap: '8px', 
-              background: '#121722', 
-              border: '1px solid rgba(255,255,255,0.1)', 
+              background: '#ffffff', 
+              border: '1.5px solid #e2e8f0', 
               borderRadius: '30px', 
-              padding: '6px 16px',
-              minWidth: '220px'
+              padding: '8px 18px',
+              minWidth: '240px'
             }}
           >
-            <Search size={15} color="#94a3b8" />
+            <Search size={16} color="#dc2626" />
             <input 
               type="text" 
-              placeholder="Search reels..."
+              placeholder="Search hooks & creatives..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               style={{
                 background: 'transparent',
                 border: 'none',
-                color: '#fff',
-                fontSize: '0.85rem',
+                color: '#0f172a',
+                fontSize: '0.88rem',
+                fontWeight: 600,
                 outline: 'none',
                 width: '100%'
               }}
@@ -182,87 +587,143 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
           </div>
         </div>
 
-        {/* Reels Grid (31 Cards) */}
+        {/* Creatives Grid (Mix of Video & Static Posts - No Duplicates) */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
-          {filteredReels.map((reel, idx) => (
+          {filteredCreatives.map((item) => (
             <div
-              key={reel.id}
-              onClick={() => onOpenInstagramModal ? onOpenInstagramModal(reel) : null}
+              key={item.id}
+              onClick={() => handleCardClick(item)}
               style={{
-                background: '#0d111a',
-                border: '1px solid rgba(255,255,255,0.08)',
+                background: '#ffffff',
+                border: '1.5px solid #e2e8f0',
                 borderRadius: '20px',
                 overflow: 'hidden',
                 cursor: 'pointer',
                 transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
                 display: 'flex',
                 flexDirection: 'column',
-                boxShadow: '0 12px 30px rgba(0,0,0,0.4)'
+                boxShadow: '0 4px 18px rgba(0,0,0,0.04)'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.borderColor = 'rgba(255, 112, 67, 0.45)';
-                e.currentTarget.style.boxShadow = '0 20px 45px rgba(0,0,0,0.6), 0 0 25px rgba(255, 112, 67, 0.15)';
+                e.currentTarget.style.borderColor = 'rgba(220, 38, 38, 0.45)';
+                e.currentTarget.style.boxShadow = '0 16px 36px rgba(220, 38, 38, 0.12)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
-                e.currentTarget.style.boxShadow = '0 12px 30px rgba(0,0,0,0.4)';
+                e.currentTarget.style.borderColor = '#e2e8f0';
+                e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.04)';
               }}
             >
-              {/* Thumbnail with Overlay */}
-              <div style={{ position: 'relative', height: '260px', overflow: 'hidden', background: '#05080e' }}>
-                <video 
-                  src={reel.video} 
-                  poster={reel.image}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  preload="auto"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                />
+              {/* Media Thumbnail with Overlay */}
+              <div style={{ position: 'relative', height: '260px', overflow: 'hidden', background: '#f1f5f9' }}>
+                {item.type === 'video' ? (
+                  <>
+                    <video 
+                      src={item.video} 
+                      poster={item.image}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="auto"
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                    />
+                    {/* Play Button Indicator */}
+                    <div 
+                      style={{ 
+                        position: 'absolute', 
+                        top: '50%', 
+                        left: '50%', 
+                        transform: 'translate(-50%, -50%)',
+                        width: '46px',
+                        height: '46px',
+                        borderRadius: '50%',
+                        background: 'rgba(0,0,0,0.7)',
+                        backdropFilter: 'blur(8px)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        border: '1px solid rgba(255,255,255,0.25)',
+                        pointerEvents: 'none'
+                      }}
+                    >
+                      <Play size={18} fill="#ffffff" color="#ffffff" style={{ marginLeft: '3px' }} />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                    />
+                    {/* Static Post Icon Indicator */}
+                    <div 
+                      style={{ 
+                        position: 'absolute', 
+                        top: '50%', 
+                        left: '50%', 
+                        transform: 'translate(-50%, -50%)',
+                        width: '46px',
+                        height: '46px',
+                        borderRadius: '50%',
+                        background: 'rgba(0,0,0,0.65)',
+                        backdropFilter: 'blur(8px)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        border: '1px solid rgba(255,255,255,0.25)',
+                        pointerEvents: 'none'
+                      }}
+                    >
+                      <ImageIcon size={20} color="#ffffff" />
+                    </div>
+                  </>
+                )}
 
-                {/* Play Button Badge */}
-                <div 
-                  style={{ 
-                    position: 'absolute', 
-                    top: '50%', 
-                    left: '50%', 
-                    transform: 'translate(-50%, -50%)',
-                    width: '46px',
-                    height: '46px',
-                    borderRadius: '50%',
-                    background: 'rgba(0,0,0,0.7)',
-                    backdropFilter: 'blur(8px)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    border: '1px solid rgba(255,255,255,0.2)',
-                    pointerEvents: 'none'
-                  }}
-                >
-                  <Play size={18} fill="#ff7043" color="#ff7043" style={{ marginLeft: '3px' }} />
-                </div>
-
-                {/* Top Category Badge */}
+                {/* Top Format Badge */}
                 <div 
                   style={{ 
                     position: 'absolute', 
                     top: '12px', 
                     left: '12px', 
-                    background: 'rgba(8, 12, 20, 0.85)',
+                    background: item.type === 'video' ? 'rgba(220, 38, 38, 0.9)' : 'rgba(15, 23, 42, 0.85)',
                     backdropFilter: 'blur(8px)',
                     padding: '4px 10px',
                     borderRadius: '20px',
                     fontSize: '0.72rem',
                     fontWeight: 800,
-                    color: '#ffb300',
-                    border: '1px solid rgba(255, 179, 0, 0.3)',
+                    color: '#ffffff',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
                     zIndex: 3
                   }}
                 >
-                  {reel.badge}
+                  {item.type === 'video' ? <VideoIcon size={12} /> : <ImageIcon size={12} />}
+                  <span>{item.type === 'video' ? 'VIDEO AD' : 'STATIC POST'}</span>
+                </div>
+
+                {/* Top Right Metric Badge */}
+                <div 
+                  style={{ 
+                    position: 'absolute', 
+                    top: '12px', 
+                    right: '12px', 
+                    background: 'rgba(0, 0, 0, 0.8)',
+                    backdropFilter: 'blur(8px)',
+                    padding: '4px 10px',
+                    borderRadius: '20px',
+                    fontSize: '0.72rem',
+                    fontWeight: 800,
+                    color: '#fef08a',
+                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                    zIndex: 3
+                  }}
+                >
+                  {item.badge}
                 </div>
 
                 {/* Bottom Revenue & ROAS Bar */}
@@ -272,297 +733,94 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
                     bottom: '10px', 
                     left: '10px', 
                     right: '10px',
-                    background: 'rgba(5, 7, 12, 0.85)',
+                    background: 'rgba(0, 0, 0, 0.85)',
                     backdropFilter: 'blur(8px)',
                     padding: '6px 12px',
                     borderRadius: '10px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    border: '1px solid rgba(255,255,255,0.1)',
+                    border: '1px solid rgba(255,255,255,0.15)',
                     zIndex: 3
                   }}
                 >
-                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#fff' }}>{reel.revenue}</span>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#4ade80' }}>{reel.roas}</span>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#fff' }}>{item.revenue}</span>
+                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#4ade80' }}>{item.roas}</span>
                 </div>
               </div>
 
               {/* Card Details */}
               <div style={{ padding: '18px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flexGrow: 1 }}>
                 <div>
-                  <div style={{ fontSize: '0.75rem', color: '#ff7043', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
-                    {reel.category} • {reel.badge}
+                  <div style={{ fontSize: '0.75rem', color: '#dc2626', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
+                    {item.category}
                   </div>
-                  <h3 style={{ fontSize: '0.95rem', color: '#fff', lineHeight: 1.45, fontWeight: 700, margin: '0 0 10px 0' }}>
-                    {reel.title}
+                  <h3 style={{ fontSize: '0.98rem', color: '#0f172a', lineHeight: 1.45, fontWeight: 800, margin: '0 0 10px 0' }}>
+                    {item.title}
                   </h3>
-                  <p style={{ fontSize: '0.82rem', color: '#94a3b8', lineHeight: 1.45, margin: '0 0 14px 0', maxHeight: '58px', overflow: 'hidden' }}>
-                    {reel.description}
+                  <p style={{ fontSize: '0.85rem', color: '#64748b', lineHeight: 1.5, margin: '0 0 12px 0', minHeight: '52px' }}>
+                    {item.description}
                   </p>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '12px' }}>
-                  <span style={{ fontSize: '0.78rem', color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                    <InstagramIcon size={14} color="#ff5722" />
-                    <span>Watch Reel</span>
-                  </span>
-                  <div style={{ color: '#ff7043', display: 'flex', alignItems: 'center' }}>
-                    <ExternalLink size={14} />
+                <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '12px' }}>
+                  <div style={{ fontSize: '0.75rem', color: '#059669', fontWeight: 700, marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <CheckCircle2 size={13} color="#059669" />
+                    <span>{item.strategy}</span>
                   </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 5 Proven Hook Formulas Masterclass */}
-      <section style={{ background: '#0a0e16', padding: '80px 0', borderTop: '1px solid rgba(255,255,255,0.06)', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 48px auto' }}>
-            <span className="badge badge-orange" style={{ marginBottom: '12px' }}>
-              DIRECT RESPONSE HOOK ARSENAL
-            </span>
-            <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
-              The 5 High-Converting Hook Frameworks
-            </h2>
-            <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
-              The first 3 seconds dictate 80% of your CAC. Here are the 5 exact psychological hooks we deploy to achieve 35%+ 3-second thumbstop rates.
-            </p>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
-            {[
-              {
-                number: '01',
-                name: 'The "Us vs. Them" Split Screen',
-                description: 'Juxtaposes ordinary generic competitors (slow, frustrating, high-priced) directly against your seamless, instantaneous solution.',
-                script: '"Stop buying $80 drug store creams that just sit on your skin. Watch what happens when you use active peptides instead..."',
-                bestFor: 'Physical Gadgets & Skincare'
-              },
-              {
-                number: '02',
-                name: 'The Negative Pattern Interrupt',
-                description: 'Attacks a widespread assumption or common mistake that the customer is currently making.',
-                script: '"If you’re still waking up with lower back tightness, your mattress isn’t the problem. It’s this single alignment angle..."',
-                bestFor: 'Health, Sleep & Ergonomics'
-              },
-              {
-                number: '03',
-                name: 'The Sensory ASMR & Macro Detail',
-                description: 'No voiceover initially—pure high-fidelity textures, satisfying clicks, satisfying unboxings, and tactile satisfaction.',
-                script: '[Crisp unboxing click sound] "I genuinely thought this was a gimmick until day 3..."',
-                bestFor: 'Aesthetics, Home & High-AOV DTC'
-              },
-              {
-                number: '04',
-                name: 'The Honest Skeptic / Unfiltered Review',
-                description: 'Disarms customer defensive guard by openly admitting initial skepticism before proving unmistakable value.',
-                script: '"I saw this all over TikTok for 6 months and thought it was complete hype. Here is my 100% honest 30-day breakdown..."',
-                bestFor: 'Apparel, Supplements & Tech'
-              },
-              {
-                number: '05',
-                name: 'The Drastic Problem Aggravation',
-                description: 'Directly spotlights the daily acute pain point the user tolerates, visualizing the frustration immediately.',
-                script: '"Raise your hand if you’ve thrown away 4 pairs of workout shoes this year because your arches collapse..."',
-                bestFor: 'Fitness, Footwear & Pain Relief'
-              }
-            ].map((hook, idx) => (
-              <div
-                key={idx}
-                style={{
-                  background: '#0f141f',
-                  border: '1.5px solid rgba(255,255,255,0.08)',
-                  borderRadius: '20px',
-                  padding: '28px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between'
-                }}
-              >
-                <div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                    <span style={{ fontSize: '1.4rem', fontWeight: 900, color: '#ff7043' }}>{hook.number}</span>
-                    <span className="badge badge-gold" style={{ fontSize: '0.72rem' }}>{hook.bestFor}</span>
-                  </div>
-                  <h3 style={{ fontSize: '1.2rem', color: '#fff', fontWeight: 800, marginBottom: '10px' }}>
-                    {hook.name}
-                  </h3>
-                  <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
-                    {hook.description}
-                  </p>
-                  <div style={{ background: 'rgba(255,255,255,0.04)', borderLeft: '3px solid #ffb300', padding: '10px 14px', borderRadius: '8px' }}>
-                    <div style={{ fontSize: '0.72rem', color: '#ffb300', fontWeight: 800, textTransform: 'uppercase', marginBottom: '4px' }}>Example Script:</div>
-                    <div style={{ fontSize: '0.84rem', color: '#cbd5e1', fontStyle: 'italic', lineHeight: 1.4 }}>{hook.script}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Production Studio Pipeline (4 Stages) */}
-      <section className="container" style={{ padding: '80px 20px' }}>
-        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 48px auto' }}>
-          <span className="badge badge-gold" style={{ marginBottom: '12px' }}>
-            CREATIVE SPRINT CADENCE
-          </span>
-          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#fff', fontWeight: 900, textTransform: 'uppercase' }}>
-            From Concept To Live Scaling In 10 Days
-          </h2>
-          <p style={{ color: '#94a3b8', fontSize: '1rem', lineHeight: 1.6 }}>
-            Our streamlined creator pipeline ensures you receive fresh, conversion-tested creative assets every single week without delays.
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '22px' }}>
-          {[
-            {
-              step: 'Step 01',
-              title: 'Customer Psychology & Scripting',
-              desc: 'We mine your reviews, Reddit forums, and competitor comment sections to write 15-30 battle-tested direct-response video scripts.'
-            },
-            {
-              step: 'Step 02',
-              title: 'Vetted Creator Sourcing',
-              desc: 'We match your brand with hand-picked UGC creators representing your core buyer demographic, handling all product shipping logistics.'
-            },
-            {
-              step: 'Step 03',
-              title: 'Kinetic Direct-Response Editing',
-              desc: 'Our in-house video editors build TikTok & Meta native edits with kinetic subtitles, visual zooms, Sound FX, and pattern interrupts.'
-            },
-            {
-              step: 'Step 04',
-              title: 'Advantage+ Launch & Iteration',
-              desc: 'We launch across broad Meta Advantage+ campaigns and immediately cut 6-12 rapid iterations of the highest ROAS winning hooks.'
-            }
-          ].map((st, idx) => (
-            <div
-              key={idx}
-              style={{
-                background: '#0f141f',
-                border: '1px solid rgba(255,255,255,0.08)',
-                borderRadius: '20px',
-                padding: '28px 22px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '12px'
-              }}
-            >
-              <span style={{ fontSize: '0.8rem', color: '#ff7043', fontWeight: 900, textTransform: 'uppercase' }}>{st.step}</span>
-              <h3 style={{ fontSize: '1.15rem', color: '#ffffff', fontWeight: 800, margin: 0 }}>{st.title}</h3>
-              <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: 1.55, margin: 0 }}>{st.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Creative Breakdown Showcase */}
-      <section className="container" style={{ paddingBottom: '100px' }}>
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-          <h2 style={{ fontSize: '2.2rem', color: '#fff', marginBottom: '10px' }}>
-            Deconstruct Winning Viral Angles
-          </h2>
-          <p style={{ color: '#94a3b8' }}>
-            Explore the exact hooks and psychological angles that drove millions in attributable revenue.
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '30px' }}>
-          {viralCreativesData.map((creative) => (
-            <div
-              key={creative.id}
-              style={{
-                background: '#0f131a',
-                border: '1px solid rgba(255, 87, 34, 0.25)',
-                borderRadius: '24px',
-                overflow: 'hidden',
-                boxShadow: '0 20px 40px rgba(0,0,0,0.5)',
-                display: 'flex',
-                flexDirection: 'column'
-              }}
-            >
-              {/* Thumbnail Frame */}
-              <div style={{ position: 'relative', height: '320px', overflow: 'hidden' }}>
-                <img src={creative.image} alt={creative.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '16px',
-                    left: '16px',
-                    background: 'rgba(0,0,0,0.8)',
-                    backdropFilter: 'blur(8px)',
-                    padding: '4px 12px',
-                    borderRadius: '20px',
-                    color: '#ffb300',
-                    fontSize: '0.78rem',
-                    fontWeight: 800
-                  }}
-                >
-                  {creative.hookType}
-                </div>
-                <div
-                  style={{
-                    position: 'absolute',
-                    bottom: '16px',
-                    left: '16px',
-                    right: '16px',
-                    background: 'rgba(0,0,0,0.85)',
-                    backdropFilter: 'blur(10px)',
-                    padding: '10px 14px',
-                    borderRadius: '12px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    border: '1px solid rgba(255,255,255,0.15)'
-                  }}
-                >
-                  <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#fff' }}>{creative.views}</span>
-                  <span style={{ fontSize: '0.85rem', fontWeight: 800, color: '#4ade80' }}>{creative.roas} ROAS</span>
-                </div>
-              </div>
-
-              {/* Script Teardown */}
-              <div style={{ padding: '24px', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                <div>
-                  <div style={{ fontSize: '0.8rem', color: '#ff7043', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
-                    ANGLE: {creative.angle}
-                  </div>
-                  <h3 style={{ fontSize: '1.25rem', color: '#fff', marginBottom: '14px' }}>
-                    "{creative.title}"
-                  </h3>
-
-                  <div
-                    style={{
-                      background: '#151a24',
-                      padding: '14px',
-                      borderRadius: '12px',
-                      borderLeft: '3px solid #ff5722',
-                      marginBottom: '20px'
-                    }}
-                  >
-                    <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700, marginBottom: '4px' }}>
-                      OPENING HOOK SCRIPT:
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <span style={{ fontSize: '0.8rem', color: '#dc2626', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '5px' }}>
+                      <Eye size={14} color="#dc2626" />
+                      <span>{item.type === 'video' ? 'Watch Full Video Ad' : 'View Full Creative'}</span>
+                    </span>
+                    <div style={{ color: '#dc2626', display: 'flex', alignItems: 'center' }}>
+                      <ExternalLink size={14} />
                     </div>
-                    <p style={{ fontSize: '0.88rem', color: '#e2e8f0', fontStyle: 'italic', lineHeight: 1.4 }}>
-                      "{creative.scriptSnippet}"
-                    </p>
                   </div>
                 </div>
-
-                <button className="btn-secondary" onClick={onOpenBooking} style={{ width: '100%', padding: '10px', fontSize: '0.85rem' }}>
-                  Deploy This Creative Style
-                </button>
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Conversion Creative System Callout */}
+      <section style={{ background: '#f8fafc', padding: '70px 0', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+        <div className="container">
+          <div style={{ maxWidth: '820px', margin: '0 auto', textAlign: 'center' }}>
+            <span 
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: 'rgba(220, 38, 38, 0.08)',
+                color: '#dc2626',
+                border: '1px solid rgba(220, 38, 38, 0.25)',
+                borderRadius: '9999px',
+                padding: '6px 18px',
+                fontWeight: 800,
+                fontSize: '0.82rem',
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                marginBottom: '16px'
+              }}
+            >
+              <Sparkles size={14} />
+              RAPID CREATIVE ITERATION PIPELINE
+            </span>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.4vw, 2.8rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px' }}>
+              Want High-Converting Creatives Engineered For Your Brand?
+            </h2>
+            <p style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '28px' }}>
+              We test 15-30 authentic hook variations monthly, analyze retention drop-offs, and supply your ad accounts with winning video and static creative assets on demand.
+            </p>
+            <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '15px 36px' }}>
+              <span>BOOK A 1-ON-1 CREATIVE STRATEGY AUDIT</span>
+              <ArrowRight size={18} />
+            </button>
+          </div>
         </div>
       </section>
     </div>
   );
 }
-

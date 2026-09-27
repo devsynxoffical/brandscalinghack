@@ -4,16 +4,22 @@ import LiveResultsSection from '../components/LiveResultsSection';
 import RepeatableGrowthSection from '../components/RepeatableGrowthSection';
 import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
 import ScalingSystemSection from '../components/ScalingSystemSection';
+import ExperienceStatsSection from '../components/ExperienceStatsSection';
 import VideoTestimonialsSection from '../components/VideoTestimonialsSection';
 import ClientCoachesCarouselSection from '../components/ClientCoachesCarouselSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
-import ImpactScaleBannerSection from '../components/ImpactScaleBannerSection';
+
+import ExperienceCtaSection from '../components/ExperienceCtaSection';
 
 export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpenInstagramModal }) {
   return (
     <div className="page-wrapper">
-      {/* 01 — HERO (Screenshot 1 Style) */}
-      <HeroSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
+      {/* 01 — HERO (High-Impact Header & Interactive Video Showcase) */}
+      <HeroSection
+        onOpenBooking={onOpenBooking}
+        onNavigate={onNavigate}
+        onOpenVideo={onOpenVideo}
+      />
 
       {/* 02 — RESULTS & PROOF (Screenshot 3 Style + Instagram Live Proof) */}
       <LiveResultsSection
@@ -26,6 +32,7 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
       <RepeatableGrowthSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
+        onOpenInstagramModal={onOpenInstagramModal}
       />
 
       {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}
@@ -38,6 +45,9 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
       {/* 06 — THE SCALING SYSTEM (03 What We Build Engine) */}
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
 
+      {/* 08 — EXPERIENCE ($50M+ IN AD SPEND & 4 RED CREDENTIAL CARDS) */}
+      <ExperienceStatsSection />
+
       {/* LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
       <LiveSessionsSection onOpenVideo={onOpenVideo} />
 
@@ -47,17 +57,14 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* EXPERIENCE + FINAL CTA AUTHORITY BANNER */}
-      <ImpactScaleBannerSection
-        onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
-      />
-
-      {/* CLIENT FOUNDERS & COACHES (Intro.co 3D Curved Arc Carousel - Above Footer) */}
+      {/* CLIENT FOUNDERS & COACHES (Intro.co 3D Curved Arc Carousel) */}
       <ClientCoachesCarouselSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
       />
+
+      {/* 08 — EXPERIENCE + FINAL CTA (Light Theme with 3D Flip Cards & Final CTA) */}
+      <ExperienceCtaSection onOpenBooking={onOpenBooking} />
     </div>
   );
 }

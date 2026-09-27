@@ -1,91 +1,65 @@
 import React from 'react';
-import { ArrowRight, Search } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export const coachesList = [
   {
-    id: 't-gaurav',
-    name: 'Gaurav Kapoor',
-    role: 'Founder & Head of Growth',
-    brand: 'Brand Scaling Hacks',
-    scale: '$50M+ Ad Spend Managed',
-    bg: '#d97706', // Golden Amber
-    image: '/team/gaurav.jpeg',
-    isCutout: true,
-    isCenter: true
+    id: 't-1',
+    name: 'Coach 1',
+    bg: '#d95a1e' // Vibrant Warm Terracotta Orange (Card 1)
   },
   {
-    id: 't-rahul',
-    name: 'Rahul',
-    role: 'Head of Client Success & Scaling',
-    brand: 'Brand Scaling Hacks',
-    scale: '$12M+ Portfolio Scaled',
-    bg: '#f59e0b', // Amber
-    image: '/team/rahul.jpeg',
-    isCutout: true
+    id: 't-2',
+    name: 'Coach 2',
+    bg: '#7d6148' // Warm Camel Taupe Tan (Card 2)
   },
   {
-    id: 't-taqi',
-    name: 'Taqi',
-    role: 'Direct-Response Creative & Motion Lead',
-    brand: 'Brand Scaling Hacks',
-    scale: '$1.09M Scaled',
-    bg: '#0f766e', // Emerald Teal
-    image: '/team/taqi.webp',
-    isCutout: true
+    id: 't-3',
+    name: 'Coach 3',
+    bg: '#38485e' // Slate Indigo Blue (Card 3)
   },
   {
-    id: 't-ali',
-    name: 'Ali',
-    role: 'Media Buying & Acquisition Lead',
-    brand: 'Brand Scaling Hacks',
-    scale: '$1.4M / mo',
-    bg: '#ea580c', // Tangerine Orange
-    image: '/team/ali.webp',
-    isCutout: true
+    id: 't-4',
+    name: 'Coach 4',
+    bg: '#3b4348' // Dark Slate Charcoal (Card 4)
   },
   {
-    id: 't-ethan',
-    name: 'Ethan Carter',
-    role: 'Conversion Rate Architect',
-    brand: 'Brand Scaling Hacks',
-    scale: '$688k Profit',
-    bg: '#1d4ed8', // Deep Royal Blue
-    image: '/team/ethan-carter.webp',
-    isCutout: true
+    id: 't-5',
+    name: 'Coach 5',
+    bg: '#df981c' // Golden Mustard Ochre (Card 5)
   },
   {
-    id: 't-frank',
-    name: 'Frank Miller',
-    role: 'Shopify Speed & Funnel Engineer',
-    brand: 'Brand Scaling Hacks',
-    scale: '$179k / mo',
-    bg: '#831843', // Deep Crimson / Burgundy
-    image: '/team/frank-miller.webp',
-    isCutout: true
+    id: 't-6',
+    name: 'Coach 6',
+    bg: '#521832' // Deep Wine Burgundy (Card 6)
+  },
+  {
+    id: 't-7',
+    name: 'Coach 7',
+    bg: '#9c3e2e' // Terracotta Rust Red (Card 7)
+  },
+  {
+    id: 't-8',
+    name: 'Coach 8',
+    bg: '#4f182c' // Dark Plum Burgundy (Card 8)
   }
 ];
 
-export default function ClientCoachesCarouselSection({ onOpenBooking, onNavigate }) {
+export default function ClientCoachesCarouselSection({ onOpenBooking }) {
   return (
     <section className="intro-coaches-section" id="coaches-mentors">
-      {/* Subtle Warm Ambient Top Glow matching Intro.co */}
-      <div className="intro-ambient-top-glow" />
+      {/* Subtle Warm Ambient Top Glows */}
+      <div className="intro-ambient-left-glow" />
+      <div className="intro-ambient-right-glow" />
 
-      <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 10 }}>
-        {/* Intro.co Search Pill */}
-        <div className="intro-search-bar">
-          <span className="intro-search-placeholder">Search Expert</span>
-          <Search size={16} className="intro-search-icon" />
-        </div>
-
-        {/* Headline (Intro.co exact style) */}
+      <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 10, marginTop: '10px' }}>
+        {/* Headline */}
         <h2 className="intro-main-title">
           Book the top Business Coaches
         </h2>
 
-        {/* Subtitle (Intro.co exact lowercase style) */}
+        {/* Subtitle */}
         <p className="intro-sub-title">
-          get personalized advice to grow your business
+          get personalized advice to grow<br />your business
         </p>
 
         {/* CTA Button: FREE Trial Call with white circled right-arrow */}
@@ -103,16 +77,16 @@ export default function ClientCoachesCarouselSection({ onOpenBooking, onNavigate
       <div className="intro-arc-viewport">
         <div className="intro-arc-track">
           {coachesList.map((coach, idx) => {
-            // Precise 3D arc transform angles matching Intro.co
-            // Cards on the left rotate Y positive (facing inward right)
-            // Cards on the right rotate Y negative (facing inward left)
+            // Exact 8-card 3D arc transform angles matching the reference
             const transforms = [
-              { rotateY: 18, rotateZ: -1.6, translateY: 6, scale: 0.96, zIndex: 1 },
-              { rotateY: 10, rotateZ: -0.9, translateY: -2, scale: 0.99, zIndex: 2 },
-              { rotateY: 3, rotateZ: -0.2, translateY: -8, scale: 1.02, zIndex: 3 },
-              { rotateY: -3, rotateZ: 0.2, translateY: -8, scale: 1.02, zIndex: 3 },
-              { rotateY: -10, rotateZ: 0.9, translateY: -2, scale: 0.99, zIndex: 2 },
-              { rotateY: -18, rotateZ: 1.6, translateY: 6, scale: 0.96, zIndex: 1 }
+              { rotateY: 30, rotateZ: -2.8, translateY: 18, scale: 0.95, zIndex: 1 },
+              { rotateY: 20, rotateZ: -1.8, translateY: 8, scale: 0.98, zIndex: 2 },
+              { rotateY: 10, rotateZ: -0.8, translateY: 2, scale: 1.0, zIndex: 3 },
+              { rotateY: 3, rotateZ: -0.2, translateY: -2, scale: 1.02, zIndex: 4 },
+              { rotateY: -3, rotateZ: 0.2, translateY: -2, scale: 1.02, zIndex: 4 },
+              { rotateY: -10, rotateZ: 0.8, translateY: 2, scale: 1.0, zIndex: 3 },
+              { rotateY: -20, rotateZ: 1.8, translateY: 8, scale: 0.98, zIndex: 2 },
+              { rotateY: -30, rotateZ: 2.8, translateY: 18, scale: 0.95, zIndex: 1 }
             ];
 
             const t = transforms[idx] || { rotateY: 0, rotateZ: 0, translateY: 0, scale: 1, zIndex: 1 };
@@ -120,7 +94,7 @@ export default function ClientCoachesCarouselSection({ onOpenBooking, onNavigate
             return (
               <div
                 key={coach.id}
-                className={`intro-coach-card ${coach.isCenter ? 'intro-center-card' : ''}`}
+                className="intro-coach-card"
                 style={{
                   backgroundColor: coach.bg,
                   '--card-bg': coach.bg,
@@ -132,21 +106,15 @@ export default function ClientCoachesCarouselSection({ onOpenBooking, onNavigate
                 }}
                 onClick={onOpenBooking}
               >
-                {/* Subject Image Wrapper */}
-                <div className={`coach-img-box ${coach.isCutout ? 'coach-img-cutout' : ''}`}>
-                  <img
-                    src={coach.image}
-                    alt={coach.name}
-                    className={`coach-photo ${coach.isCutout ? 'coach-cutout-photo' : ''}`}
-                    loading="lazy"
-                  />
-                </div>
-
-                {/* Subtle Hover Reveal Tooltip (Minimalist & Clean) */}
-                <div className="coach-hover-info">
-                  <div className="coach-hover-name">{coach.name}</div>
-                  <div className="coach-hover-role">{coach.role}</div>
-                </div>
+                {/* Colorful Placeholder Card Surface */}
+                <div
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    background: `linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(0,0,0,0.2) 100%)`,
+                    borderRadius: '22px'
+                  }}
+                />
               </div>
             );
           })}

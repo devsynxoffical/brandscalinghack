@@ -1,22 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { liveResultsProof } from '../data/mockData';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { allCaseStudies } from '../data/allCaseStudies';
+import { ArrowRight, ExternalLink, Search, Play, ShieldCheck } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
-function CaseStudyCard({ study, onOpenModal }) {
+const CATEGORIES = ['All', 'Instagram Reels', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale', 'High AOV DTC'];
+
+function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(() => {});
     }
-  }, [study.video]);
+  }, [study.videoUrl]);
 
   return (
     <div
       className="showcase-study-card"
-      onClick={() => onOpenModal(study)}
-      style={{ cursor: 'pointer' }}
+      onClick={() => onNavigate ? onNavigate(`case-${study.id}`) : onOpenModal(study)}
+      style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
     >
       {/* Image / Video Container with Brand Logo Badge */}
       <div className="showcase-img-wrap">
@@ -24,10 +26,10 @@ function CaseStudyCard({ study, onOpenModal }) {
         <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
 
         {/* Video Player (Always Autoplaying in continuous loop) */}
-        {study.video ? (
+        {study.videoUrl && study.videoType !== 'image' ? (
           <video
             ref={videoRef}
-            src={study.video}
+            src={study.videoUrl}
             poster={study.image}
             autoPlay
             muted
@@ -49,29 +51,71 @@ function CaseStudyCard({ study, onOpenModal }) {
 
         {/* Top Badge */}
         <div className="showcase-brand-badge">
-          <span>{study.badge}</span>
+          <span>{study.badge || 'VERIFIED CASE STUDY'}</span>
         </div>
 
         {/* Bottom ROAS Tag */}
         <div className="showcase-roas-tag">
-          <span>{study.roas}</span>
+          <span>{study.roas || '4.2x ROAS'}</span>
         </div>
       </div>
 
       {/* Bottom Card Content */}
-      <div className="showcase-card-body">
-        <div className="showcase-card-category">
-          {study.category} • {study.badge}
-        </div>
-        <div className="showcase-card-metric">{study.title}</div>
-        <p className="showcase-card-desc">{study.description}</p>
-        
-        <div className="showcase-card-link">
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            <InstagramIcon size={14} color="#ff7043" />
-            <span>PLAY REEL & BREAKDOWN</span>
+      <div className="showcase-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+        <div>
+          <div className="showcase-card-category">
+            {study.category || 'Meta Scaling'} • {study.revenue || '$50K+ Scaled'}
           </div>
-          <ExternalLink size={14} color="#ff7043" />
+          <div className="showcase-card-metric">{study.title}</div>
+          <p className="showcase-card-desc" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden', minHeight: '60px' }}>
+            {study.summary || study.fullCaption}
+          </p>
+        </div>
+        
+        {/* Card Action Links */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', paddingTop: '12px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              if (onNavigate) onNavigate(`case-${study.id}`);
+            }}
+            style={{
+              background: 'rgba(255, 87, 34, 0.12)',
+              border: '1px solid rgba(255, 87, 34, 0.35)',
+              color: '#ff7043',
+              borderRadius: '999px',
+              padding: '6px 14px',
+              fontSize: '0.78rem',
+              fontWeight: 800,
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
+              cursor: 'pointer',
+              transition: 'all 0.2s ease'
+            }}
+          >
+            <span>Full Case Page</span>
+            <ArrowRight size={12} />
+          </button>
+
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              onOpenModal(study);
+            }}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '5px',
+              fontSize: '0.78rem',
+              fontWeight: 700,
+              color: '#cbd5e1',
+              cursor: 'pointer'
+            }}
+          >
+            <Play size={12} color="#ffb300" />
+            <span>Play Video</span>
+          </div>
         </div>
       </div>
     </div>
@@ -80,13 +124,19 @@ function CaseStudyCard({ study, onOpenModal }) {
 
 export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [activeTab, setActiveTab] = useState('All');
+  const [searchTerm, setSearchTerm] = useState('');
   const [visibleCount, setVisibleCount] = useState(12);
 
-  const categories = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale'];
-
-  const filteredStudies = liveResultsProof.filter((item) => {
-    if (activeTab === 'All') return true;
-    return item.category === activeTab;
+  const filteredStudies = allCaseStudies.filter((item) => {
+    const matchesTab = activeTab === 'All' || 
+      (activeTab === 'Instagram Reels' && (item.videoUrl || item.badge?.includes('INSTAGRAM') || item.instagramUrl)) ||
+      item.category === activeTab;
+    const matchesSearch = !searchTerm || 
+      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (item.summary && item.summary.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (item.fullCaption && item.fullCaption.toLowerCase().includes(searchTerm.toLowerCase())) ||
+      (item.revenue && item.revenue.toLowerCase().includes(searchTerm.toLowerCase()));
+    return matchesTab && matchesSearch;
   });
 
   const handleTabChange = (tab) => {
@@ -100,35 +150,91 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
     <section className="client-case-studies-section" id="case-studies">
       <div className="container" style={{ textAlign: 'center' }}>
         {/* Tag Pill */}
-        <div style={{ marginBottom: '16px' }}>
-          <span className="case-studies-kicker">
-            <InstagramIcon size={14} color="#ff7043" />
+        <div style={{ marginBottom: '18px', display: 'flex', justifyContent: 'center' }}>
+          <span className="hero-home-pill-badge" style={{ fontSize: '0.88rem', padding: '6px 18px', transform: 'none', margin: 0 }}>
+            <InstagramIcon size={14} color="#ffffff" style={{ marginRight: '6px' }} />
             <span>WE DON'T JUST TALK ABOUT SCALING.</span>
           </span>
         </div>
 
-        {/* Headline */}
-        <h2 className="case-studies-serif-heading" style={{ textTransform: 'uppercase', letterSpacing: '-0.02em', marginBottom: '14px' }}>
-          WE SHOW YOU <span className="text-gradient-orange">THE NUMBERS.</span>
+        {/* Headline with Creative Tilted Badge */}
+        <h2 className="case-studies-serif-heading" style={{ textTransform: 'uppercase', letterSpacing: '-0.025em', marginBottom: '18px' }}>
+          WE SHOW YOU{' '}
+          <span className="hero-home-pill-badge vt-title-creative-badge">
+            THE NUMBERS.
+          </span>
         </h2>
 
         {/* Subtitle */}
-        <p className="case-studies-sub-copy" style={{ maxWidth: '820px', margin: '0 auto 16px auto', fontSize: '1.05rem', lineHeight: 1.6 }}>
-          From customer acquisition to revenue growth, we've helped eCommerce brands turn paid traffic into serious businesses.
+        <p className="case-studies-sub-copy" style={{ maxWidth: '820px', margin: '0 auto 16px auto', fontSize: '1.08rem', lineHeight: 1.62, color: 'rgba(255, 255, 255, 0.92)' }}>
+          From customer acquisition to revenue growth, we've helped <strong style={{ color: '#ffffff', fontWeight: 800 }}>eCommerce brands</strong> turn paid traffic into <strong style={{ color: '#ffffff', fontWeight: 800 }}>serious businesses</strong>.
         </p>
 
         {/* Highlight Tagline */}
-        <div style={{ fontSize: '0.95rem', fontWeight: 900, letterSpacing: '0.1em', color: '#ff5722', marginBottom: '36px', textTransform: 'uppercase' }}>
-          REAL BRANDS. REAL AD SPEND. REAL RESULTS.
+        <div style={{ fontSize: '0.98rem', fontWeight: 900, letterSpacing: '0.12em', color: '#ffb300', marginBottom: '32px', textTransform: 'uppercase', textShadow: '0 0 20px rgba(255, 179, 0, 0.4)' }}>
+          REAL BRANDS. REAL AD SPEND. REAL RESULTS. ({allCaseStudies.length} Case Studies & Proofs)
         </div>
 
-        {/* Instagram Reels Grid with Hover-to-play Video Cards */}
+        {/* Search & Category Filter Controls */}
+        <div style={{ maxWidth: '780px', margin: '0 auto 32px auto', display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
+          {/* Search Bar */}
+          <div style={{ position: 'relative', width: '100%', maxWidth: '520px' }}>
+            <Search size={18} color="#94a3b8" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
+            <input
+              type="text"
+              placeholder="Search case studies, revenue numbers, niches..."
+              value={searchTerm}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+                setVisibleCount(12);
+              }}
+              style={{
+                width: '100%',
+                padding: '12px 18px 12px 46px',
+                borderRadius: '999px',
+                background: 'rgba(255, 255, 255, 0.06)',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
+                color: '#ffffff',
+                fontSize: '0.92rem',
+                outline: 'none',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.4)'
+              }}
+            />
+          </div>
+
+          {/* Category Chips */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            {CATEGORIES.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => handleTabChange(tab)}
+                style={{
+                  padding: '7px 16px',
+                  borderRadius: '999px',
+                  fontSize: '0.82rem',
+                  fontWeight: 700,
+                  border: activeTab === tab ? '1.5px solid #ff5722' : '1px solid rgba(255, 255, 255, 0.12)',
+                  background: activeTab === tab ? 'linear-gradient(135deg, #ff5722, #ff1e27)' : 'rgba(255, 255, 255, 0.04)',
+                  color: '#ffffff',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                  boxShadow: activeTab === tab ? '0 4px 14px rgba(255, 61, 0, 0.35)' : 'none'
+                }}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Case Studies Grid */}
         <div className="showcase-studies-grid">
           {displayedStudies.map((study) => (
             <CaseStudyCard
               key={study.id}
               study={study}
-              onOpenModal={(item) => onOpenInstagramModal ? onOpenInstagramModal(item) : window.open(item.url, '_blank')}
+              onNavigate={onNavigate}
+              onOpenModal={(item) => onOpenInstagramModal ? onOpenInstagramModal(item) : (onNavigate ? onNavigate(`case-${item.id}`) : window.open(item.instagramUrl, '_blank'))}
             />
           ))}
         </div>

@@ -8,20 +8,22 @@ export default function LiveSessionsSection({ onOpenVideo }) {
 
   const handleSelectSession = (session) => {
     setSelectedSession(session);
-    setIsPlayingInline(false);
+    setIsPlayingInline(true);
   };
 
   const isMp4 = selectedSession.videoType === 'mp4' || (selectedSession.videoUrl && selectedSession.videoUrl.endsWith('.mp4'));
 
   const getEmbedUrl = () => {
     if (selectedSession.embedUrl) {
-      return selectedSession.embedUrl.includes('?') ? `${selectedSession.embedUrl}&autoplay=1` : `${selectedSession.embedUrl}?autoplay=1&rel=0`;
+      return selectedSession.embedUrl.includes('?')
+        ? `${selectedSession.embedUrl}&autoplay=1&rel=0`
+        : `${selectedSession.embedUrl}?autoplay=1&rel=0`;
     }
     if (selectedSession.videoUrl && selectedSession.videoUrl.includes('youtube.com/watch?v=')) {
       const vidId = selectedSession.videoUrl.split('v=')[1]?.split('&')[0];
       return `https://www.youtube-nocookie.com/embed/${vidId}?autoplay=1&rel=0`;
     }
-    return 'https://www.youtube-nocookie.com/embed/X-L8GQjHOYA?autoplay=1&rel=0';
+    return 'https://www.youtube-nocookie.com/embed/6beGKoXuDKg?autoplay=1&rel=0';
   };
 
   return (
@@ -29,10 +31,10 @@ export default function LiveSessionsSection({ onOpenVideo }) {
       <div className="container">
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px', flexWrap: 'wrap', gap: '12px' }}>
-          <h2 style={{ fontSize: '1.8rem', fontWeight: 800, color: '#ffffff' }}>
-            Videos
+          <h2 style={{ fontSize: '1.85rem', fontWeight: 850, color: '#0f172a' }}>
+            Live Sessions
           </h2>
-          <span style={{ fontSize: '0.82rem', color: '#ffb300', fontWeight: 800, letterSpacing: '0.08em' }}>
+          <span style={{ fontSize: '0.82rem', color: '#ea580c', fontWeight: 800, letterSpacing: '0.08em' }}>
             LIVE MASTERCLASSES & PODCAST BREAKDOWNS
           </span>
         </div>
@@ -66,21 +68,21 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                 <div className="video-item-meta">
                   <div className="video-item-title">{session.title}</div>
                   <div className="video-item-author">
-                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', background: '#0284c7', color: '#fff', fontSize: '0.65rem' }}>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', background: '#ff3d00', color: '#fff', fontSize: '0.65rem' }}>
                       ▶
                     </span>
-                    <span>{session.host.split('•')[0]} • {session.duration}</span>
+                    <span>{(session.host || session.instructor || 'Gaurav Kapoor').split('•')[0].trim()} • {session.duration || '15 min'}</span>
                   </div>
                 </div>
               </div>
             ))}
 
-            {/* Bottom Green Pill Button */}
+            {/* Bottom Orange-Red Pill Button */}
             <button
               onClick={() => onOpenVideo(selectedSession)}
               style={{
                 width: '100%',
-                background: '#16a34a',
+                background: 'linear-gradient(135deg, #ff5722 0%, #ff1e27 100%)',
                 color: '#ffffff',
                 fontWeight: 800,
                 fontSize: '0.92rem',
@@ -92,7 +94,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                 gap: '8px',
                 marginTop: '10px',
                 transition: 'all 0.25s ease',
-                boxShadow: '0 4px 15px rgba(22, 163, 74, 0.4)',
+                boxShadow: '0 6px 20px rgba(255, 61, 0, 0.38)',
                 border: 'none',
                 cursor: 'pointer'
               }}
@@ -217,9 +219,13 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                     onError={(e) => { e.target.src = '/assets/gaurav_portrait.jpg'; }}
                   />
                 </div>
-                <span style={{ color: '#ffffff', fontWeight: 700, fontSize: '0.92rem' }}>{selectedSession.host}</span>
-                <span style={{ color: '#64748b' }}>•</span>
-                <span style={{ color: '#94a3b8', fontSize: '0.9rem' }}>{selectedSession.date}</span>
+                <span style={{ color: '#0f172a', fontWeight: 800, fontSize: '0.92rem' }}>
+                  {selectedSession?.host || selectedSession?.instructor || 'Gaurav Kapoor • Live Session'}
+                </span>
+                <span style={{ color: '#94a3b8' }}>•</span>
+                <span style={{ color: '#64748b', fontSize: '0.9rem', fontWeight: 600 }}>
+                  {selectedSession?.date || 'Live Session'}
+                </span>
               </div>
             </div>
           </div>

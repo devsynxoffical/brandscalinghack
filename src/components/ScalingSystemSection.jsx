@@ -16,12 +16,12 @@ export default function ScalingSystemSection({ onOpenBooking }) {
         </h2>
 
         {/* Sub-heading Kicker */}
-        <div style={{ fontSize: '1.15rem', fontWeight: 900, color: '#dc2626', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '12px' }}>
+        <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#dc2626', letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '8px' }}>
           NOT JUST ADS. NOT JUST A STORE.
         </div>
 
         {/* Descriptive Paragraph */}
-        <p style={{ maxWidth: '820px', margin: '0 auto 50px auto', fontSize: '1.05rem', color: '#475569', lineHeight: 1.6 }}>
+        <p style={{ maxWidth: '780px', margin: '0 auto 30px auto', fontSize: '0.98rem', color: '#475569', lineHeight: 1.55 }}>
           We build the infrastructure around your brand that turns attention into customers and customers into revenue.
         </p>
 
@@ -158,16 +158,16 @@ export default function ScalingSystemSection({ onOpenBooking }) {
         {/* Bottom Banner Note */}
         <div
           style={{
-            maxWidth: '850px',
-            margin: '48px auto 0 auto',
-            padding: '22px 30px',
+            maxWidth: '750px',
+            margin: '28px auto 0 auto',
+            padding: '14px 24px',
             background: '#f8fafc',
-            borderRadius: '16px',
+            borderRadius: '14px',
             border: '1px solid #e2e8f0',
             textAlign: 'center'
           }}
         >
-          <p className="system-bottom-quote" style={{ margin: 0, fontSize: '1.2rem', fontWeight: 900, color: '#0f172a', letterSpacing: '0.04em' }}>
+          <p className="system-bottom-quote" style={{ margin: 0, fontSize: '1.05rem', fontWeight: 900, color: '#0f172a', letterSpacing: '0.04em' }}>
             EVERY PIECE WORKS TOGETHER.
           </p>
         </div>
