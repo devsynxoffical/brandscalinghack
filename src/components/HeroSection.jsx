@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, ShieldCheck } from 'lucide-react';
+import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, Flame, Award } from 'lucide-react';
 
-// Client Logos
+// Client Logos for Marquee
 const row1Logos = [
   '/logos/logo-01.png',
   '/logos/logo-02.png',
@@ -28,22 +28,13 @@ const row2Logos = [
   '/logos/logo-22.png',
 ];
 
-const stream1Items = [
-  '5.4X AVERAGE ROAS',
-  'META ADVANTAGE+ SCALING',
-  '45+ WEEKLY UGC HOOKS',
-  '$100K–$1M/MO ROADMAP',
-  'SCIENTIFIC CAC OPTIMIZATION',
-  'HIGH-AOV DTC BRANDS'
-];
-
-const stream2Items = [
-  '118+ VERIFIED CASE PROOFS',
-  'SHOPIFY CRO & SPEED ARCHITECTURE',
-  'RETENTION & ORDER BUMP FUNNELS',
-  'ZERO-TO-SCALE FRAMEWORK',
-  '$50M+ PAID AD SPEND',
-  'PREDICTABLE 8-FIGURE GROWTH'
+const bigMarqueeItems = [
+  { text: 'TURNING PAID TRAFFIC', highlight: false },
+  { text: 'INTO 8-FIGURE REVENUE', highlight: true },
+  { text: 'SCIENTIFIC ACQUISITION', highlight: false },
+  { text: 'HIGH-AOV DTC FUNNELS', highlight: true },
+  { text: 'VIRAL UGC CREATIVE LAB', highlight: false },
+  { text: '$50M+ AD SPEND DEPLOYED', highlight: true },
 ];
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {
@@ -58,10 +49,10 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
   return (
     <div className="bsh-hero-root">
       {/* ========================================================================= */}
-      {/* 1. HERO SECTION (High-Visibility Background Video & Bespoke Layout) */}
+      {/* 1. HERO SECTION (High-Visibility Background Video + Big Scrolling Line) */}
       {/* ========================================================================= */}
       <section id="hero" className="bsh-hero-stage">
-        {/* Crisp High-Visibility Fullscreen Video Background */}
+        {/* Crystal Clear High-Visibility Fullscreen Video Background */}
         <div className="bsh-hero-video-bg" aria-hidden="true">
           <video
             ref={videoRef}
@@ -73,36 +64,62 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             preload="auto"
             className="bsh-hero-bg-video-element"
           />
-          {/* Subtle Contrast Vignette */}
+          {/* Subtle Transparent Vignette for High Video Clarity */}
           <div className="bsh-hero-video-overlay" />
         </div>
 
         {/* Ambient Warm Studio Lighting */}
         <div className="bsh-hero-ambient-glow" aria-hidden="true" />
 
-        {/* Main Hero Header Content */}
+        {/* Hero Top Content Header */}
         <div className="bsh-hero-content-wrap">
-          {/* Top Pill Tag */}
+          {/* Top Live Status Pill */}
           <div className="bsh-hero-top-pill">
             <span className="bsh-live-dot" />
             <span className="bsh-pill-text">$50M+ AD SPEND DEPLOYED · 12+ YEARS SCALING 8-FIGURE BRANDS</span>
           </div>
 
-          {/* Main Staggered Cinematic Title */}
-          <h1 className="bsh-hero-main-title">
-            <span className="bsh-title-line-1">TURNING PAID TRAFFIC INTO</span>
-            <span className="bsh-title-line-2">
-              <span className="bsh-gradient-fire-text">8-FIGURE REVENUE</span>
-            </span>
-          </h1>
+          {/* Elegant Top Subhead */}
+          <div className="bsh-hero-header-eyebrow">
+            <span className="bsh-serif-italic">Scaling Brands</span>{' '}
+            <span className="bsh-bold-flame">To 8–Figures</span>
+          </div>
+        </div>
 
-          {/* Subtitle Value Proposition */}
+        {/* ========================================================================= */}
+        {/* BIG SCROLLING MARQUEE LINE (Massive, High-Impact Typography) */}
+        {/* ========================================================================= */}
+        <div className="bsh-big-marquee-wrapper">
+          <div className="bsh-big-marquee-track">
+            <div className="bsh-big-marquee-group">
+              {bigMarqueeItems.map((item, idx) => (
+                <span key={`bm-a-${idx}`} className="bsh-big-marquee-item">
+                  <span className={item.highlight ? 'bsh-big-text-gradient' : 'bsh-big-text-solid'}>
+                    {item.text}
+                  </span>
+                  <span className="bsh-big-star">✦</span>
+                </span>
+              ))}
+            </div>
+            <div className="bsh-big-marquee-group" aria-hidden="true">
+              {bigMarqueeItems.map((item, idx) => (
+                <span key={`bm-b-${idx}`} className="bsh-big-marquee-item">
+                  <span className={item.highlight ? 'bsh-big-text-gradient' : 'bsh-big-text-solid'}>
+                    {item.text}
+                  </span>
+                  <span className="bsh-big-star">✦</span>
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Subtitle & Action CTAs */}
+        <div className="bsh-hero-mid-controls">
           <p className="bsh-hero-sub-description">
-            We build the complete customer acquisition infrastructure, weekly UGC creative machine, 
-            and high-AOV conversion architecture behind fast-growing eCommerce brands.
+            SCIENTIFIC CUSTOMER ACQUISITION & ECOMMERCE GROWTH ENGINE · $50M+ DEPLOYED
           </p>
 
-          {/* Direct CTA Button Group */}
           <div className="bsh-hero-cta-group">
             <button className="btn-primary bsh-cta-primary-btn" onClick={onOpenBooking}>
               <span>SCALE YOUR BRAND</span>
@@ -113,59 +130,12 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
               onClick={() => onNavigate ? onNavigate('cases') : null}
             >
               <Play size={14} color="#ff5722" />
-              <span>118+ VERIFIED CASE STUDIES</span>
+              <span>118+ CASE STUDIES</span>
             </button>
-          </div>
-
-          {/* Dual Dynamic Ticker Streams */}
-          <div className="bsh-dual-ticker-container">
-            {/* Stream 1 (Left Scrolling) */}
-            <div className="bsh-ticker-stream-outer">
-              <div className="bsh-ticker-track-left">
-                <div className="bsh-ticker-group">
-                  {stream1Items.map((item, idx) => (
-                    <span key={`s1-a-${idx}`} className="bsh-ticker-chip">
-                      <span className="bsh-ticker-text">{item}</span>
-                      <span className="bsh-ticker-sparkle">✦</span>
-                    </span>
-                  ))}
-                </div>
-                <div className="bsh-ticker-group" aria-hidden="true">
-                  {stream1Items.map((item, idx) => (
-                    <span key={`s1-b-${idx}`} className="bsh-ticker-chip">
-                      <span className="bsh-ticker-text">{item}</span>
-                      <span className="bsh-ticker-sparkle">✦</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Stream 2 (Right Scrolling) */}
-            <div className="bsh-ticker-stream-outer" style={{ marginTop: '8px' }}>
-              <div className="bsh-ticker-track-right">
-                <div className="bsh-ticker-group">
-                  {stream2Items.map((item, idx) => (
-                    <span key={`s2-a-${idx}`} className="bsh-ticker-chip bsh-chip-alt">
-                      <span className="bsh-ticker-text">{item}</span>
-                      <span className="bsh-ticker-sparkle bsh-sparkle-gold">✦</span>
-                    </span>
-                  ))}
-                </div>
-                <div className="bsh-ticker-group" aria-hidden="true">
-                  {stream2Items.map((item, idx) => (
-                    <span key={`s2-b-${idx}`} className="bsh-ticker-chip bsh-chip-alt">
-                      <span className="bsh-ticker-text">{item}</span>
-                      <span className="bsh-ticker-sparkle bsh-sparkle-gold">✦</span>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-        {/* Bottom 3 Capability Architecture Cards */}
+        {/* Bottom 3 Capability Cards (Custom Styled with glowing accents) */}
         <div className="bsh-hero-capabilities-bar">
           <div className="container">
             <div className="bsh-capabilities-grid">
@@ -179,9 +149,9 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                     <TrendingUp size={22} color="#ff5722" />
                   </div>
                   <div className="bsh-cap-info">
-                    <span className="bsh-cap-num">01 · MEDIA BUYING</span>
-                    <h3 className="bsh-cap-title">Scientific Paid Media</h3>
-                    <p className="bsh-cap-sub">Meta Advantage+, Daily Budget Scale & Low CAC</p>
+                    <span className="bsh-cap-num">01</span>
+                    <h3 className="bsh-cap-title">Paid Media & Scaling</h3>
+                    <p className="bsh-cap-sub">Meta Advantage+, Scientific CAC & Scale</p>
                   </div>
                 </div>
                 <div className="bsh-cap-arrow-btn">
@@ -199,9 +169,9 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                     <Sparkles size={22} color="#ff7043" />
                   </div>
                   <div className="bsh-cap-info">
-                    <span className="bsh-cap-num">02 · CREATIVE LAB</span>
-                    <h3 className="bsh-cap-title">Direct-Response UGC Studio</h3>
-                    <p className="bsh-cap-sub">High-Converting Hooks, UGC & Pattern Interrupts</p>
+                    <span className="bsh-cap-num">02</span>
+                    <h3 className="bsh-cap-title">Viral Creative Studio</h3>
+                    <p className="bsh-cap-sub">High-Converting UGC, Hooks & Pattern Interrupts</p>
                   </div>
                 </div>
                 <div className="bsh-cap-arrow-btn">
@@ -219,9 +189,9 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                     <Zap size={22} color="#ffb300" />
                   </div>
                   <div className="bsh-cap-info">
-                    <span className="bsh-cap-num">03 · CRO & RETENTION</span>
-                    <h3 className="bsh-cap-title">High-AOV Store Architecture</h3>
-                    <p className="bsh-cap-sub">Sub-1s Shopify Funnels, Dynamic Bundles & CRO</p>
+                    <span className="bsh-cap-num">03</span>
+                    <h3 className="bsh-cap-title">Conversion & High-AOV Funnels</h3>
+                    <p className="bsh-cap-sub">Shopify Optimization, Multi-Tier Bundles & CRO</p>
                   </div>
                 </div>
                 <div className="bsh-cap-arrow-btn">
@@ -234,7 +204,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
       </section>
 
       {/* ========================================================================= */}
-      {/* 2. TRUSTED BY 100+ BRANDS (Seamless Infinite Scrolling Logo Rows) */}
+      {/* 2. TRUSTED BY 100+ BRANDS (Seamless Infinite Scrolling Logo Showcase) */}
       {/* ========================================================================= */}
       <section className="bsh-trusted-brands-section">
         <div className="container">
