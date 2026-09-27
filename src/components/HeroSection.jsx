@@ -41,9 +41,57 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {});
-    }
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Direct DOM property enforcement for 100% reliable autoplay across Chrome, Safari, Firefox
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+
+    const playVideo = () => {
+      const promise = video.play();
+      if (promise !== undefined) {
+        promise.catch(() => {
+          video.muted = true;
+          video.play().catch(() => {});
+        });
+      }
+    };
+
+    playVideo();
+
+    // Continuous smooth playback listeners
+    const handlePause = () => {
+      if (video && video.paused) {
+        playVideo();
+      }
+    };
+
+    const handleVisibility = () => {
+      if (!document.hidden && video && video.paused) {
+        playVideo();
+      }
+    };
+
+    const handleEnded = () => {
+      if (video) {
+        video.currentTime = 0;
+        playVideo();
+      }
+    };
+
+    video.addEventListener('pause', handlePause);
+    video.addEventListener('ended', handleEnded);
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('focus', playVideo);
+
+    return () => {
+      video.removeEventListener('pause', handlePause);
+      video.removeEventListener('ended', handleEnded);
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('focus', playVideo);
+    };
   }, []);
 
   return (
@@ -62,6 +110,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             muted
             playsInline
             preload="auto"
+            disablePictureInPicture
+            disableRemotePlayback
             className="bsh-hero-bg-video-element"
           />
           {/* Subtle Transparent Vignette for High Video Clarity */}
