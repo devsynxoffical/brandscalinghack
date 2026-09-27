@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 // Row 1 & Row 2 Logos
@@ -29,20 +29,20 @@ const row2Logos = [
 ];
 
 const marqueeWords = [
-  'UNFORGETTABLE',
-  'THE TOP 1%',
-  'ACQUISITION',
-  'UNFORGETTABLE',
-  'UNSTOPPABLE',
-  'HIGH-TICKET',
-  'ARCHITECTING',
-  'UNFORGETTABLE'
+  'PREDICTABLE SCALE',
+  '$50M+ AD SPEND',
+  'CREATIVE ENGINE',
+  'HIGH-AOV DTC',
+  'ADVANTAGE+ META',
+  'MILLION DOLLAR FUNNEL™',
+  '8-FIGURE PROOF',
+  '5.4X ROAS'
 ];
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {
-  const videoRef = React.useRef(null);
+  const videoRef = useRef(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(() => {});
     }
@@ -51,7 +51,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
   return (
     <div className="mdf-hero-root">
       {/* ========================================================================= */}
-      {/* 1. HERO SECTION (Video Background & Giant Marquee Typography) */}
+      {/* 1. HERO SECTION (Video Background & Brand Scaling Hacks Typography) */}
       {/* ========================================================================= */}
       <section id="hero" className="mdf-hero-stage">
         {/* Background Fullscreen Video with Dark Overlay */}
@@ -63,20 +63,21 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             loop
             muted
             playsInline
+            preload="auto"
             className="mdf-hero-bg-video-element"
           />
           <div className="mdf-hero-video-overlay" />
         </div>
 
-        {/* Ambient Radial Glow Backdrop */}
+        {/* Ambient Radial Fire Glow Backdrop */}
         <div className="mdf-hero-radial-glow" aria-hidden="true" />
 
         {/* Hero Content Container */}
         <div className="mdf-hero-content-wrap">
-          {/* Top Title: Making Brands Unforgettable */}
+          {/* Top Title: Scaling Brands To 8-Figures */}
           <div className="mdf-hero-headline-box">
-            <span className="mdf-hero-serif-text">Making Brands</span>
-            <span className="mdf-hero-sans-text">Unforgettable</span>
+            <span className="mdf-hero-serif-text">Scaling Brands</span>
+            <span className="mdf-hero-sans-text">To 8-Figures</span>
           </div>
 
           {/* Giant Scrolling Typography Marquee */}
@@ -106,7 +107,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
           {/* Tagline Below Marquee */}
           <div className="mdf-hero-tagline-wrap">
             <p className="mdf-hero-tagline">
-              AWARD-WINNING CLIENT ACQUISITION ARCHITECTURE · EST. 2024
+              SCIENTIFIC CUSTOMER ACQUISITION & ECOMMERCE GROWTH ENGINE · $50M+ DEPLOYED
             </p>
           </div>
         </div>
@@ -115,10 +116,10 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="mdf-hero-capabilities-bar">
           <div className="container">
             <div className="mdf-capabilities-grid">
-              {/* 01 The Funnel Engine */}
+              {/* 01 Creative Engine */}
               <div
                 className="mdf-cap-card"
-                onClick={() => onNavigate ? onNavigate('cases') : null}
+                onClick={() => onNavigate ? onNavigate('viral-creatives') : null}
               >
                 <div className="mdf-cap-left">
                   <div className="mdf-cap-icon-box">
@@ -126,8 +127,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                   </div>
                   <div className="mdf-cap-info">
                     <span className="mdf-cap-num">01</span>
-                    <h3 className="mdf-cap-title">The Funnel Engine</h3>
-                    <p className="mdf-cap-sub">UX/UI, High-Ticket VSL, Architecture</p>
+                    <h3 className="mdf-cap-title">Creative Engine</h3>
+                    <p className="mdf-cap-sub">High-Converting UGC, Hooks & Direct-Response Ads</p>
                   </div>
                 </div>
                 <div className="mdf-cap-arrow-btn">
@@ -135,7 +136,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                 </div>
               </div>
 
-              {/* 02 Media & Traffic */}
+              {/* 02 Meta & Media Buying */}
               <div
                 className="mdf-cap-card"
                 onClick={() => onNavigate ? onNavigate('growth') : null}
@@ -146,8 +147,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                   </div>
                   <div className="mdf-cap-info">
                     <span className="mdf-cap-num">02</span>
-                    <h3 className="mdf-cap-title">Media & Traffic</h3>
-                    <p className="mdf-cap-sub">Meta, Google & High-Ticket Ads</p>
+                    <h3 className="mdf-cap-title">Meta & Media Buying</h3>
+                    <p className="mdf-cap-sub">Advantage+ Scaling, Scientific CAC & Daily Budgets</p>
                   </div>
                 </div>
                 <div className="mdf-cap-arrow-btn">
@@ -155,10 +156,10 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                 </div>
               </div>
 
-              {/* 03 AI Qualification */}
+              {/* 03 MDF™ & CRO Funnels */}
               <div
                 className="mdf-cap-card"
-                onClick={() => onOpenBooking ? onOpenBooking() : null}
+                onClick={() => onNavigate ? onNavigate('cases') : (onOpenBooking ? onOpenBooking() : null)}
               >
                 <div className="mdf-cap-left">
                   <div className="mdf-cap-icon-box">
@@ -166,8 +167,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                   </div>
                   <div className="mdf-cap-info">
                     <span className="mdf-cap-num">03</span>
-                    <h3 className="mdf-cap-title">AI Qualification</h3>
-                    <p className="mdf-cap-sub">60s Response & CRM Pipeline</p>
+                    <h3 className="mdf-cap-title">MDF™ & CRO Architecture</h3>
+                    <p className="mdf-cap-sub">High-AOV Funnels, Shopify Stores & Retention</p>
                   </div>
                 </div>
                 <div className="mdf-cap-arrow-btn">
@@ -186,7 +187,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="container">
           <div className="mdf-trusted-heading-row">
             <span className="mdf-trusted-line" />
-            <h2 className="mdf-trusted-title">Trusted by 100+ global brands</h2>
+            <h2 className="mdf-trusted-title">Trusted by 100+ scaling eCommerce brands</h2>
             <span className="mdf-trusted-line" />
           </div>
 
