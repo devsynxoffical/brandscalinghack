@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import { ArrowUpRight, TrendingUp, Sparkles, Zap } from 'lucide-react';
+import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, ShieldCheck } from 'lucide-react';
 
-// Row 1 & Row 2 Logos
+// Client Logos
 const row1Logos = [
   '/logos/logo-01.png',
   '/logos/logo-02.png',
@@ -28,15 +28,22 @@ const row2Logos = [
   '/logos/logo-22.png',
 ];
 
-const marqueeWords = [
-  'PREDICTABLE SCALE',
-  '$50M+ AD SPEND',
-  'CREATIVE ENGINE',
-  'HIGH-AOV DTC',
-  'ADVANTAGE+ META',
-  'BRAND SCALING HACKS',
-  '8-FIGURE PROOF',
-  '5.4X ROAS'
+const stream1Items = [
+  '5.4X AVERAGE ROAS',
+  'META ADVANTAGE+ SCALING',
+  '45+ WEEKLY UGC HOOKS',
+  '$100K–$1M/MO ROADMAP',
+  'SCIENTIFIC CAC OPTIMIZATION',
+  'HIGH-AOV DTC BRANDS'
+];
+
+const stream2Items = [
+  '118+ VERIFIED CASE PROOFS',
+  'SHOPIFY CRO & SPEED ARCHITECTURE',
+  'RETENTION & ORDER BUMP FUNNELS',
+  'ZERO-TO-SCALE FRAMEWORK',
+  '$50M+ PAID AD SPEND',
+  'PREDICTABLE 8-FIGURE GROWTH'
 ];
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {
@@ -49,13 +56,13 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
   }, []);
 
   return (
-    <div className="mdf-hero-root">
+    <div className="bsh-hero-root">
       {/* ========================================================================= */}
-      {/* 1. HERO SECTION (Video Background & Brand Scaling Hacks Typography) */}
+      {/* 1. HERO SECTION (High-Visibility Background Video & Bespoke Layout) */}
       {/* ========================================================================= */}
-      <section id="hero" className="mdf-hero-stage">
-        {/* Background Fullscreen Video with Dark Overlay */}
-        <div className="mdf-hero-video-bg" aria-hidden="true">
+      <section id="hero" className="bsh-hero-stage">
+        {/* Crisp High-Visibility Fullscreen Video Background */}
+        <div className="bsh-hero-video-bg" aria-hidden="true">
           <video
             ref={videoRef}
             src="/million_dollar_header_video_1080p_web.mp4"
@@ -64,114 +71,160 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             muted
             playsInline
             preload="auto"
-            className="mdf-hero-bg-video-element"
+            className="bsh-hero-bg-video-element"
           />
-          <div className="mdf-hero-video-overlay" />
+          {/* Subtle Contrast Vignette */}
+          <div className="bsh-hero-video-overlay" />
         </div>
 
-        {/* Ambient Radial Fire Glow Backdrop */}
-        <div className="mdf-hero-radial-glow" aria-hidden="true" />
+        {/* Ambient Warm Studio Lighting */}
+        <div className="bsh-hero-ambient-glow" aria-hidden="true" />
 
-        {/* Hero Content Container */}
-        <div className="mdf-hero-content-wrap">
-          {/* Top Title: Scaling Brands To 8-Figures */}
-          <div className="mdf-hero-headline-box">
-            <span className="mdf-hero-serif-text">Scaling Brands</span>
-            <span className="mdf-hero-sans-text">To 8-Figures</span>
+        {/* Main Hero Header Content */}
+        <div className="bsh-hero-content-wrap">
+          {/* Top Pill Tag */}
+          <div className="bsh-hero-top-pill">
+            <span className="bsh-live-dot" />
+            <span className="bsh-pill-text">$50M+ AD SPEND DEPLOYED · 12+ YEARS SCALING 8-FIGURE BRANDS</span>
           </div>
 
-          {/* Giant Scrolling Typography Marquee */}
-          <div className="mdf-giant-marquee-outer">
-            <div className="mdf-giant-marquee-track">
-              {/* Group 1 */}
-              <div className="mdf-giant-marquee-group">
-                {marqueeWords.map((word, idx) => (
-                  <span key={`w1-${idx}`} className="mdf-giant-word-unit">
-                    <span className="mdf-giant-word">{word}</span>
-                    <span className="mdf-giant-sparkle">✦</span>
-                  </span>
-                ))}
+          {/* Main Staggered Cinematic Title */}
+          <h1 className="bsh-hero-main-title">
+            <span className="bsh-title-line-1">TURNING PAID TRAFFIC INTO</span>
+            <span className="bsh-title-line-2">
+              <span className="bsh-gradient-fire-text">8-FIGURE REVENUE</span>
+            </span>
+          </h1>
+
+          {/* Subtitle Value Proposition */}
+          <p className="bsh-hero-sub-description">
+            We build the complete customer acquisition infrastructure, weekly UGC creative machine, 
+            and high-AOV conversion architecture behind fast-growing eCommerce brands.
+          </p>
+
+          {/* Direct CTA Button Group */}
+          <div className="bsh-hero-cta-group">
+            <button className="btn-primary bsh-cta-primary-btn" onClick={onOpenBooking}>
+              <span>SCALE YOUR BRAND</span>
+              <ArrowRight size={18} />
+            </button>
+            <button
+              className="btn-secondary bsh-cta-secondary-btn"
+              onClick={() => onNavigate ? onNavigate('cases') : null}
+            >
+              <Play size={14} color="#ff5722" />
+              <span>118+ VERIFIED CASE STUDIES</span>
+            </button>
+          </div>
+
+          {/* Dual Dynamic Ticker Streams */}
+          <div className="bsh-dual-ticker-container">
+            {/* Stream 1 (Left Scrolling) */}
+            <div className="bsh-ticker-stream-outer">
+              <div className="bsh-ticker-track-left">
+                <div className="bsh-ticker-group">
+                  {stream1Items.map((item, idx) => (
+                    <span key={`s1-a-${idx}`} className="bsh-ticker-chip">
+                      <span className="bsh-ticker-text">{item}</span>
+                      <span className="bsh-ticker-sparkle">✦</span>
+                    </span>
+                  ))}
+                </div>
+                <div className="bsh-ticker-group" aria-hidden="true">
+                  {stream1Items.map((item, idx) => (
+                    <span key={`s1-b-${idx}`} className="bsh-ticker-chip">
+                      <span className="bsh-ticker-text">{item}</span>
+                      <span className="bsh-ticker-sparkle">✦</span>
+                    </span>
+                  ))}
+                </div>
               </div>
-              {/* Group 2 (Duplicate for Seamless Infinite Loop) */}
-              <div className="mdf-giant-marquee-group" aria-hidden="true">
-                {marqueeWords.map((word, idx) => (
-                  <span key={`w2-${idx}`} className="mdf-giant-word-unit">
-                    <span className="mdf-giant-word">{word}</span>
-                    <span className="mdf-giant-sparkle">✦</span>
-                  </span>
-                ))}
+            </div>
+
+            {/* Stream 2 (Right Scrolling) */}
+            <div className="bsh-ticker-stream-outer" style={{ marginTop: '8px' }}>
+              <div className="bsh-ticker-track-right">
+                <div className="bsh-ticker-group">
+                  {stream2Items.map((item, idx) => (
+                    <span key={`s2-a-${idx}`} className="bsh-ticker-chip bsh-chip-alt">
+                      <span className="bsh-ticker-text">{item}</span>
+                      <span className="bsh-ticker-sparkle bsh-sparkle-gold">✦</span>
+                    </span>
+                  ))}
+                </div>
+                <div className="bsh-ticker-group" aria-hidden="true">
+                  {stream2Items.map((item, idx) => (
+                    <span key={`s2-b-${idx}`} className="bsh-ticker-chip bsh-chip-alt">
+                      <span className="bsh-ticker-text">{item}</span>
+                      <span className="bsh-ticker-sparkle bsh-sparkle-gold">✦</span>
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Tagline Below Marquee */}
-          <div className="mdf-hero-tagline-wrap">
-            <p className="mdf-hero-tagline">
-              SCIENTIFIC CUSTOMER ACQUISITION & ECOMMERCE GROWTH ENGINE · $50M+ DEPLOYED
-            </p>
-          </div>
         </div>
 
-        {/* Bottom 3 Capability Cards Bar */}
-        <div className="mdf-hero-capabilities-bar">
+        {/* Bottom 3 Capability Architecture Cards */}
+        <div className="bsh-hero-capabilities-bar">
           <div className="container">
-            <div className="mdf-capabilities-grid">
+            <div className="bsh-capabilities-grid">
               {/* 01 Paid Media & Scaling */}
               <div
-                className="mdf-cap-card"
+                className="bsh-cap-card"
                 onClick={() => onNavigate ? onNavigate('growth') : null}
               >
-                <div className="mdf-cap-left">
-                  <div className="mdf-cap-icon-box mdf-icon-flame">
+                <div className="bsh-cap-left">
+                  <div className="bsh-cap-icon-box bsh-icon-flame">
                     <TrendingUp size={22} color="#ff5722" />
                   </div>
-                  <div className="mdf-cap-info">
-                    <span className="mdf-cap-num">01</span>
-                    <h3 className="mdf-cap-title">Paid Media & Scaling</h3>
-                    <p className="mdf-cap-sub">Meta Advantage+, Scientific CAC & Scale</p>
+                  <div className="bsh-cap-info">
+                    <span className="bsh-cap-num">01 · MEDIA BUYING</span>
+                    <h3 className="bsh-cap-title">Scientific Paid Media</h3>
+                    <p className="bsh-cap-sub">Meta Advantage+, Daily Budget Scale & Low CAC</p>
                   </div>
                 </div>
-                <div className="mdf-cap-arrow-btn">
+                <div className="bsh-cap-arrow-btn">
                   <ArrowUpRight size={16} />
                 </div>
               </div>
 
               {/* 02 Viral Creative Studio */}
               <div
-                className="mdf-cap-card"
+                className="bsh-cap-card"
                 onClick={() => onNavigate ? onNavigate('viral-creatives') : null}
               >
-                <div className="mdf-cap-left">
-                  <div className="mdf-cap-icon-box mdf-icon-sparkle">
+                <div className="bsh-cap-left">
+                  <div className="bsh-cap-icon-box bsh-icon-sparkle">
                     <Sparkles size={22} color="#ff7043" />
                   </div>
-                  <div className="mdf-cap-info">
-                    <span className="mdf-cap-num">02</span>
-                    <h3 className="mdf-cap-title">Viral Creative Studio</h3>
-                    <p className="mdf-cap-sub">High-Converting UGC, Hooks & Pattern Interrupts</p>
+                  <div className="bsh-cap-info">
+                    <span className="bsh-cap-num">02 · CREATIVE LAB</span>
+                    <h3 className="bsh-cap-title">Direct-Response UGC Studio</h3>
+                    <p className="bsh-cap-sub">High-Converting Hooks, UGC & Pattern Interrupts</p>
                   </div>
                 </div>
-                <div className="mdf-cap-arrow-btn">
+                <div className="bsh-cap-arrow-btn">
                   <ArrowUpRight size={16} />
                 </div>
               </div>
 
               {/* 03 Conversion & High-AOV Funnels */}
               <div
-                className="mdf-cap-card"
+                className="bsh-cap-card"
                 onClick={() => onNavigate ? onNavigate('cases') : (onOpenBooking ? onOpenBooking() : null)}
               >
-                <div className="mdf-cap-left">
-                  <div className="mdf-cap-icon-box mdf-icon-zap">
+                <div className="bsh-cap-left">
+                  <div className="bsh-cap-icon-box bsh-icon-zap">
                     <Zap size={22} color="#ffb300" />
                   </div>
-                  <div className="mdf-cap-info">
-                    <span className="mdf-cap-num">03</span>
-                    <h3 className="mdf-cap-title">Conversion & High-AOV Funnels</h3>
-                    <p className="mdf-cap-sub">Shopify Optimization, Multi-Tier Bundles & CRO</p>
+                  <div className="bsh-cap-info">
+                    <span className="bsh-cap-num">03 · CRO & RETENTION</span>
+                    <h3 className="bsh-cap-title">High-AOV Store Architecture</h3>
+                    <p className="bsh-cap-sub">Sub-1s Shopify Funnels, Dynamic Bundles & CRO</p>
                   </div>
                 </div>
-                <div className="mdf-cap-arrow-btn">
+                <div className="bsh-cap-arrow-btn">
                   <ArrowUpRight size={16} />
                 </div>
               </div>
@@ -183,28 +236,28 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
       {/* ========================================================================= */}
       {/* 2. TRUSTED BY 100+ BRANDS (Seamless Infinite Scrolling Logo Rows) */}
       {/* ========================================================================= */}
-      <section className="mdf-trusted-brands-section">
+      <section className="bsh-trusted-brands-section">
         <div className="container">
-          <div className="mdf-trusted-heading-row">
-            <span className="mdf-trusted-line" />
-            <h2 className="mdf-trusted-title">Trusted by 100+ scaling eCommerce brands</h2>
-            <span className="mdf-trusted-line" />
+          <div className="bsh-trusted-heading-row">
+            <span className="bsh-trusted-line" />
+            <h2 className="bsh-trusted-title">Trusted by 100+ scaling eCommerce founders</h2>
+            <span className="bsh-trusted-line" />
           </div>
 
           {/* Row 1: Scrolling Left */}
-          <div className="mdf-logos-marquee-wrapper">
-            <div className="mdf-logos-track-left">
-              <div className="mdf-logos-group">
+          <div className="bsh-logos-marquee-wrapper">
+            <div className="bsh-logos-track-left">
+              <div className="bsh-logos-group">
                 {row1Logos.map((logo, idx) => (
-                  <div key={`r1-a-${idx}`} className="mdf-logo-item">
-                    <img src={logo} alt={`Client logo ${idx + 1}`} className="mdf-logo-img" loading="eager" />
+                  <div key={`r1-a-${idx}`} className="bsh-logo-item">
+                    <img src={logo} alt={`Client logo ${idx + 1}`} className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
-              <div className="mdf-logos-group" aria-hidden="true">
+              <div className="bsh-logos-group" aria-hidden="true">
                 {row1Logos.map((logo, idx) => (
-                  <div key={`r1-b-${idx}`} className="mdf-logo-item">
-                    <img src={logo} alt="" className="mdf-logo-img" loading="eager" />
+                  <div key={`r1-b-${idx}`} className="bsh-logo-item">
+                    <img src={logo} alt="" className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
@@ -212,19 +265,19 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
           </div>
 
           {/* Row 2: Scrolling Right */}
-          <div className="mdf-logos-marquee-wrapper" style={{ marginTop: '16px' }}>
-            <div className="mdf-logos-track-right">
-              <div className="mdf-logos-group">
+          <div className="bsh-logos-marquee-wrapper" style={{ marginTop: '16px' }}>
+            <div className="bsh-logos-track-right">
+              <div className="bsh-logos-group">
                 {row2Logos.map((logo, idx) => (
-                  <div key={`r2-a-${idx}`} className="mdf-logo-item">
-                    <img src={logo} alt={`Client logo ${idx + 11}`} className="mdf-logo-img" loading="eager" />
+                  <div key={`r2-a-${idx}`} className="bsh-logo-item">
+                    <img src={logo} alt={`Client logo ${idx + 11}`} className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
-              <div className="mdf-logos-group" aria-hidden="true">
+              <div className="bsh-logos-group" aria-hidden="true">
                 {row2Logos.map((logo, idx) => (
-                  <div key={`r2-b-${idx}`} className="mdf-logo-item">
-                    <img src={logo} alt="" className="mdf-logo-img" loading="eager" />
+                  <div key={`r2-b-${idx}`} className="bsh-logo-item">
+                    <img src={logo} alt="" className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
