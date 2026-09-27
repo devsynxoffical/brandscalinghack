@@ -3,7 +3,7 @@ import { allCaseStudies } from '../data/allCaseStudies';
 import { ArrowRight, ExternalLink, Search, Play, ShieldCheck } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
-const CATEGORIES = ['All', 'Instagram Reels', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale', 'High AOV DTC'];
+const CATEGORIES = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale', 'High AOV DTC'];
 
 function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   const videoRef = useRef(null);
@@ -49,10 +49,12 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
           <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
         )}
 
-        {/* Top Badge */}
-        <div className="showcase-brand-badge">
-          <span>{study.badge || 'VERIFIED CASE STUDY'}</span>
-        </div>
+        {/* Top Badge (Only if verified and not Instagram Reel) */}
+        {study.badge && !study.badge.toUpperCase().includes('INSTAGRAM') && !study.badge.toUpperCase().includes('REEL') && (
+          <div className="showcase-brand-badge">
+            <span>{study.badge}</span>
+          </div>
+        )}
 
         {/* Bottom ROAS Tag */}
         <div className="showcase-roas-tag">
@@ -60,16 +62,10 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
         </div>
       </div>
 
-      {/* Bottom Card Content */}
+      {/* Bottom Card Content - Only Title Heading & Action Buttons */}
       <div className="showcase-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
         <div>
-          <div className="showcase-card-category">
-            {study.category || 'Meta Scaling'} • {study.revenue || '$50K+ Scaled'}
-          </div>
-          <div className="showcase-card-metric">{study.title}</div>
-          <p className="showcase-card-desc" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden', minHeight: '60px' }}>
-            {study.summary || study.fullCaption}
-          </p>
+          <div className="showcase-card-metric" style={{ marginBottom: '14px', minHeight: 'auto' }}>{study.title}</div>
         </div>
         
         {/* Card Action Links */}
@@ -128,9 +124,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
   const [visibleCount, setVisibleCount] = useState(12);
 
   const filteredStudies = allCaseStudies.filter((item) => {
-    const matchesTab = activeTab === 'All' || 
-      (activeTab === 'Instagram Reels' && (item.videoUrl || item.badge?.includes('INSTAGRAM') || item.instagramUrl)) ||
-      item.category === activeTab;
+    const matchesTab = activeTab === 'All' || item.category === activeTab;
     const matchesSearch = !searchTerm || 
       item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       (item.summary && item.summary.toLowerCase().includes(searchTerm.toLowerCase())) ||
@@ -247,7 +241,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
               onClick={() => setVisibleCount((prev) => prev + 12)}
               style={{ padding: '12px 32px', fontSize: '0.9rem', fontWeight: 600 }}
             >
-              <span>Load More Breakdown Reels ({displayedStudies.length} of {filteredStudies.length})</span>
+              <span>Load More Case Studies ({displayedStudies.length} of {filteredStudies.length})</span>
             </button>
           </div>
         )}
