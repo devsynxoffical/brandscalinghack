@@ -34,7 +34,7 @@ const marqueeWords = [
   'CREATIVE ENGINE',
   'HIGH-AOV DTC',
   'ADVANTAGE+ META',
-  'MILLION DOLLAR FUNNEL™',
+  'BRAND SCALING HACKS',
   '8-FIGURE PROOF',
   '5.4X ROAS'
 ];
@@ -156,7 +156,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                 </div>
               </div>
 
-              {/* 03 MDF™ & CRO Funnels */}
+              {/* 03 Brand Scaling Architecture */}
               <div
                 className="mdf-cap-card"
                 onClick={() => onNavigate ? onNavigate('cases') : (onOpenBooking ? onOpenBooking() : null)}
@@ -167,7 +167,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
                   </div>
                   <div className="mdf-cap-info">
                     <span className="mdf-cap-num">03</span>
-                    <h3 className="mdf-cap-title">MDF™ & CRO Architecture</h3>
+                    <h3 className="mdf-cap-title">Brand Scaling Architecture</h3>
                     <p className="mdf-cap-sub">High-AOV Funnels, Shopify Stores & Retention</p>
                   </div>
                 </div>

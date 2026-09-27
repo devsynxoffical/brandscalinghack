@@ -33,7 +33,7 @@ export default function GrowthPage({ onOpenBooking }) {
   const [targetCvr, setTargetCvr] = useState(3.8);
   const [openFaq, setOpenFaq] = useState(null);
 
-  // Projected metrics with MDF™ System
+  // Projected metrics with Brand Scaling System
   const projectedRevIncrease = Math.round(currentMonthlyRev * (targetCvr / 2.0) * 1.35);
   const projectedMonthlyRev = currentMonthlyRev + projectedRevIncrease;
   const annualScalingPotential = projectedMonthlyRev * 12;

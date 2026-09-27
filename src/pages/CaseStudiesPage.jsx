@@ -14,7 +14,7 @@ export default function CaseStudiesPage({ onOpenBooking, onNavigate, onOpenInsta
         onOpenInstagramModal={onOpenInstagramModal}
       />
 
-      {/* 4-Step Million Dollar Funnel™ Scaling Architecture */}
+      {/* 4-Step Brand Scaling Hacks Scaling Architecture */}
       <section style={{ background: '#f8fafc', padding: '80px 0', borderTop: '1px solid #f1f5f9', borderBottom: '1px solid #f1f5f9' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 48px auto' }}>
@@ -39,7 +39,7 @@ export default function CaseStudiesPage({ onOpenBooking, onNavigate, onOpenInsta
               SCALING ARCHITECTURE
             </span>
             <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-0.02em', marginBottom: '12px' }}>
-              The 4-Step MDF™ Scale Playbook
+              The 4-Step Brand Scaling Playbook
             </h2>
             <p style={{ color: '#64748b', fontSize: '1.02rem', lineHeight: 1.6 }}>
               Every verified scaling breakdown on this page was executed using this identical, predictable 4-phase framework.

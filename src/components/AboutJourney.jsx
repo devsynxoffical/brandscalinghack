@@ -101,11 +101,11 @@ export const journeyTimelineData = {
     {
       year: "'24",
       fullYear: '2024',
-      title: 'The Million Dollar Funnel™ (MDF™)',
+      title: 'The Brand Scaling Hacks Engine',
       teaser:
-        'We crystallized the complete MDF™ system—turning cold paid ad spend into a self-funding scaling engine.',
+        'We crystallized the complete Brand Scaling Hacks system—turning cold paid ad spend into a self-funding scaling engine.',
       full:
-        'The Million Dollar Funnel™ integrated offer economics, viral hook variations, fast-loading mobile storefronts, and automated retention loops into one seamless machine—driving single campaigns past $1.52M+ in revenue.',
+        'The Brand Scaling Hacks framework integrated offer economics, viral hook variations, fast-loading mobile storefronts, and automated retention loops into one seamless machine—driving single campaigns past $1.52M+ in revenue.',
       attribution: '@gauravecomm',
       timeAgo: '2 years ago',
       side: 'left',
