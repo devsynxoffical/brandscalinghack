@@ -600,7 +600,7 @@ button {
 .hero-sitting-city-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/assets/city_skyline.jpg');
+  background-image: url('/assets/city_skyline.webp');
   background-size: cover;
   background-position: center 25%;
   filter: contrast(1.15) brightness(0.85);

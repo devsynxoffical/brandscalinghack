@@ -113,7 +113,7 @@ export default function KnockoutAuthorityBannerSection({ onOpenBooking }) {
             }}
           >
             <img
-              src="/assets/gaurav_cutout_real.png"
+              src="/assets/gaurav_cutout_real.webp"
               alt="Gaurav Kapoor - Brand Scaling Hacks"
               className="knockout-subject-img"
             />

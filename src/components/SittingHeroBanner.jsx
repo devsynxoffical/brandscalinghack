@@ -20,7 +20,7 @@ export default function SittingHeroBanner({ onOpenBooking }) {
         {/* Gaurav Cutout Sitting On The Horizon Ledge */}
         <div className="hero-sitting-subject-wrapper">
           <img
-            src="/assets/gaurav_sitting_cutout.png"
+            src="/assets/gaurav_sitting_cutout.webp"
             alt="Gaurav Kapoor"
             className="hero-sitting-cutout-img"
           />

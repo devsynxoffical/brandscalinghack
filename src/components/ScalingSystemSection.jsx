@@ -164,7 +164,7 @@ export default function ScalingSystemSection({ onOpenBooking }) {
                 <video
                   ref={videoRef}
                   src="/assets/insta-video/ClzYLasvGb7.mp4"
-                  poster="/assets/insta-video/ClzYLasvGb7.jpg"
+                  poster="/assets/insta-video/ClzYLasvGb7.webp"
                   autoPlay
                   loop
                   muted

@@ -287,7 +287,7 @@ export default function WhatWeBuildSection({ onOpenBooking, onNavigate }) {
                 <video
                   ref={videoRef}
                   src="/assets/insta-video/ClzYLasvGb7.mp4"
-                  poster="/assets/insta-video/ClzYLasvGb7.jpg"
+                  poster="/assets/insta-video/ClzYLasvGb7.webp"
                   autoPlay
                   muted
                   loop

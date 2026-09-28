@@ -39,7 +39,7 @@ export default function ImpactScaleBannerSection({ onOpenBooking, onNavigate }) 
             <div className="impact-founder-visual">
               <div className="impact-founder-glow"></div>
               <img
-                src="/assets/gaurav_cutout.png"
+                src="/assets/gaurav_cutout.webp"
                 alt="Gaurav Kapoor"
                 className="impact-founder-img"
               />

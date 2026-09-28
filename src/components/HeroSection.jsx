@@ -3,27 +3,27 @@ import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, Flame, Award
 
 // Client Logos for Marquee (18 Verified eCommerce Brands Scaled)
 const row1Logos = [
-  { name: 'Dr. Naomi Skin', src: '/logos/clients/drnaomi.png' },
-  { name: 'Vedge Nutrition', src: '/logos/clients/vedge-nutrition.png' },
-  { name: 'Ion Bottles', src: '/logos/clients/ion-bottles.png' },
-  { name: 'Vanidox', src: '/logos/clients/vanidox.png' },
+  { name: 'Dr. Naomi Skin', src: '/logos/clients/drnaomi.webp' },
+  { name: 'Vedge Nutrition', src: '/logos/clients/vedge-nutrition.webp' },
+  { name: 'Ion Bottles', src: '/logos/clients/ion-bottles.webp' },
+  { name: 'Vanidox', src: '/logos/clients/vanidox.webp' },
   { name: 'Ayurda', src: '/logos/clients/ayurda.svg' },
-  { name: 'Lexco Australia', src: '/logos/clients/lexco-australia.png' },
-  { name: 'Steel Horse Leather', src: '/logos/clients/steel-horse-leather.png' },
-  { name: 'Juice Beauty', src: '/logos/clients/juice-beauty.png' },
+  { name: 'Lexco Australia', src: '/logos/clients/lexco-australia.webp' },
+  { name: 'Steel Horse Leather', src: '/logos/clients/steel-horse-leather.webp' },
+  { name: 'Juice Beauty', src: '/logos/clients/juice-beauty.webp' },
   { name: 'Talon', src: '/logos/clients/talon.svg' },
 ];
 
 const row2Logos = [
-  { name: 'ZenSATION', src: '/logos/clients/zensation.png' },
-  { name: 'EZ Detangler', src: '/logos/clients/ez-detangler.png' },
+  { name: 'ZenSATION', src: '/logos/clients/zensation.webp' },
+  { name: 'EZ Detangler', src: '/logos/clients/ez-detangler.webp' },
   { name: 'Little & Lively', src: '/logos/clients/little-and-lively.svg' },
-  { name: 'Tasgal', src: '/logos/clients/tasgal.png' },
-  { name: 'Veil Cosmetics', src: '/logos/clients/veil-cosmetics.png' },
-  { name: 'Golfer Pro', src: '/logos/clients/golfer-pro.png' },
-  { name: 'Gone Pants', src: '/logos/clients/gone-pants.png' },
-  { name: 'Pure Skin Lab', src: '/logos/clients/pure-skin-lab.png' },
-  { name: 'Life Easy', src: '/logos/clients/life-easy.png' },
+  { name: 'Tasgal', src: '/logos/clients/tasgal.webp' },
+  { name: 'Veil Cosmetics', src: '/logos/clients/veil-cosmetics.webp' },
+  { name: 'Golfer Pro', src: '/logos/clients/golfer-pro.webp' },
+  { name: 'Gone Pants', src: '/logos/clients/gone-pants.webp' },
+  { name: 'Pure Skin Lab', src: '/logos/clients/pure-skin-lab.webp' },
+  { name: 'Life Easy', src: '/logos/clients/life-easy.webp' },
 ];
 
 const bigMarqueeItems = [
@@ -36,15 +36,15 @@ const bigMarqueeItems = [
 ];
 
 export const BRANDS_SCALED = [
-  { name: "Juice Beauty", cat: "Organic Skincare & Makeup", followers: "357K", handle: "@juicebeauty", url: "https://www.instagram.com/juicebeauty/", img: "/brands/juicebeauty.png" },
-  { name: "Vedge Nutrition", cat: "Plant-Based Supplements", followers: "88.7K", handle: "@vedgenutrition", url: "https://www.instagram.com/vedgenutrition/", img: "/brands/vedge.png" },
-  { name: "Dr Naomi Skin", cat: "Clinical Skincare & Devices", followers: "85K", handle: "@drnaomiskin", url: "https://www.instagram.com/drnaomiskin/", img: "/brands/drnaomi.png" },
-  { name: "Water Jewelers", cat: "Premium Jewelry", followers: "81.1K", handle: "@waterwatch.co", url: "https://www.instagram.com/waterwatch.co", img: "/brands/waterjewelers.png" },
-  { name: "Little & Lively", cat: "Canadian Baby & Kids Clothing", followers: "80K", handle: "@littleandlively", url: "https://www.instagram.com/littleandlively/", img: "/brands/littleandlively.png" },
-  { name: "Veil Cosmetics", cat: "Vegan Cosmetics", followers: "52.1K", handle: "@veilcosmetics", url: "https://www.instagram.com/veilcosmetics/", img: "/brands/veil.png" },
-  { name: "ionBottles", cat: "Hydrogen Water Bottles", followers: "23.3K", handle: "@ionbottles", url: "https://www.instagram.com/ionbottles", img: "/brands/ionbottles.png" },
-  { name: "Ghost Democracy", cat: "Clean Skincare", followers: "17.5K", handle: "@ghostdemocracy", url: "https://www.instagram.com/ghostdemocracy/", img: "/brands/ghostdemocracy.png" },
-  { name: "Swamp Kitten Jewelry", cat: "Jewelry & Watches", followers: "11K", handle: "Facebook", url: "https://www.facebook.com/kristalizejewelry/", img: "/brands/swampkitten.png" },
+  { name: "Juice Beauty", cat: "Organic Skincare & Makeup", followers: "357K", handle: "@juicebeauty", url: "https://www.instagram.com/juicebeauty/", img: "/brands/juicebeauty.webp" },
+  { name: "Vedge Nutrition", cat: "Plant-Based Supplements", followers: "88.7K", handle: "@vedgenutrition", url: "https://www.instagram.com/vedgenutrition/", img: "/brands/vedge.webp" },
+  { name: "Dr Naomi Skin", cat: "Clinical Skincare & Devices", followers: "85K", handle: "@drnaomiskin", url: "https://www.instagram.com/drnaomiskin/", img: "/brands/drnaomi.webp" },
+  { name: "Water Jewelers", cat: "Premium Jewelry", followers: "81.1K", handle: "@waterwatch.co", url: "https://www.instagram.com/waterwatch.co", img: "/brands/waterjewelers.webp" },
+  { name: "Little & Lively", cat: "Canadian Baby & Kids Clothing", followers: "80K", handle: "@littleandlively", url: "https://www.instagram.com/littleandlively/", img: "/brands/littleandlively.webp" },
+  { name: "Veil Cosmetics", cat: "Vegan Cosmetics", followers: "52.1K", handle: "@veilcosmetics", url: "https://www.instagram.com/veilcosmetics/", img: "/brands/veil.webp" },
+  { name: "ionBottles", cat: "Hydrogen Water Bottles", followers: "23.3K", handle: "@ionbottles", url: "https://www.instagram.com/ionbottles", img: "/brands/ionbottles.webp" },
+  { name: "Ghost Democracy", cat: "Clean Skincare", followers: "17.5K", handle: "@ghostdemocracy", url: "https://www.instagram.com/ghostdemocracy/", img: "/brands/ghostdemocracy.webp" },
+  { name: "Swamp Kitten Jewelry", cat: "Jewelry & Watches", followers: "11K", handle: "Facebook", url: "https://www.facebook.com/kristalizejewelry/", img: "/brands/swampkitten.webp" },
 ];
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {

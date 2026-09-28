@@ -23,7 +23,7 @@ export const curatedViralCreatives = [
     revenue: '$184K Generated',
     roas: '4.62x ROAS',
     video: '/assets/insta-video/C9CPs88t1qa.mp4',
-    image: '/assets/insta-video/C9CPs88t1qa.jpg',
+    image: '/assets/insta-video/C9CPs88t1qa.webp',
     description: 'High-velocity visual pattern interrupt leveraging a raw macro problem agitation in the first 2.5 seconds, immediately qualifying high-intent cold buyers.',
     strategy: 'Hook Retention: 54% • Conversion Rate: 4.8%'
   },
@@ -36,7 +36,7 @@ export const curatedViralCreatives = [
     revenue: '$96K Generated',
     roas: '3.95x ROAS',
     video: '',
-    image: '/assets/insta-video/DBTXySHSrJa.jpg',
+    image: '/assets/insta-video/DBTXySHSrJa.webp',
     description: 'High-converting split comparison graphic contrasting cheap market alternatives against our client’s premium formulation, eliminating buyer hesitation instantly.',
     strategy: 'Click-Through Rate: 3.9% • Middle of Funnel Asset'
   },
@@ -49,7 +49,7 @@ export const curatedViralCreatives = [
     revenue: '$248K Generated',
     roas: '5.10x ROAS',
     video: '/assets/insta-video/Ca19JaMse_i.mp4',
-    image: '/assets/insta-video/Ca19JaMse_i.jpg',
+    image: '/assets/insta-video/Ca19JaMse_i.webp',
     description: 'Authentic customer perspective with natural home lighting and ASMR packaging cues, achieving a 52% 3-second hook retention rate on TikTok and Reels.',
     strategy: 'TikTok Native • 52% 3s Hook Rate'
   },
@@ -62,7 +62,7 @@ export const curatedViralCreatives = [
     revenue: '$132K Generated',
     roas: '4.35x ROAS',
     video: '',
-    image: '/assets/insta-video/C2hk_plyrcZ.jpg',
+    image: '/assets/insta-video/C2hk_plyrcZ.webp',
     description: 'Clear visual hierarchy showcasing Buy 2 Get 1 Free tiered pricing, increasing storefront average order value from $42 to $78 on cold Meta traffic.',
     strategy: 'AOV Lift: +85% • Front-End Liquidation'
   },
@@ -75,7 +75,7 @@ export const curatedViralCreatives = [
     revenue: '$310K Generated',
     roas: '4.80x ROAS',
     video: '/assets/insta-video/Ce4RHMZBmfi.mp4',
-    image: '/assets/insta-video/Ce4RHMZBmfi.jpg',
+    image: '/assets/insta-video/Ce4RHMZBmfi.webp',
     description: 'Native short-form captions combined with fast-cut b-roll demonstration, maintaining a sub-$14 Customer Acquisition Cost across $2,500/day ad spend.',
     strategy: 'Advantage+ Shopping • $2,500/day Scale'
   },
@@ -88,7 +88,7 @@ export const curatedViralCreatives = [
     revenue: '$84K Generated',
     roas: '3.70x ROAS',
     video: '',
-    image: '/assets/insta-video/DB8LF0QyepD.jpg',
+    image: '/assets/insta-video/DB8LF0QyepD.webp',
     description: 'Authentic quote callouts and verified buyer badges positioned for retargeting, converting hesitant cart abandoners within 24 hours of first view.',
     strategy: 'Retargeting ROAS: 6.2x • Cart Recovery'
   },
@@ -101,7 +101,7 @@ export const curatedViralCreatives = [
     revenue: '$165K Generated',
     roas: '4.40x ROAS',
     video: '/assets/insta-video/Cft79TLpxyk.mp4',
-    image: '/assets/insta-video/Cft79TLpxyk.jpg',
+    image: '/assets/insta-video/Cft79TLpxyk.webp',
     description: 'Structured 45-second direct-response storytelling that exposes daily routine friction and introduces the client product as the obvious relief.',
     strategy: 'P-A-S Framework • 4.1% CVR'
   },
@@ -114,7 +114,7 @@ export const curatedViralCreatives = [
     revenue: '$215K Generated',
     roas: '4.92x ROAS',
     video: '/assets/insta-video/CjIsfV-Py1A.mp4',
-    image: '/assets/insta-video/CjIsfV-Py1A.jpg',
+    image: '/assets/insta-video/CjIsfV-Py1A.webp',
     description: 'Seamless lifestyle integration showing product application during a morning routine, blending organically into user feeds with zero ad resistance.',
     strategy: 'Organic Style UGC • 4.2% CTR'
   },
@@ -127,7 +127,7 @@ export const curatedViralCreatives = [
     revenue: '$112K Generated',
     roas: '3.85x ROAS',
     video: '',
-    image: '/assets/insta-video/DBWiTtwSvgw.jpg',
+    image: '/assets/insta-video/DBWiTtwSvgw.webp',
     description: 'Clean infographic detailing pure bio-availability and third-party laboratory verification, establishing instant category authority.',
     strategy: 'Authority Building • High-Trust DTC'
   },
@@ -140,7 +140,7 @@ export const curatedViralCreatives = [
     revenue: '$390K Generated',
     roas: '5.40x ROAS',
     video: '/assets/insta-video/ClNmKjfuASL.mp4',
-    image: '/assets/insta-video/ClNmKjfuASL.jpg',
+    image: '/assets/insta-video/ClNmKjfuASL.webp',
     description: 'Visual proof mechanism testing product under intense pressure, creating an undeniable visual demonstration that eliminates buyer skepticism.',
     strategy: 'Visual Proof Engine • Cold Traffic Winner'
   },
@@ -153,7 +153,7 @@ export const curatedViralCreatives = [
     revenue: '$145K Generated',
     roas: '4.15x ROAS',
     video: '',
-    image: '/assets/insta-video/C8BoEiWvQPX.jpg',
+    image: '/assets/insta-video/C8BoEiWvQPX.webp',
     description: 'High-contrast promotional visual emphasizing flash scarcity and free express shipping, generating over 1,200 orders in a 48-hour scaling push.',
     strategy: 'Flash Launch • 1,200 Orders / 48h'
   },
@@ -166,7 +166,7 @@ export const curatedViralCreatives = [
     revenue: '$195K Generated',
     roas: '4.25x ROAS',
     video: '/assets/insta-video/ClzYLasvGb7.mp4',
-    image: '/assets/insta-video/ClzYLasvGb7.jpg',
+    image: '/assets/insta-video/ClzYLasvGb7.webp',
     description: 'Contrarian hook calling out misleading legacy competitor marketing, capturing high-curiosity viewers and driving them to an educational landing page.',
     strategy: 'Contrarian Hook • 5.1% Outbound CTR'
   },
@@ -179,7 +179,7 @@ export const curatedViralCreatives = [
     revenue: '$420K Generated',
     roas: '5.20x ROAS',
     video: '/assets/insta-video/CaF8d61BZSO.mp4',
-    image: '/assets/insta-video/CaF8d61BZSO.jpg',
+    image: '/assets/insta-video/CaF8d61BZSO.webp',
     description: 'Side-by-side synchronized comparison demonstrating immediate transformation in under 4 seconds, producing the campaign’s lowest cost-per-acquisition.',
     strategy: 'Side-by-Side Hook • $9.80 CPA'
   },
@@ -192,7 +192,7 @@ export const curatedViralCreatives = [
     revenue: '$78K Generated',
     roas: '3.60x ROAS',
     video: '',
-    image: '/assets/insta-video/DCIbOc6SN5I.jpg',
+    image: '/assets/insta-video/DCIbOc6SN5I.webp',
     description: 'Prestigious media publication badges and verified press quotes establishing massive credibility for first-time buyers exploring the brand.',
     strategy: 'PR Endorsement • 32% Lower Bounce'
   },
@@ -205,7 +205,7 @@ export const curatedViralCreatives = [
     revenue: '$175K Generated',
     roas: '4.55x ROAS',
     video: '/assets/insta-video/CfYM_4POBEi.mp4',
-    image: '/assets/insta-video/CfYM_4POBEi.jpg',
+    image: '/assets/insta-video/CfYM_4POBEi.webp',
     description: 'Raw founder monologue detailing 18 months of rigorous testing before launching the final formula, creating strong emotional connection and high LTV.',
     strategy: 'Founder Brand Story • +40% Repeat Rate'
   },
@@ -218,7 +218,7 @@ export const curatedViralCreatives = [
     revenue: '$230K Generated',
     roas: '4.75x ROAS',
     video: '/assets/insta-video/C9RU-C9yhfU.mp4',
-    image: '/assets/insta-video/C9RU-C9yhfU.jpg',
+    image: '/assets/insta-video/C9RU-C9yhfU.webp',
     description: 'Leveraged high-energy sound design to showcase 5 product colorways in 7 seconds, driving over 2.4 million views with minimal production overhead.',
     strategy: 'Viral Sound Sync • 2.4M Views'
   },
@@ -231,7 +231,7 @@ export const curatedViralCreatives = [
     revenue: '$128K Generated',
     roas: '4.05x ROAS',
     video: '',
-    image: '/assets/insta-video/Db3hW_mupo1.jpg',
+    image: '/assets/insta-video/Db3hW_mupo1.webp',
     description: 'Detailed callout pointers highlighting custom ergonomic construction, aerospace-grade alloy, and proprietary waterproof sealing.',
     strategy: 'Feature Breakdown • 4.6% CVR'
   },
@@ -244,7 +244,7 @@ export const curatedViralCreatives = [
     revenue: '$510K Generated',
     roas: '4.88x ROAS',
     video: '/assets/insta-video/DbCVqzFhiLU.mp4',
-    image: '/assets/insta-video/DbCVqzFhiLU.jpg',
+    image: '/assets/insta-video/DbCVqzFhiLU.webp',
     description: 'Open broad-targeting creative asset engineered with 4 distinct intro variations running concurrently inside Meta Advantage+ scaling campaigns.',
     strategy: 'Multi-Angle Scale • $510K Campaign'
   },
@@ -257,7 +257,7 @@ export const curatedViralCreatives = [
     revenue: '$160K Generated',
     roas: '4.45x ROAS',
     video: '',
-    image: '/assets/insta-video/CeZA8zlj0HL.jpg',
+    image: '/assets/insta-video/CeZA8zlj0HL.webp',
     description: 'Clear visual bundling displaying "Buy 3 = 40% OFF + Free Travel Pouch", driving multi-pack purchase rate to 68% of total storefront order volume.',
     strategy: 'Bundle Maximizer • 68% Multi-Pack Take'
   },
@@ -270,7 +270,7 @@ export const curatedViralCreatives = [
     revenue: '$290K Generated',
     roas: '4.65x ROAS',
     video: '/assets/insta-video/CbCOGFmAE4U.mp4',
-    image: '/assets/insta-video/CbCOGFmAE4U.jpg',
+    image: '/assets/insta-video/CbCOGFmAE4U.webp',
     description: 'Spontaneous real-world reactions from everyday customers choosing our client’s product over legacy retail brands in an unscripted blind comparison.',
     strategy: 'Street Intercept UGC • 64% 3s Hook'
   },
@@ -283,7 +283,7 @@ export const curatedViralCreatives = [
     revenue: '$140K Generated',
     roas: '4.10x ROAS',
     video: '/assets/insta-video/C9VEBK8y-0r.mp4',
-    image: '/assets/insta-video/C9VEBK8y-0r.jpg',
+    image: '/assets/insta-video/C9VEBK8y-0r.webp',
     description: 'Clean frame-by-frame stop-motion video highlighting premium tactile packaging, custom unboxing cards, and magnetic accessories.',
     strategy: 'Stop-Motion Craft • High Brand Value'
   },
@@ -296,7 +296,7 @@ export const curatedViralCreatives = [
     revenue: '$92K Generated',
     roas: '3.90x ROAS',
     video: '',
-    image: '/assets/insta-video/CbdLX--rkaU.jpg',
+    image: '/assets/insta-video/CbdLX--rkaU.webp',
     description: 'Bold guarantee banner with clear return terms, eradicating pre-purchase hesitation on high-ticket $120+ direct-response checkouts.',
     strategy: 'Friction Removal • +28% Checkout Rate'
   },
@@ -309,7 +309,7 @@ export const curatedViralCreatives = [
     revenue: '$340K Generated',
     roas: '4.70x ROAS',
     video: '/assets/insta-video/CkaJ5hCju2s.mp4',
-    image: '/assets/insta-video/CkaJ5hCju2s.jpg',
+    image: '/assets/insta-video/CkaJ5hCju2s.webp',
     description: 'Educational 30-second workflow demonstrating exact dosage and ease of use, establishing effortless daily habits for new subscribers.',
     strategy: 'Educational Flow • Subscriptions +45%'
   },
@@ -322,7 +322,7 @@ export const curatedViralCreatives = [
     revenue: '$465K Generated',
     roas: '5.05x ROAS',
     video: '',
-    image: '/assets/insta-video/CxqUP36gaEo.jpg',
+    image: '/assets/insta-video/CxqUP36gaEo.webp',
     description: 'Curated gift set layout with custom festive packaging graphics, driving massive Q4 shopping momentum and repeat customer orders.',
     strategy: 'Holiday Gift Guide • $465K Volume'
   }
