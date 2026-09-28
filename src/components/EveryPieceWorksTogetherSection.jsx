@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  ArrowRight, 
-  Sparkles, 
-  Repeat
-} from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 // Hand-Drawn Cartoon Sticker SVGs (Exact Truus by Dennis Snellenberg Style)
 function StickerCamera() {
@@ -220,29 +216,6 @@ export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
                 </div>
               );
             })}
-          </div>
-        </div>
-
-        {/* ========================================================================= */}
-        {/* CLOSING REPEATABLE SYSTEM MANIFESTO */}
-        {/* ========================================================================= */}
-        <div className="epw-system-closing-box">
-          <div className="epw-repeat-badge">
-            <Repeat size={16} className="epw-repeat-icon" />
-            <span>THEN DO IT AGAIN.</span>
-          </div>
-          <p className="epw-closing-quote">
-            "Because a single winning campaign isn't a growth strategy."
-          </p>
-          <h4 className="epw-closing-punchline">
-            A REPEATABLE SYSTEM IS.
-          </h4>
-
-          <div style={{ marginTop: '26px' }}>
-            <button className="epw-action-btn epw-btn-gold" onClick={onOpenBooking}>
-              <span>DEPLOY THE SCALING SYSTEM</span>
-              <ArrowRight size={18} />
-            </button>
           </div>
         </div>
 
