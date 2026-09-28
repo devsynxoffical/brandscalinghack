@@ -250,22 +250,33 @@ Comment "ME" & I will gonna drop value bombs here..
   // Reel CaAuCiJBY61
   'CaAuCiJBY61': {
     shortcode: 'CaAuCiJBY61',
-    title: 'Growth & Scaling Breakdown #CaAuCiJBY61',
-    subtitle: 'eCommerce Performance Reel',
-    revenue: '$50,000+ Scaled',
+    title: 'Scaling DTC Skincare Store to $2,990/Day with Meta Ads',
+    subtitle: 'Daily Scaling • $2,990 / Day (34 Orders)',
+    revenue: '$2,990 / Day (34 Orders)',
     roas: '4.2x ROAS',
-    badge: 'INSTAGRAM REEL',
-    caption: `Performance creative, ad scaling strategies, and eCommerce growth engine results.`,
+    badge: 'Daily Scaling',
+    caption: `Today I am BEYOND excited to show you guys how I have been scaling this Brand to The Moon🤑👊
+. 
+. 
+. 
+. 
+👉If you'd like to speak with me in assisting you to scale your brand to past 6-7figures...👇
+
+Hit Me Up With "SCALING" 🚀
+
+I look forward to helping your business become the absolute BEST IT CAN BE. 
+
+#ecommercebusiness #facebookads #facebookmarketing #shopify #skincaremarketing #facebookadsmarketing`,
     instagramUrl: 'https://www.instagram.com/reel/CaAuCiJBY61/'
   },
   // Reel CaF8d61BZSO
   'CaF8d61BZSO': {
     shortcode: 'CaF8d61BZSO',
-    title: 'Do not be embarrassed by your failures, learn from them and st...',
-    subtitle: 'eCommerce Performance Reel',
-    revenue: '6K',
-    roas: '4.2x ROAS',
-    badge: 'INSTAGRAM REEL',
+    title: 'Learning from Failures & Reaching $6,319 in a Single Day',
+    subtitle: 'Daily Scaling • $6,319 / Day (118 Orders)',
+    revenue: '$6,319 / Day (118 Orders)',
+    roas: '4.6x ROAS',
+    badge: 'Daily Scaling',
     caption: `Do not be embarrassed by your failures, learn from them and start again.🤑
 
 6K$ Day was not a joke for me it's a years of hardwork that i put into the things to make it happen🤓
@@ -283,11 +294,11 @@ Keep Going, I BELIEVE IN YOU, you should too
   // Reel CaU8rUvBBBm
   'CaU8rUvBBBm': {
     shortcode: 'CaU8rUvBBBm',
-    title: '🥇 Work harder than you think you did yesterday...YES I have be...',
-    subtitle: 'eCommerce Performance Reel',
-    revenue: '$50,000+ Scaled',
+    title: 'New Client Onboarding: Scaling Store to $2,274/Day',
+    subtitle: 'Daily Scaling • $2,274 / Day (38 Orders)',
+    revenue: '$2,274 / Day (38 Orders)',
     roas: '4.2x ROAS',
-    badge: 'INSTAGRAM REEL',
+    badge: 'Daily Scaling',
     caption: `🥇 Work harder than you think you did yesterday...YES I have been doing this today we are still left with a few hrs of the day
 
 The ONLY way to scale is to CONTINUALLY deliver the UNEXPECTED RESULTS to your Clients.
@@ -2729,39 +2740,44 @@ export function getEnrichedInstagramData(item) {
 
   // Find shortcode from item properties
   let code = item.shortcode;
+  if (!code && item.id && !item.id.startsWith('insta-vid-')) {
+    code = item.id;
+  }
   if (!code && item.image) {
-    const match = item.image.match(/insta_([^.]+)\.jpg/);
+    const match = item.image.match(/(?:insta_|reel_|\/)([A-Za-z0-9_-]{8,15})\.(?:jpg|png|webp|mp4)/);
     if (match) code = match[1];
   }
   if (!code && item.video) {
-    const match = item.video.match(/reel_([^.]+)\.mp4/);
+    const match = item.video.match(/(?:insta_|reel_|\/)([A-Za-z0-9_-]{8,15})\.(?:mp4|webm)/);
     if (match) code = match[1];
   }
   if (!code && item.videoUrl) {
-    const match = item.videoUrl.match(/reel_([^.]+)\.mp4/);
+    const match = item.videoUrl.match(/(?:insta_|reel_|\/)([A-Za-z0-9_-]{8,15})\.(?:mp4|webm)/);
     if (match) code = match[1];
   }
   if (!code && item.instagramUrl) {
-    const match = item.instagramUrl.match(/\/p\/([^/]+)/);
+    const match = item.instagramUrl.match(/\/(?:p|reel)\/([^/?#]+)/);
     if (match) code = match[1];
   }
   if (!code && item.url) {
-    const match = item.url.match(/\/p\/([^/]+)/);
+    const match = item.url.match(/\/(?:p|reel)\/([^/?#]+)/);
     if (match) code = match[1];
   }
 
   const enriched = (code && instagramProofData[code]) ? instagramProofData[code] : {};
 
+  // Prioritize exact item values over enriched dictionary fallbacks
   return {
+    ...enriched,
     ...item,
-    shortcode: code || item.shortcode,
-    title: enriched.title || item.title || item.hook || 'Verified Client Scale & Dashboard Breakdown',
-    subtitle: enriched.subtitle || item.subtitle || item.niche || item.category || 'eCommerce Growth Engine',
-    revenue: enriched.revenue || item.revenue || '$50,000+ Scaled',
-    roas: enriched.roas || item.roas || '4.5x+ ROAS',
-    badge: enriched.badge || item.badge || 'VERIFIED DASHBOARD',
-    caption: enriched.caption || item.caption || item.description || 
+    shortcode: item.shortcode || code || enriched.shortcode,
+    title: item.title || item.headline || (enriched.title && !enriched.title.startsWith('Growth & Scaling Breakdown #') ? enriched.title : '') || item.hook || 'Verified Client Scale & Dashboard Breakdown',
+    subtitle: item.subtitle || item.category || enriched.subtitle || item.niche || 'eCommerce Growth Engine',
+    revenue: item.revenue || (enriched.revenue && enriched.revenue !== '$50,000+ Scaled' ? enriched.revenue : '') || item.revenue || '$50,000+ Scaled',
+    roas: item.roas || enriched.roas || '4.2x ROAS',
+    badge: item.badge || enriched.badge || 'VERIFIED PROOF',
+    caption: item.fullCaption || item.caption || (enriched.caption && !enriched.caption.startsWith('Performance creative, ad scaling strategies') ? enriched.caption : '') || item.description || item.notes ||
       'Raw, verified proof from our active ad accounts and client scaling systems. We implement systematic direct-response creatives, weekly testing cadences, and cash-flow positive acquisition architecture to scale brands profitably.',
-    instagramUrl: enriched.instagramUrl || item.instagramUrl || item.url || (code ? `https://www.instagram.com/p/${code}/` : 'https://www.instagram.com/gauravecomm/')
+    instagramUrl: item.instagramUrl || item.url || enriched.instagramUrl || (code ? `https://www.instagram.com/reel/${code}/` : 'https://www.instagram.com/gauravecomm/')
   };
 }

@@ -13,7 +13,7 @@ export const allCaseStudies = [
     "videoType": "mp4",
     "videoUrl": "/assets/insta-video/CaAuCiJBY61.mp4",
     "image": "/assets/insta-video/CaAuCiJBY61.jpg",
-    "revenue": "$2,990 / Day (54 Orders)",
+    "revenue": "$2,990 / Day (34 Orders)",
     "roas": "4.2x ROAS",
     "timeframe": "Verified Scale Run",
     "system": "Meta Performance Creative & Direct-Response Engine",
@@ -24,7 +24,7 @@ export const allCaseStudies = [
     "metrics": [
       {
         "label": "Verified Revenue",
-        "value": "$2,990 / Day (54 Orders)"
+        "value": "$2,990 / Day (34 Orders)"
       },
       {
         "label": "Campaign ROAS",
@@ -59,8 +59,8 @@ export const allCaseStudies = [
     "videoType": "mp4",
     "videoUrl": "/assets/insta-video/CaF8d61BZSO.mp4",
     "image": "/assets/insta-video/CaF8d61BZSO.jpg",
-    "revenue": "$6,319 / Day (112 Orders)",
-    "roas": "4.5x ROAS",
+    "revenue": "$6,319 / Day (118 Orders)",
+    "roas": "4.6x ROAS",
     "timeframe": "Verified Scale Run",
     "system": "Daily Scale Architecture & Direct-Response Engine",
     "badge": "Daily Scaling",
@@ -70,11 +70,11 @@ export const allCaseStudies = [
     "metrics": [
       {
         "label": "Verified Revenue",
-        "value": "$6,319 / Day (112 Orders)"
+        "value": "$6,319 / Day (118 Orders)"
       },
       {
         "label": "Campaign ROAS",
-        "value": "4.5x ROAS"
+        "value": "4.6x ROAS"
       },
       {
         "label": "Strategy Deployed",
@@ -105,7 +105,7 @@ export const allCaseStudies = [
     "videoType": "mp4",
     "videoUrl": "/assets/insta-video/CaU8rUvBBBm.mp4",
     "image": "/assets/insta-video/CaU8rUvBBBm.jpg",
-    "revenue": "$2,274 / Day ($2.2K Day)",
+    "revenue": "$2,274 / Day (38 Orders)",
     "roas": "4.2x ROAS",
     "timeframe": "Verified Scale Run",
     "system": "Bulletproof Growth Engine & Direct-Response Engine",
@@ -116,7 +116,7 @@ export const allCaseStudies = [
     "metrics": [
       {
         "label": "Verified Revenue",
-        "value": "$2,274 / Day ($2.2K Day)"
+        "value": "$2,274 / Day (38 Orders)"
       },
       {
         "label": "Campaign ROAS",
