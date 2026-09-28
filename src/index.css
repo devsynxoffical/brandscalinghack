@@ -7086,6 +7086,15 @@ button {
   margin: 0;
 }
 
+.epw-card-desc-our {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  font-weight: 600;
+  margin: 8px 0 14px 0;
+  opacity: 0.92;
+  min-height: 38px;
+}
+
 .epw-truus-divider {
   width: 100%;
   height: 2px;
