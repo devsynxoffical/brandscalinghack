@@ -2,21 +2,100 @@ import React, { useState } from 'react';
 import { 
   ArrowRight, 
   ArrowDown, 
-  CheckCircle2, 
   Sparkles, 
-  Zap, 
-  Rocket, 
-  ShieldCheck, 
-  TrendingUp, 
-  Layers, 
-  Repeat, 
   Flame,
-  Target,
-  BarChart3,
   Search,
-  Sliders,
-  Maximize2
+  Repeat
 } from 'lucide-react';
+
+// Hand-Drawn Cartoon Sticker SVGs (Exact Truus by Dennis Snellenberg Style)
+function StickerCamera() {
+  return (
+    <div className="epw-truus-sticker sticker-camera" aria-hidden="true">
+      <svg width="68" height="68" viewBox="0 0 100 100" fill="none">
+        {/* Outer White Sticker Cutout Glow / Border */}
+        <path d="M18 36 L30 18 L68 18 L82 36 L90 42 L88 84 L14 84 L10 42 Z" fill="#ffffff" />
+        {/* Inner Black Body */}
+        <path d="M22 38 L33 22 L65 22 L78 38 L84 44 L82 80 L18 80 L16 44 Z" fill="#18181b" />
+        {/* Lens Outer Circle */}
+        <circle cx="50" cy="54" r="20" fill="#ffffff" />
+        <circle cx="50" cy="54" r="16" fill="#18181b" />
+        <circle cx="50" cy="54" r="9" fill="#ffffff" />
+        {/* Flash & Doodle Accents */}
+        <circle cx="70" cy="34" r="4" fill="#ffffff" />
+        <path d="M12 24 L22 30 M88 24 L78 30 M50 8 L50 16" stroke="#ffffff" strokeWidth="4" strokeLinecap="round" />
+      </svg>
+    </div>
+  );
+}
+
+function StickerPhone() {
+  return (
+    <div className="epw-truus-sticker sticker-phone" aria-hidden="true">
+      <svg width="64" height="64" viewBox="0 0 100 100" fill="none">
+        {/* White Sticker Border */}
+        <rect x="22" y="10" width="56" height="80" rx="14" fill="#ffffff" transform="rotate(-6 50 50)" />
+        {/* Yellow Phone Body */}
+        <rect x="26" y="14" width="48" height="72" rx="10" fill="#fde047" stroke="#18181b" strokeWidth="4" transform="rotate(-6 50 50)" />
+        {/* Screen */}
+        <rect x="32" y="24" width="36" height="48" rx="4" fill="#18181b" transform="rotate(-6 50 50)" />
+        {/* Vibration Squiggles */}
+        <path d="M12 36 Q6 48 12 60 M88 30 Q94 42 88 54" stroke="#18181b" strokeWidth="5" strokeLinecap="round" />
+      </svg>
+    </div>
+  );
+}
+
+function StickerSmiley() {
+  return (
+    <div className="epw-truus-sticker sticker-smiley" aria-hidden="true">
+      <svg width="66" height="66" viewBox="0 0 100 100" fill="none">
+        {/* White Cutout Border */}
+        <circle cx="50" cy="50" r="46" fill="#ffffff" />
+        {/* Solid Blue Circle Body */}
+        <circle cx="50" cy="50" r="40" fill="#60a5fa" stroke="#18181b" strokeWidth="4" />
+        {/* Big Happy Eyes */}
+        <ellipse cx="38" cy="40" rx="4.5" ry="9" fill="#18181b" />
+        <ellipse cx="62" cy="40" rx="4.5" ry="9" fill="#18181b" />
+        {/* Happy Curved Smile */}
+        <path d="M30 56 Q50 78 70 56" stroke="#18181b" strokeWidth="5" strokeLinecap="round" fill="none" />
+      </svg>
+    </div>
+  );
+}
+
+function StickerWatch() {
+  return (
+    <div className="epw-truus-sticker sticker-watch" aria-hidden="true">
+      <svg width="68" height="68" viewBox="0 0 100 100" fill="none">
+        {/* White Border */}
+        <rect x="15" y="15" width="70" height="70" rx="18" fill="#ffffff" />
+        {/* Lime Body */}
+        <rect x="20" y="20" width="60" height="60" rx="14" fill="#bef264" stroke="#18181b" strokeWidth="4" />
+        {/* Hand with Watch Graphic */}
+        <circle cx="50" cy="50" r="18" fill="#ffffff" stroke="#18181b" strokeWidth="3" />
+        <path d="M50 38 L50 50 L60 50" stroke="#18181b" strokeWidth="3" strokeLinecap="round" />
+        <path d="M50 20 L50 32 M50 68 L50 80" stroke="#f97316" strokeWidth="5" strokeLinecap="round" />
+      </svg>
+    </div>
+  );
+}
+
+function StickerHeart() {
+  return (
+    <div className="epw-truus-sticker sticker-heart" aria-hidden="true">
+      <svg width="66" height="66" viewBox="0 0 100 100" fill="none">
+        {/* White Border */}
+        <path d="M50 86 C25 65 10 45 10 28 C10 14 20 6 34 6 C42 6 47 10 50 14 C53 10 58 6 66 6 C80 6 90 14 90 28 C90 45 75 65 50 86 Z" fill="#ffffff" stroke="#ffffff" strokeWidth="6" />
+        {/* Berry Heart Body */}
+        <path d="M50 82 C27 62 14 43 14 28 C14 16 23 9 35 9 C42 9 47 13 50 17 C53 13 58 9 65 9 C77 9 86 16 86 28 C86 43 73 62 50 82 Z" fill="#9f1239" stroke="#18181b" strokeWidth="3" />
+        {/* Sparkle Stars */}
+        <path d="M26 22 L28 16 L30 22 L36 24 L30 26 L28 32 L26 26 L20 24 Z" fill="#ffffff" />
+        <circle cx="72" cy="46" r="3.5" fill="#ffffff" />
+      </svg>
+    </div>
+  );
+}
 
 export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -43,74 +122,96 @@ export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
     { name: 'PROFITABILITY', question: 'Healthy contribution margin & MER?', tip: 'Top-line vanity revenue without real profit.' }
   ];
 
-  // 06 Dennis Snellenberg Overlapping Tilted Cards
+  // 06 Solid Colorful Cards Deck (Exact Truus by Dennis Snellenberg Reproduction)
   const scalingCards = [
     {
-      id: 'build',
-      num: '01',
-      title: 'BUILD',
-      tag: 'FOUNDATION',
-      color: '#059669',
-      bgColor: 'linear-gradient(145deg, #062b1e 0%, #03140e 100%)',
-      borderColor: 'rgba(16, 185, 129, 0.4)',
-      tilt: '-3.5deg',
-      subtitle: 'Create the right foundation, offer, store and customer journey.',
+      id: 'brand',
+      title: 'brand',
+      solidColor: '#246b54', // Solid Emerald Forest Green
+      textColor: '#ffffff',
+      dividerColor: 'rgba(255, 255, 255, 0.4)',
+      bulletColor: '#ffffff',
+      tilt: '-5deg',
+      sticker: <StickerCamera />,
       items: [
-        'Offer Architecture & Value Stacking',
-        'Frictionless Shopify Theme Build',
-        'Direct-Response Angle Engineering',
-        'Unit Economics & Margin Modeling'
+        'Brand Strategy',
+        '360° Creative Offer',
+        'Art Direction & Copy',
+        'Sub-1s Shopify Build',
+        'Motion Graphics & Angles',
+        'Unit Margin Economics'
       ]
     },
     {
-      id: 'test',
-      num: '02',
-      title: 'TEST',
-      tag: 'CREATIVE LAB',
-      color: '#3b82f6',
-      bgColor: 'linear-gradient(145deg, #0c2340 0%, #05101f 100%)',
-      borderColor: 'rgba(59, 130, 246, 0.4)',
-      tilt: '-1.2deg',
-      subtitle: 'Continuously test products, creatives, hooks, audiences and messaging.',
+      id: 'social',
+      title: 'social',
+      solidColor: '#688ef7', // Solid Periwinkle Sky Blue
+      textColor: '#080e21',
+      dividerColor: '#080e21',
+      bulletColor: '#080e21',
+      tilt: '-2deg',
+      sticker: <StickerPhone />,
       items: [
-        'Weekly UGC Creative Testing Cadence',
-        '45+ Variation Hook & Angle Matrix',
-        'Broad Advantage+ Meta Ad Setup',
-        'Rapid Iteration on Winning Angles'
+        'Weekly UGC Ad Cadence',
+        '45+ Hook Matrix',
+        'TikTok & Meta Adv+',
+        'Direct-Response Scripts',
+        'Rapid Angle Iteration',
+        'Creator Studio Network'
       ]
     },
     {
-      id: 'optimize',
-      num: '03',
-      title: 'OPTIMIZE',
-      tag: 'EFFICIENCY',
-      color: '#ff7043',
-      bgColor: 'linear-gradient(145deg, #2b1206 0%, #170802 100%)',
-      borderColor: 'rgba(255, 112, 67, 0.4)',
-      tilt: '1.5deg',
-      subtitle: 'Improve CAC, CVR, AOV, ROAS and overall profitability.',
+      id: 'activations',
+      title: 'activations',
+      solidColor: '#ef5824', // Solid Punchy Tangerine Orange
+      textColor: '#080e21',
+      dividerColor: '#080e21',
+      bulletColor: '#080e21',
+      tilt: '0.8deg',
+      sticker: <StickerSmiley />,
       items: [
-        'Aggressive CAC & CPA Reduction',
-        'In-Cart & Post-Purchase Upsells (AOV Boost)',
-        'Mobile Checkout Friction Removal',
-        'MER & Cashflow Health Tracking'
+        'CAC & CPA Reduction',
+        'In-Cart Bundle Stacks',
+        'Post-Purchase Upsells',
+        'Mobile CRO Optimization',
+        'Checkout Friction Erasure',
+        'MER & Cashflow Tracking'
       ]
     },
     {
-      id: 'scale',
-      num: '04',
-      title: 'SCALE',
-      tag: 'MULTIPLIER',
-      color: '#a855f7',
-      bgColor: 'linear-gradient(145deg, #240a38 0%, #12031f 100%)',
-      borderColor: 'rgba(168, 85, 247, 0.4)',
-      tilt: '3.8deg',
-      subtitle: 'Put more budget, creative and resources behind what\'s working.',
+      id: 'video',
+      title: 'video production',
+      solidColor: '#8a274c', // Solid Deep Wine Berry Maroon
+      textColor: '#ffffff',
+      dividerColor: 'rgba(255, 255, 255, 0.4)',
+      bulletColor: '#ffffff',
+      tilt: '3.2deg',
+      sticker: <StickerWatch />,
       items: [
-        'Daily Ad Budget Aggressive Scaling',
-        'Cross-Channel TikTok & Google P-Max',
-        'International Market Expansion',
-        'Compounding 90-Day Customer LTV'
+        'High-Converting Ad UGC',
+        'Direct-Response VSLs',
+        'Social Media Content',
+        'High-AOV Unboxing Sets',
+        'Founder Story Content',
+        'Omnichannel P-Max Ads'
+      ]
+    },
+    {
+      id: 'partners',
+      title: 'with partners',
+      solidColor: '#e5a5f4', // Solid Soft Lilac Lavender
+      textColor: '#190422',
+      dividerColor: '#190422',
+      bulletColor: '#190422',
+      tilt: '5.8deg',
+      sticker: <StickerHeart />,
+      items: [
+        'Dedicated Strategist',
+        'Daily Slack Operations',
+        'Global Localization',
+        'Klaviyo Compounding LTV',
+        '8 & 9-Figure Scale Plan',
+        'Category Leadership'
       ]
     }
   ];
@@ -280,7 +381,7 @@ export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
         </div>
 
         {/* ========================================================================= */}
-        {/* MODULE 06 — THE SCALING SYSTEM (Dennis Snellenberg / Truus Overlapping Deck) */}
+        {/* MODULE 06 — THE SCALING SYSTEM (Solid Colorful Overlapping Fan Deck) */}
         {/* ========================================================================= */}
         <div className="epw-module-card epw-module-system">
           <div className="epw-module-top-bar">
@@ -288,16 +389,16 @@ export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
             <span className="epw-module-tag">RECURSIVE GROWTH ENGINE</span>
           </div>
 
-          <div style={{ textAlign: 'center', marginBottom: '36px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h3 className="epw-section-heading">
               BUILD <span className="epw-gold-arrow">→</span> TEST <span className="epw-gold-arrow">→</span> OPTIMIZE <span className="epw-gold-arrow">→</span> SCALE.
             </h3>
             <p className="epw-system-sub">
-              Hover over each phase to explore our full direct-response execution architecture:
+              Hover over each phase to explore our complete execution architecture:
             </p>
           </div>
 
-          {/* Dennis Snellenberg Overlapping Interactive Tilted Cards Deck */}
+          {/* Dennis Snellenberg / Truus Solid Colorful Overlapping Fan Deck */}
           <div className="epw-snellenberg-deck-wrap">
             <div className="epw-snellenberg-deck">
               {scalingCards.map((card, idx) => {
@@ -305,39 +406,39 @@ export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
                 return (
                   <div
                     key={card.id}
-                    className={`epw-tilted-card card-${card.id} ${isHovered ? 'hovered' : ''}`}
+                    className={`epw-truus-solid-card card-${card.id} ${isHovered ? 'hovered' : ''}`}
                     style={{
-                      background: card.bgColor,
-                      border: `1px solid ${card.borderColor}`,
+                      backgroundColor: card.solidColor,
+                      color: card.textColor,
                       transform: isHovered 
-                        ? 'translateY(-22px) rotate(0deg) scale(1.05)' 
+                        ? 'translateY(-28px) rotate(0deg) scale(1.06)' 
                         : `rotate(${card.tilt}) translateY(0px)`,
-                      zIndex: isHovered ? 20 : idx + 1
+                      zIndex: isHovered ? 40 : idx + 1
                     }}
                     onMouseEnter={() => setHoveredCard(card.id)}
                     onMouseLeave={() => setHoveredCard(null)}
                   >
-                    {/* Top Sticker Badge (Truus Style) */}
-                    <div className="epw-card-sticker-tag" style={{ color: card.color, borderColor: card.color }}>
-                      <span>{card.tag}</span>
+                    {/* Hand-Drawn Sticker on Top Edge */}
+                    {card.sticker}
+
+                    {/* Card Title (Truus Style Heavy Sans Title) */}
+                    <div className="epw-truus-card-header">
+                      <h4 className="epw-truus-title" style={{ color: card.textColor }}>
+                        {card.title}
+                      </h4>
                     </div>
 
-                    {/* Card Title */}
-                    <div className="epw-card-header-row">
-                      <h4 className="epw-card-title">{card.title}</h4>
-                      <span className="epw-card-num">{card.num}</span>
-                    </div>
+                    {/* Hand-Drawn Underline Divider */}
+                    <div 
+                      className="epw-truus-divider" 
+                      style={{ backgroundColor: card.dividerColor }}
+                    ></div>
 
-                    {/* Card Description */}
-                    <p className="epw-card-desc">{card.subtitle}</p>
-
-                    <div className="epw-card-divider" style={{ backgroundColor: card.borderColor }}></div>
-
-                    {/* Bullet Points with Diamond Icons */}
-                    <ul className="epw-card-bullets">
+                    {/* Bullet Points with Diamond Stars */}
+                    <ul className="epw-truus-bullets">
                       {card.items.map((bullet, bIdx) => (
-                        <li key={bIdx} className="epw-card-bullet-item">
-                          <span className="epw-bullet-diamond" style={{ color: card.color }}>✦</span>
+                        <li key={bIdx} className="epw-truus-bullet-item" style={{ color: card.textColor }}>
+                          <span className="epw-truus-diamond" style={{ color: card.bulletColor }}>✦</span>
                           <span>{bullet}</span>
                         </li>
                       ))}
