@@ -29,97 +29,102 @@ const CARD_STARTS = [
 ];
 
 export const journeyTimelineData = {
-  label: 'OUR 12-YEAR EVOLUTION',
-  heading: 'We Never Planned To Build An Ecosystem.',
-  headingLines: ['We Never Planned', 'To Build An Ecosystem.'],
+  label: '12 YEARS. $50M+ IN AD SPEND. COUNTLESS BRANDS SCALED.',
+  heading: 'It Started With A Simple Obsession:',
+  headingLines: ['It Started With A Simple Obsession:', 'Understanding What Makes A Brand Grow.'],
   intro:
-    'It happened one problem at a time. Every new scaling system began with a direct-to-consumer brand saying, "We need help with this too"—and us engineering a scientific, repeatable framework to conquer it.',
-  closingTitle: 'Built In The Scaling Trenches',
-  closing:
-    'None of these frameworks began as theory. Each one was forged through $50M+ in real ad spend, testing real customer psychology, and solving severe growth bottlenecks. What began as a mission to eliminate agency guesswork has evolved into one complete direct-to-consumer growth ecosystem.',
+    "In 2014, I started my journey in eCommerce and paid advertising. I didn't have a playbook. I learned by doing — testing products, studying consumer behavior, launching campaigns, analyzing data, making mistakes, and figuring out what actually moves the needle. And that journey never stopped.",
+  closingBadge: 'AND THAT BRINGS US HERE.',
+  closingTitle: 'BRAND SCALING HACKS',
+  closing: [
+    "Brand Scaling Hacks isn't built from theory. It's built from 12 years of testing, scaling, failing, learning and doing it again.",
+    "It's everything I've learned from being inside the ad accounts, inside the funnels, inside the numbers and alongside the founders actually building these businesses.",
+    "12 years in the game. $50M+ in ad spend. Countless niches. 8 & 9-figure brands. And one obsession that hasn't changed since 2014:",
+    "FIGURING OUT HOW TO SCALE A BRAND."
+  ],
   timeline: [
     {
-      year: '14–19',
-      fullYear: '2014–19',
-      title: 'The Problem I Couldn’t Ignore',
+      year: "'14",
+      fullYear: '2014',
+      title: '2014 — THE BEGINNING',
       teaser:
-        'Five years managing direct-response ad spend. Same excuses everywhere: agencies only manage ads, creatives aren’t included, nobody optimizes funnels.',
+        'I entered the world of eCommerce and performance marketing. The early years were all about learning the fundamentals — offers, creatives, audiences, funnels, and customer psychology.',
       full:
-        'Founders were left juggling fragmented freelancers, burning thousands on generic ad copies, and still had no one accountable for net profit. I knew there had to be an end-to-end framework—one unified growth partner responsible for the entire cash-flow outcome.',
+        'I entered the world of eCommerce and performance marketing. The early years were all about learning the fundamentals — offers, creatives, audiences, funnels, customer psychology and, most importantly, what makes people buy. Every campaign became a lesson. Every failure became data. Every win gave me another piece of the puzzle.',
       attribution: '@gauravecomm',
-      timeAgo: 'the early years',
+      timeAgo: 'the beginning',
       side: 'right',
     },
     {
-      year: "'19",
-      fullYear: '2019',
-      title: 'Direct-Response Creative Lab',
+      year: '15–17',
+      fullYear: '2015–2017',
+      title: '2015–2017 — LEARNING THE GAME',
       teaser:
-        'The first critical bottleneck was creative fatigue. Ad accounts stalled without high-converting angles—or ran aesthetic ads that didn’t convert cold traffic.',
+        'I started working across different eCommerce models, products and markets. Different niches. Different audiences. Different challenges.',
       full:
-        'We engineered direct-response video frameworks designed for one single metric: stop the scroll, agitate acute customer pain points, and trigger immediate high-AOV buying decisions.',
+        'I started working across different eCommerce models, products and markets. Different niches. Different audiences. Different challenges. But the objective was always the same: Find what works. Scale it. And build a system around it. Those years gave me something no course or textbook could: real-world experience.',
       attribution: '@gauravecomm',
-      timeAgo: '7 years ago',
+      timeAgo: 'learning the game',
       side: 'left',
     },
     {
-      year: "'20",
-      fullYear: '2020',
-      title: 'Partnerships Built On Real Accountability',
+      year: '18–20',
+      fullYear: '2018–2020',
+      title: '2018–2020 — FROM CAMPAIGNS TO BRANDS',
       teaser:
-        'Our partner brands entrusted us with their capital—and that trust came with uncompromising responsibility.',
+        'This is where things started changing. I was looking at the bigger picture — how acquisition, offers, creatives, funnels and customer behavior work together.',
       full:
-        'Through rapid pandemic shifts and iOS algorithmic turbulence, every test proved that eCommerce founders needed partners who obsess over contribution margin, landed COGS, and cash-flow liquidation rather than vanity ROAS.',
+        "This is where things started changing. I wasn't just running ads anymore. I was looking at the bigger picture — how acquisition, offers, creatives, funnels and customer behavior work together to create a scalable brand. I began working with increasingly established businesses and helping them move beyond simply getting sales… toward building predictable growth.",
       attribution: '@gauravecomm',
-      timeAgo: '6 years ago',
+      timeAgo: 'from campaigns to brands',
       side: 'left',
     },
     {
-      year: "'21",
-      fullYear: '2021',
-      title: 'Advantage+ & Scientific Media Engine',
+      year: '20–22',
+      fullYear: '2020–2022',
+      title: '2020–2022 — SCALING AT A DIFFERENT LEVEL',
       teaser:
-        'High-converting creatives were firing—so we built systematic Advantage+ and broad media buying architectures.',
+        'The brands got bigger. The budgets got bigger. Working with 8-figure and 9-figure eCommerce brands to solve creative fatigue and scaling bottlenecks.',
       full:
-        'Sending clients to fragmented media buyers destroyed ROI. We unified weekly creative testing cadences with automated horizontal scaling rules to keep customer acquisition costs predictable at scale.',
+        "The brands got bigger. The budgets got bigger. And the responsibility got bigger. I started working with 8-figure and 9-figure eCommerce brands, helping businesses that had already proven their model find new opportunities for growth. At this point, I had seen almost every kind of challenge an eCommerce brand could face: Creative fatigue. Rising acquisition costs. Scaling bottlenecks. Offer problems. Funnel leaks. Audience saturation. And the biggest one of all: How do you keep growing when you've already grown big?",
       attribution: '@gauravecomm',
-      timeAgo: '5 years ago',
+      timeAgo: 'scaling at a different level',
       side: 'right',
     },
     {
-      year: '22–23',
-      fullYear: '2022–23',
-      title: 'Conversion Rate & Funnel Reconstruction',
+      year: '22–24',
+      fullYear: '2022–2024',
+      title: "2022–2024 — BRANDS YOU'VE PROBABLY HEARD OF",
       teaser:
-        'Ads were generating tens of thousands of clicks—but slow Shopify pages and checkout friction were bleeding profit.',
+        'Working with brands that had earned significant recognition — including businesses that appeared on Shark Tank and Forbes.',
       full:
-        'Traffic was arriving, yet unoptimized mobile funnels leaked 60%+ of potential buyers. We rebuilt product pages for sub-1s load times, added dynamic multi-unit quantity tiers, and deployed high-margin 1-click post-purchase upsells.',
+        "Over the years, I had the opportunity to work with brands that had already earned significant recognition — including businesses that had appeared on platforms like Shark Tank and Forbes. That experience taught me an important lesson: Big brands don't necessarily need more traffic. They need better systems for turning attention into customers and customers into long-term growth. That's when my approach to scaling became even more data-driven, systematic and focused on the entire customer journey.",
       attribution: '@gauravecomm',
-      timeAgo: '3–4 years ago',
+      timeAgo: 'shark tank & forbes brands',
       side: 'left',
     },
     {
-      year: "'24",
-      fullYear: '2024',
-      title: 'The Brand Scaling Hacks Engine',
+      year: '24–25',
+      fullYear: '2024–2025',
+      title: "2024–2025 — SHARING WHAT I'VE LEARNED",
       teaser:
-        'We crystallized the complete Brand Scaling Hacks system—turning cold paid ad spend into a self-funding scaling engine.',
+        'Taking what I learned behind the scenes and sharing it publicly through live sessions, masterminds and training.',
       full:
-        'The Brand Scaling Hacks framework integrated offer economics, viral hook variations, fast-loading mobile storefronts, and automated retention loops into one seamless machine—driving single campaigns past $1.52M+ in revenue.',
+        "After years of scaling brands behind the scenes, I started taking what I'd learned and sharing it publicly. Through live sessions, masterminds and training, I began helping other entrepreneurs understand the strategies, frameworks and principles that had taken years to develop. Because I realized something: Experience becomes far more valuable when you can transfer it.",
       attribution: '@gauravecomm',
-      timeAgo: '2 years ago',
+      timeAgo: 'sharing knowledge',
       side: 'left',
     },
     {
       year: "'26",
       fullYear: '2026',
-      title: 'Brand Scaling Hacks Global Ecosystem',
+      title: '2026 — 12 YEARS LATER',
       teaser:
-        'Providing 7 & 8-figure brands with complete end-to-end infrastructure, live mentoring, and private equity readiness.',
+        'Today, $50M+ spent in advertising and 12+ years of experience scaling eCommerce brands across countless niches and business models.',
       full:
-        'Today, Brand Scaling Hacks partners with ambitious brand founders worldwide to eliminate scaling bottlenecks, transition winning products into defensible enterprise brands, and execute predictable 8-figure scaling roadmaps.',
+        "Today, I've spent $50M+ in advertising and accumulated 12+ years of experience scaling eCommerce brands across countless niches, products, markets and business models. I've worked with brands at completely different stages of the journey — from businesses trying to find product-market fit… to established companies doing millions in revenue… to 8- and 9-figure brands looking for their next level of growth. I've seen what works. I've seen what doesn't. I've made the mistakes. I've found the patterns. And I've spent years turning those experiences into repeatable systems.",
       attribution: '@gauravecomm',
-      timeAgo: 'now',
+      timeAgo: '12 years later',
       side: 'left',
     },
   ],
@@ -785,28 +790,69 @@ export function AboutJourney() {
         </div>
 
         {/* Section Closing */}
-        <div style={{ maxWidth: '780px', margin: '60px auto 0 auto', textAlign: 'center' }}>
+        <div style={{ maxWidth: '820px', margin: '70px auto 0 auto', textAlign: 'center' }}>
+          {journeyTimelineData.closingBadge && (
+            <div
+              style={{
+                fontSize: '0.85rem',
+                fontWeight: 800,
+                color: '#dc2626',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                marginBottom: '10px'
+              }}
+            >
+              {journeyTimelineData.closingBadge}
+            </div>
+          )}
           <h3
             style={{
-              fontSize: 'clamp(1.7rem, 3.2vw, 2.4rem)',
+              fontSize: 'clamp(2rem, 3.6vw, 2.8rem)',
               fontWeight: 900,
               color: '#0f172a',
               letterSpacing: '-0.02em',
-              marginBottom: '12px'
+              textTransform: 'uppercase',
+              marginBottom: '20px'
             }}
           >
             {journeyTimelineData.closingTitle}
           </h3>
-          <p
+          <div
             style={{
-              fontSize: '1rem',
-              color: '#64748b',
-              lineHeight: 1.65,
-              margin: 0
+              background: 'linear-gradient(145deg, #0f172a 0%, #020617 100%)',
+              border: '1px solid rgba(220, 38, 38, 0.3)',
+              borderRadius: '24px',
+              padding: 'clamp(24px, 4vw, 44px)',
+              boxShadow: '0 20px 50px rgba(0,0,0,0.15)',
+              textAlign: 'left'
             }}
           >
-            {journeyTimelineData.closing}
-          </p>
+            {Array.isArray(journeyTimelineData.closing) ? (
+              journeyTimelineData.closing.map((para, pIdx) => {
+                const isLast = pIdx === journeyTimelineData.closing.length - 1;
+                return (
+                  <p
+                    key={pIdx}
+                    style={{
+                      fontSize: isLast ? 'clamp(1.1rem, 2vw, 1.45rem)' : '1rem',
+                      fontWeight: isLast ? 900 : 400,
+                      color: isLast ? '#ffb300' : '#cbd5e1',
+                      lineHeight: 1.7,
+                      marginBottom: isLast ? '0' : '16px',
+                      letterSpacing: isLast ? '0.04em' : 'normal',
+                      textTransform: isLast ? 'uppercase' : 'none'
+                    }}
+                  >
+                    {para}
+                  </p>
+                );
+              })
+            ) : (
+              <p style={{ fontSize: '1rem', color: '#cbd5e1', lineHeight: 1.65, margin: 0 }}>
+                {journeyTimelineData.closing}
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </section>

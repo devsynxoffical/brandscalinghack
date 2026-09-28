@@ -31,6 +31,13 @@ function App() {
         } else {
           setActivePage('case-studies');
         }
+      } else if (rawPath.startsWith('/case/')) {
+        const caseId = rawPath.replace('/case/', '');
+        if (caseId) {
+          setActivePage(`case-${caseId}`);
+        } else {
+          setActivePage('case-studies');
+        }
       } else if (rawPath.includes('case-studies')) {
         setActivePage('case-studies');
       } else if (rawPath.includes('viral-creatives')) {

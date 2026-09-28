@@ -2060,20 +2060,20 @@ Scaling 7 & 8-figure eCommerce stores with high-converting creative engines, cas
     instagramUrl: 'https://www.instagram.com/p/DZXZSkyAU7x/'
   },
 
-  // 2. C8lyJ6VSyTy - Laptop screen Meta Ads Dec 17, 2024: $34,596.37 sales, $6,396.37 spend, 5.41 ROAS
+  // 2. C8lyJ6VSyTy - Shopify Dashboard May 1 - Jun 23, 2024: $210.08K Total Sales, 669 orders, 35.48K sessions
   'C8lyJ6VSyTy': {
     shortcode: 'C8lyJ6VSyTy',
-    title: 'Six-Figure Dropshipping Scale: $34,596 in 24h',
-    subtitle: 'Meta Ads Manager Live Audit',
-    revenue: '$34,596 in 24 Hours',
-    roas: '5.41x ROAS',
-    badge: 'VERIFIED META ADS',
-    caption: `Dec 17, 2024 Daily Ad Spend Run:
-• Purchases Conversion Value: $34,596.37
-• Total Ad Spend: $6,396.37
-• Purchase ROAS: 5.41x ROAS
+    title: 'Six-Figure Dropshipping Scale: $210.08K Total Sales',
+    subtitle: 'Shopify Store Live Analytics',
+    revenue: '$210.08K Total Sales',
+    roas: '+61% Growth · 669 Orders',
+    badge: 'VERIFIED SHOPIFY',
+    caption: `May 1 - Jun 23, 2024 Performance:
+• Total Sales: $210.08K (↗ 61%)
+• Total Orders: 669 Orders (↗ 77%)
+• Store Sessions: 35.48K (↗ 71%)
 
-Another Six-Figure Dropshipping Client Wins in the Books! Running ads for your dropshipping brand can be a goldmine—if done right.`,
+Another Six-Figure Dropshipping Client Wins in the Books! 🏆 Running ads for your dropshipping brand can be a goldmine—if done right.`,
     instagramUrl: 'https://www.instagram.com/p/C8lyJ6VSyTy/'
   },
 
@@ -2095,21 +2095,21 @@ It's safe to say we figured out how to make a supplement brand print money.`,
     instagramUrl: 'https://www.instagram.com/p/DZ3yXdciv63/'
   },
 
-  // 4. DZXMWaeEgLe - Meta Ads Table Feb 24, 2025: 20 purchases, $1,695.23 value, $689.57 spend, 2.38 ROAS
+  // 4. DZXMWaeEgLe - Meta Ads Table: $80,227 in 7 Days, 3.97 ROAS, 568 Purchases
   'DZXMWaeEgLe': {
     shortcode: 'DZXMWaeEgLe',
-    title: 'Live Meta Ad Account Audit: 20 Orders',
-    subtitle: 'Cold Traffic Creative Testing',
-    revenue: '$1,695.23 Daily Revenue',
-    roas: '2.38x ROAS',
-    badge: 'DAILY AD ACCOUNT',
-    caption: `Feb 24, 2025 Ad Account Audit:
-• Total Purchases: 20 Orders
-• Conversion Value: $1,695.23
-• Amount Spent: $689.57
-• Purchase ROAS: 2.38x ROAS
+    title: '7-Day Dropshipping Scale: $80,227 in 7 Days',
+    subtitle: 'Meta Ads Manager Live Scale',
+    revenue: '$80,227 in 7 Days',
+    roas: '3.97x ROAS · Meta Ads',
+    badge: 'VERIFIED META ADS',
+    caption: `Jun 1 - Jun 7 Performance Run:
+• Total Revenue: $80,227.81 in 7 Days
+• Ad Spend: $20,232.68
+• Purchases: 568 Orders ($35.62 CPA)
+• Average Purchase ROAS: 3.97x ROAS
 
-The ecom world is split into two groups. There's a small handful doing real numbers who help each other, support each other, and they're all winning.`,
+Did $80,227 in 7 days. One dropshipping brand. 3.97 ROAS. Meta ads.`,
     instagramUrl: 'https://www.instagram.com/p/DZXMWaeEgLe/'
   },
 
@@ -2123,7 +2123,10 @@ The ecom world is split into two groups. There's a small handful doing real numb
     badge: 'HIGH AOV PROOF',
     caption: `Days like this are why I do this. 🤑 $62,182 in 7 days. 4.50 ROAS. High ticket Supplement brand. $145 average order value.
 
-People said high ticket doesn't work. People say a lot of things. If you're building a real brand, cash-flow architecture is everything.`,
+• Total Revenue: $62,182.03 in 7 Days
+• Ad Spend: $13,803.37
+• Purchases: 427 Orders ($32.33 CPA)
+• Average ROAS: 4.50x ROAS`,
     instagramUrl: 'https://www.instagram.com/p/DZS8JtQEqJy/'
   },
 
@@ -2143,27 +2146,32 @@ People said high ticket doesn't work. People say a lot of things. If you're buil
   'DZS6d1XEgl1': {
     shortcode: 'DZS6d1XEgl1',
     title: 'DTC Fitness Brand Scaled to $102,000 in May',
-    subtitle: 'Fitness & Apparel Niche',
+    subtitle: 'Fitness Brand Live Analytics',
     revenue: '$102,000 in May',
-    roas: '3.85x ROAS',
+    roas: '+112% Growth · 769 Orders',
     badge: '6-FIGURE MONTH',
     caption: `Just scaled another DTC fitness brand to $102,000 in May.
 
-If you're sitting there wondering why your numbers don't look like this yet... Don't quit. The ones who figure it out are the ones who master creative volume and unit economics.`,
+• Total Sales: $102,356.00 (↗ 112%)
+• Total Orders: 769 Orders (↗ 160%)
+• Returning Customer Rate: 41.22% (↗ 205%)`,
     instagramUrl: 'https://www.instagram.com/p/DZS6d1XEgl1/'
   },
 
   // 8. DW1JuKLlAgI - DTC Fitness: $80,000 in 24 Hours, 862 Orders
   'DW1JuKLlAgI': {
     shortcode: 'DW1JuKLlAgI',
-    title: 'DTC Brand Velocity: $80,000 in 24 Hours',
+    title: 'DTC Fitness: $80K in 24 Hours',
     subtitle: '862 Orders Dispatched',
-    revenue: '$80,000 in 24 Hours',
+    revenue: '$80K in 24 Hours',
     roas: '862 Orders Dispatched',
     badge: '24-HOUR VELOCITY',
     caption: `Just another day inside one of our DTC fitness brands: $80K clocked in 24 hours. 862 orders moving out.
 
-Been a little quiet with posting lately... Doesn't mean we've been quiet behind the scenes.`,
+• 24h Revenue: $80,733.82
+• Orders Dispatched: 862 Orders
+• Average Purchase Value: $93.66
+• Purchase ROAS: 2.71x ROAS`,
     instagramUrl: 'https://www.instagram.com/p/DW1JuKLlAgI/'
   },
 
@@ -2201,14 +2209,16 @@ If you don't dial your unit economics, scale breaks. When you fix the offer, sca
   // 11. DIpxfULBj7r - $68,679 in revenue with $16,172 ad spend in 18 days (4.25 ROAS)
   'DIpxfULBj7r': {
     shortcode: 'DIpxfULBj7r',
-    title: 'DTC Powerhouse: $68,679 in 18 Days',
+    title: 'Dropshipping to DTC Powerhouse: $68,679 in 18 Days',
     subtitle: '$16,172 Ad Spend (4.25x ROAS)',
     revenue: '$68,679 in 18 Days',
-    roas: '4.25x ROAS',
+    roas: '4.25x ROAS ($16.1K Spend)',
     badge: '18-DAY SPRINT',
     caption: `💥 In the last 18 days, we turned one of those struggling dropshipping stores into a DTC powerhouse — generating $68,679 in revenue with just $16,172 in ad spend.
 
-Now, we're on track to cross $100K+ this month.`,
+• Revenue Generated: $68,679.29 (Apr 1 - Apr 18)
+• Ad Spend: $16,172.78
+• Average ROAS: 4.25x ROAS`,
     instagramUrl: 'https://www.instagram.com/p/DIpxfULBj7r/'
   },
 

@@ -5,33 +5,33 @@ import AboutJourney from '../components/AboutJourney';
 export default function AboutPage({ onOpenBooking, onNavigate }) {
   const milestones = [
     { 
-      number: '12+', 
+      number: '12', 
       unit: 'Years', 
-      title: 'In The Scaling Trenches', 
-      desc: 'Over a decade of testing, analyzing buyer psychology, and building sustainable direct-to-consumer businesses.' 
+      title: '12 Years In The Game', 
+      desc: 'Testing, scaling, failing, learning and building repeatable direct-to-consumer systems since 2014.' 
     },
     { 
       number: '$50M+', 
-      unit: 'Spend', 
-      title: 'Ad Spend Managed', 
-      desc: 'Deployed across Meta (Facebook/Instagram), TikTok, YouTube, and Google with consistent cash-flow positive returns.' 
-    },
-    { 
-      number: '30+', 
-      unit: 'Niches', 
-      title: 'Global Market Mastery', 
-      desc: 'Proven frameworks battle-tested across health, wellness, beauty, apparel, gadgets, home goods, and high-ticket offers.' 
+      unit: 'Ad Spend', 
+      title: 'In Advertising Managed', 
+      desc: 'Tested across countless niches, products, markets, and business models with proven unit economics.' 
     },
     { 
       number: '8 & 9', 
       unit: 'Figures', 
-      title: 'Scaled Exits & Enterprises', 
-      desc: 'Hands-on scaling taking early-stage Shopify stores and coaching funnels to multi-million dollar enterprise valuations.' 
+      title: '8 & 9-Figure Brands Scaled', 
+      desc: 'Scaling high-growth eCommerce brands, including businesses featured on Shark Tank and Forbes.' 
+    },
+    { 
+      number: '100+', 
+      unit: 'Brands', 
+      title: 'Countless Brands Scaled', 
+      desc: 'From finding product-market fit to multi-million dollar predictable growth and category leadership.' 
     }
   ];
 
   return (
-    <div style={{ paddingTop: '80px', minHeight: '100vh', background: '#ffffff', color: '#0f172a' }}>
+    <div style={{ paddingTop: '0px', minHeight: '100vh', background: '#ffffff', color: '#0f172a' }}>
       {/* Gaurav Authority Sitting Horizon Stage */}
       <SittingHeroBanner onOpenBooking={onOpenBooking} />
 

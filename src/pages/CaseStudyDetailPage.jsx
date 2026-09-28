@@ -1,17 +1,33 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, CheckCircle2, TrendingUp, DollarSign, ExternalLink, ShieldCheck, Play } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, TrendingUp, DollarSign, ExternalLink, ShieldCheck, Play, Copy, Check } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import { allCaseStudies } from '../data/allCaseStudies';
 
 export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBooking }) {
-  // Find case study from the unified 133 case studies database
+  const [copied, setCopied] = useState(false);
+
+  // Find case study from the 79 verified case studies database
   const cleanId = (caseStudyId || '').replace(/^case-/, '');
-  const caseStudy = allCaseStudies.find(
-    (cs) => cs.id === cleanId || cs.slug === cleanId || cs.shortcode === cleanId || cs.id === caseStudyId
-  ) || allCaseStudies[0];
+  const currentIndex = allCaseStudies.findIndex(
+    (cs) => cs.id === cleanId || cs.slug === cleanId || cs.shortcode === cleanId || String(cs.index) === cleanId
+  );
+  
+  const caseStudy = currentIndex !== -1 ? allCaseStudies[currentIndex] : allCaseStudies[0];
+  const activeIdx = currentIndex !== -1 ? currentIndex : 0;
+
+  // Next and Previous Case Studies
+  const prevStudy = activeIdx > 0 ? allCaseStudies[activeIdx - 1] : allCaseStudies[allCaseStudies.length - 1];
+  const nextStudy = activeIdx < allCaseStudies.length - 1 ? allCaseStudies[activeIdx + 1] : allCaseStudies[0];
 
   const hasVideo = Boolean(caseStudy.videoUrl && caseStudy.videoType !== 'image');
-  const isYoutube = caseStudy.videoType === 'youtube';
+
+  const handleCopyCaption = () => {
+    if (caseStudy.fullCaption) {
+      navigator.clipboard.writeText(caseStudy.fullCaption);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    }
+  };
 
   // Get related case studies (3 items different from current)
   const relatedStudies = allCaseStudies
@@ -20,8 +36,8 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
 
   return (
     <div className="case-study-detail-page" style={{ paddingTop: '90px', minHeight: '100vh', background: '#05070c', color: '#ffffff' }}>
-      {/* Top Breadcrumb Bar */}
-      <div className="container" style={{ paddingTop: '24px', paddingBottom: '16px' }}>
+      {/* Top Breadcrumb & Next/Prev Navigation Bar */}
+      <div className="container" style={{ paddingTop: '24px', paddingBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
         <button
           onClick={() => onNavigate && onNavigate('case-studies')}
           style={{
@@ -41,8 +57,53 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
         >
           <ArrowLeft size={16} />
-          <span>← Back to All Case Studies</span>
+          <span>← Back to All 79 Case Studies</span>
         </button>
+
+        {/* Next / Previous Reel Navigation */}
+        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            onClick={() => onNavigate && onNavigate(`case-${prevStudy.id}`)}
+            style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              color: '#cbd5e1',
+              borderRadius: '999px',
+              padding: '6px 14px',
+              fontSize: '0.78rem',
+              fontWeight: 800,
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px'
+            }}
+          >
+            <span>← Previous</span>
+          </button>
+
+          <span style={{ fontFamily: 'ui-monospace, monospace', fontSize: '0.8rem', color: '#ff8a65', fontWeight: 800 }}>
+            {caseStudy.index} / {allCaseStudies.length}
+          </span>
+
+          <button
+            onClick={() => onNavigate && onNavigate(`case-${nextStudy.id}`)}
+            style={{
+              background: 'rgba(255, 255, 255, 0.05)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              color: '#cbd5e1',
+              borderRadius: '999px',
+              padding: '6px 14px',
+              fontSize: '0.78rem',
+              fontWeight: 800,
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px'
+            }}
+          >
+            <span>Next →</span>
+          </button>
+        </div>
       </div>
 
       {/* Case Study Hero Section */}
@@ -65,7 +126,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
             }}
           >
             <ShieldCheck size={14} />
-            <span>{caseStudy.badge || 'VERIFIED CASE STUDY'}</span>
+            <span>{caseStudy.category || 'VERIFIED SCALE'}</span>
           </span>
 
           <span
@@ -81,7 +142,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
               textTransform: 'uppercase'
             }}
           >
-            {caseStudy.category || 'eCommerce Scaling'}
+            {caseStudy.revenue}
           </span>
         </div>
 
@@ -117,7 +178,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            minHeight: isYoutube ? '500px' : '480px',
+            minHeight: '480px',
             maxHeight: '80vh'
           }}
         >
@@ -140,21 +201,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
             />
           )}
 
-          {isYoutube ? (
-            <iframe
-              src={`${caseStudy.embedUrl}?autoplay=1&rel=0`}
-              title={caseStudy.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              style={{
-                position: 'relative',
-                zIndex: 2,
-                width: '100%',
-                height: '520px',
-                border: 'none'
-              }}
-            />
-          ) : hasVideo ? (
+          {hasVideo ? (
             <video
               src={caseStudy.videoUrl}
               poster={caseStudy.image}
@@ -242,18 +289,29 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
               </div>
             </div>
 
-            {caseStudy.instagramUrl && (
-              <a
-                href={caseStudy.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <button
+                onClick={handleCopyCaption}
                 className="btn-secondary"
-                style={{ padding: '8px 18px', fontSize: '0.82rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                style={{ padding: '8px 16px', fontSize: '0.82rem', display: 'inline-flex', alignItems: 'center', gap: '6px', background: copied ? 'rgba(34, 197, 94, 0.15)' : undefined, borderColor: copied ? '#22c55e' : undefined, color: copied ? '#4ade80' : undefined }}
               >
-                <span>View on Instagram</span>
-                <ExternalLink size={14} />
-              </a>
-            )}
+                {copied ? <Check size={14} /> : <Copy size={14} />}
+                <span>{copied ? 'Copied Description' : 'Copy Description'}</span>
+              </button>
+
+              {caseStudy.instagramUrl && (
+                <a
+                  href={caseStudy.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary"
+                  style={{ padding: '8px 18px', fontSize: '0.82rem', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
+                >
+                  <span>View on Instagram</span>
+                  <ExternalLink size={14} />
+                </a>
+              )}
+            </div>
           </div>
 
           <div

@@ -223,7 +223,7 @@ export const liveSessionsData = [
     videoType: 'youtube',
     videoUrl: 'https://www.youtube.com/watch?v=6beGKoXuDKg',
     embedUrl: 'https://www.youtube-nocookie.com/embed/6beGKoXuDKg',
-    thumbnail: 'https://i.ytimg.com/vi/6beGKoXuDKg/hqdefault.jpg',
+    thumbnail: '/assets/live_thumbs/thumb_session_1.svg',
     description: "Pulling back the curtain on the exact strategies I've been using for my clients, taking their brands to a staggering $100K/month run rate, which you can copy-paste to build and scale to 6 & 7 figures.",
     keyTakeaways: [
       'Exact strategies used to scale client brands to $100K/month run rate',
@@ -242,7 +242,7 @@ export const liveSessionsData = [
     videoType: 'youtube',
     videoUrl: 'https://www.youtube.com/watch?v=fhvnUlErsrw',
     embedUrl: 'https://www.youtube-nocookie.com/embed/fhvnUlErsrw',
-    thumbnail: 'https://i.ytimg.com/vi/fhvnUlErsrw/hqdefault.jpg',
+    thumbnail: '/assets/live_thumbs/thumb_session_2.svg',
     description: 'During this groundbreaking event, we went in-depth on multiple DTC niches (Fitness, Skincare, Makeup, Fashion & Apparel), playing with emotional & logical triggers, and mastering copywriting with different ad temperatures.',
     keyTakeaways: [
       'Multi-niche DTC scaling across Fitness, Skincare, Makeup & Apparel',
@@ -261,7 +261,7 @@ export const liveSessionsData = [
     videoType: 'youtube',
     videoUrl: 'https://www.youtube.com/watch?v=55htNKhyx14',
     embedUrl: 'https://www.youtube-nocookie.com/embed/55htNKhyx14',
-    thumbnail: 'https://i.ytimg.com/vi/55htNKhyx14/hqdefault.jpg',
+    thumbnail: '/assets/live_thumbs/thumb_session_3.svg',
     description: "The secrets behind my E-commerce clients' remarkable success and how I manage to scale their store's sales beyond the $100,000 per month milestone using viral video ads.",
     keyTakeaways: [
       'Viral video ads framework for high-velocity DTC acquisition',
@@ -280,7 +280,7 @@ export const liveSessionsData = [
     videoType: 'youtube',
     videoUrl: 'https://www.youtube.com/watch?v=FhybNr5vIUM',
     embedUrl: 'https://www.youtube-nocookie.com/embed/FhybNr5vIUM',
-    thumbnail: 'https://i.ytimg.com/vi/FhybNr5vIUM/hqdefault.jpg',
+    thumbnail: '/assets/live_thumbs/thumb_session_4.svg',
     description: "You might have a winning product, but if your landing page doesn't convert properly your business WILL NOT be profitable. Discover how our clients achieve a 5% conversion rate while the industry average is 1.82%.",
     keyTakeaways: [
       'How our clients achieve an industry-leading 5% store conversion rate',

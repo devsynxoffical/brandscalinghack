@@ -29,12 +29,24 @@ const row2Logos = [
 ];
 
 const bigMarqueeItems = [
-  { text: 'TURNING PAID TRAFFIC', highlight: false },
-  { text: 'INTO 8-FIGURE REVENUE', highlight: true },
-  { text: 'SCIENTIFIC ACQUISITION', highlight: false },
-  { text: 'HIGH-AOV DTC FUNNELS', highlight: true },
-  { text: 'VIRAL UGC CREATIVE LAB', highlight: false },
+  { text: 'FROM YOUR FIRST SALE', highlight: false },
+  { text: 'TO 9 FIGURES', highlight: true },
+  { text: 'STRATEGY & ACQUISITION', highlight: false },
+  { text: 'CONVERSION ENGINE', highlight: true },
+  { text: 'SCALE DTC PLAYBOOK', highlight: false },
   { text: '$50M+ AD SPEND DEPLOYED', highlight: true },
+];
+
+export const BRANDS_SCALED = [
+  { name: "Juice Beauty", cat: "Organic Skincare & Makeup", followers: "357K", handle: "@juicebeauty", url: "https://www.instagram.com/juicebeauty/", img: "/brands/juicebeauty.png" },
+  { name: "Vedge Nutrition", cat: "Plant-Based Supplements", followers: "88.7K", handle: "@vedgenutrition", url: "https://www.instagram.com/vedgenutrition/", img: "/brands/vedge.png" },
+  { name: "Dr Naomi Skin", cat: "Clinical Skincare & Devices", followers: "85K", handle: "@drnaomiskin", url: "https://www.instagram.com/drnaomiskin/", img: "/brands/drnaomi.png" },
+  { name: "Water Jewelers", cat: "Premium Jewelry", followers: "81.1K", handle: "@waterwatch.co", url: "https://www.instagram.com/waterwatch.co", img: "/brands/waterjewelers.png" },
+  { name: "Little & Lively", cat: "Canadian Baby & Kids Clothing", followers: "80K", handle: "@littleandlively", url: "https://www.instagram.com/littleandlively/", img: "/brands/littleandlively.png" },
+  { name: "Veil Cosmetics", cat: "Vegan Cosmetics", followers: "52.1K", handle: "@veilcosmetics", url: "https://www.instagram.com/veilcosmetics/", img: "/brands/veil.png" },
+  { name: "ionBottles", cat: "Hydrogen Water Bottles", followers: "23.3K", handle: "@ionbottles", url: "https://www.instagram.com/ionbottles", img: "/brands/ionbottles.png" },
+  { name: "Ghost Democracy", cat: "Clean Skincare", followers: "17.5K", handle: "@ghostdemocracy", url: "https://www.instagram.com/ghostdemocracy/", img: "/brands/ghostdemocracy.png" },
+  { name: "Swamp Kitten Jewelry", cat: "Jewelry & Watches", followers: "11K", handle: "Facebook", url: "https://www.facebook.com/kristalizejewelry/", img: "/brands/swampkitten.png" },
 ];
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {
@@ -126,14 +138,14 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
           {/* Top Live Status Pill */}
           <div className="bsh-hero-top-pill">
             <span className="bsh-live-dot" />
-            <span className="bsh-pill-text">$50M+ AD SPEND DEPLOYED · 12+ YEARS SCALING 8-FIGURE BRANDS</span>
+            <span className="bsh-pill-text">01 — HERO</span>
           </div>
 
           {/* Elegant Top Subhead */}
-          <div className="bsh-hero-header-eyebrow">
-            <span className="bsh-serif-italic">Scaling Brands</span>{' '}
-            <span className="bsh-bold-flame">To 8–Figures</span>
-          </div>
+          <h1 className="bsh-hero-header-eyebrow">
+            <span className="bsh-serif-italic">From Your First Sale To</span>{' '}
+            <span className="bsh-bold-flame">9 Figures.</span>
+          </h1>
         </div>
 
         {/* ========================================================================= */}
@@ -164,89 +176,102 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
           </div>
         </div>
 
-        {/* Hero Subtitle & Action CTAs */}
+        {/* Hero Subtitle, Services Pills & Action CTAs */}
         <div className="bsh-hero-mid-controls">
-          <p className="bsh-hero-sub-description">
-            SCIENTIFIC CUSTOMER ACQUISITION & ECOMMERCE GROWTH ENGINE · $50M+ DEPLOYED
+          <p className="bsh-hero-sub-description" style={{ maxWidth: '820px', fontSize: 'clamp(14px, 1.35vw, 17px)', lineHeight: 1.5, color: '#f1f5f9', textTransform: 'none', fontWeight: 600, letterSpacing: '0.01em', marginBottom: '16px' }}>
+            We build the strategy, acquisition and conversion engine behind eCommerce brands that are built to scale.
           </p>
 
-          <div className="bsh-hero-cta-group">
+          {/* Services / Channels Row */}
+          <div className="bsh-hero-services-row">
+            <span>Shopify</span>
+            <span className="bsh-services-dot">•</span>
+            <span>Creatives</span>
+            <span className="bsh-services-dot">•</span>
+            <span>Meta Ads</span>
+            <span className="bsh-services-dot">•</span>
+            <span>Google Ads</span>
+            <span className="bsh-services-dot">•</span>
+            <span>CRO</span>
+            <span className="bsh-services-dot">•</span>
+            <span>Scaling</span>
+          </div>
+
+          <div className="bsh-hero-cta-group" style={{ marginTop: '22px' }}>
             <button className="btn-primary bsh-cta-primary-btn" onClick={onOpenBooking}>
               <span>SCALE YOUR BRAND</span>
               <ArrowRight size={18} />
             </button>
             <button
               className="btn-secondary bsh-cta-secondary-btn"
-              onClick={() => onNavigate ? onNavigate('cases') : null}
+              onClick={() => onNavigate ? onNavigate('case-studies') : null}
             >
               <Play size={14} color="#ff5722" />
-              <span>118+ CASE STUDIES</span>
+              <span>79+ CASE STUDIES</span>
             </button>
           </div>
         </div>
 
-        {/* Bottom 3 Capability Cards (Custom Styled with glowing accents) */}
-        <div className="bsh-hero-capabilities-bar">
-          <div className="container">
-            <div className="bsh-capabilities-grid">
-              {/* 01 Paid Media & Scaling */}
-              <div
-                className="bsh-cap-card"
-                onClick={() => onNavigate ? onNavigate('growth') : null}
-              >
-                <div className="bsh-cap-left">
-                  <div className="bsh-cap-icon-box bsh-icon-flame">
-                    <TrendingUp size={22} color="#ff5722" />
-                  </div>
-                  <div className="bsh-cap-info">
-                    <span className="bsh-cap-num">01</span>
-                    <h3 className="bsh-cap-title">Paid Media & Scaling</h3>
-                    <p className="bsh-cap-sub">Meta Advantage+, Scientific CAC & Scale</p>
-                  </div>
-                </div>
-                <div className="bsh-cap-arrow-btn">
-                  <ArrowUpRight size={16} />
-                </div>
+        {/* ========================================================================= */}
+        {/* SCROLLING BRAND SHOWCASE CARDS (Infinite Marquee) */}
+        {/* ========================================================================= */}
+        <div className="bsh-hero-brands-marquee-bar">
+          <div className="bsh-hero-brands-scroll-wrap">
+            <div className="bsh-hero-brands-track">
+              <div className="bsh-hero-brands-group">
+                {BRANDS_SCALED.map((b, idx) => (
+                  <a
+                    key={`brand-a-${idx}`}
+                    className="bsh-brand-card"
+                    href={b.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="bsh-brand-top">
+                      <span className="bsh-brand-handle">{b.handle}</span>
+                      <span className="bsh-brand-arrow">
+                        <ArrowUpRight size={14} />
+                      </span>
+                    </div>
+                    <div className="bsh-brand-avatar">
+                      <img src={b.img} alt={b.name} loading="lazy" />
+                    </div>
+                    <h3 className="bsh-brand-name">{b.name}</h3>
+                    <p className="bsh-brand-cat">{b.cat}</p>
+                    <div className="bsh-brand-stat">
+                      <b className="bsh-brand-followers">{b.followers}</b>
+                      <span className="bsh-brand-stat-label">Followers</span>
+                    </div>
+                  </a>
+                ))}
               </div>
-
-              {/* 02 Viral Creative Studio */}
-              <div
-                className="bsh-cap-card"
-                onClick={() => onNavigate ? onNavigate('viral-creatives') : null}
-              >
-                <div className="bsh-cap-left">
-                  <div className="bsh-cap-icon-box bsh-icon-sparkle">
-                    <Sparkles size={22} color="#ff7043" />
-                  </div>
-                  <div className="bsh-cap-info">
-                    <span className="bsh-cap-num">02</span>
-                    <h3 className="bsh-cap-title">Viral Creative Studio</h3>
-                    <p className="bsh-cap-sub">High-Converting UGC, Hooks & Pattern Interrupts</p>
-                  </div>
-                </div>
-                <div className="bsh-cap-arrow-btn">
-                  <ArrowUpRight size={16} />
-                </div>
-              </div>
-
-              {/* 03 Conversion & High-AOV Funnels */}
-              <div
-                className="bsh-cap-card"
-                onClick={() => onNavigate ? onNavigate('cases') : (onOpenBooking ? onOpenBooking() : null)}
-              >
-                <div className="bsh-cap-left">
-                  <div className="bsh-cap-icon-box bsh-icon-zap">
-                    <Zap size={22} color="#ffb300" />
-                  </div>
-                  <div className="bsh-cap-info">
-                    <span className="bsh-cap-num">03</span>
-                    <h3 className="bsh-cap-title">Conversion & High-AOV Funnels</h3>
-                    <p className="bsh-cap-sub">Shopify Optimization, Multi-Tier Bundles & CRO</p>
-                  </div>
-                </div>
-                <div className="bsh-cap-arrow-btn">
-                  <ArrowUpRight size={16} />
-                </div>
+              <div className="bsh-hero-brands-group" aria-hidden="true">
+                {BRANDS_SCALED.map((b, idx) => (
+                  <a
+                    key={`brand-b-${idx}`}
+                    className="bsh-brand-card"
+                    href={b.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    tabIndex="-1"
+                  >
+                    <div className="bsh-brand-top">
+                      <span className="bsh-brand-handle">{b.handle}</span>
+                      <span className="bsh-brand-arrow">
+                        <ArrowUpRight size={14} />
+                      </span>
+                    </div>
+                    <div className="bsh-brand-avatar">
+                      <img src={b.img} alt={b.name} loading="lazy" />
+                    </div>
+                    <h3 className="bsh-brand-name">{b.name}</h3>
+                    <p className="bsh-brand-cat">{b.cat}</p>
+                    <div className="bsh-brand-stat">
+                      <b className="bsh-brand-followers">{b.followers}</b>
+                      <span className="bsh-brand-stat-label">Followers</span>
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
           </div>

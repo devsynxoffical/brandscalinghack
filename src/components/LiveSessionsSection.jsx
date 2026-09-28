@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, ArrowUpRight, Maximize2 } from 'lucide-react';
+import { Play, ArrowUpRight, Maximize2, Sparkles, Radio } from 'lucide-react';
 import { liveSessionsData } from '../data/mockData';
 
 export default function LiveSessionsSection({ onOpenVideo }) {
@@ -28,22 +28,32 @@ export default function LiveSessionsSection({ onOpenVideo }) {
 
   return (
     <section className="videos-section-theater">
-      <div className="container">
+      <div className="theater-glow-orb"></div>
+      
+      <div className="container" style={{ position: 'relative', zIndex: 5 }}>
         {/* Header */}
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '24px', flexWrap: 'wrap', gap: '12px' }}>
-          <h2 style={{ fontSize: '1.85rem', fontWeight: 850, color: '#0f172a' }}>
-            Live Sessions
-          </h2>
-          <span style={{ fontSize: '0.82rem', color: '#ea580c', fontWeight: 800, letterSpacing: '0.08em' }}>
-            LIVE MASTERCLASSES & PODCAST BREAKDOWNS
-          </span>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '28px', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'rgba(234, 88, 12, 0.15)', border: '1px solid rgba(234, 88, 12, 0.35)', padding: '5px 12px', borderRadius: '9999px', color: '#fb923c', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.08em', marginBottom: '8px', textTransform: 'uppercase' }}>
+              <Radio size={14} className="animate-pulse" />
+              <span>LIVE MASTERCLASSES &amp; PODCAST BREAKDOWNS</span>
+            </div>
+            <h2 style={{ fontSize: '2.2rem', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.02em', margin: 0 }}>
+              Live Sessions <span style={{ color: '#ff5722' }}>&amp; Breakdowns</span>
+            </h2>
+          </div>
+          
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', fontSize: '0.85rem', fontWeight: 600 }}>
+            <Sparkles size={16} color="#fbbf24" />
+            <span>Over 7+ Hours of Deep Strategic Frameworks</span>
+          </div>
         </div>
 
         {/* Grid Layout */}
         <div className="videos-layout-grid">
           {/* Left Column: Playlist */}
           <div className="video-sidebar-playlist">
-            {liveSessionsData.map((session) => (
+            {liveSessionsData.map((session, idx) => (
               <div
                 key={session.id}
                 className={`video-playlist-item ${selectedSession.id === session.id ? 'active' : ''}`}
@@ -51,27 +61,19 @@ export default function LiveSessionsSection({ onOpenVideo }) {
               >
                 <div className="video-thumb-mini">
                   <img src={session.thumbnail} alt={session.title} />
-                  <div
-                    style={{
-                      position: 'absolute',
-                      inset: 0,
-                      background: 'rgba(0,0,0,0.35)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center'
-                    }}
-                  >
-                    <Play size={16} fill="#fff" color="#fff" />
+                  <div className="video-thumb-overlay">
+                    <div className="mini-play-circle">
+                      <Play size={13} fill="#ffffff" color="#ffffff" style={{ marginLeft: '2px' }} />
+                    </div>
                   </div>
+                  <span className="mini-duration-pill">{session.duration}</span>
                 </div>
 
                 <div className="video-item-meta">
                   <div className="video-item-title">{session.title}</div>
                   <div className="video-item-author">
-                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '18px', height: '18px', borderRadius: '50%', background: '#ff3d00', color: '#fff', fontSize: '0.65rem' }}>
-                      ▶
-                    </span>
-                    <span>{(session.host || session.instructor || 'Gaurav Kapoor').split('•')[0].trim()} • {session.duration || '15 min'}</span>
+                    <span className="live-dot-badge">●</span>
+                    <span>{(session.host || session.instructor || 'Gaurav Kapoor').split('•')[0].trim()}</span>
                   </div>
                 </div>
               </div>
@@ -80,26 +82,9 @@ export default function LiveSessionsSection({ onOpenVideo }) {
             {/* Bottom Orange-Red Pill Button */}
             <button
               onClick={() => onOpenVideo(selectedSession)}
-              style={{
-                width: '100%',
-                background: 'linear-gradient(135deg, #ff5722 0%, #ff1e27 100%)',
-                color: '#ffffff',
-                fontWeight: 800,
-                fontSize: '0.92rem',
-                padding: '14px',
-                borderRadius: '9999px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px',
-                marginTop: '10px',
-                transition: 'all 0.25s ease',
-                boxShadow: '0 6px 20px rgba(255, 61, 0, 0.38)',
-                border: 'none',
-                cursor: 'pointer'
-              }}
+              className="btn-theater-all-videos"
             >
-              <span>All Videos</span>
+              <span>Watch All Sessions</span>
               <ArrowUpRight size={18} />
             </button>
           </div>
@@ -144,7 +129,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                   )
                 ) : (
                   <>
-                    {/* Ambient Blurred Backdrop for seamless box fit */}
+                    {/* Ambient Blurred Backdrop */}
                     <div
                       className="main-player-bg-ambient"
                       style={{ backgroundImage: `url(${selectedSession.thumbnail})` }}
@@ -155,22 +140,22 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                       src={selectedSession.thumbnail}
                       alt={selectedSession.title}
                       onClick={() => setIsPlayingInline(true)}
-                      style={{ cursor: 'pointer' }}
+                      style={{ cursor: 'pointer', width: '100%', height: '100%', objectFit: 'contain', position: 'relative', zIndex: 2 }}
                     />
 
-                    {/* White Play Button with Black Arrow */}
+                    {/* Glowing Vibrant Play Button */}
                     <button
                       type="button"
                       className="player-play-btn"
                       onClick={() => setIsPlayingInline(true)}
                       aria-label="Play video"
                     >
-                      <Play size={30} fill="#000000" color="#000000" style={{ marginLeft: '4px' }} />
+                      <Play size={34} fill="#ffffff" color="#ffffff" style={{ marginLeft: '4px' }} />
                     </button>
 
                     {/* Duration Badge */}
                     <div className="player-duration-badge">
-                      {selectedSession.duration}
+                      ⏱ {selectedSession.duration}
                     </div>
 
                     {/* Expand/Modal Button in top left */}
@@ -181,27 +166,10 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                         onOpenVideo(selectedSession);
                       }}
                       title="Open in Theatre Modal"
-                      style={{
-                        position: 'absolute',
-                        top: '16px',
-                        left: '16px',
-                        background: 'rgba(0, 0, 0, 0.75)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
-                        borderRadius: '8px',
-                        padding: '6px 10px',
-                        color: '#fff',
-                        fontSize: '0.8rem',
-                        fontWeight: 700,
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '6px',
-                        cursor: 'pointer',
-                        zIndex: 10,
-                        backdropFilter: 'blur(8px)'
-                      }}
+                      className="btn-theatre-fullview"
                     >
                       <Maximize2 size={14} />
-                      <span>Full View</span>
+                      <span>Full View Theater</span>
                     </button>
                   </>
                 )}
@@ -219,12 +187,12 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                     onError={(e) => { e.target.src = '/assets/gaurav_portrait.jpg'; }}
                   />
                 </div>
-                <span style={{ color: '#0f172a', fontWeight: 800, fontSize: '0.92rem' }}>
+                <span style={{ color: '#ffffff', fontWeight: 800, fontSize: '0.94rem' }}>
                   {selectedSession?.host || selectedSession?.instructor || 'Gaurav Kapoor • Live Session'}
                 </span>
-                <span style={{ color: '#94a3b8' }}>•</span>
-                <span style={{ color: '#64748b', fontSize: '0.9rem', fontWeight: 600 }}>
-                  {selectedSession?.date || 'Live Session'}
+                <span style={{ color: 'rgba(255,255,255,0.4)' }}>•</span>
+                <span style={{ color: '#fb923c', fontSize: '0.88rem', fontWeight: 700 }}>
+                  {selectedSession?.date || 'Official Stream'}
                 </span>
               </div>
             </div>

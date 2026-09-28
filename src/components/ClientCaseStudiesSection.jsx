@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { allCaseStudies } from '../data/allCaseStudies';
-import { ArrowRight, ExternalLink, Search, Play, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ExternalLink, Search, Play, ShieldCheck, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 const CATEGORIES = ['All', 'Meta Scaling', 'Creative Hooks', '8-Figure Proof', 'CRO & Funnels', 'Zero to Scale', 'High AOV DTC'];
@@ -20,7 +20,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
       onClick={() => onNavigate ? onNavigate(`case-${study.id}`) : onOpenModal(study)}
       style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
     >
-      {/* Image / Video Container with Brand Logo Badge */}
+      {/* Image / Video Container with Seamless Blend */}
       <div className="showcase-img-wrap">
         {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
         <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
@@ -49,23 +49,20 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
           <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
         )}
 
-        {/* Top Badge (Only if verified and not Instagram Reel) */}
-        {study.badge && !study.badge.toUpperCase().includes('INSTAGRAM') && !study.badge.toUpperCase().includes('REEL') && (
-          <div className="showcase-brand-badge">
-            <span>{study.badge}</span>
-          </div>
-        )}
-
-        {/* Bottom ROAS Tag */}
-        <div className="showcase-roas-tag">
+        {/* Bottom Verified Metrics Pill */}
+        <div className="showcase-roas-tag" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <span style={{ fontWeight: 900, color: '#ffeb3b' }}>{study.revenue}</span>
+          <span style={{ opacity: 0.5 }}>|</span>
           <span>{study.roas || '4.2x ROAS'}</span>
         </div>
       </div>
 
-      {/* Bottom Card Content - Only Title Heading & Action Buttons */}
-      <div className="showcase-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      {/* Bottom Card Content - Title Heading & Action Buttons */}
+      <div className="showcase-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '18px 20px' }}>
         <div>
-          <div className="showcase-card-metric" style={{ marginBottom: '14px', minHeight: 'auto' }}>{study.title}</div>
+          <div className="showcase-card-metric" style={{ marginBottom: '14px', minHeight: 'auto', fontSize: '1rem', fontWeight: 800, lineHeight: 1.35, color: '#ffffff' }}>
+            {study.title}
+          </div>
         </div>
         
         {/* Card Action Links */}
@@ -90,7 +87,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
               transition: 'all 0.2s ease'
             }}
           >
-            <span>Full Case Page</span>
+            <span>View Breakdown</span>
             <ArrowRight size={12} />
           </button>
 
@@ -118,10 +115,11 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   );
 }
 
-export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, onOpenInstagramModal }) {
+export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStudiesPage = false, onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [activeTab, setActiveTab] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
-  const [visibleCount, setVisibleCount] = useState(12);
+  const [visibleCount, setVisibleCount] = useState(isHomePage ? 8 : 12);
+  const sentinelRef = useRef(null);
 
   const filteredStudies = allCaseStudies.filter((item) => {
     const matchesTab = activeTab === 'All' || item.category === activeTab;
@@ -135,10 +133,31 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
-    setVisibleCount(12);
+    setVisibleCount(isHomePage ? 8 : 12);
   };
 
-  const displayedStudies = filteredStudies.slice(0, visibleCount);
+  // Automatically load 12 more when scrolling near bottom on the Case Studies Page
+  useEffect(() => {
+    if (isHomePage) return;
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setVisibleCount((prev) => {
+          if (prev < filteredStudies.length) {
+            return Math.min(prev + 12, filteredStudies.length);
+          }
+          return prev;
+        });
+      }
+    }, { rootMargin: '400px' });
+
+    if (sentinelRef.current) {
+      observer.observe(sentinelRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isHomePage, filteredStudies.length]);
+
+  const displayedStudies = isHomePage ? filteredStudies.slice(0, 8) : filteredStudies.slice(0, visibleCount);
 
   return (
     <section className="client-case-studies-section" id="case-studies">
@@ -169,7 +188,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
           REAL BRANDS. REAL AD SPEND. REAL RESULTS. ({allCaseStudies.length} Case Studies & Proofs)
         </div>
 
-        {/* Search & Category Filter Controls */}
+        {/* Search & Category Filter Controls (Shown on Case Studies Page or when filtering) */}
         <div style={{ maxWidth: '780px', margin: '0 auto 32px auto', display: 'flex', flexDirection: 'column', gap: '16px', alignItems: 'center' }}>
           {/* Search Bar */}
           <div style={{ position: 'relative', width: '100%', maxWidth: '520px' }}>
@@ -180,7 +199,7 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
               value={searchTerm}
               onChange={(e) => {
                 setSearchTerm(e.target.value);
-                setVisibleCount(12);
+                setVisibleCount(isHomePage ? 8 : 12);
               }}
               style={{
                 width: '100%',
@@ -233,15 +252,45 @@ export default function ClientCaseStudiesSection({ onOpenBooking, onNavigate, on
           ))}
         </div>
 
-        {/* Load More Button */}
-        {visibleCount < filteredStudies.length && (
+        {/* Infinite Scroll Sentinel for Case Studies Page */}
+        {!isHomePage && visibleCount < filteredStudies.length && (
+          <div
+            ref={sentinelRef}
+            style={{
+              padding: '30px 0',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '10px'
+            }}
+          >
+            <div
+              style={{
+                width: '32px',
+                height: '32px',
+                border: '3px solid rgba(255, 87, 34, 0.2)',
+                borderTop: '3px solid #ff5722',
+                borderRadius: '50%',
+                animation: 'spin 0.8s linear infinite'
+              }}
+            />
+            <span style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: 600 }}>
+              Loading more verified case studies ({displayedStudies.length} of {filteredStudies.length})...
+            </span>
+          </div>
+        )}
+
+        {/* Homepage Explore All Button */}
+        {isHomePage && (
           <div style={{ marginTop: '36px', display: 'flex', justifyContent: 'center' }}>
             <button
               className="btn-secondary"
-              onClick={() => setVisibleCount((prev) => prev + 12)}
-              style={{ padding: '12px 32px', fontSize: '0.9rem', fontWeight: 600 }}
+              onClick={() => onNavigate && onNavigate('case-studies')}
+              style={{ padding: '14px 36px', fontSize: '0.95rem', fontWeight: 800, display: 'inline-flex', alignItems: 'center', gap: '8px' }}
             >
-              <span>Load More Case Studies ({displayedStudies.length} of {filteredStudies.length})</span>
+              <span>EXPLORE ALL 79 CASE STUDIES</span>
+              <ArrowRight size={16} color="#ff5722" />
             </button>
           </div>
         )}
