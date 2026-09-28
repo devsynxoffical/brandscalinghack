@@ -1,31 +1,29 @@
 import React, { useRef, useEffect } from 'react';
 import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, Flame, Award } from 'lucide-react';
 
-// Client Logos for Marquee
+// Client Logos for Marquee (18 Verified eCommerce Brands Scaled)
 const row1Logos = [
-  '/logos/logo-01.png',
-  '/logos/logo-02.png',
-  '/logos/logo-03.png',
-  '/logos/logo-04.png',
-  '/logos/logo-05.png',
-  '/logos/logo-06.png',
-  '/logos/logo-07.png',
-  '/logos/logo-08.png',
-  '/logos/logo-10.png',
-  '/logos/logo-11.png',
+  { name: 'Dr. Naomi Skin', src: '/logos/clients/drnaomi.png' },
+  { name: 'Vedge Nutrition', src: '/logos/clients/vedge-nutrition.png' },
+  { name: 'Ion Bottles', src: '/logos/clients/ion-bottles.png' },
+  { name: 'Vanidox', src: '/logos/clients/vanidox.png' },
+  { name: 'Ayurda', src: '/logos/clients/ayurda.svg' },
+  { name: 'Lexco Australia', src: '/logos/clients/lexco-australia.png' },
+  { name: 'Steel Horse Leather', src: '/logos/clients/steel-horse-leather.png' },
+  { name: 'Juice Beauty', src: '/logos/clients/juice-beauty.png' },
+  { name: 'Talon', src: '/logos/clients/talon.svg' },
 ];
 
 const row2Logos = [
-  '/logos/logo-12.png',
-  '/logos/logo-13.png',
-  '/logos/logo-15.png',
-  '/logos/logo-16.png',
-  '/logos/logo-17.png',
-  '/logos/logo-18.png',
-  '/logos/logo-19.png',
-  '/logos/logo-20.png',
-  '/logos/logo-21.png',
-  '/logos/logo-22.png',
+  { name: 'ZenSATION', src: '/logos/clients/zensation.png' },
+  { name: 'EZ Detangler', src: '/logos/clients/ez-detangler.png' },
+  { name: 'Little & Lively', src: '/logos/clients/little-and-lively.svg' },
+  { name: 'Tasgal', src: '/logos/clients/tasgal.png' },
+  { name: 'Veil Cosmetics', src: '/logos/clients/veil-cosmetics.png' },
+  { name: 'Golfer Pro', src: '/logos/clients/golfer-pro.png' },
+  { name: 'Gone Pants', src: '/logos/clients/gone-pants.png' },
+  { name: 'Pure Skin Lab', src: '/logos/clients/pure-skin-lab.png' },
+  { name: 'Life Easy', src: '/logos/clients/life-easy.png' },
 ];
 
 const bigMarqueeItems = [
@@ -296,15 +294,15 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             <div className="bsh-logos-track-left">
               <div className="bsh-logos-group">
                 {row1Logos.map((logo, idx) => (
-                  <div key={`r1-a-${idx}`} className="bsh-logo-item">
-                    <img src={logo} alt={`Client logo ${idx + 1}`} className="bsh-logo-img" loading="eager" />
+                  <div key={`r1-a-${idx}`} className="bsh-logo-item" title={logo.name}>
+                    <img src={logo.src} alt={logo.name} className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
               <div className="bsh-logos-group" aria-hidden="true">
                 {row1Logos.map((logo, idx) => (
-                  <div key={`r1-b-${idx}`} className="bsh-logo-item">
-                    <img src={logo} alt="" className="bsh-logo-img" loading="eager" />
+                  <div key={`r1-b-${idx}`} className="bsh-logo-item" title={logo.name}>
+                    <img src={logo.src} alt="" className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
@@ -316,15 +314,15 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             <div className="bsh-logos-track-right">
               <div className="bsh-logos-group">
                 {row2Logos.map((logo, idx) => (
-                  <div key={`r2-a-${idx}`} className="bsh-logo-item">
-                    <img src={logo} alt={`Client logo ${idx + 11}`} className="bsh-logo-img" loading="eager" />
+                  <div key={`r2-a-${idx}`} className="bsh-logo-item" title={logo.name}>
+                    <img src={logo.src} alt={logo.name} className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
               <div className="bsh-logos-group" aria-hidden="true">
                 {row2Logos.map((logo, idx) => (
-                  <div key={`r2-b-${idx}`} className="bsh-logo-item">
-                    <img src={logo} alt="" className="bsh-logo-img" loading="eager" />
+                  <div key={`r2-b-${idx}`} className="bsh-logo-item" title={logo.name}>
+                    <img src={logo.src} alt="" className="bsh-logo-img" loading="eager" />
                   </div>
                 ))}
               </div>
