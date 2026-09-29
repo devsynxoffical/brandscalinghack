@@ -9,16 +9,12 @@ import {
   Mail, 
   CheckCircle2, 
   ArrowRight, 
-  ShieldCheck,
-  TrendingUp,
-  Zap,
-  Clock,
-  Layers,
-  Calculator,
-  ChevronDown,
-  XCircle,
-  HelpCircle,
-  DollarSign,
+  TrendingUp, 
+  Zap, 
+  Clock, 
+  Calculator, 
+  ChevronDown, 
+  XCircle, 
   Sparkles
 } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
@@ -38,6 +34,93 @@ export default function GrowthPage({ onOpenBooking }) {
   const projectedMonthlyRev = currentMonthlyRev + projectedRevIncrease;
   const annualScalingPotential = projectedMonthlyRev * 12;
 
+  const fourPillarCards = [
+    {
+      id: 'build',
+      title: 'build',
+      className: 'card-build',
+      stickerClass: 'sticker-build',
+      stickerIcon: (
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+          <circle cx="12" cy="13" r="3.5"/>
+          <line x1="12" y1="2" x2="12" y2="4"/>
+        </svg>
+      ),
+      subtitle: 'Create the right foundation, offer, store and customer journey.',
+      items: [
+        'Right Foundation & Angles',
+        'Irresistible Offer Setup',
+        'Sub-1s Mobile Shopify',
+        'Frictionless Journey',
+        'Unit Margin Economics'
+      ]
+    },
+    {
+      id: 'test',
+      title: 'test',
+      className: 'card-test',
+      stickerClass: 'sticker-test',
+      stickerIcon: (
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="5" y="2" width="14" height="20" rx="3" ry="3"/>
+          <line x1="12" y1="18" x2="12.01" y2="18"/>
+          <line x1="9" y1="6" x2="15" y2="6"/>
+        </svg>
+      ),
+      subtitle: 'Continuously test products, creatives, hooks, audiences and messaging.',
+      items: [
+        'Winning Product Testing',
+        'Weekly UGC Ad Cadence',
+        '45+ Hook & Angle Matrix',
+        'Advantage+ Audience Testing',
+        'Direct Messaging Testing'
+      ]
+    },
+    {
+      id: 'optimize',
+      title: 'optimize',
+      className: 'card-optimize',
+      stickerClass: 'sticker-optimize',
+      stickerIcon: (
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+          <line x1="9" y1="9" x2="9.01" y2="9"/>
+          <line x1="15" y1="9" x2="15.01" y2="9"/>
+        </svg>
+      ),
+      subtitle: 'Improve CAC, CVR, AOV, ROAS and overall profitability.',
+      items: [
+        'CAC & CPA Reduction',
+        'Conversion Rate (CVR)',
+        'In-Cart & 1-Click AOV',
+        'ROAS & Margin Health',
+        'Checkout Friction Removal'
+      ]
+    },
+    {
+      id: 'scale',
+      title: 'scale',
+      className: 'card-scale',
+      stickerClass: 'sticker-scale',
+      stickerIcon: (
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+      ),
+      subtitle: "Put more budget, creative and resources behind what's working.",
+      items: [
+        'Daily Ad Budget Scaling',
+        'High-Volume Creative Lab',
+        'Omnichannel Domination',
+        'Global Market Expansion',
+        'Compounding 90-Day LTV'
+      ]
+    }
+  ];
+
   const categories = [
     { id: 'all', label: 'All Services' },
     { id: 'media', label: 'Paid Acquisition & Ads' },
@@ -52,145 +135,153 @@ export default function GrowthPage({ onOpenBooking }) {
       id: 'meta-ads',
       category: 'media',
       badge: 'PAID ACQUISITION',
-      icon: <Target size={28} />,
-      title: 'Meta Ads Scaling (Facebook & Instagram)',
+      icon: <Target size={24} />,
+      stickerClass: 'sticker-test',
+      bgGradient: 'linear-gradient(175deg, #b91c1c 0%, #881313 100%)',
+      title: 'Meta Ads Scaling',
       subtitle: '$50M+ Deployed • Advantage+ & Broad Architecture',
       description: 'We architect, test, and aggressively scale high-volume Meta ad accounts through algorithm-friendly broad targeting, rapid creative testing cadences, and server-side tracking.',
       deliverables: [
-        'Advantage+ Campaign Budget Optimization (CBO) & low-CPA broad audience scaling',
-        'Weekly rapid testing cadences of 10+ distinct dynamic creative hook variations',
-        'Server-side Meta Conversions API (CAPI) setup with 9.0+ Event Quality Score',
-        'Dynamic Product Ads (DPA) and multi-tier retargeting funnels',
-        'Day-to-day bid optimization, aggressive horizontal budget scaling, and ad fatigue mitigation'
+        'Advantage+ CBO & low-CPA broad audience scaling',
+        'Weekly rapid testing cadences of 10+ dynamic creative hooks',
+        'Server-side Meta Conversions API (CAPI) setup (9.0+ Event Score)',
+        'Dynamic Product Ads (DPA) & multi-tier retargeting funnels',
+        'Day-to-day horizontal budget scaling & ad fatigue mitigation'
       ],
-      tags: ['Meta Advantage+', 'Instagram Reels', 'CAPI Tracking', 'Dynamic Catalogs'],
-      color: '#dc2626'
+      tags: ['Meta Advantage+', 'Instagram Reels', 'CAPI Tracking', 'Dynamic Catalogs']
     },
     {
       id: 'shopify-dev',
       category: 'store',
       badge: 'ECOMMERCE INFRASTRUCTURE',
-      icon: <ShoppingBag size={28} />,
-      title: 'Shopify & eCommerce Store Architecture',
+      icon: <ShoppingBag size={24} />,
+      stickerClass: 'sticker-build',
+      bgGradient: 'linear-gradient(175deg, #1b7a5a 0%, #136046 100%)',
+      title: 'Shopify Store Architecture',
       subtitle: 'Sub-1.5s Speed • Conversion-Engineered Themes',
       description: 'We design, code, and optimize bespoke high-converting Shopify stores built for ultra-fast mobile load times, seamless product discovery, and maximum average order value.',
       deliverables: [
-        'Custom lightweight Shopify Online Store 2.0 theme engineering (<1.5s load time)',
-        'Frictionless mobile UX ergonomics overhaul boosting baseline store CVR by 35-70%',
-        'Dynamic tiered volume bundle builders & 1-click Slide-Out Cart drawer upsells',
-        'High-speed express checkout integration (Shop Pay, Apple Pay & 1-Click Fast Checkout)',
-        'App bloat elimination, server-side asset caching, and code minification'
+        'Custom lightweight Shopify Online Store 2.0 theme (<1.5s load time)',
+        'Frictionless mobile UX ergonomics overhaul boosting baseline CVR 35-70%',
+        'Dynamic tiered volume bundle builders & 1-click cart drawer upsells',
+        'High-speed express checkout (Shop Pay, Apple Pay & 1-Click Checkout)',
+        'App bloat elimination, server-side asset caching & code minification'
       ],
-      tags: ['Shopify Plus', 'Liquid / OS 2.0', '1-Click Checkout', 'Sub-1.5s Speed'],
-      color: '#ea580c'
+      tags: ['Shopify Plus', 'Liquid / OS 2.0', '1-Click Checkout', 'Sub-1.5s Speed']
     },
     {
       id: 'cro-funnels',
       category: 'store',
       badge: 'CONVERSION RATE OPTIMIZATION',
-      icon: <TrendingUp size={28} />,
-      title: 'Direct-Response CRO & Landing Pages',
+      icon: <TrendingUp size={24} />,
+      stickerClass: 'sticker-optimize',
+      bgGradient: 'linear-gradient(175deg, #f05726 0%, #c83d12 100%)',
+      title: 'Direct-Response CRO & Landers',
       subtitle: '+35% to +80% Store Conversion Rate Uplift',
       description: 'Turn cold traffic clicks into high-margin buyers by eliminating landing page friction, building custom direct-response advertorials, and systematically split-testing offers.',
       deliverables: [
         'High-converting Advertorial, VSL, and Listicle lander design (Replo/PageFly)',
-        'Continuous A/B split-testing framework across headlines, social proof, and CTA anchors',
-        'User session recording & heatmap teardowns to detect and eliminate checkout drop-offs',
-        'In-cart cross-sells and post-purchase 1-click upsell sequences lifting AOV by 20-40%',
-        'Psychological pricing structures, guarantee badges, and sticky mobile Add-to-Cart bars'
+        'Continuous A/B split-testing framework across headlines, copy & CTA anchors',
+        'User session recording & heatmap teardowns to kill checkout drop-offs',
+        'In-cart cross-sells & post-purchase 1-click upsells lifting AOV by 20-40%',
+        'Psychological pricing structures & sticky mobile Add-to-Cart bars'
       ],
-      tags: ['Replo', 'PageFly', 'A/B Testing', 'Heatmap Audits', 'Post-Purchase Upsells'],
-      color: '#e11d48'
+      tags: ['Replo', 'PageFly', 'A/B Testing', 'Heatmap Audits', 'Post-Purchase Upsells']
     },
     {
       id: 'ugc-creative',
       category: 'creative',
       badge: 'CREATIVE STUDIO',
-      icon: <Video size={28} />,
-      title: 'Viral Direct-Response Creative & UGC Studio',
+      icon: <Video size={24} />,
+      stickerClass: 'sticker-test',
+      bgGradient: 'linear-gradient(175deg, #e11d48 0%, #9f1239 100%)',
+      title: 'Viral Direct-Response Creative',
       subtitle: '20–40 Winning Concepts Produced Monthly',
       description: 'High-converting, platform-native video ads that hook audience attention in the first 3 seconds, evoke deep emotional product desire, and convert cold viewers profitably.',
       deliverables: [
-        'In-depth competitor creative gap analysis & customer psychology angle research',
-        '20-40 direct-response UGC videos produced monthly on a fixed weekly turnaround',
-        '3-Second Hook Testing Matrix testing visual pattern interrupts, text hooks & voiceovers',
-        'Native TikTok & Reels dynamic motion graphics, typography, subtitles & sound design',
-        'Multi-format asset adaptation across 9:16 Vertical, 1:1 Square, and 16:9 Landscape'
+        'In-depth competitor creative gap analysis & customer psychology research',
+        '20-40 direct-response UGC videos produced monthly on weekly turns',
+        '3-Second Hook Matrix testing visual pattern interrupts & voiceovers',
+        'Native TikTok & Reels motion graphics, subtitles & sound design',
+        'Multi-format asset adaptation (9:16 Vertical, 1:1 Square, 16:9 Landscape)'
       ],
-      tags: ['TikTok UGC', 'IG Reels Ads', 'Hook Matrix', 'Dynamic Motion Graphics'],
-      color: '#f97316'
+      tags: ['TikTok UGC', 'IG Reels Ads', 'Hook Matrix', 'Dynamic Motion Graphics']
     },
     {
       id: 'google-ads',
       category: 'media',
       badge: 'HIGH-INTENT SEARCH',
-      icon: <Search size={28} />,
-      title: 'Google Ads & Performance Max (P-Max)',
+      icon: <Search size={24} />,
+      stickerClass: 'sticker-optimize',
+      bgGradient: 'linear-gradient(175deg, #2563eb 0%, #1d4ed8 100%)',
+      title: 'Google Ads & Performance Max',
       subtitle: 'Capturing High-Intent, Ready-To-Buy Shoppers',
       description: 'Capture high-intent shopping queries from buyers searching for your category, while dominating Google Search, Shopping, and YouTube Shorts.',
       deliverables: [
-        'Google Performance Max (PMax) campaign structure with enriched custom asset groups',
-        'Google Merchant Center product feed optimization, title keywords & rich schema markup',
-        'Branded search defense & aggressive high-ROAS competitor conquesting campaigns',
-        'YouTube Shorts and Display Network retargeting for complete full-funnel coverage',
-        'Negative keyword auditing and automated search term intent pruning'
+        'Google Performance Max (PMax) campaign structure with enriched assets',
+        'Google Merchant Center product feed optimization & rich schema markup',
+        'Branded search defense & aggressive high-ROAS competitor conquesting',
+        'YouTube Shorts & Display Network retargeting for full-funnel coverage',
+        'Negative keyword auditing & automated search term intent pruning'
       ],
-      tags: ['Google P-Max', 'Google Shopping', 'Merchant Center', 'YouTube Shorts'],
-      color: '#3b82f6'
+      tags: ['Google P-Max', 'Google Shopping', 'Merchant Center', 'YouTube Shorts']
     },
     {
       id: 'tiktok-ads',
       category: 'media',
       badge: 'VIRAL SOCIAL SCALE',
-      icon: <Zap size={28} />,
-      title: 'TikTok Paid Media & Creator Spark Ads',
+      icon: <Zap size={24} />,
+      stickerClass: 'sticker-scale',
+      bgGradient: 'linear-gradient(175deg, #0284c7 0%, #0369a1 100%)',
+      title: 'TikTok Paid & Spark Ads',
       subtitle: 'Low CPA Viral Scale & Gen-Z Acquisition',
       description: 'Leverage authentic creator handles and TikTok Spark Ads to tap into organic-feeling viral scale and reach high-converting younger demographic buyers.',
       deliverables: [
-        'Creator handle whitelisting and direct TikTok Spark Ad amplification campaigns',
-        'TikTok Shop integration, product tag setup, and creator affiliate coordination',
-        'Fast-turnaround trend-jacking video hooks tailored to algorithmic viral velocity',
-        'Broad and interest-adjacent scaling campaigns keeping customer acquisition costs low',
-        'TikTok Pixel & Events API integration for 100% conversion attribution fidelity'
+        'Creator handle whitelisting & direct TikTok Spark Ad amplification',
+        'TikTok Shop integration, product tag setup & creator affiliate sync',
+        'Fast-turnaround trend-jacking video hooks tailored to viral algorithms',
+        'Broad & interest-adjacent scaling keeping acquisition costs low',
+        'TikTok Pixel & Events API integration for 100% attribution fidelity'
       ],
-      tags: ['TikTok Spark Ads', 'TikTok Shop', 'Creator Whitelisting', 'Viral Velocity'],
-      color: '#06b6d4'
+      tags: ['TikTok Spark Ads', 'TikTok Shop', 'Creator Whitelisting', 'Viral Velocity']
     },
     {
       id: 'klaviyo-retention',
       category: 'retention',
       badge: 'RETENTION & LIFECYCLE',
-      icon: <Mail size={28} />,
-      title: 'Klaviyo Email & SMS Lifecycle Retention',
-      subtitle: '25%–38% of Total Store Revenue from Email & SMS',
+      icon: <Mail size={24} />,
+      stickerClass: 'sticker-build',
+      bgGradient: 'linear-gradient(175deg, #059669 0%, #047857 100%)',
+      title: 'Klaviyo Email & SMS Engine',
+      subtitle: '25%–38% of Total Store Revenue from Retention',
       description: 'Maximize Customer Lifetime Value (LTV) and unlock automated, high-margin repeat cashflow through hyper-personalized behavioral email flows and SMS promotional blitzes.',
       deliverables: [
-        'Automated core flows: Abandoned Cart, Abandoned Checkout, Welcome Series & Browse Abandonment',
-        'VIP repeat purchase & winback campaigns lifting 90-day customer repurchase rate',
-        'High-converting promotional campaigns for peak product drops, flash sales, and holidays',
-        'SMS marketing sequences with 98% open rates and 1-click mobile checkout deep links',
-        'Deliverability audits, inbox placement defense, and domain reputation protection'
+        'Automated core flows: Abandoned Cart, Checkout, Welcome & Browse',
+        'VIP repeat purchase & winback campaigns lifting 90-day repurchase rate',
+        'High-converting promotional campaigns for peak product drops & holidays',
+        'SMS marketing sequences with 98% open rates & 1-click checkout links',
+        'Deliverability audits, inbox placement defense & domain protection'
       ],
-      tags: ['Klaviyo', 'SMS Marketing', 'VIP Segmentation', 'LTV Compounding'],
-      color: '#10b981'
+      tags: ['Klaviyo', 'SMS Marketing', 'VIP Segmentation', 'LTV Compounding']
     },
     {
       id: 'growth-advisory',
       category: 'strategy',
       badge: 'EXECUTIVE ADVISORY',
-      icon: <Rocket size={28} />,
-      title: '8 & 9-Figure Strategic Growth Advisory',
+      icon: <Rocket size={24} />,
+      stickerClass: 'sticker-scale',
+      bgGradient: 'linear-gradient(175deg, #851f5c 0%, #631143 100%)',
+      title: '8 & 9-Figure Strategic Advisory',
       subtitle: 'Direct 1-on-1 Access to Gaurav Kapoor',
       description: 'Scale beyond media buying into a category-dominant enterprise with full contribution margin modeling, international localized expansion, and strategic exit positioning.',
       deliverables: [
         'Weekly executive growth syncs directly with Gaurav Kapoor',
-        'Unit economics, contribution margin, and cashflow forecasting financial audits',
+        'Unit economics, contribution margin & cashflow forecasting audits',
         'International market expansion blueprints (UK, EU, Canada, Australia)',
-        'Supply chain optimization, 3PL logistics, and private-label transition roadmaps',
-        'Brand equity positioning and valuation preparation for 8 or 9-figure exits'
+        'Supply chain optimization, 3PL logistics & private-label roadmaps',
+        'Brand equity positioning & valuation prep for 8 or 9-figure exits'
       ],
-      tags: ['Direct 1-on-1', 'Unit Economics', 'Global Expansion', '8 & 9-Figure Exit'],
-      color: '#8b5cf6'
+      tags: ['Direct 1-on-1', 'Unit Economics', 'Global Expansion', '8 & 9-Figure Exit']
     }
   ];
 
@@ -294,24 +385,24 @@ export default function GrowthPage({ onOpenBooking }) {
   ];
 
   return (
-    <div style={{ paddingTop: '80px', minHeight: '100vh', background: '#ffffff', color: '#0f172a' }}>
+    <div className="growth-page-root">
       {/* Header */}
-      <section className="section-padding" style={{ paddingBottom: '40px', textAlign: 'center' }}>
+      <section className="section-padding" style={{ paddingBottom: '30px', textAlign: 'center' }}>
         <div className="container">
           <div style={{ marginBottom: '16px', display: 'flex', justifyContent: 'center' }}>
             <span 
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '6px',
+                gap: '8px',
                 background: 'rgba(220, 38, 38, 0.08)',
                 color: '#dc2626',
                 border: '1px solid rgba(220, 38, 38, 0.25)',
                 borderRadius: '9999px',
-                padding: '6px 18px',
+                padding: '6px 20px',
                 fontWeight: 800,
                 fontSize: '0.82rem',
-                letterSpacing: '0.1em',
+                letterSpacing: '0.12em',
                 textTransform: 'uppercase'
               }}
             >
@@ -320,19 +411,19 @@ export default function GrowthPage({ onOpenBooking }) {
             </span>
           </div>
 
-          <h1 style={{ fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', color: '#0f172a', marginBottom: '18px', textTransform: 'uppercase', letterSpacing: '-0.025em', fontWeight: 900, lineHeight: 1.15 }}>
+          <h1 style={{ fontSize: 'clamp(2.4rem, 4.5vw, 4.2rem)', color: '#0f172a', marginBottom: '18px', textTransform: 'uppercase', letterSpacing: '-0.025em', fontWeight: 900, lineHeight: 1.12 }}>
             The Complete Infrastructure Behind <br />
             <span style={{ background: 'linear-gradient(135deg, #dc2626 0%, #ea580c 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
               8 & 9-Figure eCommerce Brands.
             </span>
           </h1>
 
-          <p style={{ maxWidth: '820px', margin: '0 auto 30px auto', fontSize: '1.1rem', color: '#475569', lineHeight: 1.6 }}>
+          <p style={{ maxWidth: '820px', margin: '0 auto 34px auto', fontSize: '1.15rem', color: '#475569', lineHeight: 1.6 }}>
             We don't sell disconnected piecemeal services. We engineer, deploy, and scale every single pillar of your eCommerce revenue generation engine.
           </p>
 
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '16px 36px' }}>
+            <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '17px 38px' }}>
               <span>SCHEDULE BRAND GROWTH AUDIT</span>
               <ArrowRight size={18} />
             </button>
@@ -345,7 +436,7 @@ export default function GrowthPage({ onOpenBooking }) {
                 display: 'inline-flex', 
                 alignItems: 'center', 
                 gap: '8px', 
-                padding: '16px 26px',
+                padding: '17px 28px',
                 background: '#f8fafc',
                 border: '1.5px solid #e2e8f0',
                 color: '#0f172a'
@@ -358,139 +449,164 @@ export default function GrowthPage({ onOpenBooking }) {
         </div>
       </section>
 
+      {/* ========================================================================= */}
+      {/* 4-STAGE ENGINE CARD DECK (MATCHING REFERENCE: BUILD, TEST, OPTIMIZE, SCALE) */}
+      {/* ========================================================================= */}
+      <section className="growth-deck-section">
+        <div className="container" style={{ textAlign: 'center', marginBottom: '24px' }}>
+          <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#dc2626', letterSpacing: '0.14em', textTransform: 'uppercase' }}>
+            [ THE 4-PILLAR SCALING BLUEPRINT ]
+          </span>
+          <h2 style={{ fontSize: 'clamp(2rem, 3.2vw, 2.8rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', marginTop: '8px' }}>
+            How We Take eCommerce Brands To 9 Figures
+          </h2>
+        </div>
+
+        <div className="growth-deck-container">
+          {fourPillarCards.map((card) => (
+            <div key={card.id} className={`growth-deck-card ${card.className}`}>
+              {/* Top Sticker Badge */}
+              <div className={`growth-sticker-badge ${card.stickerClass}`} aria-hidden="true">
+                {card.stickerIcon}
+              </div>
+
+              <div>
+                {/* Lowercase Bold Title */}
+                <h3 className="growth-deck-title">{card.title}</h3>
+                
+                {/* Description */}
+                <p className="growth-deck-subtitle">{card.subtitle}</p>
+                
+                {/* Subtle Divider */}
+                <div className="growth-deck-divider" />
+
+                {/* Diamond List Items */}
+                <ul className="growth-deck-list">
+                  {card.items.map((item, idx) => (
+                    <li key={idx} className="growth-deck-item">
+                      <span className="growth-deck-diamond">✦</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Interactive Scaling Potential Calculator */}
-      <section className="container" style={{ marginBottom: '80px' }}>
-        <div
-          style={{
-            background: '#f8fafc',
-            border: '1.5px solid #e2e8f0',
-            borderRadius: '28px',
-            padding: '40px',
-            maxWidth: '1000px',
-            margin: '0 auto',
-            boxShadow: '0 10px 35px rgba(0,0,0,0.04)'
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-            <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: 'rgba(220,38,38,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <Calculator size={22} color="#dc2626" />
+      <section className="container" style={{ margin: '60px auto 90px auto', padding: '0 20px' }}>
+        <div className="growth-calc-box">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
+            <div style={{ width: '48px', height: '48px', borderRadius: '14px', background: 'rgba(220, 38, 38, 0.1)', border: '1px solid rgba(220, 38, 38, 0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#dc2626' }}>
+              <Calculator size={24} />
             </div>
             <div>
-              <h2 style={{ fontSize: '1.6rem', color: '#0f172a', margin: 0, fontWeight: 900 }}>
+              <h2 style={{ fontSize: '1.7rem', color: '#0f172a', margin: 0, fontWeight: 900 }}>
                 Calculate Your 90-Day Scaling Potential
               </h2>
+              <p style={{ color: '#64748b', margin: '4px 0 0 0', fontSize: '0.94rem' }}>
+                Adjust your baseline numbers to see your projected revenue increase with our system.
+              </p>
             </div>
           </div>
-          <p style={{ color: '#64748b', fontSize: '0.96rem', marginBottom: '30px' }}>
-            See how fixing your creative testing cadence and lifting your store conversion rate transforms your monthly and annual revenue:
-          </p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
-            {/* Input Controls */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '36px', alignItems: 'center' }}>
+            {/* Sliders */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
               <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', color: '#334155', fontSize: '0.88rem', fontWeight: 700, marginBottom: '8px' }}>
-                  <span>CURRENT MONTHLY REVENUE</span>
-                  <span style={{ color: '#dc2626', fontSize: '1.1rem', fontWeight: 900 }}>${currentMonthlyRev.toLocaleString()} / mo</span>
-                </label>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '0.92rem', fontWeight: 700 }}>
+                  <span style={{ color: '#334155' }}>Current Monthly Revenue:</span>
+                  <span style={{ color: '#dc2626', fontWeight: 900 }}>${currentMonthlyRev.toLocaleString()}</span>
+                </div>
                 <input
                   type="range"
-                  min="10000"
+                  min="5000"
                   max="500000"
                   step="5000"
                   value={currentMonthlyRev}
                   onChange={(e) => setCurrentMonthlyRev(Number(e.target.value))}
-                  style={{ width: '100%', accentColor: '#dc2626' }}
+                  className="growth-slider-track"
                 />
               </div>
 
               <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', color: '#334155', fontSize: '0.88rem', fontWeight: 700, marginBottom: '8px' }}>
-                  <span>TARGET CONVERSION RATE (CVR)</span>
-                  <span style={{ color: '#ea580c', fontSize: '1.1rem', fontWeight: 900 }}>{targetCvr}%</span>
-                </label>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '0.92rem', fontWeight: 700 }}>
+                  <span style={{ color: '#334155' }}>Current Blended ROAS:</span>
+                  <span style={{ color: '#ea580c', fontWeight: 900 }}>{currentRoas.toFixed(1)}x</span>
+                </div>
                 <input
                   type="range"
-                  min="2.0"
-                  max="6.0"
-                  step="0.1"
-                  value={targetCvr}
-                  onChange={(e) => setTargetCvr(Number(e.target.value))}
-                  style={{ width: '100%', accentColor: '#ea580c' }}
-                />
-              </div>
-
-              <div>
-                <label style={{ display: 'flex', justifyContent: 'space-between', color: '#334155', fontSize: '0.88rem', fontWeight: 700, marginBottom: '8px' }}>
-                  <span>TARGET BLENDED ROAS</span>
-                  <span style={{ color: '#2563eb', fontSize: '1.1rem', fontWeight: 900 }}>{currentRoas}x</span>
-                </label>
-                <input
-                  type="range"
-                  min="1.8"
+                  min="1.0"
                   max="6.0"
                   step="0.1"
                   value={currentRoas}
                   onChange={(e) => setCurrentRoas(Number(e.target.value))}
-                  style={{ width: '100%', accentColor: '#2563eb' }}
+                  className="growth-slider-track"
+                />
+              </div>
+
+              <div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '0.92rem', fontWeight: 700 }}>
+                  <span style={{ color: '#334155' }}>Target Store CVR:</span>
+                  <span style={{ color: '#16a34a', fontWeight: 900 }}>{targetCvr.toFixed(1)}%</span>
+                </div>
+                <input
+                  type="range"
+                  min="1.5"
+                  max="7.0"
+                  step="0.1"
+                  value={targetCvr}
+                  onChange={(e) => setTargetCvr(Number(e.target.value))}
+                  className="growth-slider-track"
                 />
               </div>
             </div>
 
-            {/* Calculated Output Scorecard (Dark Red Card with White Text) */}
+            {/* Results Output Box */}
             <div
               style={{
-                background: 'linear-gradient(135deg, #c41224 0%, #990a16 50%, #6e040e 100%)',
-                border: '1.5px solid rgba(255,255,255,0.25)',
-                borderRadius: '20px',
-                padding: '24px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                boxShadow: '0 12px 30px rgba(185, 28, 28, 0.3)'
+                background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
+                borderRadius: '24px',
+                padding: '30px',
+                color: '#ffffff',
+                boxShadow: '0 16px 36px rgba(0, 0, 0, 0.2)'
               }}
             >
               <div>
-                <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.85)', fontWeight: 800, textTransform: 'uppercase', marginBottom: '4px', letterSpacing: '0.04em' }}>
+                <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', fontWeight: 800, textTransform: 'uppercase', marginBottom: '4px', letterSpacing: '0.06em' }}>
                   ESTIMATED 90-DAY PROJECTED RUN-RATE
                 </div>
-                <div style={{ fontSize: '2.1rem', fontWeight: 950, color: '#ffffff' }}>
-                  ${projectedMonthlyRev.toLocaleString()} <span style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.8)' }}>/ mo</span>
+                <div style={{ fontSize: '2.4rem', fontWeight: 950, color: '#ffffff' }}>
+                  ${projectedMonthlyRev.toLocaleString()} <span style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.65)' }}>/ mo</span>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginTop: '20px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '22px', borderTop: '1px solid rgba(255,255,255,0.12)', paddingTop: '18px' }}>
                   <div>
-                    <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.8)' }}>MONTHLY REVENUE GAIN</div>
-                    <div style={{ fontSize: '1.3rem', fontWeight: 900, color: '#fef08a' }}>+${projectedRevIncrease.toLocaleString()}</div>
+                    <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.65)' }}>MONTHLY REVENUE GAIN</div>
+                    <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#bef264' }}>+${projectedRevIncrease.toLocaleString()}</div>
                   </div>
                   <div>
-                    <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.8)' }}>ANNUAL RUN RATE</div>
-                    <div style={{ fontSize: '1.3rem', fontWeight: 900, color: '#ffffff' }}>${(annualScalingPotential / 1000000).toFixed(2)}M / yr</div>
+                    <div style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.65)' }}>ANNUAL RUN RATE</div>
+                    <div style={{ fontSize: '1.4rem', fontWeight: 900, color: '#ffb300' }}>${(annualScalingPotential / 1000000).toFixed(2)}M / yr</div>
                   </div>
                 </div>
               </div>
 
               <button 
                 onClick={onOpenBooking} 
+                className="btn-primary"
                 style={{ 
                   width: '100%', 
-                  marginTop: '20px', 
-                  padding: '12px',
-                  background: '#ffffff',
-                  color: '#dc2626',
-                  border: 'none',
-                  borderRadius: '10px',
-                  fontWeight: 900,
-                  fontSize: '0.88rem',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
+                  marginTop: '24px', 
+                  padding: '14px',
                   justifyContent: 'center',
-                  gap: '8px',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
+                  fontSize: '0.92rem'
                 }}
               >
-                <span>Build Your 90-Day Roadmap</span>
+                <span>Build Your 90-Day Scaling Plan</span>
                 <ArrowRight size={16} />
               </button>
             </div>
@@ -498,99 +614,58 @@ export default function GrowthPage({ onOpenBooking }) {
         </div>
       </section>
 
-      {/* Services Breakdown Grid */}
-      <section className="container" style={{ paddingBottom: '90px' }} id="services-grid">
+      {/* ========================================================================= */}
+      {/* FULL SERVICES BREAKDOWN (WITH STICKER BADGES & VIBRANT PALETTES) */}
+      {/* ========================================================================= */}
+      <section className="container" style={{ paddingBottom: '100px', paddingLeft: '20px', paddingRight: '20px' }} id="services-grid">
         <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-          <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#dc2626', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '8px' }}>
+          <div style={{ fontSize: '0.82rem', fontWeight: 800, color: '#dc2626', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: '8px' }}>
             [ OUR COMPLETE SERVICE CAPABILITIES ]
           </div>
-          <h2 style={{ fontSize: 'clamp(2rem, 3.6vw, 3rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-0.02em', marginBottom: '12px' }}>
+          <h2 style={{ fontSize: 'clamp(2rem, 3.6vw, 3.2rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-0.02em', marginBottom: '14px' }}>
             Everything You Need To Scale To 8 & 9 Figures
           </h2>
-          <p style={{ maxWidth: '780px', margin: '0 auto', fontSize: '1.05rem', color: '#64748b', lineHeight: 1.6 }}>
+          <p style={{ maxWidth: '780px', margin: '0 auto', fontSize: '1.1rem', color: '#64748b', lineHeight: 1.6 }}>
             From high-converting Shopify store builds to full-funnel Meta ads and viral creative production, explore our complete growth stack:
           </p>
         </div>
 
         {/* Category Tabs */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '40px' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '50px' }}>
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              style={{
-                padding: '10px 20px',
-                borderRadius: '999px',
-                fontSize: '0.88rem',
-                fontWeight: 800,
-                cursor: 'pointer',
-                border: selectedCategory === cat.id ? '1.5px solid #dc2626' : '1.5px solid #e2e8f0',
-                background: selectedCategory === cat.id ? '#dc2626' : '#f8fafc',
-                color: selectedCategory === cat.id ? '#ffffff' : '#334155',
-                transition: 'all 0.2s ease',
-                boxShadow: selectedCategory === cat.id ? '0 4px 16px rgba(220,38,38,0.35)' : 'none'
-              }}
+              className={`growth-tab-btn ${selectedCategory === cat.id ? 'active' : ''}`}
             >
               {cat.label}
             </button>
           ))}
         </div>
 
-        {/* Comprehensive Service Cards Grid (Bold Dark Red Cards with White Text) */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '28px' }}>
+        {/* Dynamic Card Grid with Sticker Badges & Diamond Bullets */}
+        <div className="growth-services-grid">
           {filteredServices.map((srv) => (
             <div
               key={srv.id}
-              style={{
-                background: 'linear-gradient(135deg, #c41224 0%, #990a16 50%, #6e040e 100%)',
-                border: '1.5px solid rgba(255,255,255,0.22)',
-                borderRadius: '24px',
-                padding: '36px 32px',
-                boxShadow: '0 12px 32px rgba(185, 28, 28, 0.25), 0 2px 8px rgba(0,0,0,0.1)',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-                position: 'relative',
-                overflow: 'hidden'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.boxShadow = '0 18px 45px rgba(185, 28, 28, 0.45)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.55)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 12px 32px rgba(185, 28, 28, 0.25), 0 2px 8px rgba(0,0,0,0.1)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.22)';
-              }}
+              className="growth-service-card"
+              style={{ background: srv.bgGradient }}
             >
+              {/* Top Sticker Badge */}
+              <div className={`growth-sticker-badge ${srv.stickerClass}`} aria-hidden="true">
+                {srv.icon}
+              </div>
+
               <div>
-                {/* Card Top: Icon & Badge */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '22px' }}>
-                  <div
-                    style={{
-                      width: '56px',
-                      height: '56px',
-                      borderRadius: '16px',
-                      background: 'rgba(255,255,255,0.18)',
-                      border: '1px solid rgba(255,255,255,0.35)',
-                      color: '#ffffff',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      boxShadow: '0 4px 12px rgba(0,0,0,0.15)'
-                    }}
-                  >
-                    {srv.icon}
-                  </div>
+                {/* Category Pill */}
+                <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '14px' }}>
                   <span
                     style={{
                       fontSize: '0.72rem',
                       fontWeight: 800,
                       color: '#ffffff',
-                      background: 'rgba(255,255,255,0.22)',
-                      border: '1px solid rgba(255,255,255,0.4)',
+                      background: 'rgba(0,0,0,0.25)',
+                      border: '1px solid rgba(255,255,255,0.3)',
                       padding: '4px 12px',
                       borderRadius: '999px',
                       letterSpacing: '0.06em',
@@ -601,30 +676,30 @@ export default function GrowthPage({ onOpenBooking }) {
                   </span>
                 </div>
 
-                {/* Subtitle / KPI Metric */}
-                <div style={{ fontSize: '0.82rem', color: '#fef08a', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px', letterSpacing: '0.04em' }}>
-                  {srv.subtitle}
-                </div>
-
                 {/* Main Service Title */}
-                <h3 style={{ fontSize: '1.4rem', color: '#ffffff', marginBottom: '12px', lineHeight: 1.3, fontWeight: 900 }}>
+                <h3 style={{ fontSize: '1.4rem', color: '#ffffff', marginBottom: '8px', lineHeight: 1.22, fontWeight: 800, fontFamily: "var(--font-primary, 'Plus Jakarta Sans', sans-serif)", letterSpacing: '-0.02em', minHeight: '44px' }}>
                   {srv.title}
                 </h3>
 
+                {/* Subtitle / KPI Metric */}
+                <div style={{ fontSize: '0.76rem', color: '#fef08a', fontWeight: 800, textTransform: 'uppercase', marginBottom: '12px', letterSpacing: '0.04em', minHeight: '34px', lineHeight: 1.35 }}>
+                  {srv.subtitle}
+                </div>
+
                 {/* Short Description */}
-                <p style={{ fontSize: '0.92rem', color: 'rgba(255,255,255,0.92)', lineHeight: 1.55, marginBottom: '20px' }}>
+                <p style={{ fontSize: '0.86rem', color: 'rgba(255,255,255,0.92)', lineHeight: 1.5, marginBottom: '16px', minHeight: '66px' }}>
                   {srv.description}
                 </p>
 
-                {/* Detailed Deliverables Checklist */}
-                <div style={{ borderTop: '1px solid rgba(255,255,255,0.18)', paddingTop: '18px', marginBottom: '22px' }}>
-                  <div style={{ fontSize: '0.76rem', color: '#fef08a', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
+                {/* Detailed Deliverables Checklist with Diamonds */}
+                <div style={{ borderTop: '1px solid rgba(255,255,255,0.22)', paddingTop: '16px', marginBottom: '18px' }}>
+                  <div style={{ fontSize: '0.72rem', color: '#fef08a', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>
                     What We Deliver:
                   </div>
-                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', padding: 0, margin: 0 }}>
+                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px', padding: 0, margin: 0 }}>
                     {srv.deliverables.map((item, i) => (
-                      <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.88rem', color: '#ffffff', lineHeight: 1.45 }}>
-                        <CheckCircle2 size={16} color="#ffffff" style={{ marginTop: '2px', flexShrink: 0 }} />
+                      <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '0.82rem', color: '#ffffff', lineHeight: 1.4 }}>
+                        <span style={{ color: '#ffffff', fontSize: '0.85rem', lineHeight: 1.2, flexShrink: 0, marginTop: '1px' }}>✦</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -634,17 +709,17 @@ export default function GrowthPage({ onOpenBooking }) {
 
               {/* Card Footer: Tech Tags & CTA */}
               <div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '20px' }}>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginBottom: '16px' }}>
                   {srv.tags.map((tag, tIdx) => (
                     <span
                       key={tIdx}
                       style={{
-                        fontSize: '0.72rem',
+                        fontSize: '0.68rem',
                         fontWeight: 700,
                         color: '#ffffff',
-                        background: 'rgba(255,255,255,0.14)',
-                        border: '1px solid rgba(255,255,255,0.22)',
-                        padding: '3px 10px',
+                        background: 'rgba(0,0,0,0.25)',
+                        border: '1px solid rgba(255,255,255,0.2)',
+                        padding: '2px 8px',
                         borderRadius: '6px'
                       }}
                     >
@@ -658,29 +733,31 @@ export default function GrowthPage({ onOpenBooking }) {
                   style={{
                     width: '100%',
                     background: '#ffffff',
-                    color: '#dc2626',
+                    color: '#0a0c10',
                     border: 'none',
-                    padding: '12px 18px',
-                    borderRadius: '12px',
-                    fontSize: '0.85rem',
+                    padding: '11px 16px',
+                    borderRadius: '9999px',
+                    fontSize: '0.84rem',
                     fontWeight: 900,
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '8px',
-                    transition: 'all 0.2s ease',
-                    boxShadow: '0 4px 14px rgba(0,0,0,0.15)'
+                    gap: '6px',
+                    transition: 'all 0.25s ease',
+                    boxShadow: '0 6px 18px rgba(0,0,0,0.2)'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'scale(1.02)';
+                    e.currentTarget.style.background = '#fef08a';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.background = '#ffffff';
                   }}
                 >
                   <span>Inquire For This Service</span>
-                  <ArrowRight size={15} />
+                  <ArrowRight size={14} />
                 </button>
               </div>
             </div>
@@ -689,14 +766,14 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* Comparison Matrix: Us vs Traditional Agency vs In-House */}
-      <section style={{ background: '#f8fafc', padding: '80px 0', borderTop: '1px solid #f1f5f9', borderBottom: '1px solid #f1f5f9' }}>
-        <div className="container">
+      <section style={{ background: '#f8fafc', padding: '90px 0', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+        <div className="container" style={{ padding: '0 20px' }}>
           <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 50px auto' }}>
             <span 
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '6px',
+                gap: '8px',
                 background: 'rgba(220, 38, 38, 0.08)',
                 color: '#dc2626',
                 border: '1px solid rgba(220, 38, 38, 0.25)',
@@ -721,34 +798,34 @@ export default function GrowthPage({ onOpenBooking }) {
           </div>
 
           <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'separate', borderSpacing: '0 10px', minWidth: '700px' }}>
+            <table className="growth-comparison-table">
               <thead>
-                <tr style={{ color: '#64748b', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                  <th style={{ padding: '14px 20px', textAlign: 'left' }}>Growth Dimension</th>
-                  <th style={{ padding: '14px 20px', textAlign: 'left' }}>Traditional Agency</th>
-                  <th style={{ padding: '14px 20px', textAlign: 'left' }}>In-House Freelancers</th>
-                  <th style={{ padding: '14px 20px', textAlign: 'left', background: 'rgba(220,38,38,0.1)', color: '#dc2626', borderRadius: '12px 12px 0 0', fontWeight: 900 }}>Brand Scaling Hacks</th>
+                <tr>
+                  <th>Growth Dimension</th>
+                  <th>Traditional Agency</th>
+                  <th>In-House Freelancers</th>
+                  <th style={{ background: 'rgba(220, 38, 38, 0.1)', color: '#dc2626', borderRadius: '12px 12px 0 0', fontWeight: 900 }}>Brand Scaling Hacks</th>
                 </tr>
               </thead>
               <tbody>
                 {comparisonData.map((row, idx) => (
-                  <tr key={idx} style={{ background: '#ffffff', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.03)' }}>
-                    <td style={{ padding: '20px', fontWeight: 800, color: '#0f172a', borderTopLeftRadius: '14px', borderBottomLeftRadius: '14px', border: '1px solid #e2e8f0', borderRight: 'none' }}>
+                  <tr key={idx}>
+                    <td className="dim-col">
                       {row.feature}
                     </td>
-                    <td style={{ padding: '20px', color: '#64748b', fontSize: '0.9rem', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+                    <td>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <XCircle size={16} color="#ef4444" style={{ flexShrink: 0 }} />
                         <span>{row.typicalAgency}</span>
                       </div>
                     </td>
-                    <td style={{ padding: '20px', color: '#64748b', fontSize: '0.9rem', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
+                    <td>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <XCircle size={16} color="#ef4444" style={{ flexShrink: 0 }} />
                         <span>{row.inHouse}</span>
                       </div>
                     </td>
-                    <td style={{ padding: '20px', background: 'rgba(220,38,38,0.06)', borderLeft: '2px solid #dc2626', borderTop: '1px solid rgba(220,38,38,0.2)', borderBottom: '1px solid rgba(220,38,38,0.2)', borderRight: '1px solid rgba(220,38,38,0.2)', color: '#0f172a', fontWeight: 700, fontSize: '0.92rem', borderTopRightRadius: '14px', borderBottomRightRadius: '14px' }}>
+                    <td className="highlight-col">
                       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <CheckCircle2 size={18} color="#16a34a" style={{ flexShrink: 0 }} />
                         <span>{row.brandScaling}</span>
@@ -763,13 +840,13 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* Transparent Scaling Roadmap (Phases 1-3) */}
-      <section className="container" style={{ padding: '80px 20px' }}>
+      <section className="container" style={{ padding: '90px 20px' }}>
         <div style={{ textAlign: 'center', maxWidth: '820px', margin: '0 auto 50px auto' }}>
           <span 
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '6px',
+              gap: '8px',
               background: 'rgba(220, 38, 38, 0.08)',
               color: '#dc2626',
               border: '1px solid rgba(220, 38, 38, 0.25)',
@@ -798,27 +875,27 @@ export default function GrowthPage({ onOpenBooking }) {
             <div
               key={idx}
               style={{
-                background: '#f8fafc',
+                background: '#ffffff',
                 border: '1.5px solid #e2e8f0',
-                borderRadius: '22px',
-                padding: '32px 28px',
+                borderRadius: '24px',
+                padding: '36px 30px',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '16px',
                 boxShadow: '0 4px 16px rgba(0,0,0,0.03)'
               }}
             >
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#dc2626', fontSize: '0.82rem', fontWeight: 800, textTransform: 'uppercase' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: '#dc2626', fontSize: '0.84rem', fontWeight: 800, textTransform: 'uppercase' }}>
                 <Clock size={16} />
                 <span>{phase.phase}</span>
               </div>
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: '#0f172a', lineHeight: 1.35 }}>
+              <h3 style={{ fontSize: '1.35rem', fontWeight: 800, color: '#0f172a', lineHeight: 1.35 }}>
                 {phase.title}
               </h3>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', padding: 0, margin: 0 }}>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px', padding: 0, margin: 0 }}>
                 {phase.deliverables.map((d, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.88rem', color: '#475569', lineHeight: 1.5 }}>
-                    <CheckCircle2 size={16} color="#dc2626" style={{ marginTop: '2px', flexShrink: 0 }} />
+                  <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.9rem', color: '#475569', lineHeight: 1.5 }}>
+                    <CheckCircle2 size={16} color="#16a34a" style={{ marginTop: '2px', flexShrink: 0 }} />
                     <span>{d}</span>
                   </li>
                 ))}
@@ -829,14 +906,14 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* Frequently Asked Questions Accordion */}
-      <section style={{ background: '#f8fafc', padding: '80px 0', borderTop: '1px solid #f1f5f9' }}>
-        <div className="container" style={{ maxWidth: '860px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+      <section style={{ background: '#f8fafc', padding: '90px 0', borderTop: '1px solid #e2e8f0' }}>
+        <div className="container" style={{ maxWidth: '860px', padding: '0 20px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '44px' }}>
             <span 
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '6px',
+                gap: '8px',
                 background: 'rgba(220, 38, 38, 0.08)',
                 color: '#dc2626',
                 border: '1px solid rgba(220, 38, 38, 0.25)',
@@ -852,7 +929,7 @@ export default function GrowthPage({ onOpenBooking }) {
               <Sparkles size={14} />
               FAQ
             </span>
-            <h2 style={{ fontSize: 'clamp(1.9rem, 3.2vw, 2.6rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase' }}>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.2vw, 2.8rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase' }}>
               Frequently Asked Questions
             </h2>
           </div>
@@ -861,20 +938,13 @@ export default function GrowthPage({ onOpenBooking }) {
             {faqs.map((faq, idx) => (
               <div
                 key={idx}
-                style={{
-                  background: '#ffffff',
-                  border: openFaq === idx ? '1.5px solid #dc2626' : '1.5px solid #e2e8f0',
-                  borderRadius: '16px',
-                  overflow: 'hidden',
-                  transition: 'all 0.25s ease',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.03)'
-                }}
+                className={`growth-faq-card ${openFaq === idx ? 'is-open' : ''}`}
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
                   style={{
                     width: '100%',
-                    padding: '20px 24px',
+                    padding: '22px 26px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -900,7 +970,7 @@ export default function GrowthPage({ onOpenBooking }) {
                   />
                 </button>
                 {openFaq === idx && (
-                  <div style={{ padding: '0 24px 22px 24px', color: '#475569', fontSize: '0.94rem', lineHeight: 1.6, borderTop: '1px solid #f1f5f9' }}>
+                  <div style={{ padding: '0 26px 24px 26px', color: '#475569', fontSize: '0.95rem', lineHeight: 1.65, borderTop: '1px solid #f1f5f9' }}>
                     {faq.a}
                   </div>
                 )}
@@ -911,43 +981,45 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* Final Action Section */}
-      <section className="container" style={{ padding: '80px 20px' }}>
+      <section className="container" style={{ padding: '90px 20px' }}>
         <div
           style={{
             background: 'linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%)',
-            borderRadius: '28px',
-            padding: '48px 36px',
+            borderRadius: '30px',
+            padding: '56px 36px',
             textAlign: 'center',
-            maxWidth: '900px',
+            maxWidth: '960px',
             margin: '0 auto',
-            boxShadow: '0 20px 50px rgba(220,38,38,0.35)',
-            color: '#ffffff'
+            boxShadow: '0 20px 50px rgba(220, 38, 38, 0.3)',
+            color: '#ffffff',
+            position: 'relative',
+            overflow: 'hidden'
           }}
         >
-          <span style={{ fontSize: '0.82rem', color: '#fef08a', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase' }}>
+          <span style={{ fontSize: '0.84rem', color: '#fef08a', fontWeight: 900, letterSpacing: '0.14em', textTransform: 'uppercase' }}>
             READY TO SCALE?
           </span>
-          <h2 style={{ fontSize: 'clamp(2rem, 3.6vw, 3rem)', color: '#ffffff', fontWeight: 900, textTransform: 'uppercase', margin: '12px 0 18px 0' }}>
+          <h2 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3.2rem)', color: '#ffffff', fontWeight: 900, textTransform: 'uppercase', margin: '14px 0 18px 0' }}>
             Put $50M+ In Ad Spend Experience To Work
           </h2>
-          <p style={{ color: 'rgba(255,255,255,0.92)', fontSize: '1.05rem', lineHeight: 1.6, maxWidth: '700px', margin: '0 auto 32px auto' }}>
+          <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.1rem', lineHeight: 1.65, maxWidth: '720px', margin: '0 auto 34px auto' }}>
             Schedule a free 1-on-1 strategy call with Gaurav Kapoor and our growth team. We’ll audit your creative, ad accounts, and unit economics to map out your scale path.
           </p>
 
           <button 
             onClick={onOpenBooking} 
             style={{ 
-              padding: '16px 40px', 
-              fontSize: '1rem',
+              padding: '18px 44px', 
+              fontSize: '1.02rem',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
               background: '#ffffff',
               color: '#dc2626',
               border: 'none',
               borderRadius: '9999px',
               fontWeight: 900,
               cursor: 'pointer',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '10px',
               boxShadow: '0 8px 24px rgba(0,0,0,0.2)'
             }}
           >

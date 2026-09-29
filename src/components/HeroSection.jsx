@@ -3,27 +3,27 @@ import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, Flame, Award
 
 // Client Logos for Marquee (18 Verified eCommerce Brands Scaled)
 const row1Logos = [
-  { name: 'Dr. Naomi Skin', src: '/logos/clients/drnaomi.webp' },
-  { name: 'Vedge Nutrition', src: '/logos/clients/vedge-nutrition.webp' },
-  { name: 'Ion Bottles', src: '/logos/clients/ion-bottles.webp' },
-  { name: 'Vanidox', src: '/logos/clients/vanidox.webp' },
+  { name: 'Dr. Naomi Skin', src: '/logos/clients/drnaomi.svg' },
+  { name: 'Vedge Nutrition', src: '/logos/clients/vedge-nutrition.svg' },
+  { name: 'ionBottles', src: '/logos/clients/ion-bottles.svg' },
+  { name: 'Vanidox', src: '/logos/clients/vanidox.svg' },
   { name: 'Ayurda', src: '/logos/clients/ayurda.svg' },
-  { name: 'Lexco Australia', src: '/logos/clients/lexco-australia.webp' },
-  { name: 'Steel Horse Leather', src: '/logos/clients/steel-horse-leather.webp' },
-  { name: 'Juice Beauty', src: '/logos/clients/juice-beauty.webp' },
+  { name: 'Juice Beauty', src: '/logos/clients/juice-beauty.svg' },
+  { name: 'Steel Horse Leather', src: '/logos/clients/steel-horse-leather.svg' },
+  { name: 'Ghost Democracy', src: '/logos/clients/ghost-democracy.svg' },
   { name: 'Talon', src: '/logos/clients/talon.svg' },
 ];
 
 const row2Logos = [
-  { name: 'ZenSATION', src: '/logos/clients/zensation.webp' },
-  { name: 'EZ Detangler', src: '/logos/clients/ez-detangler.webp' },
+  { name: 'ZenSATION', src: '/logos/clients/zensation.svg' },
+  { name: 'EZ Detangler', src: '/logos/clients/ez-detangler.svg' },
   { name: 'Little & Lively', src: '/logos/clients/little-and-lively.svg' },
-  { name: 'Tasgal', src: '/logos/clients/tasgal.webp' },
-  { name: 'Veil Cosmetics', src: '/logos/clients/veil-cosmetics.webp' },
-  { name: 'Golfer Pro', src: '/logos/clients/golfer-pro.webp' },
-  { name: 'Gone Pants', src: '/logos/clients/gone-pants.webp' },
-  { name: 'Pure Skin Lab', src: '/logos/clients/pure-skin-lab.webp' },
-  { name: 'Life Easy', src: '/logos/clients/life-easy.webp' },
+  { name: 'Tasgal', src: '/logos/clients/tasgal.svg' },
+  { name: 'Veil Cosmetics', src: '/logos/clients/veil-cosmetics.svg' },
+  { name: 'Water Jewelers', src: '/logos/clients/water-jewelers.svg' },
+  { name: 'Swamp Kitten Jewelry', src: '/logos/clients/swamp-kitten.svg' },
+  { name: 'Pure Skin Lab', src: '/logos/clients/pure-skin-lab.svg' },
+  { name: 'Life Easy', src: '/logos/clients/life-easy.svg' },
 ];
 
 const bigMarqueeItems = [
