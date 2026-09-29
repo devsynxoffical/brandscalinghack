@@ -198,9 +198,9 @@ export default function StartingZeroSection({ onOpenBooking, onNavigate }) {
             </button>
             <button 
               className="sz-btn-secondary" 
-              onClick={() => onNavigate && onNavigate('viral-products')}
+              onClick={() => onNavigate && onNavigate('roas-calculator')}
             >
-              <span>Explore Winning Products Tool</span>
+              <span>Try The Free ROAS Calculator</span>
               <ArrowUpRight size={17} />
             </button>
           </div>

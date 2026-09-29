@@ -7,7 +7,7 @@ import CaseStudyDetailPage from './pages/CaseStudyDetailPage';
 import ViralCreativesPage from './pages/ViralCreativesPage';
 import GrowthPage from './pages/GrowthPage';
 import AboutPage from './pages/AboutPage';
-import FindViralProductsPage from './pages/FindViralProductsPage';
+import RoasCalculatorPage from './pages/RoasCalculatorPage';
 import DiscoveryModal from './components/DiscoveryModal';
 import VideoModal from './components/VideoModal';
 import InstagramModal from './components/InstagramModal';
@@ -46,8 +46,8 @@ function App() {
         setActivePage('growth');
       } else if (rawPath.includes('about')) {
         setActivePage('about');
-      } else if (rawPath.includes('viral-products')) {
-        setActivePage('viral-products');
+      } else if (rawPath.includes('roas-calculator') || rawPath.includes('viral-products')) {
+        setActivePage('roas-calculator');
       } else {
         setActivePage('home');
       }
@@ -123,13 +123,8 @@ function App() {
             onNavigate={handleNavigate}
           />
         );
-      case 'viral-products':
-        return (
-          <FindViralProductsPage 
-            onOpenBooking={() => setIsBookingOpen(true)} 
-            onNavigate={handleNavigate} 
-          />
-        );
+      case 'roas-calculator':
+        return <RoasCalculatorPage onOpenBooking={() => setIsBookingOpen(true)} />;
       default:
         return (
           <HomePage

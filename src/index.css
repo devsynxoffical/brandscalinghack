@@ -625,7 +625,7 @@ button {
   text-align: center;
   font-family: var(--font-primary);
   font-weight: 950;
-  font-size: clamp(7.5rem, 21vw, 20rem);
+  font-size: clamp(4.5rem, 19vw, 20rem);
   line-height: 0.8;
   letter-spacing: -0.02em;
   color: #ff5722;
@@ -698,6 +698,7 @@ button {
   width: 100%;
   background: #ffffff;
   color: #0f172a;
+  min-height: 330px;
   padding: 44px 0 54px 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -781,30 +782,47 @@ button {
   .hero-sitting-services-row {
     justify-content: center;
   }
+  /* Below 992px the deck stacks vertically, so Gaurav no longer hangs over it:
+     he sits inside the canvas above the headline band instead. */
+  .hero-sitting-canvas {
+    height: auto;
+    min-height: 620px;
+    max-height: none;
+    padding-top: 70px;
+  }
   .hero-sitting-subject-wrapper {
-    bottom: -180px;
+    bottom: 104px;
   }
   .hero-sitting-cutout-img {
     height: 440px;
+    max-width: 90vw;
   }
   .hero-sitting-overlay-title {
-    bottom: 20px;
+    bottom: 22px;
+    font-size: clamp(1.15rem, 4.2vw, 1.8rem);
+  }
+  .hero-sitting-white-deck {
+    min-height: 0;
+    padding: 36px 0 44px 0;
+  }
+  .hero-sitting-copy-block {
+    max-width: 560px;
   }
 }
 
 @media (max-width: 640px) {
   .hero-sitting-canvas {
-    height: 55vh;
-    min-height: 400px;
+    min-height: 520px;
+    padding-top: 60px;
   }
   .hero-sitting-cutout-img {
     height: 340px;
   }
   .hero-sitting-subject-wrapper {
-    bottom: -130px;
+    bottom: 92px;
   }
   .hero-sitting-overlay-title {
-    bottom: 15px;
+    bottom: 16px;
     font-size: 1.15rem;
   }
   .hero-sitting-orange-btn {
@@ -5612,6 +5630,40 @@ button {
   transition: all 0.2s ease;
 }
 
+/* Below 992px the coordinate-pinned timeline collapses into a simple vertical
+   stack so the cards never overlap (matches the isDesktop breakpoint in JS). */
+@media (max-width: 991px) {
+  .about-card-container {
+    aspect-ratio: auto;
+    height: auto;
+  }
+  .about-svg-mask-wrap {
+    display: none;
+  }
+  .about-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .about-card-wrap {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch;
+  }
+  .about-card-point-wrap {
+    display: none;
+  }
+  .journey-card-anim {
+    width: 100%;
+  }
+}
+
 .journey-close-btn:hover {
   background: #dc2626;
 }
@@ -7244,3 +7296,365 @@ button {
 
 
 
+
+/* ==========================================================================
+   ONLINE ROAS CALCULATOR PAGE
+   ========================================================================== */
+.roas-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.roas-header {
+  text-align: center;
+  padding: 64px 0 28px 0;
+}
+
+.roas-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(220, 38, 38, 0.08);
+  color: #dc2626;
+  border: 1px solid rgba(220, 38, 38, 0.25);
+  border-radius: 9999px;
+  padding: 6px 18px;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.roas-title {
+  font-family: var(--font-primary);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #0f172a;
+  margin: 0 0 14px 0;
+}
+
+.roas-subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.roas-section {
+  max-width: 1060px;
+  padding-bottom: 28px;
+}
+
+.roas-card {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.roas-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.roas-card-head h2 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.roas-reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 8px 14px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.roas-reset:hover {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.roas-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px 24px;
+}
+
+.roas-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.roas-field-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #334155;
+}
+
+.roas-input-wrap {
+  display: flex;
+  align-items: stretch;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.roas-input-wrap:focus-within {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.12);
+}
+
+.roas-input-prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  background: #f8fafc;
+  color: #94a3b8;
+  font-weight: 800;
+  border-right: 1px solid #e2e8f0;
+}
+
+.roas-input-wrap input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  padding: 13px 14px;
+  font-family: var(--font-primary);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  background: transparent;
+}
+
+.roas-field-hint {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.roas-results-section {
+  padding-bottom: 90px;
+}
+
+.roas-verdict {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  align-items: center;
+  border-radius: 24px;
+  padding: 32px 36px;
+  color: #ffffff;
+  margin-bottom: 22px;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
+}
+
+.roas-verdict-good {
+  background: linear-gradient(135deg, #14532d 0%, #166534 55%, #0f3d22 100%);
+}
+
+.roas-verdict-ok {
+  background: linear-gradient(135deg, #9a3412 0%, #c2410c 55%, #7c2d12 100%);
+}
+
+.roas-verdict-bad {
+  background: linear-gradient(135deg, #c41224 0%, #990a16 50%, #6e040e 100%);
+}
+
+.roas-verdict-neutral {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.roas-verdict-kicker {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.roas-verdict-label {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+.roas-verdict-note {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.roas-verdict-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.roas-verdict-numbers > div {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  padding: 14px 12px;
+  text-align: center;
+}
+
+.roas-verdict-numbers span {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.roas-verdict-numbers strong {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.roas-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.roas-result {
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.roas-result-accent {
+  border-color: rgba(220, 38, 38, 0.45);
+  background: linear-gradient(180deg, #fff7f7 0%, #ffffff 100%);
+}
+
+.roas-result-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dc2626;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.roas-result-value {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.roas-result-sub {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.is-negative {
+  color: #fca5a5 !important;
+}
+
+.roas-result-value.is-negative {
+  color: #dc2626 !important;
+}
+
+.roas-formula {
+  margin-top: 22px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px 20px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.roas-cta {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 26px;
+}
+
+.roas-cta p {
+  margin: 0;
+  color: #475569;
+  font-weight: 600;
+  max-width: 560px;
+}
+
+.st-footer-link-accent {
+  color: #ffb300 !important;
+  font-weight: 800;
+}
+
+@media (max-width: 860px) {
+  .roas-verdict {
+    grid-template-columns: 1fr;
+    padding: 26px 22px;
+  }
+  .roas-card {
+    padding: 22px;
+  }
+  .roas-header {
+    padding-top: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .roas-verdict-numbers {
+    grid-template-columns: 1fr;
+  }
+  .roas-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .roas-cta .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}

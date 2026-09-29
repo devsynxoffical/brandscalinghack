@@ -428,7 +428,7 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
               <ArrowRight size={18} />
             </button>
             <button
-              onClick={() => onNavigate && onNavigate('viral-products')}
+              onClick={() => onNavigate && onNavigate('roas-calculator')}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -444,7 +444,7 @@ export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal
               }}
             >
               <ShoppingBag size={18} />
-              <span>EXPLORE VIRAL PRODUCTS SPY TOOL</span>
+              <span>TRY THE FREE ROAS CALCULATOR</span>
             </button>
           </div>
         </div>

@@ -41,19 +41,18 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Case Studies</a>
               <a className="st-footer-link" href="#viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
               <a className="st-footer-link" href="#growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Growth Engine</a>
-              <a className="st-footer-link" href="#viral-products" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-products'); }}>Find Viral Products</a>
+              <a className="st-footer-link" href="#roas-calculator" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('roas-calculator'); }}>ROAS Calculator</a>
               <a className="st-footer-link" href="#about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
             </div>
 
             {/* Find Us */}
             <div className="st-footer-group">
               <h3 className="st-footer-heading">Find Us</h3>
-              <a className="st-footer-link" href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
-              <a className="st-footer-link" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a className="st-footer-link" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
-              <a className="st-footer-link" href="https://www.instagram.com/gauravecomm/" target="_blank" rel="noopener noreferrer">Instagram (@gauravecomm)</a>
-              <a className="st-footer-link" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-              <a className="st-footer-link" href="https://reddit.com" target="_blank" rel="noopener noreferrer">Reddit</a>
+              <a className="st-footer-link" href="https://www.instagram.com/gauravecomm/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className="st-footer-link" href="https://www.facebook.com/gaurav.kapoor.3994" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a className="st-footer-link" href="https://www.linkedin.com/in/gauravecom/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a className="st-footer-link" href="https://www.youtube.com/@gauravecom" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a className="st-footer-link st-footer-link-accent" href="https://www.facebook.com/groups/brandscalinghacks" target="_blank" rel="noopener noreferrer">Join Our Ecom Inner Circle</a>
             </div>
 
             {/* Newsletter */}

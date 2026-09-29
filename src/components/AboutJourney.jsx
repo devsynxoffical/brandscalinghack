@@ -563,7 +563,7 @@ export function AboutJourney() {
         },
       });
 
-      const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+      const isDesktop = window.matchMedia('(min-width: 992px)').matches;
 
       // Initial state setup for cards
       cardRefs.current.forEach((card, index) => {

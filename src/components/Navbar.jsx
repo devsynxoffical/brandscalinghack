@@ -60,10 +60,10 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
             Full Service Growth
           </button>
           <button
-            className={`header-text-link ${activePage === 'viral-products' ? 'active' : ''}`}
-            onClick={() => handleNavClick('viral-products')}
+            className={`header-text-link ${activePage === 'roas-calculator' ? 'active' : ''}`}
+            onClick={() => handleNavClick('roas-calculator')}
           >
-            Find Viral Products
+            ROAS Calculator
           </button>
           <button
             className={`header-text-link ${activePage === 'about' ? 'active' : ''}`}
@@ -92,7 +92,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           <button onClick={() => handleNavClick('case-studies')}>Case Studies</button>
           <button onClick={() => handleNavClick('viral-creatives')}>Viral Creatives</button>
           <button onClick={() => handleNavClick('growth')}>Full Service Growth</button>
-          <button onClick={() => handleNavClick('viral-products')}>Find Viral Products</button>
+          <button onClick={() => handleNavClick('roas-calculator')}>ROAS Calculator</button>
           <button onClick={() => handleNavClick('about')}>About Us</button>
         </div>
       )}
