@@ -7,8 +7,12 @@ export default function KnockoutAuthorityBannerSection({ onOpenBooking }) {
       <div className="container">
         {/* Rounded Poster Card */}
         <div className="knockout-card">
-          {/* Faded Backdrop Photo + Black-to-Gold Gradient Wash */}
-          <div className="knockout-card-backdrop" aria-hidden="true"></div>
+          {/* Faded Backdrop Figures + Black-to-Gold Gradient Wash */}
+          <div className="knockout-card-backdrop" aria-hidden="true">
+            <img src="/assets/coaches/coach_1.webp" alt="" className="knockout-bg-figure knockout-bg-figure-left" />
+            <img src="/assets/coaches/coach_3.webp" alt="" className="knockout-bg-figure knockout-bg-figure-right" />
+            <img src="/assets/coaches/coach_2.webp" alt="" className="knockout-bg-figure knockout-bg-figure-far-right" />
+          </div>
           <div className="knockout-card-wash" aria-hidden="true"></div>
           <div className="knockout-card-vignette" aria-hidden="true"></div>
 
