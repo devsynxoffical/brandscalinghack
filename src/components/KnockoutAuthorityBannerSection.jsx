@@ -5,37 +5,19 @@ export default function KnockoutAuthorityBannerSection({ onOpenBooking }) {
   return (
     <section className="knockout-stage-section">
       <div className="container">
-        {/* Rounded Poster Card */}
+        {/* Rounded Poster Card: generated boxing-style artwork with live copy on the clean bottom band */}
         <div className="knockout-card">
-          {/* Faded Backdrop Figures + Black-to-Gold Gradient Wash */}
-          <div className="knockout-card-backdrop" aria-hidden="true">
-            <img src="/assets/coaches/coach_1.webp" alt="" className="knockout-bg-figure knockout-bg-figure-left" />
-            <img src="/assets/coaches/coach_3.webp" alt="" className="knockout-bg-figure knockout-bg-figure-right" />
-            <img src="/assets/coaches/coach_2.webp" alt="" className="knockout-bg-figure knockout-bg-figure-far-right" />
-          </div>
-          <div className="knockout-card-wash" aria-hidden="true"></div>
-          <div className="knockout-card-vignette" aria-hidden="true"></div>
+          <img
+            src="/assets/bsh_scale_boxing_poster.webp"
+            alt="Gaurav Kapoor throwing a punch in front of the word SCALE"
+            className="knockout-poster"
+            width="1600"
+            height="1063"
+            loading="lazy"
+            decoding="async"
+          />
+          <div className="knockout-card-shade" aria-hidden="true"></div>
 
-          {/* Top-Left Brand Wordmark */}
-          <div className="knockout-brand-mark">
-            <span className="knockout-brand-mark-gold">BRAND SCALING</span>
-            <span className="knockout-brand-mark-white">HACKS</span>
-          </div>
-
-          {/* Center Stage: Giant Glowing Wordmark with Gaurav in Front */}
-          <div className="knockout-stage">
-            <div className="knockout-word" aria-hidden="true">
-              SCALE
-            </div>
-            <div className="knockout-subject-glow" aria-hidden="true"></div>
-            <img
-              src="/assets/gaurav_cutout_real.webp"
-              alt="Gaurav Kapoor - Brand Scaling Hacks"
-              className="knockout-subject"
-            />
-          </div>
-
-          {/* Bottom Tagline & Gold Pill Button */}
           <div className="knockout-card-bottom">
             <p className="knockout-tagline">
               A PROVEN DIRECT-RESPONSE GROWTH ARCHITECTURE FOR 8 &amp; 9-FIGURE ECOMMERCE BRANDS.

@@ -6328,7 +6328,7 @@ button {
 }
 
 /* ==========================================================================
-   KNOCKOUT AUTHORITY BANNER SECTION (POSTER CARD: GIANT GLOWING "SCALE" + GAURAV)
+   KNOCKOUT AUTHORITY BANNER SECTION (GENERATED BOXING POSTER + LIVE COPY)
    ========================================================================== */
 .knockout-stage-section {
   position: relative;
@@ -6353,172 +6353,36 @@ button {
   isolation: isolate;
 }
 
-/* Faded backdrop figures (desaturated, dark, JABZ-style crowd) */
-.knockout-card-backdrop {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  background: #0a0906;
-  z-index: 0;
-}
-
-.knockout-bg-figure {
-  position: absolute;
-  height: 118%;
-  width: auto;
-  max-width: none;
-  object-fit: cover;
-  filter: grayscale(1) brightness(0.42) contrast(1.15);
-  opacity: 0.55;
-  pointer-events: none;
+.knockout-poster {
+  display: block;
+  width: 100%;
+  height: auto;
   user-select: none;
 }
 
-.knockout-bg-figure-left {
-  left: -6%;
-  top: -4%;
-  opacity: 0.75;
-  filter: grayscale(1) brightness(0.55) contrast(1.15);
-}
-
-.knockout-bg-figure-right {
-  right: 4%;
-  top: -8%;
-}
-
-.knockout-bg-figure-far-right {
-  right: -14%;
-  top: 6%;
-  height: 105%;
-  opacity: 0.4;
-}
-
-/* Black on the left melting into warm gold on the right (JABZ-style wash) */
-.knockout-card-wash {
+/* Darkens the clean bottom band of the poster so the copy stays crisp */
+.knockout-card-shade {
   position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.72) 22%, rgba(0, 0, 0, 0.45) 50%, rgba(92, 66, 16, 0.5) 78%, rgba(150, 110, 30, 0.7) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.55) 100%);
-  z-index: 1;
-}
-
-/* Soft central darkening so the wordmark pops */
-.knockout-card-vignette {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 50% 45%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.45) 100%);
-  z-index: 1;
-}
-
-/* Top-left brand wordmark ("JABZ BOXING" style) */
-.knockout-brand-mark {
-  position: absolute;
-  top: 34px;
-  left: 42px;
-  z-index: 5;
-  display: inline-flex;
-  align-items: baseline;
-  gap: 8px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #ffffff;
-  font-family: 'Anton', 'Syne', var(--font-primary), sans-serif;
-  font-size: 1.35rem;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-}
-
-.knockout-brand-mark-gold {
-  color: #d9a53a;
-}
-
-.knockout-brand-mark-white {
-  color: #ffffff;
-  letter-spacing: 0.12em;
-}
-
-/* Center stage holding the word and the cutout */
-.knockout-stage {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  height: clamp(340px, 44vw, 560px);
-  margin-top: clamp(40px, 5vw, 64px);
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  overflow: hidden;
-}
-
-/* Giant white glowing wordmark */
-.knockout-word {
-  position: absolute;
-  left: 50%;
-  bottom: 4%;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
-  font-family: 'Anton', 'Syne', 'Impact', sans-serif;
-  font-weight: 400;
-  font-size: clamp(9.5rem, 30vw, 28rem);
-  line-height: 0.82;
-  letter-spacing: -0.01em;
-  color: #ffffff;
-  text-shadow:
-    0 0 18px rgba(255, 244, 214, 0.55),
-    0 0 45px rgba(255, 205, 96, 0.55),
-    0 0 110px rgba(255, 170, 40, 0.4),
-    0 18px 40px rgba(0, 0, 0, 0.85);
-  user-select: none;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-/* Warm glow behind Gaurav so he separates from the letters */
-.knockout-subject-glow {
-  position: absolute;
-  left: 50%;
-  bottom: -10%;
-  transform: translateX(-50%);
-  width: clamp(260px, 34vw, 480px);
-  height: clamp(260px, 34vw, 480px);
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 190, 70, 0.5) 0%, rgba(255, 130, 30, 0.22) 45%, rgba(0, 0, 0, 0) 72%);
-  filter: blur(30px);
-  mix-blend-mode: screen;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 45%, rgba(0, 0, 0, 0.9) 100%);
   pointer-events: none;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* Gaurav cutout: head rises above the letters, body clipped at the stage floor */
-.knockout-subject {
-  position: relative;
-  z-index: 3;
-  height: 108%;
-  width: auto;
-  max-width: none;
-  margin-bottom: -5%;
-  object-fit: contain;
-  filter:
-    drop-shadow(0 0 28px rgba(255, 190, 70, 0.55))
-    drop-shadow(0 20px 40px rgba(0, 0, 0, 0.95))
-    contrast(1.08)
-    brightness(1.02);
-  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 86%, rgba(0, 0, 0, 0) 100%);
-  mask-image: linear-gradient(180deg, #000 0%, #000 86%, rgba(0, 0, 0, 0) 100%);
-}
-
-/* Tagline + button block */
 .knockout-card-bottom {
-  position: relative;
-  z-index: 4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  padding: 12px 40px 52px 40px;
+  gap: 18px;
+  padding: 0 40px 36px 40px;
   text-align: center;
 }
 
@@ -6527,9 +6391,9 @@ button {
   max-width: 960px;
   font-family: 'Anton', 'Syne', var(--font-primary), sans-serif;
   font-weight: 400;
-  font-size: clamp(1rem, 2vw, 1.55rem);
+  font-size: clamp(1rem, 1.9vw, 1.5rem);
   letter-spacing: 0.06em;
-  line-height: 1.35;
+  line-height: 1.3;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.95);
@@ -6547,7 +6411,7 @@ button {
   font-size: clamp(1rem, 1.4vw, 1.25rem);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 17px 44px;
+  padding: 16px 42px;
   border-radius: 9999px;
   border: 1px solid rgba(255, 232, 170, 0.6);
   box-shadow:
@@ -6573,42 +6437,22 @@ button {
   transform: translateX(5px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .knockout-stage-section {
     padding: 50px 0 70px 0;
   }
   .knockout-card {
     border-radius: 24px;
   }
-  .knockout-brand-mark {
-    top: 22px;
-    left: 22px;
-    font-size: 1.05rem;
-  }
-  .knockout-stage {
-    height: clamp(280px, 70vw, 360px);
-    margin-top: 56px;
-  }
-  .knockout-bg-figure-far-right {
+  /* On narrow screens the poster is short, so the copy sits below it instead of on it */
+  .knockout-card-shade {
     display: none;
   }
-  .knockout-bg-figure-left {
-    left: -30%;
-  }
-  .knockout-bg-figure-right {
-    right: -30%;
-  }
-  .knockout-word {
-    font-size: clamp(6.5rem, 33vw, 10.5rem);
-    letter-spacing: 0.01em;
-  }
-  .knockout-subject {
-    height: 98%;
-    margin-bottom: -3%;
-  }
   .knockout-card-bottom {
-    padding: 8px 22px 40px 22px;
-    gap: 18px;
+    position: static;
+    background: #050505;
+    padding: 20px 20px 30px 20px;
+    gap: 16px;
   }
   .knockout-gold-btn {
     padding: 14px 30px;
