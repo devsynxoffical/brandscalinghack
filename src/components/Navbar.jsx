@@ -22,7 +22,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
   };
 
   return (
-    <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''} ${activePage === 'about' ? 'header-light-page' : ''}`}>
+    <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''}`}>
       <div className="container header-ss1-inner">
         {/* Left Nav: 3 requested pages */}
         <div className="header-left-links">
