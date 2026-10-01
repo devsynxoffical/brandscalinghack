@@ -2,15 +2,12 @@ import React, { useState, useMemo } from 'react';
 import { 
   Play, 
   Volume2, 
-  VolumeX, 
   Sparkles, 
   ArrowRight, 
   Search, 
   Filter, 
   X, 
-  CheckCircle2, 
   Flame, 
-  TrendingUp,
   Maximize2
 } from 'lucide-react';
 
@@ -149,43 +146,59 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
   };
 
   return (
-    <div className="viral-creatives-page" style={{ background: '#0a0612', minHeight: '100vh', color: '#fff' }}>
-      {/* Top Banner Ticker */}
-      <div 
-        style={{ 
-          background: '#a3e635', 
-          color: '#000', 
-          textAlign: 'center', 
-          padding: '10px 16px', 
-          fontSize: '0.88rem', 
-          fontWeight: 800,
-          letterSpacing: '0.02em',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '8px'
-        }}
-      >
-        <span style={{ width: '8px', height: '8px', background: '#000', borderRadius: '50%', display: 'inline-block' }}></span>
-        <span>Done-for-you high ROAS video ads • <strong>Limited monthly creative seats</strong></span>
-        <button 
-          onClick={onOpenBooking}
+    <div 
+      className="viral-creatives-page" 
+      style={{ 
+        background: '#07090e', 
+        minHeight: '100vh', 
+        color: '#ffffff',
+        paddingTop: '100px' /* Prevents any overlap with fixed navbar */
+      }}
+    >
+      {/* Brand Scaling Luxury Announcement Ticker */}
+      <div className="container" style={{ maxWidth: '1240px', margin: '0 auto 20px auto', padding: '0 20px' }}>
+        <div 
           style={{ 
-            background: 'transparent', 
-            border: 'none', 
-            textDecoration: 'underline', 
-            fontWeight: 900, 
-            cursor: 'pointer',
-            color: '#000',
-            marginLeft: '4px'
+            background: 'linear-gradient(90deg, rgba(220, 38, 38, 0.15) 0%, rgba(185, 28, 28, 0.25) 50%, rgba(220, 38, 38, 0.15) 100%)', 
+            border: '1px solid rgba(220, 38, 38, 0.35)',
+            borderRadius: '9999px',
+            color: '#f8fafc', 
+            textAlign: 'center', 
+            padding: '10px 20px', 
+            fontSize: '0.88rem', 
+            fontWeight: 700,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: '8px',
+            boxShadow: '0 4px 20px rgba(220, 38, 38, 0.15)'
           }}
         >
-          Book a slot →
-        </button>
+          <span style={{ width: '8px', height: '8px', background: '#dc2626', borderRadius: '50%', display: 'inline-block', boxShadow: '0 0 10px #dc2626' }}></span>
+          <span>Done-for-you high ROAS video ads • <strong style={{ color: '#ffffff' }}>Limited monthly creative capacity</strong></span>
+          <button 
+            onClick={onOpenBooking}
+            style={{ 
+              background: 'transparent', 
+              border: 'none', 
+              color: '#ef4444', 
+              fontWeight: 900, 
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '4px',
+              textDecoration: 'underline'
+            }}
+          >
+            <span>Book a slot</span>
+            <span>→</span>
+          </button>
+        </div>
       </div>
 
       {/* Hero Header */}
-      <section style={{ padding: '60px 0 35px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ padding: '30px 0 35px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
         <div className="container" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           
           <div 
@@ -193,10 +206,10 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              background: 'rgba(163, 230, 53, 0.1)',
-              color: '#a3e635',
-              border: '1px solid rgba(163, 230, 53, 0.25)',
-              padding: '6px 16px',
+              background: 'rgba(220, 38, 38, 0.12)',
+              color: '#ef4444',
+              border: '1px solid rgba(220, 38, 38, 0.3)',
+              padding: '6px 18px',
               borderRadius: '9999px',
               fontSize: '0.8rem',
               fontWeight: 800,
@@ -220,7 +233,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               marginBottom: '16px'
             }}
           >
-            High-Performance <span style={{ color: '#a3e635' }}>Video Creatives</span>
+            High-Performance <span style={{ color: '#dc2626' }}>Video Creatives</span>
           </h1>
 
           <p 
@@ -245,21 +258,21 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               margin: '0 auto 40px auto' 
             }}
           >
-            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
-              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#a3e635' }}>58+</div>
-              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Winning Ad Concepts</div>
+            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '18px' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#dc2626' }}>58+</div>
+              <div style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Winning Ad Concepts</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
-              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#38bdf8' }}>$50M+</div>
-              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Ad Spend Scaled</div>
+            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '18px' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#38bdf8' }}>$50M+</div>
+              <div style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Ad Spend Scaled</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
-              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#f43f5e' }}>13+</div>
-              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Industries Tested</div>
+            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '18px' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#f43f5e' }}>13+</div>
+              <div style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Industries Tested</div>
             </div>
-            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
-              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#f59e0b' }}>4.8x</div>
-              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Average Direct ROAS</div>
+            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '18px' }}>
+              <div style={{ fontSize: '1.8rem', fontWeight: 900, color: '#fbbf24' }}>4.8x</div>
+              <div style={{ fontSize: '0.78rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Average Direct ROAS</div>
             </div>
           </div>
 
@@ -278,7 +291,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               style={{
                 width: '100%',
                 padding: '14px 20px 14px 48px',
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: '#0d1117',
                 border: '1px solid rgba(255, 255, 255, 0.12)',
                 borderRadius: '9999px',
                 color: '#fff',
@@ -287,7 +300,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                 transition: 'all 0.2s ease',
                 boxSizing: 'border-box'
               }}
-              onFocus={(e) => e.target.style.borderColor = '#a3e635'}
+              onFocus={(e) => e.target.style.borderColor = '#dc2626'}
               onBlur={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.12)'}
             />
             {searchQuery && (
@@ -337,12 +350,13 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                     fontWeight: 700,
                     cursor: 'pointer',
                     transition: 'all 0.2s ease',
-                    border: isActive ? '1px solid #a3e635' : '1px solid rgba(255, 255, 255, 0.12)',
-                    background: isActive ? '#a3e635' : 'rgba(255, 255, 255, 0.04)',
-                    color: isActive ? '#000' : '#e2e8f0',
+                    border: isActive ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.1)',
+                    background: isActive ? '#dc2626' : '#0d1117',
+                    color: isActive ? '#ffffff' : '#cbd5e1',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '6px'
+                    gap: '6px',
+                    boxShadow: isActive ? '0 4px 14px rgba(220, 38, 38, 0.4)' : 'none'
                   }}
                 >
                   <span>{cat.icon}</span>
@@ -350,10 +364,10 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                   <span 
                     style={{ 
                       fontSize: '0.72rem', 
-                      background: isActive ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.1)', 
+                      background: isActive ? 'rgba(0,0,0,0.25)' : 'rgba(255,255,255,0.08)', 
                       padding: '2px 7px', 
                       borderRadius: '10px',
-                      color: isActive ? '#000' : '#94a3b8',
+                      color: isActive ? '#ffffff' : '#94a3b8',
                       fontWeight: 800
                     }}
                   >
@@ -372,7 +386,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
         <div className="container" style={{ maxWidth: '1380px', margin: '0 auto', padding: '0 20px' }}>
           
           {/* Active Category Title & Count */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '28px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '28px', flexWrap: 'wrap', gap: '14px' }}>
             <div>
               <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff', margin: 0 }}>
                 {selectedCategory === 'All' ? 'All Video Ads' : selectedCategory}
@@ -386,40 +400,24 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               onClick={onOpenBooking}
               className="btn-primary"
               style={{
-                background: '#a3e635',
-                color: '#000',
-                fontWeight: 800,
-                fontSize: '0.85rem',
-                padding: '10px 22px',
-                borderRadius: '9999px',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                border: 'none',
-                cursor: 'pointer'
+                padding: '11px 24px',
+                fontSize: '0.88rem'
               }}
             >
-              <span>Get Videos Like These</span>
+              <span>GET VIDEOS LIKE THESE</span>
               <ArrowRight size={15} />
             </button>
           </div>
 
           {filteredVideos.length === 0 ? (
-            <div style={{ textAlign: 'center', padding: '80px 20px', background: 'rgba(255,255,255,0.02)', borderRadius: '20px', border: '1px dashed rgba(255,255,255,0.15)' }}>
+            <div style={{ textAlign: 'center', padding: '80px 20px', background: '#0d1117', borderRadius: '20px', border: '1px dashed rgba(255,255,255,0.15)' }}>
               <Filter size={40} color="#64748b" style={{ marginBottom: '14px' }} />
               <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '8px' }}>No video creatives found</h3>
               <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '20px' }}>Try adjusting your search query or select another category filter.</p>
               <button 
                 onClick={() => { setSelectedCategory('All'); setSearchQuery(''); }}
-                style={{
-                  background: '#a3e635',
-                  color: '#000',
-                  border: 'none',
-                  padding: '10px 20px',
-                  borderRadius: '9999px',
-                  fontWeight: 800,
-                  cursor: 'pointer'
-                }}
+                className="btn-primary"
+                style={{ padding: '10px 22px' }}
               >
                 Reset Filters
               </button>
@@ -440,10 +438,10 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                     key={video.id}
                     onClick={() => handleCardClick(video)}
                     style={{
-                      background: '#110c1c',
+                      background: '#0d1117',
                       borderRadius: '24px',
                       overflow: 'hidden',
-                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      border: '1px solid rgba(255, 255, 255, 0.08)',
                       boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
                       position: 'relative',
                       display: 'flex',
@@ -453,22 +451,22 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.transform = 'translateY(-6px)';
-                      e.currentTarget.style.borderColor = 'rgba(163, 230, 53, 0.4)';
-                      e.currentTarget.style.boxShadow = '0 24px 50px -10px rgba(163, 230, 53, 0.2)';
+                      e.currentTarget.style.borderColor = 'rgba(220, 38, 38, 0.5)';
+                      e.currentTarget.style.boxShadow = '0 24px 50px -10px rgba(220, 38, 38, 0.25)';
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.transform = 'translateY(0)';
-                      e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                      e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
                       e.currentTarget.style.boxShadow = '0 20px 40px -15px rgba(0, 0, 0, 0.7)';
                     }}
                   >
-                    {/* 9:16 Video Container matching sevenfigurestudio reference */}
+                    {/* 9:16 Video Container */}
                     <div 
                       style={{ 
                         position: 'relative', 
                         width: '100%', 
                         paddingTop: '177.77%', /* 9:16 vertical aspect ratio */
-                        background: '#090510',
+                        background: '#000000',
                         overflow: 'hidden'
                       }}
                     >
@@ -504,7 +502,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                       >
                         <span 
                           style={{
-                            background: 'rgba(0, 0, 0, 0.75)',
+                            background: 'rgba(0, 0, 0, 0.8)',
                             backdropFilter: 'blur(10px)',
                             border: '1px solid rgba(255, 255, 255, 0.15)',
                             padding: '4px 10px',
@@ -523,21 +521,21 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
 
                         <span 
                           style={{
-                            background: 'rgba(163, 230, 53, 0.2)',
+                            background: 'rgba(220, 38, 38, 0.25)',
                             backdropFilter: 'blur(10px)',
-                            border: '1px solid rgba(163, 230, 53, 0.4)',
+                            border: '1px solid rgba(220, 38, 38, 0.5)',
                             padding: '4px 10px',
                             borderRadius: '9999px',
                             fontSize: '0.72rem',
                             fontWeight: 900,
-                            color: '#a3e635'
+                            color: '#ffc107'
                           }}
                         >
                           {video.roas}
                         </span>
                       </div>
 
-                      {/* Pill Button: Click for sound (Matches reference screenshot) */}
+                      {/* Pill Button: Click for sound */}
                       <div 
                         style={{ 
                           position: 'absolute', 
@@ -554,10 +552,10 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                           onClick={(e) => toggleSound(e, video.id)}
                           style={{
                             width: '100%',
-                            background: isUnmuted ? '#a3e635' : 'rgba(0, 0, 0, 0.75)',
+                            background: isUnmuted ? '#dc2626' : 'rgba(0, 0, 0, 0.8)',
                             backdropFilter: 'blur(12px)',
-                            color: isUnmuted ? '#000' : '#ffffff',
-                            border: isUnmuted ? '1px solid #a3e635' : '1px solid rgba(255, 255, 255, 0.2)',
+                            color: '#ffffff',
+                            border: isUnmuted ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.2)',
                             borderRadius: '9999px',
                             padding: '10px 18px',
                             fontSize: '0.85rem',
@@ -587,7 +585,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                     </div>
 
                     {/* Card Details Footer */}
-                    <div style={{ padding: '16px 18px', background: 'rgba(0,0,0,0.4)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+                    <div style={{ padding: '16px 18px', background: '#0d1117', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
                       <h3 style={{ fontSize: '0.96rem', fontWeight: 800, color: '#fff', margin: '0 0 4px 0', lineHeight: 1.4 }}>
                         {video.title}
                       </h3>
@@ -598,7 +596,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                         <span 
                           style={{ 
                             fontSize: '0.76rem', 
-                            color: '#a3e635', 
+                            color: '#ef4444', 
                             fontWeight: 800, 
                             display: 'inline-flex', 
                             alignItems: 'center', 
@@ -644,7 +642,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               position: 'relative',
               width: '100%',
               maxWidth: '460px',
-              background: '#130d22',
+              background: '#0d1117',
               borderRadius: '28px',
               border: '1px solid rgba(255, 255, 255, 0.15)',
               overflow: 'hidden',
@@ -693,12 +691,12 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
             </div>
 
             {/* Modal Info Footer */}
-            <div style={{ padding: '20px', background: '#110b1f' }}>
+            <div style={{ padding: '20px', background: '#0d1117' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                 <span 
                   style={{ 
                     fontSize: '0.78rem', 
-                    color: '#a3e635', 
+                    color: '#ef4444', 
                     fontWeight: 800, 
                     textTransform: 'uppercase',
                     letterSpacing: '0.05em' 
@@ -710,7 +708,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                   style={{ 
                     fontSize: '0.8rem', 
                     color: '#000', 
-                    background: '#a3e635', 
+                    background: '#facc15', 
                     padding: '3px 10px', 
                     borderRadius: '9999px', 
                     fontWeight: 900 
@@ -729,21 +727,11 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                   setModalVideo(null);
                   onOpenBooking();
                 }}
+                className="btn-primary"
                 style={{
                   width: '100%',
-                  background: '#a3e635',
-                  color: '#000',
-                  border: 'none',
-                  borderRadius: '9999px',
                   padding: '14px',
-                  fontWeight: 900,
-                  fontSize: '0.95rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '8px',
-                  cursor: 'pointer',
-                  boxShadow: '0 8px 24px rgba(163, 230, 53, 0.3)'
+                  justifyContent: 'center'
                 }}
               >
                 <span>ENGINEER ADS LIKE THIS FOR MY BRAND</span>
@@ -755,16 +743,16 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
       )}
 
       {/* Conversion Creative System Bottom CTA */}
-      <section style={{ background: '#07040d', padding: '90px 0', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ background: '#04060a', padding: '90px 0', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
         <div className="container" style={{ maxWidth: '860px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           <span 
             style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
-              background: 'rgba(163, 230, 53, 0.1)',
-              color: '#a3e635',
-              border: '1px solid rgba(163, 230, 53, 0.25)',
+              background: 'rgba(220, 38, 38, 0.12)',
+              color: '#ef4444',
+              border: '1px solid rgba(220, 38, 38, 0.3)',
               borderRadius: '9999px',
               padding: '6px 18px',
               fontWeight: 800,
@@ -788,28 +776,10 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
 
           <button 
             onClick={onOpenBooking}
+            className="btn-primary"
             style={{ 
-              background: '#a3e635',
-              color: '#000',
               padding: '16px 42px',
-              fontSize: '1rem',
-              fontWeight: 900,
-              borderRadius: '9999px',
-              border: 'none',
-              cursor: 'pointer',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '10px',
-              boxShadow: '0 10px 30px rgba(163, 230, 53, 0.35)',
-              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)';
-              e.currentTarget.style.boxShadow = '0 14px 40px rgba(163, 230, 53, 0.45)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'translateY(0) scale(1)';
-              e.currentTarget.style.boxShadow = '0 10px 30px rgba(163, 230, 53, 0.35)';
+              fontSize: '1rem'
             }}
           >
             <span>BOOK A 1-ON-1 CREATIVE STRATEGY AUDIT</span>
