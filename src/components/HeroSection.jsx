@@ -115,6 +115,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
           <video
             ref={videoRef}
             src="/brand-scaling-video.mp4"
+            poster="/hero-video-poster.jpg"
             autoPlay
             loop
             muted
@@ -125,7 +126,6 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             className="bsh-hero-bg-video-element"
           >
             <source src="/brand-scaling-video.mp4" type="video/mp4" />
-            <source src="/brand%20scaling%20video.mp4" type="video/mp4" />
           </video>
           {/* Subtle Transparent Vignette for High Video Clarity */}
           <div className="bsh-hero-video-overlay" />

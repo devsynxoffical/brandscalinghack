@@ -21,8 +21,10 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const isHomeUnscrolled = activePage === 'home' && !scrolled;
+
   return (
-    <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''}`}>
+    <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''} ${isHomeUnscrolled ? 'header-home-transparent' : ''}`}>
       <div className="container header-ss1-inner">
         {/* Left Nav: 3 requested pages */}
         <div className="header-left-links">
