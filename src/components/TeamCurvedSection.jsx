@@ -114,6 +114,7 @@ export default function TeamCurvedSection({ onOpenBooking }) {
                         alt="Brand Scaling Specialist"
                         className="team-card-photo"
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>
