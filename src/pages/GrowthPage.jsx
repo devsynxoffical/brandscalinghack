@@ -6,7 +6,6 @@ import {
   Video, 
   Search, 
   Mail, 
-  Crown, 
   CheckCircle2, 
   ArrowRight, 
   Flame, 
@@ -216,31 +215,6 @@ export default function GrowthPage({ onOpenBooking }) {
       ],
       goal: 'Because the more value you create from the customers you\'ve already acquired, the stronger your overall growth engine becomes.',
       btnText: 'EXPLORE KLAVIYO'
-    },
-    {
-      id: '07',
-      tag: '07 — 8 & 9-FIGURE STRATEGIC ADVISORY',
-      title: 'Sometimes You Don’t Need Another Service. You Need Someone Experienced Looking at the Entire Business.',
-      icon: Crown,
-      accent: '#eab308',
-      bgGlow: 'linear-gradient(135deg, rgba(234, 179, 8, 0.18) 0%, rgba(30, 27, 75, 0.95) 100%)',
-      borderColor: 'rgba(234, 179, 8, 0.45)',
-      summary: 'This is where you get direct access to Gaurav Kapoor. Our strategic advisory is designed for eCommerce founders who want direct strategic mentorship around the bigger growth picture.',
-      checklistTitle: 'We can work through:',
-      items: [
-        'Customer acquisition',
-        'Meta and Google strategy',
-        'Creative direction',
-        'Conversion',
-        'Offers',
-        'Retention',
-        'Unit economics',
-        'Scaling decisions',
-        'International expansion',
-        'Overall growth strategy'
-      ],
-      goal: 'Direct strategic mentorship. Direct experience. Direct access to Gaurav Kapoor.',
-      btnText: 'APPLY FOR STRATEGIC ADVISORY'
     }
   ];
 
@@ -299,7 +273,7 @@ export default function GrowthPage({ onOpenBooking }) {
     {
       id: 'scale',
       title: 'SCALE',
-      desc: 'Data • Strategy • Testing • Optimization • Strategic Advisory',
+      desc: 'Data • Strategy • Testing • Optimization • Scaling Infrastructure',
       solidColor: '#8a274c', // Vibrant Wine Berry Maroon
       textColor: '#ffffff',
       dividerColor: 'rgba(255, 255, 255, 0.4)',
@@ -311,7 +285,7 @@ export default function GrowthPage({ onOpenBooking }) {
         'Strategy',
         'Testing',
         'Optimization',
-        'Strategic Advisory'
+        'Scaling Infrastructure'
       ]
     }
   ];
@@ -886,7 +860,7 @@ export default function GrowthPage({ onOpenBooking }) {
               </div>
 
               <p className="gp-founder-para" style={{ marginTop: '16px', color: '#cbd5e1' }}>
-                And for brands that need deeper strategic guidance, that experience is available directly through our <strong>8 & 9-Figure Strategic Advisory</strong>.
+                And for brands looking to scale aggressively, that experience is built directly into our full-service eCommerce growth partnerships.
               </p>
 
               <div style={{ marginTop: '24px' }}>
