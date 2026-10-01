@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, ArrowRight, ClipboardCheck } from 'lucide-react';
 import LiveSessionsSection from '../components/LiveSessionsSection';
-import KnockoutAuthorityBannerSection from '../components/KnockoutAuthorityBannerSection';
+import ExperienceCtaSection from '../components/ExperienceCtaSection';
 
 export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVideo }) {
   // Slider states with defaults matching the reference screenshot
@@ -229,8 +229,8 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
       {/* 2. LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
       <LiveSessionsSection onOpenVideo={onOpenVideo} />
 
-      {/* 3. SCALE YOUR BRAND / BOOKING HORIZON STAGE */}
-      <KnockoutAuthorityBannerSection onOpenBooking={onOpenBooking} />
+      {/* 3. GROWTH BENCHMARK & SCALE BRAND CTA */}
+      <ExperienceCtaSection onOpenBooking={onOpenBooking} />
 
     </div>
   );

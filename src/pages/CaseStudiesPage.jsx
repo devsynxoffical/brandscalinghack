@@ -1,7 +1,7 @@
 import React from 'react';
 import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
-import KnockoutAuthorityBannerSection from '../components/KnockoutAuthorityBannerSection';
+import ExperienceCtaSection from '../components/ExperienceCtaSection';
 
 export default function CaseStudiesPage({ 
   onOpenBooking, 
@@ -22,8 +22,8 @@ export default function CaseStudiesPage({
       {/* LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
       <LiveSessionsSection onOpenVideo={onOpenVideo} />
 
-      {/* SCALE YOUR BRAND / BOOKING HORIZON STAGE */}
-      <KnockoutAuthorityBannerSection onOpenBooking={onOpenBooking} />
+      {/* GROWTH BENCHMARK & SCALE BRAND CTA */}
+      <ExperienceCtaSection onOpenBooking={onOpenBooking} />
     </div>
   );
 }
