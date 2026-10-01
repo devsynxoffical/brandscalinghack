@@ -1,824 +1,820 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   Play, 
+  Volume2, 
+  VolumeX, 
   Sparkles, 
   ArrowRight, 
-  ExternalLink,
-  Search,
-  ShoppingBag,
-  Image as ImageIcon,
-  Video as VideoIcon,
+  Search, 
+  Filter, 
+  X, 
+  CheckCircle2, 
+  Flame, 
   TrendingUp,
-  Eye,
-  CheckCircle2
+  Maximize2
 } from 'lucide-react';
 
-export const curatedViralCreatives = [
-  {
-    id: 'vc-1',
-    type: 'video',
-    title: 'The 3-Second Visual Hook That Slashed CPA by 44%',
-    category: 'Video Ad Hooks',
-    badge: '4.62x ROAS',
-    revenue: '$184K Generated',
-    roas: '4.62x ROAS',
-    video: '/assets/insta-video/C9CPs88t1qa.mp4',
-    image: '/assets/insta-video/C9CPs88t1qa.webp',
-    description: 'High-velocity visual pattern interrupt leveraging a raw macro problem agitation in the first 2.5 seconds, immediately qualifying high-intent cold buyers.',
-    strategy: 'Hook Retention: 54% • Conversion Rate: 4.8%'
-  },
-  {
-    id: 'vc-2',
-    type: 'static',
-    title: 'Direct-Response "Us vs Them" Feature Comparison Matrix',
-    category: 'Static Ad Creatives',
-    badge: 'STATIC POST',
-    revenue: '$96K Generated',
-    roas: '3.95x ROAS',
-    video: '',
-    image: '/assets/insta-video/DBTXySHSrJa.webp',
-    description: 'High-converting split comparison graphic contrasting cheap market alternatives against our client’s premium formulation, eliminating buyer hesitation instantly.',
-    strategy: 'Click-Through Rate: 3.9% • Middle of Funnel Asset'
-  },
-  {
-    id: 'vc-3',
-    type: 'video',
-    title: 'Raw Creator Unboxing & Sensory Reaction Flow',
-    category: 'UGC & TikTok Ads',
-    badge: '5.10x ROAS',
-    revenue: '$248K Generated',
-    roas: '5.10x ROAS',
-    video: '/assets/insta-video/Ca19JaMse_i.mp4',
-    image: '/assets/insta-video/Ca19JaMse_i.webp',
-    description: 'Authentic customer perspective with natural home lighting and ASMR packaging cues, achieving a 52% 3-second hook retention rate on TikTok and Reels.',
-    strategy: 'TikTok Native • 52% 3s Hook Rate'
-  },
-  {
-    id: 'vc-4',
-    type: 'static',
-    title: 'High-AOV Dynamic 3-Tier Bundle Value Stack',
-    category: 'Offer & Bundle Stacks',
-    badge: 'OFFER POST',
-    revenue: '$132K Generated',
-    roas: '4.35x ROAS',
-    video: '',
-    image: '/assets/insta-video/C2hk_plyrcZ.webp',
-    description: 'Clear visual hierarchy showcasing Buy 2 Get 1 Free tiered pricing, increasing storefront average order value from $42 to $78 on cold Meta traffic.',
-    strategy: 'AOV Lift: +85% • Front-End Liquidation'
-  },
-  {
-    id: 'vc-5',
-    type: 'video',
-    title: 'Advantage+ Broad Creative with Dynamic Text Overlays',
-    category: 'Meta Advantage+ Assets',
-    badge: '4.80x ROAS',
-    revenue: '$310K Generated',
-    roas: '4.80x ROAS',
-    video: '/assets/insta-video/Ce4RHMZBmfi.mp4',
-    image: '/assets/insta-video/Ce4RHMZBmfi.webp',
-    description: 'Native short-form captions combined with fast-cut b-roll demonstration, maintaining a sub-$14 Customer Acquisition Cost across $2,500/day ad spend.',
-    strategy: 'Advantage+ Shopping • $2,500/day Scale'
-  },
-  {
-    id: 'vc-6',
-    type: 'static',
-    title: 'Verified 5-Star Social Proof & Customer Review Wall',
-    category: 'Static Ad Creatives',
-    badge: 'STATIC POST',
-    revenue: '$84K Generated',
-    roas: '3.70x ROAS',
-    video: '',
-    image: '/assets/insta-video/DB8LF0QyepD.webp',
-    description: 'Authentic quote callouts and verified buyer badges positioned for retargeting, converting hesitant cart abandoners within 24 hours of first view.',
-    strategy: 'Retargeting ROAS: 6.2x • Cart Recovery'
-  },
-  {
-    id: 'vc-7',
-    type: 'video',
-    title: 'Problem-Agitation-Solution Narrative Script',
-    category: 'Video Ad Hooks',
-    badge: '4.40x ROAS',
-    revenue: '$165K Generated',
-    roas: '4.40x ROAS',
-    video: '/assets/insta-video/Cft79TLpxyk.mp4',
-    image: '/assets/insta-video/Cft79TLpxyk.webp',
-    description: 'Structured 45-second direct-response storytelling that exposes daily routine friction and introduces the client product as the obvious relief.',
-    strategy: 'P-A-S Framework • 4.1% CVR'
-  },
-  {
-    id: 'vc-8',
-    type: 'video',
-    title: 'Day-In-The-Life Micro-Vlog Creator Angle',
-    category: 'UGC & TikTok Ads',
-    badge: '4.92x ROAS',
-    revenue: '$215K Generated',
-    roas: '4.92x ROAS',
-    video: '/assets/insta-video/CjIsfV-Py1A.mp4',
-    image: '/assets/insta-video/CjIsfV-Py1A.webp',
-    description: 'Seamless lifestyle integration showing product application during a morning routine, blending organically into user feeds with zero ad resistance.',
-    strategy: 'Organic Style UGC • 4.2% CTR'
-  },
-  {
-    id: 'vc-9',
-    type: 'static',
-    title: 'Clinical Ingredient & Laboratory Certification Breakdown',
-    category: 'Static Ad Creatives',
-    badge: 'STATIC POST',
-    revenue: '$112K Generated',
-    roas: '3.85x ROAS',
-    video: '',
-    image: '/assets/insta-video/DBWiTtwSvgw.webp',
-    description: 'Clean infographic detailing pure bio-availability and third-party laboratory verification, establishing instant category authority.',
-    strategy: 'Authority Building • High-Trust DTC'
-  },
-  {
-    id: 'vc-10',
-    type: 'video',
-    title: 'Extreme Stress-Test & Durability Demonstration',
-    category: 'Video Ad Hooks',
-    badge: '5.40x ROAS',
-    revenue: '$390K Generated',
-    roas: '5.40x ROAS',
-    video: '/assets/insta-video/ClNmKjfuASL.mp4',
-    image: '/assets/insta-video/ClNmKjfuASL.webp',
-    description: 'Visual proof mechanism testing product under intense pressure, creating an undeniable visual demonstration that eliminates buyer skepticism.',
-    strategy: 'Visual Proof Engine • Cold Traffic Winner'
-  },
-  {
-    id: 'vc-11',
-    type: 'static',
-    title: 'Limited-Time VIP Launch & BOGO Offer Architecture',
-    category: 'Offer & Bundle Stacks',
-    badge: 'OFFER POST',
-    revenue: '$145K Generated',
-    roas: '4.15x ROAS',
-    video: '',
-    image: '/assets/insta-video/C8BoEiWvQPX.webp',
-    description: 'High-contrast promotional visual emphasizing flash scarcity and free express shipping, generating over 1,200 orders in a 48-hour scaling push.',
-    strategy: 'Flash Launch • 1,200 Orders / 48h'
-  },
-  {
-    id: 'vc-12',
-    type: 'video',
-    title: 'Myth-Busting Industry Lie Direct-to-Camera Script',
-    category: 'Meta Advantage+ Assets',
-    badge: '4.25x ROAS',
-    revenue: '$195K Generated',
-    roas: '4.25x ROAS',
-    video: '/assets/insta-video/ClzYLasvGb7.mp4',
-    image: '/assets/insta-video/ClzYLasvGb7.webp',
-    description: 'Contrarian hook calling out misleading legacy competitor marketing, capturing high-curiosity viewers and driving them to an educational landing page.',
-    strategy: 'Contrarian Hook • 5.1% Outbound CTR'
-  },
-  {
-    id: 'vc-13',
-    type: 'video',
-    title: 'Instant Before vs After Split-Screen Demo',
-    category: 'Video Ad Hooks',
-    badge: '5.20x ROAS',
-    revenue: '$420K Generated',
-    roas: '5.20x ROAS',
-    video: '/assets/insta-video/CaF8d61BZSO.mp4',
-    image: '/assets/insta-video/CaF8d61BZSO.webp',
-    description: 'Side-by-side synchronized comparison demonstrating immediate transformation in under 4 seconds, producing the campaign’s lowest cost-per-acquisition.',
-    strategy: 'Side-by-Side Hook • $9.80 CPA'
-  },
-  {
-    id: 'vc-14',
-    type: 'static',
-    title: 'National Press Features & Editorial Quote Collage',
-    category: 'Static Ad Creatives',
-    badge: 'STATIC POST',
-    revenue: '$78K Generated',
-    roas: '3.60x ROAS',
-    video: '',
-    image: '/assets/insta-video/DCIbOc6SN5I.webp',
-    description: 'Prestigious media publication badges and verified press quotes establishing massive credibility for first-time buyers exploring the brand.',
-    strategy: 'PR Endorsement • 32% Lower Bounce'
-  },
-  {
-    id: 'vc-15',
-    type: 'video',
-    title: 'Founder Story & Behind-The-Scenes Formulation Journey',
-    category: 'UGC & TikTok Ads',
-    badge: '4.55x ROAS',
-    revenue: '$175K Generated',
-    roas: '4.55x ROAS',
-    video: '/assets/insta-video/CfYM_4POBEi.mp4',
-    image: '/assets/insta-video/CfYM_4POBEi.webp',
-    description: 'Raw founder monologue detailing 18 months of rigorous testing before launching the final formula, creating strong emotional connection and high LTV.',
-    strategy: 'Founder Brand Story • +40% Repeat Rate'
-  },
-  {
-    id: 'vc-16',
-    type: 'video',
-    title: 'TikTok Sound Tempo & Rapid Product Variation Teaser',
-    category: 'UGC & TikTok Ads',
-    badge: '4.75x ROAS',
-    revenue: '$230K Generated',
-    roas: '4.75x ROAS',
-    video: '/assets/insta-video/C9RU-C9yhfU.mp4',
-    image: '/assets/insta-video/C9RU-C9yhfU.webp',
-    description: 'Leveraged high-energy sound design to showcase 5 product colorways in 7 seconds, driving over 2.4 million views with minimal production overhead.',
-    strategy: 'Viral Sound Sync • 2.4M Views'
-  },
-  {
-    id: 'vc-17',
-    type: 'static',
-    title: 'Anatomy of a Winning Product Feature Callout',
-    category: 'Static Ad Creatives',
-    badge: 'STATIC POST',
-    revenue: '$128K Generated',
-    roas: '4.05x ROAS',
-    video: '',
-    image: '/assets/insta-video/Db3hW_mupo1.webp',
-    description: 'Detailed callout pointers highlighting custom ergonomic construction, aerospace-grade alloy, and proprietary waterproof sealing.',
-    strategy: 'Feature Breakdown • 4.6% CVR'
-  },
-  {
-    id: 'vc-18',
-    type: 'video',
-    title: 'High-Spend Broad Horizontal Scaling Matrix Asset',
-    category: 'Meta Advantage+ Assets',
-    badge: '4.88x ROAS',
-    revenue: '$510K Generated',
-    roas: '4.88x ROAS',
-    video: '/assets/insta-video/DbCVqzFhiLU.mp4',
-    image: '/assets/insta-video/DbCVqzFhiLU.webp',
-    description: 'Open broad-targeting creative asset engineered with 4 distinct intro variations running concurrently inside Meta Advantage+ scaling campaigns.',
-    strategy: 'Multi-Angle Scale • $510K Campaign'
-  },
-  {
-    id: 'vc-19',
-    type: 'static',
-    title: 'Multi-Quantity Tiered Bundle with Free Gift Incentive',
-    category: 'Offer & Bundle Stacks',
-    badge: 'OFFER POST',
-    revenue: '$160K Generated',
-    roas: '4.45x ROAS',
-    video: '',
-    image: '/assets/insta-video/CeZA8zlj0HL.webp',
-    description: 'Clear visual bundling displaying "Buy 3 = 40% OFF + Free Travel Pouch", driving multi-pack purchase rate to 68% of total storefront order volume.',
-    strategy: 'Bundle Maximizer • 68% Multi-Pack Take'
-  },
-  {
-    id: 'vc-20',
-    type: 'video',
-    title: 'Customer Street Interview & Real-Time Blind Test',
-    category: 'UGC & TikTok Ads',
-    badge: '4.65x ROAS',
-    revenue: '$290K Generated',
-    roas: '4.65x ROAS',
-    video: '/assets/insta-video/CbCOGFmAE4U.mp4',
-    image: '/assets/insta-video/CbCOGFmAE4U.webp',
-    description: 'Spontaneous real-world reactions from everyday customers choosing our client’s product over legacy retail brands in an unscripted blind comparison.',
-    strategy: 'Street Intercept UGC • 64% 3s Hook'
-  },
-  {
-    id: 'vc-21',
-    type: 'video',
-    title: 'Stop-Motion Unpacking & Tactile Product Showcase',
-    category: 'Video Ad Hooks',
-    badge: '4.10x ROAS',
-    revenue: '$140K Generated',
-    roas: '4.10x ROAS',
-    video: '/assets/insta-video/C9VEBK8y-0r.mp4',
-    image: '/assets/insta-video/C9VEBK8y-0r.webp',
-    description: 'Clean frame-by-frame stop-motion video highlighting premium tactile packaging, custom unboxing cards, and magnetic accessories.',
-    strategy: 'Stop-Motion Craft • High Brand Value'
-  },
-  {
-    id: 'vc-22',
-    type: 'static',
-    title: 'Risk-Free 90-Day Money-Back Guarantee Seal Card',
-    category: 'Static Ad Creatives',
-    badge: 'STATIC POST',
-    revenue: '$92K Generated',
-    roas: '3.90x ROAS',
-    video: '',
-    image: '/assets/insta-video/CbdLX--rkaU.webp',
-    description: 'Bold guarantee banner with clear return terms, eradicating pre-purchase hesitation on high-ticket $120+ direct-response checkouts.',
-    strategy: 'Friction Removal • +28% Checkout Rate'
-  },
-  {
-    id: 'vc-23',
-    type: 'video',
-    title: 'Step-By-Step How-To Tutorial & Morning Protocol',
-    category: 'Meta Advantage+ Assets',
-    badge: '4.70x ROAS',
-    revenue: '$340K Generated',
-    roas: '4.70x ROAS',
-    video: '/assets/insta-video/CkaJ5hCju2s.mp4',
-    image: '/assets/insta-video/CkaJ5hCju2s.webp',
-    description: 'Educational 30-second workflow demonstrating exact dosage and ease of use, establishing effortless daily habits for new subscribers.',
-    strategy: 'Educational Flow • Subscriptions +45%'
-  },
-  {
-    id: 'vc-24',
-    type: 'static',
-    title: 'Seasonal Limited Bundle Guide & Gift Presentation',
-    category: 'Offer & Bundle Stacks',
-    badge: 'OFFER POST',
-    revenue: '$465K Generated',
-    roas: '5.05x ROAS',
-    video: '',
-    image: '/assets/insta-video/CxqUP36gaEo.webp',
-    description: 'Curated gift set layout with custom festive packaging graphics, driving massive Q4 shopping momentum and repeat customer orders.',
-    strategy: 'Holiday Gift Guide • $465K Volume'
-  }
+export const viralCreativesData = [
+  // 1. Roofing (6)
+  { id: 'roofing-1', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Roof Conversion 1', vimeoId: '1203105527', niche: 'Roofing & Construction', roas: '4.8x ROAS' },
+  { id: 'roofing-2', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Storm Roofing 2', vimeoId: '1203105510', niche: 'Storm Damage & Insurance', roas: '5.2x ROAS' },
+  { id: 'roofing-3', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Replacement Roof 3', vimeoId: '1203105488', niche: 'Residential Replacement', roas: '4.4x ROAS' },
+  { id: 'roofing-4', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox High-ROAS Roof 4', vimeoId: '1203105494', niche: 'High-Ticket Direct Response', roas: '5.6x ROAS' },
+  { id: 'roofing-5', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Roofing Scale 5', vimeoId: '1203105572', niche: 'Commercial & Residential', roas: '4.9x ROAS' },
+  { id: 'roofing-6', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Roof Ad 6', vimeoId: '1203105532', niche: 'Roof Inspection Lead-Gen', roas: '4.7x ROAS' },
+
+  // 2. Supplements & Health (4)
+  { id: 'supplements-1', category: 'Supplements & Health', categoryIcon: '💊', title: 'Gummies Bio-Nourish Ad 1', vimeoId: '1203105580', niche: 'DTC Health & Wellness', roas: '5.1x ROAS' },
+  { id: 'supplements-2', category: 'Supplements & Health', categoryIcon: '💊', title: 'DTC Health Gummies Reel 2', vimeoId: '1203828901', niche: 'Organic UGC & TikTok', roas: '4.9x ROAS' },
+  { id: 'supplements-3', category: 'Supplements & Health', categoryIcon: '💊', title: 'DTC Wellness Formulation 3', vimeoId: '1203828900', niche: 'Nutraceutical Brand Scale', roas: '4.6x ROAS' },
+  { id: 'supplements-4', category: 'Supplements & Health', categoryIcon: '💊', title: 'Nutritional Health Ad 4', vimeoId: '1203828899', niche: 'Clinical Proof & Offer Stack', roas: '4.3x ROAS' },
+
+  // 3. Recruitment & Talent (2)
+  { id: 'recruitment-1', category: 'Recruitment & Talent', categoryIcon: '💼', title: 'LinkedIn Executive Talent Acquisition 1', vimeoId: '1203105467', niche: 'B2B Executive Search', roas: '4.2x ROAS' },
+  { id: 'recruitment-2', category: 'Recruitment & Talent', categoryIcon: '💼', title: 'LinkedIn Talent Recruitment Ad 2', vimeoId: '1203105458', niche: 'Talent Pipeline Funnel', roas: '4.5x ROAS' },
+
+  // 4. Events & Keynotes (5)
+  { id: 'events-1', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Commercial Finance & Keynote Event 1', vimeoId: '1203105416', niche: 'High-Ticket Event Ticket Sales', roas: '6.1x ROAS' },
+  { id: 'events-2', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Seven Fathom B2B SaaS Event Reel 2', vimeoId: '1203105447', niche: 'B2B Conference Promotion', roas: '4.8x ROAS' },
+  { id: 'events-3', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Seven Fathom Product Walkthrough Event 3', vimeoId: '1203105413', niche: 'Live Keynote & Demo', roas: '5.0x ROAS' },
+  { id: 'events-4', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Seven Fathom Feature Breakdown Event 4', vimeoId: '1203105414', niche: 'SaaS Live Summit', roas: '4.7x ROAS' },
+  { id: 'events-5', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Capital Growth Strategy Event 5', vimeoId: '1203105415', niche: 'Private Investor Keynote', roas: '5.4x ROAS' },
+
+  // 5. HVAC & Climate Control (5)
+  { id: 'hvac-1', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Climate Control Ad 1', vimeoId: '1203812276', niche: 'AC & Heating Replacement', roas: '4.9x ROAS' },
+  { id: 'hvac-2', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Seasonal Offer Ad 2', vimeoId: '1203812274', niche: 'Seasonal Tune-Up Lead-Gen', roas: '5.3x ROAS' },
+  { id: 'hvac-3', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Comfort Engine 3', vimeoId: '1203812272', niche: 'Emergency Furnace & Air', roas: '4.6x ROAS' },
+  { id: 'hvac-4', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Heat Pump Promo 4', vimeoId: '1203812271', niche: 'Eco Heat Pump Rebates', roas: '5.1x ROAS' },
+  { id: 'hvac-5', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: '$0 Down Home Heater Special 5', vimeoId: '1203815881', niche: '$0 Down Financing Offer', roas: '5.8x ROAS' },
+
+  // 6. Solar Energy (6)
+  { id: 'solar-1', category: 'Solar Energy', categoryIcon: '☀️', title: 'California Solar Clean Energy 1', vimeoId: '1203808485', niche: 'Residential Solar Power', roas: '5.5x ROAS' },
+  { id: 'solar-2', category: 'Solar Energy', categoryIcon: '☀️', title: 'California Solar Utility Savings 2', vimeoId: '1203808486', niche: 'Utility Bill Elimination', roas: '5.2x ROAS' },
+  { id: 'solar-3', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar California Federal Incentive 3', vimeoId: '1203828547', niche: 'Federal Tax Credit Hook', roas: '6.0x ROAS' },
+  { id: 'solar-4', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar Power Lock-In 4', vimeoId: '1203828545', niche: 'Rate Lock Campaign', roas: '4.9x ROAS' },
+  { id: 'solar-5', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar Battery Storage Ad 5', vimeoId: '1203828548', niche: 'Battery Backup & Storage', roas: '5.1x ROAS' },
+  { id: 'solar-6', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar Installation Campaign 6', vimeoId: '1203828546', niche: 'Zero-Down Solar Inquiries', roas: '5.7x ROAS' },
+
+  // 7. Agency Owner (3)
+  { id: 'agency-1', category: 'Agency Owner', categoryIcon: '🚀', title: '7-Figure Agency Acquisition 1', vimeoId: '1203105308', niche: 'B2B Client Acquisition Funnel', roas: '6.4x ROAS' },
+  { id: 'agency-2', category: 'Agency Owner', categoryIcon: '🚀', title: 'Agency Scale & CAPI Engine 2', vimeoId: '1203105309', niche: 'Meta Conversions API Scaling', roas: '5.8x ROAS' },
+  { id: 'agency-3', category: 'Agency Owner', categoryIcon: '🚀', title: 'High-Ticket Client Blueprint 3', vimeoId: '1203808613', niche: 'High-Ticket Service Retainers', roas: '5.3x ROAS' },
+
+  // 8. Chiropractic (3)
+  { id: 'chiro-1', category: 'Chiropractic', categoryIcon: '🩺', title: 'Spine & Pain Chiropractic Ad 1', vimeoId: '1203812402', niche: 'Spinal Decompression & Relief', roas: '4.8x ROAS' },
+  { id: 'chiro-2', category: 'Chiropractic', categoryIcon: '🩺', title: 'Wellness Chiro Special Offer 2', vimeoId: '1203812401', niche: 'New Patient Voucher Offer', roas: '5.4x ROAS' },
+  { id: 'chiro-3', category: 'Chiropractic', categoryIcon: '🩺', title: 'Chiropractic Spinal Care 3', vimeoId: '1203812400', niche: 'Chronic Back Pain Patient Funnel', roas: '4.7x ROAS' },
+
+  // 9. Finance & B2B Lending (6)
+  { id: 'finance-1', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Commercial Finance Capital 1', vimeoId: '1203818782', niche: 'Working Capital & Equipment Loans', roas: '5.9x ROAS' },
+  { id: 'finance-2', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Capital Growth Strategy 2', vimeoId: '1203818781', niche: 'Business Line of Credit', roas: '5.1x ROAS' },
+  { id: 'finance-3', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'B2B Lending Acquisition 3', vimeoId: '1207996165', niche: 'Commercial Borrowing Leads', roas: '5.6x ROAS' },
+  { id: 'finance-4', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Fintech Growth System 4', vimeoId: '1207996164', niche: 'Digital Underwriting & Credit', roas: '4.9x ROAS' },
+  { id: 'finance-5', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Corporate Capital Campaign 5', vimeoId: '1207996161', niche: 'SME Expansion Funding', roas: '5.2x ROAS' },
+  { id: 'finance-6', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Financial Advisory Engine 6', vimeoId: '1207996163', niche: 'Wealth Advisory Inbound Funnel', roas: '4.7x ROAS' },
+
+  // 10. MVA (Motor Vehicle Accident Law) (10)
+  { id: 'mva-1', category: 'MVA Law', categoryIcon: '⚖️', title: 'Personal Injury MVA Law 1', vimeoId: '1203816135', niche: 'Car Accident Legal Retainer', roas: '6.8x ROAS' },
+  { id: 'mva-2', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Legal Client Acquisition 2', vimeoId: '1203816133', niche: 'Personal Injury Claimant Funnel', roas: '6.2x ROAS' },
+  { id: 'mva-3', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Auto Accident Law 3', vimeoId: '1203816132', niche: 'Rear-End Collision Case Gen', roas: '5.9x ROAS' },
+  { id: 'mva-4', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Injury Settlement Ad 4', vimeoId: '1203816131', niche: 'Maximum Compensation Retainer', roas: '6.5x ROAS' },
+  { id: 'mva-5', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Legal Retainer Campaign 5', vimeoId: '1203816465', niche: 'Direct-to-Attorney Intake', roas: '5.7x ROAS' },
+  { id: 'mva-6', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Accident Claim Ad 6', vimeoId: '1203816469', niche: 'Free Case Evaluation Hook', roas: '6.1x ROAS' },
+  { id: 'mva-7', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Law Firm Scale 7', vimeoId: '1203816506', niche: 'High-Settlement Injury Claims', roas: '6.4x ROAS' },
+  { id: 'mva-8', category: 'MVA Law', categoryIcon: '⚖️', title: 'Personal Injury MVA Campaign 8', vimeoId: '1219790482', niche: 'No-Fee-Unless-We-Win Hook', roas: '6.0x ROAS' },
+  { id: 'mva-9', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Auto Accident Settlement Ad 9', vimeoId: '1219790483', niche: 'Whiplash & Major Impact Retainers', roas: '5.8x ROAS' },
+  { id: 'mva-10', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Legal Client Retainer Engine 10', vimeoId: '1219790484', niche: 'National Law Firm Case Gen', roas: '6.7x ROAS' },
+
+  // 11. SaaS & Tech (4)
+  { id: 'saas-1', category: 'SaaS & Tech', categoryIcon: '💻', title: 'Corporate Hiring & SaaS Engine 1', vimeoId: '1203819145', niche: 'Enterprise HR Tech Platform', roas: '4.8x ROAS' },
+  { id: 'saas-2', category: 'SaaS & Tech', categoryIcon: '💻', title: 'Career Growth SaaS Funnel 2', vimeoId: '1203819144', niche: 'Self-Serve SaaS Trial Signups', roas: '5.2x ROAS' },
+  { id: 'saas-3', category: 'SaaS & Tech', categoryIcon: '💻', title: 'SaaS Conversion Platform 3', vimeoId: '1203819143', niche: 'PLG Freemium Conversion', roas: '4.7x ROAS' },
+  { id: 'saas-4', category: 'SaaS & Tech', categoryIcon: '💻', title: 'Keynote Event & SaaS Highlights 4', vimeoId: '1203819315', niche: 'Product Feature & Demo Reel', roas: '5.0x ROAS' },
+
+  // 12. Windows & Doors (2)
+  { id: 'windows-1', category: 'Windows & Doors', categoryIcon: '🪟', title: 'Window & Door Installation Ad 1', vimeoId: '1203827387', niche: 'Energy-Efficient Window Quote', roas: '4.9x ROAS' },
+  { id: 'windows-2', category: 'Windows & Doors', categoryIcon: '🪟', title: 'Window Replacement Promo 2', vimeoId: '1203827386', niche: 'Whole-Home Replacement Special', roas: '5.3x ROAS' },
+
+  // 13. Carpet Cleaning (2)
+  { id: 'carpet-1', category: 'Carpet Cleaning', categoryIcon: '🧹', title: 'Deep Carpet Cleaning Promo 1', vimeoId: '1203827815', niche: 'Steam Extraction & Stain Removal', roas: '5.1x ROAS' },
+  { id: 'carpet-2', category: 'Carpet Cleaning', categoryIcon: '🧹', title: 'Carpet Sanitation Offer 2', vimeoId: '1203827814', niche: 'Multi-Room Special Lead-Gen', roas: '5.4x ROAS' }
 ];
 
-export default function ViralCreativesPage({ onOpenBooking, onOpenInstagramModal, onNavigate }) {
-  const [activeCategory, setActiveCategory] = useState('All');
+export const videoCategories = [
+  { id: 'All', name: 'All Videos', icon: '🔥' },
+  { id: 'Roofing', name: 'Roofing', icon: '🏠' },
+  { id: 'Supplements & Health', name: 'Supplements & Health', icon: '💊' },
+  { id: 'Recruitment & Talent', name: 'Recruitment & Talent', icon: '💼' },
+  { id: 'Events & Keynotes', name: 'Events & Keynotes', icon: '🎟️' },
+  { id: 'HVAC & Climate Control', name: 'HVAC & Climate', icon: '❄️' },
+  { id: 'Solar Energy', name: 'Solar Energy', icon: '☀️' },
+  { id: 'Agency Owner', name: 'Agency Owner', icon: '🚀' },
+  { id: 'Chiropractic', name: 'Chiropractic', icon: '🩺' },
+  { id: 'Finance & B2B Lending', name: 'Finance & Lending', icon: '💰' },
+  { id: 'MVA Law', name: 'MVA Law', icon: '⚖️' },
+  { id: 'SaaS & Tech', name: 'SaaS & Tech', icon: '💻' },
+  { id: 'Windows & Doors', name: 'Windows & Doors', icon: '🪟' },
+  { id: 'Carpet Cleaning', name: 'Carpet Cleaning', icon: '🧹' }
+];
+
+export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
+  const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+  const [unmutedVideoId, setUnmutedVideoId] = useState(null);
+  const [modalVideo, setModalVideo] = useState(null);
 
-  const categories = [
-    'All', 
-    'Video Ad Hooks', 
-    'Static Ad Creatives', 
-    'Meta Advantage+ Assets', 
-    'UGC & TikTok Ads', 
-    'Offer & Bundle Stacks'
-  ];
+  // Filter videos based on category and search query
+  const filteredVideos = useMemo(() => {
+    return viralCreativesData.filter((video) => {
+      const matchesCategory = selectedCategory === 'All' || video.category === selectedCategory;
+      const matchesSearch = 
+        video.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        video.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        video.niche.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesCategory && matchesSearch;
+    });
+  }, [selectedCategory, searchQuery]);
 
-  const creativePillars = [
-    {
-      title: '01. Hook & Scroll-Stop Architecture',
-      desc: 'The first 3 seconds determine 80% of ad spend efficiency. We test 5-10 distinct visual & auditory pattern interrupts for every concept.'
-    },
-    {
-      title: '02. Authentic Creator UGC Studio',
-      desc: 'No cheesy sponsored influencer vibes. We script and direct real customers and vetted creators to deliver natural objection handling.'
-    },
-    {
-      title: '03. High-Converting Static Graphics',
-      desc: 'Split-comparisons, PR feature quote walls, and tiered bundle offer graphics engineered to extract high CTR and lower CPA.'
-    },
-    {
-      title: '04. Rapid Iteration Matrix',
-      desc: 'Once a winning hook is identified, we generate 6-12 iterative variations with altered CTAs, aspect ratios, and landing page tie-ins.'
-    }
-  ];
-
-  const filteredCreatives = curatedViralCreatives.filter((item) => {
-    const matchesCat = activeCategory === 'All' || item.category === activeCategory;
-    const searchTarget = `${item.title || ''} ${item.description || ''} ${item.badge || ''} ${item.category || ''} ${item.strategy || ''}`.toLowerCase();
-    const matchesSearch = searchTarget.includes(searchQuery.toLowerCase());
-    return matchesCat && matchesSearch;
-  });
-
-  const handleCardClick = (item) => {
-    if (onOpenInstagramModal) {
-      onOpenInstagramModal({
-        id: item.id,
-        title: item.title,
-        revenue: item.revenue,
-        roas: item.roas,
-        category: item.category,
-        badge: item.badge,
-        video: item.video,
-        image: item.image,
-        description: item.description,
-        notes: item.strategy
-      });
+  const toggleSound = (e, videoId) => {
+    e.stopPropagation();
+    if (unmutedVideoId === videoId) {
+      setUnmutedVideoId(null);
+    } else {
+      setUnmutedVideoId(videoId);
     }
   };
 
+  const handleCardClick = (video) => {
+    setModalVideo(video);
+  };
+
   return (
-    <div style={{ paddingTop: '80px', minHeight: '100vh', background: '#ffffff', color: '#0f172a' }}>
-      {/* Header */}
-      <section className="section-padding" style={{ paddingBottom: '30px', textAlign: 'center' }}>
-        <div className="container">
-          <div style={{ marginBottom: '14px', display: 'flex', justifyContent: 'center' }}>
-            <span 
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                background: 'rgba(220, 38, 38, 0.08)',
-                color: '#dc2626',
-                border: '1px solid rgba(220, 38, 38, 0.25)',
-                borderRadius: '9999px',
-                padding: '6px 18px',
-                fontWeight: 800,
-                fontSize: '0.82rem',
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase'
-              }}
-            >
-              <Sparkles size={14} />
-              PERFORMANCE CREATIVE & VIRAL PRODUCT ENGINE
-            </span>
-          </div>
-
-          <h1 style={{ fontSize: 'clamp(2.4rem, 4.5vw, 4rem)', color: '#0f172a', marginBottom: '18px', textTransform: 'uppercase', letterSpacing: '-0.025em', fontWeight: 900, lineHeight: 1.15 }}>
-            We Don't Make "Pretty Ads". <br />
-            <span style={{ background: 'linear-gradient(135deg, #dc2626 0%, #ea580c 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              We Make High-Converting Assets.
-            </span>
-          </h1>
-
-          <p style={{ maxWidth: '820px', margin: '0 auto 30px auto', fontSize: '1.1rem', color: '#475569', lineHeight: 1.6 }}>
-            Creative is the new targeting. We deliver end-to-end direct-response creative production—from competitor research and psychological scripting to creator UGC sourcing, motion graphic videos, and high-CTR static advertorials.
-          </p>
-
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '14px', flexWrap: 'wrap' }}>
-            <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '14px 34px' }}>
-              <span>GET CREATIVES FOR YOUR BRAND</span>
-              <ArrowRight size={18} />
-            </button>
-            <button
-              onClick={() => onNavigate && onNavigate('roas-calculator')}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                padding: '14px 28px',
-                background: 'linear-gradient(135deg, #c41224 0%, #990a16 100%)',
-                color: '#ffffff',
-                border: 'none',
-                borderRadius: '9999px',
-                fontWeight: 900,
-                cursor: 'pointer',
-                boxShadow: '0 4px 14px rgba(185,28,28,0.25)'
-              }}
-            >
-              <ShoppingBag size={18} />
-              <span>TRY THE FREE ROAS CALCULATOR</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* 4 Pillars Grid */}
-      <section className="container" style={{ marginBottom: '60px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px' }}>
-          {creativePillars.map((pillar, idx) => (
-            <div
-              key={idx}
-              style={{
-                background: '#f8fafc',
-                border: '1.5px solid #e2e8f0',
-                borderRadius: '18px',
-                padding: '24px',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
-                transition: 'all 0.25s ease'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.borderColor = 'rgba(220, 38, 38, 0.4)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = '#e2e8f0';
-              }}
-            >
-              <div style={{ fontSize: '1.05rem', fontWeight: 900, color: '#dc2626', marginBottom: '10px' }}>
-                {pillar.title}
-              </div>
-              <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.55, margin: 0 }}>
-                {pillar.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* 24 CURATED UNIQUE VIRAL CREATIVES VAULT */}
-      <section className="container" style={{ paddingBottom: '80px' }}>
-        <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-          <div style={{ marginBottom: '12px', display: 'flex', justifyContent: 'center' }}>
-            <span 
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                background: 'rgba(220, 38, 38, 0.08)',
-                color: '#dc2626',
-                border: '1px solid rgba(220, 38, 38, 0.25)',
-                borderRadius: '9999px',
-                padding: '6px 18px',
-                fontWeight: 800,
-                fontSize: '0.82rem',
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase'
-              }}
-            >
-              <Sparkles size={14} />
-              <span>TESTED PERFORMANCE VAULT ({curatedViralCreatives.length} CREATIVE ASSETS)</span>
-            </span>
-          </div>
-          <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', marginBottom: '10px' }}>
-            Winning Video Ads & High-Converting Static Graphics
-          </h2>
-          <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto', fontSize: '1.02rem' }}>
-            Explore our battle-tested direct-response video hooks and high-CTR static advertorials. Click on any asset to view its full scaling strategy.
-          </p>
-        </div>
-
-        {/* Filter & Search Bar */}
-        <div 
+    <div className="viral-creatives-page" style={{ background: '#0a0612', minHeight: '100vh', color: '#fff' }}>
+      {/* Top Banner Ticker */}
+      <div 
+        style={{ 
+          background: '#a3e635', 
+          color: '#000', 
+          textAlign: 'center', 
+          padding: '10px 16px', 
+          fontSize: '0.88rem', 
+          fontWeight: 800,
+          letterSpacing: '0.02em',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '8px'
+        }}
+      >
+        <span style={{ width: '8px', height: '8px', background: '#000', borderRadius: '50%', display: 'inline-block' }}></span>
+        <span>Done-for-you high ROAS video ads • <strong>Limited monthly creative seats</strong></span>
+        <button 
+          onClick={onOpenBooking}
           style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between', 
-            alignItems: 'center', 
-            gap: '16px', 
-            marginBottom: '32px',
-            flexWrap: 'wrap',
-            background: '#f8fafc',
-            border: '1.5px solid #e2e8f0',
-            borderRadius: '20px',
-            padding: '16px 20px'
+            background: 'transparent', 
+            border: 'none', 
+            textDecoration: 'underline', 
+            fontWeight: 900, 
+            cursor: 'pointer',
+            color: '#000',
+            marginLeft: '4px'
           }}
         >
-          {/* Category Tabs */}
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                style={{
-                  padding: '8px 18px',
-                  borderRadius: '30px',
-                  fontSize: '0.85rem',
-                  fontWeight: 800,
-                  background: activeCategory === cat ? '#dc2626' : '#ffffff',
-                  color: activeCategory === cat ? '#ffffff' : '#334155',
-                  border: activeCategory === cat ? '1.5px solid #dc2626' : '1px solid #e2e8f0',
-                  cursor: 'pointer',
-                  transition: 'all 0.2s ease',
-                  boxShadow: activeCategory === cat ? '0 3px 10px rgba(220,38,38,0.3)' : 'none'
-                }}
-              >
-                {cat} {cat === 'All' ? `(${curatedViralCreatives.length})` : ''}
-              </button>
-            ))}
-          </div>
+          Book a slot →
+        </button>
+      </div>
 
-          {/* Search Box */}
+      {/* Hero Header */}
+      <section style={{ padding: '60px 0 35px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+        <div className="container" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
+          
           <div 
-            style={{ 
-              display: 'flex', 
-              alignItems: 'center', 
-              gap: '8px', 
-              background: '#ffffff', 
-              border: '1.5px solid #e2e8f0', 
-              borderRadius: '30px', 
-              padding: '8px 18px',
-              minWidth: '240px'
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              background: 'rgba(163, 230, 53, 0.1)',
+              color: '#a3e635',
+              border: '1px solid rgba(163, 230, 53, 0.25)',
+              padding: '6px 16px',
+              borderRadius: '9999px',
+              fontSize: '0.8rem',
+              fontWeight: 800,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              marginBottom: '20px'
             }}
           >
-            <Search size={16} color="#dc2626" />
+            <Sparkles size={15} />
+            DIRECT-RESPONSE VIDEO ADS VAULT
+          </div>
+
+          <h1 
+            style={{ 
+              fontSize: 'clamp(2.2rem, 4.5vw, 3.8rem)', 
+              fontWeight: 900, 
+              color: '#ffffff', 
+              letterSpacing: '-0.02em',
+              lineHeight: 1.15,
+              textTransform: 'uppercase',
+              marginBottom: '16px'
+            }}
+          >
+            High-Performance <span style={{ color: '#a3e635' }}>Video Creatives</span>
+          </h1>
+
+          <p 
+            style={{ 
+              fontSize: 'clamp(1rem, 1.3vw, 1.2rem)', 
+              color: '#94a3b8', 
+              maxWidth: '820px', 
+              margin: '0 auto 35px auto', 
+              lineHeight: 1.6 
+            }}
+          >
+            Browse our library of proven video ad concepts, direct-response hooks, and high-ROAS creative angles deployed across 13+ industry verticals.
+          </p>
+
+          {/* Quick Metrics Cards */}
+          <div 
+            style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+              gap: '16px', 
+              maxWidth: '900px', 
+              margin: '0 auto 40px auto' 
+            }}
+          >
+            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
+              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#a3e635' }}>58+</div>
+              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Winning Ad Concepts</div>
+            </div>
+            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
+              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#38bdf8' }}>$50M+</div>
+              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Ad Spend Scaled</div>
+            </div>
+            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
+              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#f43f5e' }}>13+</div>
+              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Industries Tested</div>
+            </div>
+            <div style={{ background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '14px', padding: '16px' }}>
+              <div style={{ fontSize: '1.7rem', fontWeight: 900, color: '#f59e0b' }}>4.8x</div>
+              <div style={{ fontSize: '0.8rem', color: '#94a3b8', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.05em' }}>Average Direct ROAS</div>
+            </div>
+          </div>
+
+          {/* Search Bar */}
+          <div style={{ maxWidth: '560px', margin: '0 auto 25px auto', position: 'relative' }}>
+            <Search 
+              size={18} 
+              color="#94a3b8" 
+              style={{ position: 'absolute', left: '18px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} 
+            />
             <input 
-              type="text" 
-              placeholder="Search hooks & creatives..."
+              type="text"
+              placeholder="Search by niche (e.g. Roofing, Solar, Supplements, MVA)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               style={{
-                background: 'transparent',
-                border: 'none',
-                color: '#0f172a',
-                fontSize: '0.88rem',
-                fontWeight: 600,
+                width: '100%',
+                padding: '14px 20px 14px 48px',
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
+                borderRadius: '9999px',
+                color: '#fff',
+                fontSize: '0.95rem',
                 outline: 'none',
-                width: '100%'
+                transition: 'all 0.2s ease',
+                boxSizing: 'border-box'
               }}
+              onFocus={(e) => e.target.style.borderColor = '#a3e635'}
+              onBlur={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.12)'}
             />
+            {searchQuery && (
+              <button 
+                onClick={() => setSearchQuery('')}
+                style={{
+                  position: 'absolute',
+                  right: '16px',
+                  top: '50%',
+                  transform: 'translateY(-50%)',
+                  background: 'none',
+                  border: 'none',
+                  color: '#94a3b8',
+                  cursor: 'pointer',
+                  padding: '4px'
+                }}
+              >
+                <X size={16} />
+              </button>
+            )}
           </div>
-        </div>
 
-        {/* Creatives Grid (Mix of Video & Static Posts - No Duplicates) */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '24px' }}>
-          {filteredCreatives.map((item) => (
-            <div
-              key={item.id}
-              onClick={() => handleCardClick(item)}
-              style={{
-                background: '#ffffff',
-                border: '1.5px solid #e2e8f0',
-                borderRadius: '20px',
-                overflow: 'hidden',
-                cursor: 'pointer',
-                transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-                display: 'flex',
-                flexDirection: 'column',
-                boxShadow: '0 4px 18px rgba(0,0,0,0.04)'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.borderColor = 'rgba(220, 38, 38, 0.45)';
-                e.currentTarget.style.boxShadow = '0 16px 36px rgba(220, 38, 38, 0.12)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = '#e2e8f0';
-                e.currentTarget.style.boxShadow = '0 4px 18px rgba(0,0,0,0.04)';
-              }}
-            >
-              {/* Media Thumbnail with Overlay */}
-              <div style={{ position: 'relative', height: '260px', overflow: 'hidden', background: '#f1f5f9' }}>
-                {item.type === 'video' ? (
-                  <>
-                    <video 
-                      src={item.video} 
-                      poster={item.image}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      preload="auto"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                    />
-                    {/* Play Button Indicator */}
-                    <div 
-                      style={{ 
-                        position: 'absolute', 
-                        top: '50%', 
-                        left: '50%', 
-                        transform: 'translate(-50%, -50%)',
-                        width: '46px',
-                        height: '46px',
-                        borderRadius: '50%',
-                        background: 'rgba(0,0,0,0.7)',
-                        backdropFilter: 'blur(8px)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '1px solid rgba(255,255,255,0.25)',
-                        pointerEvents: 'none'
-                      }}
-                    >
-                      <Play size={18} fill="#ffffff" color="#ffffff" style={{ marginLeft: '3px' }} />
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <img 
-                      src={item.image} 
-                      alt={item.title}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                    />
-                    {/* Static Post Icon Indicator */}
-                    <div 
-                      style={{ 
-                        position: 'absolute', 
-                        top: '50%', 
-                        left: '50%', 
-                        transform: 'translate(-50%, -50%)',
-                        width: '46px',
-                        height: '46px',
-                        borderRadius: '50%',
-                        background: 'rgba(0,0,0,0.65)',
-                        backdropFilter: 'blur(8px)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '1px solid rgba(255,255,255,0.25)',
-                        pointerEvents: 'none'
-                      }}
-                    >
-                      <ImageIcon size={20} color="#ffffff" />
-                    </div>
-                  </>
-                )}
+          {/* Category Filter Pills */}
+          <div 
+            style={{ 
+              display: 'flex', 
+              flexWrap: 'wrap', 
+              gap: '8px', 
+              justifyContent: 'center',
+              marginTop: '10px'
+            }}
+          >
+            {videoCategories.map((cat) => {
+              const count = cat.id === 'All' 
+                ? viralCreativesData.length 
+                : viralCreativesData.filter(v => v.category === cat.id).length;
+              const isActive = selectedCategory === cat.id;
 
-                {/* Top Format Badge */}
-                <div 
-                  style={{ 
-                    position: 'absolute', 
-                    top: '12px', 
-                    left: '12px', 
-                    background: item.type === 'video' ? 'rgba(220, 38, 38, 0.9)' : 'rgba(15, 23, 42, 0.85)',
-                    backdropFilter: 'blur(8px)',
-                    padding: '4px 10px',
-                    borderRadius: '20px',
-                    fontSize: '0.72rem',
-                    fontWeight: 800,
-                    color: '#ffffff',
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setSelectedCategory(cat.id)}
+                  style={{
+                    padding: '8px 16px',
+                    borderRadius: '9999px',
+                    fontSize: '0.84rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                    transition: 'all 0.2s ease',
+                    border: isActive ? '1px solid #a3e635' : '1px solid rgba(255, 255, 255, 0.12)',
+                    background: isActive ? '#a3e635' : 'rgba(255, 255, 255, 0.04)',
+                    color: isActive ? '#000' : '#e2e8f0',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '4px',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    zIndex: 3
+                    gap: '6px'
                   }}
                 >
-                  {item.type === 'video' ? <VideoIcon size={12} /> : <ImageIcon size={12} />}
-                  <span>{item.type === 'video' ? 'VIDEO AD' : 'STATIC POST'}</span>
-                </div>
+                  <span>{cat.icon}</span>
+                  <span>{cat.name}</span>
+                  <span 
+                    style={{ 
+                      fontSize: '0.72rem', 
+                      background: isActive ? 'rgba(0,0,0,0.18)' : 'rgba(255,255,255,0.1)', 
+                      padding: '2px 7px', 
+                      borderRadius: '10px',
+                      color: isActive ? '#000' : '#94a3b8',
+                      fontWeight: 800
+                    }}
+                  >
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
 
-                {/* Top Right Metric Badge */}
-                <div 
-                  style={{ 
-                    position: 'absolute', 
-                    top: '12px', 
-                    right: '12px', 
-                    background: 'rgba(0, 0, 0, 0.8)',
-                    backdropFilter: 'blur(8px)',
-                    padding: '4px 10px',
-                    borderRadius: '20px',
-                    fontSize: '0.72rem',
-                    fontWeight: 800,
-                    color: '#fef08a',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    zIndex: 3
-                  }}
-                >
-                  {item.badge}
-                </div>
-
-                {/* Bottom Revenue & ROAS Bar */}
-                <div 
-                  style={{ 
-                    position: 'absolute', 
-                    bottom: '10px', 
-                    left: '10px', 
-                    right: '10px',
-                    background: 'rgba(0, 0, 0, 0.85)',
-                    backdropFilter: 'blur(8px)',
-                    padding: '6px 12px',
-                    borderRadius: '10px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    border: '1px solid rgba(255,255,255,0.15)',
-                    zIndex: 3
-                  }}
-                >
-                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#fff' }}>{item.revenue}</span>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 800, color: '#4ade80' }}>{item.roas}</span>
-                </div>
-              </div>
-
-              {/* Card Details */}
-              <div style={{ padding: '18px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', flexGrow: 1 }}>
-                <div>
-                  <div style={{ fontSize: '0.75rem', color: '#dc2626', fontWeight: 800, textTransform: 'uppercase', marginBottom: '6px' }}>
-                    {item.category}
-                  </div>
-                  <h3 style={{ fontSize: '0.98rem', color: '#0f172a', lineHeight: 1.45, fontWeight: 800, margin: '0 0 10px 0' }}>
-                    {item.title}
-                  </h3>
-                  <p style={{ fontSize: '0.85rem', color: '#64748b', lineHeight: 1.5, margin: '0 0 12px 0', minHeight: '52px' }}>
-                    {item.description}
-                  </p>
-                </div>
-
-                <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '12px' }}>
-                  <div style={{ fontSize: '0.75rem', color: '#059669', fontWeight: 700, marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                    <CheckCircle2 size={13} color="#059669" />
-                    <span>{item.strategy}</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span style={{ fontSize: '0.8rem', color: '#dc2626', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '5px' }}>
-                      <Eye size={14} color="#dc2626" />
-                      <span>{item.type === 'video' ? 'Watch Full Video Ad' : 'View Full Creative'}</span>
-                    </span>
-                    <div style={{ color: '#dc2626', display: 'flex', alignItems: 'center' }}>
-                      <ExternalLink size={14} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
-      {/* Conversion Creative System Callout */}
-      <section style={{ background: '#f8fafc', padding: '70px 0', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
-        <div className="container">
-          <div style={{ maxWidth: '820px', margin: '0 auto', textAlign: 'center' }}>
-            <span 
+      {/* Video Grid Section */}
+      <section style={{ padding: '50px 0 80px 0' }}>
+        <div className="container" style={{ maxWidth: '1380px', margin: '0 auto', padding: '0 20px' }}>
+          
+          {/* Active Category Title & Count */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '28px' }}>
+            <div>
+              <h2 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#fff', margin: 0 }}>
+                {selectedCategory === 'All' ? 'All Video Ads' : selectedCategory}
+              </h2>
+              <p style={{ color: '#94a3b8', fontSize: '0.88rem', margin: '4px 0 0 0' }}>
+                Showing {filteredVideos.length} optimized portrait video creatives
+              </p>
+            </div>
+            
+            <button 
+              onClick={onOpenBooking}
+              className="btn-primary"
               style={{
+                background: '#a3e635',
+                color: '#000',
+                fontWeight: 800,
+                fontSize: '0.85rem',
+                padding: '10px 22px',
+                borderRadius: '9999px',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '6px',
-                background: 'rgba(220, 38, 38, 0.08)',
-                color: '#dc2626',
-                border: '1px solid rgba(220, 38, 38, 0.25)',
-                borderRadius: '9999px',
-                padding: '6px 18px',
-                fontWeight: 800,
-                fontSize: '0.82rem',
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase',
-                marginBottom: '16px'
+                gap: '8px',
+                border: 'none',
+                cursor: 'pointer'
               }}
             >
-              <Sparkles size={14} />
-              RAPID CREATIVE ITERATION PIPELINE
-            </span>
-            <h2 style={{ fontSize: 'clamp(2rem, 3.4vw, 2.8rem)', color: '#0f172a', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px' }}>
-              Want High-Converting Creatives Engineered For Your Brand?
-            </h2>
-            <p style={{ color: '#64748b', fontSize: '1.05rem', lineHeight: 1.6, marginBottom: '28px' }}>
-              We test 15-30 authentic hook variations monthly, analyze retention drop-offs, and supply your ad accounts with winning video and static creative assets on demand.
-            </p>
-            <button className="btn-primary" onClick={onOpenBooking} style={{ padding: '15px 36px' }}>
-              <span>BOOK A 1-ON-1 CREATIVE STRATEGY AUDIT</span>
-              <ArrowRight size={18} />
+              <span>Get Videos Like These</span>
+              <ArrowRight size={15} />
             </button>
           </div>
+
+          {filteredVideos.length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '80px 20px', background: 'rgba(255,255,255,0.02)', borderRadius: '20px', border: '1px dashed rgba(255,255,255,0.15)' }}>
+              <Filter size={40} color="#64748b" style={{ marginBottom: '14px' }} />
+              <h3 style={{ fontSize: '1.2rem', color: '#fff', marginBottom: '8px' }}>No video creatives found</h3>
+              <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '20px' }}>Try adjusting your search query or select another category filter.</p>
+              <button 
+                onClick={() => { setSelectedCategory('All'); setSearchQuery(''); }}
+                style={{
+                  background: '#a3e635',
+                  color: '#000',
+                  border: 'none',
+                  padding: '10px 20px',
+                  borderRadius: '9999px',
+                  fontWeight: 800,
+                  cursor: 'pointer'
+                }}
+              >
+                Reset Filters
+              </button>
+            </div>
+          ) : (
+            <div 
+              style={{ 
+                display: 'grid', 
+                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
+                gap: '24px' 
+              }}
+            >
+              {filteredVideos.map((video) => {
+                const isUnmuted = unmutedVideoId === video.id;
+
+                return (
+                  <div 
+                    key={video.id}
+                    onClick={() => handleCardClick(video)}
+                    style={{
+                      background: '#110c1c',
+                      borderRadius: '24px',
+                      overflow: 'hidden',
+                      border: '1px solid rgba(255, 255, 255, 0.1)',
+                      boxShadow: '0 20px 40px -15px rgba(0, 0, 0, 0.7)',
+                      position: 'relative',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      cursor: 'pointer',
+                      transition: 'transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-6px)';
+                      e.currentTarget.style.borderColor = 'rgba(163, 230, 53, 0.4)';
+                      e.currentTarget.style.boxShadow = '0 24px 50px -10px rgba(163, 230, 53, 0.2)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                      e.currentTarget.style.boxShadow = '0 20px 40px -15px rgba(0, 0, 0, 0.7)';
+                    }}
+                  >
+                    {/* 9:16 Video Container matching sevenfigurestudio reference */}
+                    <div 
+                      style={{ 
+                        position: 'relative', 
+                        width: '100%', 
+                        paddingTop: '177.77%', /* 9:16 vertical aspect ratio */
+                        background: '#090510',
+                        overflow: 'hidden'
+                      }}
+                    >
+                      {/* Vimeo Responsive Iframe */}
+                      <iframe
+                        src={`https://player.vimeo.com/video/${video.vimeoId}?autoplay=1&loop=1&autopause=0&muted=${isUnmuted ? '0' : '1'}&background=1`}
+                        title={video.title}
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          height: '100%',
+                          border: 'none',
+                          pointerEvents: isUnmuted ? 'auto' : 'none'
+                        }}
+                      />
+
+                      {/* Top Badges Overlay */}
+                      <div 
+                        style={{ 
+                          position: 'absolute', 
+                          top: '14px', 
+                          left: '14px', 
+                          right: '14px', 
+                          display: 'flex', 
+                          justifyContent: 'space-between', 
+                          alignItems: 'center',
+                          zIndex: 4,
+                          pointerEvents: 'none'
+                        }}
+                      >
+                        <span 
+                          style={{
+                            background: 'rgba(0, 0, 0, 0.75)',
+                            backdropFilter: 'blur(10px)',
+                            border: '1px solid rgba(255, 255, 255, 0.15)',
+                            padding: '4px 10px',
+                            borderRadius: '9999px',
+                            fontSize: '0.72rem',
+                            fontWeight: 800,
+                            color: '#fff',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '4px'
+                          }}
+                        >
+                          <span>{video.categoryIcon}</span>
+                          <span>{video.category}</span>
+                        </span>
+
+                        <span 
+                          style={{
+                            background: 'rgba(163, 230, 53, 0.2)',
+                            backdropFilter: 'blur(10px)',
+                            border: '1px solid rgba(163, 230, 53, 0.4)',
+                            padding: '4px 10px',
+                            borderRadius: '9999px',
+                            fontSize: '0.72rem',
+                            fontWeight: 900,
+                            color: '#a3e635'
+                          }}
+                        >
+                          {video.roas}
+                        </span>
+                      </div>
+
+                      {/* Pill Button: Click for sound (Matches reference screenshot) */}
+                      <div 
+                        style={{ 
+                          position: 'absolute', 
+                          bottom: '16px', 
+                          left: '50%', 
+                          transform: 'translateX(-50%)',
+                          zIndex: 5,
+                          width: 'calc(100% - 32px)',
+                          display: 'flex',
+                          justifyContent: 'center'
+                        }}
+                      >
+                        <button
+                          onClick={(e) => toggleSound(e, video.id)}
+                          style={{
+                            width: '100%',
+                            background: isUnmuted ? '#a3e635' : 'rgba(0, 0, 0, 0.75)',
+                            backdropFilter: 'blur(12px)',
+                            color: isUnmuted ? '#000' : '#ffffff',
+                            border: isUnmuted ? '1px solid #a3e635' : '1px solid rgba(255, 255, 255, 0.2)',
+                            borderRadius: '9999px',
+                            padding: '10px 18px',
+                            fontSize: '0.85rem',
+                            fontWeight: 800,
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '8px',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s ease',
+                            boxShadow: '0 8px 20px rgba(0,0,0,0.5)'
+                          }}
+                        >
+                          {isUnmuted ? (
+                            <>
+                              <Volume2 size={16} />
+                              <span>Sound Playing</span>
+                            </>
+                          ) : (
+                            <>
+                              <Play size={14} fill="#fff" />
+                              <span>Click for sound</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Card Details Footer */}
+                    <div style={{ padding: '16px 18px', background: 'rgba(0,0,0,0.4)', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
+                      <h3 style={{ fontSize: '0.96rem', fontWeight: 800, color: '#fff', margin: '0 0 4px 0', lineHeight: 1.4 }}>
+                        {video.title}
+                      </h3>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '0.78rem', color: '#94a3b8', fontWeight: 600 }}>
+                          {video.niche}
+                        </span>
+                        <span 
+                          style={{ 
+                            fontSize: '0.76rem', 
+                            color: '#a3e635', 
+                            fontWeight: 800, 
+                            display: 'inline-flex', 
+                            alignItems: 'center', 
+                            gap: '4px' 
+                          }}
+                        >
+                          <Maximize2 size={12} />
+                          <span>HD Preview</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
+        </div>
+      </section>
+
+      {/* Full HD Video Theater Modal */}
+      {modalVideo && (
+        <div 
+          onClick={() => setModalVideo(null)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0, 0, 0, 0.92)',
+            backdropFilter: 'blur(16px)',
+            zIndex: 999999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '20px'
+          }}
+        >
+          <div 
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              position: 'relative',
+              width: '100%',
+              maxWidth: '460px',
+              background: '#130d22',
+              borderRadius: '28px',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+              overflow: 'hidden',
+              boxShadow: '0 30px 80px rgba(0, 0, 0, 0.9)'
+            }}
+          >
+            {/* Modal Close Button */}
+            <button
+              onClick={() => setModalVideo(null)}
+              style={{
+                position: 'absolute',
+                top: '14px',
+                right: '14px',
+                width: '38px',
+                height: '38px',
+                borderRadius: '50%',
+                background: 'rgba(0, 0, 0, 0.75)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                color: '#fff',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                zIndex: 10,
+                transition: 'all 0.2s ease'
+              }}
+            >
+              <X size={18} />
+            </button>
+
+            {/* Video Iframe in Modal */}
+            <div style={{ position: 'relative', width: '100%', paddingTop: '177.77%', background: '#000' }}>
+              <iframe
+                src={`https://player.vimeo.com/video/${modalVideo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
+                title={modalVideo.title}
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  border: 'none'
+                }}
+              />
+            </div>
+
+            {/* Modal Info Footer */}
+            <div style={{ padding: '20px', background: '#110b1f' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                <span 
+                  style={{ 
+                    fontSize: '0.78rem', 
+                    color: '#a3e635', 
+                    fontWeight: 800, 
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em' 
+                  }}
+                >
+                  {modalVideo.categoryIcon} {modalVideo.category} • {modalVideo.niche}
+                </span>
+                <span 
+                  style={{ 
+                    fontSize: '0.8rem', 
+                    color: '#000', 
+                    background: '#a3e635', 
+                    padding: '3px 10px', 
+                    borderRadius: '9999px', 
+                    fontWeight: 900 
+                  }}
+                >
+                  {modalVideo.roas}
+                </span>
+              </div>
+
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 900, color: '#fff', margin: '0 0 16px 0' }}>
+                {modalVideo.title}
+              </h3>
+
+              <button
+                onClick={() => {
+                  setModalVideo(null);
+                  onOpenBooking();
+                }}
+                style={{
+                  width: '100%',
+                  background: '#a3e635',
+                  color: '#000',
+                  border: 'none',
+                  borderRadius: '9999px',
+                  padding: '14px',
+                  fontWeight: 900,
+                  fontSize: '0.95rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  cursor: 'pointer',
+                  boxShadow: '0 8px 24px rgba(163, 230, 53, 0.3)'
+                }}
+              >
+                <span>ENGINEER ADS LIKE THIS FOR MY BRAND</span>
+                <ArrowRight size={16} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Conversion Creative System Bottom CTA */}
+      <section style={{ background: '#07040d', padding: '90px 0', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+        <div className="container" style={{ maxWidth: '860px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
+          <span 
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              background: 'rgba(163, 230, 53, 0.1)',
+              color: '#a3e635',
+              border: '1px solid rgba(163, 230, 53, 0.25)',
+              borderRadius: '9999px',
+              padding: '6px 18px',
+              fontWeight: 800,
+              fontSize: '0.82rem',
+              letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+              marginBottom: '18px'
+            }}
+          >
+            <Flame size={15} />
+            RAPID CREATIVE ITERATION PIPELINE
+          </span>
+
+          <h2 style={{ fontSize: 'clamp(2rem, 3.6vw, 3rem)', color: '#ffffff', fontWeight: 900, textTransform: 'uppercase', marginBottom: '16px', lineHeight: 1.2 }}>
+            Want High-Converting Video Creatives Engineered For Your Brand?
+          </h2>
+
+          <p style={{ color: '#94a3b8', fontSize: '1.08rem', lineHeight: 1.6, marginBottom: '32px' }}>
+            We script, produce, and iterate 15–30 authentic video hooks monthly, analyze second-by-second viewer drop-off, and supply your ad accounts with continuous high-ROAS creative winners.
+          </p>
+
+          <button 
+            onClick={onOpenBooking}
+            style={{ 
+              background: '#a3e635',
+              color: '#000',
+              padding: '16px 42px',
+              fontSize: '1rem',
+              fontWeight: 900,
+              borderRadius: '9999px',
+              border: 'none',
+              cursor: 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              boxShadow: '0 10px 30px rgba(163, 230, 53, 0.35)',
+              transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = 'translateY(-2px) scale(1.02)';
+              e.currentTarget.style.boxShadow = '0 14px 40px rgba(163, 230, 53, 0.45)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = 'translateY(0) scale(1)';
+              e.currentTarget.style.boxShadow = '0 10px 30px rgba(163, 230, 53, 0.35)';
+            }}
+          >
+            <span>BOOK A 1-ON-1 CREATIVE STRATEGY AUDIT</span>
+            <ArrowRight size={18} />
+          </button>
         </div>
       </section>
     </div>
