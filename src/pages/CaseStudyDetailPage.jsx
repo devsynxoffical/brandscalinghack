@@ -57,7 +57,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
         >
           <ArrowLeft size={16} />
-          <span>← Back to All 79 Case Studies</span>
+          <span>← Back to All 150+ Case Studies & Proofs</span>
         </button>
 
         {/* Next / Previous Reel Navigation */}

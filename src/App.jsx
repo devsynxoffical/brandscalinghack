@@ -121,10 +121,17 @@ function App() {
           <AboutPage
             onOpenBooking={() => setIsBookingOpen(true)}
             onNavigate={handleNavigate}
+            onOpenVideo={(video) => setActiveVideo(video)}
           />
         );
       case 'roas-calculator':
-        return <RoasCalculatorPage onOpenBooking={() => setIsBookingOpen(true)} />;
+        return (
+          <RoasCalculatorPage
+            onOpenBooking={() => setIsBookingOpen(true)}
+            onNavigate={handleNavigate}
+            onOpenVideo={(video) => setActiveVideo(video)}
+          />
+        );
       default:
         return (
           <HomePage

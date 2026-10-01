@@ -32,14 +32,6 @@ export default function ExperienceStatsSection() {
   return (
     <section className="light-exp-cta-section" id="experience-stats" style={{ padding: '60px 0' }}>
       <div className="container relative z-10" style={{ textAlign: 'center' }}>
-        {/* Section Header */}
-        <div style={{ marginBottom: '14px', display: 'flex', justifyContent: 'center' }}>
-          <span className="light-exp-pill-badge">
-            <Sparkles size={14} style={{ marginRight: '6px' }} />
-            08 — EXPERIENCE
-          </span>
-        </div>
-
         {/* Main Headline */}
         <h2 className="light-exp-main-title">
           $50M+ IN AD SPEND.<br />

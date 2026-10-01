@@ -82,12 +82,6 @@ export default function StartingZeroSection({ onOpenBooking, onNavigate }) {
       <div className="container relative z-10">
         {/* Header Block */}
         <div className="sz-header-block">
-          <div className="sz-badge-row">
-            <span className="sz-section-badge">
-              <Compass size={14} className="sz-badge-icon" />
-              04 — STARTING FROM ZERO
-            </span>
-          </div>
 
           <h2 className="sz-main-title">
             YOUR FIRST SALE IS <span className="text-gradient-orange">ONLY THE BEGINNING.</span>

@@ -7,6 +7,8 @@ import ScalingSystemSection from '../components/ScalingSystemSection';
 import ExperienceStatsSection from '../components/ExperienceStatsSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
+import TeamCurvedSection from '../components/TeamCurvedSection';
+import FaqSection from '../components/FaqSection';
 import KnockoutAuthorityBannerSection from '../components/KnockoutAuthorityBannerSection';
 import EveryPieceWorksTogetherSection from '../components/EveryPieceWorksTogetherSection';
 
@@ -20,16 +22,23 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onOpenVideo={onOpenVideo}
       />
 
-      {/* 03 — WHAT WE BUILD ENGINE (Tilted Mobile & 6 Core Capabilities) */}
+      {/* WHAT WE BUILD / GROWTH ENGINE (Tilted Mobile & 6 Core Capabilities) */}
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
 
-      {/* 08 — EXPERIENCE ($50M+ IN AD SPEND & 4 RED CREDENTIAL CARDS) */}
+      {/* REPEATABLE GROWTH ENGINE (High Beam 3D Creative Grid Style) */}
+      <RepeatableGrowthSection
+        onOpenBooking={onOpenBooking}
+        onNavigate={onNavigate}
+        onOpenInstagramModal={onOpenInstagramModal}
+      />
+
+      {/* EXPERIENCE ($50M+ IN AD SPEND & 4 CREDENTIAL CARDS) */}
       <ExperienceStatsSection />
 
-      {/* EVERY PIECE WORKS TOGETHER (04 Starting Zero, 05 Existing Brands Funnel, 06 Dennis Snellenberg Tilted Scaling Deck) */}
+      {/* EVERY PIECE WORKS TOGETHER (Starting Zero, Existing Brands Funnel, Scaling Deck) */}
       <EveryPieceWorksTogetherSection onOpenBooking={onOpenBooking} />
 
-      {/* 02 — RESULTS & PROOF (Screenshot 3 Style + Instagram Live Proof) */}
+      {/* RESULTS & PROOF (Instagram Live Proof) */}
       <LiveResultsSection
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
@@ -38,13 +47,6 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
 
       {/* LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
       <LiveSessionsSection onOpenVideo={onOpenVideo} />
-
-      {/* REPEATABLE GROWTH ENGINE (High Beam 3D Creative Grid Style) */}
-      <RepeatableGrowthSection
-        onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
-        onOpenInstagramModal={onOpenInstagramModal}
-      />
 
       {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}
       <ClientCaseStudiesSection
@@ -56,6 +58,12 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
 
       {/* 08 — EXPERIENCE + FINAL CTA (Light Theme with 3D Flip Cards & Final CTA) */}
       <ExperienceCtaSection onOpenBooking={onOpenBooking} />
+
+      {/* 09 — TEAM EXPERTS (3D Curved Fan Perspective Showcase) */}
+      <TeamCurvedSection onOpenBooking={onOpenBooking} />
+
+      {/* 10 — FREQUENTLY ASKED QUESTIONS (Interactive Accordion) */}
+      <FaqSection onOpenBooking={onOpenBooking} />
 
       {/* KNOCKOUT 3D TYPOGRAPHY & AUTHORITY SCALE BANNER (Directly Upper Footer) */}
       <KnockoutAuthorityBannerSection onOpenBooking={onOpenBooking} />

@@ -149,10 +149,6 @@ export default function EveryPieceWorksTogetherSection({ onOpenBooking }) {
         {/* MASTER HEADER */}
         {/* ========================================================================= */}
         <div className="epw-master-header">
-          <div className="epw-pill-tag">
-            <Sparkles size={14} className="epw-pill-icon" />
-            <span>06 — THE SCALING SYSTEM</span>
-          </div>
           <h2 className="epw-master-title">
             BUILD <span className="epw-gold-arrow">→</span> TEST <span className="epw-gold-arrow">→</span> OPTIMIZE <span className="epw-gold-arrow">→</span> <span className="epw-flame-text">SCALE.</span>
           </h2>

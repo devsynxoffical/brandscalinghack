@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
+import BrandLogo from './BrandLogo';
 
 export default function Footer({ onNavigate, onOpenBooking }) {
   const [email, setEmail] = useState('');
@@ -22,10 +23,13 @@ export default function Footer({ onNavigate, onOpenBooking }) {
         <div className="st-footer-container">
           {/* Top 4 Navigation & Info Groups */}
           <div className="st-footer-groups">
-            {/* Meta */}
+            {/* Meta & Brand Logo */}
             <div className="st-footer-group st-footer-group-meta">
+              <div style={{ marginBottom: '18px', cursor: 'pointer' }} onClick={() => onNavigate && onNavigate('home')}>
+                <BrandLogo size="default" showSubtext={true} />
+              </div>
               <p className="st-footer-heading">
-                © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved. AI training prohibited.
+                © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved.
               </p>
               <p className="st-footer-address">
                 27 W 24 Street<br />

@@ -103,28 +103,6 @@ export default function WhatWeBuildSection({ onOpenBooking, onNavigate }) {
       <div className="container relative z-10">
         {/* Section Header */}
         <div className="wwb-header-block" style={{ textAlign: 'center', maxWidth: '840px', margin: '0 auto 55px auto' }}>
-          <div className="wwb-badge-row" style={{ display: 'flex', justifyContent: 'center', marginBottom: '14px' }}>
-            <span 
-              className="wwb-section-badge"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                background: 'rgba(220, 38, 38, 0.15)',
-                color: '#ff5722',
-                border: '1px solid rgba(220, 38, 38, 0.35)',
-                borderRadius: '9999px',
-                padding: '6px 18px',
-                fontWeight: 800,
-                fontSize: '0.82rem',
-                letterSpacing: '0.1em',
-                textTransform: 'uppercase'
-              }}
-            >
-              <Zap size={14} className="wwb-badge-icon" />
-              03 — WHAT WE BUILD
-            </span>
-          </div>
 
           <h2 className="wwb-main-title" style={{ fontSize: 'clamp(2.2rem, 4.2vw, 3.6rem)', color: '#ffffff', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '-0.02em', lineHeight: 1.1, marginBottom: '10px' }}>
             YOUR ENTIRE ECOMMERCE <span className="text-gradient-orange">GROWTH ENGINE.</span>

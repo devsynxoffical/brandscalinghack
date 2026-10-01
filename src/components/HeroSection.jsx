@@ -114,7 +114,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="bsh-hero-video-bg" aria-hidden="true">
           <video
             ref={videoRef}
-            src="/million_dollar_header_video_1080p_web.mp4"
+            src="/brand-scaling-video.mp4"
             autoPlay
             loop
             muted
@@ -123,7 +123,10 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             disablePictureInPicture
             disableRemotePlayback
             className="bsh-hero-bg-video-element"
-          />
+          >
+            <source src="/brand-scaling-video.mp4" type="video/mp4" />
+            <source src="/brand%20scaling%20video.mp4" type="video/mp4" />
+          </video>
           {/* Subtle Transparent Vignette for High Video Clarity */}
           <div className="bsh-hero-video-overlay" />
         </div>
@@ -133,12 +136,6 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
 
         {/* Hero Top Content Header */}
         <div className="bsh-hero-content-wrap">
-          {/* Top Live Status Pill */}
-          <div className="bsh-hero-top-pill">
-            <span className="bsh-live-dot" />
-            <span className="bsh-pill-text">01 — HERO</span>
-          </div>
-
           {/* Elegant Top Subhead */}
           <h1 className="bsh-hero-header-eyebrow">
             <span className="bsh-serif-italic">From Your First Sale To</span>{' '}
@@ -176,7 +173,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
 
         {/* Hero Subtitle, Services Pills & Action CTAs */}
         <div className="bsh-hero-mid-controls">
-          <p className="bsh-hero-sub-description" style={{ maxWidth: '820px', fontSize: 'clamp(14px, 1.35vw, 17px)', lineHeight: 1.5, color: '#f1f5f9', textTransform: 'none', fontWeight: 600, letterSpacing: '0.01em', marginBottom: '16px' }}>
+          <p className="bsh-hero-sub-description">
             We build the strategy, acquisition and conversion engine behind eCommerce brands that are built to scale.
           </p>
 
@@ -205,7 +202,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
               onClick={() => onNavigate ? onNavigate('case-studies') : null}
             >
               <Play size={14} color="#ff5722" />
-              <span>79+ CASE STUDIES</span>
+              <span>150+ CASE STUDIES</span>
             </button>
           </div>
         </div>

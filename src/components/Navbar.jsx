@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import BrandLogo from './BrandLogo';
 
 export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
   };
 
   return (
-    <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''}`}>
+    <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''} ${activePage === 'about' ? 'header-light-page' : ''}`}>
       <div className="container header-ss1-inner">
         {/* Left Nav: 3 requested pages */}
         <div className="header-left-links">
@@ -45,10 +46,9 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           </button>
         </div>
 
-        {/* Center Elegant Script Logo (Screenshot 1 Style) */}
+        {/* Center BrandScaling Luxury Logo */}
         <div className="header-center-logo" onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>
-          <div className="logo-script-text">Inspired</div>
-          <div className="logo-sub-text">BY GAURAV</div>
+          <BrandLogo size="default" showSubtext={true} />
         </div>
 
         {/* Right Nav: Remaining 3 requested pages (Clean, no redundant button) */}

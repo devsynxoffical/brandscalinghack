@@ -60,9 +60,6 @@ export default function BottleneckFinderSection({ onOpenBooking }) {
     <section className="section-padding" style={{ background: '#080a0f', position: 'relative' }}>
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '850px', margin: '0 auto 40px auto' }}>
-          <span className="badge badge-red" style={{ marginBottom: '14px' }}>
-            05 — EXISTING ECOMMERCE BRANDS
-          </span>
           <h2 style={{ fontSize: 'clamp(2rem, 3.8vw, 3.2rem)', color: '#fff', marginBottom: '14px' }}>
             ALREADY SELLING? LET'S FIND WHAT'S HOLDING YOU BACK.
           </h2>

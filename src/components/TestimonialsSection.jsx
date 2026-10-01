@@ -33,9 +33,6 @@ export default function TestimonialsSection({ onOpenBooking, onNavigate }) {
     <section className="section-padding" style={{ background: '#0a0d14', position: 'relative' }}>
       <div className="container">
         <div style={{ textAlign: 'center', maxWidth: '850px', margin: '0 auto 40px auto' }}>
-          <span className="badge badge-orange" style={{ marginBottom: '14px' }}>
-            07 — TESTIMONIALS
-          </span>
           <h2 style={{ fontSize: 'clamp(2rem, 3.8vw, 3.2rem)', color: '#fff', marginBottom: '14px' }}>
             DON'T TAKE OUR WORD FOR IT.
           </h2>
