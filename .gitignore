@@ -25,6 +25,4 @@ dist-ssr
 scratch/
 scratch_*.json
 *.part
-public/brand*video.mp4
-public/brand scaling video.mp4
 
