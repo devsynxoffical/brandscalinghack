@@ -33,9 +33,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '01 — META ADS',
       title: 'Turn Paid Traffic Into a Scalable Customer Acquisition Engine.',
       icon: Target,
-      accent: '#ff5722',
-      bgGlow: 'linear-gradient(135deg, rgba(255, 87, 34, 0.16) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(255, 87, 34, 0.35)',
+      accent: '#ea580c',
+      bgLight: 'rgba(234, 88, 12, 0.05)',
+      borderColor: 'rgba(234, 88, 12, 0.25)',
       lead: 'Your ads are the fuel behind your growth.',
       summary: 'We build, manage, test, and scale Meta campaigns around the products, audiences, creatives, and offers that actually move the numbers.',
       checklistTitle: 'What We Work On:',
@@ -57,9 +57,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '02 — SHOPIFY STORE DEVELOPMENT',
       title: 'Because Getting More Traffic Doesn’t Matter If Your Store Can’t Convert It.',
       icon: ShoppingBag,
-      accent: '#3b82f6',
-      bgGlow: 'linear-gradient(135deg, rgba(59, 130, 246, 0.16) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(59, 130, 246, 0.35)',
+      accent: '#2563eb',
+      bgLight: 'rgba(37, 99, 235, 0.05)',
+      borderColor: 'rgba(37, 99, 235, 0.25)',
       lead: 'You can have great ads and still lose customers after the click.',
       summary: 'We build and optimize Shopify stores around:',
       checklistTitle: 'We build and optimize Shopify stores around:',
@@ -81,9 +81,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '03 — CONVERSION RATE OPTIMIZATION',
       title: 'Stop Paying for Traffic That Doesn’t Convert.',
       icon: TrendingUp,
-      accent: '#10b981',
-      bgGlow: 'linear-gradient(135deg, rgba(16, 185, 129, 0.16) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(16, 185, 129, 0.35)',
+      accent: '#059669',
+      bgLight: 'rgba(5, 150, 105, 0.05)',
+      borderColor: 'rgba(5, 150, 105, 0.25)',
       lead: 'Before increasing your ad spend, we look at what happens after someone clicks.',
       summary: 'We optimize the parts of your customer journey that influence the buying decision:',
       checklistTitle: 'We optimize the parts of your customer journey that influence the buying decision:',
@@ -107,9 +107,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '04 — DIRECT-RESPONSE CREATIVE',
       title: 'Your Ads Can’t Scale If Your Creative Can’t Keep Up.',
       icon: Video,
-      accent: '#ec4899',
-      bgGlow: 'linear-gradient(135deg, rgba(236, 72, 153, 0.16) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(236, 72, 153, 0.35)',
+      accent: '#e11d48',
+      bgLight: 'rgba(225, 29, 72, 0.05)',
+      borderColor: 'rgba(225, 29, 72, 0.25)',
       lead: 'The creative is often the difference between an ad people scroll past and an ad that makes them stop, pay attention, and buy.',
       summary: 'We develop performance-focused creative around:',
       checklistTitle: 'We develop performance-focused creative around:',
@@ -132,9 +132,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '05 — GOOGLE ADS',
       title: 'Capture Buyers Who Are Already Looking for What You Sell.',
       icon: Search,
-      accent: '#a855f7',
-      bgGlow: 'linear-gradient(135deg, rgba(168, 85, 247, 0.16) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(168, 85, 247, 0.35)',
+      accent: '#7c3aed',
+      bgLight: 'rgba(124, 58, 237, 0.05)',
+      borderColor: 'rgba(124, 58, 237, 0.25)',
       lead: 'Meta helps create demand. Google helps capture existing intent.',
       summary: 'We use Google Search, Shopping, Performance Max and related acquisition opportunities to put your products in front of high-intent buyers.',
       checklistTitle: 'The objective is simple:',
@@ -155,9 +155,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '06 — KLAVIYO EMAIL & SMS',
       title: 'Your First Purchase Shouldn’t Be the End of the Customer Relationship.',
       icon: Mail,
-      accent: '#06b6d4',
-      bgGlow: 'linear-gradient(135deg, rgba(6, 182, 212, 0.16) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(6, 182, 212, 0.35)',
+      accent: '#0891b2',
+      bgLight: 'rgba(8, 145, 178, 0.05)',
+      borderColor: 'rgba(8, 145, 178, 0.25)',
       lead: 'Getting the first sale is only one part of building a valuable customer.',
       summary: 'We build retention systems around:',
       checklistTitle: 'We build retention systems around:',
@@ -181,9 +181,9 @@ export default function GrowthPage({ onOpenBooking }) {
       tag: '07 — 8 & 9-FIGURE STRATEGIC ADVISORY',
       title: 'Sometimes You Don’t Need Another Service. You Need Someone Experienced Looking at the Entire Business.',
       icon: Crown,
-      accent: '#eab308',
-      bgGlow: 'linear-gradient(135deg, rgba(234, 179, 8, 0.18) 0%, rgba(30, 27, 75, 0.95) 100%)',
-      borderColor: 'rgba(234, 179, 8, 0.45)',
+      accent: '#d97706',
+      bgLight: 'rgba(217, 119, 6, 0.06)',
+      borderColor: 'rgba(217, 119, 6, 0.3)',
       lead: 'This is where you get direct access to Gaurav Kapoor.',
       summary: 'Our strategic advisory is designed for eCommerce founders who want direct strategic mentorship around the bigger growth picture.',
       checklistTitle: 'We can work through:',
@@ -211,7 +211,8 @@ export default function GrowthPage({ onOpenBooking }) {
       id: 'acquire',
       title: 'ACQUIRE',
       desc: 'Meta Ads • Google Ads • Direct-Response Creative',
-      solidColor: '#246b54',
+      gradient: 'linear-gradient(135deg, #059669 0%, #047857 100%)',
+      badgeBg: 'rgba(255, 255, 255, 0.2)',
       textColor: '#ffffff',
       items: [
         'Meta Ads',
@@ -223,8 +224,9 @@ export default function GrowthPage({ onOpenBooking }) {
       id: 'convert',
       title: 'CONVERT',
       desc: 'Shopify • Landing Pages • CRO • Offers',
-      solidColor: '#688ef7',
-      textColor: '#080e21',
+      gradient: 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)',
+      badgeBg: 'rgba(255, 255, 255, 0.2)',
+      textColor: '#ffffff',
       items: [
         'Shopify',
         'Landing Pages',
@@ -236,8 +238,9 @@ export default function GrowthPage({ onOpenBooking }) {
       id: 'maximize',
       title: 'MAXIMIZE',
       desc: 'Email • SMS • Upsells • Retention',
-      solidColor: '#ef5824',
-      textColor: '#080e21',
+      gradient: 'linear-gradient(135deg, #ea580c 0%, #c2410c 100%)',
+      badgeBg: 'rgba(255, 255, 255, 0.2)',
+      textColor: '#ffffff',
       items: [
         'Email',
         'SMS',
@@ -249,7 +252,8 @@ export default function GrowthPage({ onOpenBooking }) {
       id: 'scale',
       title: 'SCALE',
       desc: 'Data • Strategy • Testing • Optimization • Strategic Advisory',
-      solidColor: '#8a274c',
+      gradient: 'linear-gradient(135deg, #831843 0%, #701a75 100%)',
+      badgeBg: 'rgba(255, 255, 255, 0.2)',
       textColor: '#ffffff',
       items: [
         'Data',
@@ -266,9 +270,9 @@ export default function GrowthPage({ onOpenBooking }) {
     {
       step: 'STEP 01 — DIAGNOSE',
       title: 'DIAGNOSE',
-      color: '#ff4d4d',
-      bgGlow: 'linear-gradient(135deg, rgba(255, 77, 77, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(255, 77, 77, 0.3)',
+      color: '#dc2626',
+      bgLight: 'rgba(220, 38, 38, 0.05)',
+      borderColor: 'rgba(220, 38, 38, 0.2)',
       tagline: 'We look at the major growth levers:',
       flow: 'Ads → Creative → Store → Conversion → Retention → Economics',
       desc: 'We identify what\'s working, what\'s underperforming, and where the biggest opportunities may be.'
@@ -276,18 +280,18 @@ export default function GrowthPage({ onOpenBooking }) {
     {
       step: 'STEP 02 — BUILD',
       title: 'BUILD',
-      color: '#3b82f6',
-      bgGlow: 'linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(59, 130, 246, 0.3)',
+      color: '#2563eb',
+      bgLight: 'rgba(37, 99, 235, 0.05)',
+      borderColor: 'rgba(37, 99, 235, 0.2)',
       tagline: 'We fix the foundational pieces that need attention.',
       desc: 'That could mean improving your acquisition strategy, rebuilding creative, optimizing your Shopify experience, improving conversion, or strengthening your retention systems.'
     },
     {
       step: 'STEP 03 — TEST',
       title: 'TEST',
-      color: '#a855f7',
-      bgGlow: 'linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(168, 85, 247, 0.3)',
+      color: '#7c3aed',
+      bgLight: 'rgba(124, 58, 237, 0.05)',
+      borderColor: 'rgba(124, 58, 237, 0.2)',
       tagline: 'We test different:',
       testPillars: [
         'Creatives',
@@ -304,18 +308,18 @@ export default function GrowthPage({ onOpenBooking }) {
     {
       step: 'STEP 04 — SCALE',
       title: 'SCALE',
-      color: '#10b981',
-      bgGlow: 'linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(16, 185, 129, 0.3)',
+      color: '#059669',
+      bgLight: 'rgba(5, 150, 105, 0.05)',
+      borderColor: 'rgba(5, 150, 105, 0.2)',
       tagline: 'Once we find what works, we put more focus and resources behind it.',
       desc: 'Scale what works. Cut what doesn\'t. Keep testing.'
     },
     {
       step: 'STEP 05 — OPTIMIZE THE ENGINE',
       title: 'OPTIMIZE THE ENGINE',
-      color: '#f59e0b',
-      bgGlow: 'linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(15, 23, 42, 0.95) 100%)',
-      borderColor: 'rgba(245, 158, 11, 0.3)',
+      color: '#d97706',
+      bgLight: 'rgba(217, 119, 6, 0.05)',
+      borderColor: 'rgba(217, 119, 6, 0.2)',
       tagline: 'Scaling isn\'t just about generating more revenue.',
       flow: 'Conversion → Customer Value → Retention → Acquisition Costs → Overall Growth',
       desc: 'Because the objective is to build something that can keep growing.'
@@ -323,38 +327,44 @@ export default function GrowthPage({ onOpenBooking }) {
   ];
 
   return (
-    <div className="growth-page-vibrant" style={{ background: '#07090e', color: '#ffffff', minHeight: '100vh', paddingTop: '100px' }}>
+    <div className="growth-page-light" style={{ background: '#f8fafc', color: '#0f172a', minHeight: '100vh', paddingTop: '100px', fontFamily: 'inherit' }}>
       
       {/* ============================================================
-          1. HERO SECTION
+          1. HERO SECTION (Clean Light Theme with Vibrant Accents)
          ============================================================ */}
-      <section className="gp-hero-section" style={{ padding: '30px 0 70px 0', position: 'relative', overflow: 'hidden' }}>
-        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
+      <section className="gp-hero-section" style={{ padding: '40px 0 80px 0', position: 'relative', overflow: 'hidden', background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)' }}>
+        
+        {/* Subtle Ambient Light Glows */}
+        <div style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '600px', height: '350px', background: 'radial-gradient(circle, rgba(255, 87, 34, 0.08) 0%, rgba(255, 255, 255, 0) 70%)', pointerEvents: 'none', zIndex: 0 }} />
+
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           
           {/* Badge */}
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(220, 38, 38, 0.12)', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '6px 20px', borderRadius: '9999px', color: '#ef4444', fontSize: '0.82rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '22px' }}>
-            <Sparkles size={14} />
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(234, 88, 12, 0.08)', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '6px 20px', borderRadius: '9999px', color: '#ea580c', fontSize: '0.82rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '24px', boxShadow: '0 2px 8px rgba(234, 88, 12, 0.08)' }}>
+            <Sparkles size={14} color="#ea580c" />
             <span>BRAND SCALING HACKS • FULL-SERVICE ECOMMERCE GROWTH ENGINE</span>
           </div>
 
           {/* Main Headline */}
-          <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 4.2rem)', fontWeight: 950, color: '#ffffff', lineHeight: 1.12, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1050px', margin: '0 auto 20px auto' }}>
+          <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 4.2rem)', fontWeight: 950, color: '#0f172a', lineHeight: 1.12, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1050px', margin: '0 auto 22px auto' }}>
             You Don't Need More Random Marketing. <br />
-            <span style={{ color: '#dc2626' }}>You Need a Complete eCommerce Growth Engine.</span>
+            <span style={{ color: '#ea580c', background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+              You Need a Complete eCommerce Growth Engine.
+            </span>
           </h1>
 
           {/* Description */}
-          <p style={{ fontSize: 'clamp(1.05rem, 1.4vw, 1.22rem)', color: '#94a3b8', maxWidth: '880px', margin: '0 auto 28px auto', lineHeight: 1.65 }}>
+          <p style={{ fontSize: 'clamp(1.05rem, 1.4vw, 1.22rem)', color: '#475569', maxWidth: '880px', margin: '0 auto 30px auto', lineHeight: 1.65, fontWeight: 500 }}>
             We help eCommerce brands build, scale, and optimize the systems that actually drive revenue — from Meta Ads and direct-response creative to Shopify, CRO, Google Ads, Klaviyo, and strategic growth advisory.
           </p>
 
           {/* Credibility Bar */}
-          <div style={{ display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', gap: '14px', background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '10px 24px', borderRadius: '9999px', fontSize: '0.86rem', fontWeight: 700, color: '#cbd5e1', marginBottom: '32px' }}>
-            <span style={{ color: '#ffffff' }}>12+ Years of Experience</span>
-            <span style={{ color: '#dc2626' }}>•</span>
-            <span style={{ color: '#ffffff' }}>$50M+ in Meta Ad Spend Managed</span>
-            <span style={{ color: '#dc2626' }}>•</span>
-            <span style={{ color: '#ffffff' }}>30+ Niches & Industries</span>
+          <div style={{ display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', gap: '14px', background: '#ffffff', border: '1px solid #e2e8f0', padding: '12px 28px', borderRadius: '9999px', fontSize: '0.88rem', fontWeight: 700, color: '#334155', marginBottom: '34px', boxShadow: '0 4px 16px rgba(0, 0, 0, 0.04)' }}>
+            <span style={{ color: '#0f172a' }}>12+ Years of Experience</span>
+            <span style={{ color: '#ea580c' }}>•</span>
+            <span style={{ color: '#0f172a' }}>$50M+ in Meta Ad Spend Managed</span>
+            <span style={{ color: '#ea580c' }}>•</span>
+            <span style={{ color: '#0f172a' }}>30+ Niches & Industries</span>
           </div>
 
           {/* Primary CTA */}
@@ -362,7 +372,7 @@ export default function GrowthPage({ onOpenBooking }) {
             <button 
               className="btn-primary" 
               onClick={onOpenBooking} 
-              style={{ padding: '16px 42px', fontSize: '1rem' }}
+              style={{ padding: '16px 42px', fontSize: '1rem', boxShadow: '0 10px 25px rgba(234, 88, 12, 0.35)' }}
             >
               <span>BOOK YOUR BRAND GROWTH AUDIT</span>
               <ArrowRight size={18} />
@@ -380,20 +390,20 @@ export default function GrowthPage({ onOpenBooking }) {
       {/* ============================================================
           2. THE PROBLEM
          ============================================================ */}
-      <section style={{ padding: '70px 0', background: '#0b0f17', borderTop: '1px solid rgba(255, 255, 255, 0.08)', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ padding: '80px 0', background: '#ffffff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
           
           <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(239, 68, 68, 0.12)', color: '#ef4444', border: '1px solid rgba(239, 68, 68, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.08)', color: '#dc2626', border: '1px solid rgba(220, 38, 38, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
               THE PROBLEM
             </span>
-            <h2 style={{ fontSize: 'clamp(2rem, 3.8vw, 3rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: 0 }}>
+            <h2 style={{ fontSize: 'clamp(2rem, 3.8vw, 3rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: 0 }}>
               Your Brand Doesn't Need Another Freelancer.
             </h2>
           </div>
 
-          <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '24px', padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.65 }}>
-            <p style={{ margin: 0, fontWeight: 700, color: '#ffffff', fontSize: '1.15rem' }}>
+          <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '24px', padding: '40px 36px', display: 'flex', flexDirection: 'column', gap: '18px', fontSize: '1.05rem', color: '#334155', lineHeight: 1.7, boxShadow: '0 10px 30px rgba(0, 0, 0, 0.03)' }}>
+            <p style={{ margin: 0, fontWeight: 800, color: '#0f172a', fontSize: '1.2rem' }}>
               You can have a great product and still struggle to scale.
             </p>
             <p style={{ margin: 0 }}>
@@ -412,14 +422,14 @@ export default function GrowthPage({ onOpenBooking }) {
               Or maybe you've simply got too many different people handling different pieces of your marketing — with nobody looking at the entire growth picture.
             </p>
             
-            <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '20px', marginTop: '10px' }}>
-              <p style={{ margin: '0 0 8px 0', fontSize: '1.18rem', fontWeight: 900, color: '#ef4444' }}>
+            <div style={{ borderTop: '1px solid #cbd5e1', paddingTop: '22px', marginTop: '8px' }}>
+              <p style={{ margin: '0 0 8px 0', fontSize: '1.22rem', fontWeight: 900, color: '#dc2626' }}>
                 That's the problem we solve.
               </p>
-              <p style={{ margin: '0 0 6px 0', color: '#ffffff', fontWeight: 700 }}>
+              <p style={{ margin: '0 0 6px 0', color: '#0f172a', fontWeight: 800 }}>
                 Because scaling an eCommerce brand isn't about fixing one thing.
               </p>
-              <p style={{ margin: 0, color: '#facc15', fontWeight: 800, fontSize: '1.1rem' }}>
+              <p style={{ margin: 0, color: '#ea580c', fontWeight: 900, fontSize: '1.15rem' }}>
                 It's about getting the entire system working together.
               </p>
             </div>
@@ -429,121 +439,125 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* ============================================================
-          3. WHAT WE DO
+          3. WHAT WE DO (7 Pillars in Light Theme with Distinct Colors)
          ============================================================ */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '90px 0', background: '#f8fafc' }}>
         <div className="container" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 20px' }}>
           
-          <div style={{ textAlign: 'center', marginBottom: '45px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
               WHAT WE DO
             </span>
-            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: '0 0 16px 0' }}>
+            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: '0 0 16px 0' }}>
               Everything Your eCommerce Brand Needs to Scale
             </h2>
-            <p style={{ fontSize: '1.1rem', color: '#94a3b8', maxWidth: '780px', margin: '0 auto 20px auto' }}>
+            <p style={{ fontSize: '1.12rem', color: '#475569', maxWidth: '780px', margin: '0 auto 20px auto', fontWeight: 500 }}>
               At Brand Scaling Hacks, we don't look at your business as just an ad account.
             </p>
-            <p style={{ fontSize: '0.98rem', color: '#cbd5e1', fontWeight: 700, margin: '0 0 16px 0' }}>
+            <p style={{ fontSize: '1rem', color: '#0f172a', fontWeight: 800, margin: '0 0 16px 0' }}>
               We look at the entire customer journey:
             </p>
             
             {/* Customer Journey Flow */}
-            <div style={{ display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '8px', background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.12)', padding: '12px 24px', borderRadius: '9999px', fontSize: '0.88rem', fontWeight: 800, color: '#ffffff', marginBottom: '20px' }}>
+            <div style={{ display: 'inline-flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '8px', background: '#ffffff', border: '1px solid #e2e8f0', padding: '12px 26px', borderRadius: '9999px', fontSize: '0.9rem', fontWeight: 800, color: '#0f172a', marginBottom: '20px', boxShadow: '0 4px 16px rgba(0, 0, 0, 0.03)' }}>
               <span>Traffic</span>
-              <span style={{ color: '#ef4444' }}>→</span>
+              <span style={{ color: '#ea580c' }}>→</span>
               <span>Creative</span>
-              <span style={{ color: '#ef4444' }}>→</span>
+              <span style={{ color: '#ea580c' }}>→</span>
               <span>Store</span>
-              <span style={{ color: '#ef4444' }}>→</span>
+              <span style={{ color: '#ea580c' }}>→</span>
               <span>Conversion</span>
-              <span style={{ color: '#ef4444' }}>→</span>
+              <span style={{ color: '#ea580c' }}>→</span>
               <span>Customer</span>
-              <span style={{ color: '#ef4444' }}>→</span>
+              <span style={{ color: '#ea580c' }}>→</span>
               <span>Retention</span>
-              <span style={{ color: '#ef4444' }}>→</span>
-              <span style={{ color: '#facc15' }}>Scale</span>
+              <span style={{ color: '#ea580c' }}>→</span>
+              <span style={{ color: '#059669', fontWeight: 900 }}>Scale</span>
             </div>
 
-            <p style={{ fontSize: '1rem', color: '#94a3b8', margin: 0, fontWeight: 600 }}>
+            <p style={{ fontSize: '1.02rem', color: '#64748b', margin: 0, fontWeight: 600 }}>
               And we build, optimize, and connect the systems behind each stage.
             </p>
           </div>
 
           {/* 7 Pillars Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '26px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '28px' }}>
             {pillars.map((pillar) => {
               const IconComponent = pillar.icon;
               return (
                 <div 
                   key={pillar.id}
                   style={{
-                    background: '#0d1117',
-                    border: `1px solid rgba(255, 255, 255, 0.08)`,
+                    background: '#ffffff',
+                    border: `1.5px solid #e2e8f0`,
+                    borderTop: `4px solid ${pillar.accent}`,
                     borderRadius: '24px',
-                    padding: '32px 28px',
+                    padding: '34px 30px',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    boxShadow: '0 15px 35px -10px rgba(0, 0, 0, 0.5)',
-                    transition: 'transform 0.25s ease, border-color 0.25s ease'
+                    boxShadow: '0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 4px 10px -2px rgba(15, 23, 42, 0.02)',
+                    transition: 'all 0.25s ease'
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-4px)';
-                    e.currentTarget.style.borderColor = pillar.borderColor;
+                    e.currentTarget.style.transform = 'translateY(-5px)';
+                    e.currentTarget.style.borderColor = pillar.accent;
+                    e.currentTarget.style.boxShadow = `0 20px 35px -10px ${pillar.accent}25, 0 8px 16px -4px rgba(0,0,0,0.04)`;
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                    e.currentTarget.style.borderColor = '#e2e8f0';
+                    e.currentTarget.style.borderTop = `4px solid ${pillar.accent}`;
+                    e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 4px 10px -2px rgba(15, 23, 42, 0.02)';
                   }}
                 >
                   <div>
-                    {/* Header Tag */}
+                    {/* Header Tag & Icon */}
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px' }}>
-                      <span style={{ fontSize: '0.8rem', fontWeight: 800, color: pillar.accent, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                      <span style={{ fontSize: '0.82rem', fontWeight: 900, color: pillar.accent, letterSpacing: '0.08em', textTransform: 'uppercase', background: pillar.bgLight, padding: '4px 12px', borderRadius: '999px', border: `1px solid ${pillar.borderColor}` }}>
                         {pillar.tag}
                       </span>
-                      <div style={{ width: '42px', height: '42px', borderRadius: '12px', background: 'rgba(255, 255, 255, 0.05)', border: `1px solid ${pillar.borderColor}`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: pillar.accent }}>
-                        <IconComponent size={20} />
+                      <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: pillar.bgLight, border: `1px solid ${pillar.borderColor}`, display: 'flex', alignItems: 'center', justifyContent: 'center', color: pillar.accent }}>
+                        <IconComponent size={22} />
                       </div>
                     </div>
 
                     {/* Title */}
-                    <h3 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#ffffff', lineHeight: 1.35, margin: '0 0 14px 0' }}>
+                    <h3 style={{ fontSize: '1.28rem', fontWeight: 900, color: '#0f172a', lineHeight: 1.35, margin: '0 0 14px 0' }}>
                       {pillar.title}
                     </h3>
 
                     {/* Lead & Summary */}
-                    <p style={{ fontSize: '0.92rem', color: '#cbd5e1', lineHeight: 1.55, margin: '0 0 10px 0', fontWeight: 600 }}>
+                    <p style={{ fontSize: '0.95rem', color: '#1e293b', lineHeight: 1.55, margin: '0 0 10px 0', fontWeight: 700 }}>
                       {pillar.lead}
                     </p>
-                    <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.55, margin: '0 0 18px 0' }}>
+                    <p style={{ fontSize: '0.92rem', color: '#475569', lineHeight: 1.6, margin: '0 0 20px 0' }}>
                       {pillar.summary}
                     </p>
 
                     {/* Checklist */}
-                    <div style={{ background: 'rgba(0, 0, 0, 0.35)', border: '1px solid rgba(255, 255, 255, 0.06)', borderRadius: '16px', padding: '16px 18px', marginBottom: '20px' }}>
-                      <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#ffffff', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '10px' }}>
+                    <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '18px 20px', marginBottom: '22px' }}>
+                      <div style={{ fontSize: '0.8rem', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
                         {pillar.checklistTitle}
                       </div>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '9px' }}>
                         {pillar.items.map((item, iIdx) => (
-                          <div key={iIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', fontSize: '0.86rem', color: '#cbd5e1' }}>
-                            <span style={{ color: pillar.accent, fontWeight: 900, lineHeight: 1.2 }}>•</span>
-                            <span>{item}</span>
+                          <div key={iIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', fontSize: '0.88rem', color: '#334155', lineHeight: 1.45 }}>
+                            <span style={{ color: pillar.accent, fontWeight: 900, fontSize: '1.1rem', lineHeight: 1 }}>•</span>
+                            <span style={{ fontWeight: 500 }}>{item}</span>
                           </div>
                         ))}
                       </div>
                     </div>
 
                     {/* Goal Statement */}
-                    <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '14px', marginBottom: '22px' }}>
+                    <div style={{ borderTop: '1px solid #e2e8f0', paddingTop: '16px', marginBottom: '24px' }}>
                       {pillar.goalPrefix && (
-                        <p style={{ fontSize: '0.86rem', color: '#94a3b8', margin: '0 0 4px 0', fontWeight: 600 }}>
+                        <p style={{ fontSize: '0.88rem', color: '#64748b', margin: '0 0 4px 0', fontWeight: 600 }}>
                           {pillar.goalPrefix}
                         </p>
                       )}
-                      <p style={{ fontSize: '0.92rem', color: '#ffffff', fontWeight: 800, margin: 0 }}>
+                      <p style={{ fontSize: '0.94rem', color: '#0f172a', fontWeight: 800, margin: 0 }}>
                         {pillar.goal}
                       </p>
                     </div>
@@ -554,27 +568,30 @@ export default function GrowthPage({ onOpenBooking }) {
                     onClick={onOpenBooking}
                     style={{
                       width: '100%',
-                      background: 'rgba(255, 255, 255, 0.05)',
-                      border: `1px solid ${pillar.borderColor}`,
+                      background: '#ffffff',
+                      border: `1.5px solid ${pillar.accent}`,
                       borderRadius: '9999px',
-                      color: '#ffffff',
-                      fontWeight: 800,
-                      fontSize: '0.84rem',
+                      color: pillar.accent,
+                      fontWeight: 850,
+                      fontSize: '0.86rem',
                       padding: '12px 20px',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       gap: '8px',
                       cursor: 'pointer',
-                      transition: 'all 0.2s ease'
+                      transition: 'all 0.2s ease',
+                      boxShadow: '0 2px 6px rgba(0, 0, 0, 0.03)'
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.background = pillar.accent;
-                      e.currentTarget.style.color = '#000';
+                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.boxShadow = `0 6px 18px ${pillar.accent}40`;
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.background = '#ffffff';
+                      e.currentTarget.style.color = pillar.accent;
+                      e.currentTarget.style.boxShadow = '0 2px 6px rgba(0, 0, 0, 0.03)';
                     }}
                   >
                     <span>[ {pillar.btnText} ]</span>
@@ -589,48 +606,62 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* ============================================================
-          4. THE BIG DIFFERENCE
+          4. THE BIG DIFFERENCE (4 Distinct Vibrant Gradient Cards)
          ============================================================ */}
-      <section style={{ padding: '80px 0', background: '#0b0f17', borderTop: '1px solid rgba(255, 255, 255, 0.08)', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ padding: '90px 0', background: '#ffffff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           
-          <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
             THE BIG DIFFERENCE
           </span>
-          <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: '0 0 16px 0' }}>
+          <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: '0 0 16px 0' }}>
             We Don't Just Run One Part of Your Marketing. <br />
-            <span style={{ color: '#dc2626' }}>We Connect the Entire Growth Engine.</span>
+            <span style={{ color: '#ea580c' }}>We Connect the Entire Growth Engine.</span>
           </h2>
-          <p style={{ fontSize: '1.1rem', color: '#94a3b8', margin: '0 auto 40px auto', maxWidth: '720px' }}>
+          <p style={{ fontSize: '1.12rem', color: '#475569', margin: '0 auto 40px auto', maxWidth: '720px', fontWeight: 500 }}>
             Think about your eCommerce business as a chain:
           </p>
 
           {/* Chain Flow */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px', maxWidth: '1100px', margin: '0 auto 40px auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '22px', maxWidth: '1100px', margin: '0 auto 44px auto' }}>
             {chainCards.map((card, cIdx) => (
               <div 
                 key={card.id}
                 style={{
-                  background: card.solidColor,
+                  background: card.gradient,
                   color: card.textColor,
-                  borderRadius: '20px',
-                  padding: '28px 22px',
+                  borderRadius: '22px',
+                  padding: '30px 24px',
                   textAlign: 'left',
-                  boxShadow: '0 15px 30px rgba(0, 0, 0, 0.4)',
+                  boxShadow: '0 12px 30px rgba(0, 0, 0, 0.12)',
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'space-between'
+                  justifyContent: 'space-between',
+                  transition: 'transform 0.25s ease, box-shadow 0.25s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.boxShadow = '0 18px 40px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 12px 30px rgba(0, 0, 0, 0.12)';
                 }}
               >
                 <div>
-                  <div style={{ fontSize: '1.4rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '8px' }}>
-                    {card.title}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+                    <div style={{ fontSize: '1.45rem', fontWeight: 950, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                      {card.title}
+                    </div>
+                    <span style={{ background: card.badgeBg, padding: '3px 10px', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 900, letterSpacing: '0.05em' }}>
+                      0{cIdx + 1}
+                    </span>
                   </div>
-                  <div style={{ height: '2px', background: 'rgba(255, 255, 255, 0.3)', marginBottom: '16px' }}></div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  <div style={{ height: '2px', background: 'rgba(255, 255, 255, 0.35)', marginBottom: '18px' }}></div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '11px' }}>
                     {card.items.map((it, itIdx) => (
-                      <div key={itIdx} style={{ fontSize: '0.92rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span>•</span>
+                      <div key={itIdx} style={{ fontSize: '0.94rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span style={{ opacity: 0.9 }}>•</span>
                         <span>{it}</span>
                       </div>
                     ))}
@@ -640,14 +671,14 @@ export default function GrowthPage({ onOpenBooking }) {
             ))}
           </div>
 
-          <div style={{ maxWidth: '820px', margin: '0 auto', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.7 }}>
-            <p style={{ margin: '0 0 10px 0', fontWeight: 700, color: '#ffffff', fontSize: '1.15rem' }}>
+          <div style={{ maxWidth: '840px', margin: '0 auto', fontSize: '1.08rem', color: '#334155', lineHeight: 1.75, background: '#f8fafc', padding: '30px', borderRadius: '20px', border: '1px solid #e2e8f0' }}>
+            <p style={{ margin: '0 0 10px 0', fontWeight: 800, color: '#0f172a', fontSize: '1.2rem' }}>
               Every part affects the next.
             </p>
             <p style={{ margin: '0 0 10px 0' }}>
               That's why we don't believe in treating your Meta account, Shopify store, creative, CRO and retention as completely separate problems.
             </p>
-            <p style={{ margin: 0, fontWeight: 800, color: '#facc15' }}>
+            <p style={{ margin: 0, fontWeight: 900, color: '#ea580c', fontSize: '1.12rem' }}>
               They're all connected to the same objective: growing your brand.
             </p>
           </div>
@@ -658,18 +689,18 @@ export default function GrowthPage({ onOpenBooking }) {
       {/* ============================================================
           5. WHY BRAND SCALING HACKS
          ============================================================ */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '80px 0', background: '#f8fafc' }}>
         <div className="container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           
-          <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
             WHY BRAND SCALING HACKS
           </span>
-          <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: '0 0 20px 0' }}>
+          <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: '0 0 20px 0' }}>
             We've Been Doing This for More Than a Decade.
           </h2>
 
-          <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '24px', padding: '36px 32px', fontSize: '1.08rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'left' }}>
-            <p style={{ margin: '0 0 14px 0', fontWeight: 700, color: '#ffffff' }}>
+          <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '24px', padding: '38px 34px', fontSize: '1.1rem', color: '#334155', lineHeight: 1.75, textAlign: 'left', boxShadow: '0 10px 25px rgba(0, 0, 0, 0.03)' }}>
+            <p style={{ margin: '0 0 14px 0', fontWeight: 800, color: '#0f172a', fontSize: '1.15rem' }}>
               You're not working with a team that just learned how to launch a campaign.
             </p>
             <p style={{ margin: 0 }}>
@@ -681,32 +712,37 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* ============================================================
-          6. THE TRACK RECORD
+          6. THE TRACK RECORD (Light Theme Metrics with Vivid Colors)
          ============================================================ */}
-      <section style={{ padding: '60px 0 80px 0', background: '#0b0f17', borderTop: '1px solid rgba(255, 255, 255, 0.08)', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ padding: '70px 0 90px 0', background: '#ffffff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           
-          <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '16px' }}>
             THE TRACK RECORD
           </span>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px', marginTop: '20px' }}>
-            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '20px', padding: '30px 20px' }}>
-              <div style={{ fontSize: '2.5rem', fontWeight: 950, color: '#ef4444', marginBottom: '8px' }}>12+ YEARS</div>
-              <div style={{ fontSize: '0.88rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Experience in eCommerce & Digital Growth</div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '22px', marginTop: '22px' }}>
+            
+            <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderTop: '4px solid #ea580c', borderRadius: '22px', padding: '34px 22px', boxShadow: '0 8px 20px rgba(0, 0, 0, 0.03)' }}>
+              <div style={{ fontSize: '2.6rem', fontWeight: 950, color: '#ea580c', marginBottom: '8px', letterSpacing: '-0.02em' }}>12+ YEARS</div>
+              <div style={{ fontSize: '0.9rem', color: '#475569', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>Experience in eCommerce & Digital Growth</div>
             </div>
-            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '20px', padding: '30px 20px' }}>
-              <div style={{ fontSize: '2.5rem', fontWeight: 950, color: '#38bdf8', marginBottom: '8px' }}>$50M+</div>
-              <div style={{ fontSize: '0.88rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Meta Ad Spend Managed</div>
+
+            <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderTop: '4px solid #2563eb', borderRadius: '22px', padding: '34px 22px', boxShadow: '0 8px 20px rgba(0, 0, 0, 0.03)' }}>
+              <div style={{ fontSize: '2.6rem', fontWeight: 950, color: '#2563eb', marginBottom: '8px', letterSpacing: '-0.02em' }}>$50M+</div>
+              <div style={{ fontSize: '0.9rem', color: '#475569', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>Meta Ad Spend Managed</div>
             </div>
-            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '20px', padding: '30px 20px' }}>
-              <div style={{ fontSize: '2.5rem', fontWeight: 950, color: '#f43f5e', marginBottom: '8px' }}>30+</div>
-              <div style={{ fontSize: '0.88rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Niches & Industries</div>
+
+            <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderTop: '4px solid #e11d48', borderRadius: '22px', padding: '34px 22px', boxShadow: '0 8px 20px rgba(0, 0, 0, 0.03)' }}>
+              <div style={{ fontSize: '2.6rem', fontWeight: 950, color: '#e11d48', marginBottom: '8px', letterSpacing: '-0.02em' }}>30+</div>
+              <div style={{ fontSize: '0.9rem', color: '#475569', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>Niches & Industries</div>
             </div>
-            <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '20px', padding: '30px 20px' }}>
-              <div style={{ fontSize: '2.5rem', fontWeight: 950, color: '#fbbf24', marginBottom: '8px' }}>8 & 9-FIGURE</div>
-              <div style={{ fontSize: '0.88rem', color: '#94a3b8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>eCommerce Brand Experience</div>
+
+            <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderTop: '4px solid #d97706', borderRadius: '22px', padding: '34px 22px', boxShadow: '0 8px 20px rgba(0, 0, 0, 0.03)' }}>
+              <div style={{ fontSize: '2.3rem', fontWeight: 950, color: '#d97706', marginBottom: '8px', letterSpacing: '-0.02em' }}>8 & 9-FIGURE</div>
+              <div style={{ fontSize: '0.9rem', color: '#475569', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.04em' }}>eCommerce Brand Experience</div>
             </div>
+
           </div>
 
         </div>
@@ -715,46 +751,46 @@ export default function GrowthPage({ onOpenBooking }) {
       {/* ============================================================
           7. THE GAURAV KAPOOR DIFFERENCE
          ============================================================ */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '85px 0', background: '#f8fafc' }}>
         <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', padding: '0 20px' }}>
           
-          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '34px' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
               THE GAURAV KAPOOR DIFFERENCE
             </span>
-            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: 0 }}>
+            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: 0 }}>
               You Don't Just Get a Service Provider. <br />
-              <span style={{ color: '#dc2626' }}>You Get the Experience Behind the Strategy.</span>
+              <span style={{ color: '#ea580c' }}>You Get the Experience Behind the Strategy.</span>
             </h2>
           </div>
 
-          <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '24px', padding: '36px 32px', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.7 }}>
+          <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '24px', padding: '40px 36px', fontSize: '1.08rem', color: '#334155', lineHeight: 1.75, boxShadow: '0 10px 30px rgba(0, 0, 0, 0.04)' }}>
             <p style={{ margin: '0 0 14px 0' }}>
               Gaurav Kapoor has spent 12+ years working in digital and eCommerce growth, with more than $50M in Meta ad spend managed across 30+ niches and industries.
             </p>
             <p style={{ margin: '0 0 16px 0' }}>
               That experience goes beyond simply knowing how to launch ads.
             </p>
-            <p style={{ margin: '0 0 12px 0', fontWeight: 700, color: '#ffffff' }}>
+            <p style={{ margin: '0 0 14px 0', fontWeight: 800, color: '#0f172a' }}>
               It's about understanding how the different pieces of an eCommerce business interact:
             </p>
             
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', margin: '0 0 20px 0' }}>
-              <span style={{ background: 'rgba(239, 68, 68, 0.15)', color: '#ef4444', border: '1px solid rgba(239, 68, 68, 0.3)', padding: '4px 14px', borderRadius: '999px', fontWeight: 800, fontSize: '0.88rem' }}>Acquisition.</span>
-              <span style={{ background: 'rgba(236, 72, 153, 0.15)', color: '#ec4899', border: '1px solid rgba(236, 72, 153, 0.3)', padding: '4px 14px', borderRadius: '999px', fontWeight: 800, fontSize: '0.88rem' }}>Creative.</span>
-              <span style={{ background: 'rgba(59, 130, 246, 0.15)', color: '#60a5fa', border: '1px solid rgba(59, 130, 246, 0.3)', padding: '4px 14px', borderRadius: '999px', fontWeight: 800, fontSize: '0.88rem' }}>Conversion.</span>
-              <span style={{ background: 'rgba(6, 182, 212, 0.15)', color: '#22d3ee', border: '1px solid rgba(6, 182, 212, 0.3)', padding: '4px 14px', borderRadius: '999px', fontWeight: 800, fontSize: '0.88rem' }}>Retention.</span>
-              <span style={{ background: 'rgba(16, 185, 129, 0.15)', color: '#34d399', border: '1px solid rgba(16, 185, 129, 0.3)', padding: '4px 14px', borderRadius: '999px', fontWeight: 800, fontSize: '0.88rem' }}>Scaling.</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', margin: '0 0 24px 0' }}>
+              <span style={{ background: 'rgba(234, 88, 12, 0.1)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.25)', padding: '5px 16px', borderRadius: '999px', fontWeight: 800, fontSize: '0.9rem' }}>Acquisition.</span>
+              <span style={{ background: 'rgba(225, 29, 72, 0.1)', color: '#e11d48', border: '1px solid rgba(225, 29, 72, 0.25)', padding: '5px 16px', borderRadius: '999px', fontWeight: 800, fontSize: '0.9rem' }}>Creative.</span>
+              <span style={{ background: 'rgba(37, 99, 235, 0.1)', color: '#2563eb', border: '1px solid rgba(37, 99, 235, 0.25)', padding: '5px 16px', borderRadius: '999px', fontWeight: 800, fontSize: '0.9rem' }}>Conversion.</span>
+              <span style={{ background: 'rgba(8, 145, 178, 0.1)', color: '#0891b2', border: '1px solid rgba(8, 145, 178, 0.25)', padding: '5px 16px', borderRadius: '999px', fontWeight: 800, fontSize: '0.9rem' }}>Retention.</span>
+              <span style={{ background: 'rgba(5, 150, 105, 0.1)', color: '#059669', border: '1px solid rgba(5, 150, 105, 0.25)', padding: '5px 16px', borderRadius: '999px', fontWeight: 800, fontSize: '0.9rem' }}>Scaling.</span>
             </div>
 
-            <p style={{ margin: '0 0 24px 0' }}>
+            <p style={{ margin: '0 0 26px 0' }}>
               And for brands that need deeper strategic guidance, that experience is available directly through our 8 & 9-Figure Strategic Advisory.
             </p>
 
             <button 
               className="btn-primary" 
               onClick={onOpenBooking} 
-              style={{ padding: '14px 34px' }}
+              style={{ padding: '15px 36px', fontSize: '0.95rem' }}
             >
               <span>[ WORK DIRECTLY WITH GAURAV ]</span>
               <ArrowRight size={16} />
@@ -765,62 +801,73 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* ============================================================
-          8. HOW WE APPROACH GROWTH
+          8. HOW WE APPROACH GROWTH (5 Step Light Timeline Cards)
          ============================================================ */}
-      <section style={{ padding: '80px 0', background: '#0b0f17', borderTop: '1px solid rgba(255, 255, 255, 0.08)', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ padding: '90px 0', background: '#ffffff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container" style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 20px' }}>
           
-          <div style={{ textAlign: 'center', marginBottom: '45px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
               HOW WE APPROACH GROWTH
             </span>
-            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: '0 0 14px 0' }}>
+            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: '0 0 14px 0' }}>
               First, We Find What's Holding You Back.
             </h2>
-            <p style={{ fontSize: '1.05rem', color: '#94a3b8', margin: '0 0 6px 0' }}>
+            <p style={{ fontSize: '1.08rem', color: '#475569', margin: '0 0 6px 0', fontWeight: 500 }}>
               We don't start by blindly increasing your ad budget.
             </p>
-            <p style={{ fontSize: '1.05rem', color: '#ffffff', fontWeight: 800, margin: 0 }}>
+            <p style={{ fontSize: '1.08rem', color: '#0f172a', fontWeight: 800, margin: 0 }}>
               We start by understanding the business.
             </p>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
             {approachSteps.map((st, sIdx) => (
               <div 
                 key={sIdx}
                 style={{
-                  background: '#0d1117',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  background: '#f8fafc',
+                  border: '1.5px solid #e2e8f0',
+                  borderLeft: `5px solid ${st.color}`,
                   borderRadius: '20px',
-                  padding: '28px 30px'
+                  padding: '30px 32px',
+                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.02)',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateX(4px)';
+                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.06)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateX(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(0, 0, 0, 0.02)';
                 }}
               >
-                <div style={{ fontSize: '0.85rem', fontWeight: 900, color: st.color, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '8px' }}>
+                <div style={{ display: 'inline-block', fontSize: '0.82rem', fontWeight: 900, color: st.color, background: st.bgLight, border: `1px solid ${st.borderColor}`, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '10px' }}>
                   {st.step}
                 </div>
                 
-                <p style={{ fontSize: '1.02rem', fontWeight: 700, color: '#ffffff', margin: '0 0 8px 0' }}>
+                <p style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0f172a', margin: '0 0 8px 0' }}>
                   {st.tagline}
                 </p>
 
                 {st.flow && (
-                  <div style={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'center', gap: '6px', background: 'rgba(0,0,0,0.4)', padding: '6px 14px', borderRadius: '999px', border: '1px solid rgba(255, 255, 255, 0.1)', fontSize: '0.85rem', fontWeight: 800, color: '#facc15', margin: '4px 0 12px 0' }}>
+                  <div style={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', background: '#ffffff', padding: '8px 18px', borderRadius: '999px', border: '1px solid #cbd5e1', fontSize: '0.88rem', fontWeight: 800, color: '#0f172a', margin: '6px 0 14px 0', boxShadow: '0 2px 6px rgba(0,0,0,0.02)' }}>
                     {st.flow}
                   </div>
                 )}
 
                 {st.testPillars && (
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', margin: '10px 0 14px 0' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', margin: '10px 0 16px 0' }}>
                     {st.testPillars.map((tp, tpIdx) => (
-                      <span key={tpIdx} style={{ background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', padding: '4px 12px', borderRadius: '999px', fontSize: '0.82rem', color: '#cbd5e1', fontWeight: 700 }}>
+                      <span key={tpIdx} style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '999px', fontSize: '0.84rem', color: '#1e293b', fontWeight: 700, boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>
                         {tp}
                       </span>
                     ))}
                   </div>
                 )}
 
-                <p style={{ fontSize: '0.94rem', color: '#94a3b8', lineHeight: 1.6, margin: 0 }}>
+                <p style={{ fontSize: '0.96rem', color: '#475569', lineHeight: 1.65, margin: 0 }}>
                   {st.desc}
                 </p>
               </div>
@@ -833,58 +880,58 @@ export default function GrowthPage({ onOpenBooking }) {
       {/* ============================================================
           9. WHO WE WORK WITH
          ============================================================ */}
-      <section style={{ padding: '80px 0' }}>
+      <section style={{ padding: '85px 0', background: '#f8fafc' }}>
         <div className="container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
           
-          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '34px' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
               WHO WE WORK WITH
             </span>
-            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: 0 }}>
+            <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: 0 }}>
               Built for eCommerce Brands That Are Serious About Growth.
             </h2>
           </div>
 
-          <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '24px', padding: '36px 32px', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.7 }}>
+          <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '24px', padding: '40px 36px', fontSize: '1.08rem', color: '#334155', lineHeight: 1.75, boxShadow: '0 10px 30px rgba(0, 0, 0, 0.03)' }}>
             <p style={{ margin: '0 0 12px 0' }}>
               Brand Scaling Hacks is for founders and brands that aren't looking for random marketing tactics.
             </p>
-            <p style={{ margin: '0 0 16px 0', fontWeight: 700, color: '#ffffff' }}>
+            <p style={{ margin: '0 0 16px 0', fontWeight: 800, color: '#0f172a' }}>
               You're looking for a partner who can help you:
             </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', margin: '0 0 24px 0' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Acquire more customers</span>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', margin: '0 0 24px 0' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Acquire more customers</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Improve conversion</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Improve conversion</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Create better-performing creative</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Create better-performing creative</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Increase customer value</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Increase customer value</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Build stronger retention</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Build stronger retention</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Make better scaling decisions</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Make better scaling decisions</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ color: '#ef4444', fontWeight: 900 }}>•</span>
-                <span>Build a more complete growth system</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <span style={{ color: '#ea580c', fontWeight: 900, fontSize: '1.2rem' }}>•</span>
+                <span style={{ fontWeight: 600 }}>Build a more complete growth system</span>
               </div>
             </div>
 
-            <p style={{ margin: 0, fontWeight: 700, color: '#facc15' }}>
+            <p style={{ margin: 0, fontWeight: 900, color: '#ea580c', fontSize: '1.12rem' }}>
               If you believe your brand has more room to grow, let's find out where that opportunity is.
             </p>
           </div>
@@ -895,53 +942,53 @@ export default function GrowthPage({ onOpenBooking }) {
       {/* ============================================================
           10. FINAL SALES SECTION
          ============================================================ */}
-      <section style={{ padding: '80px 0', background: '#0b0f17', borderTop: '1px solid rgba(255, 255, 255, 0.08)', borderBottom: '1px solid rgba(255, 255, 255, 0.08)' }}>
+      <section style={{ padding: '90px 0', background: '#ffffff', borderTop: '1px solid #e2e8f0', borderBottom: '1px solid #e2e8f0' }}>
         <div className="container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           
-          <span style={{ display: 'inline-block', background: 'rgba(220, 38, 38, 0.12)', color: '#ef4444', border: '1px solid rgba(220, 38, 38, 0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
+          <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
             FINAL SALES SECTION
           </span>
-          <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#ffffff', textTransform: 'uppercase', margin: '0 0 20px 0' }}>
+          <h2 style={{ fontSize: 'clamp(2.1rem, 4vw, 3.2rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: '0 0 20px 0' }}>
             Your Brand May Not Need More Traffic. <br />
-            <span style={{ color: '#dc2626' }}>It May Need a Better Growth Engine.</span>
+            <span style={{ color: '#ea580c' }}>It May Need a Better Growth Engine.</span>
           </h2>
 
-          <div style={{ background: '#0d1117', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '24px', padding: '36px 32px', fontSize: '1.05rem', color: '#cbd5e1', lineHeight: 1.7, textAlign: 'left', marginBottom: '32px' }}>
+          <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '24px', padding: '40px 36px', fontSize: '1.08rem', color: '#334155', lineHeight: 1.75, textAlign: 'left', marginBottom: '32px', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.03)' }}>
             <p style={{ margin: '0 0 16px 0' }}>
               If you're already selling online and believe your brand has the potential to grow significantly further, the first step is understanding what is actually holding it back.
             </p>
-            <p style={{ margin: '0 0 12px 0', fontWeight: 700, color: '#ffffff' }}>
+            <p style={{ margin: '0 0 14px 0', fontWeight: 800, color: '#0f172a' }}>
               We'll look at the bigger picture — not just one ad account.
             </p>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', margin: '0 0 20px 0' }}>
-              <span style={{ background: 'rgba(255, 255, 255, 0.06)', padding: '4px 12px', borderRadius: '8px', color: '#ffffff', fontWeight: 700 }}>Ads.</span>
-              <span style={{ background: 'rgba(255, 255, 255, 0.06)', padding: '4px 12px', borderRadius: '8px', color: '#ffffff', fontWeight: 700 }}>Creative.</span>
-              <span style={{ background: 'rgba(255, 255, 255, 0.06)', padding: '4px 12px', borderRadius: '8px', color: '#ffffff', fontWeight: 700 }}>Store.</span>
-              <span style={{ background: 'rgba(255, 255, 255, 0.06)', padding: '4px 12px', borderRadius: '8px', color: '#ffffff', fontWeight: 700 }}>Conversion.</span>
-              <span style={{ background: 'rgba(255, 255, 255, 0.06)', padding: '4px 12px', borderRadius: '8px', color: '#ffffff', fontWeight: 700 }}>Retention.</span>
-              <span style={{ background: 'rgba(255, 255, 255, 0.06)', padding: '4px 12px', borderRadius: '8px', color: '#ffffff', fontWeight: 700 }}>Strategy.</span>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', margin: '0 0 22px 0' }}>
+              <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '8px', color: '#0f172a', fontWeight: 700 }}>Ads.</span>
+              <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '8px', color: '#0f172a', fontWeight: 700 }}>Creative.</span>
+              <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '8px', color: '#0f172a', fontWeight: 700 }}>Store.</span>
+              <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '8px', color: '#0f172a', fontWeight: 700 }}>Conversion.</span>
+              <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '8px', color: '#0f172a', fontWeight: 700 }}>Retention.</span>
+              <span style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '8px', color: '#0f172a', fontWeight: 700 }}>Strategy.</span>
             </div>
 
-            <p style={{ margin: '0 0 24px 0', fontSize: '1.18rem', fontWeight: 900, color: '#ffffff' }}>
+            <p style={{ margin: '0 0 26px 0', fontSize: '1.22rem', fontWeight: 950, color: '#0f172a' }}>
               Let's Find the Biggest Opportunities in Your Brand.
             </p>
 
-            <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+            <div style={{ textAlign: 'center', marginBottom: '22px' }}>
               <button 
                 className="btn-primary" 
                 onClick={onOpenBooking} 
-                style={{ padding: '16px 42px', fontSize: '1rem' }}
+                style={{ padding: '16px 42px', fontSize: '1rem', boxShadow: '0 10px 25px rgba(234, 88, 12, 0.35)' }}
               >
                 <span>[ BOOK YOUR BRAND GROWTH AUDIT ]</span>
                 <ArrowRight size={18} />
               </button>
             </div>
 
-            <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: '0.92rem', lineHeight: 1.6 }}>
+            <div style={{ textAlign: 'center', color: '#64748b', fontSize: '0.94rem', lineHeight: 1.65 }}>
               <p style={{ margin: '0 0 4px 0' }}>No complicated process.</p>
               <p style={{ margin: '0 0 4px 0' }}>No guessing.</p>
-              <p style={{ margin: 0, color: '#cbd5e1', fontWeight: 600 }}>Just a conversation about your brand, where you are today, and where you want to go.</p>
+              <p style={{ margin: 0, color: '#1e293b', fontWeight: 700 }}>Just a conversation about your brand, where you are today, and where you want to go.</p>
             </div>
           </div>
 
@@ -949,17 +996,17 @@ export default function GrowthPage({ onOpenBooking }) {
       </section>
 
       {/* ============================================================
-          11. FOOTER CTA
+          11. FOOTER BRAND BAR (Clean Light Theme)
          ============================================================ */}
-      <section style={{ padding: '60px 0', background: '#07090e', textAlign: 'center' }}>
+      <section style={{ padding: '60px 0', background: '#f8fafc', textAlign: 'center', borderTop: '1px solid #e2e8f0' }}>
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto', padding: '0 20px' }}>
-          <h3 style={{ fontSize: '1.4rem', fontWeight: 950, color: '#ffffff', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 8px 0' }}>
+          <h3 style={{ fontSize: '1.45rem', fontWeight: 950, color: '#0f172a', textTransform: 'uppercase', letterSpacing: '0.05em', margin: '0 0 8px 0' }}>
             BRAND SCALING HACKS
           </h3>
-          <p style={{ fontSize: '1.1rem', fontWeight: 800, color: '#ef4444', margin: '0 0 10px 0' }}>
+          <p style={{ fontSize: '1.12rem', fontWeight: 800, color: '#ea580c', margin: '0 0 10px 0' }}>
             Build. Scale. Grow.
           </p>
-          <p style={{ fontSize: '0.9rem', color: '#64748b', fontWeight: 700, margin: 0 }}>
+          <p style={{ fontSize: '0.92rem', color: '#64748b', fontWeight: 700, margin: 0 }}>
             12+ Years • $50M+ Meta Ad Spend Managed • 30+ Niches
           </p>
         </div>
