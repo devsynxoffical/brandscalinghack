@@ -271,9 +271,15 @@ export default function GrowthPage({ onOpenBooking }) {
     {
       step: 'STEP 01 — DIAGNOSE',
       title: 'DIAGNOSE',
-      color: '#dc2626',
-      bgLight: 'rgba(220, 38, 38, 0.05)',
-      borderColor: 'rgba(220, 38, 38, 0.2)',
+      color: '#e11d48',
+      bgGradient: 'linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%)',
+      borderColor: '#fecdd3',
+      badgeBg: '#e11d48',
+      badgeText: '#ffffff',
+      titleColor: '#881337',
+      descColor: '#4c0519',
+      pillBorder: '#fda4af',
+      shadowColor: 'rgba(225, 29, 72, 0.12)',
       tagline: 'We look at the major growth levers:',
       flow: 'Ads → Creative → Store → Conversion → Retention → Economics',
       desc: 'We identify what\'s working, what\'s underperforming, and where the biggest opportunities may be.'
@@ -282,8 +288,14 @@ export default function GrowthPage({ onOpenBooking }) {
       step: 'STEP 02 — BUILD',
       title: 'BUILD',
       color: '#2563eb',
-      bgLight: 'rgba(37, 99, 235, 0.05)',
-      borderColor: 'rgba(37, 99, 235, 0.2)',
+      bgGradient: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+      borderColor: '#bfdbfe',
+      badgeBg: '#2563eb',
+      badgeText: '#ffffff',
+      titleColor: '#1e3a8a',
+      descColor: '#172554',
+      pillBorder: '#93c5fd',
+      shadowColor: 'rgba(37, 99, 235, 0.12)',
       tagline: 'We fix the foundational pieces that need attention.',
       desc: 'That could mean improving your acquisition strategy, rebuilding creative, optimizing your Shopify experience, improving conversion, or strengthening your retention systems.'
     },
@@ -291,8 +303,14 @@ export default function GrowthPage({ onOpenBooking }) {
       step: 'STEP 03 — TEST',
       title: 'TEST',
       color: '#7c3aed',
-      bgLight: 'rgba(124, 58, 237, 0.05)',
-      borderColor: 'rgba(124, 58, 237, 0.2)',
+      bgGradient: 'linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%)',
+      borderColor: '#ddd6fe',
+      badgeBg: '#7c3aed',
+      badgeText: '#ffffff',
+      titleColor: '#4c1d95',
+      descColor: '#2e1065',
+      pillBorder: '#c4b5fd',
+      shadowColor: 'rgba(124, 58, 237, 0.12)',
       tagline: 'We test different:',
       testPillars: [
         'Creatives',
@@ -310,8 +328,14 @@ export default function GrowthPage({ onOpenBooking }) {
       step: 'STEP 04 — SCALE',
       title: 'SCALE',
       color: '#059669',
-      bgLight: 'rgba(5, 150, 105, 0.05)',
-      borderColor: 'rgba(5, 150, 105, 0.2)',
+      bgGradient: 'linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%)',
+      borderColor: '#a7f3d0',
+      badgeBg: '#059669',
+      badgeText: '#ffffff',
+      titleColor: '#064e3b',
+      descColor: '#022c22',
+      pillBorder: '#6ee7b7',
+      shadowColor: 'rgba(5, 150, 105, 0.12)',
       tagline: 'Once we find what works, we put more focus and resources behind it.',
       desc: 'Scale what works. Cut what doesn\'t. Keep testing.'
     },
@@ -319,8 +343,14 @@ export default function GrowthPage({ onOpenBooking }) {
       step: 'STEP 05 — OPTIMIZE THE ENGINE',
       title: 'OPTIMIZE THE ENGINE',
       color: '#d97706',
-      bgLight: 'rgba(217, 119, 6, 0.05)',
-      borderColor: 'rgba(217, 119, 6, 0.2)',
+      bgGradient: 'linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%)',
+      borderColor: '#fde68a',
+      badgeBg: '#d97706',
+      badgeText: '#ffffff',
+      titleColor: '#78350f',
+      descColor: '#451a03',
+      pillBorder: '#fcd34d',
+      shadowColor: 'rgba(217, 119, 6, 0.12)',
       tagline: 'Scaling isn\'t just about generating more revenue.',
       flow: 'Conversion → Customer Value → Retention → Acquisition Costs → Overall Growth',
       desc: 'Because the objective is to build something that can keep growing.'
@@ -838,38 +868,40 @@ export default function GrowthPage({ onOpenBooking }) {
             </p>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             {approachSteps.map((st, sIdx) => (
               <div 
                 key={sIdx}
                 style={{
-                  background: '#f8fafc',
-                  border: '1.5px solid #e2e8f0',
-                  borderLeft: `5px solid ${st.color}`,
-                  borderRadius: '20px',
-                  padding: '30px 32px',
-                  boxShadow: '0 4px 14px rgba(0, 0, 0, 0.02)',
-                  transition: 'transform 0.2s ease, box-shadow 0.2s ease'
+                  background: st.bgGradient,
+                  border: `1.5px solid ${st.borderColor}`,
+                  borderLeft: `6px solid ${st.color}`,
+                  borderRadius: '24px',
+                  padding: '34px 34px',
+                  boxShadow: `0 8px 25px ${st.shadowColor}`,
+                  transition: 'all 0.25s ease'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateX(4px)';
-                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(0, 0, 0, 0.06)';
+                  e.currentTarget.style.transform = 'translateY(-3px)';
+                  e.currentTarget.style.boxShadow = `0 14px 32px ${st.shadowColor}`;
+                  e.currentTarget.style.borderColor = st.color;
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateX(0)';
-                  e.currentTarget.style.boxShadow = '0 4px 14px rgba(0, 0, 0, 0.02)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = `0 8px 25px ${st.shadowColor}`;
+                  e.currentTarget.style.borderColor = st.borderColor;
                 }}
               >
-                <div style={{ display: 'inline-block', fontSize: '0.82rem', fontWeight: 900, color: st.color, background: st.bgLight, border: `1px solid ${st.borderColor}`, padding: '4px 12px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '10px' }}>
-                  {st.step}
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '0.84rem', fontWeight: 900, color: st.badgeText, background: st.badgeBg, padding: '5px 14px', borderRadius: '999px', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '14px', boxShadow: `0 3px 10px ${st.color}35` }}>
+                  <span>{st.step}</span>
                 </div>
                 
-                <p style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0f172a', margin: '0 0 8px 0' }}>
+                <p style={{ fontSize: '1.1rem', fontWeight: 900, color: st.titleColor, margin: '0 0 10px 0', letterSpacing: '-0.01em' }}>
                   {st.tagline}
                 </p>
 
                 {st.flow && (
-                  <div style={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', background: '#ffffff', padding: '8px 18px', borderRadius: '999px', border: '1px solid #cbd5e1', fontSize: '0.88rem', fontWeight: 800, color: '#0f172a', margin: '6px 0 14px 0', boxShadow: '0 2px 6px rgba(0,0,0,0.02)' }}>
+                  <div style={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px', background: '#ffffff', padding: '10px 22px', borderRadius: '999px', border: `1.5px solid ${st.pillBorder}`, fontSize: '0.92rem', fontWeight: 900, color: st.titleColor, margin: '6px 0 14px 0', boxShadow: '0 4px 12px rgba(0, 0, 0, 0.04)' }}>
                     {st.flow}
                   </div>
                 )}
@@ -877,14 +909,14 @@ export default function GrowthPage({ onOpenBooking }) {
                 {st.testPillars && (
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', margin: '10px 0 16px 0' }}>
                     {st.testPillars.map((tp, tpIdx) => (
-                      <span key={tpIdx} style={{ background: '#ffffff', border: '1px solid #cbd5e1', padding: '5px 14px', borderRadius: '999px', fontSize: '0.84rem', color: '#1e293b', fontWeight: 700, boxShadow: '0 2px 4px rgba(0,0,0,0.02)' }}>
+                      <span key={tpIdx} style={{ background: '#ffffff', border: `1.5px solid ${st.pillBorder}`, padding: '6px 16px', borderRadius: '999px', fontSize: '0.86rem', color: st.titleColor, fontWeight: 800, boxShadow: '0 2px 6px rgba(0, 0, 0, 0.03)' }}>
                         {tp}
                       </span>
                     ))}
                   </div>
                 )}
 
-                <p style={{ fontSize: '0.96rem', color: '#475569', lineHeight: 1.65, margin: 0 }}>
+                <p style={{ fontSize: '1rem', color: st.descColor, lineHeight: 1.68, margin: 0, fontWeight: 550 }}>
                   {st.desc}
                 </p>
               </div>
