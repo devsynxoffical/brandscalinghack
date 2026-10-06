@@ -20,7 +20,8 @@ import {
   Sparkles,
   Layers,
   BarChart3,
-  HelpCircle
+  HelpCircle,
+  ArrowUpRight
 } from 'lucide-react';
 
 export default function GrowthPage({ onOpenBooking }) {
@@ -330,12 +331,12 @@ export default function GrowthPage({ onOpenBooking }) {
     <div className="growth-page-light" style={{ background: '#f8fafc', color: '#0f172a', minHeight: '100vh', paddingTop: '100px', fontFamily: 'inherit' }}>
       
       {/* ============================================================
-          1. HERO SECTION (Clean Light Theme with Vibrant Accents)
+          1. HERO SECTION (Reference Design: Bold Tilted Sticker & Dual CTAs)
          ============================================================ */}
-      <section className="gp-hero-section" style={{ padding: '40px 0 80px 0', position: 'relative', overflow: 'hidden', background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)' }}>
+      <section className="gp-hero-section" style={{ padding: '40px 0 85px 0', position: 'relative', overflow: 'hidden', background: 'linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)' }}>
         
-        {/* Subtle Ambient Light Glows */}
-        <div style={{ position: 'absolute', top: '-10%', left: '50%', transform: 'translateX(-50%)', width: '600px', height: '350px', background: 'radial-gradient(circle, rgba(255, 87, 34, 0.08) 0%, rgba(255, 255, 255, 0) 70%)', pointerEvents: 'none', zIndex: 0 }} />
+        {/* Subtle Ambient Light Glow */}
+        <div style={{ position: 'absolute', top: '-12%', left: '50%', transform: 'translateX(-50%)', width: '700px', height: '380px', background: 'radial-gradient(circle, rgba(234, 88, 12, 0.09) 0%, rgba(255, 255, 255, 0) 70%)', pointerEvents: 'none', zIndex: 0 }} />
 
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 20px', textAlign: 'center', position: 'relative', zIndex: 1 }}>
           
@@ -345,11 +346,27 @@ export default function GrowthPage({ onOpenBooking }) {
             <span>BRAND SCALING HACKS • FULL-SERVICE ECOMMERCE GROWTH ENGINE</span>
           </div>
 
-          {/* Main Headline */}
-          <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 4.2rem)', fontWeight: 950, color: '#0f172a', lineHeight: 1.12, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1050px', margin: '0 auto 22px auto' }}>
-            You Don't Need More Random Marketing. <br />
-            <span style={{ color: '#ea580c', background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              You Need a Complete eCommerce Growth Engine.
+          {/* Main Headline with Reference Tilted Sticker Badge */}
+          <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 4.3rem)', fontWeight: 950, color: '#0f172a', lineHeight: 1.15, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1080px', margin: '0 auto 24px auto' }}>
+            You Don't Need More <span style={{ fontStyle: 'italic', fontWeight: 900, color: '#1e293b' }}>Random Marketing.</span> <br />
+            <span style={{ display: 'inline-block', position: 'relative', marginTop: '10px' }}>
+              <span 
+                style={{ 
+                  display: 'inline-block', 
+                  background: 'linear-gradient(135deg, #ff5722 0%, #ea580c 100%)', 
+                  color: '#ffffff', 
+                  padding: '4px 18px', 
+                  borderRadius: '14px', 
+                  transform: 'rotate(-2deg)', 
+                  boxShadow: '0 8px 24px rgba(234, 88, 12, 0.32)',
+                  marginRight: '12px'
+                }}
+              >
+                YOU NEED A COMPLETE
+              </span>
+              <span style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>
+                ECOMMERCE GROWTH ENGINE.
+              </span>
             </span>
           </h1>
 
@@ -367,8 +384,8 @@ export default function GrowthPage({ onOpenBooking }) {
             <span style={{ color: '#0f172a' }}>30+ Niches & Industries</span>
           </div>
 
-          {/* Primary CTA */}
-          <div style={{ marginBottom: '22px' }}>
+          {/* Primary & Secondary Dual CTAs */}
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '14px', marginBottom: '22px' }}>
             <button 
               className="btn-primary" 
               onClick={onOpenBooking} 
@@ -881,7 +898,7 @@ export default function GrowthPage({ onOpenBooking }) {
           9. WHO WE WORK WITH
          ============================================================ */}
       <section style={{ padding: '85px 0', background: '#f8fafc' }}>
-        <div className="container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px' }}>
+        <div className="container" style={{ maxWidth: '960px', margin: '0 auto', padding: '0 20px', textAlign: 'center' }}>
           
           <div style={{ textAlign: 'center', marginBottom: '34px' }}>
             <span style={{ display: 'inline-block', background: 'rgba(234, 88, 12, 0.08)', color: '#ea580c', border: '1px solid rgba(234, 88, 12, 0.2)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '14px' }}>
