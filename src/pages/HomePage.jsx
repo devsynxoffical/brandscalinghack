@@ -7,7 +7,6 @@ import ScalingSystemSection from '../components/ScalingSystemSection';
 import ExperienceStatsSection from '../components/ExperienceStatsSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
-import TeamCurvedSection from '../components/TeamCurvedSection';
 import FaqSection from '../components/FaqSection';
 import KnockoutAuthorityBannerSection from '../components/KnockoutAuthorityBannerSection';
 import EveryPieceWorksTogetherSection from '../components/EveryPieceWorksTogetherSection';
@@ -58,9 +57,6 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
 
       {/* 08 — EXPERIENCE + FINAL CTA (Light Theme with 3D Flip Cards & Final CTA) */}
       <ExperienceCtaSection onOpenBooking={onOpenBooking} />
-
-      {/* 09 — TEAM EXPERTS (3D Curved Fan Perspective Showcase) */}
-      <TeamCurvedSection onOpenBooking={onOpenBooking} />
 
       {/* 10 — FREQUENTLY ASKED QUESTIONS (Interactive Accordion) */}
       <FaqSection onOpenBooking={onOpenBooking} />
