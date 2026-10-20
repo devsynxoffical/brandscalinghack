@@ -11,6 +11,7 @@ import RoasCalculatorPage from './pages/RoasCalculatorPage';
 import DiscoveryModal from './components/DiscoveryModal';
 import VideoModal from './components/VideoModal';
 import InstagramModal from './components/InstagramModal';
+import { allCaseStudies } from './data/allCaseStudies';
 
 function App() {
   const [activePage, setActivePage] = useState('home');
@@ -57,6 +58,91 @@ function App() {
     window.addEventListener('popstate', handleLocationChange);
     return () => window.removeEventListener('popstate', handleLocationChange);
   }, []);
+
+  // Dynamic SEO metadata & title updater for client-side navigation
+  useEffect(() => {
+    const updateMeta = (name, content, isProperty = false) => {
+      const selector = isProperty ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      let el = document.querySelector(selector);
+      if (!el) {
+        el = document.createElement('meta');
+        if (isProperty) el.setAttribute('property', name);
+        else el.setAttribute('name', name);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', content);
+    };
+
+    const updateCanonical = (url) => {
+      let link = document.querySelector('link[rel="canonical"]');
+      if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+      }
+      link.setAttribute('href', url);
+    };
+
+    const baseUrl = 'https://brandscalinghacks.com';
+    let title = 'BRAND SCALING | DTC Performance Marketing & eCommerce Growth Engine';
+    let description = 'Scale DTC & eCommerce brands to 7-8 figures profitably with direct-response video creatives, high-converting Meta & TikTok ad scaling frameworks, and custom growth infrastructure.';
+    let pagePath = '/';
+
+    if (activePage.startsWith('case-') && activePage !== 'case-studies') {
+      const caseId = activePage.replace('case-', '');
+      const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
+      if (study) {
+        title = `${study.title || 'Verified eCommerce Case Study'} | Brand Scaling Hacks`;
+        description = study.summary ? study.summary.slice(0, 160).replace(/\n/g, ' ') : `Detailed case study breakdown: ${study.revenue || ''} revenue scaled at ${study.roas || ''}. Direct-response ads and growth systems.`;
+      } else {
+        title = `eCommerce Case Study #${caseId} | Brand Scaling Hacks`;
+        description = 'Direct-response case study breakdown showing verified ROAS and scalable revenue results.';
+      }
+      pagePath = `/cases/${caseId}`;
+    } else {
+      switch (activePage) {
+        case 'case-studies':
+          title = '150+ eCommerce Case Studies & Revenue Proofs | Brand Scaling Hacks';
+          description = 'Browse 150+ verified DTC case studies, live dashboard screen recordings, and ad account breakdowns showing 7-figure revenue scale and 3-6x ROAS.';
+          pagePath = '/case-studies';
+          break;
+        case 'viral-creatives':
+          title = 'High-Converting Direct-Response Video Creatives & UGC | Brand Scaling Hacks';
+          description = 'Plug-and-play creative systems designed to lower CPA and unlock $10k-$50k/day spend. Direct-response UGC, 3D motion, founder hooks, and iterative testing.';
+          pagePath = '/viral-creatives';
+          break;
+        case 'growth':
+          title = 'Full-Service eCommerce Growth Engine & Systems | Brand Scaling Hacks';
+          description = 'Full-stack direct-response marketing: paid media buying across Meta & TikTok, CRO landing pages, high-converting offer creation, and email retention.';
+          pagePath = '/growth';
+          break;
+        case 'roas-calculator':
+          title = 'Free DTC ROAS & Ad Scaling Profit Calculator | Brand Scaling Hacks';
+          description = 'Model your unit economics, blended ad spend, target CAC, and net profit margins before scaling your paid ad spend on Meta and TikTok.';
+          pagePath = '/roas-calculator';
+          break;
+        case 'about':
+          title = 'About Gaurav Kapoor & Brand Scaling Hacks | $50M+ Ad Spend Managed';
+          description = 'Learn about Gaurav Kapoor and Brand Scaling Hacks. Over $50M in managed ad spend and 150+ brands scaled past 7 and 8 figures.';
+          pagePath = '/about';
+          break;
+        default:
+          title = 'BRAND SCALING | DTC Performance Marketing & eCommerce Growth Engine';
+          description = 'Scale DTC & eCommerce brands to 7-8 figures profitably with direct-response video creatives, high-converting Meta & TikTok ad scaling frameworks, and custom growth infrastructure.';
+          pagePath = '/';
+          break;
+      }
+    }
+
+    document.title = title;
+    updateMeta('description', description);
+    updateMeta('og:title', title, true);
+    updateMeta('og:description', description, true);
+    updateMeta('og:url', `${baseUrl}${pagePath}`, true);
+    updateMeta('twitter:title', title);
+    updateMeta('twitter:description', description);
+    updateCanonical(`${baseUrl}${pagePath}`);
+  }, [activePage]);
 
   const handleNavigate = (pageId) => {
     setActivePage(pageId);
