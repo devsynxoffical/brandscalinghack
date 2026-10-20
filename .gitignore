@@ -25,4 +25,6 @@ dist-ssr
 scratch/
 scratch_*.json
 *.part
+case_studies_export/
+*.zip
 
