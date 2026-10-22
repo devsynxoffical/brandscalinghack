@@ -135,10 +135,10 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
 
         {/* Hero Top Content Header */}
         <div className="bsh-hero-content-wrap">
-          {/* Elegant Top Subhead */}
-          <h1 className="bsh-hero-header-eyebrow">
-            <span className="bsh-serif-italic">From Your First Sale To</span>{' '}
-            <span className="bsh-bold-flame">9 Figures.</span>
+          {/* Targeted SEO & AEO H1 */}
+          <h1 className="bsh-hero-header-eyebrow" style={{ maxWidth: '960px', margin: '0 auto 12px' }}>
+            <span className="bsh-serif-italic">The Performance Marketing Agency for</span>{' '}
+            <span className="bsh-bold-flame">DTC Ecommerce Brands Ready to Scale.</span>
           </h1>
         </div>
 
@@ -172,28 +172,28 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
 
         {/* Hero Subtitle, Services Pills & Action CTAs */}
         <div className="bsh-hero-mid-controls">
-          <p className="bsh-hero-sub-description">
-            We build the strategy, acquisition and conversion engine behind eCommerce brands that are built to scale.
+          <p className="bsh-hero-sub-description" style={{ fontSize: '1.2rem', color: '#f1f5f9', fontWeight: 600, maxWidth: '780px', margin: '0 auto 16px' }}>
+            We build the creative, run the ads, fix the tracking, and give you a growth system you can trust.
           </p>
 
           {/* Services / Channels Row */}
           <div className="bsh-hero-services-row">
-            <span>Shopify</span>
+            <span>Shopify CRO</span>
             <span className="bsh-services-dot">•</span>
-            <span>Creatives</span>
+            <span>Direct-Response Creative</span>
             <span className="bsh-services-dot">•</span>
-            <span>Meta Ads</span>
+            <span>Meta Ads Scaling</span>
             <span className="bsh-services-dot">•</span>
-            <span>Google Ads</span>
+            <span>TikTok Ads</span>
             <span className="bsh-services-dot">•</span>
-            <span>CRO</span>
+            <span>Google Shopping</span>
             <span className="bsh-services-dot">•</span>
-            <span>Scaling</span>
+            <span>Retention LTV</span>
           </div>
 
-          <div className="bsh-hero-cta-group" style={{ marginTop: '22px' }}>
+          <div className="bsh-hero-cta-group" style={{ marginTop: '24px' }}>
             <button className="btn-primary bsh-cta-primary-btn" onClick={onOpenBooking}>
-              <span>SCALE YOUR BRAND</span>
+              <span>BOOK YOUR BRAND GROWTH AUDIT</span>
               <ArrowRight size={18} />
             </button>
             <button
@@ -201,9 +201,14 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
               onClick={() => onNavigate ? onNavigate('case-studies') : null}
             >
               <Play size={14} color="#ff5722" />
-              <span>150+ CASE STUDIES</span>
+              <span>SEE 150+ CASE STUDIES</span>
             </button>
           </div>
+
+          {/* 12+ Years Credibility Line below buttons */}
+          <p style={{ fontSize: '0.98rem', color: '#ff5722', fontWeight: 700, margin: '20px auto 0', letterSpacing: '0.02em', textAlign: 'center' }}>
+            12+ years in ecommerce • $50M+ in Meta ad spend managed • 30+ niches • 150+ verified case studies
+          </p>
         </div>
 
         {/* ========================================================================= */}

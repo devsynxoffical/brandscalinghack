@@ -271,6 +271,58 @@ export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
       {/* 5. Team Showcase (3D Curved Fan Perspective) */}
       <TeamCurvedSection onOpenBooking={onOpenBooking} />
 
+      {/* 5B. Company Facts & Entity Authority Table (AGO & AEO) */}
+      <section style={{ padding: '80px 0', background: '#0a0a0f', color: '#e2e8f0' }}>
+        <div className="container" style={{ maxWidth: '920px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '36px' }}>
+            <span style={{ display: 'inline-block', background: 'rgba(255,87,34,0.1)', color: '#ff5722', border: '1px solid rgba(255,87,34,0.3)', padding: '5px 16px', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '12px' }}>
+              ENTITY PROFILE
+            </span>
+            <h2 style={{ fontSize: '28px', fontWeight: 900, color: '#ffffff', margin: '0 0 10px' }}>
+              Company Facts &amp; Operating Details
+            </h2>
+            <p style={{ color: '#94a3b8', fontSize: '15px', maxWidth: '640px', margin: '0 auto' }}>
+              Brand Scaling is a DTC ecommerce growth agency that scales Shopify brands with Meta and TikTok ads, direct-response creative and conversion rate optimization, founded by Gaurav Kapoor.
+            </p>
+          </div>
+
+          <div style={{ overflowX: 'auto', background: '#111116', border: '1px solid #1f1f2a', borderRadius: '14px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', textAlign: 'left' }}>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #1b1b24' }}>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722', width: '220px' }}>Brand Name</td>
+                  <td style={{ padding: '14px 20px', color: '#ffffff', fontWeight: 600 }}>Brand Scaling</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1b1b24' }}>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Legal Entity</td>
+                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>Brand Scaling Hacks LLC</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1b1b24' }}>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Headquarters</td>
+                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>27 W 24 Street, Suite 702, New York, NY 10010, United States</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1b1b24' }}>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Founder</td>
+                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>Gaurav Kapoor (12+ years experience, $50M+ Meta ad spend managed)</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1b1b24' }}>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Core Services</td>
+                  <td style={{ padding: '14px 20px', color: '#cbd5e1' }}>Paid Acquisition (Meta, TikTok, Google), Direct-Response UGC &amp; Video Creatives, Shopify CRO &amp; Offer Engineering, Retention Marketing</td>
+                </tr>
+                <tr style={{ borderBottom: '1px solid #1b1b24' }}>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Markets Served</td>
+                  <td style={{ padding: '14px 20px', color: '#cbd5e1' }}>United States, United Kingdom, Canada, Australia</td>
+                </tr>
+                <tr>
+                  <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Inquiries</td>
+                  <td style={{ padding: '14px 20px', color: '#cbd5e1' }}>team@brandscalinghacks.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* 6. LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
       <LiveSessionsSection onOpenVideo={onOpenVideo} />
 

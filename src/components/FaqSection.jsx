@@ -6,30 +6,62 @@ export default function FaqSection({ onOpenBooking }) {
 
   const faqs = [
     {
-      question: "How is Brand Scaling Hacks different from a traditional marketing agency?",
-      answer: "Most traditional agencies delegate your brand to junior media buyers who simply cycle through basic interest targeting. Brand Scaling Hacks operates as a complete, connected eCommerce Growth Engine. We don't just manage ad dashboards — we engineer your entire revenue ecosystem: paid traffic (Meta & Google), high-velocity direct-response creative production, Shopify CRO & offer funnels, and retention email/SMS systems backed by $50M+ in real ad spend experience."
+      question: "What is a performance marketing agency?",
+      answer: "A performance marketing agency plans and runs paid campaigns that are measured on business outcomes such as revenue, cost per acquisition and ROAS. Brand Scaling does this for DTC ecommerce brands across Meta, TikTok and Google, together with the creative and the Shopify store."
     },
     {
-      question: "What types and sizes of eCommerce brands do you work with?",
-      answer: "We partner with ambitious direct-to-consumer (DTC) and eCommerce brands doing between $20k/month and $2M+/month that have proven product-market fit and want to build predictable 8 & 9-figure scaling systems. Our partners span fashion & apparel, skincare & beauty, wellness, home goods, supplements, electronics, and luxury goods."
+      question: "How much does a performance marketing agency cost?",
+      answer: "Most agencies charge a monthly retainer, a percentage of ad spend, a performance fee or a mix. Brand Scaling quotes after the Brand Growth Audit, and partners typically spend at least $10,000 to $20,000 a month on ads."
     },
     {
-      question: "What is the minimum ad spend required to partner with you?",
-      answer: "To ensure statistical significance and provide meaningful weekly creative iterations, our partners typically spend at least $10,000 to $20,000+ per month in paid ad spend, with the infrastructure and cash flow to scale rapidly to $100k-$500k+/month as profit milestones are validated."
+      question: "What types and sizes of ecommerce brands do you work with?",
+      answer: "DTC and ecommerce brands doing roughly $20K to $2M+ a month with proven product-market fit, in apparel, skincare and beauty, wellness, supplements, home goods, electronics and luxury goods."
+    },
+    {
+      question: "How quickly will we see results?",
+      answer: "The first 7 to 14 days cover the diagnostic audit, account restructure, product page and offer rebuild and tracking setup. Most brands see measurable improvement in CPA, AOV and ROAS within 2 to 4 weeks of the first creative wave."
+    },
+    {
+      question: "How do you measure marketing performance?",
+      answer: "We report on blended numbers first (MER, new customer CAC, contribution margin) and on platform ROAS second, because platform ROAS alone over-credits ads."
     },
     {
       question: "Do you handle creative scripting, UGC production, and video editing?",
-      answer: "Yes, 100%. Direct-response creative is the #1 lever for Meta and TikTok ad performance today. We write the data-backed scripts, source and manage vetted creators, produce high-converting UGC and motion design assets, and deploy 30–50+ angle iterations each month so your ad accounts never hit fatigue."
-    },
-    {
-      question: "How quickly do we see results after launching?",
-      answer: "During the first 7–14 days, we execute our Deep Diagnostic Audit, restructure ad accounts, rebuild high-converting PDPs/offer funnels, and install multi-touch attribution. We typically begin seeing measurable improvements in CPA, AOV, and blended ROAS within the first 2 to 4 weeks of launching our initial creative wave."
-    },
-    {
-      question: "How does the initial Brand Growth Audit work?",
-      answer: "Our Brand Growth Audit is a 1-on-1 diagnostic where Gaurav and our senior growth architects analyze your Meta ad accounts, creative performance, conversion rate bottlenecks, and offer unit economics. We identify exactly why you are stuck and deliver a customized step-by-step roadmap to scale."
+      answer: "Yes, 100%. Direct-response creative is the #1 lever for Meta and TikTok ad performance today. We write data-backed scripts, source creators, produce UGC and motion design assets, and deploy 30–50+ angle iterations each month so your ad accounts never hit fatigue."
     }
   ];
+
+  React.useEffect(() => {
+    const faqSchemaId = 'homepage-faq-schema';
+    let script = document.getElementById(faqSchemaId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = faqSchemaId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://brandscalinghacks.com/#faq",
+      "mainEntity": faqs.map(f => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
+        }
+      }))
+    };
+
+    script.textContent = JSON.stringify(faqSchema);
+
+    return () => {
+      const el = document.getElementById(faqSchemaId);
+      if (el) el.remove();
+    };
+  }, []);
 
   return (
     <section className="faq-global-section" id="faq-section">

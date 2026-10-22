@@ -377,32 +377,17 @@ export default function GrowthPage({ onOpenBooking }) {
           </div>
 
           {/* Main Headline with Reference Tilted Sticker Badge */}
-          <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 4.3rem)', fontWeight: 950, color: '#0f172a', lineHeight: 1.15, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1080px', margin: '0 auto 24px auto' }}>
-            You Don't Need More <span style={{ fontStyle: 'italic', fontWeight: 900, color: '#1e293b' }}>Random Marketing.</span> <br />
-            <span style={{ display: 'inline-block', position: 'relative', marginTop: '10px' }}>
-              <span 
-                style={{ 
-                  display: 'inline-block', 
-                  background: 'linear-gradient(135deg, #ff5722 0%, #ea580c 100%)', 
-                  color: '#ffffff', 
-                  padding: '4px 18px', 
-                  borderRadius: '14px', 
-                  transform: 'rotate(-2deg)', 
-                  boxShadow: '0 8px 24px rgba(234, 88, 12, 0.32)',
-                  marginRight: '12px'
-                }}
-              >
-                YOU NEED A COMPLETE
-              </span>
-              <span style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>
-                ECOMMERCE GROWTH ENGINE.
-              </span>
+          {/* Targeted SEO & AEO H1 */}
+          <h1 style={{ fontSize: 'clamp(2.3rem, 4.6vw, 3.8rem)', fontWeight: 950, color: '#0f172a', lineHeight: 1.18, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1080px', margin: '0 auto 20px auto' }}>
+            Ecommerce Growth Agency: <br />
+            <span style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>
+              Meta, TikTok, Google and Shopify CRO in One Engine
             </span>
           </h1>
 
-          {/* Description */}
-          <p style={{ fontSize: 'clamp(1.05rem, 1.4vw, 1.22rem)', color: '#475569', maxWidth: '880px', margin: '0 auto 30px auto', lineHeight: 1.65, fontWeight: 500 }}>
-            We help eCommerce brands build, scale, and optimize the systems that actually drive revenue — from Meta Ads and direct-response creative to Shopify, CRO, Google Ads, Klaviyo, and strategic growth advisory.
+          {/* 50-word Direct Answer Description */}
+          <p style={{ fontSize: 'clamp(1.05rem, 1.4vw, 1.22rem)', color: '#475569', maxWidth: '840px', margin: '0 auto 26px auto', lineHeight: 1.7, fontWeight: 500 }}>
+            Brand Scaling is an ecommerce growth agency that runs paid acquisition, creative, the store and retention together, so the fixes in one area do not get lost in another. Over $50M+ in ad spend managed across 150+ verified case studies.
           </p>
 
           {/* Credibility Bar */}
@@ -411,7 +396,7 @@ export default function GrowthPage({ onOpenBooking }) {
             <span style={{ color: '#ea580c' }}>•</span>
             <span style={{ color: '#0f172a' }}>$50M+ in Meta Ad Spend Managed</span>
             <span style={{ color: '#ea580c' }}>•</span>
-            <span style={{ color: '#0f172a' }}>30+ Niches & Industries</span>
+            <span style={{ color: '#0f172a' }}>30+ Niches &amp; Industries</span>
           </div>
 
           {/* Primary & Secondary Dual CTAs */}
@@ -427,9 +412,57 @@ export default function GrowthPage({ onOpenBooking }) {
           </div>
 
           {/* Subtext */}
-          <p style={{ fontSize: '0.92rem', color: '#64748b', margin: 0, fontWeight: 600 }}>
+          <p style={{ fontSize: '0.92rem', color: '#64748b', margin: '0 0 40px 0', fontWeight: 600 }}>
             One growth partner. One connected system. One clear objective: scalable eCommerce growth.
           </p>
+
+          {/* AEO Definition & Comparison Table */}
+          <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '20px', padding: '36px 30px', textAlign: 'left', boxShadow: '0 8px 30px rgba(0,0,0,0.03)' }}>
+            <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#0f172a', margin: '0 0 12px' }}>
+              What an Ecommerce Growth Agency Does (and What It Does Not)
+            </h2>
+            <p style={{ fontSize: '15px', color: '#475569', lineHeight: 1.65, margin: '0 0 24px' }}>
+              A growth agency is measured on business outcomes — revenue, cost per acquisition (CAC), and net contribution margin. Traditional agencies manage dashboards in isolation; we align creative volume, media buying, and Shopify checkout speed into a single feedback loop.
+            </p>
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', border: '1px solid #e2e8f0', borderRadius: '8px' }}>
+                <thead>
+                  <tr style={{ background: '#f8fafc', borderBottom: '2px solid #cbd5e1' }}>
+                    <th style={{ padding: '12px 16px', color: '#0f172a', fontWeight: 700 }}>Responsibility</th>
+                    <th style={{ padding: '12px 16px', color: '#ea580c', fontWeight: 700 }}>Brand Scaling (Growth Agency)</th>
+                    <th style={{ padding: '12px 16px', color: '#64748b', fontWeight: 600 }}>Ads-Only Media Buyer</th>
+                    <th style={{ padding: '12px 16px', color: '#64748b', fontWeight: 600 }}>Traditional Web Design Shop</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                    <td style={{ padding: '12px 16px', fontWeight: 600 }}>Core Focus</td>
+                    <td style={{ padding: '12px 16px', color: '#ea580c', fontWeight: 700 }}>Full revenue engine (Ads + Store + Retention)</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>Ad dashboard metrics (ROAS, CPC)</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>Store visual appearance</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                    <td style={{ padding: '12px 16px', fontWeight: 600 }}>Creative Pipeline</td>
+                    <td style={{ padding: '12px 16px', color: '#ea580c', fontWeight: 700 }}>30 to 50+ high-converting angle iterations / mo</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>Requests client to supply creatives</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>No ad creative capabilities</td>
+                  </tr>
+                  <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                    <td style={{ padding: '12px 16px', fontWeight: 600 }}>Conversion Rate Optimization</td>
+                    <td style={{ padding: '12px 16px', color: '#ea580c', fontWeight: 700 }}>Continuous A/B testing on PDP, cart &amp; bundles</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>Ignored (blames store when ads fail)</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>One-time build with no ongoing testing</td>
+                  </tr>
+                  <tr>
+                    <td style={{ padding: '12px 16px', fontWeight: 600 }}>Reporting Metric</td>
+                    <td style={{ padding: '12px 16px', color: '#ea580c', fontWeight: 700 }}>Blended MER, new customer CAC, contribution profit</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>In-platform ROAS only</td>
+                    <td style={{ padding: '12px 16px', color: '#475569' }}>Deliverable handoff</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
         </div>
       </section>

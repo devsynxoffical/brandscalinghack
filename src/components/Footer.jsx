@@ -41,12 +41,14 @@ export default function Footer({ onNavigate, onOpenBooking }) {
             {/* Site */}
             <div className="st-footer-group">
               <h3 className="st-footer-heading">Site</h3>
-              <a className="st-footer-link" href="#home" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }}>Home</a>
-              <a className="st-footer-link" href="#case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Case Studies</a>
-              <a className="st-footer-link" href="#viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
-              <a className="st-footer-link" href="#growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Growth Engine</a>
-              <a className="st-footer-link" href="#roas-calculator" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('roas-calculator'); }}>ROAS Calculator</a>
-              <a className="st-footer-link" href="#about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
+              <a className="st-footer-link" href="/" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }}>Home</a>
+              <a className="st-footer-link" href="/case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Case Studies</a>
+              <a className="st-footer-link" href="/growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Growth Engine</a>
+              <a className="st-footer-link" href="/shopify-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('shopify-agency'); }}>Shopify Agency</a>
+              <a className="st-footer-link" href="/viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
+              <a className="st-footer-link" href="/roas-calculator" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('roas-calculator'); }}>ROAS Calculator</a>
+              <a className="st-footer-link" href="/blog" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }}>Blog</a>
+              <a className="st-footer-link" href="/about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
             </div>
 
             {/* Find Us */}
@@ -80,7 +82,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
                   {status && <p className="st-newsletter-status">{status}</p>}
                 </form>
                 <p className="st-footer-form-note">
-                  By signing up, you agree to our Privacy Policy
+                  By signing up, you agree to our <a href="/privacy-policy" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('privacy-policy'); }} style={{ color: 'inherit', textDecoration: 'underline' }}>Privacy Policy</a>
                 </p>
               </div>
             </div>
@@ -93,14 +95,14 @@ export default function Footer({ onNavigate, onOpenBooking }) {
         {/* Bottom Policy Row */}
         <div className="st-footer-container">
           <div className="st-footer-policy">
-            <a className="st-footer-link st-footer-link-small" href="#privacy" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>
+            <a className="st-footer-link st-footer-link-small" href="/privacy-policy" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('privacy-policy'); }}>
               Privacy Policy
             </a>
-            <a className="st-footer-link st-footer-link-small" href="#terms" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>
+            <a className="st-footer-link st-footer-link-small" href="/terms" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('terms'); }}>
               Terms of Service
             </a>
             <p className="st-footer-copyright">
-              © {new Date().getFullYear()} Brand Scaling Hacks. All Rights Reserved.
+              © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved.
             </p>
           </div>
         </div>

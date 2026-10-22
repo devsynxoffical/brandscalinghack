@@ -89,7 +89,7 @@ export default function GauravAboutHero({ onOpenBooking, onNavigate }) {
       <div className="gaurav-ref-bottom-overlay">
         <div className="headline-scrim">
           <h1 className="gaurav-ref-bottom-headline">
-            We Build What Businesses Need To Grow.
+            About Brand Scaling and Founder Gaurav Kapoor
           </h1>
 
           <div className="gaurav-ref-btn-row">
