@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://brandscalinghacks.com/sitemap.xml
+Sitemap: https://www.brandscalinghacks.com/sitemap.xml

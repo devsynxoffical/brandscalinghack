@@ -229,7 +229,7 @@ routes.forEach((route) => {
   html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.description}" />`);
 
   // Replace Canonical Link
-  const canonicalUrl = `https://brandscalinghacks.com${route.path === '/' ? '/' : route.path}`;
+  const canonicalUrl = `https://www.brandscalinghacks.com${route.path === '/' ? '/' : route.path}`;
   html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
 
   // Replace Open Graph & Twitter

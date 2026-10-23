@@ -102,7 +102,7 @@ function App() {
       link.setAttribute('href', url);
     };
 
-    const baseUrl = 'https://brandscalinghacks.com';
+    const baseUrl = 'https://www.brandscalinghacks.com';
     let title = 'Performance Marketing Agency for Ecommerce | Brand Scaling';
     let description = 'Performance marketing agency for DTC ecommerce brands: Meta and TikTok ads, Shopify CRO and creative. $50M+ ad spend managed. Book a growth audit.';
     let pagePath = '/';

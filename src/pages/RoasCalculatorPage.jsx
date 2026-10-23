@@ -21,7 +21,7 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
       "@graph": [
         {
           "@type": "WebApplication",
-          "@id": "https://brandscalinghacks.com/roas-calculator#app",
+          "@id": "https://www.brandscalinghacks.com/roas-calculator#app",
           "name": "Free Ecommerce ROAS Calculator",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "All",
@@ -35,13 +35,13 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://brandscalinghacks.com/" },
-            { "@type": "ListItem", "position": 2, "name": "ROAS Calculator", "item": "https://brandscalinghacks.com/roas-calculator" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
+            { "@type": "ListItem", "position": 2, "name": "ROAS Calculator", "item": "https://www.brandscalinghacks.com/roas-calculator" }
           ]
         },
         {
           "@type": "FAQPage",
-          "@id": "https://brandscalinghacks.com/roas-calculator#faq",
+          "@id": "https://www.brandscalinghacks.com/roas-calculator#faq",
           "mainEntity": [
             {
               "@type": "Question",

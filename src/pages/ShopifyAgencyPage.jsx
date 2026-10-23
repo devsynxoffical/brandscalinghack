@@ -22,11 +22,11 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
       "@graph": [
         {
           "@type": "Service",
-          "@id": "https://brandscalinghacks.com/shopify-agency#service",
+          "@id": "https://www.brandscalinghacks.com/shopify-agency#service",
           "name": "Shopify Development and Conversion Rate Optimization",
           "serviceType": "Shopify Development and Conversion Rate Optimization",
           "provider": {
-            "@id": "https://brandscalinghacks.com/#organization"
+            "@id": "https://www.brandscalinghacks.com/#organization"
           },
           "areaServed": ["US", "GB", "CA", "AU"],
           "description": "Custom high-converting Shopify store builds, checkout extensibility, speed optimization, and CRO engineering designed specifically for paid Meta and TikTok ad traffic."
@@ -34,13 +34,13 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://brandscalinghacks.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Shopify Agency", "item": "https://brandscalinghacks.com/shopify-agency" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Shopify Agency", "item": "https://www.brandscalinghacks.com/shopify-agency" }
           ]
         },
         {
           "@type": "FAQPage",
-          "@id": "https://brandscalinghacks.com/shopify-agency#faq",
+          "@id": "https://www.brandscalinghacks.com/shopify-agency#faq",
           "mainEntity": faqs.map(f => ({
             "@type": "Question",
             "name": f.question,

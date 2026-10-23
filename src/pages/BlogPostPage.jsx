@@ -25,7 +25,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
       "@graph": [
         {
           "@type": "BlogPosting",
-          "@id": `https://brandscalinghacks.com/blog/${post.slug}#article`,
+          "@id": `https://www.brandscalinghacks.com/blog/${post.slug}#article`,
           "headline": post.title,
           "description": post.metaDescription,
           "datePublished": post.publishDate,
@@ -34,7 +34,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             "@type": "Person",
             "name": post.author.name,
             "jobTitle": post.author.title,
-            "url": "https://brandscalinghacks.com/about",
+            "url": "https://www.brandscalinghacks.com/about",
             "sameAs": [
               post.author.youtubeUrl,
               post.author.instagramUrl,
@@ -42,9 +42,9 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             ]
           },
           "publisher": {
-            "@id": "https://brandscalinghacks.com/#organization"
+            "@id": "https://www.brandscalinghacks.com/#organization"
           },
-          "mainEntityOfPage": `https://brandscalinghacks.com/blog/${post.slug}`
+          "mainEntityOfPage": `https://www.brandscalinghacks.com/blog/${post.slug}`
         },
         {
           "@type": "BreadcrumbList",
@@ -53,19 +53,19 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://brandscalinghacks.com/"
+              "item": "https://www.brandscalinghacks.com/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Blog",
-              "item": "https://brandscalinghacks.com/blog"
+              "item": "https://www.brandscalinghacks.com/blog"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": post.title,
-              "item": `https://brandscalinghacks.com/blog/${post.slug}`
+              "item": `https://www.brandscalinghacks.com/blog/${post.slug}`
             }
           ]
         },
@@ -73,7 +73,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
           ? [
               {
                 "@type": "FAQPage",
-                "@id": `https://brandscalinghacks.com/blog/${post.slug}#faq`,
+                "@id": `https://www.brandscalinghacks.com/blog/${post.slug}#faq`,
                 "mainEntity": post.faqs.map((faq) => ({
                   "@type": "Question",
                   "name": faq.question,

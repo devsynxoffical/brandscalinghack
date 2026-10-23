@@ -25,11 +25,11 @@ while ((match = urlBlockRegex.exec(sitemap)) !== null) {
 console.log('Original unique count:', cleanUrls.length);
 
 const newPages = [
-  { url: 'https://brandscalinghacks.com/shopify-agency', priority: '0.9', freq: 'weekly' },
-  { url: 'https://brandscalinghacks.com/blog', priority: '0.8', freq: 'weekly' },
-  { url: 'https://brandscalinghacks.com/blog/bfcm-meta-ads-playbook', priority: '0.8', freq: 'monthly' },
-  { url: 'https://brandscalinghacks.com/privacy-policy', priority: '0.4', freq: 'yearly' },
-  { url: 'https://brandscalinghacks.com/terms', priority: '0.4', freq: 'yearly' }
+  { url: 'https://www.brandscalinghacks.com/shopify-agency', priority: '0.9', freq: 'weekly' },
+  { url: 'https://www.brandscalinghacks.com/blog', priority: '0.8', freq: 'weekly' },
+  { url: 'https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook', priority: '0.8', freq: 'monthly' },
+  { url: 'https://www.brandscalinghacks.com/privacy-policy', priority: '0.4', freq: 'yearly' },
+  { url: 'https://www.brandscalinghacks.com/terms', priority: '0.4', freq: 'yearly' }
 ];
 
 newPages.forEach(item => {

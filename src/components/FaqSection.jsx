@@ -44,7 +44,7 @@ export default function FaqSection({ onOpenBooking }) {
     const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "@id": "https://brandscalinghacks.com/#faq",
+      "@id": "https://www.brandscalinghacks.com/#faq",
       "mainEntity": faqs.map(f => ({
         "@type": "Question",
         "name": f.question,
