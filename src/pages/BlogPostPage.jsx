@@ -2,6 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { blogPosts } from '../data/blogPosts';
 import { ArrowLeft, Calendar, Clock, CheckCircle2, ChevronDown, ChevronUp, Share2, Sparkles, ExternalLink, ArrowRight } from 'lucide-react';
 
+// Clean any markdown formatting like ** or hyphen bullet points from rendered text
+function cleanBlogText(text) {
+  if (!text || typeof text !== 'string') return text;
+  return text
+    .replace(/\*\*/g, '')
+    .replace(/^[-–—]\s+/gm, '')
+    .replace(/\s+[-–—]\s+/g, ' ')
+    .replace(/—/g, ', ')
+    .replace(/–/g, ' to ')
+    .replace(/(\w+)-(\w+)/g, '$1 $2');
+}
+
 export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
@@ -145,7 +157,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
           <div style={{ flexGrow: 1 }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
               <span style={{ color: '#ffffff', fontWeight: 700, fontSize: '16px' }}>{post.author.name}</span>
-              <span style={{ color: '#94a3b8', fontSize: '13px' }}>— {post.author.title}</span>
+              <span style={{ color: '#94a3b8', fontSize: '13px' }}>| {post.author.title}</span>
             </div>
             <p style={{ margin: '4px 0 0', fontSize: '13px', color: '#94a3b8', lineHeight: 1.4 }}>
               {post.author.credentials}
@@ -163,7 +175,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
 
         {/* AEO Direct Answer Summary */}
         <div style={{ fontSize: '17px', lineHeight: 1.75, color: '#f1f5f9', fontWeight: 500, marginBottom: '28px' }}>
-          {post.directAnswer}
+          {cleanBlogText(post.directAnswer)}
         </div>
 
         {/* AEO Definition Box (Designed for Google AI Overviews & Snippets) */}
@@ -176,7 +188,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
               {post.definitionBox.term}
             </strong>
             <p style={{ margin: 0, fontSize: '15px', color: '#cbd5e1', lineHeight: 1.6 }}>
-              {post.definitionBox.definition}
+              {cleanBlogText(post.definitionBox.definition)}
             </p>
           </div>
         )}
@@ -207,7 +219,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             </h2>
             
             <div style={{ fontSize: '16px', lineHeight: 1.8, color: '#cbd5e1', whiteSpace: 'pre-line' }}>
-              {section.content}
+              {cleanBlogText(section.content)}
             </div>
 
             {/* AEO Comparison Table */}
@@ -246,7 +258,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
                     Want us to review your Meta ad account before peak season?
                   </h4>
                   <p style={{ margin: 0, color: '#94a3b8', fontSize: '13px' }}>
-                    1-on-1 diagnostic covering campaign architecture, creative fatigue &amp; unit margins.
+                    1 on 1 diagnostic covering campaign architecture, creative fatigue &amp; unit margins.
                   </p>
                 </div>
                 <button
@@ -281,7 +293,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
                   </button>
                   {openFaqIndex === fIdx && (
                     <div style={{ padding: '0 20px 20px', color: '#cbd5e1', fontSize: '14px', lineHeight: 1.6, borderTop: '1px solid #191922', paddingTop: '14px' }}>
-                      {faq.answer}
+                      {cleanBlogText(faq.answer)}
                     </div>
                   )}
                 </div>
@@ -290,8 +302,49 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
           </section>
         )}
 
+        {/* Related Playbooks & Topical Cluster Navigation */}
+        <section style={{ marginTop: '50px', paddingTop: '36px', borderTop: '1px solid #1f1f28' }}>
+          <h3 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', marginBottom: '20px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Sparkles size={18} color="#ff5722" /> Explore Related DTC Growth Playbooks
+          </h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px' }}>
+            {blogPosts.filter(p => p.slug !== post.slug).map(relPost => (
+              <div
+                key={relPost.slug}
+                onClick={() => onNavigate && onNavigate(`blog-${relPost.slug}`)}
+                style={{
+                  background: '#0e0e13',
+                  border: '1px solid #1f1f2a',
+                  borderRadius: '12px',
+                  padding: '20px',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.borderColor = '#ff5722'}
+                onMouseLeave={(e) => e.currentTarget.style.borderColor = '#1f1f2a'}
+              >
+                <span style={{ fontSize: '11px', color: '#ff5722', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  {relPost.category}
+                </span>
+                <h4 style={{ margin: '8px 0 6px', fontSize: '15px', fontWeight: 700, color: '#ffffff', lineHeight: 1.4 }}>
+                  <a
+                    href={`/blog/${relPost.slug}`}
+                    onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`blog-${relPost.slug}`); }}
+                    style={{ color: '#ffffff', textDecoration: 'none' }}
+                  >
+                    {relPost.title}
+                  </a>
+                </h4>
+                <span style={{ color: '#64748b', fontSize: '12px' }}>
+                  {relPost.readTime}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Strong Bottom CTA Card */}
-        <div style={{ background: '#111116', border: '1px solid #2b2b3b', borderRadius: '18px', padding: '40px', textAlign: 'center', marginTop: '60px' }}>
+        <div style={{ background: '#111116', border: '1px solid #2b2b3b', borderRadius: '18px', padding: '40px', textAlign: 'center', marginTop: '50px' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#ff5722', fontSize: '13px', fontWeight: 700, marginBottom: '12px' }}>
             <Sparkles size={16} /> Partner With Brand Scaling
           </div>
@@ -299,7 +352,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             Ready to scale past 7 &amp; 8 figures predictably?
           </h2>
           <p style={{ color: '#94a3b8', fontSize: '15px', maxWidth: '580px', margin: '0 auto 26px', lineHeight: 1.6 }}>
-            Over $50M+ in ad spend managed with 150+ verified case studies. We build high-converting direct-response creatives, run broad Meta/TikTok campaigns, and optimize your Shopify store.
+            Over $50M+ in ad spend managed with 150+ verified case studies. We build high converting direct response creatives, run broad Meta and TikTok campaigns, and optimize your Shopify store.
           </p>
           <button
             onClick={() => onOpenBooking && onOpenBooking()}

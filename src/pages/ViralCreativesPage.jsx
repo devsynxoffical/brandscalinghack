@@ -13,105 +13,105 @@ import {
 
 export const viralCreativesData = [
   // 1. Roofing (6)
-  { id: 'roofing-1', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Roof Conversion 1', vimeoId: '1203105527', niche: 'Roofing & Construction', roas: '4.8x ROAS' },
-  { id: 'roofing-2', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Storm Roofing 2', vimeoId: '1203105510', niche: 'Storm Damage & Insurance', roas: '5.2x ROAS' },
-  { id: 'roofing-3', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Replacement Roof 3', vimeoId: '1203105488', niche: 'Residential Replacement', roas: '4.4x ROAS' },
-  { id: 'roofing-4', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox High-ROAS Roof 4', vimeoId: '1203105494', niche: 'High-Ticket Direct Response', roas: '5.6x ROAS' },
-  { id: 'roofing-5', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Roofing Scale 5', vimeoId: '1203105572', niche: 'Commercial & Residential', roas: '4.9x ROAS' },
-  { id: 'roofing-6', category: 'Roofing', categoryIcon: '🏠', title: 'Equinox Roof Ad 6', vimeoId: '1203105532', niche: 'Roof Inspection Lead-Gen', roas: '4.7x ROAS' },
+  { id: 'roofing-1', category: 'Roofing', title: 'Equinox Roof Conversion 1', vimeoId: '1203105527', niche: 'Roofing & Construction', roas: '4.8x ROAS' },
+  { id: 'roofing-2', category: 'Roofing', title: 'Equinox Storm Roofing 2', vimeoId: '1203105510', niche: 'Storm Damage & Insurance', roas: '5.2x ROAS' },
+  { id: 'roofing-3', category: 'Roofing', title: 'Equinox Replacement Roof 3', vimeoId: '1203105488', niche: 'Residential Replacement', roas: '4.4x ROAS' },
+  { id: 'roofing-4', category: 'Roofing', title: 'Equinox High-ROAS Roof 4', vimeoId: '1203105494', niche: 'High-Ticket Direct Response', roas: '5.6x ROAS' },
+  { id: 'roofing-5', category: 'Roofing', title: 'Equinox Roofing Scale 5', vimeoId: '1203105572', niche: 'Commercial & Residential', roas: '4.9x ROAS' },
+  { id: 'roofing-6', category: 'Roofing', title: 'Equinox Roof Ad 6', vimeoId: '1203105532', niche: 'Roof Inspection Lead-Gen', roas: '4.7x ROAS' },
 
   // 2. Supplements & Health (4)
-  { id: 'supplements-1', category: 'Supplements & Health', categoryIcon: '💊', title: 'Gummies Bio-Nourish Ad 1', vimeoId: '1203105580', niche: 'DTC Health & Wellness', roas: '5.1x ROAS' },
-  { id: 'supplements-2', category: 'Supplements & Health', categoryIcon: '💊', title: 'DTC Health Gummies Reel 2', vimeoId: '1203828901', niche: 'Organic UGC & TikTok', roas: '4.9x ROAS' },
-  { id: 'supplements-3', category: 'Supplements & Health', categoryIcon: '💊', title: 'DTC Wellness Formulation 3', vimeoId: '1203828900', niche: 'Nutraceutical Brand Scale', roas: '4.6x ROAS' },
-  { id: 'supplements-4', category: 'Supplements & Health', categoryIcon: '💊', title: 'Nutritional Health Ad 4', vimeoId: '1203828899', niche: 'Clinical Proof & Offer Stack', roas: '4.3x ROAS' },
+  { id: 'supplements-1', category: 'Supplements & Health', title: 'Gummies Bio-Nourish Ad 1', vimeoId: '1203105580', niche: 'DTC Health & Wellness', roas: '5.1x ROAS' },
+  { id: 'supplements-2', category: 'Supplements & Health', title: 'DTC Health Gummies Reel 2', vimeoId: '1203828901', niche: 'Organic UGC & TikTok', roas: '4.9x ROAS' },
+  { id: 'supplements-3', category: 'Supplements & Health', title: 'DTC Wellness Formulation 3', vimeoId: '1203828900', niche: 'Nutraceutical Brand Scale', roas: '4.6x ROAS' },
+  { id: 'supplements-4', category: 'Supplements & Health', title: 'Nutritional Health Ad 4', vimeoId: '1203828899', niche: 'Clinical Proof & Offer Stack', roas: '4.3x ROAS' },
 
   // 3. Recruitment & Talent (2)
-  { id: 'recruitment-1', category: 'Recruitment & Talent', categoryIcon: '💼', title: 'LinkedIn Executive Talent Acquisition 1', vimeoId: '1203105467', niche: 'B2B Executive Search', roas: '4.2x ROAS' },
-  { id: 'recruitment-2', category: 'Recruitment & Talent', categoryIcon: '💼', title: 'LinkedIn Talent Recruitment Ad 2', vimeoId: '1203105458', niche: 'Talent Pipeline Funnel', roas: '4.5x ROAS' },
+  { id: 'recruitment-1', category: 'Recruitment & Talent', title: 'LinkedIn Executive Talent Acquisition 1', vimeoId: '1203105467', niche: 'B2B Executive Search', roas: '4.2x ROAS' },
+  { id: 'recruitment-2', category: 'Recruitment & Talent', title: 'LinkedIn Talent Recruitment Ad 2', vimeoId: '1203105458', niche: 'Talent Pipeline Funnel', roas: '4.5x ROAS' },
 
   // 4. Events & Keynotes (5)
-  { id: 'events-1', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Commercial Finance & Keynote Event 1', vimeoId: '1203105416', niche: 'High-Ticket Event Ticket Sales', roas: '6.1x ROAS' },
-  { id: 'events-2', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Seven Fathom B2B SaaS Event Reel 2', vimeoId: '1203105447', niche: 'B2B Conference Promotion', roas: '4.8x ROAS' },
-  { id: 'events-3', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Seven Fathom Product Walkthrough Event 3', vimeoId: '1203105413', niche: 'Live Keynote & Demo', roas: '5.0x ROAS' },
-  { id: 'events-4', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Seven Fathom Feature Breakdown Event 4', vimeoId: '1203105414', niche: 'SaaS Live Summit', roas: '4.7x ROAS' },
-  { id: 'events-5', category: 'Events & Keynotes', categoryIcon: '🎟️', title: 'Capital Growth Strategy Event 5', vimeoId: '1203105415', niche: 'Private Investor Keynote', roas: '5.4x ROAS' },
+  { id: 'events-1', category: 'Events & Keynotes', title: 'Commercial Finance & Keynote Event 1', vimeoId: '1203105416', niche: 'High-Ticket Event Ticket Sales', roas: '6.1x ROAS' },
+  { id: 'events-2', category: 'Events & Keynotes', title: 'Seven Fathom B2B SaaS Event Reel 2', vimeoId: '1203105447', niche: 'B2B Conference Promotion', roas: '4.8x ROAS' },
+  { id: 'events-3', category: 'Events & Keynotes', title: 'Seven Fathom Product Walkthrough Event 3', vimeoId: '1203105413', niche: 'Live Keynote & Demo', roas: '5.0x ROAS' },
+  { id: 'events-4', category: 'Events & Keynotes', title: 'Seven Fathom Feature Breakdown Event 4', vimeoId: '1203105414', niche: 'SaaS Live Summit', roas: '4.7x ROAS' },
+  { id: 'events-5', category: 'Events & Keynotes', title: 'Capital Growth Strategy Event 5', vimeoId: '1203105415', niche: 'Private Investor Keynote', roas: '5.4x ROAS' },
 
   // 5. HVAC & Climate Control (5)
-  { id: 'hvac-1', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Climate Control Ad 1', vimeoId: '1203812276', niche: 'AC & Heating Replacement', roas: '4.9x ROAS' },
-  { id: 'hvac-2', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Seasonal Offer Ad 2', vimeoId: '1203812274', niche: 'Seasonal Tune-Up Lead-Gen', roas: '5.3x ROAS' },
-  { id: 'hvac-3', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Comfort Engine 3', vimeoId: '1203812272', niche: 'Emergency Furnace & Air', roas: '4.6x ROAS' },
-  { id: 'hvac-4', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: 'HVAC Heat Pump Promo 4', vimeoId: '1203812271', niche: 'Eco Heat Pump Rebates', roas: '5.1x ROAS' },
-  { id: 'hvac-5', category: 'HVAC & Climate Control', categoryIcon: '❄️', title: '$0 Down Home Heater Special 5', vimeoId: '1203815881', niche: '$0 Down Financing Offer', roas: '5.8x ROAS' },
+  { id: 'hvac-1', category: 'HVAC & Climate Control', title: 'HVAC Climate Control Ad 1', vimeoId: '1203812276', niche: 'AC & Heating Replacement', roas: '4.9x ROAS' },
+  { id: 'hvac-2', category: 'HVAC & Climate Control', title: 'HVAC Seasonal Offer Ad 2', vimeoId: '1203812274', niche: 'Seasonal Tune-Up Lead-Gen', roas: '5.3x ROAS' },
+  { id: 'hvac-3', category: 'HVAC & Climate Control', title: 'HVAC Comfort Engine 3', vimeoId: '1203812272', niche: 'Emergency Furnace & Air', roas: '4.6x ROAS' },
+  { id: 'hvac-4', category: 'HVAC & Climate Control', title: 'HVAC Heat Pump Promo 4', vimeoId: '1203812271', niche: 'Eco Heat Pump Rebates', roas: '5.1x ROAS' },
+  { id: 'hvac-5', category: 'HVAC & Climate Control', title: '$0 Down Home Heater Special 5', vimeoId: '1203815881', niche: '$0 Down Financing Offer', roas: '5.8x ROAS' },
 
   // 6. Solar Energy (6)
-  { id: 'solar-1', category: 'Solar Energy', categoryIcon: '☀️', title: 'California Solar Clean Energy 1', vimeoId: '1203808485', niche: 'Residential Solar Power', roas: '5.5x ROAS' },
-  { id: 'solar-2', category: 'Solar Energy', categoryIcon: '☀️', title: 'California Solar Utility Savings 2', vimeoId: '1203808486', niche: 'Utility Bill Elimination', roas: '5.2x ROAS' },
-  { id: 'solar-3', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar California Federal Incentive 3', vimeoId: '1203828547', niche: 'Federal Tax Credit Hook', roas: '6.0x ROAS' },
-  { id: 'solar-4', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar Power Lock-In 4', vimeoId: '1203828545', niche: 'Rate Lock Campaign', roas: '4.9x ROAS' },
-  { id: 'solar-5', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar Battery Storage Ad 5', vimeoId: '1203828548', niche: 'Battery Backup & Storage', roas: '5.1x ROAS' },
-  { id: 'solar-6', category: 'Solar Energy', categoryIcon: '☀️', title: 'Solar Installation Campaign 6', vimeoId: '1203828546', niche: 'Zero-Down Solar Inquiries', roas: '5.7x ROAS' },
+  { id: 'solar-1', category: 'Solar Energy', title: 'California Solar Clean Energy 1', vimeoId: '1203808485', niche: 'Residential Solar Power', roas: '5.5x ROAS' },
+  { id: 'solar-2', category: 'Solar Energy', title: 'California Solar Utility Savings 2', vimeoId: '1203808486', niche: 'Utility Bill Elimination', roas: '5.2x ROAS' },
+  { id: 'solar-3', category: 'Solar Energy', title: 'Solar California Federal Incentive 3', vimeoId: '1203828547', niche: 'Federal Tax Credit Hook', roas: '6.0x ROAS' },
+  { id: 'solar-4', category: 'Solar Energy', title: 'Solar Power Lock-In 4', vimeoId: '1203828545', niche: 'Rate Lock Campaign', roas: '4.9x ROAS' },
+  { id: 'solar-5', category: 'Solar Energy', title: 'Solar Battery Storage Ad 5', vimeoId: '1203828548', niche: 'Battery Backup & Storage', roas: '5.1x ROAS' },
+  { id: 'solar-6', category: 'Solar Energy', title: 'Solar Installation Campaign 6', vimeoId: '1203828546', niche: 'Zero-Down Solar Inquiries', roas: '5.7x ROAS' },
 
   // 7. Agency Owner (3)
-  { id: 'agency-1', category: 'Agency Owner', categoryIcon: '🚀', title: '7-Figure Agency Acquisition 1', vimeoId: '1203105308', niche: 'B2B Client Acquisition Funnel', roas: '6.4x ROAS' },
-  { id: 'agency-2', category: 'Agency Owner', categoryIcon: '🚀', title: 'Agency Scale & CAPI Engine 2', vimeoId: '1203105309', niche: 'Meta Conversions API Scaling', roas: '5.8x ROAS' },
-  { id: 'agency-3', category: 'Agency Owner', categoryIcon: '🚀', title: 'High-Ticket Client Blueprint 3', vimeoId: '1203808613', niche: 'High-Ticket Service Retainers', roas: '5.3x ROAS' },
+  { id: 'agency-1', category: 'Agency Owner', title: '7-Figure Agency Acquisition 1', vimeoId: '1203105308', niche: 'B2B Client Acquisition Funnel', roas: '6.4x ROAS' },
+  { id: 'agency-2', category: 'Agency Owner', title: 'Agency Scale & CAPI Engine 2', vimeoId: '1203105309', niche: 'Meta Conversions API Scaling', roas: '5.8x ROAS' },
+  { id: 'agency-3', category: 'Agency Owner', title: 'High-Ticket Client Blueprint 3', vimeoId: '1203808613', niche: 'High-Ticket Service Retainers', roas: '5.3x ROAS' },
 
   // 8. Chiropractic (3)
-  { id: 'chiro-1', category: 'Chiropractic', categoryIcon: '🩺', title: 'Spine & Pain Chiropractic Ad 1', vimeoId: '1203812402', niche: 'Spinal Decompression & Relief', roas: '4.8x ROAS' },
-  { id: 'chiro-2', category: 'Chiropractic', categoryIcon: '🩺', title: 'Wellness Chiro Special Offer 2', vimeoId: '1203812401', niche: 'New Patient Voucher Offer', roas: '5.4x ROAS' },
-  { id: 'chiro-3', category: 'Chiropractic', categoryIcon: '🩺', title: 'Chiropractic Spinal Care 3', vimeoId: '1203812400', niche: 'Chronic Back Pain Patient Funnel', roas: '4.7x ROAS' },
+  { id: 'chiro-1', category: 'Chiropractic', title: 'Spine & Pain Chiropractic Ad 1', vimeoId: '1203812402', niche: 'Spinal Decompression & Relief', roas: '4.8x ROAS' },
+  { id: 'chiro-2', category: 'Chiropractic', title: 'Wellness Chiro Special Offer 2', vimeoId: '1203812401', niche: 'New Patient Voucher Offer', roas: '5.4x ROAS' },
+  { id: 'chiro-3', category: 'Chiropractic', title: 'Chiropractic Spinal Care 3', vimeoId: '1203812400', niche: 'Chronic Back Pain Patient Funnel', roas: '4.7x ROAS' },
 
   // 9. Finance & B2B Lending (6)
-  { id: 'finance-1', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Commercial Finance Capital 1', vimeoId: '1203818782', niche: 'Working Capital & Equipment Loans', roas: '5.9x ROAS' },
-  { id: 'finance-2', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Capital Growth Strategy 2', vimeoId: '1203818781', niche: 'Business Line of Credit', roas: '5.1x ROAS' },
-  { id: 'finance-3', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'B2B Lending Acquisition 3', vimeoId: '1207996165', niche: 'Commercial Borrowing Leads', roas: '5.6x ROAS' },
-  { id: 'finance-4', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Fintech Growth System 4', vimeoId: '1207996164', niche: 'Digital Underwriting & Credit', roas: '4.9x ROAS' },
-  { id: 'finance-5', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Corporate Capital Campaign 5', vimeoId: '1207996161', niche: 'SME Expansion Funding', roas: '5.2x ROAS' },
-  { id: 'finance-6', category: 'Finance & B2B Lending', categoryIcon: '💰', title: 'Financial Advisory Engine 6', vimeoId: '1207996163', niche: 'Wealth Advisory Inbound Funnel', roas: '4.7x ROAS' },
+  { id: 'finance-1', category: 'Finance & B2B Lending', title: 'Commercial Finance Capital 1', vimeoId: '1203818782', niche: 'Working Capital & Equipment Loans', roas: '5.9x ROAS' },
+  { id: 'finance-2', category: 'Finance & B2B Lending', title: 'Capital Growth Strategy 2', vimeoId: '1203818781', niche: 'Business Line of Credit', roas: '5.1x ROAS' },
+  { id: 'finance-3', category: 'Finance & B2B Lending', title: 'B2B Lending Acquisition 3', vimeoId: '1207996165', niche: 'Commercial Borrowing Leads', roas: '5.6x ROAS' },
+  { id: 'finance-4', category: 'Finance & B2B Lending', title: 'Fintech Growth System 4', vimeoId: '1207996164', niche: 'Digital Underwriting & Credit', roas: '4.9x ROAS' },
+  { id: 'finance-5', category: 'Finance & B2B Lending', title: 'Corporate Capital Campaign 5', vimeoId: '1207996161', niche: 'SME Expansion Funding', roas: '5.2x ROAS' },
+  { id: 'finance-6', category: 'Finance & B2B Lending', title: 'Financial Advisory Engine 6', vimeoId: '1207996163', niche: 'Wealth Advisory Inbound Funnel', roas: '4.7x ROAS' },
 
   // 10. MVA (Motor Vehicle Accident Law) (10)
-  { id: 'mva-1', category: 'MVA Law', categoryIcon: '⚖️', title: 'Personal Injury MVA Law 1', vimeoId: '1203816135', niche: 'Car Accident Legal Retainer', roas: '6.8x ROAS' },
-  { id: 'mva-2', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Legal Client Acquisition 2', vimeoId: '1203816133', niche: 'Personal Injury Claimant Funnel', roas: '6.2x ROAS' },
-  { id: 'mva-3', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Auto Accident Law 3', vimeoId: '1203816132', niche: 'Rear-End Collision Case Gen', roas: '5.9x ROAS' },
-  { id: 'mva-4', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Injury Settlement Ad 4', vimeoId: '1203816131', niche: 'Maximum Compensation Retainer', roas: '6.5x ROAS' },
-  { id: 'mva-5', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Legal Retainer Campaign 5', vimeoId: '1203816465', niche: 'Direct-to-Attorney Intake', roas: '5.7x ROAS' },
-  { id: 'mva-6', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Accident Claim Ad 6', vimeoId: '1203816469', niche: 'Free Case Evaluation Hook', roas: '6.1x ROAS' },
-  { id: 'mva-7', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Law Firm Scale 7', vimeoId: '1203816506', niche: 'High-Settlement Injury Claims', roas: '6.4x ROAS' },
-  { id: 'mva-8', category: 'MVA Law', categoryIcon: '⚖️', title: 'Personal Injury MVA Campaign 8', vimeoId: '1219790482', niche: 'No-Fee-Unless-We-Win Hook', roas: '6.0x ROAS' },
-  { id: 'mva-9', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Auto Accident Settlement Ad 9', vimeoId: '1219790483', niche: 'Whiplash & Major Impact Retainers', roas: '5.8x ROAS' },
-  { id: 'mva-10', category: 'MVA Law', categoryIcon: '⚖️', title: 'MVA Legal Client Retainer Engine 10', vimeoId: '1219790484', niche: 'National Law Firm Case Gen', roas: '6.7x ROAS' },
+  { id: 'mva-1', category: 'MVA Law', title: 'Personal Injury MVA Law 1', vimeoId: '1203816135', niche: 'Car Accident Legal Retainer', roas: '6.8x ROAS' },
+  { id: 'mva-2', category: 'MVA Law', title: 'MVA Legal Client Acquisition 2', vimeoId: '1203816133', niche: 'Personal Injury Claimant Funnel', roas: '6.2x ROAS' },
+  { id: 'mva-3', category: 'MVA Law', title: 'MVA Auto Accident Law 3', vimeoId: '1203816132', niche: 'Rear-End Collision Case Gen', roas: '5.9x ROAS' },
+  { id: 'mva-4', category: 'MVA Law', title: 'MVA Injury Settlement Ad 4', vimeoId: '1203816131', niche: 'Maximum Compensation Retainer', roas: '6.5x ROAS' },
+  { id: 'mva-5', category: 'MVA Law', title: 'MVA Legal Retainer Campaign 5', vimeoId: '1203816465', niche: 'Direct-to-Attorney Intake', roas: '5.7x ROAS' },
+  { id: 'mva-6', category: 'MVA Law', title: 'MVA Accident Claim Ad 6', vimeoId: '1203816469', niche: 'Free Case Evaluation Hook', roas: '6.1x ROAS' },
+  { id: 'mva-7', category: 'MVA Law', title: 'MVA Law Firm Scale 7', vimeoId: '1203816506', niche: 'High-Settlement Injury Claims', roas: '6.4x ROAS' },
+  { id: 'mva-8', category: 'MVA Law', title: 'Personal Injury MVA Campaign 8', vimeoId: '1219790482', niche: 'No-Fee-Unless-We-Win Hook', roas: '6.0x ROAS' },
+  { id: 'mva-9', category: 'MVA Law', title: 'MVA Auto Accident Settlement Ad 9', vimeoId: '1219790483', niche: 'Whiplash & Major Impact Retainers', roas: '5.8x ROAS' },
+  { id: 'mva-10', category: 'MVA Law', title: 'MVA Legal Client Retainer Engine 10', vimeoId: '1219790484', niche: 'National Law Firm Case Gen', roas: '6.7x ROAS' },
 
   // 11. SaaS & Tech (4)
-  { id: 'saas-1', category: 'SaaS & Tech', categoryIcon: '💻', title: 'Corporate Hiring & SaaS Engine 1', vimeoId: '1203819145', niche: 'Enterprise HR Tech Platform', roas: '4.8x ROAS' },
-  { id: 'saas-2', category: 'SaaS & Tech', categoryIcon: '💻', title: 'Career Growth SaaS Funnel 2', vimeoId: '1203819144', niche: 'Self-Serve SaaS Trial Signups', roas: '5.2x ROAS' },
-  { id: 'saas-3', category: 'SaaS & Tech', categoryIcon: '💻', title: 'SaaS Conversion Platform 3', vimeoId: '1203819143', niche: 'PLG Freemium Conversion', roas: '4.7x ROAS' },
-  { id: 'saas-4', category: 'SaaS & Tech', categoryIcon: '💻', title: 'Keynote Event & SaaS Highlights 4', vimeoId: '1203819315', niche: 'Product Feature & Demo Reel', roas: '5.0x ROAS' },
+  { id: 'saas-1', category: 'SaaS & Tech', title: 'Corporate Hiring & SaaS Engine 1', vimeoId: '1203819145', niche: 'Enterprise HR Tech Platform', roas: '4.8x ROAS' },
+  { id: 'saas-2', category: 'SaaS & Tech', title: 'Career Growth SaaS Funnel 2', vimeoId: '1203819144', niche: 'Self-Serve SaaS Trial Signups', roas: '5.2x ROAS' },
+  { id: 'saas-3', category: 'SaaS & Tech', title: 'SaaS Conversion Platform 3', vimeoId: '1203819143', niche: 'PLG Freemium Conversion', roas: '4.7x ROAS' },
+  { id: 'saas-4', category: 'SaaS & Tech', title: 'Keynote Event & SaaS Highlights 4', vimeoId: '1203819315', niche: 'Product Feature & Demo Reel', roas: '5.0x ROAS' },
 
   // 12. Windows & Doors (2)
-  { id: 'windows-1', category: 'Windows & Doors', categoryIcon: '🪟', title: 'Window & Door Installation Ad 1', vimeoId: '1203827387', niche: 'Energy-Efficient Window Quote', roas: '4.9x ROAS' },
-  { id: 'windows-2', category: 'Windows & Doors', categoryIcon: '🪟', title: 'Window Replacement Promo 2', vimeoId: '1203827386', niche: 'Whole-Home Replacement Special', roas: '5.3x ROAS' },
+  { id: 'windows-1', category: 'Windows & Doors', title: 'Window & Door Installation Ad 1', vimeoId: '1203827387', niche: 'Energy-Efficient Window Quote', roas: '4.9x ROAS' },
+  { id: 'windows-2', category: 'Windows & Doors', title: 'Window Replacement Promo 2', vimeoId: '1203827386', niche: 'Whole-Home Replacement Special', roas: '5.3x ROAS' },
 
   // 13. Carpet Cleaning (2)
-  { id: 'carpet-1', category: 'Carpet Cleaning', categoryIcon: '🧹', title: 'Deep Carpet Cleaning Promo 1', vimeoId: '1203827815', niche: 'Steam Extraction & Stain Removal', roas: '5.1x ROAS' },
-  { id: 'carpet-2', category: 'Carpet Cleaning', categoryIcon: '🧹', title: 'Carpet Sanitation Offer 2', vimeoId: '1203827814', niche: 'Multi-Room Special Lead-Gen', roas: '5.4x ROAS' }
+  { id: 'carpet-1', category: 'Carpet Cleaning', title: 'Deep Carpet Cleaning Promo 1', vimeoId: '1203827815', niche: 'Steam Extraction & Stain Removal', roas: '5.1x ROAS' },
+  { id: 'carpet-2', category: 'Carpet Cleaning', title: 'Carpet Sanitation Offer 2', vimeoId: '1203827814', niche: 'Multi-Room Special Lead-Gen', roas: '5.4x ROAS' }
 ];
 
 export const videoCategories = [
-  { id: 'All', name: 'All Videos', icon: '🔥' },
-  { id: 'Roofing', name: 'Roofing', icon: '🏠' },
-  { id: 'Supplements & Health', name: 'Supplements & Health', icon: '💊' },
-  { id: 'Recruitment & Talent', name: 'Recruitment & Talent', icon: '💼' },
-  { id: 'Events & Keynotes', name: 'Events & Keynotes', icon: '🎟️' },
-  { id: 'HVAC & Climate Control', name: 'HVAC & Climate', icon: '❄️' },
-  { id: 'Solar Energy', name: 'Solar Energy', icon: '☀️' },
-  { id: 'Agency Owner', name: 'Agency Owner', icon: '🚀' },
-  { id: 'Chiropractic', name: 'Chiropractic', icon: '🩺' },
-  { id: 'Finance & B2B Lending', name: 'Finance & Lending', icon: '💰' },
-  { id: 'MVA Law', name: 'MVA Law', icon: '⚖️' },
-  { id: 'SaaS & Tech', name: 'SaaS & Tech', icon: '💻' },
-  { id: 'Windows & Doors', name: 'Windows & Doors', icon: '🪟' },
-  { id: 'Carpet Cleaning', name: 'Carpet Cleaning', icon: '🧹' }
+  { id: 'All', name: 'All Videos' },
+  { id: 'Roofing', name: 'Roofing' },
+  { id: 'Supplements & Health', name: 'Supplements & Health' },
+  { id: 'Recruitment & Talent', name: 'Recruitment & Talent' },
+  { id: 'Events & Keynotes', name: 'Events & Keynotes' },
+  { id: 'HVAC & Climate Control', name: 'HVAC & Climate' },
+  { id: 'Solar Energy', name: 'Solar Energy' },
+  { id: 'Agency Owner', name: 'Agency Owner' },
+  { id: 'Chiropractic', name: 'Chiropractic' },
+  { id: 'Finance & B2B Lending', name: 'Finance & Lending' },
+  { id: 'MVA Law', name: 'MVA Law' },
+  { id: 'SaaS & Tech', name: 'SaaS & Tech' },
+  { id: 'Windows & Doors', name: 'Windows & Doors' },
+  { id: 'Carpet Cleaning', name: 'Carpet Cleaning' }
 ];
 
 export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
@@ -353,13 +353,12 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                     border: isActive ? '1px solid #ef4444' : '1px solid rgba(255, 255, 255, 0.1)',
                     background: isActive ? '#dc2626' : '#0d1117',
                     color: isActive ? '#ffffff' : '#cbd5e1',
-                    display: 'flex',
+                    display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '6px',
+                    gap: '8px',
                     boxShadow: isActive ? '0 4px 14px rgba(220, 38, 38, 0.4)' : 'none'
                   }}
                 >
-                  <span>{cat.icon}</span>
                   <span>{cat.name}</span>
                   <span 
                     style={{ 
@@ -510,12 +509,10 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                             fontSize: '0.72rem',
                             fontWeight: 800,
                             color: '#fff',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '4px'
+                            display: 'inline-flex',
+                            alignItems: 'center'
                           }}
                         >
-                          <span>{video.categoryIcon}</span>
                           <span>{video.category}</span>
                         </span>
 
@@ -702,7 +699,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
                     letterSpacing: '0.05em' 
                   }}
                 >
-                  {modalVideo.categoryIcon} {modalVideo.category} • {modalVideo.niche}
+                  {modalVideo.category} • {modalVideo.niche}
                 </span>
                 <span 
                   style={{ 

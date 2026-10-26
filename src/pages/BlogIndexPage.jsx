@@ -22,7 +22,7 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
         {/* Header Badge */}
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 87, 34, 0.1)', border: '1px solid rgba(255, 87, 34, 0.25)', padding: '6px 16px', borderRadius: '999px', color: '#ff5722', fontSize: '13px', fontWeight: 700, marginBottom: '18px' }}>
-            <Sparkles size={15} /> Field-Tested DTC Growth Systems
+            <Sparkles size={15} /> Field Tested DTC Growth Systems
           </div>
           
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 54px)', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.03em', lineHeight: 1.15, marginBottom: '16px' }}>
@@ -30,7 +30,7 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
           </h1>
           
           <p style={{ fontSize: '18px', color: '#94a3b8', maxWidth: '680px', margin: '0 auto', lineHeight: 1.6 }}>
-            Direct-response ad breakdowns, algorithmic updates, and unit-economic benchmarks from managing <strong>$50M+ in Meta &amp; TikTok ad spend</strong> across 150+ Shopify brands.
+            Direct response ad breakdowns, algorithmic updates, and unit economic benchmarks from managing <strong>$50M+ in Meta &amp; TikTok ad spend</strong> across 150+ Shopify brands.
           </p>
         </div>
 
@@ -98,13 +98,83 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
           </div>
         )}
 
+        {/* All Published Articles Grid */}
+        {filteredPosts.length > 1 && (
+          <div style={{ marginBottom: '50px' }}>
+            <h3 style={{ fontSize: '22px', fontWeight: 800, color: '#ffffff', marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <BookOpen size={20} color="#ff5722" /> Published Playbooks &amp; Frameworks
+            </h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+              {filteredPosts.slice(1).map((post) => (
+                <div
+                  key={post.slug}
+                  style={{
+                    background: '#0d1117',
+                    border: '1px solid rgba(255, 255, 255, 0.08)',
+                    borderRadius: '18px',
+                    padding: '28px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    cursor: 'pointer',
+                    transition: 'all 0.25s ease'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-4px)';
+                    e.currentTarget.style.borderColor = 'rgba(255, 87, 34, 0.4)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                  }}
+                  onClick={() => onNavigate && onNavigate(`blog-${post.slug}`)}
+                >
+                  <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+                      <span style={{ background: 'rgba(255, 87, 34, 0.12)', border: '1px solid rgba(255, 87, 34, 0.3)', color: '#ff5722', fontSize: '12px', fontWeight: 700, padding: '3px 10px', borderRadius: '6px' }}>
+                        {post.category}
+                      </span>
+                      <span style={{ color: '#64748b', fontSize: '13px' }}>
+                        {post.readTime}
+                      </span>
+                    </div>
+
+                    <h4 style={{ fontSize: '18px', fontWeight: 800, color: '#ffffff', lineHeight: 1.35, marginBottom: '12px' }}>
+                      <a
+                        href={`/blog/${post.slug}`}
+                        onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`blog-${post.slug}`); }}
+                        style={{ color: '#ffffff', textDecoration: 'none' }}
+                      >
+                        {post.title}
+                      </a>
+                    </h4>
+
+                    <p style={{ color: '#94a3b8', fontSize: '14px', lineHeight: 1.6, margin: 0 }}>
+                      {post.directAnswer ? post.directAnswer.slice(0, 160) + '...' : post.metaDescription}
+                    </p>
+                  </div>
+
+                  <div style={{ marginTop: '20px', paddingTop: '16px', borderTop: '1px solid rgba(255, 255, 255, 0.06)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ color: '#64748b', fontSize: '13px' }}>
+                      {post.publishDate}
+                    </span>
+                    <span style={{ color: '#ff5722', fontWeight: 700, fontSize: '14px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                      Read Playbook <ArrowRight size={14} />
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Upcoming Playbooks Roadmap Banner */}
         <div style={{ background: '#111116', border: '1px dashed #282836', borderRadius: '16px', padding: '28px 32px', marginBottom: '40px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#ff5722', fontSize: '13px', fontWeight: 700, marginBottom: '8px' }}>
             <Sparkles size={16} /> Upcoming Weekly Playbooks (Rolling Out Every Tuesday)
           </div>
           <p style={{ margin: '0 0 16px', color: '#94a3b8', fontSize: '14px', lineHeight: 1.6 }}>
-            Our growth team publishes field-tested tactical playbooks every Tuesday based on active experiments from managing $50M+ in ad spend:
+            Our growth team publishes field tested tactical playbooks every Tuesday based on active experiments from managing $50M+ in ad spend:
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '14px' }}>
             <div style={{ background: '#16161f', border: '1px solid #232330', borderRadius: '10px', padding: '16px' }}>
@@ -115,10 +185,6 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
               <span style={{ color: '#64748b', fontSize: '12px', fontWeight: 700, textTransform: 'uppercase' }}>Coming Next</span>
               <h4 style={{ margin: '4px 0 0', fontSize: '15px', color: '#ffffff', fontWeight: 700 }}>Meta Andromeda: What Changed for Ecommerce</h4>
             </div>
-            <div style={{ background: '#16161f', border: '1px solid #232330', borderRadius: '10px', padding: '16px' }}>
-              <span style={{ color: '#64748b', fontSize: '12px', fontWeight: 700, textTransform: 'uppercase' }}>Coming Next</span>
-              <h4 style={{ margin: '4px 0 0', fontSize: '15px', color: '#ffffff', fontWeight: 700 }}>What Is ROAS? Good ROAS by Industry &amp; Calculator</h4>
-            </div>
           </div>
         </div>
 
@@ -128,7 +194,7 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
             Want us to audit your Meta ad account &amp; Shopify conversion rate?
           </h2>
           <p style={{ color: '#94a3b8', fontSize: '16px', maxWidth: '640px', margin: '0 auto 24px' }}>
-            We'll review your unit economics, creative fatigue bottlenecks, and Advantage+ campaign structures in a 1-on-1 diagnostic.
+            We'll review your unit economics, creative fatigue bottlenecks, and Advantage+ campaign structures in a 1 on 1 diagnostic.
           </p>
           <button
             onClick={() => onOpenBooking && onOpenBooking()}

@@ -1,0 +1,242 @@
+/* ==========================================================================
+   GLASS WINDOW MARQUEE - BRAND SCALING THEMED
+   Modern 3D macOS Glassmorphic Window Cards Infinite Marquee
+   Styled to match Brand Scaling: #07090e, #ff5722, Plus Jakarta Sans
+   ========================================================================== */
+
+.marquee-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: var(--bg-dark, #07090e);
+  padding: 60px 0 70px;
+  font-family: var(--font-primary, 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif);
+}
+
+/* Background Ambient Flame Radial Glow */
+.marquee-ambient-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(255, 87, 34, 0.14) 0%, rgba(220, 38, 38, 0.06) 45%, transparent 70%);
+}
+
+/* Left and Right Gradient Vignettes */
+.marquee-vignette-left,
+.marquee-vignette-right {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  width: clamp(60px, 14vw, 220px);
+}
+
+.marquee-vignette-left {
+  left: 0;
+  background: linear-gradient(to right, #07090e 0%, rgba(7, 9, 14, 0.88) 50%, transparent 100%);
+}
+
+.marquee-vignette-right {
+  right: 0;
+  background: linear-gradient(to left, #07090e 0%, rgba(7, 9, 14, 0.88) 50%, transparent 100%);
+}
+
+/* Continuous Infinite Track */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: marquee-scroll var(--marquee-speed, 48s) linear infinite;
+}
+
+/* Pause ONLY when hovering directly over a specific card */
+.marquee-track:has(.window-card-wrapper:hover),
+.marquee-track.is-paused {
+  animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Repeat Group */
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 2.5vw, 36px);
+  padding: 18px clamp(12px, 1.5vw, 24px);
+  flex-shrink: 0;
+}
+
+/* Window Card Wrapper with 3D Tilt Transitions */
+.window-card-wrapper {
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), z-index 0.45s;
+}
+
+.window-card-wrapper:hover {
+  transform: scale(1.06) rotate(0deg) !important;
+  z-index: 30;
+}
+
+/* Card Tilt Variations */
+.tilt-neg-2 { transform: rotate(-2deg); }
+.tilt-neg-1 { transform: rotate(-1deg); }
+.tilt-pos-1 { transform: rotate(1deg); }
+.tilt-pos-2 { transform: rotate(2deg); }
+
+/* Glass Window Frame */
+.window-card {
+  position: relative;
+  width: clamp(285px, 26vw, 395px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(21, 27, 38, 0.7) 45%, rgba(12, 16, 23, 0.95) 100%);
+  padding: 13px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.window-card-wrapper:hover .window-card {
+  border-color: rgba(255, 87, 34, 0.55);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85), 0 0 35px rgba(255, 87, 34, 0.3);
+}
+
+/* Top Window Header Bar */
+.window-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 10px;
+}
+
+/* macOS Traffic Light Dots */
+.window-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot-red { background: #ff5252; opacity: 0.9; }
+.dot-yellow { background: #ffb300; opacity: 0.9; }
+.dot-green { background: #10b981; opacity: 0.9; }
+
+/* Status Tag Badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 87, 34, 0.35);
+  background: rgba(255, 87, 34, 0.12);
+  font-family: var(--font-primary, 'Plus Jakarta Sans', sans-serif);
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-orange, #ff5722);
+}
+
+.pulse-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-orange, #ff5722);
+  box-shadow: 0 0 8px rgba(255, 87, 34, 0.8);
+  animation: pulse-ring-orange 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-ring-orange {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.8); }
+}
+
+/* Screen Display Area */
+.window-screen {
+  position: relative;
+  width: 100%;
+  height: clamp(160px, 14.5vw, 220px);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #080c14;
+}
+
+.window-screen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.window-card-wrapper:hover .window-screen img {
+  transform: scale(1.05);
+}
+
+/* Top-Right Glass Reflection Glare */
+.window-glare {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, transparent 60%);
+}
+
+/* Bottom Caption Bar */
+.window-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 4px 2px;
+  font-family: var(--font-primary, 'Plus Jakarta Sans', sans-serif);
+}
+
+.window-title {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #e2e8f0;
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+
+.window-card-wrapper:hover .window-title {
+  color: #ffffff;
+}
+
+.window-meta {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ff5722;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(255, 87, 34, 0.08);
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 87, 34, 0.2);
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none !important;
+  }
+}

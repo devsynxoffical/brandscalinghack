@@ -20,6 +20,7 @@ import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsPage from './pages/TermsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { blogPosts } from './data/blogPosts';
+import GlassWindowMarquee from './components/GlassWindowMarquee';
 
 function App() {
   const [activePage, setActivePage] = useState('home');
@@ -347,6 +348,9 @@ function App() {
 
       {/* Main Dynamic Page View */}
       <main>{renderActivePage()}</main>
+
+      {/* 3D Glass Window Marquee Showcase (Above Footer) */}
+      <GlassWindowMarquee />
 
       {/* Global Footer */}
       <Footer

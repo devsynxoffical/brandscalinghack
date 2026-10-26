@@ -16,7 +16,7 @@ while ((match = urlBlockRegex.exec(sitemap)) !== null) {
     const loc = locMatch[1].trim();
     if (!seen.has(loc)) {
       seen.add(loc);
-      const updatedBlock = block.replace(/<lastmod>.*?<\/lastmod>/, '<lastmod>2026-10-22</lastmod>');
+      const updatedBlock = block.replace(/<lastmod>.*?<\/lastmod>/, '<lastmod>2026-10-26</lastmod>');
       cleanUrls.push(updatedBlock);
     }
   }
@@ -26,15 +26,15 @@ console.log('Original unique count:', cleanUrls.length);
 
 const newPages = [
   { url: 'https://www.brandscalinghacks.com/shopify-agency', priority: '0.9', freq: 'weekly' },
-  { url: 'https://www.brandscalinghacks.com/blog', priority: '0.8', freq: 'weekly' },
-  { url: 'https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook', priority: '0.8', freq: 'monthly' },
+  { url: 'https://www.brandscalinghacks.com/blog', priority: '0.9', freq: 'daily' },
+  { url: 'https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook', priority: '0.9', freq: 'weekly' },
   { url: 'https://www.brandscalinghacks.com/privacy-policy', priority: '0.4', freq: 'yearly' },
   { url: 'https://www.brandscalinghacks.com/terms', priority: '0.4', freq: 'yearly' }
 ];
 
 newPages.forEach(item => {
   if (!seen.has(item.url)) {
-    cleanUrls.splice(3, 0, `  <url>\n    <loc>${item.url}</loc>\n    <lastmod>2026-10-22</lastmod>\n    <changefreq>${item.freq}</changefreq>\n    <priority>${item.priority}</priority>\n  </url>`);
+    cleanUrls.splice(3, 0, `  <url>\n    <loc>${item.url}</loc>\n    <lastmod>2026-10-26</lastmod>\n    <changefreq>${item.freq}</changefreq>\n    <priority>${item.priority}</priority>\n  </url>`);
   }
 });
 
