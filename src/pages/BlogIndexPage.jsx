@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { blogPosts } from '../data/blogPosts';
 import { BookOpen, ArrowRight, Calendar, Clock, User, Sparkles } from 'lucide-react';
+import BlogHero3DAnimation from '../components/BlogHero3DAnimation';
 
 export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -16,8 +17,9 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   return (
-    <div className="blog-index-wrapper blog-light-theme" style={{ minHeight: '100vh', backgroundColor: '#f8fafc', color: '#0f172a', paddingTop: '115px', paddingBottom: '90px' }}>
-      <div className="container" style={{ maxWidth: '1180px', margin: '0 auto', padding: '0 24px' }}>
+    <div className="blog-index-wrapper blog-light-theme" style={{ minHeight: '100vh', backgroundColor: '#f8fafc', color: '#0f172a', paddingTop: '115px', paddingBottom: '90px', position: 'relative', overflow: 'hidden' }}>
+      <BlogHero3DAnimation />
+      <div className="container" style={{ maxWidth: '1180px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
         
         {/* Header Badge */}
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>

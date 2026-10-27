@@ -22,6 +22,7 @@ import {
   Flame,
   Bookmark
 } from 'lucide-react';
+import BlogHero3DAnimation from '../components/BlogHero3DAnimation';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
 function cleanBlogText(text) {
@@ -191,9 +192,9 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
         aria-hidden="true"
       />
 
-      {/* 2. Distinctive Editorial Masthead Hero Banner */}
+      {/* 2. Distinctive Editorial Masthead Hero Banner with 3D WebGL Background */}
       <header className="blog-masthead-hero">
-        <div className="blog-hero-glow" />
+        <BlogHero3DAnimation />
         
         <div className="container" style={{ maxWidth: '1240px', margin: '0 auto', padding: '0 24px', position: 'relative', zIndex: 1 }}>
           
