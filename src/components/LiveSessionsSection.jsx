@@ -155,7 +155,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
 
                     {/* Duration Badge */}
                     <div className="player-duration-badge">
-                      ⏱ {selectedSession.duration}
+                      {selectedSession.duration}
                     </div>
 
                     {/* Expand/Modal Button in top left */}
