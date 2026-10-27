@@ -208,7 +208,7 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
         </div>
 
         {/* Audit CTA banner (High-contrast luxury conversion banner) */}
-        <div style={{ marginTop: '70px', background: '#0c1017', border: '1px solid #1e293b', borderRadius: '20px', padding: '44px 32px', textAlign: 'center', color: '#ffffff', boxShadow: '0 20px 50px rgba(0, 0, 0, 0.12)' }}>
+        <div className="blog-dark-cta-card" style={{ marginTop: '70px', background: '#0c1017', border: '1px solid #1e293b', borderRadius: '20px', padding: '44px 32px', textAlign: 'center', color: '#ffffff', boxShadow: '0 20px 50px rgba(0, 0, 0, 0.12)' }}>
           <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#ffffff', marginBottom: '12px' }}>
             Want us to audit your Meta ad account &amp; Shopify conversion rate?
           </h2>

@@ -547,7 +547,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
           </section>
 
           {/* High-Impact Bottom Consultation Banner */}
-          <div style={{ background: '#0c1017', border: '1px solid #1e293b', borderRadius: '22px', padding: '48px 36px', textAlign: 'center', marginTop: '60px', color: '#ffffff', boxShadow: '0 20px 50px rgba(0, 0, 0, 0.14)' }}>
+          <div className="blog-dark-cta-card" style={{ background: '#0c1017', border: '1px solid #1e293b', borderRadius: '22px', padding: '48px 36px', textAlign: 'center', marginTop: '60px', color: '#ffffff', boxShadow: '0 20px 50px rgba(0, 0, 0, 0.14)' }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#ff5722', fontSize: '13px', fontWeight: 800, marginBottom: '14px', background: 'rgba(255, 87, 34, 0.12)', padding: '5px 16px', borderRadius: '999px', border: '1px solid rgba(255, 87, 34, 0.3)' }}>
               <Sparkles size={15} /> Partner With Brand Scaling
             </div>

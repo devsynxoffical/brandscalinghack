@@ -11102,7 +11102,7 @@ button {
 .blog-light-theme h2,
 .blog-light-theme h3,
 .blog-light-theme h4 {
-  color: #0f172a !important;
+  color: #0f172a;
   letter-spacing: -0.025em;
 }
 
@@ -11438,13 +11438,25 @@ button {
 
 /* Sidebar Quick Audit CTA Card */
 .blog-sidebar-audit-card {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+  border: 1px solid #334155 !important;
   border-radius: 16px;
   padding: 22px;
-  color: #ffffff;
+  color: #ffffff !important;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
   position: relative;
   overflow: hidden;
+}
+
+.blog-sidebar-audit-card h4,
+.blog-sidebar-audit-card h3,
+.blog-sidebar-audit-card h2 {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blog-sidebar-audit-card p {
+  color: #94a3b8 !important;
 }
 
 .blog-sidebar-audit-card::after {
@@ -11457,6 +11469,28 @@ button {
   background: radial-gradient(circle, rgba(255, 87, 34, 0.3) 0%, transparent 70%);
   border-radius: 50%;
   pointer-events: none;
+}
+
+/* Dark Bottom Consultation Banner */
+.blog-dark-cta-card {
+  background: #0c1017 !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 22px;
+  padding: 48px 36px;
+  text-align: center;
+  color: #ffffff !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.14);
+}
+
+.blog-dark-cta-card h2,
+.blog-dark-cta-card h3,
+.blog-dark-cta-card h4 {
+  color: #ffffff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.blog-dark-cta-card p {
+  color: #94a3b8 !important;
 }
 
 /* 6. Section Architectural Cards */
