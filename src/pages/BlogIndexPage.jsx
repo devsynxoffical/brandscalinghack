@@ -72,7 +72,7 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
               <a
                 href={`/blog/${filteredPosts[0].slug}`}
                 onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`blog-${filteredPosts[0].slug}`); }}
-                style={{ color: '#ffffff', textDecoration: 'none' }}
+                className="blog-featured-title-link"
               >
                 {filteredPosts[0].title}
               </a>
@@ -90,7 +90,8 @@ export default function BlogIndexPage({ onNavigate, onOpenBooking }) {
               <a
                 href={`/blog/${filteredPosts[0].slug}`}
                 onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`blog-${filteredPosts[0].slug}`); }}
-                style={{ marginLeft: 'auto', display: 'inline-flex', alignItems: 'center', gap: '8px', color: '#ff5722', fontWeight: 700, textDecoration: 'none' }}
+                className="blog-read-more-link"
+                style={{ marginLeft: 'auto' }}
               >
                 Read Full Playbook <ArrowRight size={16} />
               </a>

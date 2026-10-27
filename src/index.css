@@ -10879,6 +10879,216 @@ button {
   }
 }
 
+/* ==========================================================================
+   BLOG POST & TABLE OF CONTENTS ENHANCED HOVER EFFECTS
+   ========================================================================== */
+.blog-toc-box {
+  background: #111116;
+  border: 1px solid #1f1f28;
+  border-radius: 14px;
+  padding: 24px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-toc-box:hover {
+  border-color: rgba(255, 87, 34, 0.28);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 87, 34, 0.06);
+}
+
+.blog-toc-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ff5722 0%, #ff8a65 60%, rgba(255, 87, 34, 0.1) 100%);
+  border-radius: 4px 0 0 4px;
+}
+
+.blog-toc-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-toc-title-icon {
+  color: #ff5722;
+  display: inline-flex;
+  align-items: center;
+}
+
+.blog-toc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.blog-toc-item {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-toc-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #94a3b8;
+  font-size: 14.5px;
+  line-height: 1.5;
+  text-decoration: none;
+  padding: 9px 14px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+.blog-toc-number {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #64748b;
+  min-width: 22px;
+  transition: color 0.24s ease, transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.blog-toc-text {
+  flex-grow: 1;
+  color: #94a3b8;
+  transition: color 0.24s ease, transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.blog-toc-arrow {
+  opacity: 0;
+  transform: translateX(-8px);
+  color: #ff5722;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.24s ease, transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover State on TOC Link */
+.blog-toc-link:hover {
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(255, 87, 34, 0.12) 0%, rgba(255, 87, 34, 0.03) 100%);
+  border-color: rgba(255, 87, 34, 0.3);
+  box-shadow: 0 4px 18px rgba(255, 87, 34, 0.12), inset 0 0 14px rgba(255, 87, 34, 0.05);
+  transform: translateX(6px);
+}
+
+.blog-toc-link:hover .blog-toc-number {
+  color: #ff5722;
+  transform: scale(1.1);
+  font-weight: 800;
+}
+
+.blog-toc-link:hover .blog-toc-text {
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 0 14px rgba(255, 87, 34, 0.35);
+}
+
+.blog-toc-link:hover .blog-toc-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Active / Pressed State */
+.blog-toc-link:active {
+  transform: translateX(3px) scale(0.99);
+}
+
+/* Article smooth anchor jump offset */
+.blog-article-section {
+  scroll-margin-top: 110px;
+}
+
+/* Breadcrumb Links */
+.blog-breadcrumb-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.blog-breadcrumb-link:hover {
+  color: #ff5722;
+  text-shadow: 0 0 8px rgba(255, 87, 34, 0.35);
+}
+
+/* Author Box Links */
+.blog-author-social-link {
+  color: #94a3b8;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.22s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog-author-social-link:hover {
+  color: #ffffff;
+  border-color: rgba(255, 87, 34, 0.4);
+  background: rgba(255, 87, 34, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.2);
+}
+
+/* Blog Index Links & Interactive Cards */
+.blog-featured-title-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.blog-featured-title-link:hover {
+  color: #ff5722;
+  text-shadow: 0 0 16px rgba(255, 87, 34, 0.4);
+}
+
+.blog-read-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ff5722;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.blog-read-more-link:hover {
+  color: #ff8a65;
+  transform: translateX(4px);
+  text-shadow: 0 0 10px rgba(255, 87, 34, 0.4);
+}
+
+.blog-read-more-link svg {
+  transition: transform 0.25s ease;
+}
+
+.blog-read-more-link:hover svg {
+  transform: translateX(4px);
+}
+
 
 
 

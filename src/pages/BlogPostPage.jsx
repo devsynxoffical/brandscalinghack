@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { blogPosts } from '../data/blogPosts';
-import { ArrowLeft, Calendar, Clock, CheckCircle2, ChevronDown, ChevronUp, Share2, Sparkles, ExternalLink, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Calendar, Clock, CheckCircle2, ChevronDown, ChevronUp, ChevronRight, Share2, Sparkles, ExternalLink, ArrowRight, ListOrdered } from 'lucide-react';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
 function cleanBlogText(text) {
@@ -118,14 +118,14 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
         
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: '#94a3b8', marginBottom: '24px' }}>
-          <a href="/" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }} style={{ color: '#94a3b8', textDecoration: 'none' }}>
+          <a href="/" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('home'); }} className="blog-breadcrumb-link">
             Home
           </a>
-          <span>/</span>
-          <a href="/blog" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }} style={{ color: '#94a3b8', textDecoration: 'none' }}>
+          <span style={{ color: '#475569' }}>/</span>
+          <a href="/blog" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }} className="blog-breadcrumb-link">
             Blog
           </a>
-          <span>/</span>
+          <span style={{ color: '#475569' }}>/</span>
           <span style={{ color: '#ff5722', fontWeight: 600 }}>{post.category}</span>
         </nav>
 
@@ -164,11 +164,11 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             </p>
           </div>
           <div style={{ display: 'flex', gap: '10px' }}>
-            <a href={post.author.youtubeUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', fontSize: '12px', textDecoration: 'none' }} title="YouTube">
-              YouTube
+            <a href={post.author.youtubeUrl} target="_blank" rel="noopener noreferrer" className="blog-author-social-link" title="YouTube">
+              YouTube <ExternalLink size={11} />
             </a>
-            <a href={post.author.linkedinUrl} target="_blank" rel="noopener noreferrer" style={{ color: '#94a3b8', fontSize: '12px', textDecoration: 'none' }} title="LinkedIn">
-              LinkedIn
+            <a href={post.author.linkedinUrl} target="_blank" rel="noopener noreferrer" className="blog-author-social-link" title="LinkedIn">
+              LinkedIn <ExternalLink size={11} />
             </a>
           </div>
         </div>
@@ -195,15 +195,33 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
 
         {/* Table of Contents Box */}
         {post.tableOfContents && (
-          <div style={{ background: '#111116', border: '1px solid #1f1f28', borderRadius: '14px', padding: '24px', marginBottom: '40px' }}>
-            <h2 style={{ fontSize: '16px', fontWeight: 700, color: '#ffffff', margin: '0 0 14px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <div className="blog-toc-box">
+            <h2 className="blog-toc-title">
+              <span className="blog-toc-title-icon">
+                <ListOrdered size={17} />
+              </span>
               Table of Contents
             </h2>
-            <ol style={{ margin: 0, paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {post.tableOfContents.map((item) => (
-                <li key={item.id}>
-                  <a href={`#${item.id}`} style={{ color: '#94a3b8', fontSize: '14px', textDecoration: 'none', transition: 'color 0.2s' }}>
-                    {item.text}
+            <ol className="blog-toc-list">
+              {post.tableOfContents.map((item, index) => (
+                <li key={item.id} className="blog-toc-item">
+                  <a
+                    href={`#${item.id}`}
+                    className="blog-toc-link"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const targetEl = document.getElementById(item.id);
+                      if (targetEl) {
+                        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        window.history.pushState(null, '', `#${item.id}`);
+                      }
+                    }}
+                  >
+                    <span className="blog-toc-number">{index + 1}.</span>
+                    <span className="blog-toc-text">{item.text}</span>
+                    <span className="blog-toc-arrow">
+                      <ChevronRight size={15} />
+                    </span>
                   </a>
                 </li>
               ))}
@@ -213,7 +231,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
 
         {/* Main Article Sections */}
         {post.sections && post.sections.map((section, idx) => (
-          <section key={section.id} id={section.id} style={{ marginBottom: '44px' }}>
+          <section key={section.id} id={section.id} className="blog-article-section" style={{ marginBottom: '44px' }}>
             <h2 style={{ fontSize: '26px', fontWeight: 800, color: '#ffffff', marginBottom: '16px', lineHeight: 1.3 }}>
               {section.h2}
             </h2>
