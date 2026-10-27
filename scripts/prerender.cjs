@@ -169,6 +169,51 @@ const routes = [
     `
   },
   {
+    path: '/blog/performance-marketing-agency',
+    outPath: 'blog/performance-marketing-agency/index.html',
+    title: 'Performance Marketing Agency for Ecommerce | Brand Scaling',
+    description: 'What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta & TikTok ads, CRO, creative testing, and measurable ROAS.',
+    h1: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
+    content: `
+      <p><strong>Direct Answer:</strong> A performance marketing agency is a growth firm that drives direct, trackable commercial outcomes — verified revenue, ROAS, customer acquisition, and qualified leads — rather than abstract vanity metrics like impressions or follower counts. In modern DTC ecommerce, high-tier performance agencies combine algorithmic media buying across Meta and TikTok with in-house direct-response creative production and Shopify conversion rate optimization.</p>
+      <h2>What Does a Performance Marketing Agency Actually Do?</h2>
+      <p>Every dollar invested into paid ad channels (Meta, TikTok, Google Search, and YouTube) is mapped directly to conversions, customer acquisition cost (CAC), and net contribution margin. Modern performance marketing integrates direct-response video creative engineering, algorithmic media buying (broad Advantage+ setups), and full-funnel Shopify conversion optimization.</p>
+      <h2>The 4 Pillars of Modern DTC Performance Marketing</h2>
+      <ol>
+        <li>High-Converting Direct Response Video Creatives &amp; UGC</li>
+        <li>Full-Funnel Shopify Conversion Rate Optimization (CRO)</li>
+        <li>Server-Side Data Tracking &amp; Conversions API (CAPI)</li>
+        <li>Mathematical Unit Economics &amp; Margin Protection</li>
+      </ol>
+      <h2>Key Metrics: Beyond Vanity ROAS</h2>
+      <p>A true performance agency tracks blended MER (Marketing Efficiency Ratio), new customer CAC, and net contribution dollars after COGS, merchant fees, and ad spend.</p>
+      <p><a href="/blog">Browse all ecommerce playbooks</a> | <a href="/case-studies">Explore 150+ verified case studies</a></p>
+    `
+  },
+  {
+    path: '/blog/what-is-roas',
+    outPath: 'blog/what-is-roas/index.html',
+    title: 'What Is ROAS? Formula, Benchmarks & Calculator | Brand Scaling',
+    description: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
+    h1: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
+    content: `
+      <p><strong>Direct Answer:</strong> ROAS stands for Return On Ad Spend. It is calculated by dividing total attributed revenue from an advertising campaign by total ad spend (ROAS = Revenue / Ad Spend). A 4.0x ROAS means your business generates $4 in revenue for every $1 spent on ads. A good ROAS depends on your gross margin: stores with 60% margins break even at 1.67x ROAS, while stores with 40% margins need 2.5x ROAS just to break even.</p>
+      <h2>The ROAS Formula</h2>
+      <p>ROAS = Attributed Revenue / Total Ad Spend</p>
+      <h2>Break-Even ROAS Formula</h2>
+      <p>Break-Even ROAS = 1 / Gross Margin %</p>
+      <h2>Industry Benchmarks</h2>
+      <ul>
+        <li>Beauty &amp; Skincare: 3.4x to 5.2x ROAS</li>
+        <li>Fashion &amp; Apparel: 2.8x to 4.2x ROAS</li>
+        <li>Health &amp; Supplements: 3.2x to 4.8x ROAS</li>
+        <li>Home &amp; Kitchen: 2.9x to 4.1x ROAS</li>
+        <li>High-Ticket Services: 4.5x to 7.0x+ ROAS</li>
+      </ul>
+      <p>Use our <a href="/roas-calculator">Free Interactive ROAS Calculator</a> to calculate your exact break-even metrics.</p>
+    `
+  },
+  {
     path: '/privacy-policy',
     outPath: 'privacy-policy/index.html',
     title: 'Privacy Policy | Brand Scaling',
@@ -239,15 +284,24 @@ routes.forEach((route) => {
   html = html.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${route.title}" />`);
   html = html.replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${route.description}" />`);
 
-  // Inject Static Semantic Prerender Content inside #root for bots & crawlers before React mounts
+  // Inject Static Semantic Prerender Content for bots & crawlers with sleek loader for human visitors
   const prerenderedBody = `
-    <div className="prerendered-route-view">
+    <!-- Sleek Minimalist Brand Loader shown only during initial bundle load -->
+    <div style="min-height: 100vh; background: #07090e; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+      <div style="position: relative; width: 68px; height: 68px; display: flex; align-items: center; justify-content: center; margin-bottom: 22px;">
+        <div style="position: absolute; inset: 0; border: 2.5px solid rgba(255, 87, 34, 0.15); border-top-color: #ff5722; border-radius: 50%; animation: bshSpin 0.85s linear infinite;"></div>
+        <img src="/brandscaling-logo.svg" alt="Brand Scaling" style="width: 36px; height: 36px; object-fit: contain;" />
+      </div>
+      <style>@keyframes bshSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+    </div>
+    <!-- Semantic SEO content for crawlers & indexers, accessible to search engines and replaced upon React mount -->
+    <div class="prerendered-route-view" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">
       <h1>${route.h1}</h1>
       <div>${route.content}</div>
     </div>
   `;
 
-  html = html.replace('<div id="root"></div>', `<div id="root">${prerenderedBody}</div>`);
+  html = html.replace('<div id="root"></div>', `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><h1>${route.h1}</h1><div>${route.content}</div></div></noscript>`);
 
   fs.writeFileSync(fullOutPath, html, 'utf8');
   generatedCount++;

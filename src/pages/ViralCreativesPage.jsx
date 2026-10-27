@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { 
   Play, 
   Volume2, 
@@ -119,6 +119,49 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [unmutedVideoId, setUnmutedVideoId] = useState(null);
   const [modalVideo, setModalVideo] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const schemaId = 'viral-creatives-schema';
+    let script = document.getElementById(schemaId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = schemaId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://www.brandscalinghacks.com/viral-creatives#webpage",
+          "url": "https://www.brandscalinghacks.com/viral-creatives",
+          "name": "High-Converting Direct-Response Video Creatives & UGC | Brand Scaling",
+          "description": "Vault of 58+ live direct-response video ads, UGC hooks, and high-ROAS creative angles deployed across 13+ industry verticals.",
+          "isPartOf": {
+            "@id": "https://www.brandscalinghacks.com/#website"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Viral Creatives", "item": "https://www.brandscalinghacks.com/viral-creatives" }
+          ]
+        }
+      ]
+    };
+
+    script.textContent = JSON.stringify(schemaData);
+
+    return () => {
+      const el = document.getElementById(schemaId);
+      if (el) el.remove();
+    };
+  }, []);
 
   // Filter videos based on category and search query
   const filteredVideos = useMemo(() => {

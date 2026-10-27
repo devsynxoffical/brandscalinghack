@@ -47,8 +47,16 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               <a className="st-footer-link" href="/shopify-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('shopify-agency'); }}>Shopify Agency</a>
               <a className="st-footer-link" href="/viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
               <a className="st-footer-link" href="/roas-calculator" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('roas-calculator'); }}>ROAS Calculator</a>
-              <a className="st-footer-link" href="/blog" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }}>Blog</a>
               <a className="st-footer-link" href="/about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
+            </div>
+
+            {/* Guides & Playbooks */}
+            <div className="st-footer-group">
+              <h3 className="st-footer-heading">Guides</h3>
+              <a className="st-footer-link" href="/blog/performance-marketing-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-performance-marketing-agency'); }}>Performance Marketing</a>
+              <a className="st-footer-link" href="/blog/what-is-roas" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-what-is-roas'); }}>What Is ROAS?</a>
+              <a className="st-footer-link" href="/blog/bfcm-meta-ads-playbook" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-bfcm-meta-ads-playbook'); }}>BFCM Meta Playbook</a>
+              <a className="st-footer-link" href="/blog" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }}>All Scaling Playbooks</a>
             </div>
 
             {/* Find Us */}

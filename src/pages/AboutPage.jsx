@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import GauravAboutHero from '../components/GauravAboutHero';
 import AboutJourney from '../components/AboutJourney';
 import TeamCurvedSection from '../components/TeamCurvedSection';
@@ -23,6 +23,83 @@ import {
 
 export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
   const [openFaq, setOpenFaq] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const schemaId = 'about-page-schema';
+    let script = document.getElementById(schemaId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = schemaId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.brandscalinghacks.com/about#webpage",
+          "url": "https://www.brandscalinghacks.com/about",
+          "name": "About Brand Scaling and Founder Gaurav Kapoor",
+          "description": "Learn about Gaurav Kapoor and Brand Scaling. Over $50M in managed ad spend and 150+ brands scaled past 7 and 8 figures.",
+          "isPartOf": {
+            "@id": "https://www.brandscalinghacks.com/#website"
+          },
+          "about": {
+            "@id": "https://www.brandscalinghacks.com/about#gaurav-kapoor"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.brandscalinghacks.com/about#gaurav-kapoor",
+          "name": "Gaurav Kapoor",
+          "alternateName": ["Gaurav Ecom", "Gaurav"],
+          "jobTitle": "Founder & Chief Growth Architect",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Brand Scaling Hacks LLC",
+            "url": "https://www.brandscalinghacks.com/"
+          },
+          "url": "https://www.brandscalinghacks.com/about",
+          "image": "https://www.brandscalinghacks.com/team/gaurav.webp",
+          "description": "Ecommerce and customer acquisition expert with 12+ years of experience and $50M+ in Meta and TikTok ad spend managed for DTC brands.",
+          "knowsAbout": [
+            "Performance Marketing",
+            "Meta Ads",
+            "TikTok Ads",
+            "Direct Response Marketing",
+            "Shopify CRO",
+            "DTC Ecommerce Growth",
+            "ROAS Optimization"
+          ],
+          "sameAs": [
+            "https://www.youtube.com/@gauravecom",
+            "https://www.instagram.com/gauravecomm/",
+            "https://www.linkedin.com/in/gauravecom/",
+            "https://x.com/gauravecomm",
+            "https://www.facebook.com/gaurav.kapoor.3994"
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
+            { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.brandscalinghacks.com/about" }
+          ]
+        }
+      ]
+    };
+
+    script.textContent = JSON.stringify(schemaData);
+
+    return () => {
+      const el = document.getElementById(schemaId);
+      if (el) el.remove();
+    };
+  }, []);
 
   const milestones = [
     { 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Target, 
   ShoppingBag, 
@@ -26,6 +26,62 @@ import {
 
 export default function GrowthPage({ onOpenBooking }) {
   const [hoveredChainCard, setHoveredChainCard] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const schemaId = 'growth-page-schema';
+    let script = document.getElementById(schemaId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = schemaId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+
+    const schemaData = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "@id": "https://www.brandscalinghacks.com/growth#service",
+          "name": "Ecommerce Growth Agency: Meta, TikTok, CRO & Scale Systems",
+          "serviceType": "Performance Marketing & Ecommerce Scaling",
+          "provider": {
+            "@id": "https://www.brandscalinghacks.com/#organization"
+          },
+          "areaServed": ["US", "GB", "CA", "AU"],
+          "description": "Full-funnel ecommerce growth engine: Meta and TikTok ads, high-converting video creative, Shopify CRO, TikTok Shop scaling, and retention.",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "DTC Growth Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Meta Ads Campaign Architecture & Scaling" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "TikTok Shop & Creator Affiliate Scaling" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Direct-Response Video UGC Production" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Shopify CRO & High-AOV Offer Funnels" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads & Performance Max (PMax)" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klaviyo Email & SMS Lifecycle Retention" } }
+            ]
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Growth Engine", "item": "https://www.brandscalinghacks.com/growth" }
+          ]
+        }
+      ]
+    };
+
+    script.textContent = JSON.stringify(schemaData);
+
+    return () => {
+      const el = document.getElementById(schemaId);
+      if (el) el.remove();
+    };
+  }, []);
 
   // The 7 Full Growth Services
   const pillars = [

@@ -4,6 +4,17 @@ import { ArrowRight, BookOpen, Clock, Sparkles, TrendingUp, Video } from 'lucide
 export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
   const articles = [
     {
+      slug: 'performance-marketing-agency',
+      badge: 'Pillar Blueprint',
+      badgeColor: '#ff5722',
+      title: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
+      snippet: 'Learn how elite DTC agencies scale Shopify brands with Meta & TikTok ads, high-converting creative testing, and measurable unit economics.',
+      readTime: '12 min read',
+      category: 'Agency Blueprint',
+      route: 'blog-performance-marketing-agency',
+      url: '/blog/performance-marketing-agency'
+    },
+    {
       slug: 'bfcm-meta-ads-playbook',
       badge: 'Active Q4 Playbook',
       badgeColor: '#ef4444',
@@ -15,6 +26,17 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
       url: '/blog/bfcm-meta-ads-playbook'
     },
     {
+      slug: 'what-is-roas',
+      badge: 'Unit Economics',
+      badgeColor: '#fbbf24',
+      title: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator',
+      snippet: 'Master the ROAS formula, gross margin break-even thresholds, healthy industry benchmarks (3x to 5x), and how to protect contribution profit.',
+      readTime: '9 min read',
+      category: 'Metrics & Profit',
+      route: 'blog-what-is-roas',
+      url: '/blog/what-is-roas'
+    },
+    {
       slug: 'viral-creatives-guide',
       badge: 'Creative Engine',
       badgeColor: '#38bdf8',
@@ -24,17 +46,6 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
       category: 'Creative Production',
       route: 'viral-creatives',
       url: '/viral-creatives'
-    },
-    {
-      slug: 'roas-calculator-guide',
-      badge: 'Unit Economics',
-      badgeColor: '#fbbf24',
-      title: 'Interactive Break Even ROAS & Profit Margin Calculator',
-      snippet: 'Calculate your exact break even ROAS and net profit per order factoring COGS, shipping, and blended ad spend before scaling budget.',
-      readTime: 'Interactive Tool',
-      category: 'Profit Modeling',
-      route: 'roas-calculator',
-      url: '/roas-calculator'
     }
   ];
 
