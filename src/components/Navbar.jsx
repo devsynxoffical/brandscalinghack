@@ -59,6 +59,13 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           >
             Shopify Agency
           </a>
+          <a
+            href="/meta-ads-agency"
+            className={`header-text-link ${activePage === 'meta-ads-agency' ? 'active' : ''}`}
+            onClick={(e) => handleNavClick('meta-ads-agency', e)}
+          >
+            Meta Ads
+          </a>
         </div>
 
         {/* Center BrandScaling Luxury Logo */}
@@ -119,6 +126,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           <a href="/case-studies" onClick={(e) => handleNavClick('case-studies', e)}>Case Studies</a>
           <a href="/growth" onClick={(e) => handleNavClick('growth', e)}>Growth Engine</a>
           <a href="/shopify-agency" onClick={(e) => handleNavClick('shopify-agency', e)}>Shopify Agency</a>
+          <a href="/meta-ads-agency" onClick={(e) => handleNavClick('meta-ads-agency', e)}>Meta Ads Agency</a>
           <a href="/viral-creatives" onClick={(e) => handleNavClick('viral-creatives', e)}>Viral Creatives</a>
           <a href="/roas-calculator" onClick={(e) => handleNavClick('roas-calculator', e)}>ROAS Calculator</a>
           <a href="/blog" onClick={(e) => handleNavClick('blog', e)}>Blog</a>

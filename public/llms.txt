@@ -5,6 +5,7 @@
 Brand Scaling works with DTC and ecommerce brands doing about $20K to $2M+ per month in revenue with product-market fit, typically spending at least $10,000 to $20,000 per month on paid ads. Engagements start with a Brand Growth Audit: a 1-on-1 diagnostic of Meta ad accounts, creative performance, conversion bottlenecks and unit economics.
 
 ## Services
+- [Meta ads agency for ecommerce](https://www.brandscalinghacks.com/meta-ads-agency): Facebook and Instagram media buying, creative testing, Advantage+ scaling and Conversions API tracking, $50M+ managed spend
 - [Ecommerce growth agency](https://www.brandscalinghacks.com/growth): Meta, TikTok and Google media buying, creative, Shopify CRO and retention as one system
 - [Performance marketing agency for ecommerce](https://www.brandscalinghacks.com/): overview, results and process (Foundation, Test, Optimize, Scale)
 - [Shopify agency](https://www.brandscalinghacks.com/shopify-agency): store builds, product page optimization, offers, checkout and CRO testing
@@ -21,14 +22,6 @@ Brand Scaling works with DTC and ecommerce brands doing about $20K to $2M+ per m
 - [Performance Marketing Agency: DTC Growth Blueprint & ROAS Framework](https://www.brandscalinghacks.com/blog/performance-marketing-agency)
 - [BFCM 2026: The Meta Ads Playbook for Shopify Brands](https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook)
 - [What Is ROAS? Formula, Benchmarks & Calculator](https://www.brandscalinghacks.com/blog/what-is-roas)
-- [Meta Ads Library: How to Find Winning Ecommerce Ads](https://www.brandscalinghacks.com/blog/meta-ads-library)
-- [Meta Andromeda Explained](https://www.brandscalinghacks.com/blog/meta-andromeda)
-- [Facebook Ads for Shopify: The 2026 Setup](https://www.brandscalinghacks.com/blog/facebook-ads-for-shopify)
-- [Meta Ads for Ecommerce: The Complete 2026 Guide](https://www.brandscalinghacks.com/blog/meta-ads)
-- [LTV:CAC for DTC Brands](https://www.brandscalinghacks.com/blog/ltv-cac)
-- [MER vs ROAS](https://www.brandscalinghacks.com/blog/marketing-efficiency-ratio)
-- [Shopify Store Optimization: 15 Fixes](https://www.brandscalinghacks.com/blog/shopify-store-optimization)
-- [DTC Brands: 20 Brands Scaling With Meta Ads](https://www.brandscalinghacks.com/blog/dtc-brands)
 
 ## About
 - [About Brand Scaling and Gaurav Kapoor](https://www.brandscalinghacks.com/about)

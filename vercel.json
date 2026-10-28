@@ -1,8 +1,25 @@
 {
-  "rewrites": [
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/facebook-ads-agency", "destination": "/meta-ads-agency", "permanent": true },
+    { "source": "/viral-products", "destination": "/roas-calculator", "permanent": true },
+    { "source": "/cases", "destination": "/case-studies", "permanent": true },
+    { "source": "/cases/studies", "destination": "/case-studies", "permanent": true },
+    { "source": "/case", "destination": "/case-studies", "permanent": true },
+    { "source": "/case/:id", "destination": "/cases/:id", "permanent": true }
+  ],
+  "headers": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     }
   ]
 }

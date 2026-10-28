@@ -77,6 +77,39 @@ const routes = [
     `
   },
   {
+    path: '/meta-ads-agency',
+    outPath: 'meta-ads-agency/index.html',
+    title: 'Meta Ads Agency for Ecommerce Brands | Brand Scaling',
+    description: 'Meta ads agency for DTC ecommerce: $50M+ Facebook and Instagram ad spend managed, creative testing, Advantage+ scaling and CAPI tracking. Book an audit.',
+    h1: 'Meta Ads Agency for Ecommerce Brands That Need Profitable Scale',
+    content: `
+      <p>Facebook and Instagram ads run as one system with the creative, the tracking and the Shopify store. $50M+ in Meta ad spend managed across 30+ niches, with 150+ verified case studies from real ad accounts.</p>
+      <h2>What a Meta Ads Agency Does for an Ecommerce Brand</h2>
+      <p>A Meta ads agency plans, builds and runs Facebook and Instagram campaigns that are judged on revenue, cost per acquisition and ROAS, not impressions. Brand Scaling also produces the direct-response creative, validates Conversions API tracking against Shopify orders and fixes the product page the ads land on.</p>
+      <h2>Three Pillars: Creative Testing, Advantage+ Structure, Tracking</h2>
+      <ul>
+        <li>Creative Testing Engine: 30 to 50+ direct-response angles a month on a 45+ hook and angle matrix.</li>
+        <li>Advantage+ Account Structure: consolidated campaigns, broad targeting and cost controls.</li>
+        <li>Tracking and Unit Economics: Conversions API validated weekly, blended MER and new-customer CAC reporting.</li>
+      </ul>
+      <h2>Meta Ads Results From Real Client Accounts</h2>
+      <ul>
+        <li>$2.3M in sales at 11.6x ROAS on $200K ad spend</li>
+        <li>$1.6M on $140K ad spend at 11.98x ROAS</li>
+        <li>$146,184 in 27 days on $40.1K spend for a skincare brand, 3.64x ROAS</li>
+        <li>€118,000 in the first month for a UK skincare brand</li>
+      </ul>
+      <h2>How We Scale a Meta Ads Account in 90 Days</h2>
+      <ol>
+        <li>Foundation (days 1 to 14): tracking audit, CAPI fix, offer and margin review, first creative batch.</li>
+        <li>Test (days 15 to 45): weekly UGC drops, hook and angle matrix, Advantage+ audience tests.</li>
+        <li>Optimize (days 45 to 90): conversion rate, AOV and ROAS tuned together.</li>
+        <li>Scale (day 90 onward): 20% to 30% budget steps, cost caps, 40+ new assets a month.</li>
+      </ol>
+      <p><a href="/growth">Ecommerce growth agency</a> | <a href="/viral-creatives">Direct-response creatives</a> | <a href="/shopify-agency">Shopify agency</a> | <a href="/roas-calculator">Free ROAS calculator</a> | <a href="/case-studies">150+ case studies</a></p>
+    `
+  },
+  {
     path: '/case-studies',
     outPath: 'case-studies/index.html',
     title: 'Ecommerce Case Studies: Meta Ads Results | Brand Scaling',
@@ -96,7 +129,7 @@ const routes = [
   {
     path: '/viral-creatives',
     outPath: 'viral-creatives/index.html',
-    title: 'High-Converting Direct-Response Video Creatives & UGC | Brand Scaling',
+    title: 'Direct-Response Video Creatives & UGC Ads | Brand Scaling',
     description: 'Plug-and-play creative systems designed to lower CPA and unlock $10k-$50k/day spend. Direct-response UGC, 3D motion, founder hooks, and iterative testing.',
     h1: 'Direct-Response Video Creatives and High-Converting UGC',
     content: `
@@ -147,9 +180,8 @@ const routes = [
       <p>Field-tested growth insights, algorithmic teardowns, and unit economics benchmarks from managing $50M+ in ad spend.</p>
       <h2>Featured Playbooks &amp; Articles</h2>
       <ul>
+        <li><a href="/blog/performance-marketing-agency">What Is a Performance Marketing Agency? DTC Growth Blueprint</a></li>
         <li><a href="/blog/bfcm-meta-ads-playbook">BFCM 2026: The Meta Ads Playbook for Shopify Brands</a></li>
-        <li><a href="/blog/meta-ads-library">Meta Ads Library: How to Find Winning Ecommerce Ads</a></li>
-        <li><a href="/blog/meta-andromeda">Meta Andromeda Explained: What Changed for Ecommerce Ads</a></li>
         <li><a href="/blog/what-is-roas">What Is ROAS? Good ROAS by Industry and How to Calculate It</a></li>
       </ul>
     `
@@ -240,6 +272,7 @@ const routes = [
   {
     path: '/404',
     outPath: '404.html',
+    noindex: true,
     title: 'Page Not Found (404) | Brand Scaling',
     description: 'The requested page was not found. Browse verified DTC case studies or calculate your break-even ROAS.',
     h1: '404 — Page Not Found',
@@ -255,9 +288,43 @@ const routes = [
   }
 ];
 
+const escapeHtml = (s) => String(s || '')
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+// Case study pages: one prerendered HTML file per /cases/<id> so each has its own
+// title, description, canonical and crawlable text instead of the home shell.
+async function buildCaseRoutes() {
+  const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
+  const { cleanSeoText, caseStudyDescription } = await import('../src/data/seoText.js');
+  return allCaseStudies.map((cs) => {
+    const id = cs.slug || cs.id || cs.shortcode;
+    const cleanTitle = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
+    const titleTag = `${cleanSeoText(cleanTitle, 52)} | Brand Scaling`;
+    const description = caseStudyDescription(cs);
+    const metrics = Array.isArray(cs.metrics) ? cs.metrics : [];
+    const points = Array.isArray(cs.growthPoints) ? cs.growthPoints : [];
+    const caption = String(cs.fullCaption || '').split('\n').map((l) => cleanSeoText(l)).filter(Boolean).slice(0, 12);
+    return {
+      path: `/cases/${id}`,
+      outPath: `cases/${id}/index.html`,
+      title: escapeHtml(titleTag),
+      description: escapeHtml(description),
+      h1: escapeHtml(cleanTitle),
+      ogImage: cs.image ? `https://www.brandscalinghacks.com${cs.image}` : null,
+      content: `
+        <p>${escapeHtml(cs.niche || cs.category || 'DTC ecommerce')} case study: ${escapeHtml(cs.revenue || '')} ${cs.roas ? 'at ' + escapeHtml(cs.roas) : ''}. ${escapeHtml(cs.system || '')}</p>
+        ${metrics.length ? `<h2>Key Metrics</h2><ul>${metrics.map((m) => `<li>${escapeHtml(m.label)}: ${escapeHtml(m.value)}</li>`).join('')}</ul>` : ''}
+        ${points.length ? `<h2>What We Did</h2><ul>${points.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
+        ${caption.length ? `<h2>Full Breakdown</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
+        <p><a href="/case-studies">All 150+ case studies</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a></p>
+      `
+    };
+  });
+}
+
 let generatedCount = 0;
 
-routes.forEach((route) => {
+function renderRoute(route) {
   const fullOutPath = path.join(distDir, route.outPath);
   const outDir = path.dirname(fullOutPath);
   if (!fs.existsSync(outDir)) {
@@ -267,22 +334,38 @@ routes.forEach((route) => {
   let html = baseHtml;
 
   // Replace Title
-  html = html.replace(/<title>.*?<\/title>/, `<title>${route.title}</title>`);
-  html = html.replace(/<meta name="title" content=".*?" \/>/, `<meta name="title" content="${route.title}" />`);
+  html = html.replace(/<title>.*?<\/title>/, () => `<title>${route.title}</title>`);
+  html = html.replace(/<meta name="title" content=".*?" \/>/, () => `<meta name="title" content="${route.title}" />`);
 
   // Replace Meta Description
-  html = html.replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${route.description}" />`);
+  html = html.replace(/<meta name="description" content=".*?" \/>/, () => `<meta name="description" content="${route.description}" />`);
 
   // Replace Canonical Link
   const canonicalUrl = `https://www.brandscalinghacks.com${route.path === '/' ? '/' : route.path}`;
-  html = html.replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
+  html = html.replace(/<link rel="canonical" href=".*?" \/>/, () => `<link rel="canonical" href="${canonicalUrl}" />`);
 
   // Replace Open Graph & Twitter
-  html = html.replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${route.title}" />`);
-  html = html.replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${route.description}" />`);
-  html = html.replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${canonicalUrl}" />`);
-  html = html.replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${route.title}" />`);
-  html = html.replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${route.description}" />`);
+  html = html.replace(/<meta property="og:title" content=".*?" \/>/, () => `<meta property="og:title" content="${route.title}" />`);
+  html = html.replace(/<meta property="og:description" content=".*?" \/>/, () => `<meta property="og:description" content="${route.description}" />`);
+  html = html.replace(/<meta property="og:url" content=".*?" \/>/, () => `<meta property="og:url" content="${canonicalUrl}" />`);
+  html = html.replace(/<meta name="twitter:title" content=".*?" \/>/, () => `<meta name="twitter:title" content="${route.title}" />`);
+  html = html.replace(/<meta name="twitter:description" content=".*?" \/>/, () => `<meta name="twitter:description" content="${route.description}" />`);
+  html = html.replace(/<meta name="twitter:url" content=".*?" \/>/, () => `<meta name="twitter:url" content="${canonicalUrl}" />`);
+
+  // Per-route social image (case studies use their own proof image)
+  if (route.ogImage) {
+    html = html.replace(/<meta property="og:image" content=".*?" \/>/, () => `<meta property="og:image" content="${route.ogImage}" />`);
+    html = html.replace(/<meta property="og:image:secure_url" content=".*?" \/>/, () => `<meta property="og:image:secure_url" content="${route.ogImage}" />`);
+    html = html.replace(/<meta name="twitter:image" content=".*?" \/>/, () => `<meta name="twitter:image" content="${route.ogImage}" />`);
+    html = html.replace(/<meta property="og:image:width" content=".*?" \/>\s*/, () => '');
+    html = html.replace(/<meta property="og:image:height" content=".*?" \/>\s*/, () => '');
+  }
+
+  // 404 page must never be indexed
+  if (route.noindex) {
+    html = html.replace(/<meta name="robots" content=".*?" \/>/, () => '<meta name="robots" content="noindex, follow" />');
+    html = html.replace(/<link rel="canonical" href=".*?" \/>\s*/, () => '');
+  }
 
   // Inject Static Semantic Prerender Content for bots & crawlers with sleek loader for human visitors
   const prerenderedBody = `
@@ -301,10 +384,17 @@ routes.forEach((route) => {
     </div>
   `;
 
-  html = html.replace('<div id="root"></div>', `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><h1>${route.h1}</h1><div>${route.content}</div></div></noscript>`);
+  html = html.replace('<div id="root"></div>', () => `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><h1>${route.h1}</h1><div>${route.content}</div></div></noscript>`);
 
   fs.writeFileSync(fullOutPath, html, 'utf8');
   generatedCount++;
-});
+}
 
-console.log(`Prerender complete: Generated ${generatedCount} static HTML files with custom meta & text!`);
+(async () => {
+  const caseRoutes = await buildCaseRoutes();
+  [...routes, ...caseRoutes].forEach(renderRoute);
+  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core routes + ${caseRoutes.length} case studies).`);
+})().catch((err) => {
+  console.error('Prerender failed:', err);
+  process.exit(1);
+});

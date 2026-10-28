@@ -139,7 +139,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
           "@type": "CollectionPage",
           "@id": "https://www.brandscalinghacks.com/viral-creatives#webpage",
           "url": "https://www.brandscalinghacks.com/viral-creatives",
-          "name": "High-Converting Direct-Response Video Creatives & UGC | Brand Scaling",
+          "name": "Direct-Response Video Creatives & UGC Ads | Brand Scaling",
           "description": "Vault of 58+ live direct-response video ads, UGC hooks, and high-ROAS creative angles deployed across 13+ industry verticals.",
           "isPartOf": {
             "@id": "https://www.brandscalinghacks.com/#website"

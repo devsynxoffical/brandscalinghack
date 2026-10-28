@@ -12,8 +12,10 @@ import DiscoveryModal from './components/DiscoveryModal';
 import VideoModal from './components/VideoModal';
 import InstagramModal from './components/InstagramModal';
 import { allCaseStudies } from './data/allCaseStudies';
+import { cleanSeoText, caseStudyDescription } from './data/seoText';
 
 import ShopifyAgencyPage from './pages/ShopifyAgencyPage';
+import MetaAdsAgencyPage from './pages/MetaAdsAgencyPage';
 import BlogIndexPage from './pages/BlogIndexPage';
 import BlogPostPage from './pages/BlogPostPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -56,6 +58,8 @@ function App() {
         setActivePage('growth');
       } else if (rawPath === '/shopify-agency') {
         setActivePage('shopify-agency');
+      } else if (rawPath === '/meta-ads-agency' || rawPath === '/facebook-ads-agency') {
+        setActivePage('meta-ads-agency');
       } else if (rawPath === '/about') {
         setActivePage('about');
       } else if (rawPath === '/roas-calculator' || rawPath === '/viral-products') {
@@ -64,7 +68,8 @@ function App() {
         setActivePage('blog');
       } else if (rawPath.startsWith('/blog/')) {
         const postSlug = rawPath.replace('/blog/', '');
-        setActivePage(`blog-${postSlug}`);
+        // Unknown slugs must render the 404 page, not a fallback post (avoids duplicate content)
+        setActivePage(blogPosts.some((p) => p.slug === postSlug) ? `blog-${postSlug}` : '404');
       } else if (rawPath === '/privacy-policy') {
         setActivePage('privacy-policy');
       } else if (rawPath === '/terms') {
@@ -112,8 +117,8 @@ function App() {
       const caseId = activePage.replace('case-', '');
       const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
       if (study) {
-        title = `${study.title || 'Verified eCommerce Case Study'} | Brand Scaling`;
-        description = study.summary ? study.summary.slice(0, 160).replace(/\n/g, ' ') : `Detailed case study breakdown: ${study.revenue || ''} revenue scaled at ${study.roas || ''}. Direct-response ads and growth systems.`;
+        title = `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 52)} | Brand Scaling`;
+        description = caseStudyDescription(study);
       } else {
         title = `eCommerce Case Study #${caseId} | Brand Scaling`;
         description = 'Direct-response case study breakdown showing verified ROAS and scalable revenue results.';
@@ -138,7 +143,7 @@ function App() {
           pagePath = '/case-studies';
           break;
         case 'viral-creatives':
-          title = 'High-Converting Direct-Response Video Creatives & UGC | Brand Scaling';
+          title = 'Direct-Response Video Creatives & UGC Ads | Brand Scaling';
           description = 'Plug-and-play creative systems designed to lower CPA and unlock $10k-$50k/day spend. Direct-response UGC, 3D motion, founder hooks, and iterative testing.';
           pagePath = '/viral-creatives';
           break;
@@ -151,6 +156,11 @@ function App() {
           title = 'Shopify Agency for Scaling DTC Brands | Brand Scaling';
           description = 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.';
           pagePath = '/shopify-agency';
+          break;
+        case 'meta-ads-agency':
+          title = 'Meta Ads Agency for Ecommerce Brands | Brand Scaling';
+          description = 'Meta ads agency for DTC ecommerce: $50M+ Facebook and Instagram ad spend managed, creative testing, Advantage+ scaling and CAPI tracking. Book an audit.';
+          pagePath = '/meta-ads-agency';
           break;
         case 'roas-calculator':
           title = 'Free ROAS Calculator for Ecommerce | Brand Scaling';
@@ -192,6 +202,10 @@ function App() {
 
     document.title = title;
     updateMeta('description', description);
+    // Soft-404s must not be indexed; every real page keeps the default index,follow directive
+    updateMeta('robots', activePage === '404'
+      ? 'noindex, follow'
+      : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     updateMeta('og:title', title, true);
     updateMeta('og:description', description, true);
     updateMeta('og:url', `${baseUrl}${pagePath}`, true);
@@ -277,6 +291,13 @@ function App() {
       case 'shopify-agency':
         return (
           <ShopifyAgencyPage
+            onNavigate={handleNavigate}
+            onOpenBooking={() => setIsBookingOpen(true)}
+          />
+        );
+      case 'meta-ads-agency':
+        return (
+          <MetaAdsAgencyPage
             onNavigate={handleNavigate}
             onOpenBooking={() => setIsBookingOpen(true)}
           />
