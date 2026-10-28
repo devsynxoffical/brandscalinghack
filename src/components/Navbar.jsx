@@ -1,10 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X, ChevronDown, Megaphone, ShoppingBag, Rocket, Clapperboard } from 'lucide-react';
 import BrandLogo from './BrandLogo';
+
+// Service landing pages. Add a new landing page here and it appears in the
+// desktop dropdown and the mobile drawer automatically.
+export const SERVICE_LINKS = [
+  { id: 'meta-ads-agency', href: '/meta-ads-agency', label: 'Meta Ads Agency', desc: 'Facebook & Instagram ads, $50M+ managed', icon: Megaphone },
+  { id: 'shopify-agency', href: '/shopify-agency', label: 'Shopify Agency', desc: 'Store builds, CRO and AOV engineering', icon: ShoppingBag },
+  { id: 'growth', href: '/growth', label: 'Growth Engine', desc: 'Meta, TikTok, Google and CRO in one system', icon: Rocket },
+  { id: 'viral-creatives', href: '/viral-creatives', label: 'Viral Creatives', desc: 'Direct-response video and UGC ads', icon: Clapperboard }
+];
 
 export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpenState] = useState(false);
+  const servicesRef = useRef(null);
+  const closeTimer = useRef(null);
+  // Mirror of servicesOpen that event handlers can read without stale closures
+  const openRef = useRef(false);
+  const setServicesOpen = (value) => {
+    openRef.current = value;
+    setServicesOpenState(value);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,21 +33,64 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close the dropdown on outside click or Escape
+  useEffect(() => {
+    if (!servicesOpen) return undefined;
+    const onPointerDown = (e) => {
+      if (servicesRef.current && !servicesRef.current.contains(e.target)) setServicesOpen(false);
+    };
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setServicesOpen(false);
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [servicesOpen]);
+
   const handleNavClick = (id, e) => {
     if (e && (e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey)) {
       e.preventDefault();
     }
     setActivePage(id);
     setMobileMenuOpen(false);
+    setServicesOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const hoverOpenedAt = useRef(0);
+  const openServices = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    if (!openRef.current) hoverOpenedAt.current = Date.now();
+    setServicesOpen(true);
+  };
+  // A tap or click fires mouseenter first (which opens the menu) and then click;
+  // ignore the click toggle in that case so the menu does not open and close at once.
+  const toggleServices = () => {
+    if (openRef.current && Date.now() - hoverOpenedAt.current < 400) return;
+    setServicesOpen(!openRef.current);
+  };
+  // Touch devices fire mouseenter/mouseleave around a tap; a mouseleave right after
+  // a tap must not close the menu that the tap just opened.
+  const lastTouchAt = useRef(0);
+  const noteTouch = (e) => {
+    if (e.pointerType === 'touch') lastTouchAt.current = Date.now();
+  };
+  const scheduleCloseServices = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    if (Date.now() - lastTouchAt.current < 800) return;
+    closeTimer.current = setTimeout(() => setServicesOpen(false), 140);
+  };
+
   const isHomeUnscrolled = activePage === 'home' && !scrolled;
+  const isServiceActive = SERVICE_LINKS.some((s) => s.id === activePage);
 
   return (
     <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''} ${isHomeUnscrolled ? 'header-home-transparent' : ''}`}>
       <div className="container header-ss1-inner">
-        {/* Left Nav: Primary services & proof */}
+        {/* Left Nav: Home, Services dropdown, Proof */}
         <div className="header-left-links">
           <a
             href="/"
@@ -38,33 +99,58 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           >
             Home
           </a>
+
+          <div
+            className={`header-dropdown ${servicesOpen ? 'open' : ''}`}
+            ref={servicesRef}
+            onMouseEnter={openServices}
+            onMouseLeave={scheduleCloseServices}
+            onPointerDown={noteTouch}
+          >
+            <button
+              type="button"
+              className={`header-text-link header-dropdown-trigger ${isServiceActive ? 'active' : ''}`}
+              aria-haspopup="true"
+              aria-expanded={servicesOpen}
+              onClick={toggleServices}
+            >
+              Services <ChevronDown size={14} className="header-dropdown-chevron" />
+            </button>
+
+            {/* Links stay in the DOM so crawlers can follow them; CSS hides the panel */}
+            <div className="header-dropdown-panel" role="menu" aria-label="Services">
+              {SERVICE_LINKS.map(({ id, href, label, desc, icon: Icon }) => (
+                <a
+                  key={id}
+                  href={href}
+                  role="menuitem"
+                  className={`header-dropdown-item ${activePage === id ? 'active' : ''}`}
+                  onClick={(e) => handleNavClick(id, e)}
+                  tabIndex={servicesOpen ? 0 : -1}
+                >
+                  <span className="header-dropdown-icon"><Icon size={17} /></span>
+                  <span className="header-dropdown-text">
+                    <span className="header-dropdown-label">{label}</span>
+                    <span className="header-dropdown-desc">{desc}</span>
+                  </span>
+                </a>
+              ))}
+              <button
+                type="button"
+                className="header-dropdown-cta"
+                onClick={() => { setServicesOpen(false); onOpenBooking && onOpenBooking(); }}
+              >
+                Book a Brand Growth Audit →
+              </button>
+            </div>
+          </div>
+
           <a
             href="/case-studies"
-            className={`header-text-link ${activePage === 'case-studies' ? 'active' : ''}`}
+            className={`header-text-link ${activePage === 'case-studies' || activePage.startsWith('case-') ? 'active' : ''}`}
             onClick={(e) => handleNavClick('case-studies', e)}
           >
             Case Studies
-          </a>
-          <a
-            href="/growth"
-            className={`header-text-link ${activePage === 'growth' ? 'active' : ''}`}
-            onClick={(e) => handleNavClick('growth', e)}
-          >
-            Growth Engine
-          </a>
-          <a
-            href="/shopify-agency"
-            className={`header-text-link ${activePage === 'shopify-agency' ? 'active' : ''}`}
-            onClick={(e) => handleNavClick('shopify-agency', e)}
-          >
-            Shopify Agency
-          </a>
-          <a
-            href="/meta-ads-agency"
-            className={`header-text-link ${activePage === 'meta-ads-agency' ? 'active' : ''}`}
-            onClick={(e) => handleNavClick('meta-ads-agency', e)}
-          >
-            Meta Ads
           </a>
         </div>
 
@@ -75,15 +161,8 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           </a>
         </div>
 
-        {/* Right Nav: Creatives, Tools & Resources */}
+        {/* Right Nav: Tools & Resources */}
         <div className="header-right-links">
-          <a
-            href="/viral-creatives"
-            className={`header-text-link ${activePage === 'viral-creatives' ? 'active' : ''}`}
-            onClick={(e) => handleNavClick('viral-creatives', e)}
-          >
-            Viral Creatives
-          </a>
           <a
             href="/roas-calculator"
             className={`header-text-link ${activePage === 'roas-calculator' ? 'active' : ''}`}
@@ -105,6 +184,13 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           >
             About
           </a>
+          <button
+            type="button"
+            className="header-cta-btn"
+            onClick={() => onOpenBooking && onOpenBooking()}
+          >
+            Book Audit
+          </button>
         </div>
 
         {/* Mobile Hamburger Menu Toggle */}
@@ -113,6 +199,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             style={{ color: '#ffffff', background: 'none', border: 'none', cursor: 'pointer' }}
             aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
@@ -123,14 +210,19 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
       {mobileMenuOpen && (
         <div className="mobile-drawer-ss1">
           <a href="/" onClick={(e) => handleNavClick('home', e)}>Home</a>
+          <div className="mobile-drawer-group">
+            <span className="mobile-drawer-group-label">Services</span>
+            {SERVICE_LINKS.map(({ id, href, label }) => (
+              <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
+            ))}
+          </div>
           <a href="/case-studies" onClick={(e) => handleNavClick('case-studies', e)}>Case Studies</a>
-          <a href="/growth" onClick={(e) => handleNavClick('growth', e)}>Growth Engine</a>
-          <a href="/shopify-agency" onClick={(e) => handleNavClick('shopify-agency', e)}>Shopify Agency</a>
-          <a href="/meta-ads-agency" onClick={(e) => handleNavClick('meta-ads-agency', e)}>Meta Ads Agency</a>
-          <a href="/viral-creatives" onClick={(e) => handleNavClick('viral-creatives', e)}>Viral Creatives</a>
           <a href="/roas-calculator" onClick={(e) => handleNavClick('roas-calculator', e)}>ROAS Calculator</a>
           <a href="/blog" onClick={(e) => handleNavClick('blog', e)}>Blog</a>
           <a href="/about" onClick={(e) => handleNavClick('about', e)}>About</a>
+          <button type="button" className="mobile-drawer-cta" onClick={() => { setMobileMenuOpen(false); onOpenBooking && onOpenBooking(); }}>
+            Book a Brand Growth Audit
+          </button>
         </div>
       )}
     </nav>
