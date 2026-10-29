@@ -1,36 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Megaphone, ArrowRight, ChevronDown, ChevronUp, FlaskConical, Layers, Activity, CheckCircle2, XCircle } from 'lucide-react';
-
-const faqs = [
-  {
-    question: 'What does a Meta ads agency do for an ecommerce brand?',
-    answer: 'A Meta ads agency plans, builds and runs Facebook and Instagram campaigns that are measured on revenue, cost per acquisition and ROAS. Brand Scaling also produces the direct-response video creative, validates Conversions API tracking and ties the ads to the Shopify store, because media buying alone cannot fix a weak offer or a slow product page.'
-  },
-  {
-    question: 'How much does a Meta ads agency cost?',
-    answer: 'Most ecommerce Meta ads agencies charge a monthly retainer, a percentage of ad spend, or a mix of both. Brand Scaling works with brands spending at least $10,000 to $20,000 per month on paid ads, and every engagement starts with a Brand Growth Audit so you see the plan and the numbers before any fee is agreed.'
-  },
-  {
-    question: 'What is a good ROAS for Meta ads?',
-    answer: 'A good ROAS depends on gross margin. A store with 60% margin breaks even at 1.67x ROAS, a store with 40% margin needs 2.5x just to break even. Our client accounts typically run between 3x and 6x on scale, with top accounts such as $2.3M in sales at 11.6x ROAS on $200K spend. Use the free ROAS calculator to find your own break-even number.'
-  },
-  {
-    question: 'Meta ads agency vs an in-house media buyer: which is better?',
-    answer: 'An in-house buyer gives you one person and one skill set. An agency gives you media buying, creative production, CRO and tracking in one team, plus benchmarks from dozens of accounts in your niche. For brands under about $2M a month in revenue, an agency usually reaches profitable scale faster and costs less than hiring a full team.'
-  },
-  {
-    question: 'How do you scale DTC brands with retargeting after iOS 14?',
-    answer: 'We keep retargeting small and let Advantage+ shopping campaigns and catalog ads do most of the work. Retargeting budgets run at roughly 10% to 15% of spend, use dynamic product ads for site visitors and cart abandoners, and are measured against blended MER rather than platform-reported ROAS, so the account does not double count the same customers.'
-  },
-  {
-    question: 'How long until a new Meta ads account shows results?',
-    answer: 'The first 7 to 14 days are foundation work: tracking, offer, product page and the first creative batch. Most accounts see a clear winning angle inside the first 30 days and reach a stable scaling budget by day 60 to 90, depending on margin and creative volume.'
-  },
-  {
-    question: 'Do you only work with Shopify stores?',
-    answer: 'Shopify is the platform most of our clients use and the one our CRO team builds on, but the media buying and creative systems work for any DTC store with a tracked checkout. The requirement is product-market fit and enough margin to scale, not a specific platform.'
-  }
-];
+import { getRouteSchema, toJsonLd, metaAdsFaqs as faqs } from '../data/pageSchemas';
 
 const proofStats = [
   { value: '$50M+', label: 'Meta ad spend managed', note: 'Across 30+ ecommerce niches' },
@@ -86,50 +56,7 @@ export default function MetaAdsAgencyPage({ onNavigate, onOpenBooking }) {
       document.head.appendChild(script);
     }
 
-    const schemaData = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'Service',
-          '@id': 'https://www.brandscalinghacks.com/meta-ads-agency#service',
-          name: 'Meta Ads Management for Ecommerce Brands',
-          serviceType: 'Meta Ads Agency (Facebook and Instagram Ads Management)',
-          provider: { '@id': 'https://www.brandscalinghacks.com/#organization' },
-          areaServed: ['US', 'GB', 'CA', 'AU'],
-          audience: { '@type': 'BusinessAudience', audienceType: 'DTC ecommerce and Shopify brands' },
-          description: 'Meta ads agency for DTC ecommerce brands: Facebook and Instagram media buying, direct-response creative testing, Advantage+ scaling and Conversions API tracking, with $50M+ in managed ad spend.',
-          hasOfferCatalog: {
-            '@type': 'OfferCatalog',
-            name: 'Meta Ads Services',
-            itemListElement: [
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Meta Ads Account Audit and Restructure' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Direct-Response Creative Testing and UGC Production' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Advantage+ Shopping Campaign Scaling' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Conversions API and Tracking Setup' } },
-              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Retargeting and Catalog Ads' } }
-            ]
-          }
-        },
-        {
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.brandscalinghacks.com/' },
-            { '@type': 'ListItem', position: 2, name: 'Meta Ads Agency', item: 'https://www.brandscalinghacks.com/meta-ads-agency' }
-          ]
-        },
-        {
-          '@type': 'FAQPage',
-          '@id': 'https://www.brandscalinghacks.com/meta-ads-agency#faq',
-          mainEntity: faqs.map((f) => ({
-            '@type': 'Question',
-            name: f.question,
-            acceptedAnswer: { '@type': 'Answer', text: f.answer }
-          }))
-        }
-      ]
-    };
-
-    script.textContent = JSON.stringify(schemaData);
+    script.textContent = toJsonLd(getRouteSchema('/meta-ads-agency'));
 
     return () => {
       const el = document.getElementById(schemaId);

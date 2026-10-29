@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import GauravAboutHero from '../components/GauravAboutHero';
-import AboutJourney from '../components/AboutJourney';
+// Lazy: AboutJourney pulls in three.js, gsap and lottie (~600 KB); keep them off every other page
+const AboutJourney = lazy(() => import('../components/AboutJourney'));
 import TeamCurvedSection from '../components/TeamCurvedSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
@@ -20,6 +21,7 @@ import {
   Play,
   Award
 } from 'lucide-react';
+import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -36,64 +38,7 @@ export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
       document.head.appendChild(script);
     }
 
-    const schemaData = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "AboutPage",
-          "@id": "https://www.brandscalinghacks.com/about#webpage",
-          "url": "https://www.brandscalinghacks.com/about",
-          "name": "About Brand Scaling and Founder Gaurav Kapoor",
-          "description": "Learn about Gaurav Kapoor and Brand Scaling. Over $50M in managed ad spend and 150+ brands scaled past 7 and 8 figures.",
-          "isPartOf": {
-            "@id": "https://www.brandscalinghacks.com/#website"
-          },
-          "about": {
-            "@id": "https://www.brandscalinghacks.com/about#gaurav-kapoor"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://www.brandscalinghacks.com/about#gaurav-kapoor",
-          "name": "Gaurav Kapoor",
-          "alternateName": ["Gaurav Ecom", "Gaurav"],
-          "jobTitle": "Founder & Chief Growth Architect",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Brand Scaling Hacks LLC",
-            "url": "https://www.brandscalinghacks.com/"
-          },
-          "url": "https://www.brandscalinghacks.com/about",
-          "image": "https://www.brandscalinghacks.com/team/gaurav.webp",
-          "description": "Ecommerce and customer acquisition expert with 12+ years of experience and $50M+ in Meta and TikTok ad spend managed for DTC brands.",
-          "knowsAbout": [
-            "Performance Marketing",
-            "Meta Ads",
-            "TikTok Ads",
-            "Direct Response Marketing",
-            "Shopify CRO",
-            "DTC Ecommerce Growth",
-            "ROAS Optimization"
-          ],
-          "sameAs": [
-            "https://www.youtube.com/@gauravecom",
-            "https://www.instagram.com/gauravecomm/",
-            "https://www.linkedin.com/in/gauravecom/",
-            "https://x.com/gauravecomm",
-            "https://www.facebook.com/gaurav.kapoor.3994"
-          ]
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
-            { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://www.brandscalinghacks.com/about" }
-          ]
-        }
-      ]
-    };
-
-    script.textContent = JSON.stringify(schemaData);
+    script.textContent = toJsonLd(getRouteSchema('/about'));
 
     return () => {
       const el = document.getElementById(schemaId);
@@ -189,7 +134,9 @@ export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
       <GauravAboutHero onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
 
       {/* 2. 12-Year Evolution Winding Road Journey Section (Light Theme) */}
-      <AboutJourney />
+      <Suspense fallback={<div style={{ minHeight: '60vh' }} aria-hidden="true" />}>
+        <AboutJourney />
+      </Suspense>
 
       {/* 3. Proven Track Record / Milestones Section (Light Theme) */}
       <section style={{ padding: '80px 0 90px 0', background: '#fafafa', borderTop: '1px solid #f1f5f9', borderBottom: '1px solid #f1f5f9' }}>

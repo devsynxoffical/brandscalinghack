@@ -151,7 +151,7 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
   {
     slug: 'what-is-roas',
     title: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
-    titleTag: 'What Is ROAS? Formula, Benchmarks & Calculator | Brand Scaling',
+    titleTag: 'What Is ROAS? Formula & Good ROAS Benchmarks | Brand Scaling',
     metaDescription: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
     primaryKeyword: 'what is roas',
     secondaryKeywords: ['good roas ecommerce', 'roas formula', 'break even roas', 'roas vs mer'],
@@ -266,7 +266,7 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
   {
     slug: 'performance-marketing-agency',
     title: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
-    titleTag: 'Performance Marketing Agency for Ecommerce | Brand Scaling',
+    titleTag: 'What Is a Performance Marketing Agency? | Brand Scaling',
     metaDescription: 'What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta & TikTok ads, CRO, creative testing, and measurable ROAS.',
     primaryKeyword: 'performance marketing agency',
     secondaryKeywords: ['ecommerce marketing agency usa', 'dtc growth agency', 'direct response marketing agency', 'meta ads agency'],

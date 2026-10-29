@@ -10,6 +10,7 @@ import {
   Flame, 
   Maximize2
 } from 'lucide-react';
+import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 export const viralCreativesData = [
   // 1. Roofing (6)
@@ -132,30 +133,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
       document.head.appendChild(script);
     }
 
-    const schemaData = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "CollectionPage",
-          "@id": "https://www.brandscalinghacks.com/viral-creatives#webpage",
-          "url": "https://www.brandscalinghacks.com/viral-creatives",
-          "name": "Direct-Response Video Creatives & UGC Ads | Brand Scaling",
-          "description": "Vault of 58+ live direct-response video ads, UGC hooks, and high-ROAS creative angles deployed across 13+ industry verticals.",
-          "isPartOf": {
-            "@id": "https://www.brandscalinghacks.com/#website"
-          }
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Viral Creatives", "item": "https://www.brandscalinghacks.com/viral-creatives" }
-          ]
-        }
-      ]
-    };
-
-    script.textContent = JSON.stringify(schemaData);
+    script.textContent = toJsonLd(getRouteSchema('/viral-creatives'));
 
     return () => {
       const el = document.getElementById(schemaId);

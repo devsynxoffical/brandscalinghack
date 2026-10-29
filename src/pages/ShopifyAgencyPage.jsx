@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ShoppingBag, Zap, CheckCircle2, ArrowRight, TrendingUp, ShieldCheck, ChevronDown, ChevronUp, Layers, Gauge, Target } from 'lucide-react';
+import { getRouteSchema, toJsonLd, shopifyFaqs as faqs } from '../data/pageSchemas';
 
 export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -17,69 +18,13 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
       document.head.appendChild(script);
     }
 
-    const schemaData = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Service",
-          "@id": "https://www.brandscalinghacks.com/shopify-agency#service",
-          "name": "Shopify Development and Conversion Rate Optimization",
-          "serviceType": "Shopify Development and Conversion Rate Optimization",
-          "provider": {
-            "@id": "https://www.brandscalinghacks.com/#organization"
-          },
-          "areaServed": ["US", "GB", "CA", "AU"],
-          "description": "Custom high-converting Shopify store builds, checkout extensibility, speed optimization, and CRO engineering designed specifically for paid Meta and TikTok ad traffic."
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Shopify Agency", "item": "https://www.brandscalinghacks.com/shopify-agency" }
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://www.brandscalinghacks.com/shopify-agency#faq",
-          "mainEntity": faqs.map(f => ({
-            "@type": "Question",
-            "name": f.question,
-            "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-          }))
-        }
-      ]
-    };
-
-    script.textContent = JSON.stringify(schemaData);
+    script.textContent = toJsonLd(getRouteSchema('/shopify-agency'));
 
     return () => {
       const el = document.getElementById(schemaId);
       if (el) el.remove();
     };
   }, []);
-
-  const faqs = [
-    {
-      question: 'What is a Shopify agency?',
-      answer: 'A Shopify agency designs, builds, and optimizes online stores on the Shopify platform. While traditional agencies focus only on visuals, Brand Scaling focuses on conversion rate optimization and unit economics, ensuring every landing page is engineered around the paid ads driving traffic.'
-    },
-    {
-      question: 'What is a Shopify Plus agency?',
-      answer: 'A Shopify Plus agency works with enterprise and high-volume merchants processing $1M+ annually, configuring checkout extensibility, custom B2B portals, advanced Shopify Flow automations, and international expansion stores.'
-    },
-    {
-      question: 'How much is Shopify Plus per month?',
-      answer: 'Shopify Plus standard plans start at approximately $2,000 per month for standard licensing or a variable fee based on transaction volume for high-revenue merchants. Check Shopify\'s official pricing page for real-time updates.'
-    },
-    {
-      question: 'How do I choose the best Shopify agency in the USA?',
-      answer: 'Evaluate live conversion rate case studies rather than static portfolios. Verify that the agency understands paid acquisition (Meta/TikTok), confirms you maintain 100% code ownership, and runs ongoing A/B hypothesis testing after launch.'
-    },
-    {
-      question: 'How long does a Shopify store rebuild take?',
-      answer: 'Our diagnostic audit and rapid rebuild of core revenue pages (Homepage, Product Display Page, Cart Drawer, and Offer Bundles) are deployed within the first 7 to 14 days, followed by continuous monthly CRO sprints.'
-    }
-  ];
 
   return (
     <div className="shopify-agency-wrapper" style={{ minHeight: '100vh', backgroundColor: '#070709', color: '#e2e8f0', paddingTop: '120px', paddingBottom: '90px' }}>

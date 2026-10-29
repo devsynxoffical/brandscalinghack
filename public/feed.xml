@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brand Scaling: Ecommerce Scaling Playbooks</title>
+    <link>https://www.brandscalinghacks.com/blog</link>
+    <atom:link href="https://www.brandscalinghacks.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Direct-response ad breakdowns, Meta ads playbooks and unit-economic benchmarks from managing $50M+ in ad spend across 150+ Shopify brands.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2026 07:57:04 GMT</lastBuildDate>
+    <item>
+      <title>What Is a Performance Marketing Agency? DTC Growth Blueprint &amp; ROAS Framework</title>
+      <link>https://www.brandscalinghacks.com/blog/performance-marketing-agency</link>
+      <guid isPermaLink="true">https://www.brandscalinghacks.com/blog/performance-marketing-agency</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 GMT</pubDate>
+      <description>What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta &amp; TikTok ads, CRO, creative testing, and measurable ROAS.</description>
+      <author>hello@brandscalinghacks.com (Gaurav Kapoor)</author>
+    </item>
+    <item>
+      <title>What Is ROAS? Formula, Good ROAS Benchmarks &amp; Break Even Calculator for Ecommerce</title>
+      <link>https://www.brandscalinghacks.com/blog/what-is-roas</link>
+      <guid isPermaLink="true">https://www.brandscalinghacks.com/blog/what-is-roas</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 GMT</pubDate>
+      <description>What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.</description>
+      <author>hello@brandscalinghacks.com (Gaurav Kapoor)</author>
+    </item>
+    <item>
+      <title>BFCM 2026: The Meta Ads Playbook for Shopify Brands</title>
+      <link>https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook</link>
+      <guid isPermaLink="true">https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 GMT</pubDate>
+      <description>BFCM 2026 runs 26 to 30 Nov. Our Meta ads playbook for Shopify brands: dates, budget plan, offers and creative that hit 3.98x ROAS. Read it now.</description>
+      <author>hello@brandscalinghacks.com (Gaurav Kapoor)</author>
+    </item>
+  </channel>
+</rss>

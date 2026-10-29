@@ -13,6 +13,7 @@ import VideoModal from './components/VideoModal';
 import InstagramModal from './components/InstagramModal';
 import { allCaseStudies } from './data/allCaseStudies';
 import { cleanSeoText, caseStudyDescription } from './data/seoText';
+import { ogImageFor } from './data/pageSchemas';
 
 import ShopifyAgencyPage from './pages/ShopifyAgencyPage';
 import MetaAdsAgencyPage from './pages/MetaAdsAgencyPage';
@@ -117,7 +118,7 @@ function App() {
       const caseId = activePage.replace('case-', '');
       const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
       if (study) {
-        title = `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 52)} | Brand Scaling`;
+        title = `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 44)} | Brand Scaling`;
         description = caseStudyDescription(study);
       } else {
         title = `eCommerce Case Study #${caseId} | Brand Scaling`;
@@ -168,13 +169,13 @@ function App() {
           pagePath = '/roas-calculator';
           break;
         case 'blog':
-          title = 'Ecommerce Scaling Playbooks & Growth Research | Brand Scaling';
+          title = 'Ecommerce Scaling Playbooks & Research | Brand Scaling';
           description = 'Direct-response ad breakdowns, algorithmic updates, and unit-economic benchmarks from managing $50M+ in ad spend across 150+ Shopify brands.';
           pagePath = '/blog';
           break;
         case 'about':
-          title = 'About Brand Scaling and Founder Gaurav Kapoor | Brand Scaling';
-          description = 'Learn about Gaurav Kapoor and Brand Scaling. Over $50M in managed ad spend and 150+ brands scaled past 7 and 8 figures.';
+          title = 'About Brand Scaling & Founder Gaurav Kapoor | Brand Scaling';
+          description = 'Meet Gaurav Kapoor and the Brand Scaling team: 12+ years in ecommerce, $50M+ in Meta ad spend managed and 150+ DTC brands scaled past 7 and 8 figures.';
           pagePath = '/about';
           break;
         case 'privacy-policy':
@@ -212,6 +213,21 @@ function App() {
     updateMeta('twitter:title', title);
     updateMeta('twitter:description', description);
     updateCanonical(`${baseUrl}${pagePath}`);
+
+    // Social image per page (case studies keep their own proof image)
+    let og = ogImageFor(pagePath.startsWith('/blog/') ? '/blog' : pagePath);
+    if (activePage.startsWith('case-') && activePage !== 'case-studies') {
+      const caseId = activePage.replace('case-', '');
+      const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
+      if (study && study.image) og = `${baseUrl}${study.image}`;
+    }
+    updateMeta('og:image', og, true);
+    updateMeta('og:image:secure_url', og, true);
+    updateMeta('twitter:image', og);
+
+    // The prerendered JSON-LD belongs to the first URL only; pages inject their own after mount
+    const prerenderedSchema = document.getElementById('route-schema');
+    if (prerenderedSchema) prerenderedSchema.remove();
   }, [activePage]);
 
   const handleNavigate = (pageId) => {

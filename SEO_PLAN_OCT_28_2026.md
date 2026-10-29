@@ -111,6 +111,38 @@ Open Graph / Twitter: every page inherits `og:type=website`, `og:site_name`, `og
 
 ---
 
+## 4b. Day 2 (Oct 29, 2026): SEO, AEO and GEO pass — what shipped
+
+**Structured data now server-side (AEO/GEO).** Every page's JSON-LD was previously injected only by React, so crawlers that do not run JavaScript (GPTBot, ClaudeBot, PerplexityBot, Bytespider, CCBot) saw none of it. A new single source of truth, `src/data/pageSchemas.js`, feeds both the React pages and the prerender, which now writes a `#route-schema` block into the `<head>` of all 141 prerendered pages (validated: 135 graphs, 0 JSON errors). Added on top of the old graphs:
+- `WebPage` / `CollectionPage` / `AboutPage` entity on every core page with `primaryImageOfPage`, `inLanguage` and `speakable` selectors (home, Meta Ads, About, blog posts).
+- `ItemList` of the first 20 case studies on `/case-studies` and of all posts on `/blog`.
+- Case studies: `Article` + `BreadcrumbList` + `VideoObject` (name, thumbnail, contentUrl, uploadDate) on all 126 pages, client and prerendered.
+- Blog posts: `image`, `keywords`, `inLanguage`, `speakable`, `mainEntityOfPage` and a stable author `@id` linking to the founder entity.
+- `WebApplication` on the ROAS calculator now carries `url`, `publisher` and `browserRequirements`.
+
+**AI-engine files.**
+- `robots.txt` explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-User, Claude-SearchBot, PerplexityBot, Google-Extended, Applebot, Amazonbot, DuckAssistBot, meta-externalagent, Bytespider and CCBot, and blocks UTM/fbclid parameter URLs and `/404`.
+- New `/llms-full.txt` (about 90 KB) generated at build: every core page plus the first 40 case studies as Markdown with URL and summary, for assistants that fetch one file instead of crawling.
+- New RSS feed `/feed.xml` generated from the blog data, linked from `<head>` with `rel="alternate"`.
+
+**Social previews.** Ten branded 1200×630 Open Graph images generated with `scripts/generate-og-images.cjs` into `public/og/`. Every core page now has its own `og:image`, blog posts share the blog card, case studies use their proof image, and `twitter:image:alt` was added.
+
+**Titles and descriptions.**
+- Fixed the title cannibalisation: the blog post is now "What Is a Performance Marketing Agency? \| Brand Scaling" (55), the home page keeps "Performance Marketing Agency for Ecommerce \| Brand Scaling".
+- `/about` → "About Brand Scaling & Founder Gaurav Kapoor \| Brand Scaling" (59) with a 150-character description; `/blog` → 54 characters; `/blog/what-is-roas` → 60 characters.
+- Case study titles shortened to 44 characters plus brand (61 total) so they stop truncating in SERPs.
+
+**Performance (Core Web Vitals).**
+- `three`, `gsap` and `lottie-web` are now in a lazy chunk loaded only on `/about` (verified in the browser: the 133 KB `AboutJourney` chunk is not requested on any other page).
+- The hero serif headline referenced a font that was never loaded (Playfair Display); it now uses the already-loaded Cormorant Garamond, removing a fallback flash.
+- Remaining weight is data: `allCaseStudies.js` (357 KB source) and Instagram metadata ship in the main bundle. Next step: move case captions to a lazy JSON fetch on the detail page (week 3).
+
+**Security and delivery headers** in `vercel.json`: HSTS, nosniff, frame-options, referrer-policy, permissions-policy, correct content types for `llms-full.txt` and `feed.xml`, 7-day cache on OG images.
+
+**Verification done:** build passes with 0 lint errors; browser checks on `/`, `/about`, `/meta-ads-agency`, a case page, a blog post and the calculator show one H1 each, the right title and OG image, and the client-side schema replacing the prerendered block after hydration with no console errors.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

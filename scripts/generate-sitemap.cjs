@@ -62,6 +62,32 @@ ${all.map(urlBlock).join('\n')}
 </urlset>
 `;
   fs.writeFileSync(sitemapPath, xml, 'utf8');
+
+  // RSS feed for the blog (discovery for feed readers, Bing, and AI crawlers)
+  const rssItems = [...blogPosts]
+    .sort((a, b) => (b.publishDate || '').localeCompare(a.publishDate || ''))
+    .map((p) => `    <item>
+      <title>${escapeXml(p.title)}</title>
+      <link>${BASE}/blog/${p.slug}</link>
+      <guid isPermaLink="true">${BASE}/blog/${p.slug}</guid>
+      <pubDate>${new Date((p.updatedDate || p.publishDate) + 'T09:00:00Z').toUTCString()}</pubDate>
+      <description>${escapeXml(p.metaDescription || '')}</description>
+      <author>hello@brandscalinghacks.com (${escapeXml((p.author && p.author.name) || 'Gaurav Kapoor')})</author>
+    </item>`).join('\n');
+  const rss = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brand Scaling: Ecommerce Scaling Playbooks</title>
+    <link>${BASE}/blog</link>
+    <atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Direct-response ad breakdowns, Meta ads playbooks and unit-economic benchmarks from managing $50M+ in ad spend across 150+ Shopify brands.</description>
+    <language>en-us</language>
+    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+${rssItems}
+  </channel>
+</rss>
+`;
+  fs.writeFileSync(path.join(__dirname, '..', 'public', 'feed.xml'), rss, 'utf8');
   console.log(`Sitemap written: ${all.length} URLs (${staticRoutes.length} static, ${blogRoutes.length} blog, ${caseRoutes.length} case studies).`);
 })().catch((err) => {
   console.error('Sitemap generation failed:', err);

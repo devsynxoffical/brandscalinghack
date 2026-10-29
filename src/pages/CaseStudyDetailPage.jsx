@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight, CheckCircle2, TrendingUp, DollarSign, ExternalLink, ShieldCheck, Play, Copy, Check } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import { allCaseStudies } from '../data/allCaseStudies';
+import { caseStudySchema, toJsonLd } from '../data/pageSchemas';
 
 export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBooking }) {
   const [copied, setCopied] = useState(false);
@@ -14,6 +15,23 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
   
   const caseStudy = currentIndex !== -1 ? allCaseStudies[currentIndex] : allCaseStudies[0];
   const activeIdx = currentIndex !== -1 ? currentIndex : 0;
+
+  // Article + VideoObject + BreadcrumbList schema (mirrors the prerendered JSON-LD)
+  useEffect(() => {
+    const schemaId = 'case-study-schema';
+    let script = document.getElementById(schemaId);
+    if (!script) {
+      script = document.createElement('script');
+      script.id = schemaId;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = toJsonLd(caseStudySchema(caseStudy));
+    return () => {
+      const el = document.getElementById(schemaId);
+      if (el) el.remove();
+    };
+  }, [caseStudy]);
 
   // Next and Previous Case Studies
   const prevStudy = activeIdx > 0 ? allCaseStudies[activeIdx - 1] : allCaseStudies[allCaseStudies.length - 1];

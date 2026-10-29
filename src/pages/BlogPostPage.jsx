@@ -22,6 +22,7 @@ import {
   Flame,
   Bookmark
 } from 'lucide-react';
+import { blogPostSchema, toJsonLd } from '../data/pageSchemas';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
 function cleanBlogText(text) {
@@ -56,75 +57,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
       document.head.appendChild(scriptEl);
     }
 
-    const jsonLdData = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BlogPosting",
-          "@id": `https://www.brandscalinghacks.com/blog/${post.slug}#article`,
-          "headline": post.title,
-          "description": post.metaDescription,
-          "datePublished": post.publishDate,
-          "dateModified": post.updatedDate,
-          "author": {
-            "@type": "Person",
-            "name": post.author.name,
-            "jobTitle": post.author.title,
-            "url": "https://www.brandscalinghacks.com/about",
-            "sameAs": [
-              post.author.youtubeUrl,
-              post.author.instagramUrl,
-              post.author.linkedinUrl
-            ]
-          },
-          "publisher": {
-            "@id": "https://www.brandscalinghacks.com/#organization"
-          },
-          "mainEntityOfPage": `https://www.brandscalinghacks.com/blog/${post.slug}`
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://www.brandscalinghacks.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Blog",
-              "item": "https://www.brandscalinghacks.com/blog"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": post.title,
-              "item": `https://www.brandscalinghacks.com/blog/${post.slug}`
-            }
-          ]
-        },
-        ...(post.faqs && post.faqs.length > 0
-          ? [
-              {
-                "@type": "FAQPage",
-                "@id": `https://www.brandscalinghacks.com/blog/${post.slug}#faq`,
-                "mainEntity": post.faqs.map((faq) => ({
-                  "@type": "Question",
-                  "name": faq.question,
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": faq.answer
-                  }
-                }))
-              }
-            ]
-          : [])
-      ]
-    };
-
-    scriptEl.textContent = JSON.stringify(jsonLdData);
+    scriptEl.textContent = toJsonLd(blogPostSchema(post));
 
     return () => {
       const el = document.getElementById(schemaScriptId);

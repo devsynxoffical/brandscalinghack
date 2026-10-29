@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, ArrowRight, ClipboardCheck } from 'lucide-react';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
+import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVideo }) {
   useEffect(() => {
@@ -16,63 +17,7 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
       document.head.appendChild(script);
     }
 
-    const schemaData = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebApplication",
-          "@id": "https://www.brandscalinghacks.com/roas-calculator#app",
-          "name": "Free Ecommerce ROAS Calculator",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "All",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          },
-          "description": "Interactive ecommerce ROAS calculator to calculate break-even return on ad spend, contribution margins, and net profit per order."
-        },
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.brandscalinghacks.com/" },
-            { "@type": "ListItem", "position": 2, "name": "ROAS Calculator", "item": "https://www.brandscalinghacks.com/roas-calculator" }
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://www.brandscalinghacks.com/roas-calculator#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is a good ROAS for ecommerce?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "There is no universal number. A good ROAS is any figure reliably above your store's break-even ROAS. For most brands with 55% to 75% gross margins, an attributed ROAS of 3.0x to 4.5x represents healthy, sustainable scaling efficiency."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the difference between ROAS and MER?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ROAS measures top-line revenue attributed to a single ad platform or campaign. MER (Marketing Efficiency Ratio, or blended ROAS) measures total business revenue divided by all marketing spend across Meta, Google, TikTok, and agencies combined."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I lower my break-even ROAS?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can lower your break-even ROAS by improving product gross margins, negotiating lower manufacturing costs, or introducing high-AOV bundles and quantity breaks on your Shopify store."
-              }
-            }
-          ]
-        }
-      ]
-    };
-
-    script.textContent = JSON.stringify(schemaData);
+    script.textContent = toJsonLd(getRouteSchema('/roas-calculator'));
 
     return () => {
       const el = document.getElementById(schemaId);

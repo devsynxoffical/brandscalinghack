@@ -156,8 +156,8 @@ const routes = [
   {
     path: '/about',
     outPath: 'about/index.html',
-    title: 'About Brand Scaling and Founder Gaurav Kapoor | Brand Scaling',
-    description: 'Learn about Gaurav Kapoor and Brand Scaling. Over $50M in managed ad spend and 150+ brands scaled past 7 and 8 figures.',
+    title: 'About Brand Scaling & Founder Gaurav Kapoor | Brand Scaling',
+    description: 'Meet Gaurav Kapoor and the Brand Scaling team: 12+ years in ecommerce, $50M+ in Meta ad spend managed and 150+ DTC brands scaled past 7 and 8 figures.',
     h1: 'About Brand Scaling and Founder Gaurav Kapoor',
     content: `
       <p>Brand Scaling (legal name Brand Scaling Hacks LLC) is a DTC ecommerce growth agency that scales Shopify brands with Meta and TikTok ads, direct-response creative and conversion rate optimization, founded by Gaurav Kapoor.</p>
@@ -173,7 +173,7 @@ const routes = [
   {
     path: '/blog',
     outPath: 'blog/index.html',
-    title: 'Ecommerce Scaling Playbooks & Growth Research | Brand Scaling',
+    title: 'Ecommerce Scaling Playbooks & Research | Brand Scaling',
     description: 'Direct-response ad breakdowns, algorithmic updates, and unit-economic benchmarks from managing $50M+ in ad spend across 150+ Shopify brands.',
     h1: 'Ecommerce Scaling Playbooks & Research',
     content: `
@@ -203,7 +203,7 @@ const routes = [
   {
     path: '/blog/performance-marketing-agency',
     outPath: 'blog/performance-marketing-agency/index.html',
-    title: 'Performance Marketing Agency for Ecommerce | Brand Scaling',
+    title: 'What Is a Performance Marketing Agency? | Brand Scaling',
     description: 'What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta & TikTok ads, CRO, creative testing, and measurable ROAS.',
     h1: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
     content: `
@@ -225,7 +225,7 @@ const routes = [
   {
     path: '/blog/what-is-roas',
     outPath: 'blog/what-is-roas/index.html',
-    title: 'What Is ROAS? Formula, Benchmarks & Calculator | Brand Scaling',
+    title: 'What Is ROAS? Formula & Good ROAS Benchmarks | Brand Scaling',
     description: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
     h1: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
     content: `
@@ -299,7 +299,7 @@ async function buildCaseRoutes() {
   return allCaseStudies.map((cs) => {
     const id = cs.slug || cs.id || cs.shortcode;
     const cleanTitle = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
-    const titleTag = `${cleanSeoText(cleanTitle, 52)} | Brand Scaling`;
+    const titleTag = `${cleanSeoText(cleanTitle, 44)} | Brand Scaling`;
     const description = caseStudyDescription(cs);
     const metrics = Array.isArray(cs.metrics) ? cs.metrics : [];
     const points = Array.isArray(cs.growthPoints) ? cs.growthPoints : [];
@@ -323,6 +323,41 @@ async function buildCaseRoutes() {
 }
 
 let generatedCount = 0;
+
+// llms-full.txt: the full text of every page as Markdown, for AI engines that
+// fetch one file instead of crawling (complements public/llms.txt).
+function htmlToMarkdown(html) {
+  return String(html)
+    .replace(/<h2>(.*?)<\/h2>/g, '\n## $1\n')
+    .replace(/<h3>(.*?)<\/h3>/g, '\n### $1\n')
+    .replace(/<li>(.*?)<\/li>/g, '- $1\n')
+    .replace(/<a href="(\/[^"]*)">(.*?)<\/a>/g, '[$2](https://www.brandscalinghacks.com$1)')
+    .replace(/<\/p>/g, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function writeLlmsFull(allRoutes) {
+  const core = allRoutes.filter((r) => !r.noindex && !r.path.startsWith('/cases/'));
+  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/')).slice(0, 40);
+  const section = (r) => `# ${r.h1}\nURL: https://www.brandscalinghacks.com${r.path === '/' ? '/' : r.path}\nSummary: ${r.description}\n\n${htmlToMarkdown(r.content)}\n`;
+  const intro = [
+    '# Brand Scaling: full site content for AI assistants',
+    '',
+    'Brand Scaling (Brand Scaling Hacks LLC) is a DTC ecommerce performance marketing agency founded by Gaurav Kapoor: Meta and TikTok ads, direct-response creative, Shopify CRO. $50M+ in Meta ad spend managed, 150+ verified case studies, 30+ niches. New York, NY. Serves US, UK, Canada and Australia.',
+    'Short index: https://www.brandscalinghacks.com/llms.txt',
+    'Last generated: ' + new Date().toISOString().slice(0, 10)
+  ].join('\n');
+  const out = [
+    intro,
+    ...core.map(section),
+    '# Case study library (first 40 of 120+)',
+    ...cases.map(section)
+  ].join('\n\n---\n\n');
+  fs.writeFileSync(path.join(distDir, 'llms-full.txt'), out, 'utf8');
+}
 
 function renderRoute(route) {
   const fullOutPath = path.join(distDir, route.outPath);
@@ -361,6 +396,11 @@ function renderRoute(route) {
     html = html.replace(/<meta property="og:image:height" content=".*?" \/>\s*/, () => '');
   }
 
+  // Per-route JSON-LD so non-JS crawlers (AI engines) get the same structured data
+  if (route.schema) {
+    html = html.replace('</head>', () => `<script type="application/ld+json" id="route-schema">${route.schema}</script>\n  </head>`);
+  }
+
   // 404 page must never be indexed
   if (route.noindex) {
     html = html.replace(/<meta name="robots" content=".*?" \/>/, () => '<meta name="robots" content="noindex, follow" />');
@@ -391,8 +431,18 @@ function renderRoute(route) {
 }
 
 (async () => {
+  const { getRouteSchema, toJsonLd, ogImageFor } = await import('../src/data/pageSchemas.js');
   const caseRoutes = await buildCaseRoutes();
-  [...routes, ...caseRoutes].forEach(renderRoute);
+  const allRoutes = [...routes, ...caseRoutes].map((r) => {
+    const graph = getRouteSchema(r.path);
+    return {
+      ...r,
+      ogImage: r.ogImage || (r.path.startsWith('/cases/') ? null : ogImageFor(r.path)),
+      schema: graph ? toJsonLd(graph).replace(/<\//g, '<\\/') : null
+    };
+  });
+  allRoutes.forEach(renderRoute);
+  writeLlmsFull(allRoutes);
   console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core routes + ${caseRoutes.length} case studies).`);
 })().catch((err) => {
   console.error('Prerender failed:', err);
