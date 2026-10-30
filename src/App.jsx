@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -34,6 +34,7 @@ function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
   const [activeInstagramReel, setActiveInstagramReel] = useState(null);
+  const hasTrackedFirstPageView = useRef(false);
 
   // Initialize route from current window path on load and handle popstate
   useEffect(() => {
@@ -244,6 +245,13 @@ function App() {
     // The prerendered JSON-LD belongs to the first URL only; pages inject their own after mount
     const prerenderedSchema = document.getElementById('route-schema');
     if (prerenderedSchema) prerenderedSchema.remove();
+
+    // Meta Pixel: the snippet in index.html fires PageView on first load; fire it again on SPA navigation
+    if (hasTrackedFirstPageView.current) {
+      if (typeof window.fbq === 'function') window.fbq('track', 'PageView');
+    } else {
+      hasTrackedFirstPageView.current = true;
+    }
   }, [activePage]);
 
   const handleNavigate = (pageId) => {
