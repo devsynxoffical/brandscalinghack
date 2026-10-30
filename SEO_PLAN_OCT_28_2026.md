@@ -171,6 +171,27 @@ Goal for the day: every page indexable and discoverable by crawl, and more query
 
 ---
 
+## 4d. Day 3, second pass (Oct 30, 2026): index quality, niche hubs, thin pages
+
+**Index quality: 32 thin case pages set to noindex.** An audit of all 126 case captions found 32 Instagram posts with no revenue, spend or ROAS figure in the text (motivational posts, bootcamp announcements, niche lists). Their cards still display templated headline numbers, which is both a thin-content and a credibility problem. They are now `noindex, follow`, excluded from the sitemap, the hub list and the ItemList schema, and listed in `src/data/caseIndexing.js` so any of them can be re-enabled once a verifiable breakdown is written. Sitemap: 115 URLs, 94 indexable case studies. Also found: 47 case pages carry the default "4.2x ROAS" value rather than a quoted figure (see open items).
+
+**Five niche hub pages** under `/case-studies/<niche>`: skincare-beauty (7 cases), fitness-health (5), apparel-fashion (8), supplements-nutrition (5), dropshipping-dtc (69). Each has a unique title, description, H1 and 90-word intro written for the niche's buyer query ("skincare meta ads case study", "fashion brand facebook ads agency"), a card grid of its cases, a how-we-scale section with service links, CollectionPage + ItemList + Breadcrumb schema, and cross-links to the other hubs. Linked from the case study hub (visible nav row and prerendered list) and from two blog posts.
+
+**Editorial breakdowns on the 12 highest-value case pages.** Hand-written 70 to 100 word summaries, three "what we did" points and a result line, stated only from what the original post says. Shown at the top of the page, prerendered for crawlers, and used as the meta description (replacing truncated caption text). Slugs covered: the $2.3M at 11.6x account, the $1.6M year, the $1M in 6 months, $449K in 49 days, $374K on $132K spend, $185K at 56% margin, $148K day, $165K in 22 days, $161K Q3 month, $117K month, the Q4 niche research post and the product research post.
+
+**Internal linking from posts.** Every blog post now has a "Go deeper" block of four contextual links (service page, tool, sibling post, niche hub), rendered on the page and in the prerendered HTML.
+
+**Data fixes.** Three malformed ROAS strings ("11.6Xx ROAS", "37% Marginx ROAS", "56% Profit Marginx ROAS") corrected in the data and the metrics.
+
+**Core Web Vitals.** Hero video now has a poster image and the home page preloads it with high fetch priority, so the LCP element is a fast image rather than the first video frame. Five below-the-fold images gained lazy loading and async decoding.
+
+**Open items from this pass**
+- 47 case pages show the templated "4.2x ROAS" value. Each needs either the real figure from the ad account screenshot or the ROAS metric removed. This is a content owner task; the list is every case where `roas` equals "4.2x ROAS" in `src/data/allCaseStudies.js`.
+- The 32 noindex pages should be either deleted from the library or rewritten with real numbers; noindex is the holding position.
+- Remaining case pages without an editorial breakdown (82) use cleaned caption text; write breakdowns for the next 20 by revenue in week 5.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

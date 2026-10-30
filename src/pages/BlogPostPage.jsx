@@ -429,6 +429,24 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             </section>
           )}
 
+          {/* Related services, tools and guides (internal links) */}
+          {post.relatedLinks && post.relatedLinks.length > 0 && (
+            <section aria-label="Related resources" style={{ marginTop: '44px', background: '#0f172a', borderRadius: '18px', padding: '28px' }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 900, color: '#ffffff', margin: '0 0 16px' }}>Go deeper</h3>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
+                {post.relatedLinks.map((l) => {
+                  const pageId = l.href === '/' ? 'home' : l.href.startsWith('/blog/') ? `blog-${l.href.slice(6)}` : l.href.startsWith('/case-studies/') ? `case-niche-${l.href.slice(14)}` : l.href.slice(1);
+                  return (
+                    <a key={l.href} href={l.href} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(pageId); }} style={{ display: 'block', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', padding: '14px 16px', textDecoration: 'none' }}>
+                      <span style={{ display: 'block', color: '#ff7043', fontWeight: 800, fontSize: '14px', marginBottom: '4px' }}>{l.title}</span>
+                      <span style={{ display: 'block', color: '#cbd5e1', fontSize: '13px', lineHeight: 1.5 }}>{l.text}</span>
+                    </a>
+                  );
+                })}
+              </div>
+            </section>
+          )}
+
           {/* Related Playbooks Grid */}
           <section style={{ marginTop: '50px', paddingTop: '36px', borderTop: '1px solid #e2e8f0' }}>
             <h3 style={{ fontSize: '22px', fontWeight: 900, color: '#0f172a', marginBottom: '22px', display: 'flex', alignItems: 'center', gap: '8px' }}>

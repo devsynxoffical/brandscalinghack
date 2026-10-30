@@ -5,6 +5,9 @@
 import { blogPosts } from './blogPosts.js';
 import { allCaseStudies } from './allCaseStudies.js';
 import { cleanSeoText, caseStudyDescription } from './seoText.js';
+import { CASE_NICHES, nicheBySlug, casesForNiche } from './caseNiches.js';
+import { isIndexableCase } from './caseIndexing.js';
+import { editorialFor } from './caseEditorial.js';
 
 export const BASE_URL = 'https://www.brandscalinghacks.com';
 export const ORG_ID = `${BASE_URL}/#organization`;
@@ -332,8 +335,8 @@ const staticSchemas = {
       extra: {
         mainEntity: {
           '@type': 'ItemList',
-          numberOfItems: Math.min(allCaseStudies.length, 20),
-          itemListElement: allCaseStudies.slice(0, 20).map((cs, i) => ({
+          numberOfItems: Math.min(allCaseStudies.filter(isIndexableCase).length, 20),
+          itemListElement: allCaseStudies.filter(isIndexableCase).slice(0, 20).map((cs, i) => ({
             '@type': 'ListItem',
             position: i + 1,
             url: `${BASE_URL}/cases/${cs.slug || cs.id}`,
@@ -420,6 +423,33 @@ const staticSchemas = {
   ]
 };
 
+export function caseNicheSchema(niche) {
+  const path = `/case-studies/${niche.slug}`;
+  const cases = casesForNiche(niche, allCaseStudies, isIndexableCase);
+  return [
+    webPage({
+      path,
+      type: 'CollectionPage',
+      name: niche.titleTag,
+      description: niche.metaDescription,
+      extra: {
+        keywords: niche.keywords.join(', '),
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: cases.length,
+          itemListElement: cases.map((cs, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `${BASE_URL}/cases/${cs.slug || cs.id}`,
+            name: cleanSeoText(cs.title, 110)
+          }))
+        }
+      }
+    }),
+    breadcrumb([['Home', '/'], ['Case Studies', '/case-studies'], [niche.name, path]])
+  ];
+}
+
 export function blogPostSchema(post) {
   const url = `${BASE_URL}/blog/${post.slug}`;
   const graph = [
@@ -458,7 +488,8 @@ export function caseStudySchema(cs) {
   const id = cs.slug || cs.id || cs.shortcode;
   const url = `${BASE_URL}/cases/${id}`;
   const title = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
-  const description = caseStudyDescription(cs);
+  const editorial = editorialFor(cs);
+  const description = editorial ? cleanSeoText(editorial.summary, 155) : caseStudyDescription(cs);
   const image = cs.image ? `${BASE_URL}${cs.image}` : DEFAULT_OG_IMAGE;
   const hasVideo = Boolean(cs.videoUrl && cs.videoType !== 'image');
   const graph = [
@@ -507,6 +538,10 @@ export function getRouteSchema(path) {
   if (clean.startsWith('/blog/')) {
     const post = blogPosts.find((p) => p.slug === clean.slice('/blog/'.length));
     return post ? blogPostSchema(post) : null;
+  }
+  if (clean.startsWith('/case-studies/')) {
+    const niche = nicheBySlug(clean.slice('/case-studies/'.length));
+    return niche ? caseNicheSchema(niche) : null;
   }
   if (clean.startsWith('/cases/')) {
     const id = clean.slice('/cases/'.length);

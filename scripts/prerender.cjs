@@ -237,12 +237,22 @@ const escapeHtml = (s) => String(s || '')
 async function buildCaseRoutes() {
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
   const { cleanSeoText, caseStudyDescription } = await import('../src/data/seoText.js');
-  const related = makeRelated(allCaseStudies);
+  const { isIndexableCase } = await import('../src/data/caseIndexing.js');
+  const { editorialFor } = await import('../src/data/caseEditorial.js');
+  const indexable = allCaseStudies.filter(isIndexableCase);
+  const related = makeRelated(indexable);
   return allCaseStudies.map((cs) => {
     const id = cs.slug || cs.id || cs.shortcode;
     const cleanTitle = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
     const titleTag = `${cleanSeoText(cleanTitle, 44)} | Brand Scaling`;
-    const description = caseStudyDescription(cs);
+    const editorial = editorialFor(cs);
+    const description = editorial ? cleanSeoText(editorial.summary, 155) : caseStudyDescription(cs);
+    const editorialHtml = editorial ? `
+        <h2>Breakdown</h2>
+        <p>${escapeHtml(editorial.summary)}</p>
+        <h3>What we did</h3>
+        <ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul>
+        <p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : '';
     const metrics = Array.isArray(cs.metrics) ? cs.metrics : [];
     const points = Array.isArray(cs.growthPoints) ? cs.growthPoints : [];
     const caption = String(cs.fullCaption || '').split('\n').map((l) => cleanSeoText(l)).filter(Boolean).slice(0, 12);
@@ -253,13 +263,15 @@ async function buildCaseRoutes() {
       description: escapeHtml(description),
       h1: escapeHtml(cleanTitle),
       ogImage: cs.image ? `https://www.brandscalinghacks.com${cs.image}` : null,
+      noindex: !isIndexableCase(cs),
       content: `
         <p>${escapeHtml(cs.niche || cs.category || 'DTC ecommerce')} case study: ${escapeHtml(cs.revenue || '')} ${cs.roas ? 'at ' + escapeHtml(cs.roas) : ''}. ${escapeHtml(cs.system || '')}</p>
+        ${editorialHtml}
         ${metrics.length ? `<h2>Key Metrics</h2><ul>${metrics.map((m) => `<li>${escapeHtml(m.label)}: ${escapeHtml(m.value)}</li>`).join('')}</ul>` : ''}
         ${points.length ? `<h2>What We Did</h2><ul>${points.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
         ${caption.length ? `<h2>Full Breakdown</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
         <h2>Related Case Studies</h2>
-        <ul>${related(cs).map((r) => `<li><a href="/cases/${r.slug || r.id}">${escapeHtml(cleanSeoText(r.title, 90))}</a></li>`).join('')}</ul>
+        <ul>${(isIndexableCase(cs) ? related(cs) : indexable.slice(0, 3)).map((r) => `<li><a href="/cases/${r.slug || r.id}">${escapeHtml(cleanSeoText(r.title, 90))}</a></li>`).join('')}</ul>
         <p><a href="/case-studies">All 150+ case studies</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a></p>
       `
     };
@@ -300,7 +312,7 @@ function htmlToMarkdown(html) {
 
 function writeLlmsFull(allRoutes) {
   const core = allRoutes.filter((r) => !r.noindex && !r.path.startsWith('/cases/'));
-  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/')).slice(0, 40);
+  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/') && !r.noindex).slice(0, 40);
   const section = (r) => `# ${r.h1}\nURL: https://www.brandscalinghacks.com${r.path === '/' ? '/' : r.path}\nSummary: ${r.description}\n\n${htmlToMarkdown(r.content)}\n`;
   const intro = [
     '# Brand Scaling: full site content for AI assistants',
@@ -360,7 +372,11 @@ function renderRoute(route) {
     html = html.replace('</head>', () => `<script type="application/ld+json" id="route-schema">${route.schema}</script>\n  </head>`);
   }
 
-  // 404 page must never be indexed
+  if (route.headExtra) {
+    html = html.replace('</head>', () => `${route.headExtra}\n  </head>`);
+  }
+
+  // 404 page and thin case pages must never be indexed
   if (route.noindex) {
     html = html.replace(/<meta name="robots" content=".*?" \/>/, () => '<meta name="robots" content="noindex, follow" />');
     html = html.replace(/<link rel="canonical" href=".*?" \/>\s*/, () => '');
@@ -408,22 +424,52 @@ function renderRoute(route) {
         ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
       `).join('')}
       ${(p.faqs || []).length ? `<h2>Frequently Asked Questions</h2>${p.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}` : ''}
+      ${(p.relatedLinks || []).length ? `<h2>Go deeper</h2><ul>${p.relatedLinks.map((l) => `<li><a href="${l.href}">${escapeHtml(l.title)}</a>: ${escapeHtml(l.text)}</li>`).join('')}</ul>` : ''}
       <p><a href="/blog">Browse all ecommerce playbooks</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/case-studies">Explore 150+ verified case studies</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
     `
   }));
 
-  // Crawl paths: the case study hub links to every case page, the blog hub to every post.
+  const { CASE_NICHES, casesForNiche } = await import('../src/data/caseNiches.js');
+  const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
+  const { isIndexableCase } = await import('../src/data/caseIndexing.js');
+  const { cleanSeoText } = await import('../src/data/seoText.js');
+  const nicheRoutes = CASE_NICHES.map((n) => {
+    const cases = casesForNiche(n, allCaseStudies, isIndexableCase);
+    return {
+      path: `/case-studies/${n.slug}`,
+      outPath: `case-studies/${n.slug}/index.html`,
+      title: n.titleTag,
+      description: escapeHtml(n.metaDescription),
+      h1: escapeHtml(n.h1),
+      content: `
+        <p>${escapeHtml(n.intro)}</p>
+        <h2>${cases.length} ${escapeHtml(n.name)} case studies</h2>
+        <ul>${cases.map((cs) => `<li><a href="/cases/${cs.slug}">${escapeHtml(cleanSeoText(cs.title, 110))}</a>: ${escapeHtml(cs.revenue || '')}${cs.roas ? ', ' + escapeHtml(cs.roas) : ''}</li>`).join('')}</ul>
+        <h2>How Brand Scaling scales ${escapeHtml(n.name)} brands</h2>
+        <p>Every account ran the same four-phase engine: a 14-day foundation (tracking, offer, product page), a creative testing phase with 30 to 50 new angles a month, an optimisation phase on conversion rate and average order value, then budget scaling in 20% to 30% steps with cost controls.</p>
+        <p>Other niches: ${CASE_NICHES.filter((o) => o.slug !== n.slug).map((o) => `<a href="/case-studies/${o.slug}">${escapeHtml(o.name)}</a>`).join(' | ')} | <a href="/case-studies">All case studies</a></p>
+        <p><a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a> | <a href="/shopify-agency">Shopify agency</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
+      `
+    };
+  });
+
+  // Crawl paths: the case study hub links to every niche hub and every indexable case page.
+  const indexableCaseRoutes = caseRoutes.filter((r) => !r.noindex);
   const caseHub = routes.find((r) => r.path === '/case-studies');
   caseHub.content += `
-      <h2>All ${caseRoutes.length} Case Studies</h2>
-      <ul>${caseRoutes.map((r) => `<li><a href="${r.path}">${r.h1}</a></li>`).join('')}</ul>`;
+      <h2>Case Studies by Niche</h2>
+      <ul>${CASE_NICHES.map((n) => `<li><a href="/case-studies/${n.slug}">${escapeHtml(n.h1)}</a></li>`).join('')}</ul>
+      <h2>All ${indexableCaseRoutes.length} Case Studies</h2>
+      <ul>${indexableCaseRoutes.map((r) => `<li><a href="${r.path}">${r.h1}</a></li>`).join('')}</ul>`;
+  const home = routes.find((r) => r.path === '/');
+  home.headExtra = '<link rel="preload" as="image" href="/hero-video-poster.jpg" fetchpriority="high" />';
   const blogHub = routes.find((r) => r.path === '/blog');
   blogHub.content = `
       <p>Field-tested growth insights, algorithmic teardowns, and unit economics benchmarks from managing $50M+ in ad spend.</p>
       <h2>All Playbooks &amp; Articles</h2>
       <ul>${blogPosts.map((p) => `<li><a href="/blog/${p.slug}">${escapeHtml(p.title)}</a>: ${escapeHtml(p.metaDescription)}</li>`).join('')}</ul>`;
 
-  const allRoutes = [...routes, ...blogRoutes, ...caseRoutes].map((r) => {
+  const allRoutes = [...routes, ...nicheRoutes, ...blogRoutes, ...caseRoutes].map((r) => {
     const graph = getRouteSchema(r.path);
     return {
       ...r,
@@ -433,7 +479,7 @@ function renderRoute(route) {
   });
   allRoutes.forEach(renderRoute);
   writeLlmsFull(allRoutes);
-  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${blogRoutes.length} blog + ${caseRoutes.length} case studies).`);
+  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.length - indexableCaseRoutes.length} noindex).`);
 })().catch((err) => {
   console.error('Prerender failed:', err);
   process.exit(1);

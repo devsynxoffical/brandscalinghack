@@ -113,7 +113,7 @@ export const allCaseStudies = [
     "image": "/assets/insta-video/CkaJ5hCju2s.jpg",
     "revenue": "$148,000 Scaled",
     "numeric_rev": 1000000,
-    "roas": "37% Marginx ROAS",
+    "roas": "37% Net Margin",
     "timeframe": "Verified Video Proof",
     "system": "Meta Video Ads & Scaling Systems",
     "badge": "VIDEO BREAKDOWN",
@@ -127,7 +127,7 @@ export const allCaseStudies = [
       },
       {
         "label": "Target ROAS",
-        "value": "37% Marginx ROAS"
+        "value": "37% Net Margin"
       },
       {
         "label": "Niche",
@@ -209,7 +209,7 @@ export const allCaseStudies = [
     "image": "/assets/insta-video/Cm_skHlDG4T.jpg",
     "revenue": "$2,300,000 Scaled",
     "numeric_rev": 1000000,
-    "roas": "11.6Xx ROAS",
+    "roas": "11.6x ROAS",
     "timeframe": "Verified Video Proof",
     "system": "Meta Video Ads & Scaling Systems",
     "badge": "VIDEO BREAKDOWN",
@@ -223,7 +223,7 @@ export const allCaseStudies = [
       },
       {
         "label": "Target ROAS",
-        "value": "11.6Xx ROAS"
+        "value": "11.6x ROAS"
       },
       {
         "label": "Niche",
@@ -257,7 +257,7 @@ export const allCaseStudies = [
     "image": "/instagram_case_studies/DCpIoi0hNhx.jpg",
     "revenue": "$185,936 Scaled",
     "numeric_rev": 185936,
-    "roas": "56% Profit Marginx ROAS",
+    "roas": "56% Profit Margin",
     "timeframe": "Verified Metric",
     "system": "Meta Performance & Creative Engine",
     "badge": "IMAGE PROOF",
@@ -271,7 +271,7 @@ export const allCaseStudies = [
       },
       {
         "label": "Target ROAS",
-        "value": "56% Profit Marginx ROAS"
+        "value": "56% Profit Margin"
       },
       {
         "label": "Niche",

@@ -38,6 +38,9 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
 (async () => {
   const { blogPosts } = await import('../src/data/blogPosts.js');
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
+  const { isIndexableCase } = await import('../src/data/caseIndexing.js');
+  const { CASE_NICHES } = await import('../src/data/caseNiches.js');
+  const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-10-30', changefreq: 'weekly', priority: '0.8' }));
 
   const blogRoutes = blogPosts.map((p) => ({
     loc: `/blog/${p.slug}`,
@@ -50,12 +53,12 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   const caseRoutes = [];
   for (const cs of allCaseStudies) {
     const id = cs.slug || cs.id || cs.shortcode;
-    if (!id || seen.has(id)) continue;
+    if (!id || seen.has(id) || !isIndexableCase(cs)) continue;
     seen.add(id);
     caseRoutes.push({ loc: `/cases/${id}`, lastmod: CASE_LASTMOD, changefreq: 'monthly', priority: '0.6' });
   }
 
-  const all = [...staticRoutes, ...blogRoutes, ...caseRoutes];
+  const all = [...staticRoutes, ...nicheRoutes, ...blogRoutes, ...caseRoutes];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${all.map(urlBlock).join('\n')}
@@ -88,7 +91,7 @@ ${rssItems}
 </rss>
 `;
   fs.writeFileSync(path.join(__dirname, '..', 'public', 'feed.xml'), rss, 'utf8');
-  console.log(`Sitemap written: ${all.length} URLs (${staticRoutes.length} static, ${blogRoutes.length} blog, ${caseRoutes.length} case studies).`);
+  console.log(`Sitemap written: ${all.length} URLs (${staticRoutes.length} static, ${nicheRoutes.length} niche hubs, ${blogRoutes.length} blog, ${caseRoutes.length} indexable case studies).`);
 })().catch((err) => {
   console.error('Sitemap generation failed:', err);
   process.exit(1);

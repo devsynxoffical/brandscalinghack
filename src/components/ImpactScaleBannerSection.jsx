@@ -41,8 +41,7 @@ export default function ImpactScaleBannerSection({ onOpenBooking, onNavigate }) 
               <img
                 src="/assets/gaurav_cutout.webp"
                 alt="Gaurav Kapoor"
-                className="impact-founder-img"
-              />
+                className="impact-founder-img" loading="lazy" decoding="async" />
             </div>
 
             {/* Right: Bio & Proven Pillars */}

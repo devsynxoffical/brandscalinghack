@@ -115,6 +115,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
           <video
             ref={videoRef}
             src="/brand-scaling-video.mp4"
+            poster="/hero-video-poster.jpg"
             autoPlay
             loop
             muted

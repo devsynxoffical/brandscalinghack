@@ -14,6 +14,10 @@ import InstagramModal from './components/InstagramModal';
 import { allCaseStudies } from './data/allCaseStudies';
 import { cleanSeoText, caseStudyDescription } from './data/seoText';
 import { ogImageFor } from './data/pageSchemas';
+import { nicheBySlug } from './data/caseNiches';
+import { isIndexableCase } from './data/caseIndexing';
+import { editorialFor } from './data/caseEditorial';
+import CaseNichePage from './pages/CaseNichePage';
 
 import ShopifyAgencyPage from './pages/ShopifyAgencyPage';
 import MetaAdsAgencyPage from './pages/MetaAdsAgencyPage';
@@ -39,6 +43,9 @@ function App() {
         setActivePage('home');
       } else if (rawPath === '/case-studies' || rawPath === '/cases' || rawPath === '/cases/studies' || rawPath === '/case') {
         setActivePage('case-studies');
+      } else if (rawPath.startsWith('/case-studies/')) {
+        const nicheSlug = rawPath.replace('/case-studies/', '');
+        setActivePage(nicheBySlug(nicheSlug) ? `case-niche-${nicheSlug}` : '404');
       } else if (rawPath.startsWith('/cases/')) {
         const caseId = rawPath.replace('/cases/', '');
         if (caseId && caseId !== 'studies') {
@@ -114,12 +121,20 @@ function App() {
     let description = 'Performance marketing agency for DTC ecommerce brands: Meta and TikTok ads, Shopify CRO and creative. $50M+ ad spend managed. Book a growth audit.';
     let pagePath = '/';
 
-    if (activePage.startsWith('case-') && activePage !== 'case-studies') {
+    let noindex = activePage === '404';
+    if (activePage.startsWith('case-niche-')) {
+      const niche = nicheBySlug(activePage.replace('case-niche-', ''));
+      title = niche ? niche.titleTag : 'Ecommerce Case Studies | Brand Scaling';
+      description = niche ? niche.metaDescription : '';
+      pagePath = niche ? `/case-studies/${niche.slug}` : '/case-studies';
+    } else if (activePage.startsWith('case-') && activePage !== 'case-studies') {
       const caseId = activePage.replace('case-', '');
       const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
       if (study) {
         title = `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 44)} | Brand Scaling`;
-        description = caseStudyDescription(study);
+        const editorial = editorialFor(study);
+        description = editorial ? cleanSeoText(editorial.summary, 155) : caseStudyDescription(study);
+        if (!isIndexableCase(study)) noindex = true;
       } else {
         title = `eCommerce Case Study #${caseId} | Brand Scaling`;
         description = 'Direct-response case study breakdown showing verified ROAS and scalable revenue results.';
@@ -205,7 +220,7 @@ function App() {
     document.title = title;
     updateMeta('description', description);
     // Soft-404s must not be indexed; every real page keeps the default index,follow directive
-    updateMeta('robots', activePage === '404'
+    updateMeta('robots', noindex
       ? 'noindex, follow'
       : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
     updateMeta('og:title', title, true);
@@ -236,7 +251,9 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // Update browser history URL cleanly without full reload
-    if (pageId.startsWith('case-') && pageId !== 'case-studies') {
+    if (pageId.startsWith('case-niche-')) {
+      window.history.pushState({}, '', `/case-studies/${pageId.replace('case-niche-', '')}`);
+    } else if (pageId.startsWith('case-') && pageId !== 'case-studies') {
       const caseId = pageId.replace('case-', '');
       window.history.pushState({}, '', `/cases/${caseId}`);
     } else if (pageId.startsWith('blog-') && pageId !== 'blog') {
@@ -254,6 +271,15 @@ function App() {
   };
 
   const renderActivePage = () => {
+    if (activePage.startsWith('case-niche-')) {
+      return (
+        <CaseNichePage
+          nicheSlug={activePage.replace('case-niche-', '')}
+          onNavigate={handleNavigate}
+          onOpenBooking={() => setIsBookingOpen(true)}
+        />
+      );
+    }
     if (activePage.startsWith('case-') && activePage !== 'case-studies') {
       const caseId = activePage.replace('case-', '');
       return (

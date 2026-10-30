@@ -21,7 +21,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
       {/* Image / Video Container with Seamless Blend */}
       <div className="showcase-img-wrap">
         {/* Ambient Blurred Backdrop for Seamless Edge Blend */}
-        <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" />
+        <img src={study.image} alt="" className="showcase-img-bg-blur" aria-hidden="true" loading="lazy" decoding="async" />
 
         {/* Video Player (Always Autoplaying in continuous loop) */}
         {study.videoUrl && study.videoType !== 'image' ? (

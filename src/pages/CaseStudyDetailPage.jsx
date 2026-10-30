@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, TrendingUp, DollarSign, ExternalLi
 import { InstagramIcon } from '../components/Icons';
 import { allCaseStudies } from '../data/allCaseStudies';
 import { caseStudySchema, toJsonLd } from '../data/pageSchemas';
+import { editorialFor } from '../data/caseEditorial';
 
 export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBooking }) {
   const [copied, setCopied] = useState(false);
@@ -38,6 +39,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
   const nextStudy = activeIdx < allCaseStudies.length - 1 ? allCaseStudies[activeIdx + 1] : allCaseStudies[0];
 
   const hasVideo = Boolean(caseStudy.videoUrl && caseStudy.videoType !== 'image');
+  const editorial = editorialFor(caseStudy);
 
   const handleCopyCaption = () => {
     if (caseStudy.fullCaption) {
@@ -181,6 +183,17 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
         <p style={{ maxWidth: '840px', margin: '0 auto 36px auto', fontSize: '1.12rem', color: '#94a3b8', lineHeight: 1.6 }}>
           {caseStudy.summary}
         </p>
+        {editorial && (
+          <div className="case-editorial" style={{ margin: '26px 0 6px', background: 'rgba(255,87,34,0.06)', border: '1px solid rgba(255,87,34,0.22)', borderLeft: '4px solid #ff5722', borderRadius: '0 14px 14px 0', padding: '22px 26px' }}>
+            <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#ffffff', margin: '0 0 10px' }}>Breakdown</h2>
+            <p style={{ color: '#e2e8f0', fontSize: '15px', lineHeight: 1.7, margin: '0 0 14px' }}>{editorial.summary}</p>
+            <h3 style={{ fontSize: '14px', fontWeight: 800, color: '#ff7043', letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px' }}>What we did</h3>
+            <ul style={{ margin: '0 0 14px', paddingLeft: '20px', color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.7 }}>
+              {editorial.whatWeDid.map((w) => <li key={w}>{w}</li>)}
+            </ul>
+            <p style={{ margin: 0, color: '#ffffff', fontWeight: 700, fontSize: '15px' }}>Result: <span style={{ color: '#ff7043' }}>{editorial.result}</span></p>
+          </div>
+        )}
       </section>
 
       {/* Main Media Showcase (Video Reel or Dashboard Proof) */}

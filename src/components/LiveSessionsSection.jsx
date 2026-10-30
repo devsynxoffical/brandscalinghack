@@ -60,7 +60,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
                 onClick={() => handleSelectSession(session)}
               >
                 <div className="video-thumb-mini">
-                  <img src={session.thumbnail} alt={session.title} />
+                  <img src={session.thumbnail} alt={session.title} loading="lazy" decoding="async" />
                   <div className="video-thumb-overlay">
                     <div className="mini-play-circle">
                       <Play size={13} fill="#ffffff" color="#ffffff" style={{ marginLeft: '2px' }} />

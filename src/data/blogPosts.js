@@ -12,6 +12,12 @@ export const blogPosts = [
     publishDate: '2026-10-22',
     updatedDate: '2026-10-26',
     readTime: '11 min read',
+    relatedLinks: [
+      { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Get the BFCM creative bank and campaign structure built for you.' },
+      { href: '/case-studies/apparel-fashion', title: 'Apparel & Fashion Case Studies', text: 'The 4-day BFCM peak result: $59,241 from $16,630 at 3.56x ROAS.' },
+      { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Set your break-even ROAS before the peak weekend.' },
+      { href: '/blog/meta-ads-library', title: 'Meta Ads Library Guide', text: 'Find the Black Friday ads competitors kept running last year.' }
+    ],
     category: 'Strategy & Scaling',
     author: {
       name: 'Gaurav Kapoor',
@@ -158,6 +164,12 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
     publishDate: '2026-10-24',
     updatedDate: '2026-10-26',
     readTime: '9 min read',
+    relatedLinks: [
+      { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Enter price, COGS and CAC to get break-even ROAS and profit per order.' },
+      { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Accounts run between 3x and 6x ROAS at scale, with $50M+ managed.' },
+      { href: '/case-studies', title: '150+ Verified Case Studies', text: 'Real ROAS figures from client ad accounts.' },
+      { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'Why platform ROAS and blended MER now diverge.' }
+    ],
     category: 'Metrics & Unit Economics',
     author: {
       name: 'Gaurav Kapoor',
@@ -273,6 +285,12 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
     publishDate: '2026-10-26',
     updatedDate: '2026-10-26',
     readTime: '12 min read',
+    relatedLinks: [
+      { href: '/', title: 'Performance Marketing Agency for Ecommerce', text: 'What the Brand Scaling engagement includes and who it is for.' },
+      { href: '/meta-ads-agency', title: 'Meta Ads Agency', text: 'The Facebook and Instagram arm of the engine.' },
+      { href: '/growth', title: 'Ecommerce Growth Agency', text: 'Media buying, creative, CRO and retention in one system.' },
+      { href: '/case-studies', title: '150+ Verified Case Studies', text: 'Proof from real ad accounts across 30+ niches.' }
+    ],
     category: 'Strategy & Scaling',
     author: {
       name: 'Gaurav Kapoor',
@@ -397,6 +415,12 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
     publishDate: '2026-10-30',
     updatedDate: '2026-10-30',
     readTime: '14 min read',
+    relatedLinks: [
+      { href: '/viral-creatives', title: 'Direct-Response Creatives & UGC', text: '58+ live hooks built from exactly this research process.' },
+      { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Creative research is the first deliverable of a Brand Growth Audit.' },
+      { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'Why creative diversity now decides reach.' },
+      { href: '/case-studies/skincare-beauty', title: 'Skincare Case Studies', text: 'The $146,184 in 27 days account briefed from a swipe file.' }
+    ],
     category: 'Creative Research',
     author: {
       name: 'Gaurav Kapoor',
@@ -617,6 +641,12 @@ If you want this done for you, creative research is the first deliverable of a B
     publishDate: '2026-10-30',
     updatedDate: '2026-10-30',
     readTime: '10 min read',
+    relatedLinks: [
+      { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Account structure and creative volume built for Andromeda.' },
+      { href: '/blog/meta-ads-library', title: 'Meta Ads Library Guide', text: 'Where the new angles for a diverse creative matrix come from.' },
+      { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Know your break-even ROAS before adding creative volume.' },
+      { href: '/shopify-agency', title: 'Shopify Agency', text: 'Landing page match and offer work that creative scales into.' }
+    ],
     category: 'Meta Ads',
     author: {
       name: 'Gaurav Kapoor',
