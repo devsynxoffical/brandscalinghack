@@ -4,7 +4,7 @@
 export const allCaseStudies = [
   {
     "id": "Cft79TLpxyk",
-    "slug": "Cft79TLpxyk",
+    "slug": "finally-scale-client-almost-1m-sales-6-months",
     "shortcode": "Cft79TLpxyk",
     "type": "video",
     "title": "Finally We Scale One More Client to Almost 1M$ in Sales in Just 6 Months",
@@ -52,7 +52,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C-4VFNmBfUA",
-    "slug": "C-4VFNmBfUA",
+    "slug": "449221-last-49-days-newer-client-dropshipping-brands-starting",
     "shortcode": "C-4VFNmBfUA",
     "type": "image",
     "title": "🔥$449,221 in the Last 49 days>>One of our newer client dropshipping brands is starting to boss up.",
@@ -100,7 +100,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CkaJ5hCju2s",
-    "slug": "CkaJ5hCju2s",
+    "slug": "148k-day-best-day-whole-career-ending-up-phenomenal",
     "shortcode": "CkaJ5hCju2s",
     "type": "video",
     "title": "$148K in One Day - The Best Day in my Whole Career! Ending Up this Phenomenal Mont...",
@@ -148,7 +148,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DMLC9R1Bn-m",
-    "slug": "DMLC9R1Bn-m",
+    "slug": "new-dtc-client-results-last-16-days-132832-ad-spend-374103",
     "shortcode": "DMLC9R1Bn-m",
     "type": "image",
     "title": "New DTC client results (last 16 days): 💸 $132,832 ad spend → 💰 $374,103 in revenue 📦 6,687 units sold 🔥 ROAS: 2.82",
@@ -196,7 +196,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cm_skHlDG4T",
-    "slug": "Cm_skHlDG4T",
+    "slug": "finally-built-million-dollar-brand-2022-ending-2-3",
     "shortcode": "Cm_skHlDG4T",
     "type": "video",
     "title": "Finally, We built another Million Dollar Brand this 2022, ending with $2.3 Million...",
@@ -244,7 +244,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DCpIoi0hNhx",
-    "slug": "DCpIoi0hNhx",
+    "slug": "185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond",
     "shortcode": "DCpIoi0hNhx",
     "type": "image",
     "title": "$185,936 in 21 Days with 56% Profit Margin: Scaled Another Dropshipping Store Beyond 6-Figure Month",
@@ -292,7 +292,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cra8LBbphRB",
-    "slug": "Cra8LBbphRB",
+    "slug": "meet-com-clients-sasha-whom-have-been-helping-four",
     "shortcode": "Cra8LBbphRB",
     "type": "video",
     "title": "Meet one of our E-Com Clients, \"Sasha,\" whom we have been helping for four months,...",
@@ -340,7 +340,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DD6Q21fh3oi",
-    "slug": "DD6Q21fh3oi",
+    "slug": "26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it",
     "shortcode": "DD6Q21fh3oi",
     "type": "image",
     "title": "📊 $26,271 spent, $115,416 generated, 4.39 ROAS—this skincare brand crushed it in just 20 days. Sounds unreal, right? ...",
@@ -388,7 +388,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C2J6Xe5Ml-E",
-    "slug": "C2J6Xe5Ml-E",
+    "slug": "finally-client-touched-1-6m-year-mark-insane-roas",
     "shortcode": "C2J6Xe5Ml-E",
     "type": "video",
     "title": "Finally, Another Client touched the $1.6M Year Mark with Insane ROAS",
@@ -436,7 +436,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDyWOAiIEIL",
-    "slug": "DDyWOAiIEIL",
+    "slug": "105000-5-days-what-creatives-delivered-dropshipping-client-using",
     "shortcode": "DDyWOAiIEIL",
     "type": "image",
     "title": "🎄 $105,000 in just 5 days. That’s what our creatives delivered for a dropshipping client using ice-cold, warm, and ho...",
@@ -484,7 +484,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Ch-08rOh7Ly",
-    "slug": "Ch-08rOh7Ly",
+    "slug": "161k-books",
     "shortcode": "Ch-08rOh7Ly",
     "type": "video",
     "title": "Another $161K in the Books🔥",
@@ -532,7 +532,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZS6d1XEgl1",
-    "slug": "DZS6d1XEgl1",
+    "slug": "scaled-dtc-fitness-brand-102000-may",
     "shortcode": "DZS6d1XEgl1",
     "type": "image",
     "title": "Just scaled another DTC fitness brand to $102,000 in May.",
@@ -580,7 +580,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Ckg2XwHB4BU",
-    "slug": "Ckg2XwHB4BU",
+    "slug": "hot-dropshipping-niches-list-q4",
     "shortcode": "Ckg2XwHB4BU",
     "type": "video",
     "title": "Hot Dropshipping Niches List For This Q4🔥🔥",
@@ -628,7 +628,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8lyJ6VSyTy",
-    "slug": "C8lyJ6VSyTy",
+    "slug": "six-figure-dropshipping-client-wins-books",
     "shortcode": "C8lyJ6VSyTy",
     "type": "image",
     "title": "Another Six-Figure Dropshipping Client Wins in the Books!!🏆",
@@ -676,7 +676,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CiF19_MJwhT",
-    "slug": "CiF19_MJwhT",
+    "slug": "finally-have-closed-117k-month-client",
     "shortcode": "CiF19_MJwhT",
     "type": "video",
     "title": "Finally We have closed $117K this month with another client",
@@ -724,7 +724,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DIpxfULBj7r",
-    "slug": "DIpxfULBj7r",
+    "slug": "last-18-days-turned-those-struggling-dropshipping-stores-into",
     "shortcode": "DIpxfULBj7r",
     "type": "image",
     "title": "💥 In the last 18 days, we turned one of those struggling dropshipping stores into a DTC powerhouse — generating $68,6...",
@@ -772,7 +772,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CjIsfV-Py1A",
-    "slug": "CjIsfV-Py1A",
+    "slug": "find-100k-month-winning-shopify-dropshipping-products-leaked",
     "shortcode": "CjIsfV-Py1A",
     "type": "video",
     "title": "How I Find $100K/Month Winning Shopify Dropshipping Products (Leaked)",
@@ -820,7 +820,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGZwsH3z7-D",
-    "slug": "DGZwsH3z7-D",
+    "slug": "21k-day-4month-old-dropshipping-store-here-did-it",
     "shortcode": "DGZwsH3z7-D",
     "type": "image",
     "title": "🔥 $21K IN ONE DAY WITH A 4MONTH-OLD DROPSHIPPING STORE! HERE’S HOW WE DID IT… 🔥",
@@ -868,7 +868,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CoUCFM1PIlN",
-    "slug": "CoUCFM1PIlN",
+    "slug": "5-crucial-things-learned-while-scaling-brand-105000-23-days",
     "shortcode": "CoUCFM1PIlN",
     "type": "video",
     "title": "5 Crucial things we learned while scaling the brand to 105,000 in 23 days!",
@@ -916,7 +916,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DAF3pGboMCD",
-    "slug": "DAF3pGboMCD",
+    "slug": "dtc-client-finally-went-beyond-six-figure-mark",
     "shortcode": "DAF3pGboMCD",
     "type": "image",
     "title": "Another DTC Client finally went beyond the Six-Figure Mark 🔥",
@@ -964,7 +964,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CeO7YI3Ow7C",
-    "slug": "CeO7YI3Ow7C",
+    "slug": "lab-use-battle-tested-strategies-scale-skincare-brands-atleast",
     "shortcode": "CeO7YI3Ow7C",
     "type": "video",
     "title": "In our lab we use battle-tested strategies to scale skincare brands to atleast 🧲 5...",
@@ -1012,7 +1012,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C-ntp_DiV17",
-    "slug": "C-ntp_DiV17",
+    "slug": "if-got-sales-then-why-you-can",
     "shortcode": "C-ntp_DiV17",
     "type": "image",
     "title": "If I got sales. Then why you can't?",
@@ -1060,7 +1060,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CfQ6ZWxPGwy",
-    "slug": "CfQ6ZWxPGwy",
+    "slug": "bombshell-update-100k-hit-month",
     "shortcode": "CfQ6ZWxPGwy",
     "type": "video",
     "title": "BOMBSHELL UPDATE 100K$ HIT THIS MONTH!!!",
@@ -1108,7 +1108,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8rGKA8Sk-R",
-    "slug": "C8rGKA8Sk-R",
+    "slug": "massive-win-books-98k-23-days",
     "shortcode": "C8rGKA8Sk-R",
     "type": "image",
     "title": "Another Massive Win in the Books: $98K in Just 23 Days",
@@ -1156,7 +1156,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cfe4exnBL9a",
-    "slug": "Cfe4exnBL9a",
+    "slug": "hit-61k-sales-june-2022",
     "shortcode": "Cfe4exnBL9a",
     "type": "video",
     "title": "One More Hit With 61K$ in Sales This June 2022🤑🤑",
@@ -1204,7 +1204,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8oIOnUy4Fz",
-    "slug": "C8oIOnUy4Fz",
+    "slug": "hit-100k-month",
     "shortcode": "C8oIOnUy4Fz",
     "type": "image",
     "title": "One More Hit with $100K+ This Month🔥🔥",
@@ -1252,7 +1252,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cja7UXHthJz",
-    "slug": "Cja7UXHthJz",
+    "slug": "passed-100000-dropshipping-store-september-2022",
     "shortcode": "Cja7UXHthJz",
     "type": "video",
     "title": "Just passed $100,000 on my Dropshipping Store this September 2022",
@@ -1300,7 +1300,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZS8JtQEqJy",
-    "slug": "DZS8JtQEqJy",
+    "slug": "days-like-are-why-do-62182-7-days-4-50-roas-high-ticket",
     "shortcode": "DZS8JtQEqJy",
     "type": "image",
     "title": "Days like this are why I do this. 🤑$62,182 in 7 days. 4.50 ROAS. High ticket Supplement brand. $145 average order.",
@@ -1348,7 +1348,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cr---6lOagu",
-    "slug": "Cr---6lOagu",
+    "slug": "meet-riley-after-joining-brandscalinghacks-she-went-from-40k-per",
     "shortcode": "Cr---6lOagu",
     "type": "video",
     "title": "Meet Riley: After joining BrandScalingHacks, she went from $40K per Month to makin...",
@@ -1396,7 +1396,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDpjtXUo-ZA",
-    "slug": "DDpjtXUo-ZA",
+    "slug": "what-if-told-you-14669-could-turn-into-62889-3-days",
     "shortcode": "DDpjtXUo-ZA",
     "type": "image",
     "title": "What if I told you $14,669 could turn into $62,889 in just 3 days?💰💰",
@@ -1444,7 +1444,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CxqUP36gaEo",
-    "slug": "CxqUP36gaEo",
+    "slug": "finally-have-taken-brand-128k-14days-insane-profits",
     "shortcode": "CxqUP36gaEo",
     "type": "video",
     "title": "Finally we have taken this brand to $128K in Just 14Days with Insane Profits...Thi...",
@@ -1492,7 +1492,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDSbgXjB5Ll",
-    "slug": "DDSbgXjB5Ll",
+    "slug": "generated-61960-3-80-roas-single-day-what-you-can-learn-from-it",
     "shortcode": "DDSbgXjB5Ll",
     "type": "image",
     "title": "How We Generated $61,960 with a 3.80 ROAS in a Single Day (And What You Can Learn From It) 💡",
@@ -1540,7 +1540,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C2hk_plyrcZ",
-    "slug": "C2hk_plyrcZ",
+    "slug": "journey-client-behind-touching-way-100000-month-mark",
     "shortcode": "C2hk_plyrcZ",
     "type": "video",
     "title": "Journey of This Client Behind Touching the way to the $100,000/Month mark with thi...",
@@ -1588,7 +1588,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DH_aKQ6BttH",
-    "slug": "DH_aKQ6BttH",
+    "slug": "drove-54k-7-days-using-manual-bidding-campaigns-jewelry",
     "shortcode": "DH_aKQ6BttH",
     "type": "image",
     "title": "How We Drove $54K in 7 Days Using Manual Bidding Campaigns for This Jewelry Brand💎Step by Step",
@@ -1636,7 +1636,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8rGKA8Sk-R",
-    "slug": "C8rGKA8Sk-R",
+    "slug": "massive-win-books-98k-23-days-c8rgka",
     "shortcode": "C8rGKA8Sk-R",
     "type": "video",
     "title": "Another Massive Win in the Books: $98K in Just 23 Days",
@@ -1684,7 +1684,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZ3yXdciv63",
-    "slug": "DZ3yXdciv63",
+    "slug": "it-safe-say-figured-out-make-supplement-brand-print-money",
     "shortcode": "DZ3yXdciv63",
     "type": "image",
     "title": "It's safe to say we figured out how to make a supplement brand print money.",
@@ -1732,7 +1732,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DCIbOc6SN5I",
-    "slug": "DCIbOc6SN5I",
+    "slug": "massive-fitness-client-win-69513-6-5-hours-heavy",
     "shortcode": "DCIbOc6SN5I",
     "type": "video",
     "title": "Another Massive Fitness Client win: $69,513 in just 6.5 hours of heavy spending ($...",
@@ -1780,7 +1780,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZXZSkyAU7x",
-    "slug": "DZXZSkyAU7x",
+    "slug": "ecom-brands-or-lead-gen-businesses-what-do-you-need",
     "shortcode": "DZXZSkyAU7x",
     "type": "image",
     "title": "Ecom brands or lead gen businesses… what do you need?",
@@ -1828,7 +1828,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9CPs88t1qa",
-    "slug": "C9CPs88t1qa",
+    "slug": "launched-profit-accelerate-mastermind-dtc-brand-owners-making",
     "shortcode": "C9CPs88t1qa",
     "type": "video",
     "title": "Just launched my Profit Accelerate Mastermind for DTC Brand Owners Making At Least...",
@@ -1876,7 +1876,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DW1JuKLlAgI",
-    "slug": "DW1JuKLlAgI",
+    "slug": "day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders",
     "shortcode": "DW1JuKLlAgI",
     "type": "image",
     "title": "Just another day inside one of our DTC fitness brands $80K clocked in 24 hours. 862 orders moving out.",
@@ -1924,7 +1924,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C0QPPA5hHS4",
-    "slug": "C0QPPA5hHS4",
+    "slug": "turned-11886-into-86272-november",
     "shortcode": "C0QPPA5hHS4",
     "type": "video",
     "title": "Turned $11,886 into $86,272 this November🔥",
@@ -1972,7 +1972,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGgZKPbSjNa",
-    "slug": "DGgZKPbSjNa",
+    "slug": "dropshipping-isn-get-rich-quick-scheme-it-path-building",
     "shortcode": "DGgZKPbSjNa",
     "type": "image",
     "title": "💡 Dropshipping Isn’t a Get-Rich-Quick Scheme, It’s a Path to Building Something Big. 💡",
@@ -2020,7 +2020,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CaAuCiJBY61",
-    "slug": "CaAuCiJBY61",
+    "slug": "today-am-beyond-excited-show-you-guys-have-been-scaling",
     "shortcode": "CaAuCiJBY61",
     "type": "video",
     "title": "Today I am BEYOND excited to show you guys how I have been scaling this Brand to T...",
@@ -2068,7 +2068,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGgGd29ykn7",
-    "slug": "DGgGd29ykn7",
+    "slug": "scaling-isn-about-hitting-big-days-it-about-keeping-sustaining",
     "shortcode": "DGgGd29ykn7",
     "type": "image",
     "title": "Scaling isn’t just about hitting big days, it’s about keeping more and sustaining growth. 💰",
@@ -2116,7 +2116,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CaU8rUvBBBm",
-    "slug": "CaU8rUvBBBm",
+    "slug": "work-harder-than-you-think-you-did-yesterday-yes-have-been-doing",
     "shortcode": "CaU8rUvBBBm",
     "type": "video",
     "title": "Work harder than you think you did yesterday...YES I have been doing this today we...",
@@ -2164,7 +2164,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGgDlA1ybHG",
-    "slug": "DGgDlA1ybHG",
+    "slug": "started-dropshipping-brand-client-4weeks-ago-was-idea",
     "shortcode": "DGgDlA1ybHG",
     "type": "image",
     "title": "I started this dropshipping brand for a client 4weeks ago, this was just an idea.",
@@ -2212,7 +2212,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Ca19JaMse_i",
-    "slug": "Ca19JaMse_i",
+    "slug": "positivity-motivation-come-from-hard-work-why-always-say-find",
     "shortcode": "Ca19JaMse_i",
     "type": "video",
     "title": "Positivity and motivation come from hard work. That's why I always say Find your p...",
@@ -2260,7 +2260,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGS904ohBGl",
-    "slug": "DGS904ohBGl",
+    "slug": "first-day-scaling-momentum-already-building",
     "shortcode": "DGS904ohBGl",
     "type": "image",
     "title": "First day of scaling, and the momentum is already building. 🚀",
@@ -2308,7 +2308,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CbLZYRHMxi-",
-    "slug": "CbLZYRHMxi-",
+    "slug": "grind-grind-grind-woke-up-today-some-value-bombs-mind",
     "shortcode": "CbLZYRHMxi-",
     "type": "video",
     "title": "Grind, grind, grind - Woke up today with some value bombs in mind, I thought I’d s...",
@@ -2356,7 +2356,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGSpTQEBodh",
-    "slug": "DGSpTQEBodh",
+    "slug": "winning-product-can-change-everything-here-made-product-5-figure",
     "shortcode": "DGSpTQEBodh",
     "type": "image",
     "title": "One Winning Product Can Change Everything. 🚀 Here’s How We Made One Product a 5-Figure Winner in 24 Hours for this Dr...",
@@ -2404,7 +2404,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CbQB5nxNFeS",
-    "slug": "CbQB5nxNFeS",
+    "slug": "are-scaling-brands-from-scratch-absolutely-killing-game",
     "shortcode": "CbQB5nxNFeS",
     "type": "video",
     "title": "This is how we are SCALING brands from SCRATCH & absolutely killing the game.",
@@ -2452,7 +2452,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGSmcZRBic3",
-    "slug": "DGSmcZRBic3",
+    "slug": "why-do-fitness-brands-struggle-scale-hint-it-not-about-ads",
     "shortcode": "DGSmcZRBic3",
     "type": "image",
     "title": "Why Do Fitness Brands Struggle to Scale? (Hint: It’s Not Just About Ads)",
@@ -2500,7 +2500,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CbdJlDwrpNV",
-    "slug": "CbdJlDwrpNV",
+    "slug": "if-you-are-willing-invest-yourself-your-dreams-can-come-true",
     "shortcode": "CbdJlDwrpNV",
     "type": "video",
     "title": "If you are willing to invest in yourself, your dreams can come true.💯",
@@ -2548,7 +2548,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DExlLMQS3cs",
-    "slug": "DExlLMQS3cs",
+    "slug": "truth-hurts-dropshipping-isn-dead-you-are-doing-it-wrong",
     "shortcode": "DExlLMQS3cs",
     "type": "image",
     "title": "⚠️ The Truth Hurts: Dropshipping isn’t dead – YOU are doing it wrong!",
@@ -2596,7 +2596,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CbdLX--rkaU",
-    "slug": "CbdLX--rkaU",
+    "slug": "most-people-jumping-into-something-new-they-ve-never-done-seems",
     "shortcode": "CbdLX--rkaU",
     "type": "video",
     "title": "For most people, jumping into something new that they’ve never done, seems VERY RI...",
@@ -2644,7 +2644,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DExsvYaI5Kc",
-    "slug": "DExsvYaI5Kc",
+    "slug": "most-people-running-facebook-ads-have-no-idea-their-biggest",
     "shortcode": "DExsvYaI5Kc",
     "type": "image",
     "title": "Most people running Facebook Ads have no idea their biggest enemy is audience overlap.",
@@ -2692,7 +2692,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CfYM_4POBEi",
-    "slug": "CfYM_4POBEi",
+    "slug": "60k-month-client-literally-crushing-skincare-game",
     "shortcode": "CfYM_4POBEi",
     "type": "video",
     "title": "This 60K$ Month Client is Literally Crushing the SkinCare Game💥🎉",
@@ -2740,7 +2740,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DFDod10oz-k",
-    "slug": "DFDod10oz-k",
+    "slug": "99-meta-advertisers-are-burning-money-here-fix",
     "shortcode": "DFDod10oz-k",
     "type": "image",
     "title": "99% of Meta Advertisers Are Burning Money—Here’s the Fix👇",
@@ -2788,7 +2788,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cfbs-73Bbw8",
-    "slug": "Cfbs-73Bbw8",
+    "slug": "biggest-achievement-month",
     "shortcode": "Cfbs-73Bbw8",
     "type": "video",
     "title": "One of the biggest achievement for this month 🤑🔥🔥🔥",
@@ -2836,7 +2836,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DEW9sESBL38",
-    "slug": "DEW9sESBL38",
+    "slug": "why-your-facebook-ads-aren-scaling-fix-these-manual-bidding",
     "shortcode": "DEW9sESBL38",
     "type": "image",
     "title": "🔥 Why Your Facebook Ads Aren’t Scaling – Fix These Manual Bidding Mistakes NOW 👇",
@@ -2884,7 +2884,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CfbtjBprLrd",
-    "slug": "CfbtjBprLrd",
+    "slug": "biggest-achievement-month-cfbtjb",
     "shortcode": "CfbtjBprLrd",
     "type": "video",
     "title": "One of the biggest achievement for this month 🤑🔥🔥🔥",
@@ -2932,7 +2932,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DEW_V11BhkT",
-    "slug": "DEW_V11BhkT",
+    "slug": "fashion-apparel-brand-cracked-code-2210-ad-spend-turned-into",
     "shortcode": "DEW_V11BhkT",
     "type": "image",
     "title": "🔒 This Fashion Apparel Brand Just Cracked the Code…$2,210 in ad spend turned into $12,496 in sales – in ONE DAY.",
@@ -2980,7 +2980,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CflE6qHj4-b",
-    "slug": "CflE6qHj4-b",
+    "slug": "when-you-have-dream-you-ve-got-grab-it-never-let-go",
     "shortcode": "CflE6qHj4-b",
     "type": "video",
     "title": "When you have a dream, you've got to grab it and never let go🔥🔥",
@@ -3028,7 +3028,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DD9QNibynah",
-    "slug": "DD9QNibynah",
+    "slug": "rule-thumb-scaling-facebook-ads-hit-3-77-roas-body-contouring",
     "shortcode": "DD9QNibynah",
     "type": "image",
     "title": "Rule of thumb for Scaling Facebook Ads: How We Hit 3.77 ROAS for a Body Contouring Brand",
@@ -3076,7 +3076,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CgvlkTVBTDj",
-    "slug": "CgvlkTVBTDj",
+    "slug": "finally-ended-great-month-160k",
     "shortcode": "CgvlkTVBTDj",
     "type": "video",
     "title": "Finally, I Ended this Great month with $160K.",
@@ -3124,7 +3124,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDTcV4-hyrQ",
-    "slug": "DDTcV4-hyrQ",
+    "slug": "day-office-success-stories-like-these-have-become-norm-around",
     "shortcode": "DDTcV4-hyrQ",
     "type": "image",
     "title": "Just another day in the office—success stories like these have become the norm around here. 😎",
@@ -3172,7 +3172,7 @@ export const allCaseStudies = [
   },
   {
     "id": "ChT2HgvP4ce",
-    "slug": "ChT2HgvP4ce",
+    "slug": "vision-without-execution-delusion",
     "shortcode": "ChT2HgvP4ce",
     "type": "video",
     "title": "Vision without Execution is delusion👊",
@@ -3220,7 +3220,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDbZt7PB-0o",
-    "slug": "DDbZt7PB-0o",
+    "slug": "if-you-re-brand-owner-or-media-buyer-looking-viral-strategy-make",
     "shortcode": "DDbZt7PB-0o",
     "type": "image",
     "title": "If you’re a brand owner or a media buyer looking for that ONE VIRAL strategy to make your campaigns wildly profitable...",
@@ -3268,7 +3268,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CifaEj9INCy",
-    "slug": "CifaEj9INCy",
+    "slug": "what-it-takes-scale-beyond-63k-14-days-dropshipping",
     "shortcode": "CifaEj9INCy",
     "type": "video",
     "title": "What It Takes To Scale Beyond $63K in 14 Days In Dropshipping",
@@ -3316,7 +3316,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDL5Tr5hb-g",
-    "slug": "DDL5Tr5hb-g",
+    "slug": "structure-campaigns-50000-day-profits",
     "shortcode": "DDL5Tr5hb-g",
     "type": "image",
     "title": "How to Structure Campaigns for $50,000+/Day Profits 🚀",
@@ -3364,7 +3364,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CifhS7gt6qW",
-    "slug": "CifhS7gt6qW",
+    "slug": "find-winning-shopify-dropshipping-products-formula-leaked",
     "shortcode": "CifhS7gt6qW",
     "type": "video",
     "title": "How to Find Winning Shopify Dropshipping Products? (Formula Leaked)",
@@ -3412,7 +3412,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDSbZ6EzERe",
-    "slug": "DDSbZ6EzERe",
+    "slug": "scaling-slowly-bigger-profits-1st-day-scaling-fashion-brand",
     "shortcode": "DDSbZ6EzERe",
     "type": "image",
     "title": "Scaling Slowly = Bigger Profits 💰1st Day of Scaling This Fashion Brand",
@@ -3460,7 +3460,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CjN4BunLvt-",
-    "slug": "CjN4BunLvt-",
+    "slug": "success-story-books-finally-brand-ended-133k-month",
     "shortcode": "CjN4BunLvt-",
     "type": "video",
     "title": "Another Success Story in the Books. Finally, This Brand Ended with $133K This Month!",
@@ -3508,7 +3508,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DC_4HWphVxX",
-    "slug": "DC_4HWphVxX",
+    "slug": "16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women",
     "shortcode": "DC_4HWphVxX",
     "type": "image",
     "title": "📊 $16,630 spent, $59,241 generated, 3.56 ROAS—even in the chaos of BFCM for this women’s fashion brand.",
@@ -3556,7 +3556,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CjzpP7YDfjP",
-    "slug": "CjzpP7YDfjP",
+    "slug": "happy-dropshipping-client-breaks-50k-month-barrier-us",
     "shortcode": "CjzpP7YDfjP",
     "type": "video",
     "title": "Another Happy Dropshipping Client breaks the $50K Month Barrier With Us!",
@@ -3604,7 +3604,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DAFyXWUSMoE",
-    "slug": "DAFyXWUSMoE",
+    "slug": "new-store-pixel-huge-potential-after-1-5-months-grinding-from",
     "shortcode": "DAFyXWUSMoE",
     "type": "image",
     "title": "Another new store/pixel with huge potential after 1.5 months of grinding from scratch!",
@@ -3652,7 +3652,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CkdyaHbst7s",
-    "slug": "CkdyaHbst7s",
+    "slug": "1st-day-november-seems-very-great-42k-day",
     "shortcode": "CkdyaHbst7s",
     "type": "video",
     "title": "1st Day of November Seems Very Great..$42K a Day 🔥",
@@ -3700,7 +3700,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9-tNU2yhWF",
-    "slug": "C9-tNU2yhWF",
+    "slug": "finally-monday-startsscaling-puppy-moon-it-matter-hour",
     "shortcode": "C9-tNU2yhWF",
     "type": "image",
     "title": "Finally, This is How Our Monday Starts👉Scaling This Puppy to the Moon >>>> It’s just a matter of one hour & we have a...",
@@ -3748,7 +3748,7 @@ export const allCaseStudies = [
   },
   {
     "id": "ClHh5REOg2D",
-    "slug": "ClHh5REOg2D",
+    "slug": "client-passed-77000-18-days-4x-roi",
     "shortcode": "ClHh5REOg2D",
     "type": "video",
     "title": "Another client passed $77,000 in 18 days with 4X+ ROI!",
@@ -3796,7 +3796,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C-FI5E4SYBZ",
-    "slug": "C-FI5E4SYBZ",
+    "slug": "anyone-can-do-it-yes-even-you-can-do-dropshipping-successfully",
     "shortcode": "C-FI5E4SYBZ",
     "type": "image",
     "title": "🏆 ANYONE can do it... Yes, Even You can do dropshipping Successfully!!!",
@@ -3844,7 +3844,7 @@ export const allCaseStudies = [
   },
   {
     "id": "ClNmKjfuASL",
-    "slug": "ClNmKjfuASL",
+    "slug": "have-such-rich-fulfilling-life-your-awake-better-than-your",
     "shortcode": "ClNmKjfuASL",
     "type": "video",
     "title": "Have such a RICH & FULFILLING life that your “awake” is better than your “dreams” 😉",
@@ -3892,7 +3892,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9y8opPyus2",
-    "slug": "C9y8opPyus2",
+    "slug": "planning-host-2hr-commerce-profit-accelerator-bootcamp-you-guys",
     "shortcode": "C9y8opPyus2",
     "type": "image",
     "title": "Planning to Host a 2Hr E-commerce Profit Accelerator Bootcamp for You Guys for FREE! How many of you want me to do it...",
@@ -3940,7 +3940,7 @@ export const allCaseStudies = [
   },
   {
     "id": "ClzYLasvGb7",
-    "slug": "ClzYLasvGb7",
+    "slug": "huge-takeaways-from-422000-november-revealed-phenomenal",
     "shortcode": "ClzYLasvGb7",
     "type": "video",
     "title": "Huge Takeaways from $4,22,000 November: Just Revealed That Phenomenal Strategy in ...",
@@ -3988,7 +3988,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C83tKltSXUp",
-    "slug": "C83tKltSXUp",
+    "slug": "key-successful-commerce-business-consistency",
     "shortcode": "C83tKltSXUp",
     "type": "image",
     "title": "The KEY to a successful E-commerce business is CONSISTENCY.",
@@ -4036,7 +4036,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CmtNAAPjT8g",
-    "slug": "CmtNAAPjT8g",
+    "slug": "last-chance-must-read",
     "shortcode": "CmtNAAPjT8g",
     "type": "video",
     "title": "Last Chance! [MUST-READ]⁣",
@@ -4084,7 +4084,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDrymP4oSh7",
-    "slug": "DDrymP4oSh7",
+    "slug": "when-you-understand-numbers-you-don-guess-you-grow",
     "shortcode": "DDrymP4oSh7",
     "type": "image",
     "title": "📈 When you understand the numbers, you don’t just guess—you grow.",
@@ -4132,7 +4132,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cn360snLy84",
-    "slug": "Cn360snLy84",
+    "slug": "does-dropshipping-still-work-2023-let-find-out",
     "shortcode": "Cn360snLy84",
     "type": "video",
     "title": "Does Dropshipping Still Work In 2023? Let's find out!",
@@ -4180,7 +4180,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C_MqSqcSpUb",
-    "slug": "C_MqSqcSpUb",
+    "slug": "pov-curious-pulled-off-40669-sales-7-days-134-high-ticket",
     "shortcode": "C_MqSqcSpUb",
     "type": "image",
     "title": "🚨 POV: Curious how we pulled off $40,669 in sales in just 7 days with a $134 high-ticket product.",
@@ -4228,7 +4228,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CpSA2DYIUeU",
-    "slug": "CpSA2DYIUeU",
+    "slug": "success-story-books",
     "shortcode": "CpSA2DYIUeU",
     "type": "video",
     "title": "Another Success Story in the Books🎯🏆",
@@ -4276,7 +4276,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZS7YPDkva9",
-    "slug": "DZS7YPDkva9",
+    "slug": "36993-2-94-roas-while-most-people-were-busy-telling-everyone-why",
     "shortcode": "DZS7YPDkva9",
     "type": "image",
     "title": "$36,993. 2.94 ROAS. 👉While most people were busy telling everyone why Meta ads are dead.",
@@ -4324,7 +4324,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CquiFM0uqQb",
-    "slug": "CquiFM0uqQb",
+    "slug": "massive-success-once-again-didn-expected-dfy-program",
     "shortcode": "CquiFM0uqQb",
     "type": "video",
     "title": "Massive Success Once Again (DIDN'T EXPECTED WITH OUR DFY PROGRAM)",
@@ -4372,7 +4372,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZXMWaeEgLe",
-    "slug": "DZXMWaeEgLe",
+    "slug": "ecom-world-split-into-two-groups",
     "shortcode": "DZXMWaeEgLe",
     "type": "image",
     "title": "The ecom world is split into two groups.",
@@ -4420,7 +4420,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CsVfgXouvaF",
-    "slug": "CsVfgXouvaF",
+    "slug": "once-you-see-powerful-results-running-your-own-online-business",
     "shortcode": "CsVfgXouvaF",
     "type": "video",
     "title": "Once you see the powerful results of running your own online business, it becomes ...",
@@ -4468,7 +4468,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DWX7z6ADP86",
-    "slug": "DWX7z6ADP86",
+    "slug": "if-you-re-ecom-brand-owner-read-carefully-16k-single-day-2-06",
     "shortcode": "DWX7z6ADP86",
     "type": "image",
     "title": "If you’re an ecom brand owner… read this carefully. $16K in a single day at a 2.06 ROAS (And that’s underreported tha...",
@@ -4516,7 +4516,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8BoEiWvQPX",
-    "slug": "C8BoEiWvQPX",
+    "slug": "six-figures-fitness-brand-books-3-game-changing-tactics",
     "shortcode": "C8BoEiWvQPX",
     "type": "video",
     "title": "Another Six Figures Fitness Brand in The Books: 3 Game-Changing Tactics for Instan...",
@@ -4564,7 +4564,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C83tKltSXUp",
-    "slug": "C83tKltSXUp",
+    "slug": "key-successful-commerce-business-consistency-c83tkl",
     "shortcode": "C83tKltSXUp",
     "type": "video",
     "title": "The KEY to a successful E-commerce business is CONSISTENCY.",
@@ -4612,7 +4612,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9VEBK8y-0r",
-    "slug": "C9VEBK8y-0r",
+    "slug": "scale-meta-aggressively-profitably-especially-when-your",
     "shortcode": "C9VEBK8y-0r",
     "type": "video",
     "title": "How to Scale on Meta Aggressively and Profitably Especially When Your E-commerce B...",
@@ -4660,7 +4660,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9b-l3yS6GW",
-    "slug": "C9b-l3yS6GW",
+    "slug": "happy-monday-everyone-get-ready-some-incredible-dropshipping",
     "shortcode": "C9b-l3yS6GW",
     "type": "video",
     "title": "Happy Monday Everyone! Get ready for some incredible dropshipping value bomb for y...",
@@ -4708,7 +4708,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9y8opPyus2",
-    "slug": "C9y8opPyus2",
+    "slug": "planning-host-2hr-commerce-profit-accelerator-bootcamp-you-guys-c9y8op",
     "shortcode": "C9y8opPyus2",
     "type": "video",
     "title": "Planning to Host a 2Hr E-commerce Profit Accelerator Bootcamp for You Guys for FRE...",
@@ -4756,7 +4756,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C-S182hyHAS",
-    "slug": "C-S182hyHAS",
+    "slug": "massive-win-commerce-agency-clients",
     "shortcode": "C-S182hyHAS",
     "type": "video",
     "title": "Another Massive Win of One of Our E-commerce Agency Clients",
@@ -4804,7 +4804,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBE4BLBo-U-",
-    "slug": "DBE4BLBo-U-",
+    "slug": "it-12-57-am-here-have-successfully-scaled-brand-early-bfcm",
     "shortcode": "DBE4BLBo-U-",
     "type": "video",
     "title": "It’s 12:57 AM Here & We have successfully scaled this brand’s Early BFCM Offers to...",
@@ -4852,7 +4852,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBHKX5TooJZ",
-    "slug": "DBHKX5TooJZ",
+    "slug": "massive-alert-guys-it-9-11-pm-ve-already-crossed-53387-33",
     "shortcode": "DBHKX5TooJZ",
     "type": "video",
     "title": "Massive Alert Guys: It’s 9:11 PM, and we’ve already crossed $53,387.33 in sales on...",
@@ -4900,7 +4900,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBJ9ZuTIgnG",
-    "slug": "DBJ9ZuTIgnG",
+    "slug": "after-8-months-optimizing-testing-refining-strategies-helped",
     "shortcode": "DBJ9ZuTIgnG",
     "type": "video",
     "title": "After 8 months of optimizing, testing, and refining strategies, we helped a client...",
@@ -4948,7 +4948,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBTXySHSrJa",
-    "slug": "DBTXySHSrJa",
+    "slug": "q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve",
     "shortcode": "DBTXySHSrJa",
     "type": "video",
     "title": "Q4 is shaping up to be incredible! While many slow down for the weekend, we’ve bee...",
@@ -4996,7 +4996,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBTl4HjMqFI",
-    "slug": "DBTl4HjMqFI",
+    "slug": "q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve-dbtl4h",
     "shortcode": "DBTl4HjMqFI",
     "type": "video",
     "title": "Q4 is shaping up to be incredible! While many slow down for the weekend, we’ve bee...",
@@ -5044,7 +5044,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBWiTtwSvgw",
-    "slug": "DBWiTtwSvgw",
+    "slug": "these-5days-has-been-fire-spent-26594-generated-99576-profit",
     "shortcode": "DBWiTtwSvgw",
     "type": "video",
     "title": "These 5days has been on fire! 🚀Spent: $26,594 💵 Generated: $99,576 🔥 Profit Margin...",
@@ -5092,7 +5092,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBqQlIBy-ma",
-    "slug": "DBqQlIBy-ma",
+    "slug": "what-up-everyone-are-you-bfcm-ready-hope-you-re-all-having-super",
     "shortcode": "DBqQlIBy-ma",
     "type": "video",
     "title": "What’s up, everyone? Are You BFCM Ready?! 😉 I hope you’re all having a super produ...",
@@ -5140,7 +5140,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBve7QoIiI9",
-    "slug": "DBve7QoIiI9",
+    "slug": "record-breaking-month-generating-137620-25-revenue-roas-3",
     "shortcode": "DBve7QoIiI9",
     "type": "video",
     "title": "Record-Breaking Month: Generating $137,620.25 in Revenue with a ROAS of 3.89 for O...",
@@ -5188,7 +5188,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DB8LF0QyepD",
-    "slug": "DB8LF0QyepD",
+    "slug": "happy-monday-everyone-let-kick-off-week-some-serious-momentum",
     "shortcode": "DB8LF0QyepD",
     "type": "video",
     "title": "Happy Monday, everyone! 🌟 Let’s kick off the week with some serious momentum.",
@@ -5236,7 +5236,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DCGFd2wShEV",
-    "slug": "DCGFd2wShEV",
+    "slug": "24846-1day-exact-strategy-turned-8k-ad-spend-into-massive",
     "shortcode": "DCGFd2wShEV",
     "type": "video",
     "title": "$24,846 in 1Day – The Exact Strategy That Turned $8K Ad Spend into Massive Profits...",
@@ -5284,7 +5284,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Db3hW_mupo1",
-    "slug": "Db3hW_mupo1",
+    "slug": "118k-first-month-scaling-uk-skincare-brand",
     "shortcode": "Db3hW_mupo1",
     "type": "video",
     "title": "118K in our FIRST month scaling this UK Skincare brand. 📈",
@@ -5332,7 +5332,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DbCVqzFhiLU",
-    "slug": "DbCVqzFhiLU",
+    "slug": "6-am-rain-about-hit-sitting-balcony-park-front",
     "shortcode": "DbCVqzFhiLU",
     "type": "video",
     "title": "6 AM. Rain’s about to hit. 🌧️I’m sitting in my balcony. The park in front of me is...",
@@ -5380,7 +5380,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DPI2h3TARq_",
-    "slug": "DPI2h3TARq_",
+    "slug": "q4-here-it-biggest-money-making-season-year",
     "shortcode": "DPI2h3TARq_",
     "type": "video",
     "title": "Q4 is here and it’s the biggest money-making season of the year.",
@@ -5428,7 +5428,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C9RU-C9yhfU",
-    "slug": "C9RU-C9yhfU",
+    "slug": "from-good-great-following-your-agency-rules-leads-success",
     "shortcode": "C9RU-C9yhfU",
     "type": "video",
     "title": "From Good to Great: How Following Your Agency’s Rules Leads to Success",
@@ -5476,7 +5476,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Ctw_14qvH0z",
-    "slug": "Ctw_14qvH0z",
+    "slug": "heads-up-scaling-brand-21k-day-facebook-ads",
     "shortcode": "Ctw_14qvH0z",
     "type": "video",
     "title": "Heads Up! 📣 Scaling This Brand to $21K Day with Facebook Ads",
@@ -5524,7 +5524,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CbCOGFmAE4U",
-    "slug": "CbCOGFmAE4U",
+    "slug": "numbers-don-lie-you-know-what-dope",
     "shortcode": "CbCOGFmAE4U",
     "type": "video",
     "title": "Numbers don’t lie, you know what’s dope💯",
@@ -5572,7 +5572,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cesci1roztT",
-    "slug": "Cesci1roztT",
+    "slug": "35-net-profit-margin",
     "shortcode": "Cesci1roztT",
     "type": "video",
     "title": "35% Net Profit Margin",
@@ -5620,7 +5620,7 @@ export const allCaseStudies = [
   },
   {
     "id": "ClalPbeN0Xz",
-    "slug": "ClalPbeN0Xz",
+    "slug": "brand-exploding-black-friday-20k-day-39-healthy-margins",
     "shortcode": "ClalPbeN0Xz",
     "type": "video",
     "title": "Another Brand is exploding Black Friday with $20K Day & 39% Healthy Margins!🔥🔥🔥",
@@ -5668,7 +5668,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CeZA8zlj0HL",
-    "slug": "CeZA8zlj0HL",
+    "slug": "scaling-mode",
     "shortcode": "CeZA8zlj0HL",
     "type": "video",
     "title": "Scaling Mode is ON!!",
@@ -5716,7 +5716,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Ce5RGG1BVT7",
-    "slug": "Ce5RGG1BVT7",
+    "slug": "final-update-after-few",
     "shortcode": "Ce5RGG1BVT7",
     "type": "video",
     "title": "Final Update After Few Hrs…",
@@ -5764,7 +5764,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CggL7dHhkQW",
-    "slug": "CggL7dHhkQW",
+    "slug": "far-your-commerce-journey-are-you",
     "shortcode": "CggL7dHhkQW",
     "type": "video",
     "title": "How Far in Your E-Commerce Journey Are You? 🧐",
@@ -5812,7 +5812,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cz0k0L3yRS8",
-    "slug": "Cz0k0L3yRS8",
+    "slug": "have-you-ever-wished-foolproof-plan-every-6-7-figure-brands",
     "shortcode": "Cz0k0L3yRS8",
     "type": "video",
     "title": "Have you ever wished for a foolproof plan for how every 6& 7 Figure Brands scale t...",
@@ -5860,7 +5860,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CaF8d61BZSO",
-    "slug": "CaF8d61BZSO",
+    "slug": "do-not-be-embarrassed-your-failures-learn-from-them-start-again",
     "shortcode": "CaF8d61BZSO",
     "type": "video",
     "title": "Do not be embarrassed by your failures, learn from them and start again.🤑",
@@ -5908,7 +5908,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Ce4RHMZBmfi",
-    "slug": "Ce4RHMZBmfi",
+    "slug": "aggressively-scaling-towards-6k-day",
     "shortcode": "Ce4RHMZBmfi",
     "type": "video",
     "title": "Aggressively Scaling Towards 6k$ Day🔥👊",
@@ -5956,7 +5956,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CfdomKIgr8Y",
-    "slug": "CfdomKIgr8Y",
+    "slug": "happy-client-closes-116k-sales-june",
     "shortcode": "CfdomKIgr8Y",
     "type": "video",
     "title": "Another Happy Client Closes 116K$ in Sales this June🔥",
@@ -6004,7 +6004,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CaZWmNEMev9",
-    "slug": "CaZWmNEMev9",
+    "slug": "commerce-clients-are-killing-game-pure-value-live-view-4kday",
     "shortcode": "CaZWmNEMev9",
     "type": "video",
     "title": "My E-Commerce Clients are killing the game. Just PURE VALUE...LIVE VIEW OF 4KDAY🤑",

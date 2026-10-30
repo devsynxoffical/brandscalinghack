@@ -23,7 +23,7 @@ import {
   HelpCircle,
   ArrowUpRight
 } from 'lucide-react';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
+import { getRouteSchema, toJsonLd, growthFaqs } from '../data/pageSchemas';
 
 export default function GrowthPage({ onOpenBooking }) {
   const [hoveredChainCard, setHoveredChainCard] = useState(null);
@@ -1095,6 +1095,30 @@ export default function GrowthPage({ onOpenBooking }) {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* ============================================================
+          10b. FAQ (visible copy for the FAQPage schema)
+         ============================================================ */}
+      <section style={{ padding: '85px 0', background: '#ffffff', borderTop: '1px solid #e2e8f0' }}>
+        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '0 20px' }}>
+          <h2 style={{ fontSize: 'clamp(1.9rem, 3.5vw, 2.8rem)', fontWeight: 900, color: '#0f172a', textTransform: 'uppercase', margin: '0 0 12px 0', textAlign: 'center', letterSpacing: '-0.02em' }}>
+            Ecommerce Growth Agency FAQ
+          </h2>
+          <p style={{ textAlign: 'center', color: '#64748b', fontSize: '1rem', margin: '0 auto 36px', maxWidth: '640px' }}>
+            The questions founders ask before a Brand Growth Audit, answered in plain numbers.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            {growthFaqs.map((faq) => (
+              <details key={faq.question} style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '14px', padding: '18px 22px' }}>
+                <summary style={{ cursor: 'pointer', fontSize: '1.02rem', fontWeight: 800, color: '#0f172a', listStyle: 'none' }}>
+                  {faq.question}
+                </summary>
+                <p style={{ margin: '12px 0 0', fontSize: '0.95rem', color: '#475569', lineHeight: 1.7 }}>{faq.answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

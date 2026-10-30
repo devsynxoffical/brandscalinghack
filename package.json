@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "node scripts/generate-sitemap.cjs && vite build && node scripts/prerender.cjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "indexnow": "node scripts/indexnow.cjs",
+    "og-images": "node scripts/generate-og-images.cjs",
+    "case-slugs": "node scripts/assign-case-slugs.cjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",

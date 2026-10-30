@@ -143,6 +143,34 @@ Open Graph / Twitter: every page inherits `og:type=website`, `og:site_name`, `og
 
 ---
 
+## 4c. Day 3 (Oct 30, 2026): indexation and impressions pass — what shipped
+
+Goal for the day: every page indexable and discoverable by crawl, and more query-matching content so impressions grow.
+
+**Case study URLs are now descriptive (126 pages).** `/cases/Cft79TLpxyk` became `/cases/finally-scale-client-almost-1m-sales-6-months`. Slugs are generated from the cleaned headline by `scripts/assign-case-slugs.cjs` (stop words removed, numbers kept, 64-character cap), all 126 are unique, and every old shortcode URL 301-redirects to the new one in `vercel.json` (129 redirects total). Sitemap, prerender, schema, canonical and in-app navigation all use the new slugs; old URLs still resolve client-side as a fallback.
+
+**Crawl paths exist without JavaScript.** The prerendered `/case-studies` page now links to all 126 case pages (previously it linked to none; crawlers only found cases via the sitemap). Every prerendered case page links to 3 related cases plus the hub and two service pages. The prerendered `/blog` page lists every post from the data file, and blog post pages are now generated from the data (full sections, tables and FAQs as real HTML) instead of three hand-written stubs.
+
+**Two new posts for the highest-volume keywords in the plan.**
+- `/blog/meta-ads-library` (target: "meta ads library", 90,500 US searches a month, difficulty 7): 2,160 words, 11 sections, 2 tables (filter settings, winning-ad scorecard), 6 FAQs. Covers every autocomplete question in the brief: how to use, search by ID, Instagram only, download videos, API, third-party tools, not working, examples.
+- `/blog/meta-andromeda` (target: "meta andromeda", 1,300 a month, +295% a year): 1,420 words, 9 sections, 2 tables (retrieval vs ranking, before/after structure), 6 FAQs, dated statements for what is and is not confirmed.
+- Both are linked from the footer Guides column, `llms.txt`, the blog index and the RSS feed, and carry BlogPosting + Breadcrumb + FAQPage schema server-side.
+
+**Striking-distance queries turned into visible FAQ copy.** From the Oct 27 Search Console export (positions 49 to 98):
+- `/growth` gets a new visible FAQ section (6 questions) plus FAQPage schema, answering "tiktok shop scaling services", "ecommerce marketing agency usa", "ecommerce email marketing agency" and "growth agency vs performance marketing agency".
+- `/roas-calculator` gets two more visible FAQs plus schema for "real roas calculator ecommerce" and "best profit optimization software for dtc brands".
+
+**IndexNow submission is one command.** `npm run indexnow` posts every sitemap URL (or specific paths) to api.indexnow.org using the key already served at `/f1be17a3c35943738199fdd1d4475c9e.txt`. The cloud session cannot reach the public internet for this domain, so run it from a laptop right after the deploy goes live.
+
+**Could not be done from this session, do today after deploy (10 minutes):**
+1. Deploy main, then open https://www.brandscalinghacks.com/does-not-exist and confirm a 404 status; open `/cases/Cft79TLpxyk` and confirm it redirects to the slug URL.
+2. Run `npm run indexnow` from your machine.
+3. Search Console → Sitemaps → resubmit `sitemap.xml` (142 URLs). Then URL Inspection → Request indexing for `/meta-ads-agency`, `/blog/meta-ads-library`, `/blog/meta-andromeda`, `/growth` and the top 5 case slugs. Google allows about 10 manual requests a day; do the rest over the week.
+4. Search Console → Indexing → Pages: export "Crawled, currently not indexed" and "Discovered, currently not indexed". Any case URL in that list that still shows the old shortcode is expected (it will move to the redirect report). Any slug URL still not indexed after 14 days goes on the rewrite list in week 5.
+5. Share both new posts on YouTube community, Instagram, LinkedIn and the Facebook group; the first external links and clicks are what move "discovered" to "indexed" fastest.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

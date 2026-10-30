@@ -81,7 +81,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
         {/* Next / Previous Reel Navigation */}
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
           <button
-            onClick={() => onNavigate && onNavigate(`case-${prevStudy.id}`)}
+            onClick={() => onNavigate && onNavigate(`case-${prevStudy.slug || prevStudy.id}`)}
             style={{
               background: 'rgba(255, 255, 255, 0.05)',
               border: '1px solid rgba(255, 255, 255, 0.12)',
@@ -104,7 +104,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           </span>
 
           <button
-            onClick={() => onNavigate && onNavigate(`case-${nextStudy.id}`)}
+            onClick={() => onNavigate && onNavigate(`case-${nextStudy.slug || nextStudy.id}`)}
             style={{
               background: 'rgba(255, 255, 255, 0.05)',
               border: '1px solid rgba(255, 255, 255, 0.12)',
@@ -401,7 +401,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           {relatedStudies.map((item) => (
             <div
               key={item.id}
-              onClick={() => onNavigate && onNavigate(`case-${item.id}`)}
+              onClick={() => onNavigate && onNavigate(`case-${item.slug || item.id}`)}
               style={{
                 background: '#0d111a',
                 border: '1px solid rgba(255, 255, 255, 0.08)',

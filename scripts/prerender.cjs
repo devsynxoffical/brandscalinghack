@@ -187,65 +187,6 @@ const routes = [
     `
   },
   {
-    path: '/blog/bfcm-meta-ads-playbook',
-    outPath: 'blog/bfcm-meta-ads-playbook/index.html',
-    title: 'BFCM 2026: Meta Ads Playbook for Shopify | Brand Scaling',
-    description: 'BFCM 2026 runs 26 to 30 Nov. Our Meta ads playbook for Shopify brands: dates, budget plan, offers and creative that hit 3.98x ROAS. Read it now.',
-    h1: 'BFCM 2026: The Meta Ads Playbook for Shopify Brands',
-    content: `
-      <p><strong>Direct Answer:</strong> BFCM stands for Black Friday Cyber Monday, the biggest sales weekend in ecommerce. In 2026 it runs from Thanksgiving on Thursday 26 November through Black Friday on 27 November to Cyber Monday on 30 November. For Meta ads, the brands that win build creative and audiences in early November, open early access offers mid-month and scale with cost controls during the peak.</p>
-      <h2>What is BFCM in Marketing?</h2>
-      <p>The critical 5-day holiday shopping weekend extending from Thanksgiving to Cyber Monday. For high-growth Shopify DTC brands, it often accounts for 20% to 35% of annual net revenue.</p>
-      <h2>Phase 1 to Phase 3 Scaling Framework</h2>
-      <p>Build the creative bank early in November with 20+ variations. Launch early access offers 7 to 10 days before Thanksgiving. During peak weekend, scale consolidated Advantage+ campaigns with bid caps to protect margins.</p>
-    `
-  },
-  {
-    path: '/blog/performance-marketing-agency',
-    outPath: 'blog/performance-marketing-agency/index.html',
-    title: 'What Is a Performance Marketing Agency? | Brand Scaling',
-    description: 'What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta & TikTok ads, CRO, creative testing, and measurable ROAS.',
-    h1: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
-    content: `
-      <p><strong>Direct Answer:</strong> A performance marketing agency is a growth firm that drives direct, trackable commercial outcomes — verified revenue, ROAS, customer acquisition, and qualified leads — rather than abstract vanity metrics like impressions or follower counts. In modern DTC ecommerce, high-tier performance agencies combine algorithmic media buying across Meta and TikTok with in-house direct-response creative production and Shopify conversion rate optimization.</p>
-      <h2>What Does a Performance Marketing Agency Actually Do?</h2>
-      <p>Every dollar invested into paid ad channels (Meta, TikTok, Google Search, and YouTube) is mapped directly to conversions, customer acquisition cost (CAC), and net contribution margin. Modern performance marketing integrates direct-response video creative engineering, algorithmic media buying (broad Advantage+ setups), and full-funnel Shopify conversion optimization.</p>
-      <h2>The 4 Pillars of Modern DTC Performance Marketing</h2>
-      <ol>
-        <li>High-Converting Direct Response Video Creatives &amp; UGC</li>
-        <li>Full-Funnel Shopify Conversion Rate Optimization (CRO)</li>
-        <li>Server-Side Data Tracking &amp; Conversions API (CAPI)</li>
-        <li>Mathematical Unit Economics &amp; Margin Protection</li>
-      </ol>
-      <h2>Key Metrics: Beyond Vanity ROAS</h2>
-      <p>A true performance agency tracks blended MER (Marketing Efficiency Ratio), new customer CAC, and net contribution dollars after COGS, merchant fees, and ad spend.</p>
-      <p><a href="/blog">Browse all ecommerce playbooks</a> | <a href="/case-studies">Explore 150+ verified case studies</a></p>
-    `
-  },
-  {
-    path: '/blog/what-is-roas',
-    outPath: 'blog/what-is-roas/index.html',
-    title: 'What Is ROAS? Formula & Good ROAS Benchmarks | Brand Scaling',
-    description: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
-    h1: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
-    content: `
-      <p><strong>Direct Answer:</strong> ROAS stands for Return On Ad Spend. It is calculated by dividing total attributed revenue from an advertising campaign by total ad spend (ROAS = Revenue / Ad Spend). A 4.0x ROAS means your business generates $4 in revenue for every $1 spent on ads. A good ROAS depends on your gross margin: stores with 60% margins break even at 1.67x ROAS, while stores with 40% margins need 2.5x ROAS just to break even.</p>
-      <h2>The ROAS Formula</h2>
-      <p>ROAS = Attributed Revenue / Total Ad Spend</p>
-      <h2>Break-Even ROAS Formula</h2>
-      <p>Break-Even ROAS = 1 / Gross Margin %</p>
-      <h2>Industry Benchmarks</h2>
-      <ul>
-        <li>Beauty &amp; Skincare: 3.4x to 5.2x ROAS</li>
-        <li>Fashion &amp; Apparel: 2.8x to 4.2x ROAS</li>
-        <li>Health &amp; Supplements: 3.2x to 4.8x ROAS</li>
-        <li>Home &amp; Kitchen: 2.9x to 4.1x ROAS</li>
-        <li>High-Ticket Services: 4.5x to 7.0x+ ROAS</li>
-      </ul>
-      <p>Use our <a href="/roas-calculator">Free Interactive ROAS Calculator</a> to calculate your exact break-even metrics.</p>
-    `
-  },
-  {
     path: '/privacy-policy',
     outPath: 'privacy-policy/index.html',
     title: 'Privacy Policy | Brand Scaling',
@@ -296,6 +237,7 @@ const escapeHtml = (s) => String(s || '')
 async function buildCaseRoutes() {
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
   const { cleanSeoText, caseStudyDescription } = await import('../src/data/seoText.js');
+  const related = makeRelated(allCaseStudies);
   return allCaseStudies.map((cs) => {
     const id = cs.slug || cs.id || cs.shortcode;
     const cleanTitle = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
@@ -316,10 +258,27 @@ async function buildCaseRoutes() {
         ${metrics.length ? `<h2>Key Metrics</h2><ul>${metrics.map((m) => `<li>${escapeHtml(m.label)}: ${escapeHtml(m.value)}</li>`).join('')}</ul>` : ''}
         ${points.length ? `<h2>What We Did</h2><ul>${points.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
         ${caption.length ? `<h2>Full Breakdown</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
+        <h2>Related Case Studies</h2>
+        <ul>${related(cs).map((r) => `<li><a href="/cases/${r.slug || r.id}">${escapeHtml(cleanSeoText(r.title, 90))}</a></li>`).join('')}</ul>
         <p><a href="/case-studies">All 150+ case studies</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a></p>
       `
     };
   });
+}
+
+// Three related cases: same category first, then neighbours in the list
+function makeRelated(all) {
+  return (cs) => {
+    const same = all.filter((o) => o !== cs && o.category && o.category === cs.category).slice(0, 3);
+    if (same.length >= 3) return same;
+    const idx = all.indexOf(cs);
+    const extra = [];
+    for (let i = 1; same.length + extra.length < 3 && i < all.length; i++) {
+      const o = all[(idx + i) % all.length];
+      if (o !== cs && !same.includes(o)) extra.push(o);
+    }
+    return [...same, ...extra];
+  };
 }
 
 let generatedCount = 0;
@@ -433,7 +392,38 @@ function renderRoute(route) {
 (async () => {
   const { getRouteSchema, toJsonLd, ogImageFor } = await import('../src/data/pageSchemas.js');
   const caseRoutes = await buildCaseRoutes();
-  const allRoutes = [...routes, ...caseRoutes].map((r) => {
+  const { blogPosts } = await import('../src/data/blogPosts.js');
+  const blogRoutes = blogPosts.map((p) => ({
+    path: `/blog/${p.slug}`,
+    outPath: `blog/${p.slug}/index.html`,
+    title: p.titleTag,
+    description: escapeHtml(p.metaDescription),
+    h1: escapeHtml(p.title),
+    content: `
+      <p><strong>Direct Answer:</strong> ${escapeHtml(p.directAnswer || '')}</p>
+      ${p.definitionBox ? `<p><strong>${escapeHtml(p.definitionBox.term)}:</strong> ${escapeHtml(p.definitionBox.definition)}</p>` : ''}
+      ${(p.sections || []).map((sec) => `
+        <h2>${escapeHtml(sec.h2)}</h2>
+        ${String(sec.content || '').split(/\n\s*\n/).map((para) => `<p>${escapeHtml(para.trim())}</p>`).join('')}
+        ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
+      `).join('')}
+      ${(p.faqs || []).length ? `<h2>Frequently Asked Questions</h2>${p.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}` : ''}
+      <p><a href="/blog">Browse all ecommerce playbooks</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/case-studies">Explore 150+ verified case studies</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
+    `
+  }));
+
+  // Crawl paths: the case study hub links to every case page, the blog hub to every post.
+  const caseHub = routes.find((r) => r.path === '/case-studies');
+  caseHub.content += `
+      <h2>All ${caseRoutes.length} Case Studies</h2>
+      <ul>${caseRoutes.map((r) => `<li><a href="${r.path}">${r.h1}</a></li>`).join('')}</ul>`;
+  const blogHub = routes.find((r) => r.path === '/blog');
+  blogHub.content = `
+      <p>Field-tested growth insights, algorithmic teardowns, and unit economics benchmarks from managing $50M+ in ad spend.</p>
+      <h2>All Playbooks &amp; Articles</h2>
+      <ul>${blogPosts.map((p) => `<li><a href="/blog/${p.slug}">${escapeHtml(p.title)}</a>: ${escapeHtml(p.metaDescription)}</li>`).join('')}</ul>`;
+
+  const allRoutes = [...routes, ...blogRoutes, ...caseRoutes].map((r) => {
     const graph = getRouteSchema(r.path);
     return {
       ...r,
@@ -443,7 +433,7 @@ function renderRoute(route) {
   });
   allRoutes.forEach(renderRoute);
   writeLlmsFull(allRoutes);
-  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core routes + ${caseRoutes.length} case studies).`);
+  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${blogRoutes.length} blog + ${caseRoutes.length} case studies).`);
 })().catch((err) => {
   console.error('Prerender failed:', err);
   process.exit(1);

@@ -124,7 +124,8 @@ function App() {
         title = `eCommerce Case Study #${caseId} | Brand Scaling`;
         description = 'Direct-response case study breakdown showing verified ROAS and scalable revenue results.';
       }
-      pagePath = `/cases/${caseId}`;
+      // Canonical always points at the descriptive slug, even when an old shortcode URL was opened
+      pagePath = `/cases/${(study && study.slug) || caseId}`;
     } else if (activePage.startsWith('blog-') && activePage !== 'blog') {
       const postSlug = activePage.replace('blog-', '');
       const post = blogPosts.find((p) => p.slug === postSlug);

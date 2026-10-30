@@ -166,6 +166,33 @@ export const shopifyFaqs = [
   }
 ];
 
+export const growthFaqs = [
+  {
+    question: 'What does an ecommerce growth agency do?',
+    answer: 'An ecommerce growth agency runs paid acquisition, creative, the store and retention as one system and is measured on revenue, new-customer CAC and contribution margin. Brand Scaling combines Meta, TikTok and Google media buying with direct-response creative production and Shopify CRO, so a fix in one area is not lost in another.'
+  },
+  {
+    question: 'Do you offer TikTok Shop scaling services?',
+    answer: 'Yes. TikTok Shop and creator affiliate scaling is one of the six levers in the growth engine: we recruit and brief affiliates, run Spark Ads on the best creator videos and connect the TikTok Shop catalog to the same offer and margin model used on Meta.'
+  },
+  {
+    question: 'Are you an ecommerce marketing agency based in the USA?',
+    answer: 'Yes. Brand Scaling Hacks LLC is headquartered at 27 W 24th Street, Suite 702, New York, NY 10010, and works with DTC brands across the United States, the United Kingdom, Canada and Australia.'
+  },
+  {
+    question: 'Do you handle email and SMS marketing for ecommerce brands?',
+    answer: 'Yes. Klaviyo email and SMS lifecycle retention is part of the engine: welcome, abandoned cart, post-purchase and win-back flows are built to raise repeat purchase rate and LTV so the account can afford a higher CAC on paid channels.'
+  },
+  {
+    question: 'How is a growth agency different from a performance marketing agency?',
+    answer: 'A performance marketing agency focuses on paid media results. A growth agency owns the full loop around the media: creative volume, store conversion rate, average order value and retention. Brand Scaling does both, which is why the engagement starts with a Brand Growth Audit rather than an ad account handover.'
+  },
+  {
+    question: 'What results should a $50K-a-month brand expect in 90 days?',
+    answer: 'In the first 14 days we fix tracking, offer and the product page; by day 45 most accounts have 2 to 3 proven creative concepts; by day 90 the target is a stable scaling budget at or above break-even ROAS with new-customer CAC trending down. Published case studies include $146,184 in 27 days at 3.64x ROAS and $2.3M in sales at 11.6x ROAS.'
+  }
+];
+
 export const roasFaqs = [
   {
     question: 'What is a good ROAS for ecommerce?',
@@ -178,6 +205,14 @@ export const roasFaqs = [
   {
     question: 'How do I lower my break-even ROAS?',
     answer: 'You can lower your break-even ROAS by improving product gross margins, negotiating lower manufacturing costs, or introducing high-AOV bundles and quantity breaks on your Shopify store.'
+  },
+  {
+    question: 'Is this a real ROAS calculator for ecommerce or an estimate?',
+    answer: 'It is a real calculator: it uses your actual selling price, product cost, shipping and payment fees and target CAC to return break-even ROAS, profit per order and monthly net profit. The only estimates are the ones you type in, so use real numbers from your Shopify and ad account reports.'
+  },
+  {
+    question: 'What is the best profit optimization tool for DTC brands?',
+    answer: 'Start with a margin model like this calculator before buying software. Paid profit analytics tools add live order-level data from Shopify and ad platforms, which is worth it above roughly $100K a month in revenue. Below that, a weekly break-even ROAS and contribution margin check covers most decisions.'
   }
 ];
 
@@ -255,7 +290,8 @@ const staticSchemas = {
         ].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } }))
       }
     },
-    breadcrumb([['Home', '/'], ['Growth Engine', '/growth']])
+    breadcrumb([['Home', '/'], ['Growth Engine', '/growth']]),
+    faqPage('/growth#faq', growthFaqs)
   ],
 
   '/shopify-agency': () => [

@@ -362,6 +362,22 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
                   You can lower your break-even ROAS by improving product gross margins, negotiating lower manufacturing costs, or introducing high-AOV bundles and quantity breaks on your Shopify store.
                 </p>
               </div>
+              <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '20px' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: 800, color: '#0f172a', margin: '0 0 8px' }}>
+                  Is this a real ROAS calculator for ecommerce or an estimate?
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', color: '#475569', lineHeight: 1.6 }}>
+                  It is a real calculator: it uses your actual selling price, product cost, shipping and payment fees and target CAC to return break-even ROAS, profit per order and monthly net profit. The only estimates are the ones you type in, so use real numbers from your Shopify and ad account reports.
+                </p>
+              </div>
+              <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '20px' }}>
+                <h3 style={{ fontSize: '16px', fontWeight: 800, color: '#0f172a', margin: '0 0 8px' }}>
+                  What is the best profit optimization tool for DTC brands?
+                </h3>
+                <p style={{ margin: 0, fontSize: '14px', color: '#475569', lineHeight: 1.6 }}>
+                  Start with a margin model like this calculator before buying software. Paid profit analytics tools add live order-level data from Shopify and ad platforms, which is worth it above roughly $100K a month in revenue. Below that, a weekly break-even ROAS and contribution margin check covers most decisions.
+                </p>
+              </div>
             </div>
 
             {/* Audit CTA Box */}

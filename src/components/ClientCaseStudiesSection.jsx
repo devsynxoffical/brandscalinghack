@@ -15,7 +15,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   return (
     <div
       className="showcase-study-card"
-      onClick={() => onNavigate ? onNavigate(`case-${study.id}`) : onOpenModal(study)}
+      onClick={() => onNavigate ? onNavigate(`case-${study.slug || study.id}`) : onOpenModal(study)}
       style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column' }}
     >
       {/* Image / Video Container with Seamless Blend */}
@@ -68,7 +68,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
           <button
             onClick={(e) => {
               e.stopPropagation();
-              if (onNavigate) onNavigate(`case-${study.id}`);
+              if (onNavigate) onNavigate(`case-${study.slug || study.id}`);
             }}
             style={{
               background: 'rgba(255, 87, 34, 0.12)',

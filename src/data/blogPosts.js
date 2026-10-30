@@ -386,5 +386,389 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
         answer: 'Brands should consider a performance agency when they have validated product market fit (typically $20k+/month in revenue) and need a repeatable, scalable creative and media buying engine to break through to $100k to $500k per month.'
       }
     ]
+  },
+  {
+    slug: 'meta-ads-library',
+    title: 'Meta Ads Library: How to Find Winning Ecommerce Ads',
+    titleTag: 'Meta Ads Library: How to Find Winning Ads | Brand Scaling',
+    metaDescription: 'How to use the Meta Ads Library to find winning ecommerce ads: search, filters, 6 signals of a winner and a swipe file system that turns research into briefs.',
+    primaryKeyword: 'meta ads library',
+    secondaryKeywords: ['what is meta ads library', 'how to use meta ads library', 'how to search meta ads library', 'meta ads library api', 'meta ad library search by id', 'is meta ads library free', 'why is meta ads library not working', 'meta ads library instagram'],
+    publishDate: '2026-10-30',
+    updatedDate: '2026-10-30',
+    readTime: '14 min read',
+    category: 'Creative Research',
+    author: {
+      name: 'Gaurav Kapoor',
+      title: 'Founder, Brand Scaling',
+      avatar: '/team/gaurav.webp',
+      credentials: '12+ years in ecommerce, $50M+ in Meta ad spend managed, 150+ published case studies',
+      profileUrl: '/about',
+      youtubeUrl: 'https://www.youtube.com/@gauravecom',
+      instagramUrl: 'https://www.instagram.com/gauravecomm/',
+      linkedinUrl: 'https://www.linkedin.com/in/gauravecom/'
+    },
+    directAnswer: 'The Meta Ads Library is Meta\'s free, public database of every active ad running on Facebook, Instagram, Messenger and Meta\'s other apps. You can search it by keyword or advertiser, filter by country, platform and media type, and see when each ad started running. Ecommerce brands use it to find winning ads: the ones competitors keep running for 30 days or more, in many versions, because those ads are almost certainly profitable.',
+    definitionBox: {
+      term: 'Meta Ads Library (Facebook Ad Library)',
+      definition: 'A free transparency tool at facebook.com/ads/library that lists every ad currently active across Meta platforms, with the start date, platforms, creative versions and advertiser page. It does not show spend, reach or results for normal commercial ads outside the EU.'
+    },
+    tableOfContents: [
+      { id: 'what-is-meta-ads-library', text: 'What is the Meta Ads Library?' },
+      { id: 'how-to-use', text: 'How to use the Meta Ads Library, step by step' },
+      { id: 'six-signals', text: 'How to find winning ads: 6 signals' },
+      { id: 'search-like-a-media-buyer', text: 'How to search the Ads Library like a media buyer' },
+      { id: 'download-videos', text: 'How to download Meta Ads Library videos' },
+      { id: 'swipe-file', text: 'Build a swipe file and turn it into briefs' },
+      { id: 'api', text: 'Meta Ads Library API: is it free and who can use it?' },
+      { id: 'third-party-tools', text: 'Meta Ads Library tools (third-party)' },
+      { id: 'not-working', text: 'Why is the Meta Ads Library not working?' },
+      { id: 'examples', text: 'Meta Ads Library examples: 5 ecommerce ads broken down' },
+      { id: 'strategy', text: 'How the Ads Library fits into your Meta strategy' },
+      { id: 'faq-section', text: 'Frequently asked questions' }
+    ],
+    sections: [
+      {
+        id: 'what-is-meta-ads-library',
+        h2: 'What is the Meta Ads Library?',
+        content: `The Meta Ads Library (many people still call it the Facebook Ad Library) is a public, searchable database of every ad that is currently active on Facebook, Instagram, Messenger, Threads and the Meta Audience Network. Meta launched it in 2018 for political transparency and opened it to all ads in 2019. You do not need an ad account, a Business Manager or even a Facebook login to use it.
+
+For each ad you can see the advertiser's page, the date the ad started running, which platforms it runs on, every creative version in the same ad set (different images, videos or copy under one ad ID) and, for ads delivered in the European Union, extra transparency data such as reach by country, age and gender.
+
+What it does not show for normal ecommerce ads in the US, UK, Canada or Australia: spend, impressions, click-through rate, ROAS or any conversion data. Those numbers are only published for ads about social issues, elections or politics. That is why media buyers read run time and version count as a proxy for performance, which is the whole method in this guide.
+
+The official tool lives at facebook.com/ads/library. Bookmark it: the search in Meta Business Suite is not the same thing and shows far less.`
+      },
+      {
+        id: 'how-to-use',
+        h2: 'How to use the Meta Ads Library, step by step',
+        content: `Step 1: Open the Ad Library. Go to facebook.com/ads/library in any browser. Logging in is optional; it only matters if you want to save searches or apply for API access.
+
+Step 2: Pick the country and the ad category. Set the country to where your customers are (United States for most DTC brands) and set the category to All ads. If the category is stuck on Issues, elections or politics you will see no ecommerce ads at all. This is the number one reason people think the tool is broken.
+
+Step 3: Search by keyword or advertiser name. Type a competitor's brand name to see their page's ads, or type a product phrase such as collagen powder, linen sheets or posture corrector to see every active ad using those words.
+
+Step 4: Apply filters. The filter bar lets you narrow by active status (active or inactive), platform (Facebook, Instagram, Messenger, Audience Network), media type (video, image, meme, no image or video), language, and date range. For creative research set media type to video and the date range to the last 90 days.
+
+Step 5: Open the advertiser page. Click the page name on any ad to jump to a view of only that advertiser's ads. Sort mentally by Started running on: the oldest active ads are the ones paying their way.
+
+Step 6: Open See ad details. This view shows every version of the creative inside the same ad, the landing page URL when you click through, and in the EU the audience breakdown. Count the versions. Three or more versions of one concept means the brand is iterating a winner.`,
+        table: {
+          headers: ['Filter', 'Best setting for ecommerce research', 'Why'],
+          rows: [
+            ['Country', 'Your main market (US, UK, CA, AU)', 'Ads are localised; US ads show the most volume'],
+            ['Ad category', 'All ads', 'The political category hides every commerce ad'],
+            ['Active status', 'Active', 'Inactive ads include failed tests and seasonal offers'],
+            ['Media type', 'Video', 'Video carries 80%+ of DTC spend and shows the hook'],
+            ['Platform', 'Instagram, then Facebook', 'Reveals which placements the brand invests in'],
+            ['Date range', 'Last 90 days, then last 30', 'Separates proven evergreen ads from fresh tests']
+          ]
+        }
+      },
+      {
+        id: 'six-signals',
+        h2: 'How to find winning ads: 6 signals',
+        content: `Because the library hides performance data, you infer it. After reviewing thousands of ads for partner accounts, these six signals predict a winner with enough accuracy to brief creative from.
+
+Signal 1: Long run time. An ad that has been active for 30 days or more is very likely profitable. Brands switch off losers inside a week. Anything past 90 days is a proven evergreen concept.
+
+Signal 2: Many versions of one concept. When the ad details show 4, 8 or 20 versions with the same hook and different footage or copy, the brand is scaling and iterating that concept. Iteration follows money.
+
+Signal 3: The same creative across many ad sets. If you see the same video appearing under several ad IDs with different start dates, it has been duplicated into new campaigns, which only happens to winners.
+
+Signal 4: New angles from the biggest spenders every week. Follow the 5 largest advertisers in your niche. The angles they launch fresh each week tell you what their testing budget is finding.
+
+Signal 5: The landing page and offer behind the ad. Click through. A dedicated landing page, a bundle or a quantity break behind the ad means the brand has done the conversion work and the ad is worth copying structurally.
+
+Signal 6: Comment volume on the organic post version. Open the Instagram or Facebook post the ad is attached to. Hundreds of comments, especially questions about price and shipping, confirm the ad is reaching buyers, not just viewers.`,
+        table: {
+          headers: ['Signal', 'What to check', 'Score 0 to 2'],
+          rows: [
+            ['Run time', 'Started running on date', '0: under 14 days, 1: 14 to 30 days, 2: 30+ days'],
+            ['Versions', 'See ad details, version count', '0: one, 1: two to three, 2: four or more'],
+            ['Duplication', 'Same creative under multiple ad IDs', '0: none, 1: two, 2: three or more'],
+            ['Spender activity', 'New ads from the page this week', '0: none, 1: one to two, 2: three or more'],
+            ['Landing page', 'Dedicated page, bundle or offer', '0: generic PDP, 1: offer on PDP, 2: dedicated page'],
+            ['Comments', 'Organic post engagement', '0: under 20, 1: 20 to 100, 2: 100+']
+          ]
+        }
+      },
+      {
+        id: 'search-like-a-media-buyer',
+        h2: 'How to search the Meta Ads Library like a media buyer',
+        content: `Keyword searches that work for ecommerce. Search for offer language, not product names: free shipping, bundle, limited drop, buy 2 get 1, shop now, 30 day guarantee. Combine with one niche word, for example bundle skincare or free shipping leggings. Offer words surface ads that are built to convert rather than brand awareness spots.
+
+Meta ad library search by ID. Every ad has a numeric Library ID shown on its card and in its URL (facebook.com/ads/library/?id=XXXXXXXX). Paste the ID into the search box with the keyword type set to Ad ID. Use this when a client, creator or teammate sends you a link and you want the full version history.
+
+Meta Ads Library for Instagram only. Set the platform filter to Instagram. Then look at the ad's format: 9:16 Reels placements usually mean the brand has a creator-led UGC pipeline, which is the fastest production model to copy.
+
+Can you sort by impressions? Not for commercial ads. Sorting by impressions is only available for the political and issue category, and the EU transparency data shows reach, not spend. The run time plus version count method above is the closest free proxy. Third-party tools estimate impressions from engagement, but treat those numbers as a ranking aid, not a fact.`
+      },
+      {
+        id: 'download-videos',
+        h2: 'How to download Meta Ads Library videos (and what you may do with them)',
+        content: `There is no download button in the Ads Library. For internal research most teams screen record the ad or use the browser's network tab to save the MP4; several free browser extensions and websites also pull the file from the ad's public URL. We do not endorse one because they change often and some inject tracking.
+
+What you may do: keep the video in a private swipe file, share it in a creative brief, time stamp the hook, the proof and the offer, and recreate the structure with your own product and footage.
+
+What you may not do: re-upload a competitor's ad, reuse their footage, voice or creators, or copy their copy word for word. Beyond the legal risk, Meta's systems match duplicate media and copied ads perform worse because the audience has already seen them.`
+      },
+      {
+        id: 'swipe-file',
+        h2: 'Build a swipe file and turn it into briefs',
+        content: `Research that stays in a folder is wasted. The swipe file is only useful when it feeds a weekly brief.
+
+Swipe file columns. Keep one spreadsheet row per ad with these seven columns: brand, hook (the first 3 seconds, quoted), angle (the belief the ad is trying to change), format (talking head UGC, demo, split screen, founder, static, carousel), run time in days on the day you logged it, offer, and landing page type. Add a score column using the 0 to 2 scorecard above; anything at 9 or above out of 12 goes into the brief.
+
+From swipe to brief. At Brand Scaling, 10 scored ads from the library become a 45+ hook and angle matrix: 5 angles (problem, mechanism, objection, identity, offer) multiplied by 3 hook styles (question, bold claim, visual pattern break) multiplied by 3 formats. Each cell is one brief line a creator or editor can execute in a day. The matrix is why partner accounts receive 30 to 50 new creatives a month without the creative team guessing.
+
+Example: a skincare brand brief. For a clinical skincare partner we logged 12 active competitor ads, 9 of them UGC with a before and after in the first 2 seconds and a 3 step routine bundle behind the click. The brief copied the structure, not the ads: real customer footage, our own clinical mechanism, our own bundle. The account did $146,184 in 27 days on $40,123 in spend, a 3.64x ROAS, with the top 3 ads all coming from that first matrix.`
+      },
+      {
+        id: 'api',
+        h2: 'Meta Ads Library API: is it free and who can use it?',
+        content: `The Meta Ad Library API is free, but it is not a general ads data feed. It covers ads about social issues, elections or politics in supported countries, plus the EU transparency data required by the Digital Services Act. To use it you need a Meta developer account, confirmed identity, and you query it through the Graph API with an access token.
+
+For an ecommerce brand researching competitors the API adds little: commercial ads outside the EU return the same limited fields you see in the web tool, and there is no spend or performance data. Use the web interface, or a third-party tool that already handles the collection, and spend your time on the analysis.`
+      },
+      {
+        id: 'third-party-tools',
+        h2: 'Meta Ads Library tools (third-party)',
+        content: `Paid ad spy tools sit on top of the public library and add what the free tool lacks: saved boards, alerts when a brand launches new ads, historical records of ads that are no longer active, estimated run time trends, and team sharing. Popular categories include dedicated Meta ad trackers, all-in-one creative research suites and Chrome extensions that add a save button to the library itself.
+
+When the free library is enough: you track fewer than 10 competitors, you review ads weekly, and you log them in your own swipe file. When a paid tool pays for itself: you brief 20+ creatives a month, you need to know the day a competitor changes offer, or you want history older than the ads currently active. We have no affiliate relationship with any of them; choose on the alerts and history features, not the impression estimates.`
+      },
+      {
+        id: 'not-working',
+        h2: 'Why is the Meta Ads Library not working?',
+        content: `Most Ads Library problems are settings, not outages. Work through this list:
+
+1. Wrong country. The country selector defaults to your location. If you are researching US brands from elsewhere, switch it.
+
+2. Ad category set to Issues, elections or politics. Switch to All ads. This hides every ecommerce ad and is the most common cause of empty results.
+
+3. Browser extensions. Ad blockers and privacy extensions block the library's scripts. Try a private window with extensions off.
+
+4. Login loop. If the page keeps asking you to log in, clear cookies for facebook.com or use a different browser; the library works logged out.
+
+5. Search type. If you pasted an ad ID with the search type still on Keyword, you get nothing. Switch the type to Ad ID.
+
+6. Genuine outage. Meta's tool occasionally fails for an hour or two, usually around big product changes. Check again later; status pages for Meta business tools will usually mention it.`
+      },
+      {
+        id: 'examples',
+        h2: 'Meta Ads Library examples: 5 ecommerce ads broken down',
+        content: `These five patterns come up repeatedly among long-running DTC ads across skincare, supplements, apparel, jewelry and home. Search each niche with the filters above and you will find current examples of every one of them within a few minutes.
+
+1. Skincare, the before and after UGC. Hook: a creator's face with visible texture in the first second and the line I was about to give up on my skin. Angle: mechanism (one ingredient explained simply). Offer: 3 step routine bundle with a free full size add-on. Typical run time when we log them: 60 to 180 days with 6 or more versions.
+
+2. Supplements, the founder explainer. Hook: founder on camera, bold claim about a common symptom. Angle: objection handling (why other products fail). Offer: subscribe and save with a first order discount. Run time 45 to 120 days.
+
+3. Apparel, the split screen comparison. Hook: our fabric versus a generic one under water or stretch. Angle: proof. Offer: buy 2 get 1 or free shipping threshold. Run time 30 to 90 days, with many placements variants.
+
+4. Jewelry, the gift reaction. Hook: an unboxing reaction in the first 2 seconds. Angle: identity and occasion. Offer: gift box plus engraving. Run time spikes before Mother's Day, BFCM and Valentine's, then returns every year.
+
+5. Home, the problem demo. Hook: the mess or inconvenience shown at full size. Angle: problem to solution demo. Offer: quantity break (buy 2 save 15%). Run time 90+ days; these are often the oldest active ads on the page.`
+      },
+      {
+        id: 'strategy',
+        h2: 'How the Ads Library fits into your Meta strategy',
+        content: `Since Meta's Andromeda retrieval update, creative diversity decides how far an account can scale: near duplicate ads compete with each other for the same people, while genuinely different hooks and angles each open a new slice of the audience. The Ads Library is the cheapest source of new angles that already work in your market.
+
+The weekly loop we run for partner brands: Monday, log 10 new ads from the 5 biggest spenders in the niche and score them. Tuesday, update the hook and angle matrix and brief 8 to 12 new creatives. Wednesday to Friday, produce and launch inside one consolidated Advantage+ campaign. The following Monday, keep what beat the account's cost per purchase and log the next 10.
+
+If you want this done for you, creative research is the first deliverable of a Brand Growth Audit: you receive the scored swipe file and the first 45 cell matrix for your brand before any media buying starts.`
+      }
+    ],
+    faqs: [
+      {
+        question: 'Is the Meta Ads Library free?',
+        answer: 'Yes. The Meta Ads Library is free and public. You can search every active ad on Facebook and Instagram without running ads yourself and without a Facebook account.'
+      },
+      {
+        question: 'Do I need to log in to use the Meta Ads Library?',
+        answer: 'No. The library works in a normal browser while logged out. Logging in to Facebook is optional and only needed for some saved settings and for Ad Library API access.'
+      },
+      {
+        question: 'Can you see ad spend in the Meta Ads Library?',
+        answer: 'Not for normal commercial ads in the US, UK, Canada or Australia. Spend ranges and impressions are shown only for ads about social issues, elections or politics, and ads delivered in the EU show reach data under the Digital Services Act.'
+      },
+      {
+        question: 'How do I find winning ads in the Meta Ads Library?',
+        answer: 'Look for ads that have been active for 30 days or more, concepts with four or more versions, the same creative duplicated under several ad IDs, and brands that keep launching new versions of the same angle. These are reliable signs the ad is profitable.'
+      },
+      {
+        question: 'Why is the Meta Ads Library not working?',
+        answer: 'Check that the country is correct and the category is set to All ads rather than Issues, elections or politics, turn off browser extensions and try a private window. If it still fails, Meta\'s tool may be down for a short time.'
+      },
+      {
+        question: 'Can I search the Meta Ads Library by ad ID?',
+        answer: 'Yes. Set the search type to Ad ID and paste the numeric Library ID from the ad card or its URL. You will see that ad with all of its creative versions and start date.'
+      }
+    ]
+  },
+  {
+    slug: 'meta-andromeda',
+    title: 'Meta Andromeda Explained: What Changed for Ecommerce Ads',
+    titleTag: 'Meta Andromeda Explained for Ecommerce Ads | Brand Scaling',
+    metaDescription: 'Meta Andromeda changed how Meta picks which ads to show. What it means for ecommerce: creative diversity, simpler campaign structure and new testing rules.',
+    primaryKeyword: 'meta andromeda',
+    secondaryKeywords: ['what is meta andromeda', 'how meta andromeda works', 'meta andromeda creative diversity', 'meta andromeda campaign structure', 'meta andromeda vs gem', 'meta andromeda best practices', 'is meta andromeda live'],
+    publishDate: '2026-10-30',
+    updatedDate: '2026-10-30',
+    readTime: '10 min read',
+    category: 'Meta Ads',
+    author: {
+      name: 'Gaurav Kapoor',
+      title: 'Founder, Brand Scaling',
+      avatar: '/team/gaurav.webp',
+      credentials: '12+ years in ecommerce, $50M+ in Meta ad spend managed, 150+ published case studies',
+      profileUrl: '/about',
+      youtubeUrl: 'https://www.youtube.com/@gauravecom',
+      instagramUrl: 'https://www.instagram.com/gauravecomm/',
+      linkedinUrl: 'https://www.linkedin.com/in/gauravecom/'
+    },
+    directAnswer: 'Meta Andromeda is the AI retrieval system Meta uses to pick which ads, out of millions of candidates, could be shown to each person before the final ranking step in the auction. Meta described it on its engineering blog in December 2024. For ecommerce brands it means creative variety now decides reach: fewer, broader campaigns with many genuinely different ads beat narrow targeting and near duplicate creatives.',
+    definitionBox: {
+      term: 'Meta Andromeda',
+      definition: 'Meta\'s next generation personalized ads retrieval engine, built on custom AI hardware, that narrows the full pool of eligible ads to a short list for each impression. Ranking models (including the GEM model) then choose the final ad and price. Andromeda powers Advantage+ automation and affects every advertiser; there is no opt in or opt out.'
+    },
+    tableOfContents: [
+      { id: 'what-is-andromeda', text: 'What is Meta Andromeda?' },
+      { id: 'how-it-works', text: 'How Meta Andromeda works (retrieval, then ranking)' },
+      { id: 'andromeda-vs-gem', text: 'Meta Andromeda vs GEM' },
+      { id: 'creative-diversity', text: 'Meta Andromeda and creative diversity' },
+      { id: 'campaign-structure', text: 'Meta Andromeda campaign structure' },
+      { id: 'best-practices', text: 'Meta Andromeda best practices for ecommerce' },
+      { id: 'what-did-not-change', text: 'What did not change' },
+      { id: 'is-it-live', text: 'Is Meta Andromeda live? What it means in 2026' },
+      { id: 'faq-section', text: 'Frequently asked questions' }
+    ],
+    sections: [
+      {
+        id: 'what-is-andromeda',
+        h2: 'What is Meta Andromeda?',
+        content: `Every time someone opens Instagram or Facebook, Meta has a few milliseconds to choose one ad from tens of millions of eligible ads. It cannot score all of them with its heaviest models, so the job is split in two: a retrieval step that quickly finds a few thousand plausible candidates for that specific person, and a ranking step that scores those candidates precisely and runs the auction.
+
+Andromeda is the new retrieval step. Meta announced it in the engineering post Meta Andromeda: Supercharging Advantage+ automation with the next-gen personalized ads retrieval engine on 2 December 2024. The key change is that retrieval itself became a large, personalised AI model running on Meta's own accelerator hardware, instead of a lighter heuristic filter. Meta reported higher ad quality and recall, and tied the system directly to Advantage+ campaign automation.
+
+In plain words: the first cut used to be rough and mostly driven by your targeting settings. Now the first cut is a model that already understands the person well, and it picks the ads whose creative is most likely to interest that person. Your creative is doing the targeting.`
+      },
+      {
+        id: 'how-it-works',
+        h2: 'How Meta Andromeda works (retrieval, then ranking)',
+        content: `Step 1: Retrieval narrows millions of ads to a short list per person. Andromeda looks at the person's signals and at embeddings of every eligible ad (what the creative shows and says, what people who engaged with it look like) and returns the candidates most likely to be relevant. If two of your ads are near duplicates, they land in the same place in that embedding space and effectively compete for one slot in the short list.
+
+Step 2: Ranking models pick the final ad and the price. The retrieved candidates are scored by Meta's ranking models for predicted action rate, combined with the advertiser's bid and the ad quality signals, and the auction decides the winner and the price. This is where cost caps, bid caps and your optimisation event matter.
+
+The practical consequence: an ad that never makes it through retrieval never gets the chance to prove itself in ranking, no matter how good the offer. Getting through retrieval depends on being different enough from your own other ads and relevant enough to a real slice of people.`,
+        table: {
+          headers: ['Stage', 'What happens', 'What you control'],
+          rows: [
+            ['All eligible ads', 'Tens of millions of active ads could be shown', 'Being active, within policy and with the right placements'],
+            ['Retrieval (Andromeda)', 'A personalised model shortlists a few thousand candidates', 'Creative diversity, concept variety, clear hooks'],
+            ['Ranking', 'Heavy models predict the action rate of each candidate', 'Optimisation event, Conversions API signal quality, landing page'],
+            ['Auction', 'Bid times predicted value plus quality picks the winner', 'Budget, bid strategy, cost caps']
+          ]
+        }
+      },
+      {
+        id: 'andromeda-vs-gem',
+        h2: 'Meta Andromeda vs GEM',
+        content: `People mix these up because Meta published both as parts of its ads AI stack. Andromeda is retrieval: it chooses which ads are candidates for a given person. GEM (Generative Ads Recommendation Model) is Meta's large ranking foundation model, described separately by Meta as a transformer based system trained across its ads data that improves how candidates are scored.
+
+A simple way to hold it: Andromeda decides who gets to audition, GEM decides who gets the part. Both reward the same two things from an advertiser: creatives that are genuinely different from each other, and clean conversion signals so the models learn from real purchases rather than noise.`
+      },
+      {
+        id: 'creative-diversity',
+        h2: 'Meta Andromeda and creative diversity',
+        content: `The most visible change media buyers reported after the rollout: accounts with 12 ad sets each holding the same three creatives stopped scaling, while accounts with one or two campaigns and 20 clearly different ads kept growing. That is retrieval at work. Near duplicate ads (same video, new headline; same hook, new background music) are treated as one concept, so adding more of them does not add reach.
+
+What different actually means. A new concept changes at least one of: the hook (the first 3 seconds and the claim), the angle (problem, mechanism, objection, identity, offer), the format (UGC testimonial, founder explainer, demo, split screen, static, carousel), or the person on camera. Changing the headline, the CTA button or the colour grade is an iteration, useful for squeezing a proven concept, but it does not open new reach.
+
+The 45+ hook and angle matrix. For partner brands we brief creatives from a matrix of 5 angles by 3 hook styles by 3 formats. Every cell is a different concept to the retrieval model. A full matrix gives 45 distinct starting points; the weekly job is to fill the empty cells, kill the losers and iterate the winners. This is how accounts receive 30 to 50 new creatives a month without becoming 50 versions of one ad.`
+      },
+      {
+        id: 'campaign-structure',
+        h2: 'Meta Andromeda campaign structure',
+        content: `Consolidate. The structure that works under Andromeda is simpler than what most accounts still run: one Advantage+ sales campaign for the core catalogue with broad targeting, one testing campaign where new concepts launch, and optionally one retargeting campaign at 10% to 15% of spend using catalog ads. Interest stacks, lookalike ladders and geographic splits mostly fragment learning now. In our case library the pattern repeats: consolidating ad sets into simplified broad targeting Advantage+ campaigns is the step that unlocked scale.
+
+When cost caps and bid caps still help. Cost controls do not fight Andromeda; they protect margin once a concept is proven. For a DTC partner we scaled $13,195 in spend into $54,552 in 7 days at 4.43x ROAS by duplicating the winning ad sets with bid caps set 20% higher than the original, which let the winners buy more volume without reopening the test budget.
+
+Before and after. Before: 12 ad sets, 3 creatives each, interest targeting per ad set, 36 ads of which 30 were near duplicates. After: 2 campaigns, broad targeting, 20 distinct concepts plus 10 iterations of the top 3, a weekly refresh. Same spend, and the account exits learning faster because conversions are pooled.`,
+        table: {
+          headers: ['Element', 'Pre-Andromeda habit', 'Andromeda structure'],
+          rows: [
+            ['Campaigns', '6 to 12 split by audience', '2 to 3: scale, test, retargeting'],
+            ['Targeting', 'Interests, lookalikes, stacked exclusions', 'Broad with Advantage+ audience'],
+            ['Creatives per campaign', '3 to 5, mostly iterations', '15 to 25 distinct concepts'],
+            ['Testing', 'Separate CBO per idea', 'New concepts inside one testing campaign'],
+            ['Bidding', 'Lowest cost everywhere', 'Lowest cost to learn, cost caps to protect margin at scale'],
+            ['Refresh', 'When fatigue shows', 'Weekly, from a hook and angle matrix']
+          ]
+        }
+      },
+      {
+        id: 'best-practices',
+        h2: 'Meta Andromeda best practices for ecommerce',
+        content: `1. Ship creative volume weekly. Aim for 8 to 12 new ads a week at $10K+ monthly spend, 30 to 50 a month at scale. Fatigue is now a reach problem, not just a frequency problem.
+
+2. Split concepts from iterations. Each week, two thirds new concepts (new hook, angle, format or person), one third iterations of last week's winners.
+
+3. Test inside one campaign. Launch new concepts in a single testing campaign with broad targeting so Meta compares them against each other on equal footing, then move winners into the scale campaign.
+
+4. Match the landing page to the ad. The hook on the video must continue above the fold on the page; a dedicated landing page per angle lifts conversion rate and tells the ranking models the click was a good one.
+
+5. Fix signal quality first. Conversions API with event match quality of 8 or higher, deduplicated with the pixel, so purchases feed the models rather than add to cart noise.
+
+6. Give it patience windows. Judge a concept after 3 to 5 days or 2 to 3 times target CPA in spend, whichever comes first; do not edit live ad sets daily.
+
+7. Read results on MER, not platform ROAS. Blended marketing efficiency ratio and new customer CAC catch the double counting that broad campaigns and retargeting produce in platform reports.
+
+8. Refresh on a calendar. Put the Monday swipe file review and the Tuesday brief in the calendar; accounts that refresh by schedule rather than by panic have the flattest CPA curves.`
+      },
+      {
+        id: 'what-did-not-change',
+        h2: 'What did not change',
+        content: `Andromeda changed delivery, not economics. The offer, the product, the landing page and your margins still decide whether scale is profitable. A 4x ROAS on a 40% margin product still loses money after returns and fees; a 2.5x ROAS on a 75% margin bundle can fund aggressive growth.
+
+Before you add creative volume, know your break even ROAS (1 divided by gross margin) and your target CAC. Our free ROAS calculator gives you both in under a minute, and the Shopify agency page covers the product page, bundle and checkout fixes that raise the ceiling creative can scale into.`
+      },
+      {
+        id: 'is-it-live',
+        h2: 'Is Meta Andromeda live? What it means in 2026',
+        content: `Yes. Meta stated in its December 2024 engineering post that Andromeda powers ads retrieval for Advantage+ automation, and performance patterns across our partner accounts changed in the way the post predicts: consolidated, creatively diverse accounts scale; fragmented, duplicate heavy accounts stall. Every advertiser is affected; there is no setting to turn it on or off.
+
+What we can say with confidence as of 30 October 2026: creative diversity is the primary scaling lever, broad consolidated structures outperform segmented ones for most DTC brands, and cost controls remain useful for margin protection. What we avoid claiming: specific thresholds Meta has not published (an exact number of creatives, a precise similarity cut off). When Meta publishes more detail we update this page and change the date above.
+
+If your account was built in 2022 and has not been restructured since, the fastest check is a Brand Growth Audit: we map your current structure against the Andromeda layout in the table above and show the creative gaps in your matrix before any spend changes.`
+      }
+    ],
+    faqs: [
+      {
+        question: 'What is Meta Andromeda?',
+        answer: 'Meta Andromeda is Meta\'s ads retrieval system. It chooses which ads could be shown to each person before the ranking models pick the final ad. Meta introduced it on its engineering blog in December 2024 as the retrieval engine behind Advantage+ automation.'
+      },
+      {
+        question: 'Is Meta Andromeda live?',
+        answer: 'Yes. Meta has said Andromeda powers ads retrieval for Advantage+ automation. Every advertiser is affected, and there is no way to opt in or out.'
+      },
+      {
+        question: 'What is the best campaign structure for Meta Andromeda?',
+        answer: 'For most ecommerce brands: two or three campaigns (scale, test and a small retargeting campaign), broad targeting, and many clearly different creatives inside each campaign, with cost caps only where margins need protecting.'
+      },
+      {
+        question: 'Does Meta Andromeda mean targeting no longer matters?',
+        answer: 'Interest targeting matters far less than before. Your creative now does most of the targeting, because different hooks, angles and formats are retrieved for different people.'
+      },
+      {
+        question: 'How many creatives do I need for Meta Andromeda?',
+        answer: 'Enough to test new concepts every week: roughly 8 to 12 new ads a week at $10K+ in monthly spend. Brand Scaling ships 30 to 50+ angle iterations a month for partner brands so accounts do not fatigue.'
+      },
+      {
+        question: 'What is the difference between Meta Andromeda and GEM?',
+        answer: 'Andromeda is the retrieval stage that shortlists candidate ads for a person. GEM is Meta\'s large ranking model that scores those candidates. Both reward creative diversity and clean conversion signals.'
+      }
+    ]
   }
 ];
