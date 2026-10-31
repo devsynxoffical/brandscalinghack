@@ -6,7 +6,8 @@ import { blogPosts } from './blogPosts.js';
 import { allCaseStudies } from './allCaseStudies.js';
 import { cleanSeoText, caseStudyDescription } from './seoText.js';
 import { CASE_NICHES, nicheBySlug, casesForNiche } from './caseNiches.js';
-import { isIndexableCase } from './caseIndexing.js';
+import { isIndexableCase, canonicalCasePath } from './caseIndexing.js';
+import { caseSeo } from './caseFacts.js';
 import { editorialFor } from './caseEditorial.js';
 
 export const BASE_URL = 'https://www.brandscalinghacks.com';
@@ -19,6 +20,9 @@ export const DEFAULT_OG_IMAGE = `${BASE_URL}/og/default.png`;
 export const OG_IMAGES = {
   '/': `${BASE_URL}/og/home.png`,
   '/meta-ads-agency': `${BASE_URL}/og/meta-ads-agency.png`,
+  '/tiktok-ads-agency': `${BASE_URL}/og/tiktok-ads-agency.png`,
+  '/services': `${BASE_URL}/og/services.png`,
+  '/contact': `${BASE_URL}/og/contact.png`,
   '/growth': `${BASE_URL}/og/growth.png`,
   '/shopify-agency': `${BASE_URL}/og/shopify-agency.png`,
   '/viral-creatives': `${BASE_URL}/og/viral-creatives.png`,
@@ -169,6 +173,42 @@ export const shopifyFaqs = [
   }
 ];
 
+export const tiktokFaqs = [
+  {
+    question: 'What does a TikTok ads agency do for an ecommerce brand?',
+    answer: 'A TikTok ads agency produces native creator videos, runs in-feed and Spark Ads campaigns, and manages TikTok Shop and affiliate creators where the product fits. Brand Scaling runs TikTok alongside Meta from one creative engine, so winning hooks are recut for both platforms and measured on blended MER.'
+  },
+  {
+    question: 'Do you offer TikTok Shop scaling services?',
+    answer: 'Yes. We set up or audit the TikTok Shop listing, recruit and brief affiliate creators, structure commissions and sample seeding, and run GMV Max and Spark Ads on the best affiliate videos, all tied to the same offer and margin model as your Shopify store.'
+  },
+  {
+    question: 'Are TikTok ads better than Meta ads for ecommerce?',
+    answer: 'Neither is better in general. Meta usually scales more predictably for most DTC brands; TikTok can win for visual, demo-friendly and impulse products with a younger audience. We test TikTok once creative supply and tracking are solid, and keep the budget on whichever channel delivers the lower new-customer CAC.'
+  },
+  {
+    question: 'How much should I spend on TikTok ads to start?',
+    answer: 'Plan on enough budget to exit learning on one campaign: roughly 20 to 50 times your target cost per purchase over the first two weeks, plus a creative budget for 8 to 12 new videos a week. Brand Scaling partners typically spend $10,000 to $20,000+ a month across paid social.'
+  },
+  {
+    question: 'What are Spark Ads?',
+    answer: 'Spark Ads run an existing organic TikTok post, from your account or a creator\'s with permission, as a paid ad. The post keeps its likes, comments and creator handle, which makes it look native and usually lowers cost per click compared with a standard in-feed ad.'
+  },
+  {
+    question: 'Do I need TikTok Shop to advertise on TikTok?',
+    answer: 'No. Many Shopify brands advertise on TikTok and send traffic to their own store. TikTok Shop adds in-app checkout and affiliate creators, which helps impulse products convert, but it is a separate decision we make based on margin, fulfilment and category.'
+  }
+];
+
+export const SERVICES = [
+  { id: 'meta-ads-agency', path: '/meta-ads-agency', name: 'Meta Ads Agency', description: 'Facebook and Instagram media buying for ecommerce, built on creative testing and consolidated Advantage+ campaigns.', includes: ['Account audit and restructure', 'Creative testing on a 45+ hook and angle matrix', 'Conversions API and tracking', 'Retargeting and catalog ads'], cta: 'Meta ads agency' },
+  { id: 'tiktok-ads-agency', path: '/tiktok-ads-agency', name: 'TikTok Ads Agency', description: 'Native creator ads, Spark Ads and TikTok Shop with affiliates, run from the same creative engine as Meta.', includes: ['Creator and UGC production', 'Spark Ads and in-feed campaigns', 'TikTok Shop and affiliate program', 'Events API tracking'], cta: 'TikTok ads agency' },
+  { id: 'shopify-agency', path: '/shopify-agency', name: 'Shopify Agency & CRO', description: 'Shopify stores built for paid traffic: sub-1 second mobile pages, offers, bundles and checkout that convert.', includes: ['Store builds and rebuilds', 'Product page and offer testing', 'AOV: bundles and post-purchase upsells', 'Speed and app clean-up'], cta: 'Shopify agency' },
+  { id: 'growth', path: '/growth', name: 'Ecommerce Growth Engine', description: 'Media buying, creative, CRO and Klaviyo retention run together as one four-phase system.', includes: ['Meta, TikTok and Google Ads', 'Shopify CRO', 'Email and SMS retention', 'Weekly MER and CAC reporting'], cta: 'Growth engine' },
+  { id: 'viral-creatives', path: '/viral-creatives', name: 'Direct-Response Creatives & UGC', description: '30 to 50+ new ad creatives a month: UGC, founder-led, demo and split-screen formats briefed from data.', includes: ['Hook and angle research', 'Creator sourcing and scripts', 'Editing and motion', 'Weekly iteration on winners'], cta: 'Creative services' },
+  { id: 'roas-calculator', path: '/roas-calculator', name: 'Free ROAS Calculator', description: 'Work out your break-even ROAS and profit per order before you scale ad spend.', includes: ['Break-even ROAS', 'Contribution margin per order', 'Monthly profit model'], cta: 'Use the calculator' }
+];
+
 export const growthFaqs = [
   {
     question: 'What does an ecommerce growth agency do?',
@@ -266,6 +306,71 @@ const staticSchemas = {
     faqPage('/meta-ads-agency#faq', metaAdsFaqs)
   ],
 
+  '/tiktok-ads-agency': () => [
+    webPage({
+      path: '/tiktok-ads-agency',
+      name: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
+      description: 'TikTok ads agency for DTC ecommerce: creator ads, Spark Ads, TikTok Shop and affiliates run from one creative engine with Meta. Book a TikTok ads audit.',
+      speakable: ['h1']
+    }),
+    {
+      '@type': 'Service',
+      '@id': `${BASE_URL}/tiktok-ads-agency#service`,
+      name: 'TikTok Ads Management for Ecommerce Brands',
+      serviceType: 'TikTok Ads Agency (TikTok Ads, Spark Ads and TikTok Shop)',
+      provider: { '@id': ORG_ID },
+      areaServed: ['US', 'GB', 'CA', 'AU'],
+      audience: { '@type': 'BusinessAudience', audienceType: 'DTC ecommerce and Shopify brands' },
+      description: 'TikTok ads agency for DTC ecommerce brands: native creator content, Spark Ads, in-feed campaigns, TikTok Shop and affiliate creators, with Events API tracking.',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'TikTok Ads Services',
+        itemListElement: ['Creator and UGC Video Production', 'Spark Ads and In-Feed Campaign Management', 'TikTok Shop Setup and GMV Max', 'Affiliate Creator Program', 'TikTok Pixel and Events API Tracking'].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } }))
+      }
+    },
+    breadcrumb([['Home', '/'], ['Services', '/services'], ['TikTok Ads Agency', '/tiktok-ads-agency']]),
+    faqPage('/tiktok-ads-agency#faq', tiktokFaqs)
+  ],
+
+  '/services': () => [
+    webPage({
+      path: '/services',
+      type: 'CollectionPage',
+      name: 'Ecommerce Marketing Services for DTC Brands | Brand Scaling',
+      description: 'Ecommerce marketing services for DTC brands: Meta ads, TikTok ads, Shopify CRO, direct-response creative and retention, run as one growth system.',
+      extra: {
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: SERVICES.map((svc, i) => ({ '@type': 'ListItem', position: i + 1, url: `${BASE_URL}${svc.path}`, name: svc.name }))
+        }
+      }
+    }),
+    breadcrumb([['Home', '/'], ['Services', '/services']])
+  ],
+
+  '/contact': () => [
+    webPage({
+      path: '/contact',
+      type: 'ContactPage',
+      name: 'Contact Brand Scaling | Book a Brand Growth Audit',
+      description: 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.',
+      extra: {
+        mainEntity: {
+          '@type': 'Organization',
+          '@id': ORG_ID,
+          contactPoint: {
+            '@type': 'ContactPoint',
+            contactType: 'sales',
+            url: `${BASE_URL}/contact`,
+            areaServed: ['US', 'GB', 'CA', 'AU'],
+            availableLanguage: ['English']
+          }
+        }
+      }
+    }),
+    breadcrumb([['Home', '/'], ['Contact', '/contact']])
+  ],
+
   '/growth': () => [
     webPage({
       path: '/growth',
@@ -340,7 +445,7 @@ const staticSchemas = {
             '@type': 'ListItem',
             position: i + 1,
             url: `${BASE_URL}/cases/${cs.slug || cs.id}`,
-            name: cleanSeoText(cs.title, 110)
+            name: caseSeo(cs).h1
           }))
         }
       }
@@ -441,7 +546,7 @@ export function caseNicheSchema(niche) {
             '@type': 'ListItem',
             position: i + 1,
             url: `${BASE_URL}/cases/${cs.slug || cs.id}`,
-            name: cleanSeoText(cs.title, 110)
+            name: caseSeo(cs).h1
           }))
         }
       }
@@ -486,21 +591,26 @@ export const CASE_STUDY_PUBLISH_DATE = '2026-10-27';
 
 export function caseStudySchema(cs) {
   const id = cs.slug || cs.id || cs.shortcode;
-  const url = `${BASE_URL}/cases/${id}`;
-  const title = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
-  const editorial = editorialFor(cs);
-  const description = editorial ? cleanSeoText(editorial.summary, 155) : caseStudyDescription(cs);
+  const url = `${BASE_URL}${canonicalCasePath(cs)}`;
+  const seo = caseSeo(cs);
+  const description = seo.metaDescription;
   const image = cs.image ? `${BASE_URL}${cs.image}` : DEFAULT_OG_IMAGE;
   const hasVideo = Boolean(cs.videoUrl && cs.videoType !== 'image');
   const graph = [
     {
       '@type': 'Article',
       '@id': `${url}#article`,
-      headline: cleanSeoText(title, 110),
+      headline: cleanSeoText(seo.h1, 110),
+      alternativeHeadline: cleanSeoText(cs.title, 110),
       description,
+      abstract: seo.summary,
       image,
-      articleSection: cs.category || cs.niche || 'DTC Ecommerce',
-      about: { '@type': 'Thing', name: cs.niche || cs.category || 'DTC ecommerce growth' },
+      articleSection: 'Case Studies',
+      about: [
+        { '@type': 'Thing', name: `${seo.niche.label} ecommerce` },
+        { '@type': 'Thing', name: 'Meta ads (Facebook and Instagram advertising)' }
+      ],
+      keywords: [`${seo.niche.label.toLowerCase()} case study`, `${seo.niche.long} meta ads`, 'facebook ads case study', 'ecommerce case study'].join(', '),
       datePublished: CASE_STUDY_PUBLISH_DATE,
       dateModified: CASE_STUDY_PUBLISH_DATE,
       inLanguage: 'en-US',
@@ -510,13 +620,13 @@ export function caseStudySchema(cs) {
       mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       ...(cs.instagramUrl ? { sameAs: cs.instagramUrl } : {})
     },
-    breadcrumb([['Home', '/'], ['Case Studies', '/case-studies'], [cleanSeoText(title, 60), `/cases/${id}`]])
+    breadcrumb([['Home', '/'], ['Case Studies', '/case-studies'], [cleanSeoText(seo.h1, 70), `/cases/${id}`]])
   ];
   if (hasVideo) {
     graph.push({
       '@type': 'VideoObject',
       '@id': `${url}#video`,
-      name: cleanSeoText(title, 110),
+      name: cleanSeoText(seo.h1, 110),
       description,
       thumbnailUrl: image,
       contentUrl: `${BASE_URL}${cs.videoUrl}`,

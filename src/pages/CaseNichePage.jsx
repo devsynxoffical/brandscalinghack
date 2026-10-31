@@ -3,7 +3,7 @@ import { ArrowRight, TrendingUp, Layers } from 'lucide-react';
 import { allCaseStudies } from '../data/allCaseStudies';
 import { CASE_NICHES, nicheBySlug, casesForNiche } from '../data/caseNiches';
 import { isIndexableCase } from '../data/caseIndexing';
-import { cleanSeoText } from '../data/seoText';
+import { displayFigures, caseSeo } from '../data/caseFacts';
 import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 import NotFoundPage from './NotFoundPage';
 
@@ -82,15 +82,15 @@ export default function CaseNichePage({ nicheSlug, onNavigate, onOpenBooking }) 
             <a key={cs.slug} href={`/cases/${cs.slug}`} onClick={go(`case-${cs.slug}`)} style={{ display: 'block', background: '#111116', border: '1px solid #20202a', borderRadius: '16px', overflow: 'hidden', textDecoration: 'none', color: 'inherit' }}>
               {cs.image && (
                 <div style={{ aspectRatio: '4 / 3', background: '#0b0b10', overflow: 'hidden' }}>
-                  <img src={cs.image} alt={cleanSeoText(cs.title, 90)} loading="lazy" width="400" height="300" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src={cs.image} alt={caseSeo(cs).h1} loading="lazy" width="400" height="300" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
               )}
               <div style={{ padding: '18px 20px 20px' }}>
                 <div style={{ display: 'flex', gap: '10px', marginBottom: '10px', flexWrap: 'wrap' }}>
-                  <span style={{ color: '#ff5722', fontWeight: 800, fontSize: '15px' }}>{cs.revenue}</span>
-                  <span style={{ color: '#94a3b8', fontWeight: 600, fontSize: '13px' }}>{cs.roas}</span>
+                  <span style={{ color: '#ff5722', fontWeight: 800, fontSize: '15px' }}>{displayFigures(cs).revenue || `${caseSeo(cs).niche.label} lesson`}</span>
+                  {displayFigures(cs).roas && <span style={{ color: '#94a3b8', fontWeight: 600, fontSize: '13px' }}>{displayFigures(cs).roas}</span>}
                 </div>
-                <h2 style={{ fontSize: '16px', fontWeight: 700, color: '#ffffff', lineHeight: 1.35, margin: 0 }}>{cleanSeoText(cs.title, 110)}</h2>
+                <h2 style={{ fontSize: '16px', fontWeight: 700, color: '#ffffff', lineHeight: 1.35, margin: 0 }}>{caseSeo(cs).h1}</h2>
               </div>
             </a>
           ))}

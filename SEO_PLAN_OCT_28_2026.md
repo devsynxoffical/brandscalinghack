@@ -192,6 +192,36 @@ Goal for the day: every page indexable and discoverable by crawl, and more query
 
 ---
 
+## 4e. Day 4 (Oct 31, 2026): a methodical SEO page for every case study, plus TikTok, Services and Contact
+
+**Every case study has its own page with a title, H1 and description built from its own facts.** A new extractor (`src/data/caseFacts.js`) reads each original post, headline first, and pulls only figures the post states: revenue (with $, € or £), timeframe, ROAS, ad spend, orders and margin, plus the niche. From those it builds a methodical SEO package per case:
+- Title tag: `{Niche} Case Study: {Revenue} in {Timeframe}` (+ ROAS when it fits), 41 to 60 characters, unique across all 126.
+- H1: the long form, e.g. "Skincare Case Study: $146,184 in 27 Days at 3.64x ROAS", with the original Instagram headline shown underneath.
+- Meta description: the result in one sentence plus the method the post describes, 127 to 158 characters, unique per page. The 12 editorial cases keep their hand-written summaries; 6 lesson posts have hand-written titles.
+- Visible "Results at a glance" facts card, a factual summary paragraph, key takeaways pulled from the post (replacing the generic bullet points), and 3 related cases from the same niche.
+- Article + VideoObject + Breadcrumb schema now use the same headline and description.
+- Cards on the home page, case hub and niche hubs now show figures quoted from the post. Previously several showed template numbers, for example "$320,000 Q4 engine" on a $146,184 case.
+
+**Index rules, now automatic** (`src/data/caseIndexing.js`):
+- 91 indexed: the post states a verifiable result, or it is a substantive lesson (120+ words with 2+ takeaways, or 80+ words with 3+).
+- 5 duplicates: the same post appears twice in the data. They keep their pages but carry a canonical to the original and are left out of the sitemap.
+- 30 noindex,follow: short motivational posts and announcements with no result and no lesson.
+- The full list with every title, description and status is in `docs/case-study-seo-index.csv`.
+
+**Niche hubs regrouped by detected niche:** skincare 8, fitness 6, fashion and jewelry 8, supplements 5, dropshipping and DTC stores 64.
+
+**New pages:**
+- `/tiktok-ads-agency` (TikTok ads, Spark Ads, TikTok Shop and affiliates; Service + OfferCatalog + 6-question FAQ schema). Targets "tiktok ads agency", "tiktok shop agency" and the Search Console query "tiktok shop scaling services". Proof is labelled honestly as results from the same creative engine on Meta, because no TikTok-specific results are published yet.
+- `/services` hub (CollectionPage + ItemList), linking all six services, for "ecommerce marketing services".
+- `/contact` (ContactPage + ContactPoint, full NAP), which supports trust and local signals.
+- All three are in the Services dropdown or footer, the mobile menu, the sitemap, llms.txt, and have 1200×630 social images. `/tiktok-shop-agency` and `/contact-us` resolve to the new pages.
+
+Sitemap: 115 URLs (14 static, 5 niche hubs, 5 posts, 91 case studies). Prerender: 151 HTML pages, 148 schema graphs, 0 JSON errors.
+
+**After deploy:** resubmit the sitemap, run `npm run indexnow`, and request indexing for `/tiktok-ads-agency`, `/services`, `/contact` and the five niche hubs. Content owner: add TikTok results to `/tiktok-ads-agency` as soon as one account can be shown, and review `docs/case-study-seo-index.csv` for any case whose extracted figure looks wrong.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

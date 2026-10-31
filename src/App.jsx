@@ -15,12 +15,15 @@ import { allCaseStudies } from './data/allCaseStudies';
 import { cleanSeoText, caseStudyDescription } from './data/seoText';
 import { ogImageFor } from './data/pageSchemas';
 import { nicheBySlug } from './data/caseNiches';
-import { isIndexableCase } from './data/caseIndexing';
-import { editorialFor } from './data/caseEditorial';
+import { isNoindexCase, canonicalCasePath } from './data/caseIndexing';
+import { allCaseSeo } from './data/caseFacts';
 import CaseNichePage from './pages/CaseNichePage';
 
 import ShopifyAgencyPage from './pages/ShopifyAgencyPage';
 import MetaAdsAgencyPage from './pages/MetaAdsAgencyPage';
+import TikTokAdsAgencyPage from './pages/TikTokAdsAgencyPage';
+import ServicesPage from './pages/ServicesPage';
+import ContactPage from './pages/ContactPage';
 import BlogIndexPage from './pages/BlogIndexPage';
 import BlogPostPage from './pages/BlogPostPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -28,6 +31,8 @@ import TermsPage from './pages/TermsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { blogPosts } from './data/blogPosts';
 import GlassWindowMarquee from './components/GlassWindowMarquee';
+
+const caseSeoMap = allCaseSeo(allCaseStudies);
 
 function App() {
   const [activePage, setActivePage] = useState('home');
@@ -69,6 +74,12 @@ function App() {
         setActivePage('shopify-agency');
       } else if (rawPath === '/meta-ads-agency' || rawPath === '/facebook-ads-agency') {
         setActivePage('meta-ads-agency');
+      } else if (rawPath === '/tiktok-ads-agency' || rawPath === '/tiktok-shop-agency') {
+        setActivePage('tiktok-ads-agency');
+      } else if (rawPath === '/services') {
+        setActivePage('services');
+      } else if (rawPath === '/contact' || rawPath === '/contact-us') {
+        setActivePage('contact');
       } else if (rawPath === '/about') {
         setActivePage('about');
       } else if (rawPath === '/roas-calculator' || rawPath === '/viral-products') {
@@ -132,16 +143,16 @@ function App() {
       const caseId = activePage.replace('case-', '');
       const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
       if (study) {
-        title = `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 44)} | Brand Scaling`;
-        const editorial = editorialFor(study);
-        description = editorial ? cleanSeoText(editorial.summary, 155) : caseStudyDescription(study);
-        if (!isIndexableCase(study)) noindex = true;
+        const seo = caseSeoMap.get(study.slug || study.id);
+        title = seo ? seo.titleTag : `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 44)} | Brand Scaling`;
+        description = seo ? seo.metaDescription : caseStudyDescription(study);
+        if (isNoindexCase(study)) noindex = true;
       } else {
         title = `eCommerce Case Study #${caseId} | Brand Scaling`;
         description = 'Direct-response case study breakdown showing verified ROAS and scalable revenue results.';
       }
       // Canonical always points at the descriptive slug, even when an old shortcode URL was opened
-      pagePath = `/cases/${(study && study.slug) || caseId}`;
+      pagePath = study ? canonicalCasePath(study) : `/cases/${caseId}`;
     } else if (activePage.startsWith('blog-') && activePage !== 'blog') {
       const postSlug = activePage.replace('blog-', '');
       const post = blogPosts.find((p) => p.slug === postSlug);
@@ -179,6 +190,21 @@ function App() {
           title = 'Meta Ads Agency for Ecommerce Brands | Brand Scaling';
           description = 'Meta ads agency for DTC ecommerce: $50M+ Facebook and Instagram ad spend managed, creative testing, Advantage+ scaling and CAPI tracking. Book an audit.';
           pagePath = '/meta-ads-agency';
+          break;
+        case 'tiktok-ads-agency':
+          title = 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling';
+          description = 'TikTok ads agency for DTC ecommerce: creator ads, Spark Ads, TikTok Shop and affiliates run from one creative engine with Meta. Book a TikTok ads audit.';
+          pagePath = '/tiktok-ads-agency';
+          break;
+        case 'services':
+          title = 'Ecommerce Marketing Services for DTC Brands | Brand Scaling';
+          description = 'Ecommerce marketing services for DTC brands: Meta ads, TikTok ads, Shopify CRO, direct-response creative and retention, run as one growth system.';
+          pagePath = '/services';
+          break;
+        case 'contact':
+          title = 'Contact Brand Scaling | Book a Brand Growth Audit';
+          description = 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.';
+          pagePath = '/contact';
           break;
         case 'roas-calculator':
           title = 'Free ROAS Calculator for Ecommerce | Brand Scaling';
@@ -346,6 +372,12 @@ function App() {
             onOpenBooking={() => setIsBookingOpen(true)}
           />
         );
+      case 'tiktok-ads-agency':
+        return <TikTokAdsAgencyPage onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
+      case 'services':
+        return <ServicesPage onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
+      case 'contact':
+        return <ContactPage onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
       case 'meta-ads-agency':
         return (
           <MetaAdsAgencyPage

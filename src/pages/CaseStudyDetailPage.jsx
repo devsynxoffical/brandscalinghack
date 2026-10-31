@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ArrowRight, CheckCircle2, TrendingUp, DollarSign, ExternalLink, ShieldCheck, Play, Copy, Check } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, ShieldCheck, Copy, Check } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import { allCaseStudies } from '../data/allCaseStudies';
 import { caseStudySchema, toJsonLd } from '../data/pageSchemas';
 import { editorialFor } from '../data/caseEditorial';
+import { caseSeo, displayFigures } from '../data/caseFacts';
+import { relatedCases, nicheForCase } from '../data/caseNiches';
+import { isIndexableCase } from '../data/caseIndexing';
+import { cleanSeoText } from '../data/seoText';
 
 export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBooking }) {
   const [copied, setCopied] = useState(false);
@@ -40,6 +44,8 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
 
   const hasVideo = Boolean(caseStudy.videoUrl && caseStudy.videoType !== 'image');
   const editorial = editorialFor(caseStudy);
+  const seo = caseSeo(caseStudy);
+  const niche = nicheForCase(caseStudy);
 
   const handleCopyCaption = () => {
     if (caseStudy.fullCaption) {
@@ -49,10 +55,8 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
     }
   };
 
-  // Get related case studies (3 items different from current)
-  const relatedStudies = allCaseStudies
-    .filter((cs) => cs.id !== caseStudy.id)
-    .slice(0, 3);
+  // Related case studies: same niche first, closest result size
+  const relatedStudies = relatedCases(caseStudy, allCaseStudies, isIndexableCase);
 
   return (
     <div className="case-study-detail-page" style={{ paddingTop: '90px', minHeight: '100vh', background: '#05070c', color: '#ffffff' }}>
@@ -146,7 +150,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
             }}
           >
             <ShieldCheck size={14} />
-            <span>{caseStudy.category || 'VERIFIED SCALE'}</span>
+            <span>{seo.niche.label} Case Study</span>
           </span>
 
           <span
@@ -162,7 +166,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
               textTransform: 'uppercase'
             }}
           >
-            {caseStudy.revenue}
+            {displayFigures(caseStudy).revenue || 'Founder lesson'}
           </span>
         </div>
 
@@ -177,16 +181,31 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
             color: '#ffffff'
           }}
         >
-          {caseStudy.title}
+          {seo.h1}
         </h1>
 
-        <p style={{ maxWidth: '840px', margin: '0 auto 36px auto', fontSize: '1.12rem', color: '#94a3b8', lineHeight: 1.6 }}>
-          {caseStudy.summary}
+        <p style={{ maxWidth: '840px', margin: '0 auto 14px auto', fontSize: '0.98rem', color: '#ff9e80', fontStyle: 'italic', lineHeight: 1.5 }}>
+          Original post: “{cleanSeoText(caseStudy.title, 140)}”
         </p>
+
+        <p className="case-seo-summary" style={{ maxWidth: '840px', margin: '0 auto 30px auto', fontSize: '1.1rem', color: '#cbd5e1', lineHeight: 1.65 }}>
+          {seo.summary}
+        </p>
+
+        {/* Results at a glance: every value quoted from the original post */}
+        <h2 style={{ fontSize: '0.8rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.14em', margin: '0 0 12px' }}>Results at a glance</h2>
+        <div className="case-facts" style={{ maxWidth: '860px', margin: '0 auto 10px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px', textAlign: 'left' }}>
+          {seo.factRows.map(([label, value]) => (
+            <div key={label} style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.09)', borderRadius: '12px', padding: '12px 14px' }}>
+              <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#ff7043', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '4px' }}>{label}</div>
+              <div style={{ fontSize: '1rem', fontWeight: 800, color: '#ffffff', lineHeight: 1.3 }}>{value}</div>
+            </div>
+          ))}
+        </div>
+
         {editorial && (
-          <div className="case-editorial" style={{ margin: '26px 0 6px', background: 'rgba(255,87,34,0.06)', border: '1px solid rgba(255,87,34,0.22)', borderLeft: '4px solid #ff5722', borderRadius: '0 14px 14px 0', padding: '22px 26px' }}>
+          <div className="case-editorial" style={{ maxWidth: '860px', textAlign: 'left', margin: '26px auto 6px', background: 'rgba(255,87,34,0.06)', border: '1px solid rgba(255,87,34,0.22)', borderLeft: '4px solid #ff5722', borderRadius: '0 14px 14px 0', padding: '22px 26px' }}>
             <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#ffffff', margin: '0 0 10px' }}>Breakdown</h2>
-            <p style={{ color: '#e2e8f0', fontSize: '15px', lineHeight: 1.7, margin: '0 0 14px' }}>{editorial.summary}</p>
             <h3 style={{ fontSize: '14px', fontWeight: 800, color: '#ff7043', letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px' }}>What we did</h3>
             <ul style={{ margin: '0 0 14px', paddingLeft: '20px', color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.7 }}>
               {editorial.whatWeDid.map((w) => <li key={w}>{w}</li>)}
@@ -252,7 +271,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           ) : (
             <img
               src={caseStudy.image}
-              alt={caseStudy.title}
+              alt={seo.h1}
               style={{
                 position: 'relative',
                 zIndex: 2,
@@ -264,33 +283,6 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
               }}
             />
           )}
-        </div>
-      </section>
-
-      {/* Key Verified Metrics Grid */}
-      <section className="container" style={{ maxWidth: '980px', marginBottom: '60px' }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
-            gap: '16px',
-            background: 'linear-gradient(145deg, #0e131f 0%, #080c14 100%)',
-            padding: '30px',
-            borderRadius: '20px',
-            border: '1px solid rgba(255, 255, 255, 0.08)',
-            boxShadow: '0 15px 40px rgba(0, 0, 0, 0.6)'
-          }}
-        >
-          {caseStudy.metrics.map((m, idx) => (
-            <div key={idx} style={{ textAlign: 'center', padding: '10px' }}>
-              <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ff7043', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
-                {m.label}
-              </div>
-              <div style={{ fontSize: '1.65rem', fontWeight: 950, color: '#ffffff', letterSpacing: '-0.02em' }}>
-                {m.value}
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -362,11 +354,11 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           </div>
 
           <h4 style={{ fontSize: '1.25rem', fontWeight: 900, color: '#ffffff', marginBottom: '18px', textTransform: 'uppercase' }}>
-            Key Growth & Scaling Insights
+            {seo.takeaways.length >= 2 ? 'Key Takeaways From This Account' : 'Key Growth & Scaling Insights'}
           </h4>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '32px' }}>
-            {caseStudy.growthPoints.map((point, idx) => (
+            {(seo.takeaways.length >= 2 ? seo.takeaways : caseStudy.growthPoints).map((point, idx) => (
               <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <CheckCircle2 size={20} color="#ff5722" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <p style={{ fontSize: '0.98rem', color: '#cbd5e1', lineHeight: 1.55, margin: 0 }}>
@@ -408,37 +400,47 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
       {/* Explore More Case Studies */}
       <section className="container" style={{ maxWidth: '980px', paddingBottom: '100px' }}>
         <h4 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center', marginBottom: '24px' }}>
-          Explore More Verified Case Studies
+          {niche ? `More ${niche.name} Case Studies` : 'Explore More Verified Case Studies'}
         </h4>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
           {relatedStudies.map((item) => (
-            <div
+            <a
               key={item.id}
-              onClick={() => onNavigate && onNavigate(`case-${item.slug || item.id}`)}
+              href={`/cases/${item.slug || item.id}`}
+              onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`case-${item.slug || item.id}`); }}
               style={{
                 background: '#0d111a',
                 border: '1px solid rgba(255, 255, 255, 0.08)',
                 borderRadius: '16px',
                 padding: '22px',
                 cursor: 'pointer',
-                transition: 'all 0.25s ease'
+                transition: 'all 0.25s ease',
+                display: 'block',
+                textDecoration: 'none'
               }}
               onMouseEnter={(e) => e.currentTarget.style.borderColor = '#ff7043'}
               onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)'}
             >
               <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#ff7043', textTransform: 'uppercase', marginBottom: '8px' }}>
-                {item.badge}
+                {caseSeo(item).niche.label} Case Study
               </div>
-              <h5 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#ffffff', margin: '0 0 10px 0', lineHeight: 1.35 }}>
-                {item.title}
-              </h5>
+              <h3 style={{ fontSize: '1.05rem', fontWeight: 800, color: '#ffffff', margin: '0 0 10px 0', lineHeight: 1.35 }}>
+                {caseSeo(item).h1}
+              </h3>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#ff7043', fontSize: '0.85rem', fontWeight: 700 }}>
                 <span>View Breakdown</span>
                 <ArrowRight size={14} />
               </div>
-            </div>
+            </a>
           ))}
         </div>
+        {niche && (
+          <p style={{ textAlign: 'center', marginTop: '26px' }}>
+            <a href={`/case-studies/${niche.slug}`} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`case-niche-${niche.slug}`); }} style={{ color: '#ff7043', fontWeight: 800, textDecoration: 'none' }}>
+              See all {niche.name} case studies →
+            </a>
+          </p>
+        )}
       </section>
     </div>
   );

@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { allCaseStudies } from '../data/allCaseStudies';
+import { displayFigures, caseSeo } from '../data/caseFacts';
 import { ArrowRight, ExternalLink, Play, ShieldCheck, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 
 function CaseStudyCard({ study, onOpenModal, onNavigate }) {
+  const figures = displayFigures(study);
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -47,11 +49,17 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
           <img src={study.image} alt={study.title} className="showcase-card-img" loading="lazy" />
         )}
 
-        {/* Bottom Verified Metrics Pill */}
+        {/* Bottom Verified Metrics Pill: figures quoted from the post only */}
         <div className="showcase-roas-tag" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <span style={{ fontWeight: 900, color: '#ffeb3b' }}>{study.revenue}</span>
-          <span style={{ opacity: 0.5 }}>|</span>
-          <span>{study.roas || '4.2x ROAS'}</span>
+          {figures.revenue ? (
+            <>
+              <span style={{ fontWeight: 900, color: '#ffeb3b' }}>{figures.revenue}</span>
+              {figures.roas && <span style={{ opacity: 0.5 }}>|</span>}
+              {figures.roas && <span>{figures.roas}</span>}
+            </>
+          ) : (
+            <span style={{ fontWeight: 800 }}>{figures.roas || `${caseSeo(study).niche.label} lesson`}</span>
+          )}
         </div>
       </div>
 

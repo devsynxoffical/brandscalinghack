@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, ChevronDown, Megaphone, ShoppingBag, Rocket, Clapperboard } from 'lucide-react';
+import { Menu, X, ChevronDown, Megaphone, ShoppingBag, Rocket, Clapperboard, Music2 } from 'lucide-react';
 import BrandLogo from './BrandLogo';
 
 // Service landing pages. Add a new landing page here and it appears in the
 // desktop dropdown and the mobile drawer automatically.
 export const SERVICE_LINKS = [
   { id: 'meta-ads-agency', href: '/meta-ads-agency', label: 'Meta Ads Agency', desc: 'Facebook & Instagram ads, $50M+ managed', icon: Megaphone },
+  { id: 'tiktok-ads-agency', href: '/tiktok-ads-agency', label: 'TikTok Ads Agency', desc: 'Creator ads, Spark Ads and TikTok Shop', icon: Music2 },
   { id: 'shopify-agency', href: '/shopify-agency', label: 'Shopify Agency', desc: 'Store builds, CRO and AOV engineering', icon: ShoppingBag },
   { id: 'growth', href: '/growth', label: 'Growth Engine', desc: 'Meta, TikTok, Google and CRO in one system', icon: Rocket },
   { id: 'viral-creatives', href: '/viral-creatives', label: 'Viral Creatives', desc: 'Direct-response video and UGC ads', icon: Clapperboard }
@@ -85,7 +86,7 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
   };
 
   const isHomeUnscrolled = activePage === 'home' && !scrolled;
-  const isServiceActive = SERVICE_LINKS.some((s) => s.id === activePage);
+  const isServiceActive = activePage === 'services' || SERVICE_LINKS.some((s) => s.id === activePage);
 
   return (
     <nav className={`header-ss1 ${scrolled ? 'header-scrolled' : ''} ${isHomeUnscrolled ? 'header-home-transparent' : ''}`}>
@@ -135,6 +136,14 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
                   </span>
                 </a>
               ))}
+              <a
+                href="/services"
+                className="header-dropdown-all"
+                onClick={(e) => handleNavClick('services', e)}
+                tabIndex={servicesOpen ? 0 : -1}
+              >
+                All services →
+              </a>
               <button
                 type="button"
                 className="header-dropdown-cta"
@@ -215,11 +224,13 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
             {SERVICE_LINKS.map(({ id, href, label }) => (
               <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
             ))}
+            <a href="/services" onClick={(e) => handleNavClick('services', e)}>All services</a>
           </div>
           <a href="/case-studies" onClick={(e) => handleNavClick('case-studies', e)}>Case Studies</a>
           <a href="/roas-calculator" onClick={(e) => handleNavClick('roas-calculator', e)}>ROAS Calculator</a>
           <a href="/blog" onClick={(e) => handleNavClick('blog', e)}>Blog</a>
           <a href="/about" onClick={(e) => handleNavClick('about', e)}>About</a>
+          <a href="/contact" onClick={(e) => handleNavClick('contact', e)}>Contact</a>
           <button type="button" className="mobile-drawer-cta" onClick={() => { setMobileMenuOpen(false); onOpenBooking && onOpenBooking(); }}>
             Book a Brand Growth Audit
           </button>

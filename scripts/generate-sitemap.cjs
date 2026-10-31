@@ -12,6 +12,9 @@ const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
 const staticRoutes = [
   { loc: '/', lastmod: '2026-10-27', changefreq: 'weekly', priority: '1.0' },
   { loc: '/meta-ads-agency', lastmod: '2026-10-28', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/tiktok-ads-agency', lastmod: '2026-10-31', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/services', lastmod: '2026-10-31', changefreq: 'monthly', priority: '0.8' },
+  { loc: '/contact', lastmod: '2026-10-31', changefreq: 'yearly', priority: '0.6' },
   { loc: '/growth', lastmod: '2026-10-27', changefreq: 'monthly', priority: '0.9' },
   { loc: '/shopify-agency', lastmod: '2026-10-27', changefreq: 'weekly', priority: '0.9' },
   { loc: '/viral-creatives', lastmod: '2026-10-27', changefreq: 'weekly', priority: '0.8' },
@@ -23,7 +26,7 @@ const staticRoutes = [
   { loc: '/terms', lastmod: '2026-10-22', changefreq: 'yearly', priority: '0.3' }
 ];
 
-const CASE_LASTMOD = '2026-10-27';
+const CASE_LASTMOD = '2026-10-31';
 
 const escapeXml = (s) => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');

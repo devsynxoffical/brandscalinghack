@@ -45,10 +45,13 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               <a className="st-footer-link" href="/case-studies" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('case-studies'); }}>Case Studies</a>
               <a className="st-footer-link" href="/growth" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('growth'); }}>Growth Engine</a>
               <a className="st-footer-link" href="/shopify-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('shopify-agency'); }}>Shopify Agency</a>
+              <a className="st-footer-link" href="/services" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('services'); }}>All Services</a>
               <a className="st-footer-link" href="/meta-ads-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('meta-ads-agency'); }}>Meta Ads Agency</a>
+              <a className="st-footer-link" href="/tiktok-ads-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('tiktok-ads-agency'); }}>TikTok Ads Agency</a>
               <a className="st-footer-link" href="/viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
               <a className="st-footer-link" href="/roas-calculator" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('roas-calculator'); }}>ROAS Calculator</a>
               <a className="st-footer-link" href="/about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
+              <a className="st-footer-link" href="/contact" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('contact'); }}>Contact</a>
             </div>
 
             {/* Guides & Playbooks */}

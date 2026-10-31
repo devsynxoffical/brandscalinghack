@@ -236,43 +236,39 @@ const escapeHtml = (s) => String(s || '')
 // title, description, canonical and crawlable text instead of the home shell.
 async function buildCaseRoutes() {
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
-  const { cleanSeoText, caseStudyDescription } = await import('../src/data/seoText.js');
-  const { isIndexableCase } = await import('../src/data/caseIndexing.js');
+  const { cleanSeoText } = await import('../src/data/seoText.js');
+  const { isIndexableCase, isNoindexCase, canonicalCasePath } = await import('../src/data/caseIndexing.js');
   const { editorialFor } = await import('../src/data/caseEditorial.js');
-  const indexable = allCaseStudies.filter(isIndexableCase);
-  const related = makeRelated(indexable);
+  const { allCaseSeo, caseSeo } = await import('../src/data/caseFacts.js');
+  const { relatedCases, nicheForCase } = await import('../src/data/caseNiches.js');
+  const seoMap = allCaseSeo(allCaseStudies);
   return allCaseStudies.map((cs) => {
     const id = cs.slug || cs.id || cs.shortcode;
-    const cleanTitle = cleanSeoText(cs.title || 'Verified Ecommerce Case Study');
-    const titleTag = `${cleanSeoText(cleanTitle, 44)} | Brand Scaling`;
+    const seo = seoMap.get(id);
     const editorial = editorialFor(cs);
-    const description = editorial ? cleanSeoText(editorial.summary, 155) : caseStudyDescription(cs);
-    const editorialHtml = editorial ? `
-        <h2>Breakdown</h2>
-        <p>${escapeHtml(editorial.summary)}</p>
-        <h3>What we did</h3>
-        <ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul>
-        <p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : '';
-    const metrics = Array.isArray(cs.metrics) ? cs.metrics : [];
-    const points = Array.isArray(cs.growthPoints) ? cs.growthPoints : [];
-    const caption = String(cs.fullCaption || '').split('\n').map((l) => cleanSeoText(l)).filter(Boolean).slice(0, 12);
+    const niche = nicheForCase(cs);
+    const caption = String(cs.fullCaption || '').split('\n').map((l) => cleanSeoText(l)).filter(Boolean).slice(0, 14);
+    const related = relatedCases(cs, allCaseStudies, isIndexableCase);
     return {
       path: `/cases/${id}`,
+      canonicalPath: canonicalCasePath(cs),
       outPath: `cases/${id}/index.html`,
-      title: escapeHtml(titleTag),
-      description: escapeHtml(description),
-      h1: escapeHtml(cleanTitle),
+      title: escapeHtml(seo.titleTag),
+      description: escapeHtml(seo.metaDescription),
+      h1: escapeHtml(seo.h1),
       ogImage: cs.image ? `https://www.brandscalinghacks.com${cs.image}` : null,
-      noindex: !isIndexableCase(cs),
+      noindex: isNoindexCase(cs),
+      inSitemapLists: isIndexableCase(cs),
       content: `
-        <p>${escapeHtml(cs.niche || cs.category || 'DTC ecommerce')} case study: ${escapeHtml(cs.revenue || '')} ${cs.roas ? 'at ' + escapeHtml(cs.roas) : ''}. ${escapeHtml(cs.system || '')}</p>
-        ${editorialHtml}
-        ${metrics.length ? `<h2>Key Metrics</h2><ul>${metrics.map((m) => `<li>${escapeHtml(m.label)}: ${escapeHtml(m.value)}</li>`).join('')}</ul>` : ''}
-        ${points.length ? `<h2>What We Did</h2><ul>${points.map((p) => `<li>${escapeHtml(p)}</li>`).join('')}</ul>` : ''}
-        ${caption.length ? `<h2>Full Breakdown</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
-        <h2>Related Case Studies</h2>
-        <ul>${(isIndexableCase(cs) ? related(cs) : indexable.slice(0, 3)).map((r) => `<li><a href="/cases/${r.slug || r.id}">${escapeHtml(cleanSeoText(r.title, 90))}</a></li>`).join('')}</ul>
-        <p><a href="/case-studies">All 150+ case studies</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a></p>
+        <p>${escapeHtml(seo.summary)}</p>
+        <h2>Results at a Glance</h2>
+        <table><tbody>${seo.factRows.map(([k, v]) => `<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(v)}</td></tr>`).join('')}</tbody></table>
+        ${editorial ? `<h2>What We Did</h2><ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul><p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : ''}
+        ${seo.takeaways.length ? `<h2>Key Takeaways</h2><ul>${seo.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>` : ''}
+        ${caption.length ? `<h2>Original Post: ${escapeHtml(cleanSeoText(cs.title, 110))}</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
+        <h2>Related ${niche ? escapeHtml(niche.name) + ' ' : ''}Case Studies</h2>
+        <ul>${related.map((r) => `<li><a href="/cases/${r.slug || r.id}">${escapeHtml(caseSeo(r).h1)}</a></li>`).join('')}</ul>
+        <p>${niche ? `<a href="/case-studies/${niche.slug}">All ${escapeHtml(niche.name)} case studies</a> | ` : ''}<a href="/case-studies">All case studies</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
       `
     };
   });
@@ -312,7 +308,7 @@ function htmlToMarkdown(html) {
 
 function writeLlmsFull(allRoutes) {
   const core = allRoutes.filter((r) => !r.noindex && !r.path.startsWith('/cases/'));
-  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/') && !r.noindex).slice(0, 40);
+  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/') && r.inSitemapLists).slice(0, 40);
   const section = (r) => `# ${r.h1}\nURL: https://www.brandscalinghacks.com${r.path === '/' ? '/' : r.path}\nSummary: ${r.description}\n\n${htmlToMarkdown(r.content)}\n`;
   const intro = [
     '# Brand Scaling: full site content for AI assistants',
@@ -347,7 +343,8 @@ function renderRoute(route) {
   html = html.replace(/<meta name="description" content=".*?" \/>/, () => `<meta name="description" content="${route.description}" />`);
 
   // Replace Canonical Link
-  const canonicalUrl = `https://www.brandscalinghacks.com${route.path === '/' ? '/' : route.path}`;
+  const canonicalPath = route.canonicalPath || route.path;
+  const canonicalUrl = `https://www.brandscalinghacks.com${canonicalPath === '/' ? '/' : canonicalPath}`;
   html = html.replace(/<link rel="canonical" href=".*?" \/>/, () => `<link rel="canonical" href="${canonicalUrl}" />`);
 
   // Replace Open Graph & Twitter
@@ -379,7 +376,7 @@ function renderRoute(route) {
   // 404 page and thin case pages must never be indexed
   if (route.noindex) {
     html = html.replace(/<meta name="robots" content=".*?" \/>/, () => '<meta name="robots" content="noindex, follow" />');
-    html = html.replace(/<link rel="canonical" href=".*?" \/>\s*/, () => '');
+    if (route.path === '/404') html = html.replace(/<link rel="canonical" href=".*?" \/>\s*/, () => '');
   }
 
   // Inject Static Semantic Prerender Content for bots & crawlers with sleek loader for human visitors
@@ -429,10 +426,81 @@ function renderRoute(route) {
     `
   }));
 
+  const { SERVICES, tiktokFaqs } = await import('../src/data/pageSchemas.js');
+  routes.push(
+    {
+      path: '/tiktok-ads-agency',
+      outPath: 'tiktok-ads-agency/index.html',
+      title: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
+      description: 'TikTok ads agency for DTC ecommerce: creator ads, Spark Ads, TikTok Shop and affiliates run from one creative engine with Meta. Book a TikTok ads audit.',
+      h1: 'TikTok Ads Agency for Ecommerce Brands: Creator Ads, Spark Ads &amp; TikTok Shop',
+      content: `
+        <p>TikTok ads, Spark Ads, creator affiliates and TikTok Shop run as one system with the creative, the tracking and the Shopify store. Built by the team behind $50M+ in paid social spend and 150+ verified case studies.</p>
+        <h2>What a TikTok Ads Agency Does for an Ecommerce Brand</h2>
+        <p>A TikTok ads agency plans, produces and runs TikTok campaigns judged on revenue, cost per acquisition and ROAS: a steady supply of native creator videos, Spark Ads and in-feed campaigns that scale the winners, and TikTok Shop with affiliates where the product fits.</p>
+        <h2>Three Pillars</h2>
+        <ul>
+          <li>Native creator content briefed on a 45+ hook and angle matrix, with organic winners run as Spark Ads.</li>
+          <li>TikTok Shop and affiliates: listings, creator recruitment, commissions, sample seeding and GMV Max.</li>
+          <li>Tracking and unit economics: TikTok Pixel and Events API validated against Shopify orders, blended MER across TikTok and Meta.</li>
+        </ul>
+        <h2>How We Scale a TikTok Ads Account in 90 Days</h2>
+        <ol>
+          <li>Foundation (days 1 to 14): Pixel and Events API audit, TikTok Shop or catalog setup, offer and margin review.</li>
+          <li>Test (days 15 to 45): weekly creator drops, hook testing, Spark Ads on organic winners, affiliates seeded.</li>
+          <li>Optimize (days 45 to 90): Shop listing and landing page conversion, bundles, cost caps on proven ads.</li>
+          <li>Scale (day 90 onward): 20% to 30% budget steps, GMV Max, 40+ new videos a month, winners recut for Meta.</li>
+        </ol>
+        <h2>TikTok Ads Agency FAQ</h2>
+        ${tiktokFaqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}
+        <p><a href="/meta-ads-agency">Meta ads agency</a> | <a href="/services">All services</a> | <a href="/viral-creatives">Direct-response creatives</a> | <a href="/case-studies">Case studies</a> | <a href="/contact">Contact</a></p>
+      `
+    },
+    {
+      path: '/services',
+      outPath: 'services/index.html',
+      title: 'Ecommerce Marketing Services for DTC Brands | Brand Scaling',
+      description: 'Ecommerce marketing services for DTC brands: Meta ads, TikTok ads, Shopify CRO, direct-response creative and retention, run as one growth system.',
+      h1: 'Ecommerce Marketing Services for DTC Brands',
+      content: `
+        <p>Brand Scaling runs paid acquisition, creative, the Shopify store and retention as one growth system: $50M+ in ad spend managed across 30+ niches.</p>
+        ${SERVICES.map((svc) => `<h2><a href="${svc.path}">${escapeHtml(svc.name)}</a></h2><p>${escapeHtml(svc.description)}</p><ul>${svc.includes.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>`).join('')}
+        <h2>How the services fit together</h2>
+        <p>Creative feeds the ad accounts, the ad accounts send traffic to a store built for that traffic, and retention raises lifetime value so the accounts can afford a higher cost per acquisition. See the <a href="/growth">growth engine</a> and the <a href="/case-studies">case study library</a>.</p>
+      `
+    },
+    {
+      path: '/contact',
+      outPath: 'contact/index.html',
+      title: 'Contact Brand Scaling | Book a Brand Growth Audit',
+      description: 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.',
+      h1: 'Contact Brand Scaling',
+      content: `
+        <p>The fastest way to work with us is a Brand Growth Audit: a 1-on-1 review of your ad account, creative, store and unit economics with Gaurav Kapoor. We work with DTC brands doing about $20K to $2M+ a month in the US, UK, Canada and Australia.</p>
+        <h2>Office</h2>
+        <address>Brand Scaling Hacks LLC, 27 W 24th Street, Suite 702, New York, NY 10010, United States</address>
+        <h2>Follow and message</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/gauravecomm/">Instagram @gauravecomm</a></li>
+          <li><a href="https://www.youtube.com/@gauravecom">YouTube @gauravecom</a></li>
+          <li><a href="https://www.linkedin.com/in/gauravecom/">LinkedIn: Gaurav Kapoor</a></li>
+          <li><a href="https://www.facebook.com/groups/brandscalinghacks">Ecom Inner Circle Facebook group</a></li>
+        </ul>
+        <h2>What happens after you book</h2>
+        <ol>
+          <li>We review your Meta or TikTok ad account, top creatives and product page before the call.</li>
+          <li>On the call we walk through the three biggest bottlenecks: creative, conversion or unit economics.</li>
+          <li>You leave with a 90-day plan and break-even ROAS for your margins, whether or not you hire us.</li>
+        </ol>
+        <p><a href="/services">Services</a> | <a href="/case-studies">Case studies</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
+      `
+    }
+  );
+
   const { CASE_NICHES, casesForNiche } = await import('../src/data/caseNiches.js');
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
   const { isIndexableCase } = await import('../src/data/caseIndexing.js');
-  const { cleanSeoText } = await import('../src/data/seoText.js');
+  const { caseSeo: caseSeoFn } = await import('../src/data/caseFacts.js');
   const nicheRoutes = CASE_NICHES.map((n) => {
     const cases = casesForNiche(n, allCaseStudies, isIndexableCase);
     return {
@@ -444,7 +512,7 @@ function renderRoute(route) {
       content: `
         <p>${escapeHtml(n.intro)}</p>
         <h2>${cases.length} ${escapeHtml(n.name)} case studies</h2>
-        <ul>${cases.map((cs) => `<li><a href="/cases/${cs.slug}">${escapeHtml(cleanSeoText(cs.title, 110))}</a>: ${escapeHtml(cs.revenue || '')}${cs.roas ? ', ' + escapeHtml(cs.roas) : ''}</li>`).join('')}</ul>
+        <ul>${cases.map((cs) => `<li><a href="/cases/${cs.slug}">${escapeHtml(caseSeoFn(cs).h1)}</a></li>`).join('')}</ul>
         <h2>How Brand Scaling scales ${escapeHtml(n.name)} brands</h2>
         <p>Every account ran the same four-phase engine: a 14-day foundation (tracking, offer, product page), a creative testing phase with 30 to 50 new angles a month, an optimisation phase on conversion rate and average order value, then budget scaling in 20% to 30% steps with cost controls.</p>
         <p>Other niches: ${CASE_NICHES.filter((o) => o.slug !== n.slug).map((o) => `<a href="/case-studies/${o.slug}">${escapeHtml(o.name)}</a>`).join(' | ')} | <a href="/case-studies">All case studies</a></p>
@@ -454,7 +522,7 @@ function renderRoute(route) {
   });
 
   // Crawl paths: the case study hub links to every niche hub and every indexable case page.
-  const indexableCaseRoutes = caseRoutes.filter((r) => !r.noindex);
+  const indexableCaseRoutes = caseRoutes.filter((r) => r.inSitemapLists);
   const caseHub = routes.find((r) => r.path === '/case-studies');
   caseHub.content += `
       <h2>Case Studies by Niche</h2>
@@ -479,7 +547,7 @@ function renderRoute(route) {
   });
   allRoutes.forEach(renderRoute);
   writeLlmsFull(allRoutes);
-  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.length - indexableCaseRoutes.length} noindex).`);
+  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.filter((r) => r.noindex).length} noindex, ${caseRoutes.filter((r) => !r.noindex && !r.inSitemapLists).length} canonicalised duplicates).`);
 })().catch((err) => {
   console.error('Prerender failed:', err);
   process.exit(1);

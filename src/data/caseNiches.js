@@ -1,8 +1,10 @@
+import { caseSeo } from './caseFacts.js';
 // Niche hub pages under /case-studies/<slug>. Each groups the case studies whose
 // `niche` field matches, giving a crawlable, keyword-targeted landing page per vertical.
 export const CASE_NICHES = [
   {
     slug: 'skincare-beauty',
+    labels: ['Skincare'],
     niches: ['Beauty & Skincare'],
     name: 'Skincare & Beauty',
     h1: 'Skincare & Beauty Ecommerce Case Studies: Meta Ads Results',
@@ -13,6 +15,7 @@ export const CASE_NICHES = [
   },
   {
     slug: 'fitness-health',
+    labels: ['Fitness'],
     niches: ['DTC Fitness & Health'],
     name: 'Fitness & Health',
     h1: 'Fitness & Health DTC Case Studies: Meta Ads and Shopify Results',
@@ -23,16 +26,18 @@ export const CASE_NICHES = [
   },
   {
     slug: 'apparel-fashion',
+    labels: ['Fashion', 'Jewelry'],
     niches: ['Apparel & Fashion DTC'],
-    name: 'Apparel & Fashion',
-    h1: 'Apparel & Fashion DTC Case Studies: Scaling Clothing Brands on Meta',
+    name: 'Fashion & Jewelry',
+    h1: 'Fashion, Apparel & Jewelry DTC Case Studies: Scaling on Meta Ads',
     titleTag: 'Fashion Brand Meta Ads Case Studies | Brand Scaling',
-    metaDescription: 'Apparel and fashion DTC case studies: $59,241 from $16,630 in a 4-day BFCM peak at 3.56x ROAS and more clothing brand results from Meta ads and creative testing.',
-    intro: 'Apparel has the thinnest margins and the highest return rates of any DTC vertical, so profitable scale depends on creative volume, fast testing and offers that lift average order value without discounting the whole catalog. These are the apparel and fashion accounts Brand Scaling has published. Healthy accounts in this vertical run 2.8x to 4.2x ROAS, and seasonal peaks such as BFCM can double that for a week.',
+    metaDescription: 'Fashion, apparel and jewelry DTC case studies: $59,241 at 3.56x ROAS in a 4-day BFCM peak, $79,859 in a day and $54K in 7 days for a jewelry brand on Meta ads.',
+    intro: 'Apparel has the thinnest margins and the highest return rates of any DTC vertical, so profitable scale depends on creative volume, fast testing and offers that lift average order value without discounting the whole catalog. These are the apparel, fashion and jewelry accounts Brand Scaling has published, including a jewelry brand scaled with manual bidding. Healthy accounts in this vertical run 2.8x to 4.2x ROAS, and seasonal peaks such as BFCM can double that for a week.',
     keywords: ['fashion brand meta ads case study', 'apparel dtc ecommerce results', 'clothing brand facebook ads agency']
   },
   {
     slug: 'supplements-nutrition',
+    labels: ['Supplement'],
     niches: ['DTC Supplements & Nutrition'],
     name: 'Supplements & Nutrition',
     h1: 'Supplement & Nutrition DTC Case Studies: Meta Ads Results',
@@ -43,6 +48,7 @@ export const CASE_NICHES = [
   },
   {
     slug: 'dropshipping-dtc',
+    labels: ['Dropshipping', 'DTC Ecommerce', 'High-Ticket', 'Pet', 'Home Goods'],
     niches: ['Direct-Response eCommerce', 'DTC Performance Brand'],
     name: 'Dropshipping & DTC Stores',
     h1: 'Dropshipping & DTC Store Case Studies: $100K Months on Meta Ads',
@@ -55,4 +61,18 @@ export const CASE_NICHES = [
 
 export const nicheBySlug = (slug) => CASE_NICHES.find((n) => n.slug === slug) || null;
 export const casesForNiche = (niche, all, isIndexable = () => true) =>
-  all.filter((cs) => niche.niches.includes(cs.niche) && isIndexable(cs));
+  all.filter((cs) => niche.labels.includes(caseSeo(cs).niche.label) && isIndexable(cs));
+
+export const nicheForCase = (cs) => CASE_NICHES.find((n) => n.labels.includes(caseSeo(cs).niche.label)) || null;
+
+/** Related case studies: same detected niche first (closest result size), then strongest others. */
+export function relatedCases(cs, all, isIndexable = () => true, count = 3) {
+  const seo = caseSeo(cs);
+  const size = (c) => caseSeo(c).facts.revenue?.value || 0;
+  const pool = all.filter((o) => o !== cs && isIndexable(o));
+  const same = pool
+    .filter((o) => caseSeo(o).niche.label === seo.niche.label)
+    .sort((a, b) => Math.abs(size(a) - size(cs)) - Math.abs(size(b) - size(cs)));
+  const rest = pool.filter((o) => !same.includes(o)).sort((a, b) => size(b) - size(a));
+  return [...same, ...rest].slice(0, count);
+}

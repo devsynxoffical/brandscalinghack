@@ -1,41 +1,41 @@
-// Case study pages that stay out of the index (noindex,follow; excluded from the
-// sitemap, the hub list and ItemList schema). These are Instagram posts whose caption
-// contains no revenue, spend or ROAS figure, so the page would be thin and the
-// headline numbers shown on the card are templated rather than quoted from the post.
-// Remove a slug from this list once the page has a written, verifiable breakdown.
-export const NON_INDEXABLE_CASE_SLUGS = new Set([
-  "six-figure-dropshipping-client-wins-books",
-  "dtc-client-finally-went-beyond-six-figure-mark",
-  "ecom-brands-or-lead-gen-businesses-what-do-you-need",
-  "today-am-beyond-excited-show-you-guys-have-been-scaling",
-  "work-harder-than-you-think-you-did-yesterday-yes-have-been-doing",
-  "positivity-motivation-come-from-hard-work-why-always-say-find",
-  "first-day-scaling-momentum-already-building",
-  "grind-grind-grind-woke-up-today-some-value-bombs-mind",
-  "are-scaling-brands-from-scratch-absolutely-killing-game",
-  "truth-hurts-dropshipping-isn-dead-you-are-doing-it-wrong",
-  "most-people-jumping-into-something-new-they-ve-never-done-seems",
-  "biggest-achievement-month",
-  "biggest-achievement-month-cfbtjb",
-  "when-you-have-dream-you-ve-got-grab-it-never-let-go",
-  "day-office-success-stories-like-these-have-become-norm-around",
-  "vision-without-execution-delusion",
-  "find-winning-shopify-dropshipping-products-formula-leaked",
-  "new-store-pixel-huge-potential-after-1-5-months-grinding-from",
-  "anyone-can-do-it-yes-even-you-can-do-dropshipping-successfully",
-  "have-such-rich-fulfilling-life-your-awake-better-than-your",
-  "planning-host-2hr-commerce-profit-accelerator-bootcamp-you-guys",
-  "last-chance-must-read",
-  "does-dropshipping-still-work-2023-let-find-out",
-  "success-story-books",
-  "once-you-see-powerful-results-running-your-own-online-business",
-  "six-figures-fitness-brand-books-3-game-changing-tactics",
-  "scale-meta-aggressively-profitably-especially-when-your",
-  "happy-monday-everyone-get-ready-some-incredible-dropshipping",
-  "planning-host-2hr-commerce-profit-accelerator-bootcamp-you-guys-c9y8op",
-  "massive-win-commerce-agency-clients",
-  "6-am-rain-about-hit-sitting-balcony-park-front",
-  "from-good-great-following-your-agency-rules-leads-success"
-]);
+// Which case study pages go into Google's index, decided by rule rather than by hand.
+//
+// Every case keeps its own page. A page is indexable when:
+//   1. it is not a duplicate of an earlier post (same headline posted twice on Instagram:
+//      the duplicate gets a canonical pointing at the first copy), and
+//   2. the post states a verifiable result (revenue, ROAS or ad spend quoted in the post), or
+//      it is a substantive lesson: 120+ words of caption with at least two concrete takeaways.
+// Everything else (short motivational posts, event announcements) stays live as a page with
+// noindex,follow so it passes link equity without diluting site quality.
+import { allCaseStudies } from './allCaseStudies.js';
+import { caseSeo } from './caseFacts.js';
+import { cleanSeoText } from './seoText.js';
 
+const keyOf = (cs) => cleanSeoText(cs.title).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 60);
+
+const firstByKey = new Map();
+const DUPLICATE_OF = new Map(); // slug -> slug of the original
+for (const cs of allCaseStudies) {
+  const k = keyOf(cs);
+  if (firstByKey.has(k)) DUPLICATE_OF.set(cs.slug, firstByKey.get(k).slug);
+  else firstByKey.set(k, cs);
+}
+
+const reasons = new Map();
+for (const cs of allCaseStudies) {
+  if (DUPLICATE_OF.has(cs.slug)) { reasons.set(cs.slug, 'duplicate'); continue; }
+  const seo = caseSeo(cs);
+  if (seo.verified) continue;
+  if (seo.wordCount >= 120 && seo.takeaways.length >= 2) continue;
+  if (seo.wordCount >= 80 && seo.takeaways.length >= 3) continue;
+  reasons.set(cs.slug, 'thin');
+}
+
+export const NON_INDEXABLE_CASE_SLUGS = new Set(reasons.keys());
+export const nonIndexableReason = (cs) => reasons.get(cs.slug || cs.id) || null;
 export const isIndexableCase = (cs) => !NON_INDEXABLE_CASE_SLUGS.has(cs.slug || cs.id);
+/** Only thin pages carry noindex; duplicates rely on the canonical alone (no mixed signals). */
+export const isNoindexCase = (cs) => reasons.get(cs.slug || cs.id) === 'thin';
+
+/** Canonical path for a case page: duplicates point at the original post's page. */
+export const canonicalCasePath = (cs) => `/cases/${DUPLICATE_OF.get(cs.slug) || cs.slug || cs.id}`;

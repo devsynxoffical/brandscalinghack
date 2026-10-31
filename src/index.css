@@ -500,6 +500,20 @@ button {
   line-height: 1.3;
 }
 
+/* "All services" text link inside the dropdown */
+.header-dropdown-all {
+  display: block;
+  padding: 8px 12px 4px;
+  color: #ff7043;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header-dropdown-all:hover {
+  color: #ffffff;
+}
+
 .header-dropdown-cta {
   display: block;
   width: 100%;
