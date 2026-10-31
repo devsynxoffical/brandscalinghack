@@ -583,6 +583,33 @@ export function blogPostSchema(post) {
     },
     breadcrumb([['Home', '/'], ['Blog', '/blog'], [post.title, `/blog/${post.slug}`]])
   ];
+  if (post.video) {
+    const v = post.video;
+    const thumb = `https://i.ytimg.com/vi/${v.youtubeId}/maxresdefault.jpg`;
+    graph[0].image = [thumb, ogImageFor('/blog')];
+    if (v.uploadDate) {
+      graph[0].video = { '@id': `${url}#video` };
+      graph.push({
+        '@type': 'VideoObject',
+        '@id': `${url}#video`,
+        name: v.title,
+        description: v.description,
+        thumbnailUrl: thumb,
+        uploadDate: v.uploadDate,
+        duration: v.duration,
+        embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
+        contentUrl: `https://www.youtube.com/watch?v=${v.youtubeId}`,
+        publisher: { '@id': ORG_ID },
+        hasPart: (v.chapters || []).filter((c) => c.t > 0).map((c, i, arr) => ({
+          '@type': 'Clip',
+          name: c.label,
+          startOffset: c.t,
+          endOffset: arr[i + 1] ? arr[i + 1].t : v.durationSeconds,
+          url: `https://www.youtube.com/watch?v=${v.youtubeId}&t=${c.t}`
+        }))
+      });
+    }
+  }
   if (post.faqs && post.faqs.length) graph.push(faqPage(`/blog/${post.slug}#faq`, post.faqs));
   return graph;
 }

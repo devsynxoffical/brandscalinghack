@@ -247,7 +247,7 @@ export default function MetaAdsAgencyPage({ onNavigate, onOpenBooking }) {
           <h2 style={h2Style}>Go Deeper on Meta Ads</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
             {[
-              { href: '/blog/bfcm-meta-ads-playbook', page: 'blog-bfcm-meta-ads-playbook', title: 'BFCM 2026 Meta Ads Playbook', text: 'Dates, budget plan, offers and creative that hit 3.98x ROAS.' },
+              { href: '/blog/meta-ads-library', page: 'blog-meta-ads-library', title: 'Meta Ads Library: $376K Case Study', text: 'How we find winning ads, test at $20 per ad set and scale in a CBO.' },
               { href: '/blog/what-is-roas', page: 'blog-what-is-roas', title: 'What Is ROAS?', text: 'Formula, break-even thresholds and benchmarks by industry.' },
               { href: '/viral-creatives', page: 'viral-creatives', title: 'Direct-Response Creatives', text: '58+ live video hooks across 13 verticals.' },
               { href: '/roas-calculator', page: 'roas-calculator', title: 'Free ROAS Calculator', text: 'Find your break-even ROAS before you scale spend.' }

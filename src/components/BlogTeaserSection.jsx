@@ -37,15 +37,15 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
       url: '/blog/what-is-roas'
     },
     {
-      slug: 'viral-creatives-guide',
-      badge: 'Creative Engine',
+      slug: 'meta-ads-library',
+      badge: 'Video Case Study',
       badgeColor: '#38bdf8',
-      title: 'High Converting Video Creatives Vault & Testing Framework',
-      snippet: 'Explore 58+ live direct response video hooks engineered across 13+ verticals with 4.8x average verified direct ROAS.',
-      readTime: '58 Live Examples',
-      category: 'Creative Production',
-      route: 'viral-creatives',
-      url: '/viral-creatives'
+      title: 'Meta Ads Library: How We Find Winning Ads and Scaled a DTC Brand to $376K in 25 Days',
+      snippet: 'The 2-week winner rule, 5 ad patterns we copied, $20 ad set testing, the 8 audience types and CBO scaling, with the full video breakdown.',
+      readTime: '16 min read',
+      category: 'Creative Research',
+      route: 'blog-meta-ads-library',
+      url: '/blog/meta-ads-library'
     }
   ];
 

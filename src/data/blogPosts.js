@@ -407,19 +407,19 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
   },
   {
     slug: 'meta-ads-library',
-    title: 'Meta Ads Library: How to Find Winning Ecommerce Ads',
-    titleTag: 'Meta Ads Library: How to Find Winning Ads | Brand Scaling',
-    metaDescription: 'How to use the Meta Ads Library to find winning ecommerce ads: search, filters, 6 signals of a winner and a swipe file system that turns research into briefs.',
+    title: 'Meta Ads Library: How We Find Winning Ads and Scaled a DTC Brand to $376K in 25 Days',
+    titleTag: 'Meta Ads Library: How We Find Winning Ads ($376K Case Study)',
+    metaDescription: 'How we use the free Meta Ads Library to find winning ads, test them and scale a DTC skincare brand to $376K in 25 days. Full video breakdown inside.',
     primaryKeyword: 'meta ads library',
-    secondaryKeywords: ['what is meta ads library', 'how to use meta ads library', 'how to search meta ads library', 'meta ads library api', 'meta ad library search by id', 'is meta ads library free', 'why is meta ads library not working', 'meta ads library instagram'],
+    secondaryKeywords: ['facebook ads library', 'how to find winning ads', 'meta ads case study', 'scale meta ads', 'cbo campaign', 'how to use meta ads library', 'is meta ads library free', 'meta ad library search by id'],
     publishDate: '2026-10-30',
-    updatedDate: '2026-10-30',
-    readTime: '14 min read',
+    updatedDate: '2026-10-31',
+    readTime: '16 min read',
     relatedLinks: [
-      { href: '/viral-creatives', title: 'Direct-Response Creatives & UGC', text: '58+ live hooks built from exactly this research process.' },
-      { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Creative research is the first deliverable of a Brand Growth Audit.' },
-      { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'Why creative diversity now decides reach.' },
-      { href: '/case-studies/skincare-beauty', title: 'Skincare Case Studies', text: 'The $146,184 in 27 days account briefed from a swipe file.' }
+      { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Have us run this research, testing and CBO scaling for your brand.' },
+      { href: '/case-studies/skincare-beauty', title: 'Skincare Case Studies', text: 'More skincare and beauty accounts scaled on Meta ads.' },
+      { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Set your break-even ROAS and target CPA before you test.' },
+      { href: 'https://sevenfigurestudio.us/ugc-video-ads', title: 'SevenFigureStudio UGC Ads', text: 'Our creative studio makes UGC video ads for DTC brands to test.' }
     ],
     category: 'Creative Research',
     author: {
@@ -432,202 +432,326 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
       instagramUrl: 'https://www.instagram.com/gauravecomm/',
       linkedinUrl: 'https://www.linkedin.com/in/gauravecom/'
     },
-    directAnswer: 'The Meta Ads Library is Meta\'s free, public database of every active ad running on Facebook, Instagram, Messenger and Meta\'s other apps. You can search it by keyword or advertiser, filter by country, platform and media type, and see when each ad started running. Ecommerce brands use it to find winning ads: the ones competitors keep running for 30 days or more, in many versions, because those ads are almost certainly profitable.',
+    directAnswer: 'The Meta Ads Library is Meta\'s free, public database of every active ad on Facebook and Instagram. We use it to find competitor ads that have run for 2 weeks or more, because brands only keep paying for ads that make money. We study why those ads work, test our own versions at $20 per ad set, and move the winners into a CBO campaign. That process took a DTC skincare brand to $376,000 in revenue in 25 days.',
+    video: {
+      youtubeId: 'UjUTcbDwe24',
+      title: 'How We Find Winning Ads in the Meta Ads Library and Scaled to $376K',
+      description: 'Live breakdown: finding winning ads in the Meta Ads Library, testing audiences and creatives at $20 per ad set, and scaling winners into a CBO campaign for a DTC skincare brand.',
+      duration: 'PT31M35S',
+      durationSeconds: 1895,
+      // Set to the date the video went live on YouTube (YYYY-MM-DD). VideoObject schema
+      // (and Google's video "key moments") is only emitted once this is filled in.
+      uploadDate: null,
+      chapters: [
+        { t: 0, label: '$376K in 25 days for a DTC skincare brand' },
+        { t: 65, label: 'Finding winning ads in the Meta Ads Library' },
+        { t: 158, label: 'The 5 to 8 second rule for your hook' },
+        { t: 248, label: 'How long an ad must run to count as a winner' },
+        { t: 388, label: 'Using Amazon reviews inside your ads' },
+        { t: 448, label: 'Carousel retargeting: selling routines and bundles' },
+        { t: 697, label: 'Our DTC Meta ads testing playbook' },
+        { t: 780, label: 'The 8 audience types we test' },
+        { t: 1237, label: 'What to test in every ad' },
+        { t: 1517, label: 'When to kill an ad set' },
+        { t: 1615, label: 'Scaling winners into a CBO campaign' },
+        { t: 1664, label: 'When to kill during scaling' }
+      ],
+      takeaways: [
+        'An ad that has run for 2 weeks or more is a winner signal. Brands do not keep paying for losing ads.',
+        'Your ad must make its point in 5 to 8 seconds. Longer explainer ads should stay under 30 to 40 seconds.',
+        'Test at $20 per ad set, 7 to 10 ad sets, 1 to 2 creatives each, for 3 days.',
+        'Kill an ad set if CTR is under 1% after a day, CPC is over $1 with no sales, or CPA is 2 to 3 times your target.',
+        'Move ad sets with CTR above 1.5% and a profitable CPA into one CBO campaign with a budget of 3 to 5 times your target CPA.'
+      ]
+    },
     definitionBox: {
-      term: 'Meta Ads Library (Facebook Ad Library)',
-      definition: 'A free transparency tool at facebook.com/ads/library that lists every ad currently active across Meta platforms, with the start date, platforms, creative versions and advertiser page. It does not show spend, reach or results for normal commercial ads outside the EU.'
+      term: 'Meta Ads Library (Facebook Ads Library)',
+      definition: 'A free transparency tool at facebook.com/ads/library that lists every ad currently running on Facebook, Instagram, Messenger and Audience Network, with the start date, platforms, creative versions and advertiser page. It does not show spend, reach or results for normal commercial ads outside the EU, and you do not need an ad account or a paid spy tool to use it.'
     },
     tableOfContents: [
       { id: 'what-is-meta-ads-library', text: 'What is the Meta Ads Library?' },
-      { id: 'how-to-use', text: 'How to use the Meta Ads Library, step by step' },
-      { id: 'six-signals', text: 'How to find winning ads: 6 signals' },
-      { id: 'search-like-a-media-buyer', text: 'How to search the Ads Library like a media buyer' },
-      { id: 'download-videos', text: 'How to download Meta Ads Library videos' },
-      { id: 'swipe-file', text: 'Build a swipe file and turn it into briefs' },
-      { id: 'api', text: 'Meta Ads Library API: is it free and who can use it?' },
-      { id: 'third-party-tools', text: 'Meta Ads Library tools (third-party)' },
-      { id: 'not-working', text: 'Why is the Meta Ads Library not working?' },
-      { id: 'examples', text: 'Meta Ads Library examples: 5 ecommerce ads broken down' },
-      { id: 'strategy', text: 'How the Ads Library fits into your Meta strategy' },
+      { id: 'find-winning-ads', text: 'How to find winning ads in the Meta Ads Library' },
+      { id: 'winner-scorecard', text: 'The winning ad scorecard' },
+      { id: 'five-patterns', text: 'Why those ads work: 5 patterns we copied' },
+      { id: 'testing-playbook', text: 'Our DTC Meta ads testing playbook' },
+      { id: 'audience-types', text: 'The 8 audience types we test' },
+      { id: 'what-to-test', text: 'What to test in every ad' },
+      { id: 'kpis-and-kill-rules', text: 'KPIs, test setup and when to kill an ad set' },
+      { id: 'scaling-cbo', text: 'Scaling winners into a CBO campaign' },
+      { id: 'the-result', text: 'The result: $376K in 25 days' },
+      { id: 'search-like-a-media-buyer', text: 'Searching the library like a media buyer' },
+      { id: 'library-limits', text: 'Downloads, the API and when the library is not working' },
       { id: 'faq-section', text: 'Frequently asked questions' }
     ],
     sections: [
       {
         id: 'what-is-meta-ads-library',
         h2: 'What is the Meta Ads Library?',
-        content: `The Meta Ads Library (many people still call it the Facebook Ad Library) is a public, searchable database of every ad that is currently active on Facebook, Instagram, Messenger, Threads and the Meta Audience Network. Meta launched it in 2018 for political transparency and opened it to all ads in 2019. You do not need an ad account, a Business Manager or even a Facebook login to use it.
+        content: `The Meta Ads Library (many people still call it the Facebook Ads Library) is a free tool from Meta that shows every ad currently running on Facebook, Instagram, Messenger and Audience Network. You can search by keyword or brand name, filter by country, and see the date each ad started running. You do not need an ad account, a Business Manager or even a Facebook login to use it.
 
-For each ad you can see the advertiser's page, the date the ad started running, which platforms it runs on, every creative version in the same ad set (different images, videos or copy under one ad ID) and, for ads delivered in the European Union, extra transparency data such as reach by country, age and gender.
+For each ad you see the advertiser's page, the start date, the platforms it runs on and every creative version under the same ad. What you do not see for normal ecommerce ads in the US, UK, Canada or Australia is spend, impressions, CTR or ROAS. That is why media buyers read how long an ad has run, and how many versions a brand keeps live, as the signal for what is making money.
 
-What it does not show for normal ecommerce ads in the US, UK, Canada or Australia: spend, impressions, click-through rate, ROAS or any conversion data. Those numbers are only published for ads about social issues, elections or politics. That is why media buyers read run time and version count as a proxy for performance, which is the whole method in this guide.
-
-The official tool lives at facebook.com/ads/library. Bookmark it: the search in Meta Business Suite is not the same thing and shows far less.`
+For a DTC brand it is the cheapest market research you can do: it shows you exactly which ads your biggest competitors keep paying for. The official tool lives at facebook.com/ads/library.`
       },
       {
-        id: 'how-to-use',
-        h2: 'How to use the Meta Ads Library, step by step',
-        content: `Step 1: Open the Ad Library. Go to facebook.com/ads/library in any browser. Logging in is optional; it only matters if you want to save searches or apply for API access.
+        id: 'find-winning-ads',
+        h2: 'How to find winning ads in the Meta Ads Library',
+        content: `This is the exact process from the video, run for a DTC skincare client selling a vitamin C serum.`,
+        subsections: [
+          {
+            h3: '1. Search your product, not just your competitors',
+            content: `Open the Meta Ads Library, set the country to where your customers are (for our client, the United States), choose All ads and search for your product category. For this client we searched "vitamin C serum". This shows every brand advertising that product, including ones you did not know about.
 
-Step 2: Pick the country and the ad category. Set the country to where your customers are (United States for most DTC brands) and set the category to All ads. If the category is stuck on Issues, elections or politics you will see no ecommerce ads at all. This is the number one reason people think the tool is broken.
+If the category is stuck on Issues, elections or politics you will see no ecommerce ads at all. Switching it to All ads is the most common fix when the library looks empty.`
+          },
+          {
+            h3: '2. Keep only ads that have run for 2 weeks or more',
+            content: `Every ad shows a Started running on date. Two weeks is enough to prove an ad, whether the brand spends $20 or $100 a day on it. If a big brand has kept an ad live for 2 to 3 months, it is profitable. An ad that started 12 days ago is not proven yet, so skip it.
 
-Step 3: Search by keyword or advertiser name. Type a competitor's brand name to see their page's ads, or type a product phrase such as collagen powder, linen sheets or posture corrector to see every active ad using those words.
-
-Step 4: Apply filters. The filter bar lets you narrow by active status (active or inactive), platform (Facebook, Instagram, Messenger, Audience Network), media type (video, image, meme, no image or video), language, and date range. For creative research set media type to video and the date range to the last 90 days.
-
-Step 5: Open the advertiser page. Click the page name on any ad to jump to a view of only that advertiser's ads. Sort mentally by Started running on: the oldest active ads are the ones paying their way.
-
-Step 6: Open See ad details. This view shows every version of the creative inside the same ad, the landing page URL when you click through, and in the EU the audience breakdown. Count the versions. Three or more versions of one concept means the brand is iterating a winner.`,
+Also check how many ads use the same creative. When a brand runs the same creative in 3 or more ads, it is scaling a winner.`
+          },
+          {
+            h3: '3. Check the brand\'s own Facebook page too',
+            content: `One search does not always show everything. Open the brand's Facebook page and its Ad library link to see all of its active ads in one place, then open See ad details to count the versions of each concept and click through to the landing page behind it.`
+          }
+        ],
         table: {
           headers: ['Filter', 'Best setting for ecommerce research', 'Why'],
           rows: [
-            ['Country', 'Your main market (US, UK, CA, AU)', 'Ads are localised; US ads show the most volume'],
+            ['Country', 'Your main market (US, UK, CA, AU)', 'Ads are localised; the US shows the most volume'],
             ['Ad category', 'All ads', 'The political category hides every commerce ad'],
-            ['Active status', 'Active', 'Inactive ads include failed tests and seasonal offers'],
-            ['Media type', 'Video', 'Video carries 80%+ of DTC spend and shows the hook'],
-            ['Platform', 'Instagram, then Facebook', 'Reveals which placements the brand invests in'],
-            ['Date range', 'Last 90 days, then last 30', 'Separates proven evergreen ads from fresh tests']
+            ['Active status', 'Active', 'Inactive ads include failed tests and old offers'],
+            ['Media type', 'Video first, then image', 'Video carries most DTC spend and shows the hook'],
+            ['Platform', 'Instagram, then Facebook', 'Shows which placements the brand invests in'],
+            ['Date range', 'Last 90 days', 'Separates proven evergreen ads from fresh tests']
           ]
         }
       },
       {
-        id: 'six-signals',
-        h2: 'How to find winning ads: 6 signals',
-        content: `Because the library hides performance data, you infer it. After reviewing thousands of ads for partner accounts, these six signals predict a winner with enough accuracy to brief creative from.
-
-Signal 1: Long run time. An ad that has been active for 30 days or more is very likely profitable. Brands switch off losers inside a week. Anything past 90 days is a proven evergreen concept.
-
-Signal 2: Many versions of one concept. When the ad details show 4, 8 or 20 versions with the same hook and different footage or copy, the brand is scaling and iterating that concept. Iteration follows money.
-
-Signal 3: The same creative across many ad sets. If you see the same video appearing under several ad IDs with different start dates, it has been duplicated into new campaigns, which only happens to winners.
-
-Signal 4: New angles from the biggest spenders every week. Follow the 5 largest advertisers in your niche. The angles they launch fresh each week tell you what their testing budget is finding.
-
-Signal 5: The landing page and offer behind the ad. Click through. A dedicated landing page, a bundle or a quantity break behind the ad means the brand has done the conversion work and the ad is worth copying structurally.
-
-Signal 6: Comment volume on the organic post version. Open the Instagram or Facebook post the ad is attached to. Hundreds of comments, especially questions about price and shipping, confirm the ad is reaching buyers, not just viewers.`,
+        id: 'winner-scorecard',
+        h2: 'The winning ad scorecard',
+        content: `Because the library hides performance data, you infer it. Score every ad you save on these six signals; anything that scores 9 or more out of 12 goes into your next creative brief.`,
         table: {
           headers: ['Signal', 'What to check', 'Score 0 to 2'],
           rows: [
             ['Run time', 'Started running on date', '0: under 14 days, 1: 14 to 30 days, 2: 30+ days'],
             ['Versions', 'See ad details, version count', '0: one, 1: two to three, 2: four or more'],
-            ['Duplication', 'Same creative under multiple ad IDs', '0: none, 1: two, 2: three or more'],
-            ['Spender activity', 'New ads from the page this week', '0: none, 1: one to two, 2: three or more'],
-            ['Landing page', 'Dedicated page, bundle or offer', '0: generic PDP, 1: offer on PDP, 2: dedicated page'],
-            ['Comments', 'Organic post engagement', '0: under 20, 1: 20 to 100, 2: 100+']
+            ['Duplication', 'Same creative under several ads', '0: none, 1: two, 2: three or more'],
+            ['Brand activity', 'New ads from the page this week', '0: none, 1: one to two, 2: three or more'],
+            ['Landing page', 'Dedicated page, bundle or offer', '0: generic product page, 1: offer on page, 2: dedicated page'],
+            ['Comments', 'Engagement on the ad post', '0: under 20, 1: 20 to 100, 2: 100+']
+          ]
+        }
+      },
+      {
+        id: 'five-patterns',
+        h2: 'Why those ads work: 5 patterns we copied',
+        content: `Finding a winner is half the job. The other half is understanding why it wins, so you copy the structure, not the ad.`,
+        subsections: [
+          {
+            h3: 'The message lands in 5 to 8 seconds',
+            content: `One winning vitamin C serum ad made its whole point in 6 seconds. Your hook has 5 to 8 seconds to stop the scroll and state the benefit. If you need to explain more, keep the full ad under 30 to 40 seconds.`
+          },
+          {
+            h3: 'Trust comes first in skincare',
+            content: `The same ad opened with "recommended by US dermatologists". People are skeptical about putting a product they bought online on their skin. Proof (dermatologist recommended, clinically tested, verified reviews) answers that objection before it forms.`
+          },
+          {
+            h3: 'Results without "before and after"',
+            content: `One winning ad showed hands at day 1 and day 30 without ever saying "before and after". Meta restricts before and after claims for personal health and beauty products, and ads that use them often get flagged. Show the change; do not label it.`
+          },
+          {
+            h3: 'Amazon reviews inside the creative',
+            content: `Many DTC brands also sell on Amazon. One brand put a screenshot of a real Amazon review straight into the ad. Viewers who check Amazon find the same reviews, which removes the last doubt.`
+          },
+          {
+            h3: 'Sell the routine, not the single product',
+            content: `A carousel retargeting ad showed a full skincare routine: cleanser, vitamin C serum, retinol, soothing cream. Selling a routine lifts order value and works well with subscriptions. On our client's landing page we added "clinically recommended: 3 months for best results", so buyers choose the 3 month plan and stay long enough to see results.`
+          }
+        ]
+      },
+      {
+        id: 'testing-playbook',
+        h2: 'Our DTC Meta ads testing playbook',
+        content: `Research only pays off when it turns into tests. We test at $20 per ad set. You can go down to $10 or up to $50 depending on your budget; this example assumes a brand that can spend $150 to $200 a day on testing.`,
+        list: [
+          'Objective: conversions, optimised for purchase.',
+          '$20 per ad set, 7 to 10 ad sets, 1 to 2 creatives per ad set.',
+          'Run for 3 days. This is the validation phase.',
+          'Checkpoints over 14 days: day 1, 4, 5, 7, 10 and 14.'
+        ]
+      },
+      {
+        id: 'audience-types',
+        h2: 'The 8 audience types we test',
+        subsectionsAfterTable: true,
+        content: `Each ad set in the test targets one audience type. Combining interests this way keeps each ad set distinct, so Meta is not bidding against itself.`,
+        table: {
+          headers: ['Ad set', 'Who it targets', 'Skincare example'],
+          rows: [
+            ['Magazine', 'Readers of trade, lifestyle and category magazines', 'Beauty and skincare publications'],
+            ['Informational', 'People learning about your category and its problems', 'Skincare blogs and education sites'],
+            ['Category', 'Interest in the product type itself', 'Anti aging cream, cleanser, moisturizer'],
+            ['Passion', 'People passionate about the lifestyle around your product', 'Beauty content consumers'],
+            ['Popular group', 'Followers of well known creators, experts and communities', 'Skincare creators and communities'],
+            ['Seed', 'Built around your use case and ideal customer', 'Sunscreen, serum, premium vs budget buyers'],
+            ['Buyers', 'Pages liked by people who praise competitor ads in the comments', 'Brands found on commenters\' profiles'],
+            ['Brand', 'Competing brands in your market', 'Large beauty retailers and cosmetic brands']
+          ]
+        },
+        subsections: [
+          {
+            h3: 'How we find proven buyers from comments',
+            content: `Find a competitor ad with thousands of shares and positive comments. Open the profiles of people who say "I have used this brand for years" and look at the pages they like. Add those brands as interests in Ads Manager. These are people who already buy in your category.`
+          },
+          {
+            h3: 'Audience size rules',
+            list: [
+              'Keep each ad set close to, but under, 5 million people.',
+              'Combine 2 to 3 interests from one group with 2 to 3 from another, then narrow with your main keyword to hit that size.',
+              'Do not use the same keyword in more than 3 ad sets.'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'what-to-test',
+        h2: 'What to test in every ad',
+        content: `Change one element at a time across the ad sets, so you know which change moved the numbers.`,
+        table: {
+          headers: ['Element', 'What to test'],
+          rows: [
+            ['Creative concept', 'Product demo, how to use, customer testimonial, founder story, benefit focus'],
+            ['Hook (first 3 seconds)', 'Bold claim, question, problem statement, visual result'],
+            ['Visuals', 'Close up, product in use, UGC video, lifestyle shot, unboxing'],
+            ['Ad copy', 'Convenience, quality, value and identity angles'],
+            ['Headline', 'Short, and name the offer'],
+            ['Offer', '15% off first order, bundles, free shipping, buy more save more, 25% off subscription'],
+            ['Call to action', 'Shop now, discover the collection, explore the range'],
+            ['Social proof', 'Verified reviews, Amazon review screenshots'],
+            ['Format', 'UGC video, static image, carousel, collection ad']
+          ]
+        }
+      },
+      {
+        id: 'kpis-and-kill-rules',
+        h2: 'KPIs, test setup and when to kill an ad set',
+        content: `Track the whole funnel, not just ROAS, so you can see where a losing ad set breaks.`,
+        subsections: [
+          {
+            h3: 'The KPIs we track',
+            list: [
+              'Delivery: link clicks, CTR, CPC, CPM, landing page views, amount spent, frequency.',
+              'Funnel: view content, add to cart and cost per add to cart, initiate checkout, cost per purchase.',
+              'Revenue: purchase conversion value, ROAS, average order value.',
+              'Video: 25%, 50%, 75% and 95% watch rates.'
+            ]
+          },
+          {
+            h3: 'When to kill an ad set',
+            list: [
+              'CTR under 1% after a full day and $20 spent: people are not responding to the offer.',
+              'CPC above $1 with no conversions.',
+              'CPA at 2 to 3 times your target with no improvement.',
+              'ROAS under your minimum (for this client, 2).',
+              'Clicks but no view content events: people are not reaching the landing page.',
+              'No meaningful action by day 3.'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'scaling-cbo',
+        h2: 'Scaling winners into a CBO campaign',
+        content: `Over the 14 day test you kill losers and keep 2 to 3 performers. Ad sets with CTR above 1.5% and a profitable CPA or positive ROAS move into one CBO (campaign budget optimization) campaign.`,
+        list: [
+          'Put 3 to 5 proven ad sets in the CBO.',
+          'Set the CBO budget at 3 to 5 times your target CPA. Example: target CPA $20, CBO budget about $100 a day.',
+          'Keep scaling while the CBO stays profitable.'
+        ],
+        subsections: [
+          {
+            h3: 'When to pause or adjust the CBO',
+            list: [
+              'CPA rises above 2 times your target.',
+              'CTR drops by 1 point: a sign of creative fatigue.',
+              'ROAS falls below your minimum.',
+              'Conversions drop on creatives that used to work: launch new iterations of the winning angle.'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'the-result',
+        h2: 'The result: $376K in 25 days',
+        content: `We used this exact process for a DTC skincare brand selling a vitamin C serum. In 25 days the brand did $376,000 in revenue and sold 2,508 units, around $150 per order. Results are from one client account, shared with permission. They are not typical and not a guarantee.
+
+The method is repeatable even if your numbers are smaller: find ads that have survived 2 weeks, copy why they work rather than what they look like, test at $20 per ad set with clear kill rules, and only scale what has proven itself into a CBO. Need ad creatives to test? Our creative studio, SevenFigureStudio, makes UGC video ads for DTC brands (link below).`,
+        table: {
+          headers: ['Metric', 'Result'],
+          rows: [
+            ['Revenue', '$376,000'],
+            ['Timeframe', '25 days'],
+            ['Units sold', '2,508'],
+            ['Average order value', 'About $150'],
+            ['Product', 'Vitamin C serum (DTC skincare)'],
+            ['Channel', 'Meta ads (Facebook and Instagram)']
           ]
         }
       },
       {
         id: 'search-like-a-media-buyer',
-        h2: 'How to search the Meta Ads Library like a media buyer',
-        content: `Keyword searches that work for ecommerce. Search for offer language, not product names: free shipping, bundle, limited drop, buy 2 get 1, shop now, 30 day guarantee. Combine with one niche word, for example bundle skincare or free shipping leggings. Offer words surface ads that are built to convert rather than brand awareness spots.
+        h2: 'Searching the library like a media buyer',
+        content: `Keyword searches that work for ecommerce. Search for offer language, not just product names: free shipping, bundle, limited drop, buy 2 get 1, 30 day guarantee. Combine with one niche word, for example bundle skincare or free shipping serum. Offer words surface ads that are built to convert.
 
-Meta ad library search by ID. Every ad has a numeric Library ID shown on its card and in its URL (facebook.com/ads/library/?id=XXXXXXXX). Paste the ID into the search box with the keyword type set to Ad ID. Use this when a client, creator or teammate sends you a link and you want the full version history.
+Meta ad library search by ID. Every ad has a numeric Library ID shown on its card and in its URL. Set the search type to Ad ID and paste it to see that ad with all of its versions. Use this when a teammate or creator sends you a link.
 
-Meta Ads Library for Instagram only. Set the platform filter to Instagram. Then look at the ad's format: 9:16 Reels placements usually mean the brand has a creator-led UGC pipeline, which is the fastest production model to copy.
+Instagram only. Set the platform filter to Instagram. Vertical 9:16 Reels placements usually mean the brand has a creator led UGC pipeline, which is the fastest production model to copy.
 
-Can you sort by impressions? Not for commercial ads. Sorting by impressions is only available for the political and issue category, and the EU transparency data shows reach, not spend. The run time plus version count method above is the closest free proxy. Third-party tools estimate impressions from engagement, but treat those numbers as a ranking aid, not a fact.`
+Can you sort by impressions? Not for commercial ads. Sorting by impressions and spend ranges are only available for ads about social issues, elections or politics. Run time plus version count is the closest free proxy.`
       },
       {
-        id: 'download-videos',
-        h2: 'How to download Meta Ads Library videos (and what you may do with them)',
-        content: `There is no download button in the Ads Library. For internal research most teams screen record the ad or use the browser's network tab to save the MP4; several free browser extensions and websites also pull the file from the ad's public URL. We do not endorse one because they change often and some inject tracking.
+        id: 'library-limits',
+        h2: 'Downloads, the API and when the library is not working',
+        content: `Downloading videos. There is no download button. For internal research teams screen record the ad or save it with a browser tool. Keep it in a private swipe file and recreate the structure with your own product and footage; never re-upload a competitor's ad, footage or creators.
 
-What you may do: keep the video in a private swipe file, share it in a creative brief, time stamp the hook, the proof and the offer, and recreate the structure with your own product and footage.
+The Meta Ad Library API. It is free but limited: it covers ads about social issues, elections and politics plus EU transparency data, and needs a Meta developer account with confirmed identity. For ecommerce competitor research the web tool shows the same commercial ad fields, so most brands do not need the API.
 
-What you may not do: re-upload a competitor's ad, reuse their footage, voice or creators, or copy their copy word for word. Beyond the legal risk, Meta's systems match duplicate media and copied ads perform worse because the audience has already seen them.`
-      },
-      {
-        id: 'swipe-file',
-        h2: 'Build a swipe file and turn it into briefs',
-        content: `Research that stays in a folder is wasted. The swipe file is only useful when it feeds a weekly brief.
-
-Swipe file columns. Keep one spreadsheet row per ad with these seven columns: brand, hook (the first 3 seconds, quoted), angle (the belief the ad is trying to change), format (talking head UGC, demo, split screen, founder, static, carousel), run time in days on the day you logged it, offer, and landing page type. Add a score column using the 0 to 2 scorecard above; anything at 9 or above out of 12 goes into the brief.
-
-From swipe to brief. At Brand Scaling, 10 scored ads from the library become a 45+ hook and angle matrix: 5 angles (problem, mechanism, objection, identity, offer) multiplied by 3 hook styles (question, bold claim, visual pattern break) multiplied by 3 formats. Each cell is one brief line a creator or editor can execute in a day. The matrix is why partner accounts receive 30 to 50 new creatives a month without the creative team guessing.
-
-Example: a skincare brand brief. For a clinical skincare partner we logged 12 active competitor ads, 9 of them UGC with a before and after in the first 2 seconds and a 3 step routine bundle behind the click. The brief copied the structure, not the ads: real customer footage, our own clinical mechanism, our own bundle. The account did $146,184 in 27 days on $40,123 in spend, a 3.64x ROAS, with the top 3 ads all coming from that first matrix.`
-      },
-      {
-        id: 'api',
-        h2: 'Meta Ads Library API: is it free and who can use it?',
-        content: `The Meta Ad Library API is free, but it is not a general ads data feed. It covers ads about social issues, elections or politics in supported countries, plus the EU transparency data required by the Digital Services Act. To use it you need a Meta developer account, confirmed identity, and you query it through the Graph API with an access token.
-
-For an ecommerce brand researching competitors the API adds little: commercial ads outside the EU return the same limited fields you see in the web tool, and there is no spend or performance data. Use the web interface, or a third-party tool that already handles the collection, and spend your time on the analysis.`
-      },
-      {
-        id: 'third-party-tools',
-        h2: 'Meta Ads Library tools (third-party)',
-        content: `Paid ad spy tools sit on top of the public library and add what the free tool lacks: saved boards, alerts when a brand launches new ads, historical records of ads that are no longer active, estimated run time trends, and team sharing. Popular categories include dedicated Meta ad trackers, all-in-one creative research suites and Chrome extensions that add a save button to the library itself.
-
-When the free library is enough: you track fewer than 10 competitors, you review ads weekly, and you log them in your own swipe file. When a paid tool pays for itself: you brief 20+ creatives a month, you need to know the day a competitor changes offer, or you want history older than the ads currently active. We have no affiliate relationship with any of them; choose on the alerts and history features, not the impression estimates.`
-      },
-      {
-        id: 'not-working',
-        h2: 'Why is the Meta Ads Library not working?',
-        content: `Most Ads Library problems are settings, not outages. Work through this list:
-
-1. Wrong country. The country selector defaults to your location. If you are researching US brands from elsewhere, switch it.
-
-2. Ad category set to Issues, elections or politics. Switch to All ads. This hides every ecommerce ad and is the most common cause of empty results.
-
-3. Browser extensions. Ad blockers and privacy extensions block the library's scripts. Try a private window with extensions off.
-
-4. Login loop. If the page keeps asking you to log in, clear cookies for facebook.com or use a different browser; the library works logged out.
-
-5. Search type. If you pasted an ad ID with the search type still on Keyword, you get nothing. Switch the type to Ad ID.
-
-6. Genuine outage. Meta's tool occasionally fails for an hour or two, usually around big product changes. Check again later; status pages for Meta business tools will usually mention it.`
-      },
-      {
-        id: 'examples',
-        h2: 'Meta Ads Library examples: 5 ecommerce ads broken down',
-        content: `These five patterns come up repeatedly among long-running DTC ads across skincare, supplements, apparel, jewelry and home. Search each niche with the filters above and you will find current examples of every one of them within a few minutes.
-
-1. Skincare, the before and after UGC. Hook: a creator's face with visible texture in the first second and the line I was about to give up on my skin. Angle: mechanism (one ingredient explained simply). Offer: 3 step routine bundle with a free full size add-on. Typical run time when we log them: 60 to 180 days with 6 or more versions.
-
-2. Supplements, the founder explainer. Hook: founder on camera, bold claim about a common symptom. Angle: objection handling (why other products fail). Offer: subscribe and save with a first order discount. Run time 45 to 120 days.
-
-3. Apparel, the split screen comparison. Hook: our fabric versus a generic one under water or stretch. Angle: proof. Offer: buy 2 get 1 or free shipping threshold. Run time 30 to 90 days, with many placements variants.
-
-4. Jewelry, the gift reaction. Hook: an unboxing reaction in the first 2 seconds. Angle: identity and occasion. Offer: gift box plus engraving. Run time spikes before Mother's Day, BFCM and Valentine's, then returns every year.
-
-5. Home, the problem demo. Hook: the mess or inconvenience shown at full size. Angle: problem to solution demo. Offer: quantity break (buy 2 save 15%). Run time 90+ days; these are often the oldest active ads on the page.`
-      },
-      {
-        id: 'strategy',
-        h2: 'How the Ads Library fits into your Meta strategy',
-        content: `Since Meta's Andromeda retrieval update, creative diversity decides how far an account can scale: near duplicate ads compete with each other for the same people, while genuinely different hooks and angles each open a new slice of the audience. The Ads Library is the cheapest source of new angles that already work in your market.
-
-The weekly loop we run for partner brands: Monday, log 10 new ads from the 5 biggest spenders in the niche and score them. Tuesday, update the hook and angle matrix and brief 8 to 12 new creatives. Wednesday to Friday, produce and launch inside one consolidated Advantage+ campaign. The following Monday, keep what beat the account's cost per purchase and log the next 10.
-
-If you want this done for you, creative research is the first deliverable of a Brand Growth Audit: you receive the scored swipe file and the first 45 cell matrix for your brand before any media buying starts.`
+When the library is not working, check these in order: the country is set to your market; the category is All ads; ad blockers and privacy extensions are off (try a private window); the search type matches what you pasted (Keyword vs Ad ID); and if nothing else works, Meta's tool may be down for a short time.`
       }
     ],
     faqs: [
       {
         question: 'Is the Meta Ads Library free?',
-        answer: 'Yes. The Meta Ads Library is free and public. You can search every active ad on Facebook and Instagram without running ads yourself and without a Facebook account.'
+        answer: 'Yes. The Meta Ads Library is free and public. You can search all active Facebook and Instagram ads without logging in or having an ad account.'
       },
       {
-        question: 'Do I need to log in to use the Meta Ads Library?',
-        answer: 'No. The library works in a normal browser while logged out. Logging in to Facebook is optional and only needed for some saved settings and for Ad Library API access.'
+        question: 'How long should an ad run before it counts as a winner?',
+        answer: 'At least 2 weeks. Brands do not keep paying for ads that lose money, so an ad running for 2 weeks or more, especially one used in several ads, is a strong winner signal.'
+      },
+      {
+        question: 'How much should I spend to test Meta ads?',
+        answer: 'We test at $20 per ad set across 7 to 10 ad sets for 3 days. You can start at $10 per ad set on a smaller budget, but you need enough spend for Meta to show results.'
+      },
+      {
+        question: 'When should I kill a Meta ad set?',
+        answer: 'Kill it if CTR is under 1% after a day, CPC is above $1 with no sales, or CPA stays at 2 to 3 times your target. If nothing meaningful happens by day 3, turn it off.'
+      },
+      {
+        question: 'Can I use before and after images in skincare ads?',
+        answer: 'Meta restricts before and after claims for personal health and beauty products, and these ads often get rejected. Show day 1 and day 30 visually instead of labelling it before and after.'
       },
       {
         question: 'Can you see ad spend in the Meta Ads Library?',
-        answer: 'Not for normal commercial ads in the US, UK, Canada or Australia. Spend ranges and impressions are shown only for ads about social issues, elections or politics, and ads delivered in the EU show reach data under the Digital Services Act.'
-      },
-      {
-        question: 'How do I find winning ads in the Meta Ads Library?',
-        answer: 'Look for ads that have been active for 30 days or more, concepts with four or more versions, the same creative duplicated under several ad IDs, and brands that keep launching new versions of the same angle. These are reliable signs the ad is profitable.'
-      },
-      {
-        question: 'Why is the Meta Ads Library not working?',
-        answer: 'Check that the country is correct and the category is set to All ads rather than Issues, elections or politics, turn off browser extensions and try a private window. If it still fails, Meta\'s tool may be down for a short time.'
+        answer: 'Not for normal commercial ads in the US, UK, Canada or Australia. Spend ranges and impressions are shown only for ads about social issues, elections or politics, and ads delivered in the EU show reach data.'
       },
       {
         question: 'Can I search the Meta Ads Library by ad ID?',
-        answer: 'Yes. Set the search type to Ad ID and paste the numeric Library ID from the ad card or its URL. You will see that ad with all of its creative versions and start date.'
+        answer: 'Yes. Set the search type to Ad ID and paste the numeric Library ID from the ad card or its URL to see that ad with all of its versions.'
+      },
+      {
+        question: 'What is a CBO campaign in Meta ads?',
+        answer: 'CBO (campaign budget optimization, now called Advantage campaign budget) sets one budget at campaign level and lets Meta move it to the best ad sets. We move 3 to 5 proven ad sets into a CBO with a budget of 3 to 5 times target CPA.'
       }
     ]
   },

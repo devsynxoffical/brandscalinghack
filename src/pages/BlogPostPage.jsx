@@ -36,6 +36,68 @@ function cleanBlogText(text) {
     .replace(/(\w+)-(\w+)/g, '$1 $2');
 }
 
+function BlogList({ items }) {
+  return (
+    <ul style={{ margin: '16px 0 0', paddingLeft: '22px', color: '#334155', fontSize: '16px', lineHeight: 1.8 }}>
+      {items.map((it) => <li key={it} style={{ marginBottom: '6px' }}>{cleanBlogText(it)}</li>)}
+    </ul>
+  );
+}
+
+const fmtTime = (t) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`;
+
+function BlogVideo({ video }) {
+  const [playing, setPlaying] = useState(false);
+  const [start, setStart] = useState(0);
+  const play = (t = 0) => { setStart(t); setPlaying(true); };
+  return (
+    <section aria-label="Video breakdown" style={{ marginBottom: '40px' }}>
+      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '18px', background: '#0f172a', boxShadow: '0 12px 40px rgba(15, 23, 42, 0.18)' }}>
+        {playing ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?autoplay=1&start=${start}&rel=0`}
+            title={video.title}
+            style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        ) : (
+          <button type="button" onClick={() => play(0)} aria-label={`Play video: ${video.title}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0, padding: 0, cursor: 'pointer', background: '#0f172a' }}>
+            <img src={`https://i.ytimg.com/vi/${video.youtubeId}/maxresdefault.jpg`} onError={(e) => { if (!e.currentTarget.dataset.fallback) { e.currentTarget.dataset.fallback = '1'; e.currentTarget.src = `https://i.ytimg.com/vi/${video.youtubeId}/hqdefault.jpg`; } }} alt={video.title} loading="lazy" decoding="async" width="1280" height="720" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', opacity: 0.92 }} />
+            <span style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '78px', height: '78px', borderRadius: '50%', background: '#ea580c', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 8px 30px rgba(234, 88, 12, 0.5)' }}>
+              <span style={{ width: 0, height: 0, borderTop: '14px solid transparent', borderBottom: '14px solid transparent', borderLeft: '22px solid #ffffff', marginLeft: '6px' }} />
+            </span>
+          </button>
+        )}
+      </div>
+
+      {video.takeaways && (
+        <div style={{ background: '#ffffff', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '22px 26px', marginTop: '20px' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 900, color: '#0f172a', margin: '0 0 10px' }}>Key takeaways</h2>
+          <BlogList items={video.takeaways} />
+        </div>
+      )}
+
+      {video.chapters && (
+        <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '16px', padding: '22px 26px', marginTop: '16px' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 900, color: '#0f172a', margin: '0 0 12px' }}>Video chapters</h2>
+          <ol style={{ listStyle: 'none', margin: 0, padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '6px 18px' }}>
+            {video.chapters.map((c) => (
+              <li key={c.t}>
+                <a href={`https://www.youtube.com/watch?v=${video.youtubeId}&t=${c.t}s`} onClick={(e) => { e.preventDefault(); play(c.t); window.scrollTo({ top: Math.max(0, e.currentTarget.closest('section').offsetTop - 100), behavior: 'smooth' }); }} style={{ display: 'flex', gap: '10px', padding: '6px 0', textDecoration: 'none', color: '#334155', fontSize: '14.5px' }}>
+                  <span style={{ color: '#ea580c', fontWeight: 800, fontVariantNumeric: 'tabular-nums', minWidth: '44px' }}>{fmtTime(c.t)}</span>
+                  <span>{c.label}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </div>
+      )}
+    </section>
+  );
+}
+
 export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -312,6 +374,9 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
             </div>
           </div>
 
+          {/* Video breakdown: click-to-load YouTube facade keeps the page fast (LCP) */}
+          {post.video && <BlogVideo video={post.video} />}
+
           {/* Key Definition Callout Box */}
           {post.definitionBox && (
             <div style={{ background: '#fff7ed', borderLeft: '5px solid #ea580c', borderTop: '1px solid rgba(234, 88, 12, 0.25)', borderRight: '1px solid rgba(234, 88, 12, 0.25)', borderBottom: '1px solid rgba(234, 88, 12, 0.25)', borderRadius: '0 16px 16px 0', padding: '24px 28px', marginBottom: '40px' }}>
@@ -344,6 +409,18 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
                 {cleanBlogText(section.content)}
               </div>
 
+              {section.list && <BlogList items={section.list} />}
+
+              {section.subsections && !section.subsectionsAfterTable && section.subsections.map((sub) => (
+                <div key={sub.h3} style={{ marginTop: '26px' }}>
+                  <h3 style={{ fontSize: '19px', fontWeight: 850, color: '#0f172a', margin: '0 0 10px', lineHeight: 1.35 }}>{sub.h3}</h3>
+                  {sub.content && (
+                    <div style={{ fontSize: '16px', lineHeight: 1.85, color: '#334155', whiteSpace: 'pre-line' }}>{cleanBlogText(sub.content)}</div>
+                  )}
+                  {sub.list && <BlogList items={sub.list} />}
+                </div>
+              ))}
+
               {/* Styled Financial Comparison Table */}
               {section.table && (
                 <div style={{ overflowX: 'auto', margin: '30px 0 10px 0' }}>
@@ -371,6 +448,16 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
                   </table>
                 </div>
               )}
+
+              {section.subsections && section.subsectionsAfterTable && section.subsections.map((sub) => (
+                <div key={sub.h3} style={{ marginTop: '26px' }}>
+                  <h3 style={{ fontSize: '19px', fontWeight: 850, color: '#0f172a', margin: '0 0 10px', lineHeight: 1.35 }}>{sub.h3}</h3>
+                  {sub.content && (
+                    <div style={{ fontSize: '16px', lineHeight: 1.85, color: '#334155', whiteSpace: 'pre-line' }}>{cleanBlogText(sub.content)}</div>
+                  )}
+                  {sub.list && <BlogList items={sub.list} />}
+                </div>
+              ))}
 
               {/* Strategic Mid-Article CTA (after 2nd section) */}
               {idx === 1 && (
@@ -435,9 +522,10 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
               <h3 style={{ fontSize: '18px', fontWeight: 900, color: '#ffffff', margin: '0 0 16px' }}>Go deeper</h3>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '12px' }}>
                 {post.relatedLinks.map((l) => {
+                  const external = /^https?:/.test(l.href);
                   const pageId = l.href === '/' ? 'home' : l.href.startsWith('/blog/') ? `blog-${l.href.slice(6)}` : l.href.startsWith('/case-studies/') ? `case-niche-${l.href.slice(14)}` : l.href.slice(1);
                   return (
-                    <a key={l.href} href={l.href} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(pageId); }} style={{ display: 'block', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', padding: '14px 16px', textDecoration: 'none' }}>
+                    <a key={l.href} href={l.href} {...(external ? { target: '_blank', rel: 'noopener' } : { onClick: (e) => { e.preventDefault(); onNavigate && onNavigate(pageId); } })} style={{ display: 'block', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '12px', padding: '14px 16px', textDecoration: 'none' }}>
                       <span style={{ display: 'block', color: '#ff7043', fontWeight: 800, fontSize: '14px', marginBottom: '4px' }}>{l.title}</span>
                       <span style={{ display: 'block', color: '#cbd5e1', fontSize: '13px', lineHeight: 1.5 }}>{l.text}</span>
                     </a>

@@ -414,10 +414,15 @@ function renderRoute(route) {
     h1: escapeHtml(p.title),
     content: `
       <p><strong>Direct Answer:</strong> ${escapeHtml(p.directAnswer || '')}</p>
+      ${p.video ? `<p><a href="https://www.youtube.com/watch?v=${p.video.youtubeId}">Watch the video: ${escapeHtml(p.video.title)}</a></p>
+      ${p.video.takeaways ? `<h2>Key takeaways</h2><ul>${p.video.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>` : ''}
+      ${p.video.chapters ? `<h2>Video chapters</h2><ul>${p.video.chapters.map((c) => `<li><a href="https://www.youtube.com/watch?v=${p.video.youtubeId}&amp;t=${c.t}s">${Math.floor(c.t / 60)}:${String(c.t % 60).padStart(2, '0')}</a> ${escapeHtml(c.label)}</li>`).join('')}</ul>` : ''}` : ''}
       ${p.definitionBox ? `<p><strong>${escapeHtml(p.definitionBox.term)}:</strong> ${escapeHtml(p.definitionBox.definition)}</p>` : ''}
       ${(p.sections || []).map((sec) => `
         <h2>${escapeHtml(sec.h2)}</h2>
         ${String(sec.content || '').split(/\n\s*\n/).map((para) => `<p>${escapeHtml(para.trim())}</p>`).join('')}
+        ${sec.list ? `<ul>${sec.list.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}
+        ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${String(sub.content || '').split(/\n\s*\n/).filter(Boolean).map((para) => `<p>${escapeHtml(para.trim())}</p>`).join('')}${sub.list ? `<ul>${sub.list.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}`).join('')}
         ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
       `).join('')}
       ${(p.faqs || []).length ? `<h2>Frequently Asked Questions</h2>${p.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}` : ''}
