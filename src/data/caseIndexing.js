@@ -21,9 +21,14 @@ for (const cs of allCaseStudies) {
   else firstByKey.set(k, cs);
 }
 
+const INDEX_SHORT_POSTS = true;
+
 const reasons = new Map();
 for (const cs of allCaseStudies) {
   if (DUPLICATE_OF.has(cs.slug)) { reasons.set(cs.slug, 'duplicate'); continue; }
+  // Owner decision (31 Oct 2026): index every unique case page, including short posts.
+  // Set INDEX_SHORT_POSTS to false to return short posts without a result or lesson to noindex.
+  if (INDEX_SHORT_POSTS) continue;
   const seo = caseSeo(cs);
   if (seo.verified) continue;
   if (seo.wordCount >= 120 && seo.takeaways.length >= 2) continue;

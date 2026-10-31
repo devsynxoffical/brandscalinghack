@@ -222,6 +222,10 @@ Sitemap: 115 URLs (14 static, 5 niche hubs, 5 posts, 91 case studies). Prerender
 
 ---
 
+**Update, same day (owner decision):** all unique case pages are now indexed, including the 30 short posts that were noindex. Only the 5 exact duplicate posts stay out of the sitemap with a canonical to the original. Sitemap: 145 URLs (14 static, 5 niche hubs, 5 posts, 121 case studies). The switch is `INDEX_SHORT_POSTS` in `src/data/caseIndexing.js`. Watch Search Console > Pages for "Crawled, currently not indexed" on the short posts over the next 4 weeks; Google decides whether to keep them.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |
