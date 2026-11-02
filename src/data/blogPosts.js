@@ -924,5 +924,215 @@ If your account was built in 2022 and has not been restructured since, the faste
         answer: 'Andromeda is the retrieval stage that shortlists candidate ads for a person. GEM is Meta\'s large ranking model that scores those candidates. Both reward creative diversity and clean conversion signals.'
       }
     ]
+  },
+  {
+    slug: 'facebook-ads-for-shopify',
+    title: 'Facebook Ads for Shopify: The 2026 Setup',
+    titleTag: 'Facebook Ads for Shopify: The 2026 Setup | Brand Scaling',
+    metaDescription: 'Facebook ads for Shopify, set up right: connect the Facebook and Instagram app, pixel and Conversions API, first campaign, budget and creative plan.',
+    primaryKeyword: 'facebook ads for shopify',
+    secondaryKeywords: ['how to run facebook ads for shopify store', 'how to set up facebook ads for shopify', 'how to connect facebook ads to shopify', 'facebook ads pixel shopify', 'how much are facebook ads for shopify', 'facebook ads library shopify'],
+    publishDate: '2026-11-02',
+    updatedDate: '2026-11-02',
+    readTime: '12 min read',
+    relatedLinks: [
+      { href: '/shopify-agency', title: 'Shopify Agency & CRO', text: 'Product pages, bundles and checkout built for paid Meta traffic.' },
+      { href: '/blog/meta-ads-library', title: 'Meta Ads Library: $376K Case Study', text: 'How to find winning ads to copy before you brief creative.' },
+      { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'Why 5 to 10 genuinely different creatives beat narrow targeting.' },
+      { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Work out break-even ROAS and target CPA before you set a budget.' }
+    ],
+    category: 'Meta Ads',
+    author: {
+      name: 'Gaurav Kapoor',
+      title: 'Founder, Brand Scaling',
+      avatar: '/team/gaurav.webp',
+      credentials: '12+ years in ecommerce, $50M+ in Meta ad spend managed, 150+ published case studies',
+      profileUrl: '/about',
+      youtubeUrl: 'https://www.youtube.com/@gauravecom',
+      instagramUrl: 'https://www.instagram.com/gauravecomm/',
+      linkedinUrl: 'https://www.linkedin.com/in/gauravecom/'
+    },
+    directAnswer: 'To run Facebook ads for a Shopify store in 2026, connect Shopify\'s Facebook and Instagram app to your Meta Business account, turn on the pixel and Conversions API with maximum data sharing, verify your domain, then launch one Advantage+ sales campaign with 5 to 10 different creatives. Start with a daily budget you can hold for 7 days without touching it, and judge results on cost per purchase, not clicks.',
+    definitionBox: {
+      term: 'Facebook ads for Shopify',
+      definition: 'Paid campaigns on Facebook and Instagram, bought through Meta Ads Manager, that send shoppers to a Shopify store and are optimised for purchases. Shopify\'s Facebook and Instagram app connects the store\'s product catalog, pixel and Conversions API so Meta can see who bought and find more people like them.'
+    },
+    tableOfContents: [
+      { id: 'before-you-start', text: 'Before you start: what you need' },
+      { id: 'connect-facebook-ads-to-shopify', text: 'How to connect Facebook ads to Shopify' },
+      { id: 'pixel-tracking', text: 'Facebook ads pixel for Shopify: check your tracking' },
+      { id: 'first-campaign', text: 'Your first campaign' },
+      { id: 'how-much', text: 'How much are Facebook ads for Shopify?' },
+      { id: 'creative', text: 'Creative that sells on Shopify' },
+      { id: 'reading-results', text: 'Reading results and scaling' },
+      { id: 'common-mistakes', text: 'Common mistakes' },
+      { id: 'faq-section', text: 'Frequently asked questions' }
+    ],
+    sections: [
+      {
+        id: 'before-you-start',
+        h2: 'Before you start: what you need',
+        content: `Most broken Shopify ad accounts were broken on day one: a pixel installed twice, a personal ad account, a catalog that never synced. Fifteen minutes on this checklist saves weeks of bad data.`,
+        list: [
+          'A Meta Business account (business.facebook.com) that you own, not one owned by a freelancer.',
+          'An ad account inside that Business account, with a payment method and the correct currency and time zone. Currency cannot be changed later.',
+          'A Facebook page and an Instagram professional account for the brand, both added to the Business account.',
+          'Admin access to the Shopify store.',
+          'A clean product catalog in Shopify: titles, prices, images and stock that you would be happy to show in an ad.',
+          'Your store domain ready to verify (you will need access to DNS or the ability to upload a file or meta tag).'
+        ]
+      },
+      {
+        id: 'connect-facebook-ads-to-shopify',
+        h2: 'How to connect Facebook ads to Shopify',
+        content: `The connection runs through one Shopify app. It replaces the old method of pasting pixel code into your theme, and it is the only setup we recommend for Shopify stores.`,
+        subsections: [
+          {
+            h3: '1. Install the Facebook and Instagram app',
+            content: `In Shopify admin, open the Shopify App Store and install the Facebook and Instagram app published by Meta. If an old pixel snippet is still pasted in your theme code, remove it first, or every event will be counted twice.`
+          },
+          {
+            h3: '2. Connect your business assets',
+            content: `The app walks you through choosing the Business account, ad account, Facebook page, Instagram account and pixel (dataset). Pick the assets owned by your Business account. If you see assets you do not recognise, stop and clean up access in Business Settings first.`
+          },
+          {
+            h3: '3. Set data sharing to maximum',
+            content: `The app offers several data sharing levels. Choose the maximum level. This turns on the Conversions API, which sends purchase events from Shopify's servers to Meta as well as from the browser. Browser-only tracking misses a share of purchases because of ad blockers and privacy settings; server events fill that gap, and Meta deduplicates the two.`
+          },
+          {
+            h3: '4. Verify your domain and sync the catalog',
+            content: `In Meta Business Settings, add and verify your store domain. Then confirm that the product catalog has synced from Shopify and that products show as approved. A synced catalog unlocks Advantage+ catalog ads and dynamic retargeting later.`
+          }
+        ]
+      },
+      {
+        id: 'pixel-tracking',
+        h2: 'Facebook ads pixel for Shopify: check your tracking',
+        content: `Do not spend a dollar until these five events fire correctly. Open Events Manager, choose your dataset and use Test events while you browse your store in another tab and place a test order (or use a 100% discount code).
+
+If Purchase fires twice per order, you still have an old pixel in the theme or a second app sending events. If Purchase does not fire at all, the checkout is not connected: re-run the app setup. Then check Event Match Quality in Events Manager; aim for 8 or higher on Purchase, which usually means email and phone are being passed from checkout.`,
+        table: {
+          headers: ['Event', 'When it fires', 'What to check'],
+          rows: [
+            ['PageView', 'Every page load', 'Fires once per page, from both browser and server'],
+            ['ViewContent', 'Product page view', 'Includes product ID and price'],
+            ['AddToCart', 'Add to cart click', 'Value and currency match the product'],
+            ['InitiateCheckout', 'Checkout starts', 'Fires on Shopify checkout, not only the cart page'],
+            ['Purchase', 'Order confirmed', 'Exactly one per order, correct value, deduplicated']
+          ]
+        }
+      },
+      {
+        id: 'first-campaign',
+        h2: 'How to run Facebook ads for a Shopify store: your first campaign',
+        content: `Keep the first campaign simple. Complexity is the most common reason new Shopify accounts never leave the learning phase.`,
+        subsections: [
+          {
+            h3: 'Campaign: Advantage+ sales, broad targeting',
+            content: `Create a sales campaign optimised for Purchase. For most Shopify stores with working tracking, let Advantage+ handle audiences: broad targeting in your selling countries, no stacked interests. Run one campaign, not five. If you want a controlled test, run a single manual sales campaign with broad targeting next to it.`
+          },
+          {
+            h3: 'Creative: 5 to 10 genuinely different concepts',
+            content: `Meta now uses your creative to decide who sees the ad, so variety matters more than targeting. Launch 5 to 10 different concepts: a customer testimonial, a product demo, a founder video, a problem and solution ad, a comparison, a static offer ad. Five versions of the same video with new headlines count as one concept. Our guide to Meta Andromeda explains why.`
+          },
+          {
+            h3: 'Landing page: match the ad',
+            content: `Send each ad to the page that continues its promise. A single hero product goes to its product page; a bundle offer goes to a bundle page; a problem-led ad goes to a landing page that opens with the same problem. If the product page loads slowly on mobile or hides the price and reviews below the fold, fix that before scaling; it is the work our Shopify agency does first on every account.`
+          }
+        ]
+      },
+      {
+        id: 'how-much',
+        h2: 'How much are Facebook ads for Shopify?',
+        content: `There is no fixed price; you set the budget and Meta's auction sets the cost per result. What matters is whether the budget buys enough purchases for Meta to learn. The aim is about 50 purchases a week per ad set or campaign, so the formula is: daily budget = target CPA x 50 / 7.
+
+That is the aim, not the minimum. The honest minimum for testing is a daily budget of 2 to 3 times your target cost per purchase, held for 7 days. Below that, results swing too much to read. Work out your target CPA from your margins first with the free ROAS calculator: break-even ROAS is 1 divided by your gross margin.`,
+        table: {
+          headers: ['Target cost per purchase', 'Testing minimum (2 to 3x CPA per day)', 'Learning aim (CPA x 50 / 7 per day)'],
+          rows: [
+            ['$20', '$40 to $60', 'about $143'],
+            ['$30', '$60 to $90', 'about $214'],
+            ['$40', '$80 to $120', 'about $286'],
+            ['$60', '$120 to $180', 'about $429']
+          ]
+        }
+      },
+      {
+        id: 'creative',
+        h2: 'Creative that sells on Shopify',
+        content: `Creative does most of the work on Meta now. The patterns that keep winning for our Shopify clients:`,
+        list: [
+          'A hook that makes the point in the first 5 to 8 seconds; the whole ad under 30 to 40 seconds.',
+          'UGC: real customers or creators using the product, filmed on a phone, not a studio.',
+          'Founder videos: why the product exists, said by the person who made it.',
+          'Proof on screen: reviews, ratings, "dermatologist recommended" style trust signals, and Amazon review screenshots if you sell there too.',
+          'An offer the viewer understands instantly: bundle, free shipping threshold, or first order discount.'
+        ],
+        subsections: [
+          {
+            h3: 'Research competitors in the Facebook ads library',
+            content: `Before briefing creative, search your product category and your competitors in the Meta Ads Library (often called the Facebook ads library). Ads that have run for 2 weeks or more are paying for themselves; study why they work and brief your own versions. Our Meta Ads Library case study shows the full process that took a skincare brand to $376K in 25 days.`
+          }
+        ]
+      },
+      {
+        id: 'reading-results',
+        h2: 'Reading results and scaling',
+        content: `Give a new campaign 7 days before big changes. Then read it on cost per purchase and blended MER (total revenue divided by total ad spend), not on clicks or platform ROAS alone.`,
+        subsections: [
+          {
+            h3: 'When to kill, iterate or scale',
+            list: [
+              'Kill an ad that has spent 2 to 3 times your target CPA with no purchase, or has CTR under 1% after a full day.',
+              'Iterate on ads with good CTR but weak conversion: test a new offer or landing page, not a new audience.',
+              'Scale a campaign that holds your target CPA for 3 to 4 days by raising budget about 20% at a time, or duplicate the winners into a CBO campaign with a budget of 3 to 5 times target CPA.'
+            ]
+          },
+          {
+            h3: 'What this looks like on a real account',
+            content: `For a fashion apparel brand, $2,210 in ad spend turned into $12,496 in sales in a single day once the winning creative, a clear offer and cost controls were in place. The full breakdown is in our fashion and jewelry case studies.`
+          }
+        ]
+      },
+      {
+        id: 'common-mistakes',
+        h2: 'Common mistakes',
+        content: `These come straight from the accounts we audit most weeks.`,
+        list: [
+          'Audience overlap: several ad sets targeting similar interests bid against each other and push your costs up. Check overlap in Ads Manager and consolidate.',
+          'Too many ad sets for the budget: each one needs purchases to learn. One campaign with 5 to 10 creatives beats ten starved ad sets.',
+          'Retargeting overload: separate retargeting campaigns at high frequency burn budget on people who would have bought anyway. Keep retargeting to about 10% to 15% of spend.',
+          'Manual bids on small budgets: bid caps and cost caps need volume. With a daily budget under 5 times your CPA, Meta often will not spend at all.',
+          'Judging ads after one day: daily results swing. Decide on 3 to 7 days of data unless an ad is clearly failing the kill rules.',
+          'Duplicate pixels: a theme snippet plus the app doubles every purchase and makes ROAS look twice as good as it is.'
+        ]
+      }
+    ],
+    faqs: [
+      {
+        question: 'How do I connect Facebook ads to Shopify?',
+        answer: 'Install the Facebook and Instagram app in Shopify, connect your Meta Business account, ad account, page and pixel, and set data sharing to maximum so the Conversions API sends purchase events from Shopify\'s servers.'
+      },
+      {
+        question: 'How much should I spend on Facebook ads for my Shopify store?',
+        answer: 'Spend enough to get steady purchase data every week. Start testing with a daily budget of about 2 to 3 times your target cost per purchase for 7 days, and aim for roughly 50 purchases a week per campaign as you scale.'
+      },
+      {
+        question: 'Do Facebook ads still work for Shopify stores?',
+        answer: 'Yes. Brand Scaling clients still scale on Meta, for example a fashion brand that turned $2,210 in ad spend into $12,496 in sales in one day, but creative volume and tracking quality matter more than before.'
+      },
+      {
+        question: 'Should I use Advantage+ sales campaigns for Shopify?',
+        answer: 'For most Shopify brands with working tracking and enough creative, yes. Keep a manual campaign only for controlled tests or cost-capped scaling.'
+      },
+      {
+        question: 'Do I still need to add the Facebook pixel code to my Shopify theme?',
+        answer: 'No. The Facebook and Instagram app installs the pixel and Conversions API for you. Pasting the pixel into the theme as well will double count your events.'
+      },
+      {
+        question: 'Can I see my competitors\' Shopify ads?',
+        answer: 'Yes. Search the brand or product in the Meta Ads Library to see all of its active Facebook and Instagram ads and the date each one started running.'
+      }
+    ]
   }
 ];

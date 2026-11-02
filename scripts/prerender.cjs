@@ -241,6 +241,7 @@ async function buildCaseRoutes() {
   const { editorialFor } = await import('../src/data/caseEditorial.js');
   const { allCaseSeo, caseSeo } = await import('../src/data/caseFacts.js');
   const { relatedCases, nicheForCase } = await import('../src/data/caseNiches.js');
+  const { relatedGuidesFor } = await import('../src/data/internalLinks.js');
   const seoMap = allCaseSeo(allCaseStudies);
   return allCaseStudies.map((cs) => {
     const id = cs.slug || cs.id || cs.shortcode;
@@ -266,6 +267,7 @@ async function buildCaseRoutes() {
         ${editorial ? `<h2>What We Did</h2><ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul><p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : ''}
         ${seo.takeaways.length ? `<h2>Key Takeaways</h2><ul>${seo.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>` : ''}
         ${caption.length ? `<h2>Original Post: ${escapeHtml(cleanSeoText(cs.title, 110))}</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
+        ${(() => { const g = relatedGuidesFor(`${cs.title} ${cs.fullCaption || ''} ${seo.niche.long}`, `/cases/${id}`); return g.length ? `<h2>Guides behind this result</h2><ul>${g.map((x) => `<li><a href="${x.href}">${escapeHtml(x.title)}</a></li>`).join('')}</ul>` : ''; })()}
         <h2>Related ${niche ? escapeHtml(niche.name) + ' ' : ''}Case Studies</h2>
         <ul>${related.map((r) => `<li><a href="/cases/${r.slug || r.id}">${escapeHtml(caseSeo(r).h1)}</a></li>`).join('')}</ul>
         <p>${niche ? `<a href="/case-studies/${niche.slug}">All ${escapeHtml(niche.name)} case studies</a> | ` : ''}<a href="/case-studies">All case studies</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
@@ -290,6 +292,7 @@ function makeRelated(all) {
 }
 
 let generatedCount = 0;
+let SITE_NAV_HTML = '';
 
 // llms-full.txt: the full text of every page as Markdown, for AI engines that
 // fetch one file instead of crawling (complements public/llms.txt).
@@ -393,10 +396,11 @@ function renderRoute(route) {
     <div class="prerendered-route-view" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">
       <h1>${route.h1}</h1>
       <div>${route.content}</div>
+      ${SITE_NAV_HTML}
     </div>
   `;
 
-  html = html.replace('<div id="root"></div>', () => `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><h1>${route.h1}</h1><div>${route.content}</div></div></noscript>`);
+  html = html.replace('<div id="root"></div>', () => `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><h1>${route.h1}</h1><div>${route.content}</div>${SITE_NAV_HTML}</div></noscript>`);
 
   fs.writeFileSync(fullOutPath, html, 'utf8');
   generatedCount++;
@@ -406,7 +410,9 @@ function renderRoute(route) {
   const { getRouteSchema, toJsonLd, ogImageFor } = await import('../src/data/pageSchemas.js');
   const caseRoutes = await buildCaseRoutes();
   const { blogPosts } = await import('../src/data/blogPosts.js');
-  const blogRoutes = blogPosts.map((p) => ({
+  const { linkifySegments, newLinkState, relatedGuidesFor, SERVICE_GUIDES, SERVICE_PATHS } = await import('../src/data/internalLinks.js');
+  const linkHtml = (text, state) => linkifySegments(text, state).map((seg) => (seg.href ? `<a href="${seg.href}">${escapeHtml(seg.text)}</a>` : escapeHtml(seg.text))).join('');
+  const blogRoutes = blogPosts.map((p) => { const ls = newLinkState(`/blog/${p.slug}`); return ({
     path: `/blog/${p.slug}`,
     outPath: `blog/${p.slug}/index.html`,
     title: p.titleTag,
@@ -420,16 +426,16 @@ function renderRoute(route) {
       ${p.definitionBox ? `<p><strong>${escapeHtml(p.definitionBox.term)}:</strong> ${escapeHtml(p.definitionBox.definition)}</p>` : ''}
       ${(p.sections || []).map((sec) => `
         <h2>${escapeHtml(sec.h2)}</h2>
-        ${String(sec.content || '').split(/\n\s*\n/).map((para) => `<p>${escapeHtml(para.trim())}</p>`).join('')}
-        ${sec.list ? `<ul>${sec.list.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}
-        ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${String(sub.content || '').split(/\n\s*\n/).filter(Boolean).map((para) => `<p>${escapeHtml(para.trim())}</p>`).join('')}${sub.list ? `<ul>${sub.list.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>` : ''}`).join('')}
+        ${String(sec.content || '').split(/\n\s*\n/).map((para) => `<p>${linkHtml(para.trim(), ls)}</p>`).join('')}
+        ${sec.list ? `<ul>${sec.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}
         ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
+        ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${String(sub.content || '').split(/\n\s*\n/).filter(Boolean).map((para) => `<p>${linkHtml(para.trim(), ls)}</p>`).join('')}${sub.list ? `<ul>${sub.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}`).join('')}
       `).join('')}
       ${(p.faqs || []).length ? `<h2>Frequently Asked Questions</h2>${p.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}` : ''}
       ${(p.relatedLinks || []).length ? `<h2>Go deeper</h2><ul>${p.relatedLinks.map((l) => `<li><a href="${l.href}">${escapeHtml(l.title)}</a>: ${escapeHtml(l.text)}</li>`).join('')}</ul>` : ''}
       <p><a href="/blog">Browse all ecommerce playbooks</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/case-studies">Explore 150+ verified case studies</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
     `
-  }));
+  }); });
 
   const { SERVICES, tiktokFaqs } = await import('../src/data/pageSchemas.js');
   routes.push(
@@ -542,6 +548,14 @@ function renderRoute(route) {
       <h2>All Playbooks &amp; Articles</h2>
       <ul>${blogPosts.map((p) => `<li><a href="/blog/${p.slug}">${escapeHtml(p.title)}</a>: ${escapeHtml(p.metaDescription)}</li>`).join('')}</ul>`;
 
+  // Guides strip under service and hub pages (mirrors <RelatedGuides />)
+  for (const [page, guidePaths] of Object.entries(SERVICE_GUIDES)) {
+    const r = routes.find((x) => x.path === SERVICE_PATHS[page]);
+    if (!r) continue;
+    const items = guidePaths.map((gp) => blogPosts.find((b) => `/blog/${b.slug}` === gp)).filter(Boolean);
+    r.content += `<h2>Guides from the Brand Scaling playbook</h2><ul>${items.map((b) => `<li><a href="/blog/${b.slug}">${escapeHtml(b.title)}</a></li>`).join('')}</ul>`;
+  }
+
   const allRoutes = [...routes, ...nicheRoutes, ...blogRoutes, ...caseRoutes].map((r) => {
     const graph = getRouteSchema(r.path);
     return {
@@ -550,6 +564,17 @@ function renderRoute(route) {
       schema: graph ? toJsonLd(graph).replace(/<\//g, '<\\/') : null
     };
   });
+  // Crawlable site navigation (mirrors the React header and footer, which crawlers
+  // that do not run JavaScript never see)
+  const navLinks = [
+    ['/', 'Home'], ['/services', 'Services'], ['/meta-ads-agency', 'Meta Ads Agency'], ['/tiktok-ads-agency', 'TikTok Ads Agency'],
+    ['/shopify-agency', 'Shopify Agency'], ['/growth', 'Growth Engine'], ['/viral-creatives', 'Viral Creatives'],
+    ['/case-studies', 'Case Studies'], ...CASE_NICHES.map((n) => [`/case-studies/${n.slug}`, `${n.name} Case Studies`]),
+    ['/roas-calculator', 'ROAS Calculator'], ['/blog', 'Blog'], ...blogPosts.map((b) => [`/blog/${b.slug}`, b.title]),
+    ['/about', 'About'], ['/contact', 'Contact'], ['/privacy-policy', 'Privacy Policy'], ['/terms', 'Terms of Service']
+  ];
+  SITE_NAV_HTML = `<nav aria-label="Site"><ul>${navLinks.map(([href, label]) => `<li><a href="${href}">${escapeHtml(label)}</a></li>`).join('')}</ul></nav>`;
+
   allRoutes.forEach(renderRoute);
   writeLlmsFull(allRoutes);
   console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.filter((r) => r.noindex).length} noindex, ${caseRoutes.filter((r) => !r.noindex && !r.inSitemapLists).length} canonicalised duplicates).`);

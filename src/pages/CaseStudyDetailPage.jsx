@@ -8,6 +8,7 @@ import { caseSeo, displayFigures } from '../data/caseFacts';
 import { relatedCases, nicheForCase } from '../data/caseNiches';
 import { isIndexableCase } from '../data/caseIndexing';
 import { cleanSeoText } from '../data/seoText';
+import { relatedGuidesFor, pageIdFromHref } from '../data/internalLinks';
 
 export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBooking }) {
   const [copied, setCopied] = useState(false);
@@ -46,6 +47,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
   const editorial = editorialFor(caseStudy);
   const seo = caseSeo(caseStudy);
   const niche = nicheForCase(caseStudy);
+  const guides = relatedGuidesFor(`${caseStudy.title} ${caseStudy.fullCaption || ''} ${seo.niche.long}`, `/cases/${caseStudy.slug}`);
 
   const handleCopyCaption = () => {
     if (caseStudy.fullCaption) {
@@ -396,6 +398,22 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           </div>
         </div>
       </section>
+
+      {/* Related guides: picked from what this post talks about */}
+      {guides.length > 0 && (
+        <section className="container" aria-label="Related guides" style={{ maxWidth: '980px', marginBottom: '50px' }}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center', marginBottom: '18px' }}>
+            Guides behind this result
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '14px' }}>
+            {guides.map((g) => (
+              <a key={g.href} href={g.href} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(pageIdFromHref(g.href)); }} style={{ display: 'block', background: 'rgba(255,87,34,0.06)', border: '1px solid rgba(255,87,34,0.25)', borderRadius: '14px', padding: '16px 18px', textDecoration: 'none', color: '#ffffff', fontWeight: 800, fontSize: '15px' }}>
+                {g.title} <ArrowRight size={14} style={{ verticalAlign: 'middle', color: '#ff7043' }} />
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Explore More Case Studies */}
       <section className="container" style={{ maxWidth: '980px', paddingBottom: '100px' }}>

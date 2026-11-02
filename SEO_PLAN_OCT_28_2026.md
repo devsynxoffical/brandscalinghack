@@ -226,6 +226,22 @@ Sitemap: 115 URLs (14 static, 5 niche hubs, 5 posts, 91 case studies). Prerender
 
 ---
 
+## 4f. Day 5 (Nov 2, 2026): new post and site-wide internal linking
+
+**New post: `/blog/facebook-ads-for-shopify`** (plan calendar item; "facebook ads for shopify", CPC $23). About 2,000 words: setup checklist, connecting the Facebook and Instagram app, maximum data sharing and Conversions API, a pixel event test table, the first Advantage+ campaign, a budget table (testing minimum vs learning aim), creative patterns, kill/iterate/scale rules, common mistakes and 6 FAQs. The brief's "$24,930 in 15 days" case does not exist in the case data, so the post cites a real one instead ($2,210 spend to $12,496 in one day, fashion).
+
+**Contextual internal linking engine** (`src/data/internalLinks.js`): one rule list of phrases mapped to target pages.
+- Blog posts: the first mention of each phrase links to its page (Meta Ads Library, Meta Andromeda, ROAS calculator, break-even ROAS, Shopify agency, UGC, TikTok, niche hubs, audience overlap, manual bidding and more), capped at 12 per post, never self-linking. About 11 in-text links in the new post.
+- Case pages: a "Guides behind this result" block with 3 guides picked from what the post talks about.
+- Service and hub pages (Meta, TikTok, Shopify, Growth, Creatives, ROAS calculator, Services, About, Case Studies): a "Guides from the Brand Scaling playbook" strip.
+- All of it is in the prerendered HTML too.
+
+**Crawlable site navigation:** the React header and footer are invisible to crawlers that do not run JavaScript, so Home, About, Contact, Privacy and Terms had 0 to 1 inbound links in the HTML. Every prerendered page now carries a site navigation block (services, case hubs, all posts, company pages). Audit result: 0 orphan URLs; every sitemap URL has at least 2 inbound links, median 5; core pages are linked from all 150 pages.
+
+Sitemap: 146 URLs.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

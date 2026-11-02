@@ -58,6 +58,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
             <div className="st-footer-group">
               <h3 className="st-footer-heading">Guides</h3>
               <a className="st-footer-link" href="/blog/meta-ads-library" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-meta-ads-library'); }}>Meta Ads Library Guide</a>
+              <a className="st-footer-link" href="/blog/facebook-ads-for-shopify" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-facebook-ads-for-shopify'); }}>Facebook Ads for Shopify</a>
               <a className="st-footer-link" href="/blog/meta-andromeda" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-meta-andromeda'); }}>Meta Andromeda Explained</a>
               <a className="st-footer-link" href="/blog/performance-marketing-agency" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-performance-marketing-agency'); }}>Performance Marketing</a>
               <a className="st-footer-link" href="/blog/what-is-roas" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog-what-is-roas'); }}>What Is ROAS?</a>

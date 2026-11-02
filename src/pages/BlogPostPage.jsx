@@ -23,6 +23,7 @@ import {
   Bookmark
 } from 'lucide-react';
 import { blogPostSchema, toJsonLd } from '../data/pageSchemas';
+import { linkifySegments, newLinkState, pageIdFromHref } from '../data/internalLinks';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
 function cleanBlogText(text) {
@@ -36,10 +37,25 @@ function cleanBlogText(text) {
     .replace(/(\w+)-(\w+)/g, '$1 $2');
 }
 
-function BlogList({ items }) {
+// Renders text with contextual internal links (first mention of each target only)
+function Linked({ text, state, onNavigate }) {
+  if (!state) return cleanBlogText(text);
+  return linkifySegments(cleanBlogText(text), state).map((seg, i) => (seg.href ? (
+    <a
+      key={i}
+      href={seg.href}
+      onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(pageIdFromHref(seg.href)); }}
+      style={{ color: '#ea580c', fontWeight: 650, textDecoration: 'underline', textUnderlineOffset: '3px', textDecorationColor: 'rgba(234, 88, 12, 0.4)' }}
+    >
+      {seg.text}
+    </a>
+  ) : <React.Fragment key={i}>{seg.text}</React.Fragment>));
+}
+
+function BlogList({ items, state, onNavigate }) {
   return (
     <ul style={{ margin: '16px 0 0', paddingLeft: '22px', color: '#334155', fontSize: '16px', lineHeight: 1.8 }}>
-      {items.map((it) => <li key={it} style={{ marginBottom: '6px' }}>{cleanBlogText(it)}</li>)}
+      {items.map((it) => <li key={it} style={{ marginBottom: '6px' }}><Linked text={it} state={state} onNavigate={onNavigate} /></li>)}
     </ul>
   );
 }
@@ -105,6 +121,8 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
   const [copied, setCopied] = useState(false);
 
   const post = blogPosts.find((p) => p.slug === slug) || blogPosts[0];
+  // One link budget per render, so each target is linked once per article
+  const linkState = newLinkState(`/blog/${post.slug}`);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -406,18 +424,18 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
               </h2>
               
               <div className="blog-drop-cap" style={{ fontSize: '16.5px', lineHeight: 1.88, color: '#334155', whiteSpace: 'pre-line' }}>
-                {cleanBlogText(section.content)}
+                <Linked text={section.content} state={linkState} onNavigate={onNavigate} />
               </div>
 
-              {section.list && <BlogList items={section.list} />}
+              {section.list && <BlogList items={section.list} state={linkState} onNavigate={onNavigate} />}
 
               {section.subsections && !section.subsectionsAfterTable && section.subsections.map((sub) => (
                 <div key={sub.h3} style={{ marginTop: '26px' }}>
                   <h3 style={{ fontSize: '19px', fontWeight: 850, color: '#0f172a', margin: '0 0 10px', lineHeight: 1.35 }}>{sub.h3}</h3>
                   {sub.content && (
-                    <div style={{ fontSize: '16px', lineHeight: 1.85, color: '#334155', whiteSpace: 'pre-line' }}>{cleanBlogText(sub.content)}</div>
+                    <div style={{ fontSize: '16px', lineHeight: 1.85, color: '#334155', whiteSpace: 'pre-line' }}><Linked text={sub.content} state={linkState} onNavigate={onNavigate} /></div>
                   )}
-                  {sub.list && <BlogList items={sub.list} />}
+                  {sub.list && <BlogList items={sub.list} state={linkState} onNavigate={onNavigate} />}
                 </div>
               ))}
 
@@ -453,9 +471,9 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
                 <div key={sub.h3} style={{ marginTop: '26px' }}>
                   <h3 style={{ fontSize: '19px', fontWeight: 850, color: '#0f172a', margin: '0 0 10px', lineHeight: 1.35 }}>{sub.h3}</h3>
                   {sub.content && (
-                    <div style={{ fontSize: '16px', lineHeight: 1.85, color: '#334155', whiteSpace: 'pre-line' }}>{cleanBlogText(sub.content)}</div>
+                    <div style={{ fontSize: '16px', lineHeight: 1.85, color: '#334155', whiteSpace: 'pre-line' }}><Linked text={sub.content} state={linkState} onNavigate={onNavigate} /></div>
                   )}
-                  {sub.list && <BlogList items={sub.list} />}
+                  {sub.list && <BlogList items={sub.list} state={linkState} onNavigate={onNavigate} />}
                 </div>
               ))}
 

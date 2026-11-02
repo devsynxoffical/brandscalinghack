@@ -31,6 +31,7 @@ import TermsPage from './pages/TermsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { blogPosts } from './data/blogPosts';
 import GlassWindowMarquee from './components/GlassWindowMarquee';
+import RelatedGuides from './components/RelatedGuides';
 
 const caseSeoMap = allCaseSeo(allCaseStudies);
 
@@ -452,6 +453,9 @@ function App() {
 
       {/* Main Dynamic Page View */}
       <main>{renderActivePage()}</main>
+
+      {/* Contextual guide links under service and hub pages */}
+      <RelatedGuides page={activePage} onNavigate={handleNavigate} />
 
       {/* 3D Glass Window Marquee Showcase (Above Footer) */}
       <GlassWindowMarquee />
