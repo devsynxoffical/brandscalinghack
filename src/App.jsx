@@ -259,7 +259,7 @@ function App() {
     updateCanonical(`${baseUrl}${pagePath}`);
 
     // Social image per page (case studies keep their own proof image)
-    let og = ogImageFor(pagePath.startsWith('/blog/') ? '/blog' : pagePath);
+    let og = ogImageFor(pagePath);
     if (activePage.startsWith('case-') && activePage !== 'case-studies') {
       const caseId = activePage.replace('case-', '');
       const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);

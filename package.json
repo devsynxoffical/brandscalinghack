@@ -11,7 +11,9 @@
     "indexnow": "node scripts/indexnow.cjs",
     "og-images": "node scripts/generate-og-images.cjs",
     "case-slugs": "node scripts/assign-case-slugs.cjs",
-    "seo:audit": "node scripts/seo-audit.cjs"
+    "seo:audit": "node scripts/seo-audit.cjs && node scripts/validate-structured-data.cjs",
+    "video-meta": "node scripts/generate-video-meta.cjs",
+    "structured-images": "node scripts/generate-structured-images.cjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",

@@ -40,7 +40,7 @@ for (const [u, h] of pages) {
   if (h1 !== 2) problems.push(`expected 1 H1 (2 incl. noscript), found ${h1}: ${u}`);
   const schema = h.match(/id="route-schema">([\s\S]*?)<\/script>/);
   if (!schema && u !== '/404') problems.push(`missing JSON-LD: ${u}`);
-  if (schema) { try { JSON.parse(schema[1]); } catch (e) { problems.push(`invalid JSON-LD: ${u}`); } }
+  if (schema) { try { JSON.parse(schema[1]); } catch { problems.push(`invalid JSON-LD: ${u}`); } }
   const body = h.slice(h.indexOf('prerendered-route-view'));
   for (const m of body.matchAll(/href="(\/[^"#?]*)"/g)) {
     const t = m[1] === '/' ? '/' : m[1].replace(/\/$/, '');

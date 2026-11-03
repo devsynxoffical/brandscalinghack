@@ -8,6 +8,7 @@ import { cleanSeoText, caseStudyDescription } from './seoText.js';
 import { CASE_NICHES, nicheBySlug, casesForNiche } from './caseNiches.js';
 import { isIndexableCase, canonicalCasePath } from './caseIndexing.js';
 import { caseSeo } from './caseFacts.js';
+import { CASE_VIDEO_META, isoDuration } from './caseVideoMeta.js';
 import { editorialFor } from './caseEditorial.js';
 
 export const BASE_URL = 'https://www.brandscalinghacks.com';
@@ -32,7 +33,19 @@ export const OG_IMAGES = {
   '/blog': `${BASE_URL}/og/blog.png`
 };
 
-export const ogImageFor = (path) => OG_IMAGES[path] || DEFAULT_OG_IMAGE;
+export const ogImageFor = (path) => {
+  if (OG_IMAGES[path]) return OG_IMAGES[path];
+  if (path && path.startsWith('/blog/')) return `${BASE_URL}/og/blog/${path.slice(6)}-16x9.png`;
+  return DEFAULT_OG_IMAGE;
+};
+
+// Three aspect ratios per post, as Google recommends for Article rich results
+export const blogImages = (slug) => ['16x9', '4x3', '1x1'].map((r) => `${BASE_URL}/og/blog/${slug}-${r}.png`);
+
+// ISO 8601 with time zone (Google recommends a time zone on dates in structured data)
+export const isoDate = (d) => (d && d.length === 10 ? `${d}T09:00:00-05:00` : d);
+
+export const LOGO = { '@type': 'ImageObject', '@id': `${BASE_URL}/#logo`, url: `${BASE_URL}/brandscaling-logo-512.png`, width: 512, height: 512, caption: 'Brand Scaling' };
 
 const breadcrumb = (items) => ({
   '@type': 'BreadcrumbList',
@@ -478,6 +491,8 @@ const staticSchemas = {
       operatingSystem: 'All',
       browserRequirements: 'Requires JavaScript',
       offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      isAccessibleForFree: true,
+      featureList: ['Break-even ROAS', 'Contribution margin per order', 'Target CPA', 'Monthly net profit model'],
       publisher: { '@id': ORG_ID },
       description: 'Interactive ecommerce ROAS calculator to calculate break-even return on ad spend, contribution margins, and net profit per order.'
     },
@@ -488,21 +503,21 @@ const staticSchemas = {
   '/about': () => [
     webPage({
       path: '/about',
-      type: 'AboutPage',
+      type: ['ProfilePage', 'AboutPage'],
       name: 'Gaurav Kapoor: Founder of Brand Scaling, DTC Growth Agency',
       description: 'Gaurav Kapoor founded Brand Scaling after 12+ years in ecommerce: $50M+ in Meta ad spend managed and 150+ DTC case studies. Meet the team in New York.',
       speakable: ['h1'],
-      extra: { about: { '@id': FOUNDER_ID } }
+      extra: { about: { '@id': FOUNDER_ID }, mainEntity: { '@id': FOUNDER_ID }, dateCreated: isoDate('2026-10-22'), dateModified: isoDate('2026-11-03') }
     }),
     {
       '@type': 'Person',
       '@id': FOUNDER_ID,
       name: 'Gaurav Kapoor',
       alternateName: ['Gaurav Ecom', 'Gaurav'],
-      jobTitle: 'Founder & Chief Growth Architect',
+      jobTitle: 'Founder, Brand Scaling',
       worksFor: { '@id': ORG_ID },
       url: `${BASE_URL}/about`,
-      image: `${BASE_URL}/team/gaurav.webp`,
+      image: { '@type': 'ImageObject', url: `${BASE_URL}/team/gaurav.webp`, caption: 'Gaurav Kapoor, founder of Brand Scaling' },
       description: 'Ecommerce and customer acquisition expert with 12+ years of experience and $50M+ in Meta and TikTok ad spend managed for DTC brands.',
       knowsAbout: ['Performance Marketing', 'Meta Ads', 'TikTok Ads', 'Direct Response Marketing', 'Shopify CRO', 'DTC Ecommerce Growth', 'ROAS Optimization'],
       sameAs: [
@@ -565,6 +580,9 @@ export function caseNicheSchema(niche) {
   ];
 }
 
+const blogWordCount = (p) => [p.directAnswer, ...(p.sections || []).flatMap((s) => [s.content, ...(s.list || []), ...(s.subsections || []).flatMap((u) => [u.content || '', ...(u.list || [])]), ...(s.table ? s.table.rows.flat() : [])]), ...(p.faqs || []).map((f) => f.answer)]
+  .join(' ').split(/\s+/).filter(Boolean).length;
+
 export function blogPostSchema(post) {
   const url = `${BASE_URL}/blog/${post.slug}`;
   const graph = [
@@ -573,9 +591,12 @@ export function blogPostSchema(post) {
       '@id': `${url}#article`,
       headline: post.title,
       description: post.metaDescription,
-      image: ogImageFor('/blog'),
-      datePublished: post.publishDate,
-      dateModified: post.updatedDate || post.publishDate,
+      image: blogImages(post.slug),
+      thumbnailUrl: blogImages(post.slug)[0],
+      datePublished: isoDate(post.publishDate),
+      dateModified: isoDate(post.updatedDate || post.publishDate),
+      wordCount: blogWordCount(post),
+      articleSection: post.category,
       inLanguage: 'en-US',
       keywords: [post.primaryKeyword, ...(post.secondaryKeywords || [])].filter(Boolean).join(', '),
       author: {
@@ -586,7 +607,7 @@ export function blogPostSchema(post) {
         url: `${BASE_URL}/about`,
         sameAs: [post.author?.youtubeUrl, post.author?.instagramUrl, post.author?.linkedinUrl].filter(Boolean)
       },
-      publisher: { '@id': ORG_ID },
+      publisher: { '@type': 'Organization', '@id': ORG_ID, name: 'Brand Scaling', url: `${BASE_URL}/`, logo: LOGO },
       isPartOf: { '@id': WEBSITE_ID },
       mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.blog-direct-answer'] }
@@ -596,7 +617,7 @@ export function blogPostSchema(post) {
   if (post.video) {
     const v = post.video;
     const thumb = `https://i.ytimg.com/vi/${v.youtubeId}/maxresdefault.jpg`;
-    graph[0].image = [thumb, ogImageFor('/blog')];
+    graph[0].image = [...blogImages(post.slug), thumb];
     if (v.uploadDate) {
       graph[0].video = { '@id': `${url}#video` };
       graph.push({
@@ -605,7 +626,7 @@ export function blogPostSchema(post) {
         name: v.title,
         description: v.description,
         thumbnailUrl: thumb,
-        uploadDate: v.uploadDate,
+        uploadDate: isoDate(v.uploadDate),
         duration: v.duration,
         embedUrl: `https://www.youtube.com/embed/${v.youtubeId}`,
         contentUrl: `https://www.youtube.com/watch?v=${v.youtubeId}`,
@@ -648,11 +669,11 @@ export function caseStudySchema(cs) {
         { '@type': 'Thing', name: 'Meta ads (Facebook and Instagram advertising)' }
       ],
       keywords: [`${seo.niche.label.toLowerCase()} case study`, `${seo.niche.long} meta ads`, 'facebook ads case study', 'ecommerce case study'].join(', '),
-      datePublished: CASE_STUDY_PUBLISH_DATE,
-      dateModified: CASE_STUDY_PUBLISH_DATE,
+      datePublished: isoDate(CASE_STUDY_PUBLISH_DATE),
+      dateModified: isoDate(CASE_STUDY_PUBLISH_DATE),
       inLanguage: 'en-US',
-      author: { '@id': FOUNDER_ID },
-      publisher: { '@id': ORG_ID },
+      author: { '@type': 'Person', '@id': FOUNDER_ID, name: 'Gaurav Kapoor', url: `${BASE_URL}/about` },
+      publisher: { '@type': 'Organization', '@id': ORG_ID, name: 'Brand Scaling', url: `${BASE_URL}/`, logo: LOGO },
       isPartOf: { '@id': WEBSITE_ID },
       mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       ...(cs.instagramUrl ? { sameAs: cs.instagramUrl } : {})
@@ -667,10 +688,13 @@ export function caseStudySchema(cs) {
       description,
       thumbnailUrl: image,
       contentUrl: `${BASE_URL}${cs.videoUrl}`,
-      uploadDate: CASE_STUDY_PUBLISH_DATE,
-      publisher: { '@id': ORG_ID },
+      uploadDate: isoDate(CASE_STUDY_PUBLISH_DATE),
+      ...(CASE_VIDEO_META[cs.videoUrl] ? { duration: isoDuration(CASE_VIDEO_META[cs.videoUrl].seconds), width: CASE_VIDEO_META[cs.videoUrl].width, height: CASE_VIDEO_META[cs.videoUrl].height } : {}),
+      isFamilyFriendly: true,
+      publisher: { '@type': 'Organization', '@id': ORG_ID, name: 'Brand Scaling', logo: LOGO },
       inLanguage: 'en-US'
     });
+    graph[0].video = { '@id': `${url}#video` };
   }
   return graph;
 }

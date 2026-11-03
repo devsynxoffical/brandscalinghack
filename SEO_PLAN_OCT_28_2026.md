@@ -257,6 +257,28 @@ Measure in 14 and 28 days: position of the BFCM post (target: page 1 before Nov 
 
 ---
 
+## 4h. Day 6, second pass (Nov 3, 2026): rich snippets
+
+Structured data on all 152 pages now meets Google's required and recommended fields for each rich result type, verified by `scripts/validate-structured-data.cjs` (part of `npm run seo:audit`): 0 errors, 0 warnings.
+
+| Type | Pages | Rich result it enables | Upgrade today |
+|---|---|---|---|
+| Organization + ProfessionalService | all | Logo and knowledge panel | Raster 512x512 PNG logo (was SVG), email and ContactPoint using the site's real address team@brandscalinghacks.com |
+| BreadcrumbList | 151 | Breadcrumb trail instead of URL in results | Validated positions and names on every page |
+| BlogPosting | 7 | Article rich result, Top stories eligibility | 3 image ratios per post (16:9, 4:3, 1:1, generated), ISO dates with time zone, wordCount, articleSection, inline author and publisher logo |
+| Article (case studies) | 126 | Article rich result | ISO dates, inline author and publisher logo, linked to the video |
+| VideoObject (case studies) | 79 | Video rich results, video tab | Real duration, width and height read from each MP4 with ffprobe; ISO uploadDate |
+| ProfilePage | /about | Profile page rich result | About is now ProfilePage with the founder as mainEntity; founder job title made consistent sitewide |
+| FAQPage | 13 | Bing and AI answers (Google shows FAQ results only for gov/health sites since 2023) | Kept and validated |
+| WebApplication | /roas-calculator | none without real ratings | isAccessibleForFree, featureList; deliberately no aggregateRating (self-serving reviews are not eligible and risk a manual action) |
+| ItemList / CollectionPage | hubs | Supports sitelinks and carousels | Validated positions and URLs |
+
+Open: the Meta Ads Library post's video gets VideoObject + chapter Clips (key moments) as soon as the YouTube upload date is added to `video.uploadDate` in `src/data/blogPosts.js`.
+
+Check in Search Console > Enhancements (Breadcrumbs, Videos, Profile page) over the next 1 to 2 weeks as Google recrawls.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

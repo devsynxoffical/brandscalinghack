@@ -78,7 +78,7 @@ ${all.map(urlBlock).join('\n')}
       <guid isPermaLink="true">${BASE}/blog/${p.slug}</guid>
       <pubDate>${new Date((p.updatedDate || p.publishDate) + 'T09:00:00Z').toUTCString()}</pubDate>
       <description>${escapeXml(p.metaDescription || '')}</description>
-      <author>hello@brandscalinghacks.com (${escapeXml((p.author && p.author.name) || 'Gaurav Kapoor')})</author>
+      <author>team@brandscalinghacks.com (${escapeXml((p.author && p.author.name) || 'Gaurav Kapoor')})</author>
     </item>`).join('\n');
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
