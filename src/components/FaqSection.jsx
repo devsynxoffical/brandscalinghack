@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Plus, Minus, ArrowRight, Sparkles, HelpCircle } from 'lucide-react';
 import { getRouteSchema, toJsonLd, homeFaqs as faqs } from '../data/pageSchemas';
+import LinkedText from '../components/LinkedText';
+import { newLinkState } from '../data/internalLinks';
 
-export default function FaqSection({ onOpenBooking }) {
+export default function FaqSection({ onOpenBooking, onNavigate }) {
+  const faqLinks = newLinkState('/', 8);
   const [openFaq, setOpenFaq] = useState(0);
 
   React.useEffect(() => {
@@ -69,7 +72,7 @@ export default function FaqSection({ onOpenBooking }) {
 
                 {isOpen && (
                   <div className="faq-answer-content">
-                    <p>{faq.answer}</p>
+                    <p><LinkedText text={faq.answer} state={faqLinks} onNavigate={onNavigate} /></p>
                   </div>
                 )}
               </div>

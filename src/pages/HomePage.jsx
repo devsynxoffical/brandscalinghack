@@ -66,7 +66,7 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
       />
 
       {/* 10 — FREQUENTLY ASKED QUESTIONS (Interactive Accordion) */}
-      <FaqSection onOpenBooking={onOpenBooking} />
+      <FaqSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
 
       {/* KNOCKOUT 3D TYPOGRAPHY & AUTHORITY SCALE BANNER (Directly Upper Footer) */}
       <KnockoutAuthorityBannerSection onOpenBooking={onOpenBooking} />

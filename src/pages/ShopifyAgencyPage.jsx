@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { ShoppingBag, Zap, CheckCircle2, ArrowRight, TrendingUp, ShieldCheck, ChevronDown, ChevronUp, Layers, Gauge, Target } from 'lucide-react';
 import { getRouteSchema, toJsonLd, shopifyFaqs as faqs } from '../data/pageSchemas';
+import LinkedText from '../components/LinkedText';
+import { newLinkState } from '../data/internalLinks';
 
 export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
+  const faqLinks = newLinkState('/shopify-agency', 6);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
   useEffect(() => {
@@ -196,7 +199,7 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
                 </button>
                 {openFaqIndex === idx && (
                   <div style={{ padding: '0 20px 20px', color: '#cbd5e1', fontSize: '14px', lineHeight: 1.6, borderTop: '1px solid #191922', paddingTop: '14px' }}>
-                    {faq.answer}
+                    <LinkedText text={faq.answer} state={faqLinks} onNavigate={onNavigate} />
                   </div>
                 )}
               </div>

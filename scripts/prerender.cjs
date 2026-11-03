@@ -141,8 +141,8 @@ const routes = [
   {
     path: '/roas-calculator',
     outPath: 'roas-calculator/index.html',
-    title: 'Free ROAS Calculator for Ecommerce | Brand Scaling',
-    description: 'Free ROAS calculator for ecommerce: enter price, product cost and CAC to get your break-even ROAS and profit per order before you scale ad spend.',
+    title: 'Free Ecommerce ROAS Calculator & Break-Even ROAS',
+    description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.',
     h1: 'Free ROAS Calculator for Ecommerce',
     content: `
       <p>Model your product pricing, product cost (COGS), and target customer acquisition cost (CAC) to calculate break-even ROAS and monthly net profit before scaling paid ad spend.</p>
@@ -156,8 +156,8 @@ const routes = [
   {
     path: '/about',
     outPath: 'about/index.html',
-    title: 'About Brand Scaling & Founder Gaurav Kapoor | Brand Scaling',
-    description: 'Meet Gaurav Kapoor and the Brand Scaling team: 12+ years in ecommerce, $50M+ in Meta ad spend managed and 150+ DTC brands scaled past 7 and 8 figures.',
+    title: 'Gaurav Kapoor: Founder of Brand Scaling, DTC Growth Agency',
+    description: 'Gaurav Kapoor founded Brand Scaling after 12+ years in ecommerce: $50M+ in Meta ad spend managed and 150+ DTC case studies. Meet the team in New York.',
     h1: 'About Brand Scaling and Founder Gaurav Kapoor',
     content: `
       <p>Brand Scaling (legal name Brand Scaling Hacks LLC) is a DTC ecommerce growth agency that scales Shopify brands with Meta and TikTok ads, direct-response creative and conversion rate optimization, founded by Gaurav Kapoor.</p>
@@ -442,8 +442,8 @@ function renderRoute(route) {
     {
       path: '/tiktok-ads-agency',
       outPath: 'tiktok-ads-agency/index.html',
-      title: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
-      description: 'TikTok ads agency for DTC ecommerce: creator ads, Spark Ads, TikTok Shop and affiliates run from one creative engine with Meta. Book a TikTok ads audit.',
+      title: 'TikTok Ads & TikTok Shop Scaling Agency | Brand Scaling',
+      description: 'TikTok Shop scaling services and TikTok ads for DTC brands: creator ads, Spark Ads, affiliates and GMV Max, run with your Meta engine. Book a TikTok audit.',
       h1: 'TikTok Ads Agency for Ecommerce Brands: Creator Ads, Spark Ads &amp; TikTok Shop',
       content: `
         <p>TikTok ads, Spark Ads, creator affiliates and TikTok Shop run as one system with the creative, the tracking and the Shopify store. Built by the team behind $50M+ in paid social spend and 150+ verified case studies.</p>
@@ -452,7 +452,7 @@ function renderRoute(route) {
         <h2>Three Pillars</h2>
         <ul>
           <li>Native creator content briefed on a 45+ hook and angle matrix, with organic winners run as Spark Ads.</li>
-          <li>TikTok Shop and affiliates: listings, creator recruitment, commissions, sample seeding and GMV Max.</li>
+          <li>TikTok Shop scaling services: listings, affiliate creator recruitment, commissions, sample seeding and GMV Max.</li>
           <li>Tracking and unit economics: TikTok Pixel and Events API validated against Shopify orders, blended MER across TikTok and Meta.</li>
         </ul>
         <h2>How We Scale a TikTok Ads Account in 90 Days</h2>
@@ -547,6 +547,17 @@ function renderRoute(route) {
       <p>Field-tested growth insights, algorithmic teardowns, and unit economics benchmarks from managing $50M+ in ad spend.</p>
       <h2>All Playbooks &amp; Articles</h2>
       <ul>${blogPosts.map((p) => `<li><a href="/blog/${p.slug}">${escapeHtml(p.title)}</a>: ${escapeHtml(p.metaDescription)}</li>`).join('')}</ul>`;
+
+  // FAQ copy with contextual links on home and service pages (mirrors the React FAQ sections)
+  const pageFaqs = await import('../src/data/pageSchemas.js');
+  const FAQ_BY_PATH = { '/': pageFaqs.homeFaqs, '/growth': pageFaqs.growthFaqs, '/meta-ads-agency': pageFaqs.metaAdsFaqs, '/tiktok-ads-agency': pageFaqs.tiktokFaqs, '/shopify-agency': pageFaqs.shopifyFaqs, '/roas-calculator': pageFaqs.roasFaqs };
+  for (const [fp, faqs] of Object.entries(FAQ_BY_PATH)) {
+    const r = routes.find((x) => x.path === fp);
+    if (!r || !faqs) continue;
+    r.content = r.content.replace(/<h2>TikTok Ads Agency FAQ<\/h2>[\s\S]*?(?=<p><a href="\/meta-ads-agency">)/, '');
+    const ls = newLinkState(fp, 8);
+    r.content += `<h2>Frequently Asked Questions</h2>${faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}`;
+  }
 
   // Guides strip under service and hub pages (mirrors <RelatedGuides />)
   for (const [page, guidePaths] of Object.entries(SERVICE_GUIDES)) {

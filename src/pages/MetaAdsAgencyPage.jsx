@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Megaphone, ArrowRight, ChevronDown, ChevronUp, FlaskConical, Layers, Activity, CheckCircle2, XCircle } from 'lucide-react';
 import { getRouteSchema, toJsonLd, metaAdsFaqs as faqs } from '../data/pageSchemas';
+import LinkedText from '../components/LinkedText';
+import { newLinkState } from '../data/internalLinks';
 
 const proofStats = [
   { value: '$50M+', label: 'Meta ad spend managed', note: 'Across 30+ ecommerce niches' },
@@ -42,6 +44,7 @@ const phases = [
 ];
 
 export default function MetaAdsAgencyPage({ onNavigate, onOpenBooking }) {
+  const faqLinks = newLinkState('/meta-ads-agency', 6);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
   useEffect(() => {
@@ -276,7 +279,7 @@ export default function MetaAdsAgencyPage({ onNavigate, onOpenBooking }) {
                 </button>
                 {openFaqIndex === idx && (
                   <div style={{ padding: '14px 20px 20px', color: '#cbd5e1', fontSize: '14px', lineHeight: 1.6, borderTop: '1px solid #191922' }}>
-                    {faq.answer}
+                    <LinkedText text={faq.answer} state={faqLinks} onNavigate={onNavigate} />
                   </div>
                 )}
               </div>

@@ -309,8 +309,8 @@ const staticSchemas = {
   '/tiktok-ads-agency': () => [
     webPage({
       path: '/tiktok-ads-agency',
-      name: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
-      description: 'TikTok ads agency for DTC ecommerce: creator ads, Spark Ads, TikTok Shop and affiliates run from one creative engine with Meta. Book a TikTok ads audit.',
+      name: 'TikTok Ads & TikTok Shop Scaling Agency | Brand Scaling',
+      description: 'TikTok Shop scaling services and TikTok ads for DTC brands: creator ads, Spark Ads, affiliates and GMV Max, run with your Meta engine. Book a TikTok audit.',
       speakable: ['h1']
     }),
     {
@@ -369,6 +369,16 @@ const staticSchemas = {
       }
     }),
     breadcrumb([['Home', '/'], ['Contact', '/contact']])
+  ],
+
+  '/privacy-policy': () => [
+    webPage({ path: '/privacy-policy', name: 'Privacy Policy | Brand Scaling', description: 'Privacy policy and data protection disclosures for Brand Scaling Hacks LLC.' }),
+    breadcrumb([['Home', '/'], ['Privacy Policy', '/privacy-policy']])
+  ],
+
+  '/terms': () => [
+    webPage({ path: '/terms', name: 'Terms of Service | Brand Scaling', description: 'Terms of service and engagement details for Brand Scaling Hacks LLC performance marketing.' }),
+    breadcrumb([['Home', '/'], ['Terms of Service', '/terms']])
   ],
 
   '/growth': () => [
@@ -456,8 +466,8 @@ const staticSchemas = {
   '/roas-calculator': () => [
     webPage({
       path: '/roas-calculator',
-      name: 'Free ROAS Calculator for Ecommerce | Brand Scaling',
-      description: 'Free ROAS calculator for ecommerce: enter price, product cost and CAC to get your break-even ROAS and profit per order before you scale ad spend.'
+      name: 'Free Ecommerce ROAS Calculator & Break-Even ROAS',
+      description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.'
     }),
     {
       '@type': 'WebApplication',
@@ -479,8 +489,8 @@ const staticSchemas = {
     webPage({
       path: '/about',
       type: 'AboutPage',
-      name: 'About Brand Scaling & Founder Gaurav Kapoor | Brand Scaling',
-      description: 'Meet Gaurav Kapoor and the Brand Scaling team: 12+ years in ecommerce, $50M+ in Meta ad spend managed and 150+ DTC brands scaled past 7 and 8 figures.',
+      name: 'Gaurav Kapoor: Founder of Brand Scaling, DTC Growth Agency',
+      description: 'Gaurav Kapoor founded Brand Scaling after 12+ years in ecommerce: $50M+ in Meta ad spend managed and 150+ DTC case studies. Meet the team in New York.',
       speakable: ['h1'],
       extra: { about: { '@id': FOUNDER_ID } }
     }),

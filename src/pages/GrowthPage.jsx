@@ -24,8 +24,11 @@ import {
   ArrowUpRight
 } from 'lucide-react';
 import { getRouteSchema, toJsonLd, growthFaqs } from '../data/pageSchemas';
+import LinkedText from '../components/LinkedText';
+import { newLinkState } from '../data/internalLinks';
 
-export default function GrowthPage({ onOpenBooking }) {
+export default function GrowthPage({ onOpenBooking, onNavigate }) {
+  const faqLinks = newLinkState('/growth', 6);
   const [hoveredChainCard, setHoveredChainCard] = useState(null);
 
   useEffect(() => {
@@ -1115,7 +1118,7 @@ export default function GrowthPage({ onOpenBooking }) {
                 <summary style={{ cursor: 'pointer', fontSize: '1.02rem', fontWeight: 800, color: '#0f172a', listStyle: 'none' }}>
                   {faq.question}
                 </summary>
-                <p style={{ margin: '12px 0 0', fontSize: '0.95rem', color: '#475569', lineHeight: 1.7 }}>{faq.answer}</p>
+                <p style={{ margin: '12px 0 0', fontSize: '0.95rem', color: '#475569', lineHeight: 1.7 }}><LinkedText text={faq.answer} state={faqLinks} onNavigate={onNavigate} color="#ea580c" /></p>
               </details>
             ))}
           </div>

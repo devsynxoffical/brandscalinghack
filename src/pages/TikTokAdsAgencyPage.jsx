@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Megaphone, ArrowRight, ChevronDown, ChevronUp, FlaskConical, Layers, Activity, CheckCircle2, XCircle } from 'lucide-react';
 import { getRouteSchema, toJsonLd, tiktokFaqs as faqs } from '../data/pageSchemas';
+import LinkedText from '../components/LinkedText';
+import { newLinkState } from '../data/internalLinks';
 
 const proofStats = [
   { value: '$50M+', label: 'Paid social spend managed', note: 'Across 30+ ecommerce niches' },
@@ -24,7 +26,7 @@ const pillars = [
   },
   {
     icon: Layers,
-    title: 'TikTok Shop & Affiliates',
+    title: 'TikTok Shop Scaling Services',
     text: 'TikTok Shop listings, creator affiliate recruitment and commission structure, sample seeding and GMV Max campaigns, connected to the same offer and margin model as your Shopify store.'
   },
   {
@@ -42,6 +44,7 @@ const phases = [
 ];
 
 export default function TikTokAdsAgencyPage({ onNavigate, onOpenBooking }) {
+  const faqLinks = newLinkState('/tiktok-ads-agency', 6);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
   useEffect(() => {
@@ -276,7 +279,7 @@ export default function TikTokAdsAgencyPage({ onNavigate, onOpenBooking }) {
                 </button>
                 {openFaqIndex === idx && (
                   <div style={{ padding: '14px 20px 20px', color: '#cbd5e1', fontSize: '14px', lineHeight: 1.6, borderTop: '1px solid #191922' }}>
-                    {faq.answer}
+                    <LinkedText text={faq.answer} state={faqLinks} onNavigate={onNavigate} />
                   </div>
                 )}
               </div>

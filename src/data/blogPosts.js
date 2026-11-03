@@ -10,8 +10,8 @@ export const blogPosts = [
     primaryKeyword: 'bfcm',
     secondaryKeywords: ['black friday ads', 'what is bfcm in marketing', 'bfcm dates 2026', 'best bfcm ads'],
     publishDate: '2026-10-22',
-    updatedDate: '2026-10-26',
-    readTime: '11 min read',
+    updatedDate: "2026-11-03",
+    readTime: "15 min read",
     relatedLinks: [
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Get the BFCM creative bank and campaign structure built for you.' },
       { href: '/case-studies/apparel-fashion', title: 'Apparel & Fashion Case Studies', text: 'The 4-day BFCM peak result: $59,241 from $16,630 at 3.56x ROAS.' },
@@ -42,6 +42,13 @@ export const blogPosts = [
       { id: 'phase-3-scale', text: 'Phase 3 (26 to 30 Nov): Scale without burning margin' },
       { id: 'winning-offers', text: 'BFCM offers that work on Meta' },
       { id: 'ad-patterns', text: 'What the best BFCM ads have in common' },
+      { id: 'bfcm-ad-strategy', text: "BFCM ad strategy: the campaign structure that holds CPA" },
+      { id: 'bfcm-budget-plan', text: "BFCM budget plan by week" },
+      { id: 'bfcm-retargeting', text: "Retargeting during Black Friday" },
+      { id: 'bfcm-creative-checklist', text: "BFCM creative checklist" },
+      { id: 'bfcm-results', text: "BFCM and Q4 results from client accounts" },
+      { id: 'after-bfcm', text: "After Cyber Monday: December momentum" },
+      { id: 'bfcm-mistakes', text: "BFCM mistakes that cost the most" },
       { id: 'faq-section', text: 'Frequently asked questions' }
     ],
     sections: [
@@ -129,6 +136,145 @@ Social proof overlay: Trust badges (10,000+ 5 Star Reviews, As Seen in Vogue).
 Clear price anchoring: Show the regular price crossed out next to the bundle price.
 
 Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confusing multi links.`
+      },
+      {
+        "id": "bfcm-ad-strategy",
+        "h2": "BFCM ad strategy: the campaign structure that holds CPA",
+        "content": "Most BFCM accounts break in the same way: ten new campaigns launched on Thanksgiving, all in learning, all competing for the same people at the most expensive CPMs of the year. The structure below is the one we run for Shopify clients, and it is built before the peak so nothing important is learning on Black Friday.",
+        "subsections": [
+          {
+            "h3": "1. One Advantage+ sales campaign for scale",
+            "content": "Your proven evergreen ads plus the 5 to 10 best BFCM creatives from Phase 1, broad targeting, one budget. This campaign takes most of the peak budget because it has the most purchase data behind it."
+          },
+          {
+            "h3": "2. One cost-capped or bid-capped campaign for margin",
+            "content": "Duplicate your best ad sets with a cost cap at your break even CPA. When CPMs spike, Meta simply spends less here instead of buying expensive, unprofitable sales. It is the safety valve that protects contribution margin."
+          },
+          {
+            "h3": "3. Catalog retargeting, kept small",
+            "content": "Dynamic product ads for site visitors and cart abandoners from the last 30 days, at roughly 10% to 15% of spend. Show the BFCM offer, not the product at full price."
+          },
+          {
+            "h3": "4. Email and SMS in sync with ads",
+            "content": "Your early access list from Phase 2 is the cheapest revenue of the weekend. Send the offer to email and SMS first, then let Meta reach the people who did not open. Exclude recent purchasers from prospecting so you do not pay to reach your own customers."
+          }
+        ]
+      },
+      {
+        "id": "bfcm-budget-plan",
+        "h2": "BFCM budget plan: how to split spend across November",
+        "content": "Budget follows the calendar, not the other way round. This is how we usually split a brand's November Meta budget; adjust the shares to your margins and inventory. Never raise a campaign's budget by more than about 20% to 30% in one step, even on Black Friday, or it re-enters learning at the worst moment.",
+        "table": {
+          "headers": [
+            "Window",
+            "Share of November budget",
+            "What the money buys"
+          ],
+          "rows": [
+            [
+              "3 to 13 Nov",
+              "10% to 15%",
+              "Creative testing at low budgets, finding the 5 to 10 winners"
+            ],
+            [
+              "16 to 25 Nov",
+              "20% to 25%",
+              "Early access offers, list building, warming audiences"
+            ],
+            [
+              "26 to 30 Nov (Thanksgiving to Cyber Monday)",
+              "45% to 55%",
+              "Scaling proven ads in the Advantage+ and cost-capped campaigns"
+            ],
+            [
+              "1 to 4 Dec",
+              "10% to 15%",
+              "Extended offers, last chance creative, December gifting"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bfcm-retargeting",
+        "h2": "Retargeting during Black Friday without burning budget",
+        "content": "Retargeting looks brilliant in Ads Manager during BFCM because it gets credit for people who were going to buy anyway. Keep it honest:",
+        "list": [
+          "Cap retargeting at about 10% to 15% of total spend and judge it on blended MER, not platform ROAS.",
+          "Use catalog ads for visitors and cart abandoners from the last 7 to 30 days; skip ad sets for 1 to 3 day windows that are too small to deliver.",
+          "Change the message, not just the audience: lead with the deadline and the bundle, because these people already know the product.",
+          "Exclude buyers from the last 30 days, and anyone who purchased during early access."
+        ]
+      },
+      {
+        "id": "bfcm-creative-checklist",
+        "h2": "BFCM creative checklist",
+        "content": "Before Thanksgiving, every ad in the scale campaign should pass this list.",
+        "list": [
+          "The offer is readable in the first 2 seconds, with sound off.",
+          "The deadline is explicit: \"ends Cyber Monday\" or a date.",
+          "The product is shown in use, not just on a white background.",
+          "Social proof is on screen: review count, rating or a customer clip.",
+          "The regular price is shown next to the BFCM price.",
+          "One call to action, pointing to a landing page that repeats the same offer.",
+          "At least 5 genuinely different concepts are live, so Meta has variety to choose from when CPMs rise."
+        ]
+      },
+      {
+        "id": "bfcm-results",
+        "h2": "BFCM and Q4 results from our client accounts",
+        "content": "These are published results from Brand Scaling client accounts during Q4 and BFCM. Each has its own case study with the dashboard proof.",
+        "table": {
+          "headers": [
+            "Brand",
+            "Result",
+            "Window",
+            "Detail"
+          ],
+          "rows": [
+            [
+              "Dropshipping brand, early BFCM offers",
+              "$112,866",
+              "13 days",
+              "$28,391 Meta ad spend, about 3.98x ROAS"
+            ],
+            [
+              "Women's fashion brand",
+              "$59,241",
+              "BFCM peak",
+              "$16,630 spend, 3.56x ROAS"
+            ],
+            [
+              "Dropshipping brand, Q4",
+              "$133,420",
+              "7 days",
+              "$32,857 spend, 4.06x ROAS"
+            ],
+            [
+              "Skincare brand, Q4",
+              "$146,184",
+              "27 days",
+              "3.64x ROAS, 957 orders"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "after-bfcm",
+        "h2": "After Cyber Monday: keep the momentum into December",
+        "content": "The week after Cyber Monday is usually cheaper than the peak and full of warm buyers. Run a short last chance or extended offer from 1 to 4 December, then switch creative to gifting with shipping deadlines. Move the best BFCM ads back to full price with the gifting angle; the concept still works, only the offer changes. Finally, segment everyone who bought during BFCM for a post-purchase flow: a second order in December or January is what turns a BFCM sale into profitable lifetime value."
+      },
+      {
+        "id": "bfcm-mistakes",
+        "h2": "BFCM mistakes that cost the most",
+        "content": "The expensive mistakes are almost always structural, not creative.",
+        "list": [
+          "Launching new campaigns on Thanksgiving, so they are still learning when sales peak.",
+          "Doubling or tripling budgets overnight instead of stepping them up 20% to 30%.",
+          "Sitewide discounts on low margin products that make every order unprofitable after fees.",
+          "Running out of the hero product mid-weekend because inventory was not planned against ad spend.",
+          "Reading platform ROAS instead of blended MER, and over-crediting retargeting.",
+          "No cost controls, so the account buys expensive sales when CPMs spike."
+        ]
       }
     ],
     faqs: [
@@ -151,19 +297,31 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
       {
         question: 'What is a good ROAS during Black Friday on Meta?',
         answer: 'While blended ROAS varies by margin, healthy DTC accounts aim for 3.2x to 4.5x blended ROAS during Cyber Week, supported by higher AOV bundles that absorb seasonal CPM surges.'
+      },
+      {
+        "question": "What is the best BFCM ad strategy for Meta?",
+        "answer": "Build creative and audiences in early November, open early access offers 7 to 10 days before Thanksgiving, and during the peak scale one Advantage+ sales campaign plus one cost-capped campaign, with catalog retargeting at about 10% to 15% of spend."
+      },
+      {
+        "question": "How much should I increase my ad budget for Black Friday?",
+        "answer": "Plan to spend about 45% to 55% of your November budget between Thanksgiving and Cyber Monday, but raise each campaign's budget in steps of about 20% to 30% so it does not re-enter the learning phase."
+      },
+      {
+        "question": "Should I run retargeting ads during BFCM?",
+        "answer": "Yes, but keep it to about 10% to 15% of spend with catalog ads, exclude recent buyers, and judge it on blended MER, because retargeting takes credit for many sales that would have happened anyway."
       }
     ]
   },
   {
     slug: 'what-is-roas',
     title: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
-    titleTag: 'What Is ROAS? Formula & Good ROAS Benchmarks | Brand Scaling',
+    titleTag: "What Is ROAS? Meaning, Formula & Good ROAS | Brand Scaling",
     metaDescription: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
     primaryKeyword: 'what is roas',
     secondaryKeywords: ['good roas ecommerce', 'roas formula', 'break even roas', 'roas vs mer'],
     publishDate: '2026-10-24',
-    updatedDate: '2026-10-26',
-    readTime: '9 min read',
+    updatedDate: "2026-11-03",
+    readTime: "13 min read",
     relatedLinks: [
       { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Enter price, COGS and CAC to get break-even ROAS and profit per order.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Accounts run between 3x and 6x ROAS at scale, with $50M+ managed.' },
@@ -192,6 +350,11 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
       { id: 'industry-benchmarks', text: 'What is a good ROAS? Benchmarks by industry' },
       { id: 'roas-vs-mer', text: 'ROAS vs. MER: Which metric should you scale on?' },
       { id: 'how-to-improve-roas', text: '5 proven ways to increase your store ROAS' },
+      { id: 'roas-meaning', text: "ROAS meaning: what does ROAS stand for?" },
+      { id: 'roas-formula-examples', text: "ROAS formula with worked examples" },
+      { id: 'average-roas', text: "What is an average ROAS?" },
+      { id: 'roas-vs-roi', text: "ROAS vs ROI" },
+      { id: 'target-roas', text: "How to set a target ROAS" },
       { id: 'faq-section', text: 'Frequently asked questions' }
     ],
     sections: [
@@ -254,6 +417,105 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
 4. Broad Audience Advantage+ Consolidation: Eliminate micro targeted ad sets that trigger auction bidding wars and audience overlap.
 
 5. Tiered Quantity Breaks: Encourage shoppers to purchase 2 or 3 items with clear value incentives such as Buy 2 Save 15%.`
+      },
+      {
+        "id": "roas-meaning",
+        "h2": "ROAS meaning: what does ROAS stand for?",
+        "content": "ROAS stands for Return On Ad Spend. It answers one question: for every dollar spent on ads, how many dollars of revenue came back? It is written as a ratio (4x, or 4:1) or sometimes as a percentage (400%).\n\nROAS measures revenue, not profit. A 4x ROAS means $4 of sales for every $1 of ads, before product cost, shipping, payment fees and returns are taken out. That is why the same ROAS can be very profitable for one store and loss-making for another."
+      },
+      {
+        "id": "roas-formula-examples",
+        "h2": "ROAS formula with worked examples",
+        "content": "ROAS = revenue attributed to ads / ad spend. Use the same date range and the same attribution setting for both numbers.",
+        "table": {
+          "headers": [
+            "Ad spend",
+            "Attributed revenue",
+            "ROAS",
+            "What it means"
+          ],
+          "rows": [
+            [
+              "$1,000",
+              "$2,000",
+              "2.0x",
+              "$2 back per $1; break even only at 50% gross margin"
+            ],
+            [
+              "$5,000",
+              "$20,000",
+              "4.0x",
+              "$4 back per $1; healthy for most DTC brands"
+            ],
+            [
+              "$40,124",
+              "$146,184",
+              "3.64x",
+              "A real skincare client account over 27 days"
+            ],
+            [
+              "$28,391",
+              "$112,866",
+              "3.98x",
+              "A real early BFCM result over 13 days"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "average-roas",
+        "h2": "What is an average ROAS?",
+        "content": "There is no single average, because ROAS depends on margin, price point, channel and how attribution is counted. As a working reference, healthy ecommerce accounts we see usually land in these ranges once they are past the testing phase. Treat them as orientation, not targets: your own break even ROAS is the only number that decides whether an account is profitable.",
+        "table": {
+          "headers": [
+            "Channel",
+            "Typical ROAS range we see",
+            "Why it differs"
+          ],
+          "rows": [
+            [
+              "Meta prospecting (cold traffic)",
+              "2x to 4x",
+              "Finds new customers; most of the growth"
+            ],
+            [
+              "Meta retargeting",
+              "5x to 10x+",
+              "Over-credited; many buyers would have purchased anyway"
+            ],
+            [
+              "Google brand search",
+              "8x to 20x+",
+              "Captures people already searching for you"
+            ],
+            [
+              "Google Shopping and Performance Max",
+              "3x to 6x",
+              "Mix of new and returning demand"
+            ],
+            [
+              "Blended MER (all channels)",
+              "3x to 5x",
+              "Total revenue / total ad spend; the honest number"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "roas-vs-roi",
+        "h2": "ROAS vs ROI: what is the difference?",
+        "content": "ROAS looks at ad spend and revenue only. ROI (return on investment) looks at profit after all costs. A campaign can have a 3x ROAS and a negative ROI if product cost, shipping and fees take more than two thirds of the revenue.\n\nUse ROAS to compare ads and campaigns day to day, because it is fast and every ad platform reports it. Use ROI, or contribution margin after ad spend, to decide whether to keep scaling. Our free ROAS calculator shows both: break even ROAS and profit per order."
+      },
+      {
+        "id": "target-roas",
+        "h2": "How to set a target ROAS",
+        "content": "Start from margin, not from a benchmark. Break even ROAS = 1 / gross margin. Then decide how much profit each order must leave after ads.",
+        "list": [
+          "Gross margin 60%: break even ROAS 1.67x; a target of about 2.5x leaves room for profit.",
+          "Gross margin 50%: break even ROAS 2.0x; target about 3x.",
+          "Gross margin 40%: break even ROAS 2.5x; target about 3.5x to 4x, or raise order value with bundles first.",
+          "Subscription or high repeat purchase brands can accept a lower first-order target because lifetime value pays it back."
+        ]
       }
     ],
     faqs: [
@@ -272,19 +534,35 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
       {
         question: 'Is higher ROAS always better?',
         answer: 'Not necessarily. Maximizing ROAS often restricts ad spend to small retargeting audiences. High growth DTC brands intentionally scale ad spend at a stable, profitable target ROAS to maximize total net contribution dollars.'
+      },
+      {
+        "question": "What does ROAS mean?",
+        "answer": "ROAS means Return On Ad Spend: the revenue your ads generate for every dollar spent on them. A 4x ROAS means $4 of revenue for each $1 of ad spend."
+      },
+      {
+        "question": "What is the ROAS formula?",
+        "answer": "ROAS = revenue attributed to ads divided by ad spend. For example, $20,000 in revenue from $5,000 of ads is a 4x ROAS."
+      },
+      {
+        "question": "What is an average ROAS for ecommerce?",
+        "answer": "Healthy ecommerce accounts usually run a blended 3x to 5x, but there is no universal average. What matters is staying above your own break even ROAS, which is 1 divided by your gross margin."
+      },
+      {
+        "question": "What is the difference between ROAS and ROI?",
+        "answer": "ROAS compares revenue to ad spend only. ROI compares profit to all costs. A campaign can have a good ROAS and still lose money if product, shipping and fees are high."
       }
     ]
   },
   {
     slug: 'performance-marketing-agency',
     title: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
-    titleTag: 'What Is a Performance Marketing Agency? | Brand Scaling',
+    titleTag: "What Is a Performance Marketing Agency? DTC Guide",
     metaDescription: 'What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta & TikTok ads, CRO, creative testing, and measurable ROAS.',
     primaryKeyword: 'performance marketing agency',
     secondaryKeywords: ['ecommerce marketing agency usa', 'dtc growth agency', 'direct response marketing agency', 'meta ads agency'],
     publishDate: '2026-10-26',
-    updatedDate: '2026-10-26',
-    readTime: '12 min read',
+    updatedDate: "2026-11-03",
+    readTime: "14 min read",
     relatedLinks: [
       { href: '/', title: 'Performance Marketing Agency for Ecommerce', text: 'What the Brand Scaling engagement includes and who it is for.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency', text: 'The Facebook and Instagram arm of the engine.' },
@@ -313,6 +591,9 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
       { id: 'core-pillars', text: 'The 4 pillars of modern DTC performance marketing' },
       { id: 'key-metrics', text: 'The metrics that matter: Beyond vanity ROAS' },
       { id: 'how-to-choose', text: 'How to vet and choose the right agency for your brand' },
+      { id: 'choose-ecommerce-growth-agency', text: "How to choose an ecommerce growth agency" },
+      { id: 'dtc-performance-marketing-channels', text: "DTC performance marketing channels" },
+      { id: 'google-ads-agency-capabilities', text: "What a Google Ads agency for DTC should do" },
       { id: 'faq-section', text: 'Frequently asked questions' }
     ],
     sections: [
@@ -384,6 +665,77 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
 3. What is your strategy for creative fatigue once a winning ad stops performing?
 
 4. How do you protect net profit margins when ad auction CPMs fluctuate?`
+      },
+      {
+        "id": "choose-ecommerce-growth-agency",
+        "h2": "How to choose an ecommerce growth agency for a DTC brand",
+        "content": "Agencies that specialise in scaling DTC brands look similar on their websites. The difference shows up in how they answer a few specific questions.",
+        "subsections": [
+          {
+            "h3": "Questions to ask before you sign",
+            "list": [
+              "Can you show live ad account or Shopify dashboards, not just logos and testimonials?",
+              "Who produces the creative, and how many new ads a month will we launch?",
+              "Will you touch the store (product pages, offers, checkout), or only the ads?",
+              "Which number do you report first: platform ROAS or blended MER and new-customer CAC?",
+              "Do we own the ad account, pixel, data and creative if we leave?",
+              "What happens in the first 14 days?"
+            ]
+          },
+          {
+            "h3": "Red flags",
+            "list": [
+              "Guaranteed ROAS or revenue numbers before they have seen your account.",
+              "Reporting that only shows platform ROAS and clicks.",
+              "Ten ad sets of interest targeting and three creatives a month.",
+              "Long contracts with no performance review points."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dtc-performance-marketing-channels",
+        "h2": "DTC performance marketing: which channels do what",
+        "content": "Performance marketing for a DTC brand is not one channel. Each one has a different job, and a good agency budgets for the job, not for the channel.",
+        "table": {
+          "headers": [
+            "Channel",
+            "Main job",
+            "When it leads"
+          ],
+          "rows": [
+            [
+              "Meta ads (Facebook, Instagram)",
+              "Finding new customers at scale with creative",
+              "Most DTC brands from $20K to $2M+ a month"
+            ],
+            [
+              "TikTok ads and TikTok Shop",
+              "Reach and creator-led discovery, in-app checkout",
+              "Visual, demo-friendly and impulse products"
+            ],
+            [
+              "Google Search and Shopping",
+              "Capturing people already searching",
+              "Brands with search demand or a known category"
+            ],
+            [
+              "Email and SMS (Klaviyo)",
+              "Repeat purchases and lifetime value",
+              "Every brand once traffic is flowing"
+            ],
+            [
+              "Shopify CRO",
+              "Turning more paid traffic into orders",
+              "Before scaling any paid channel"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "google-ads-agency-capabilities",
+        "h2": "What capabilities should a Google Ads agency have for DTC ecommerce?",
+        "content": "If Google is part of the mix, the agency should be able to: run a clean Merchant Center feed with optimised titles and images; separate brand search from non-brand so brand traffic does not inflate results; run Performance Max with audience signals from your customer lists; set target ROAS from your margins rather than a default; and report Google alongside Meta on blended MER so the two channels are not both claiming the same sale. For most DTC brands Google captures demand that Meta and TikTok create, so the agency should plan them together."
       }
     ],
     faqs: [
@@ -402,6 +754,18 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
       {
         question: 'When should an ecommerce brand hire a performance marketing agency?',
         answer: 'Brands should consider a performance agency when they have validated product market fit (typically $20k+/month in revenue) and need a repeatable, scalable creative and media buying engine to break through to $100k to $500k per month.'
+      },
+      {
+        "question": "Which agencies are best for scaling DTC ecommerce brands?",
+        "answer": "The best fit is an agency that runs creative, media buying and Shopify conversion work together, shows live dashboards as proof, and reports on blended MER and new-customer CAC rather than platform ROAS alone."
+      },
+      {
+        "question": "What should I look for in an ecommerce growth agency?",
+        "answer": "Live account proof, in-house creative volume of 30 or more new ads a month, willingness to fix the store as well as the ads, full ownership of your accounts and data, and a clear plan for the first 14 days."
+      },
+      {
+        "question": "What capabilities should a Google Ads agency have for DTC ecommerce?",
+        "answer": "A clean Merchant Center feed, brand and non-brand search separated, Performance Max with first-party audience signals, target ROAS set from your margins, and reporting on blended MER alongside Meta."
       }
     ]
   },
@@ -1132,6 +1496,185 @@ That is the aim, not the minimum. The honest minimum for testing is a daily budg
       {
         question: 'Can I see my competitors\' Shopify ads?',
         answer: 'Yes. Search the brand or product in the Meta Ads Library to see all of its active Facebook and Instagram ads and the date each one started running.'
+      }
+    ]
+  },
+  {
+    slug: 'dtc-affiliate-program',
+    title: 'How to Scale a DTC Affiliate Program in 2026: Creators, Commissions and TikTok Shop',
+    titleTag: 'How to Scale a DTC Affiliate Program in 2026 | Brand Scaling',
+    metaDescription: 'How to scale a DTC affiliate program: commission structures, recruiting creators, TikTok Shop affiliates, partnership ads, tracking and a 90-day plan.',
+    primaryKeyword: 'scale affiliate program dtc',
+    secondaryKeywords: ['dtc affiliate program scaling', 'ecommerce affiliate marketing scaling challenges', 'shopify affiliate program', 'tiktok shop affiliate program', 'creator affiliate program', 'affiliate commission rates ecommerce'],
+    publishDate: '2026-11-03',
+    updatedDate: '2026-11-03',
+    readTime: '12 min read',
+    relatedLinks: [
+      { href: '/tiktok-ads-agency', title: 'TikTok Ads & TikTok Shop Scaling', text: 'We run TikTok Shop affiliates, Spark Ads and creator content for DTC brands.' },
+      { href: '/viral-creatives', title: 'Direct-Response Creatives & UGC', text: 'The creative engine that turns affiliate videos into paid ads.' },
+      { href: '/blog/meta-ads-library', title: 'Meta Ads Library: $376K Case Study', text: 'Find the creator ads your competitors keep paying for.' },
+      { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Check what commission you can afford at your margins.' }
+    ],
+    category: 'Growth Channels',
+    author: {
+      name: 'Gaurav Kapoor',
+      title: 'Founder, Brand Scaling',
+      avatar: '/team/gaurav.webp',
+      credentials: '12+ years in ecommerce, $50M+ in Meta ad spend managed, 150+ published case studies',
+      profileUrl: '/about',
+      youtubeUrl: 'https://www.youtube.com/@gauravecom',
+      instagramUrl: 'https://www.instagram.com/gauravecomm/',
+      linkedinUrl: 'https://www.linkedin.com/in/gauravecom/'
+    },
+    directAnswer: 'To scale a DTC affiliate program, treat affiliates as a creator content engine rather than a coupon channel. Set a commission your margins can carry (usually 10% to 20% of order value), recruit creators who already make content in your niche, give them samples and a clear brief, track every sale with unique links or codes, and put paid budget behind the best affiliate videos as partnership ads or Spark Ads. Programs stall when they recruit coupon sites, pay commissions they cannot afford, or never amplify the content that works.',
+    definitionBox: {
+      term: 'DTC affiliate program',
+      definition: 'A partnership where creators, publishers or customers promote a direct-to-consumer brand and earn a commission on the sales they drive, tracked through unique links or discount codes. On TikTok Shop the same model runs inside the app, with commissions set per product.'
+    },
+    tableOfContents: [
+      { id: 'why-programs-stall', text: 'Why DTC affiliate programs stop scaling' },
+      { id: 'commission-structure', text: 'Commission structures that scale' },
+      { id: 'recruit-creators', text: 'How to recruit affiliates who actually sell' },
+      { id: 'tiktok-shop-affiliates', text: 'TikTok Shop affiliates' },
+      { id: 'amplify-with-ads', text: 'Amplify affiliate content with paid ads' },
+      { id: 'tracking-and-metrics', text: 'Tracking and the metrics that matter' },
+      { id: 'protect-margin', text: 'Protecting margin and stopping fraud' },
+      { id: 'ninety-day-plan', text: 'A 90-day plan to scale your program' },
+      { id: 'faq-section', text: 'Frequently asked questions' }
+    ],
+    sections: [
+      {
+        id: 'why-programs-stall',
+        h2: 'Why DTC affiliate programs stop scaling',
+        content: `Most ecommerce affiliate programs grow fast for a few months and then flatten. The scaling challenges are almost always the same:`,
+        list: [
+          'Coupon and deal sites take the commission on sales that would have happened anyway, so the program grows on paper but adds no new customers.',
+          'A handful of affiliates drive most of the revenue, and nobody is recruiting the next wave.',
+          'Commissions were set to attract affiliates, not to fit the margin, so scaling the program loses money.',
+          'Affiliates get a link and nothing else: no samples, no brief, no examples of what converts.',
+          'The best affiliate content is posted once and disappears, instead of being turned into ads.',
+          'Tracking breaks across devices and apps, so the brand cannot tell which partners actually drive sales.'
+        ]
+      },
+      {
+        id: 'commission-structure',
+        h2: 'Commission structures that scale',
+        content: `Start from what one new customer is worth to you, not from what competitors pay. Use the free ROAS calculator to see your margin per order; the commission plus any discount must leave profit after product cost, shipping and fees. Then pick a structure that rewards the behaviour you want.`,
+        table: {
+          headers: ['Structure', 'How it works', 'Best for'],
+          rows: [
+            ['Flat percentage', '10% to 20% of order value on every sale', 'Simple programs, most DTC brands starting out'],
+            ['Tiered', 'Rate rises at sales thresholds (for example 12%, then 15%, then 20%)', 'Motivating mid-tier creators to keep posting'],
+            ['New customer bonus', 'Higher rate or a fixed bonus for first orders only', 'Brands that want growth, not repeat-buyer cannibalisation'],
+            ['Flat fee plus commission', 'A fee per video plus a lower commission', 'Recruiting proven creators who will not work on commission alone'],
+            ['Product seeding only', 'Free product, no fee, commission on sales', 'Building a large base of smaller creators']
+          ]
+        }
+      },
+      {
+        id: 'recruit-creators',
+        h2: 'How to recruit affiliates who actually sell',
+        content: `The affiliates who scale a DTC brand are creators who already talk to your buyer, not coupon sites. Recruit where your customers already watch.`,
+        subsections: [
+          {
+            h3: 'Start with your own customers',
+            content: `Customers who post about you unprompted convert best, because their content is already genuine. Invite reviewers, repeat buyers and people who tag you on Instagram or TikTok to join first.`
+          },
+          {
+            h3: 'Find creators through ads that already work',
+            content: `Search your category in the Meta Ads Library and on TikTok to see which creators competitors keep paying to promote. Creators whose videos keep running as ads for weeks are proven sellers in your niche.`
+          },
+          {
+            h3: 'Give every affiliate a kit',
+            list: [
+              'Free product, shipped fast.',
+              'A one-page brief: the problem the product solves, three hooks that work, what not to claim.',
+              'Two or three example videos from your best affiliates or UGC ads.',
+              'Their unique link and code, and how the commission is paid.'
+            ]
+          }
+        ]
+      },
+      {
+        id: 'tiktok-shop-affiliates',
+        h2: 'TikTok Shop affiliates',
+        content: `If your product sells on impulse and demos well on video, TikTok Shop is the fastest way to scale affiliates today. Creators add your product to their showcase, post videos and lives with a shoppable link, and earn commission inside the app, so there is no link tracking to break.
+
+Set an open commission that any creator can join plus targeted collaborations with higher rates for creators you choose. Seed samples generously; most TikTok Shop affiliates will not post without trying the product. Then run the best affiliate videos as ads with GMV Max or Spark Ads. This is the core of the TikTok Shop scaling services we run for DTC brands.`
+      },
+      {
+        id: 'amplify-with-ads',
+        h2: 'Amplify affiliate content with paid ads',
+        content: `The biggest unlock in most programs is paid amplification. An affiliate video that sells organically will usually sell harder with budget behind it, and it looks native because it runs from the creator's own handle.`,
+        list: [
+          'Meta partnership ads: run the creator\'s post as an ad from their account and yours, with their name and social proof attached.',
+          'TikTok Spark Ads: boost the creator\'s original video, keeping its likes and comments.',
+          'Recut winners: take the hook of a winning affiliate video and brief new UGC variations around it.',
+          'Pay creators a usage fee for ad rights so you can run their content for 30 to 90 days.'
+        ]
+      },
+      {
+        id: 'tracking-and-metrics',
+        h2: 'Tracking and the metrics that matter',
+        content: `Track every affiliate with a unique link and a unique discount code, because many sales start on a phone app and finish on a laptop. Shopify apps such as Shopify Collabs or a dedicated affiliate platform handle links, codes and payouts. Then judge the program on new customers, not total sales.`,
+        table: {
+          headers: ['Metric', 'Why it matters'],
+          rows: [
+            ['New customer share', 'Sales from first-time buyers; coupon traffic is mostly existing customers'],
+            ['Revenue per active affiliate', 'Shows whether you are recruiting the right creators'],
+            ['Active affiliate rate', 'Share of affiliates who posted in the last 30 days'],
+            ['Cost per acquisition', 'Commission plus discount plus product seeding, per new customer'],
+            ['Blended MER', 'Total revenue / total marketing spend, so affiliates and ads are judged together']
+          ]
+        }
+      },
+      {
+        id: 'protect-margin',
+        h2: 'Protecting margin and stopping fraud',
+        content: `Scaling an affiliate program should not scale your losses.`,
+        list: [
+          'Pay commission on net revenue, after refunds and returns, with a 30 day hold.',
+          'Do not stack a large discount code on top of a high commission.',
+          'Block brand-name bidding by affiliates in your terms, so they do not buy your own search traffic.',
+          'Exclude existing customers or pay a lower rate on repeat orders.',
+          'Review the top 10 affiliates every month for unusual refund rates or traffic sources.'
+        ]
+      },
+      {
+        id: 'ninety-day-plan',
+        h2: 'A 90-day plan to scale your program',
+        content: `This is the order we work in when we take over a DTC affiliate or creator program.`,
+        table: {
+          headers: ['Days', 'Focus', 'Output'],
+          rows: [
+            ['1 to 14', 'Economics and setup', 'Commission set from margin, tracking live, affiliate kit ready'],
+            ['15 to 45', 'Recruiting and seeding', '30 to 50 creators seeded, first wave of content posted'],
+            ['45 to 75', 'Amplification', 'Best 5 to 10 affiliate videos running as partnership ads or Spark Ads'],
+            ['75 to 90', 'Scale and prune', 'Tiered rates for top creators, inactive affiliates replaced, monthly recruiting cadence']
+          ]
+        }
+      }
+    ],
+    faqs: [
+      {
+        question: 'How do you scale an affiliate program for a DTC brand?',
+        answer: 'Set a commission your margins can carry, recruit creators who already reach your buyers, give them samples and a brief, track every sale with unique links and codes, and run the best affiliate videos as partnership ads or Spark Ads.'
+      },
+      {
+        question: 'What commission should a DTC affiliate program pay?',
+        answer: 'Most DTC brands pay 10% to 20% of order value. Work back from your margin per order so the commission plus any discount still leaves profit, and consider a higher rate only for new customers.'
+      },
+      {
+        question: 'What are the biggest challenges in scaling ecommerce affiliate marketing?',
+        answer: 'Coupon sites taking credit for existing customers, reliance on a few top affiliates, commissions that do not fit the margin, affiliates without samples or briefs, and broken tracking across devices.'
+      },
+      {
+        question: 'Is TikTok Shop good for affiliate marketing?',
+        answer: 'Yes, for products that demo well and sell on impulse. Creators earn commission inside the app with no link tracking to break, and the best affiliate videos can be scaled as ads.'
+      },
+      {
+        question: 'Should I run affiliate content as ads?',
+        answer: 'Yes. Paying for usage rights and running winning affiliate videos as Meta partnership ads or TikTok Spark Ads is usually the fastest way to scale a program, because the content is already proven.'
       }
     ]
   }

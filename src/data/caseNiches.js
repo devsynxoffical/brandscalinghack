@@ -9,7 +9,7 @@ export const CASE_NICHES = [
     name: 'Skincare & Beauty',
     h1: 'Skincare & Beauty Ecommerce Case Studies: Meta Ads Results',
     titleTag: 'Skincare Brand Meta Ads Case Studies | Brand Scaling',
-    metaDescription: 'Verified skincare and beauty ecommerce case studies: $146,184 in 27 days at 3.64x ROAS, €118,000 first month in the UK, and more Meta ads results from real accounts.',
+    metaDescription: 'Skincare and beauty case studies: $146,184 in 27 days at 3.64x ROAS, €118,000 in a first month in the UK, and more Meta ads results from real accounts.',
     intro: 'Skincare and beauty brands scale on Meta when the creative shows a real result, the offer is a routine bundle rather than a single SKU, and the product page converts above 4%. Below are the skincare and beauty accounts Brand Scaling has published, with ad account screenshots or screen recordings for each. Typical results in this vertical run 3.4x to 5.2x ROAS at scale, with clinical and ingredient-led brands at the top of that range.',
     keywords: ['skincare meta ads case study', 'beauty brand facebook ads results', 'skincare ecommerce marketing agency']
   },
@@ -42,7 +42,7 @@ export const CASE_NICHES = [
     name: 'Supplements & Nutrition',
     h1: 'Supplement & Nutrition DTC Case Studies: Meta Ads Results',
     titleTag: 'Supplement Brand Meta Ads Case Studies | Brand Scaling',
-    metaDescription: 'Supplement and nutrition DTC case studies: subscription offers, founder-led creative and compliant Meta ads scaling with 3.2x to 4.8x ROAS from real client accounts.',
+    metaDescription: 'Supplement and nutrition DTC case studies: subscription offers, founder-led creative and compliant Meta ads scaling at 3.2x to 4.8x ROAS in real accounts.',
     intro: 'Supplement brands win on repeat purchase, which changes the math: a first order at break-even ROAS is profitable when subscription retention is tracked. The accounts below show how Brand Scaling scales supplement and nutrition brands with compliant, mechanism-led creative, subscribe-and-save offers and Conversions API tracking. Typical results run 3.2x to 4.8x ROAS on first orders.',
     keywords: ['supplement brand meta ads case study', 'nutrition dtc ecommerce results', 'supplement ecommerce marketing agency']
   },
@@ -53,7 +53,7 @@ export const CASE_NICHES = [
     name: 'Dropshipping & DTC Stores',
     h1: 'Dropshipping & DTC Store Case Studies: $100K Months on Meta Ads',
     titleTag: 'Dropshipping Meta Ads Case Studies | Brand Scaling',
-    metaDescription: 'Dropshipping and DTC store case studies: $2.3M at 11.6x ROAS, $449,221 in 49 days, $148K in one day and dozens of six-figure months from Meta ads and broad Advantage+ scaling.',
+    metaDescription: 'Dropshipping and DTC store case studies: $2.3M at 11.6x ROAS, $449,221 in 49 days, $148K in one day and dozens of six-figure months from Meta ads.',
     intro: 'Most of the Brand Scaling case library is general DTC and dropshipping stores built around one winning product, a simple funnel and broad Advantage+ campaigns. These are the published accounts in that group, from first $10K days to $2.3M years. The pattern repeats: find the product that solves a clear problem, niche the store around it, run consolidated broad campaigns, and refresh creative weekly.',
     keywords: ['dropshipping case study', 'shopify dropshipping meta ads results', 'dtc store scaling case study']
   }

@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "indexnow": "node scripts/indexnow.cjs",
     "og-images": "node scripts/generate-og-images.cjs",
-    "case-slugs": "node scripts/assign-case-slugs.cjs"
+    "case-slugs": "node scripts/assign-case-slugs.cjs",
+    "seo:audit": "node scripts/seo-audit.cjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",

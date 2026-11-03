@@ -242,6 +242,21 @@ Sitemap: 146 URLs.
 
 ---
 
+## 4g. Day 6 (Nov 3, 2026): data-driven pass from Search Console
+
+First day with live Search Console data (OpenSEO project "Brand Scaling", property https://www.brandscalinghacks.com/). Baseline, 3 months to Oct 31: 17 pages with impressions, daily impressions up from about 2 (Oct 19) to about 25 (Oct 30); BFCM post at average position 16; About at 6.7 with no clicks; what-is-roas at 81 for "roas formula" and "roas meaning".
+
+- Expanded the three posts with impressions: BFCM playbook (about 500 to 1,870 words: ad strategy structure, budget plan by week, retargeting, creative checklist, real Q4 results table, December follow-on, mistakes, 3 new FAQs), What Is ROAS (to 1,265 words: meaning, formula examples, average ROAS by channel, ROAS vs ROI, target ROAS, 4 new FAQs, title now includes "Meaning, Formula"), Performance Marketing Agency (to 1,200 words: choosing an ecommerce growth agency, DTC channels table, Google Ads agency capabilities, 3 new FAQs).
+- New post `/blog/dtc-affiliate-program` for "scale affiliate program dtc", "dtc affiliate program scaling" and "ecommerce brands affiliate marketing scaling challenges".
+- Click-through rewrites: About (founder name first for branded searches), TikTok ("TikTok Shop Scaling" in title and description), ROAS calculator ("real ROAS calculator" wording).
+- Internal linking: FAQ answers on the home page, Growth, Meta Ads, TikTok and Shopify pages now carry contextual links (React and prerender); new rules for affiliate programs, ROAS formula, TikTok Shop scaling and BFCM ad strategy.
+- Fixed 3 over-long hub descriptions; added schema to Privacy and Terms.
+- New `npm run seo:audit` (run after build): broken links, title/description lengths, duplicate titles, H1 count, JSON-LD validity and orphans. Result today: 152 pages, 0 problems, min 2 and median 5 inbound links per URL.
+
+Measure in 14 and 28 days: position of the BFCM post (target: page 1 before Nov 26), impressions for roas formula/meaning, clicks on About, impressions for the affiliate queries.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

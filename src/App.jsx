@@ -193,8 +193,8 @@ function App() {
           pagePath = '/meta-ads-agency';
           break;
         case 'tiktok-ads-agency':
-          title = 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling';
-          description = 'TikTok ads agency for DTC ecommerce: creator ads, Spark Ads, TikTok Shop and affiliates run from one creative engine with Meta. Book a TikTok ads audit.';
+          title = 'TikTok Ads & TikTok Shop Scaling Agency | Brand Scaling';
+          description = 'TikTok Shop scaling services and TikTok ads for DTC brands: creator ads, Spark Ads, affiliates and GMV Max, run with your Meta engine. Book a TikTok audit.';
           pagePath = '/tiktok-ads-agency';
           break;
         case 'services':
@@ -208,8 +208,8 @@ function App() {
           pagePath = '/contact';
           break;
         case 'roas-calculator':
-          title = 'Free ROAS Calculator for Ecommerce | Brand Scaling';
-          description = 'Free ROAS calculator for ecommerce: enter price, product cost and CAC to get your break-even ROAS and profit per order before you scale ad spend.';
+          title = 'Free Ecommerce ROAS Calculator & Break-Even ROAS';
+          description = 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.';
           pagePath = '/roas-calculator';
           break;
         case 'blog':
@@ -218,8 +218,8 @@ function App() {
           pagePath = '/blog';
           break;
         case 'about':
-          title = 'About Brand Scaling & Founder Gaurav Kapoor | Brand Scaling';
-          description = 'Meet Gaurav Kapoor and the Brand Scaling team: 12+ years in ecommerce, $50M+ in Meta ad spend managed and 150+ DTC brands scaled past 7 and 8 figures.';
+          title = 'Gaurav Kapoor: Founder of Brand Scaling, DTC Growth Agency';
+          description = 'Gaurav Kapoor founded Brand Scaling after 12+ years in ecommerce: $50M+ in Meta ad spend managed and 150+ DTC case studies. Meet the team in New York.';
           pagePath = '/about';
           break;
         case 'privacy-policy':
@@ -365,7 +365,7 @@ function App() {
           />
         );
       case 'growth':
-        return <GrowthPage onOpenBooking={() => setIsBookingOpen(true)} />;
+        return <GrowthPage onOpenBooking={() => setIsBookingOpen(true)} onNavigate={handleNavigate} />;
       case 'shopify-agency':
         return (
           <ShopifyAgencyPage
