@@ -10,23 +10,23 @@ const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
 // lastmod = the date the page content last materially changed. Bump by hand when
 // a page is rewritten; do not bump every build (Google ignores fake freshness).
 const staticRoutes = [
-  { loc: '/', lastmod: '2026-10-27', changefreq: 'weekly', priority: '1.0' },
-  { loc: '/meta-ads-agency', lastmod: '2026-10-28', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/tiktok-ads-agency', lastmod: '2026-10-31', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/services', lastmod: '2026-10-31', changefreq: 'monthly', priority: '0.8' },
+  { loc: '/', lastmod: '2026-11-05', changefreq: 'weekly', priority: '1.0' },
+  { loc: '/meta-ads-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/tiktok-ads-agency', lastmod: '2026-11-03', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/services', lastmod: '2026-11-02', changefreq: 'monthly', priority: '0.8' },
   { loc: '/contact', lastmod: '2026-10-31', changefreq: 'yearly', priority: '0.6' },
-  { loc: '/growth', lastmod: '2026-10-27', changefreq: 'monthly', priority: '0.9' },
-  { loc: '/shopify-agency', lastmod: '2026-10-27', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/viral-creatives', lastmod: '2026-10-27', changefreq: 'weekly', priority: '0.8' },
-  { loc: '/case-studies', lastmod: '2026-10-27', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/roas-calculator', lastmod: '2026-10-27', changefreq: 'monthly', priority: '0.8' },
-  { loc: '/about', lastmod: '2026-10-27', changefreq: 'monthly', priority: '0.7' },
-  { loc: '/blog', lastmod: '2026-10-27', changefreq: 'daily', priority: '0.9' },
-  { loc: '/privacy-policy', lastmod: '2026-10-22', changefreq: 'yearly', priority: '0.3' },
-  { loc: '/terms', lastmod: '2026-10-22', changefreq: 'yearly', priority: '0.3' }
+  { loc: '/growth', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.9' },
+  { loc: '/shopify-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/viral-creatives', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.8' },
+  { loc: '/case-studies', lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/roas-calculator', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.8' },
+  { loc: '/about', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/blog', lastmod: '2026-11-05', changefreq: 'daily', priority: '0.9' },
+  { loc: '/privacy-policy', lastmod: '2026-11-03', changefreq: 'yearly', priority: '0.3' },
+  { loc: '/terms', lastmod: '2026-11-03', changefreq: 'yearly', priority: '0.3' }
 ];
 
-const CASE_LASTMOD = '2026-10-31';
+const CASE_LASTMOD = '2026-11-03';
 
 const escapeXml = (s) => String(s)
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
@@ -43,7 +43,7 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
   const { isIndexableCase } = await import('../src/data/caseIndexing.js');
   const { CASE_NICHES } = await import('../src/data/caseNiches.js');
-  const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-10-30', changefreq: 'weekly', priority: '0.8' }));
+  const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.8' }));
 
   const blogRoutes = blogPosts.map((p) => ({
     loc: `/blog/${p.slug}`,

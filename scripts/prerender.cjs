@@ -61,7 +61,7 @@ const routes = [
   {
     path: '/shopify-agency',
     outPath: 'shopify-agency/index.html',
-    title: 'Shopify Agency for Scaling DTC Brands | Brand Scaling',
+    title: 'Shopify Agency & DTC Ecommerce CRO | Brand Scaling',
     description: 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.',
     h1: 'Shopify Agency for DTC Brands That Want More Revenue Per Visitor',
     content: `
@@ -547,6 +547,11 @@ function renderRoute(route) {
       <p>Field-tested growth insights, algorithmic teardowns, and unit economics benchmarks from managing $50M+ in ad spend.</p>
       <h2>All Playbooks &amp; Articles</h2>
       <ul>${blogPosts.map((p) => `<li><a href="/blog/${p.slug}">${escapeHtml(p.title)}</a>: ${escapeHtml(p.metaDescription)}</li>`).join('')}</ul>`;
+
+  // Home: latest playbooks (newest first), so the most-crawled page links to fresh posts
+  const home0 = routes.find((r) => r.path === '/');
+  const latest = [...blogPosts].sort((x, y) => (y.updatedDate || y.publishDate).localeCompare(x.updatedDate || x.publishDate)).slice(0, 5);
+  home0.content += `<h2>Latest Ecommerce Scaling Playbooks</h2><ul>${latest.map((b) => `<li><a href="/blog/${b.slug}">${escapeHtml(b.title)}</a>: ${escapeHtml(b.metaDescription)}</li>`).join('')}</ul>`;
 
   // FAQ copy with contextual links on home and service pages (mirrors the React FAQ sections)
   const pageFaqs = await import('../src/data/pageSchemas.js');

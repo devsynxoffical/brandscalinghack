@@ -13,12 +13,13 @@ export const LINK_RULES = [
   { re: /\b(BFCM|Black Friday)( ad strategy| ads)?\b/, href: '/blog/bfcm-meta-ads-playbook', title: 'BFCM 2026 Meta Ads Playbook' },
   { re: /\b(DTC |creator |ecommerce )?affiliate (program|marketing)\b|\bTikTok Shop affiliates\b/i, href: '/blog/dtc-affiliate-program', title: 'How to Scale a DTC Affiliate Program' },
   { re: /\b(real )?ROAS calculator\b|\bfree ROAS calculator\b/i, href: '/roas-calculator', title: 'Free ROAS Calculator' },
-  { re: /\bbreak[ -]even ROAS\b|\bwhat a good ROAS\b|\bgood ROAS\b|\bROAS formula\b|\bwhat is ROAS\b|\bReturn On Ad Spend\b/i, href: '/blog/what-is-roas', title: 'What Is ROAS? Formula and Benchmarks' },
+  { re: /\bbreak[ -]even ROAS\b|\bwhat a good ROAS\b|\bgood ROAS\b|\bROAS formula\b|\bwhat is ROAS\b|\bReturn On Ad Spend\b|\bimprov(e|ing) (your |ecommerce )?ROAS\b/i, href: '/blog/what-is-roas', title: 'What Is ROAS? Formula and Benchmarks' },
   { re: /\bperformance marketing agenc(y|ies)\b/i, href: '/blog/performance-marketing-agency', title: 'What Is a Performance Marketing Agency?' },
   { re: /\bMeta ads agency\b/i, href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce' },
   { re: /\bTikTok Shop scaling( services)?\b|\bTikTok (Shop|ads|Spark Ads)\b/i, href: '/tiktok-ads-agency', title: 'TikTok Ads Agency' },
-  { re: /\bShopify agency\b|\bconversion rate optimi[sz]ation\b|\bShopify CRO\b/i, href: '/shopify-agency', title: 'Shopify Agency & CRO' },
+  { re: /\bShopify agency\b|\bconversion rate optimi[sz]ation\b|\bShopify CRO\b|\b(DTC |ecommerce )?CRO agency\b/i, href: '/shopify-agency', title: 'Shopify Agency & CRO' },
   { re: /\b(ecommerce )?growth (engine|agency)\b/i, href: '/growth', title: 'Ecommerce Growth Engine' },
+  { re: /\b(scale|scaling) UGC( production)?\b|\bUGC production\b|\bcreator brief\b/i, href: '/blog/scale-ugc-production', title: 'How to Scale UGC Production' },
   { re: /\bUGC( video)?( ads)?\b|\bdirect[ -]response creative\b/i, href: '/viral-creatives', title: 'Direct-Response Creatives & UGC' },
   { re: /\baudience overlap\b/i, href: '/cases/most-people-running-facebook-ads-have-no-idea-their-biggest', title: 'Facebook Ads Audience Overlap: How to Fix It' },
   { re: /\bmanual bid(s|ding)?\b|\bbid caps?\b/i, href: '/cases/why-your-facebook-ads-aren-scaling-fix-these-manual-bidding', title: 'Manual Bidding Mistakes That Stop Scaling' },
@@ -68,9 +69,17 @@ export function linkifySegments(text, state) {
 export const newLinkState = (selfPath, max = 12) => ({ used: new Set(), count: 0, max, self: selfPath });
 
 /** Guides relevant to a body of text, for "Related guides" blocks (blog and service targets only). */
+// Topic hints used only for "Related guides" blocks (too broad for in-text links)
+const GUIDE_HINTS = [
+  { re: /\bcreatives?\b|\bhooks?\b|\bUGC\b|\bangles?\b/i, href: '/blog/scale-ugc-production', title: 'How to Scale UGC Production' },
+  { re: /\baffiliat|\binfluencer|\bcreators?\b/i, href: '/blog/dtc-affiliate-program', title: 'How to Scale a DTC Affiliate Program' },
+  { re: /\bQ4\b|\bBFCM\b|\bBlack Friday\b|\bCyber\b|\bNovember\b/i, href: '/blog/bfcm-meta-ads-playbook', title: 'BFCM 2026 Meta Ads Playbook' },
+  { re: /\bROAS\b|\bmargin\b|\bprofit\b/i, href: '/blog/what-is-roas', title: 'What Is ROAS? Formula and Benchmarks' }
+];
+
 export function relatedGuidesFor(text, selfPath, count = 3) {
   const t = String(text || '');
-  return LINK_RULES
+  return [...LINK_RULES, ...GUIDE_HINTS]
     .filter((r) => (r.href.startsWith('/blog/') || ['/meta-ads-agency', '/tiktok-ads-agency', '/shopify-agency', '/roas-calculator'].includes(r.href)) && r.href !== selfPath)
     .map((r) => ({ ...r, hits: (t.match(new RegExp(r.re.source, 'gi')) || []).length }))
     .filter((r) => r.hits > 0)
@@ -92,11 +101,11 @@ const DEFAULT_GUIDES = [
 
 /** Hand-picked guides shown under each service page. */
 export const SERVICE_GUIDES = {
-  'meta-ads-agency': ['/blog/meta-ads-library', '/blog/meta-andromeda', '/blog/facebook-ads-for-shopify'],
+  'meta-ads-agency': ['/blog/meta-ads-library', '/blog/scale-ugc-production', '/blog/facebook-ads-for-shopify'],
   'tiktok-ads-agency': ['/blog/dtc-affiliate-program', '/blog/meta-ads-library', '/blog/meta-andromeda'],
   'shopify-agency': ['/blog/facebook-ads-for-shopify', '/blog/what-is-roas', '/blog/meta-ads-library'],
   growth: ['/blog/performance-marketing-agency', '/blog/dtc-affiliate-program', '/blog/bfcm-meta-ads-playbook'],
-  'viral-creatives': ['/blog/meta-ads-library', '/blog/bfcm-meta-ads-playbook', '/blog/dtc-affiliate-program'],
+  'viral-creatives': ['/blog/scale-ugc-production', '/blog/meta-ads-library', '/blog/bfcm-meta-ads-playbook'],
   'roas-calculator': ['/blog/what-is-roas', '/blog/facebook-ads-for-shopify', '/blog/dtc-affiliate-program'],
   services: ['/blog/performance-marketing-agency', '/blog/facebook-ads-for-shopify', '/blog/meta-ads-library'],
   about: ['/blog/meta-ads-library', '/blog/performance-marketing-agency', '/blog/facebook-ads-for-shopify'],

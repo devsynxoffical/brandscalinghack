@@ -49,6 +49,7 @@ export const LOGO = { '@type': 'ImageObject', '@id': `${BASE_URL}/#logo`, url: `
 
 const breadcrumb = (items) => ({
   '@type': 'BreadcrumbList',
+  name: `Breadcrumbs: ${items.map(([n]) => n).join(' > ')}`,
   itemListElement: items.map(([name, path], i) => ({
     '@type': 'ListItem',
     position: i + 1,
@@ -134,6 +135,10 @@ export const homeFaqs = [
 
 export const metaAdsFaqs = [
   {
+    question: 'Can a Meta ads agency improve my ecommerce ROAS?',
+    answer: 'Usually, if the account has room in creative, structure or tracking. The biggest ROAS improvements we see come from more and better creative, consolidating into fewer broad campaigns, fixing Conversions API tracking and raising order value with bundles. We start every engagement with an audit that shows where your ROAS is being lost.'
+  },
+  {
     question: 'What does a Meta ads agency do for an ecommerce brand?',
     answer: 'A Meta ads agency plans, builds and runs Facebook and Instagram campaigns that are measured on revenue, cost per acquisition and ROAS. Brand Scaling also produces the direct-response video creative, validates Conversions API tracking and ties the ads to the Shopify store, because media buying alone cannot fix a weak offer or a slow product page.'
   },
@@ -164,6 +169,14 @@ export const metaAdsFaqs = [
 ];
 
 export const shopifyFaqs = [
+  {
+    question: 'Do you work as a DTC ecommerce CRO agency?',
+    answer: 'Yes. Conversion rate optimization is the core of our Shopify work: we audit mobile speed, product pages, offers and checkout, run A/B tests, and build bundles and post-purchase upsells that lift average order value, all matched to the Meta and TikTok ads sending the traffic.'
+  },
+  {
+    question: 'Can you help a marketplace-dependent brand grow its own DTC channel?',
+    answer: 'Yes. Brands that rely on Amazon or other marketplaces usually move to owned-channel growth in three steps: a Shopify store built to convert paid traffic, Meta and TikTok ads that send new customers there, and email and SMS retention so repeat orders come back to the store instead of the marketplace.'
+  },
   {
     question: 'What is a Shopify agency?',
     answer: 'A Shopify agency designs, builds, and optimizes online stores on the Shopify platform. While traditional agencies focus only on visuals, Brand Scaling focuses on conversion rate optimization and unit economics, ensuring every landing page is engineered around the paid ads driving traffic.'
@@ -428,7 +441,7 @@ const staticSchemas = {
   '/shopify-agency': () => [
     webPage({
       path: '/shopify-agency',
-      name: 'Shopify Agency for Scaling DTC Brands | Brand Scaling',
+      name: 'Shopify Agency & DTC Ecommerce CRO | Brand Scaling',
       description: 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.'
     }),
     {

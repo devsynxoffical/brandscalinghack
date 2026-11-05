@@ -279,6 +279,28 @@ Check in Search Console > Enhancements (Breadcrumbs, Videos, Profile page) over 
 
 ---
 
+## 4i. Day 7 (Nov 5, 2026): crawl signals, new queries, UGC post
+
+Search Console (Oct 6 to Nov 2): daily impressions 19 to 26 (from about 2 on Oct 19). Indexed: BFCM post, What Is ROAS, TikTok (crawled Nov 2), About, case study hub. Discovered but not indexed: Meta Ads Library post, Meta Ads Agency, skincare hub. Unknown to Google: Facebook Ads for Shopify, DTC affiliate post. Google has not re-crawled the posts expanded on Nov 3 yet (last crawls Oct 22 and Oct 27).
+
+New queries this week and what was done:
+- "how can dtc brands scale ugc production" (home, pos 84): new post `/blog/scale-ugc-production` (1,290 words: volume by spend table, hook and angle matrix, creator bench, brief checklist, batch editing, testing rules, costs and usage rights, weekly system, 5 FAQs).
+- "dtc ecommerce cro agency" (home, pos 93.5): Shopify page title now "Shopify Agency & DTC Ecommerce CRO", new FAQ on CRO.
+- Marketplace-to-owned-channel question (Shopify page, pos 1): new Shopify FAQ answering it directly.
+- "ecommerce roas improvement agency" (blog and agency post, pos 78 to 89): What Is ROAS section renamed "How to improve ecommerce ROAS"; new Meta Ads Agency FAQ on improving ROAS.
+
+Crawl and freshness signals:
+- Sitemap lastmod now reflects the real last change of each page (most were stuck at Oct 27).
+- Home page "latest playbooks" block (React and prerendered) lists the newest and most recently updated posts, so Google's most-crawled URL always links to fresh content.
+- Related-guide topic hints: in-content links to the UGC guide went from 4 to 28 pages, BFCM to 34, What Is ROAS to 56; Meta Ads Library 135, Meta Ads Agency 141.
+- BreadcrumbList now has a name (Search Console listed items as "Unnamed item").
+
+Checks: lint 0 errors; `npm run seo:audit` 153 pages, 0 problems; structured data 0 errors; browser check of 7 changed pages with no console errors.
+
+Action for the owner: request indexing in Search Console for /blog/meta-ads-library, /meta-ads-agency, /blog/facebook-ads-for-shopify, /blog/dtc-affiliate-program, /blog/scale-ugc-production, /case-studies/skincare-beauty, and re-request /blog/bfcm-meta-ads-playbook and /blog/what-is-roas so Google sees the Nov 3 expansions before Black Friday.
+
+---
+
 ## 5. Files changed in this commit
 
 | File | Change |

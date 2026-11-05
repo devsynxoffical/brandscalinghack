@@ -1,53 +1,25 @@
 import React from 'react';
 import { ArrowRight, BookOpen, Clock, Sparkles, TrendingUp, Video } from 'lucide-react';
+import { blogPosts } from '../data/blogPosts';
 
 export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
-  const articles = [
-    {
-      slug: 'performance-marketing-agency',
-      badge: 'Pillar Blueprint',
-      badgeColor: '#ff5722',
-      title: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
-      snippet: 'Learn how elite DTC agencies scale Shopify brands with Meta & TikTok ads, high-converting creative testing, and measurable unit economics.',
-      readTime: '12 min read',
-      category: 'Agency Blueprint',
-      route: 'blog-performance-marketing-agency',
-      url: '/blog/performance-marketing-agency'
-    },
-    {
-      slug: 'bfcm-meta-ads-playbook',
-      badge: 'Active Q4 Playbook',
-      badgeColor: '#ef4444',
-      title: 'BFCM 2026: The Meta Ads Playbook for Shopify Brands',
-      snippet: 'The exact timing, Advantage+ budget ramps, and direct response offers that unlock 3.98x+ blended ROAS during the 5 day Black Friday weekend.',
-      readTime: '11 min read',
-      category: 'Scaling & Strategy',
-      route: 'blog-bfcm-meta-ads-playbook',
-      url: '/blog/bfcm-meta-ads-playbook'
-    },
-    {
-      slug: 'what-is-roas',
-      badge: 'Unit Economics',
-      badgeColor: '#fbbf24',
-      title: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator',
-      snippet: 'Master the ROAS formula, gross margin break-even thresholds, healthy industry benchmarks (3x to 5x), and how to protect contribution profit.',
-      readTime: '9 min read',
-      category: 'Metrics & Profit',
-      route: 'blog-what-is-roas',
-      url: '/blog/what-is-roas'
-    },
-    {
-      slug: 'meta-ads-library',
-      badge: 'Video Case Study',
-      badgeColor: '#38bdf8',
-      title: 'Meta Ads Library: How We Find Winning Ads and Scaled a DTC Brand to $376K in 25 Days',
-      snippet: 'The 2-week winner rule, 5 ad patterns we copied, $20 ad set testing, the 8 audience types and CBO scaling, with the full video breakdown.',
-      readTime: '16 min read',
-      category: 'Creative Research',
-      route: 'blog-meta-ads-library',
-      url: '/blog/meta-ads-library'
-    }
-  ];
+  // Newest or most recently updated posts first, so the home page (Google's most-crawled
+  // URL) always links to fresh content.
+  const BADGES = { 'Creative Research': '#38bdf8', 'Creative Production': '#a78bfa', 'Meta Ads': '#ff5722', 'Strategy & Scaling': '#ef4444', 'Metrics & Unit Economics': '#fbbf24', 'Growth Channels': '#22c55e', 'Agency Blueprint': '#ff5722' };
+  const articles = [...blogPosts]
+    .sort((x, y) => (y.updatedDate || y.publishDate).localeCompare(x.updatedDate || x.publishDate) || (y.publishDate || '').localeCompare(x.publishDate || ''))
+    .slice(0, 4)
+    .map((p) => ({
+      slug: p.slug,
+      badge: p.updatedDate && p.updatedDate !== p.publishDate ? 'Updated' : 'New',
+      badgeColor: BADGES[p.category] || '#ff5722',
+      title: p.title,
+      snippet: p.metaDescription,
+      readTime: p.readTime,
+      category: p.category,
+      route: `blog-${p.slug}`,
+      url: `/blog/${p.slug}`
+    }));
 
   return (
     <section 

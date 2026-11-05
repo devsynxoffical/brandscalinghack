@@ -183,7 +183,7 @@ function App() {
           pagePath = '/growth';
           break;
         case 'shopify-agency':
-          title = 'Shopify Agency for Scaling DTC Brands | Brand Scaling';
+          title = 'Shopify Agency & DTC Ecommerce CRO | Brand Scaling';
           description = 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.';
           pagePath = '/shopify-agency';
           break;
