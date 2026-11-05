@@ -76,3 +76,12 @@ export function relatedCases(cs, all, isIndexable = () => true, count = 3) {
   const rest = pool.filter((o) => !same.includes(o)).sort((a, b) => size(b) - size(a));
   return [...same, ...rest].slice(0, count);
 }
+
+// Matching industry service page under /for for each case-study category
+export const NICHE_INDUSTRY_PAGE = {
+  'skincare-beauty': { href: '/for/skincare-beauty', label: 'Skincare marketing agency' },
+  'fitness-health': { href: '/for/fitness', label: 'Fitness brand marketing' },
+  'apparel-fashion': { href: '/for/apparel-fashion', label: 'Fashion ecommerce marketing' },
+  'supplements-nutrition': { href: '/for/supplements', label: 'Supplement marketing agency' },
+  'dropshipping-dtc': { href: '/for/dropshipping', label: 'Dropshipping store scaling' }
+};

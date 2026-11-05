@@ -9,6 +9,7 @@ import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
 import BlogTeaserSection from '../components/BlogTeaserSection';
 import FaqSection from '../components/FaqSection';
+import MostSearchedSection from '../components/MostSearchedSection';
 import KnockoutAuthorityBannerSection from '../components/KnockoutAuthorityBannerSection';
 import EveryPieceWorksTogetherSection from '../components/EveryPieceWorksTogetherSection';
 
@@ -64,6 +65,9 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
         onNavigate={onNavigate}
         onOpenBooking={onOpenBooking}
       />
+
+      {/* MOST SEARCHED (links to the highest-demand services, tools and guides) */}
+      <MostSearchedSection onNavigate={onNavigate} />
 
       {/* 10 — FREQUENTLY ASKED QUESTIONS (Interactive Accordion) */}
       <FaqSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />

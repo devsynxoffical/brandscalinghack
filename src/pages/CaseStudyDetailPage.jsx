@@ -208,10 +208,12 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
         {editorial && (
           <div className="case-editorial" style={{ maxWidth: '860px', textAlign: 'left', margin: '26px auto 6px', background: 'rgba(255,87,34,0.06)', border: '1px solid rgba(255,87,34,0.22)', borderLeft: '4px solid #ff5722', borderRadius: '0 14px 14px 0', padding: '22px 26px' }}>
             <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#ffffff', margin: '0 0 10px' }}>Breakdown</h2>
-            <h3 style={{ fontSize: '14px', fontWeight: 800, color: '#ff7043', letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px' }}>What we did</h3>
+            {editorial.challenge && (<><h3 style={{ fontSize: '14px', fontWeight: 800, color: '#ff7043', letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px' }}>The challenge</h3><p style={{ margin: '0 0 14px', color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.7 }}>{editorial.challenge}</p></>)}
+            {editorial.approach && (<><h3 style={{ fontSize: '14px', fontWeight: 800, color: '#ff7043', letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px' }}>The approach</h3><p style={{ margin: '0 0 14px', color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.7 }}>{editorial.approach}</p></>)}
+            {editorial.whatWeDid.length > 0 && (<><h3 style={{ fontSize: '14px', fontWeight: 800, color: '#ff7043', letterSpacing: '0.08em', textTransform: 'uppercase', margin: '0 0 8px' }}>What we did</h3>
             <ul style={{ margin: '0 0 14px', paddingLeft: '20px', color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.7 }}>
               {editorial.whatWeDid.map((w) => <li key={w}>{w}</li>)}
-            </ul>
+            </ul></>)}
             <p style={{ margin: 0, color: '#ffffff', fontWeight: 700, fontSize: '15px' }}>Result: <span style={{ color: '#ff7043' }}>{editorial.result}</span></p>
           </div>
         )}

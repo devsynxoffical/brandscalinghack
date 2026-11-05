@@ -15,7 +15,7 @@ const cards = [
   { file: 'services', eyebrow: 'Services', title: 'Ecommerce Marketing Services for DTC Brands', stats: [['Meta', 'and TikTok ads'], ['CRO', 'Shopify stores'], ['UGC', 'creative engine']] },
   { file: 'contact', eyebrow: 'Contact', title: 'Book a Brand Growth Audit with Gaurav Kapoor', stats: [['NYC', 'headquarters'], ['US/UK', 'CA and AU'], ['1-on-1', 'audit call']] },
   { file: 'growth', eyebrow: 'Ecommerce Growth Agency', title: 'Meta, TikTok, Google and Shopify CRO in One Growth Engine', stats: [['4', 'phase system'], ['$50M+', 'ad spend'], ['150+', 'case studies']] },
-  { file: 'shopify-agency', eyebrow: 'Shopify Agency', title: 'Shopify Agency for DTC Brands That Want More Revenue Per Visitor', stats: [['5.25%', 'conversion rate'], ['862', 'orders in 24h'], ['<1s', 'mobile load']] },
+  { file: 'shopify-agency', eyebrow: 'Shopify Agency', title: 'Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor', stats: [['5.25%', 'conversion rate'], ['862', 'orders in 24h'], ['<1s', 'mobile load']] },
   { file: 'viral-creatives', eyebrow: 'Direct-Response Creatives', title: 'Direct-Response Video Creatives and High-Converting UGC Ads', stats: [['58+', 'live hooks'], ['13', 'verticals'], ['45+', 'angle matrix']] },
   { file: 'case-studies', eyebrow: 'Verified Case Studies', title: '150+ Verified Ecommerce Case Studies and Ad Account Proofs', stats: [['$2.3M', 'at 11.6x ROAS'], ['$1.6M', 'at 11.98x ROAS'], ['€118K', 'first month']] },
   { file: 'roas-calculator', eyebrow: 'Free Tool', title: 'Free ROAS Calculator: Break-Even ROAS and Profit Per Order', stats: [['2.0x', 'at 50% margin'], ['1.67x', 'at 60% margin'], ['1.43x', 'at 70% margin']] },
@@ -59,7 +59,18 @@ const html = (c) => `<!doctype html><html><head><meta charset="utf-8">
   fs.mkdirSync(outDir, { recursive: true });
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 });
-  for (const c of cards) {
+  // One card per data-driven content page (services, industries, tools, glossary...) in public/og/p/
+  const { CONTENT_PAGES } = await import('../src/data/pageRegistry.js');
+  const { contentOgFile } = await import('../src/data/pageSchemas.js'); // path -> file name
+  fs.mkdirSync(path.join(outDir, 'p'), { recursive: true });
+  const defaultStats = [['$50M+', 'Meta ad spend'], ['150+', 'case studies'], ['30+', 'niches']];
+  for (const p of CONTENT_PAGES) {
+    // only proof items whose full label fits the card; otherwise the agency-wide stats
+    const stats = (p.proof || []).filter((x) => String(x.value).length <= 9 && x.label.length <= 24).slice(0, 3).map((x) => [x.value, x.label]);
+    cards.push({ file: `p/${contentOgFile(p.path)}`, eyebrow: p.term ? 'Glossary' : p.eyebrow || 'Brand Scaling', title: p.h1.length > 80 ? p.titleTag.replace(/ \| Brand Scaling$/, '') : p.h1, stats: stats.length === 3 ? stats : defaultStats });
+  }
+  const only = process.argv[2];
+  for (const c of cards.filter((x) => !only || x.file.startsWith(only))) {
     await page.setContent(html(c), { waitUntil: 'networkidle' });
     await page.evaluate(() => document.fonts.ready);
     await page.screenshot({ path: path.join(outDir, `${c.file}.png`), type: 'png' });

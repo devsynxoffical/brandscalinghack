@@ -1,7 +1,10 @@
 // Brand Scaling Editorial Calendar & Published Articles
 // Clean text without markdown asterisks or list hyphens.
 
-export const blogPosts = [
+import blogBatch1 from './blog/batch-1.js';
+import blogBatch2 from './blog/batch-2.js';
+
+const corePosts = [
   {
     slug: 'bfcm-meta-ads-playbook',
     title: 'BFCM 2026: The Meta Ads Playbook for Shopify Brands',
@@ -1510,7 +1513,7 @@ That is the aim, not the minimum. The honest minimum for testing is a daily budg
     updatedDate: '2026-11-03',
     readTime: '12 min read',
     relatedLinks: [
-      { href: '/tiktok-ads-agency', title: 'TikTok Ads & TikTok Shop Scaling', text: 'We run TikTok Shop affiliates, Spark Ads and creator content for DTC brands.' },
+      { href: '/tiktok-shop-agency', title: 'TikTok Shop Agency', text: 'We run TikTok Shop listings, affiliate creators, Spark Ads and GMV Max for DTC brands.' },
       { href: '/viral-creatives', title: 'Direct-Response Creatives & UGC', text: 'The creative engine that turns affiliate videos into paid ads.' },
       { href: '/blog/meta-ads-library', title: 'Meta Ads Library: $376K Case Study', text: 'Find the creator ads your competitors keep paying for.' },
       { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Check what commission you can afford at your margins.' }
@@ -1854,3 +1857,6 @@ Always agree usage rights in writing before the shoot: how long you can run the 
     ]
   }
 ];
+
+// Posts added 5 Nov 2026 (SEO page plan), kept in their own modules
+export const blogPosts = [...corePosts, ...blogBatch1, ...blogBatch2];

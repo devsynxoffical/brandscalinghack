@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -18,6 +18,9 @@ import { nicheBySlug } from './data/caseNiches';
 import { isNoindexCase, canonicalCasePath } from './data/caseIndexing';
 import { allCaseSeo } from './data/caseFacts';
 import CaseNichePage from './pages/CaseNichePage';
+import { contentIndexByPath as contentPageByPath } from './data/contentIndex';
+// Content pages (services, industries, tools, glossary...) carry a lot of copy: load on demand
+const ContentPage = lazy(() => import('./pages/ContentPage'));
 
 import ShopifyAgencyPage from './pages/ShopifyAgencyPage';
 import MetaAdsAgencyPage from './pages/MetaAdsAgencyPage';
@@ -32,6 +35,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import { blogPosts } from './data/blogPosts';
 import GlassWindowMarquee from './components/GlassWindowMarquee';
 import RelatedGuides from './components/RelatedGuides';
+import ServiceUpgrade from './components/ServiceUpgrade';
 
 const caseSeoMap = allCaseSeo(allCaseStudies);
 
@@ -75,7 +79,7 @@ function App() {
         setActivePage('shopify-agency');
       } else if (rawPath === '/meta-ads-agency' || rawPath === '/facebook-ads-agency') {
         setActivePage('meta-ads-agency');
-      } else if (rawPath === '/tiktok-ads-agency' || rawPath === '/tiktok-shop-agency') {
+      } else if (rawPath === '/tiktok-ads-agency') {
         setActivePage('tiktok-ads-agency');
       } else if (rawPath === '/services') {
         setActivePage('services');
@@ -95,6 +99,9 @@ function App() {
         setActivePage('privacy-policy');
       } else if (rawPath === '/terms') {
         setActivePage('terms');
+      } else if (contentPageByPath(rawPath)) {
+        // Data-driven pages (services, industries, tools, glossary, comparisons, benchmarks)
+        setActivePage(rawPath.slice(1));
       } else {
         setActivePage('404');
       }
@@ -135,7 +142,12 @@ function App() {
     let pagePath = '/';
 
     let noindex = activePage === '404';
-    if (activePage.startsWith('case-niche-')) {
+    const contentPage = contentPageByPath(`/${activePage}`);
+    if (contentPage) {
+      title = contentPage.titleTag;
+      description = contentPage.metaDescription;
+      pagePath = contentPage.path;
+    } else if (activePage.startsWith('case-niche-')) {
       const niche = nicheBySlug(activePage.replace('case-niche-', ''));
       title = niche ? niche.titleTag : 'Ecommerce Case Studies | Brand Scaling';
       description = niche ? niche.metaDescription : '';
@@ -183,8 +195,8 @@ function App() {
           pagePath = '/growth';
           break;
         case 'shopify-agency':
-          title = 'Shopify Agency & DTC Ecommerce CRO | Brand Scaling';
-          description = 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.';
+          title = 'Shopify Growth Agency for DTC Brands | Brand Scaling';
+          description = 'Shopify growth agency for DTC brands: stores built for paid traffic, sub-1s mobile pages, bundles and upsells tied to your Meta ads. Book a store audit.';
           pagePath = '/shopify-agency';
           break;
         case 'meta-ads-agency':
@@ -193,8 +205,8 @@ function App() {
           pagePath = '/meta-ads-agency';
           break;
         case 'tiktok-ads-agency':
-          title = 'TikTok Ads & TikTok Shop Scaling Agency | Brand Scaling';
-          description = 'TikTok Shop scaling services and TikTok ads for DTC brands: creator ads, Spark Ads, affiliates and GMV Max, run with your Meta engine. Book a TikTok audit.';
+          title = 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling';
+          description = 'TikTok ads agency for DTC brands: native creator ads, Spark Ads and in-feed campaigns, run with the same creative engine as Meta. Book a TikTok ads audit.';
           pagePath = '/tiktok-ads-agency';
           break;
         case 'services':
@@ -306,6 +318,13 @@ function App() {
   };
 
   const renderActivePage = () => {
+    if (contentPageByPath(`/${activePage}`)) {
+      return (
+        <Suspense fallback={<div style={{ minHeight: '100vh', background: '#070709' }} />}>
+          <ContentPage path={`/${activePage}`} onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />
+        </Suspense>
+      );
+    }
     if (activePage.startsWith('case-niche-')) {
       return (
         <CaseNichePage
@@ -453,6 +472,9 @@ function App() {
 
       {/* Main Dynamic Page View */}
       <main>{renderActivePage()}</main>
+
+      {/* Quick answer, extra sections and FAQs for the original service pages */}
+      <ServiceUpgrade key={activePage} page={activePage} onNavigate={handleNavigate} />
 
       {/* Contextual guide links under service and hub pages */}
       <RelatedGuides page={activePage} onNavigate={handleNavigate} />

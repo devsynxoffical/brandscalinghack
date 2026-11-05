@@ -6,10 +6,12 @@ import { blogPosts } from './blogPosts.js';
 import { allCaseStudies } from './allCaseStudies.js';
 import { cleanSeoText, caseStudyDescription } from './seoText.js';
 import { CASE_NICHES, nicheBySlug, casesForNiche } from './caseNiches.js';
-import { isIndexableCase, canonicalCasePath } from './caseIndexing.js';
+import { isIndexableCase, isListedCase, canonicalCasePath } from './caseIndexing.js';
 import { caseSeo } from './caseFacts.js';
 import { CASE_VIDEO_META, isoDuration } from './caseVideoMeta.js';
 import { editorialFor } from './caseEditorial.js';
+import { contentIndexByPath } from './contentIndex.js';
+import SERVICE_UPGRADES from './pages/service-upgrades.js';
 
 export const BASE_URL = 'https://www.brandscalinghacks.com';
 export const ORG_ID = `${BASE_URL}/#organization`;
@@ -33,8 +35,12 @@ export const OG_IMAGES = {
   '/blog': `${BASE_URL}/og/blog.png`
 };
 
+// Content pages (services, industries, tools, glossary...) get a card per URL in public/og/p/
+export const contentOgFile = (path) => path.slice(1).replace(/\//g, '--');
+
 export const ogImageFor = (path) => {
   if (OG_IMAGES[path]) return OG_IMAGES[path];
+  if (path && contentIndexByPath(path)) return `${BASE_URL}/og/p/${contentOgFile(path)}.png`;
   if (path && path.startsWith('/blog/')) return `${BASE_URL}/og/blog/${path.slice(6)}-16x9.png`;
   return DEFAULT_OG_IMAGE;
 };
@@ -47,7 +53,7 @@ export const isoDate = (d) => (d && d.length === 10 ? `${d}T09:00:00-05:00` : d)
 
 export const LOGO = { '@type': 'ImageObject', '@id': `${BASE_URL}/#logo`, url: `${BASE_URL}/brandscaling-logo-512.png`, width: 512, height: 512, caption: 'Brand Scaling' };
 
-const breadcrumb = (items) => ({
+export const breadcrumb = (items) => ({
   '@type': 'BreadcrumbList',
   name: `Breadcrumbs: ${items.map(([n]) => n).join(' > ')}`,
   itemListElement: items.map(([name, path], i) => ({
@@ -58,7 +64,7 @@ const breadcrumb = (items) => ({
   }))
 });
 
-const faqPage = (id, faqs) => ({
+export const faqPage = (id, faqs) => ({
   '@type': 'FAQPage',
   '@id': `${BASE_URL}${id}`,
   mainEntity: faqs.map((f) => ({
@@ -68,7 +74,7 @@ const faqPage = (id, faqs) => ({
   }))
 });
 
-const webPage = ({ path, type = 'WebPage', name, description, speakable, extra = {} }) => ({
+export const webPage = ({ path, type = 'WebPage', name, description, speakable, extra = {} }) => ({
   '@type': type,
   '@id': `${BASE_URL}${path}#webpage`,
   url: `${BASE_URL}${path === '/' ? '/' : path}`,
@@ -335,8 +341,8 @@ const staticSchemas = {
   '/tiktok-ads-agency': () => [
     webPage({
       path: '/tiktok-ads-agency',
-      name: 'TikTok Ads & TikTok Shop Scaling Agency | Brand Scaling',
-      description: 'TikTok Shop scaling services and TikTok ads for DTC brands: creator ads, Spark Ads, affiliates and GMV Max, run with your Meta engine. Book a TikTok audit.',
+      name: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
+      description: 'TikTok ads agency for DTC brands: native creator ads, Spark Ads and in-feed campaigns, run with the same creative engine as Meta. Book a TikTok ads audit.',
       speakable: ['h1']
     }),
     {
@@ -441,8 +447,8 @@ const staticSchemas = {
   '/shopify-agency': () => [
     webPage({
       path: '/shopify-agency',
-      name: 'Shopify Agency & DTC Ecommerce CRO | Brand Scaling',
-      description: 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.'
+      name: 'Shopify Growth Agency for DTC Brands | Brand Scaling',
+      description: 'Shopify growth agency for DTC brands: stores built for paid traffic, sub-1s mobile pages, bundles and upsells tied to your Meta ads. Book a store audit.'
     }),
     {
       '@type': 'Service',
@@ -568,7 +574,7 @@ const staticSchemas = {
 
 export function caseNicheSchema(niche) {
   const path = `/case-studies/${niche.slug}`;
-  const cases = casesForNiche(niche, allCaseStudies, isIndexableCase);
+  const cases = casesForNiche(niche, allCaseStudies, isListedCase);
   return [
     webPage({
       path,
@@ -718,7 +724,18 @@ export function caseStudySchema(cs) {
  */
 export function getRouteSchema(path) {
   const clean = (path || '/').replace(/\/$/, '') || '/';
-  if (staticSchemas[clean]) return staticSchemas[clean]();
+  if (staticSchemas[clean]) {
+    const graph = staticSchemas[clean]();
+    // Extra FAQs added to the original service pages (service-upgrades.js) join the page's FAQPage
+    const extra = (SERVICE_UPGRADES[clean] && SERVICE_UPGRADES[clean].faqs) || [];
+    if (extra.length) {
+      const faqNode = graph.find((n) => n['@type'] === 'FAQPage');
+      const extraQs = faqPage('', extra).mainEntity;
+      if (faqNode) faqNode.mainEntity = [...faqNode.mainEntity, ...extraQs.filter((q) => !faqNode.mainEntity.some((o) => o.name === q.name))];
+      else graph.push(faqPage(`${clean}#faq`, extra));
+    }
+    return graph;
+  }
   if (clean.startsWith('/blog/')) {
     const post = blogPosts.find((p) => p.slug === clean.slice('/blog/'.length));
     return post ? blogPostSchema(post) : null;

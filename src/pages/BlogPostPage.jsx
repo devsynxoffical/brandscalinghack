@@ -44,7 +44,9 @@ function Linked({ text, state, onNavigate }) {
     <a
       key={i}
       href={seg.href}
-      onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(pageIdFromHref(seg.href)); }}
+      {...(/^https?:/.test(seg.href)
+        ? { target: '_blank', rel: 'noopener' }
+        : { onClick: (e) => { e.preventDefault(); onNavigate && onNavigate(pageIdFromHref(seg.href)); } })}
       style={{ color: '#ea580c', fontWeight: 650, textDecoration: 'underline', textUnderlineOffset: '3px', textDecorationColor: 'rgba(234, 88, 12, 0.4)' }}
     >
       {seg.text}

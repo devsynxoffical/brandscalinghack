@@ -1,3 +1,5 @@
+import { CASE_EDITORIAL_EXTRA } from './caseEditorialExtra.js';
+
 // Hand-written editorial breakdowns for the highest-value case studies. Rendered at the
 // top of the case page (visible to visitors), prerendered for crawlers, and used as the
 // meta description. Keyed by slug. Only states what the original post states.
@@ -64,4 +66,8 @@ export const CASE_EDITORIAL = {
   }
 };
 
-export const editorialFor = (cs) => CASE_EDITORIAL[cs.slug] || CASE_EDITORIAL[cs.id] || null;
+// Write-ups added 5 Nov 2026 (challenge / approach fields; whatWeDid may be null when the post has no detail)
+export const editorialFor = (cs) => {
+  const e = CASE_EDITORIAL[cs.slug] || CASE_EDITORIAL[cs.id] || CASE_EDITORIAL_EXTRA[cs.slug] || CASE_EDITORIAL_EXTRA[cs.id] || null;
+  return e ? { ...e, whatWeDid: e.whatWeDid || [] } : null;
+};

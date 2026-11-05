@@ -40,7 +40,7 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
           </div>
           
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.03em', lineHeight: 1.15, marginBottom: '20px' }}>
-            Shopify Agency for DTC Brands That Want More Revenue Per Visitor
+            Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor
           </h1>
           
           <p style={{ fontSize: '18px', color: '#94a3b8', maxWidth: '780px', margin: '0 auto 30px', lineHeight: 1.6 }}>

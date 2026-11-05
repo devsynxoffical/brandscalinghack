@@ -299,6 +299,22 @@ Checks: lint 0 errors; `npm run seo:audit` 153 pages, 0 problems; structured dat
 
 Action for the owner: request indexing in Search Console for /blog/meta-ads-library, /meta-ads-agency, /blog/facebook-ads-for-shopify, /blog/dtc-affiliate-program, /blog/scale-ugc-production, /case-studies/skincare-beauty, and re-request /blog/bfcm-meta-ads-playbook and /blog/what-is-roas so Google sees the Nov 3 expansions before Black Friday.
 
+## 4j. Day 7, second pass (Nov 5, 2026): SEO page plan (BrandScalingHacks-SEO-Page-Plan.pdf)
+
+Week 1 fixes:
+- Case library consolidated: 21 strongest case pages stay indexable and in the sitemap (`BEST_CASE_SLUGS` in `src/data/caseIndexing.js`); the other 100 unique cases are live with `noindex, follow`, still listed on their category hubs, and link back to the category and the best cases. 5 duplicates keep their canonical. Reverses the Oct 31 "index all" decision because Google indexed 3 of 121.
+- 12 cases got full write-ups (summary, challenge, approach, what we did, result) from `src/data/caseEditorialExtra.js`.
+- The 7 original service pages got a 40 to 60 word quick answer, 2 to 4 new sections and extra FAQs (`src/data/pages/service-upgrades.js`, rendered by `ServiceUpgrade` and prerendered).
+- /shopify-agency retitled to "Shopify growth agency"; /tiktok-ads-agency now targets TikTok ads only (TikTok Shop has its own page; the old alias of /tiktok-shop-agency to the TikTok page is removed).
+
+New pages (67 URLs): 10 services, /for hub + 15 industries, /tools hub + 7 calculators, /benchmarks hub + ecommerce ROAS benchmark, 4 comparisons, /glossary hub + 15 terms, 11 blog posts. One template (`src/pages/ContentPage.jsx`, loaded on demand) renders all non-blog pages from `src/data/pageRegistry.js`; calculators from `src/data/toolDefs.js`. Each page: keyword in title, H1, intro and description; quick answer; proof block from real cases only; 5 to 6 FAQs; related links; per-page OG image (`public/og/p/`). Schema: BreadcrumbList, FAQPage, plus Service (services, industries), DefinedTerm and DefinedTermSet (glossary), WebApplication (tools), Article (comparisons, benchmark), CollectionPage + ItemList (hubs).
+
+Deferred on purpose: /benchmarks for Meta CPM, conversion rate and CAC (no agency data we can publish honestly yet), and /blog/dtc-affiliate-marketing-guide (duplicates /blog/dtc-affiliate-program).
+
+Linking: Services dropdown and mobile drawer link the 4 hubs; footer "Resources" column; homepage "Most searched" block (16 links); /services lists specialist services, industries and comparisons; in-text link rules now cover TikTok Shop, CRO, Klaviyo, Google Shopping, audits, retention, influencer, creative strategy and 12 glossary terms; sister sites SevenFigureStudio and FunnelsThatPrint linked where mentioned; case category hubs link to their industry page; llms.txt lists every new page.
+
+Checks: lint exit 0; `npm run seo:audit` 220 pages, 115 sitemap URLs, min 3 inbound links per URL, 0 problems; structured data 0 errors; browser check desktop and 390px mobile on every template, no horizontal overflow, no page errors.
+
 ---
 
 ## 5. Files changed in this commit

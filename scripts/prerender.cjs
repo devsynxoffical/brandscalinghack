@@ -61,9 +61,9 @@ const routes = [
   {
     path: '/shopify-agency',
     outPath: 'shopify-agency/index.html',
-    title: 'Shopify Agency & DTC Ecommerce CRO | Brand Scaling',
-    description: 'Shopify agency for DTC brands that need more than a theme: sub-1s mobile stores, CRO, bundles and upsells tied to Meta ads. Book a store audit.',
-    h1: 'Shopify Agency for DTC Brands That Want More Revenue Per Visitor',
+    title: 'Shopify Growth Agency for DTC Brands | Brand Scaling',
+    description: 'Shopify growth agency for DTC brands: stores built for paid traffic, sub-1s mobile pages, bundles and upsells tied to your Meta ads. Book a store audit.',
+    h1: 'Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor',
     content: `
       <p>A Shopify agency that builds and optimizes stores for paid traffic: every page is built for the ads that send visitors to it. Proven by verified 5.25% store conversion rate results.</p>
       <h2>What a Shopify Growth Agency Does</h2>
@@ -237,7 +237,7 @@ const escapeHtml = (s) => String(s || '')
 async function buildCaseRoutes() {
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
   const { cleanSeoText } = await import('../src/data/seoText.js');
-  const { isIndexableCase, isNoindexCase, canonicalCasePath } = await import('../src/data/caseIndexing.js');
+  const { isIndexableCase, isNoindexCase, isListedCase, canonicalCasePath } = await import('../src/data/caseIndexing.js');
   const { editorialFor } = await import('../src/data/caseEditorial.js');
   const { allCaseSeo, caseSeo } = await import('../src/data/caseFacts.js');
   const { relatedCases, nicheForCase } = await import('../src/data/caseNiches.js');
@@ -260,11 +260,12 @@ async function buildCaseRoutes() {
       ogImage: cs.image ? `https://www.brandscalinghacks.com${cs.image}` : null,
       noindex: isNoindexCase(cs),
       inSitemapLists: isIndexableCase(cs),
+      listed: isListedCase(cs),
       content: `
         <p>${escapeHtml(seo.summary)}</p>
         <h2>Results at a Glance</h2>
         <table><tbody>${seo.factRows.map(([k, v]) => `<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(v)}</td></tr>`).join('')}</tbody></table>
-        ${editorial ? `<h2>What We Did</h2><ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul><p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : ''}
+        ${editorial ? `${editorial.challenge ? `<h2>The Challenge</h2><p>${escapeHtml(editorial.challenge)}</p>` : ''}${editorial.approach ? `<h2>The Approach</h2><p>${escapeHtml(editorial.approach)}</p>` : ''}${editorial.whatWeDid.length ? `<h2>What We Did</h2><ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul>` : ''}<p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : ''}
         ${seo.takeaways.length ? `<h2>Key Takeaways</h2><ul>${seo.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>` : ''}
         ${caption.length ? `<h2>Original Post: ${escapeHtml(cleanSeoText(cs.title, 110))}</h2>${caption.map((l) => `<p>${escapeHtml(l)}</p>`).join('')}` : ''}
         ${(() => { const g = relatedGuidesFor(`${cs.title} ${cs.fullCaption || ''} ${seo.niche.long}`, `/cases/${id}`); return g.length ? `<h2>Guides behind this result</h2><ul>${g.map((x) => `<li><a href="${x.href}">${escapeHtml(x.title)}</a></li>`).join('')}</ul>` : ''; })()}
@@ -438,12 +439,13 @@ function renderRoute(route) {
   }); });
 
   const { SERVICES, tiktokFaqs } = await import('../src/data/pageSchemas.js');
+  const { CONTENT_PAGES: CONTENT_PAGES_ALL } = await import('../src/data/pageRegistry.js');
   routes.push(
     {
       path: '/tiktok-ads-agency',
       outPath: 'tiktok-ads-agency/index.html',
-      title: 'TikTok Ads & TikTok Shop Scaling Agency | Brand Scaling',
-      description: 'TikTok Shop scaling services and TikTok ads for DTC brands: creator ads, Spark Ads, affiliates and GMV Max, run with your Meta engine. Book a TikTok audit.',
+      title: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
+      description: 'TikTok ads agency for DTC brands: native creator ads, Spark Ads and in-feed campaigns, run with the same creative engine as Meta. Book a TikTok ads audit.',
       h1: 'TikTok Ads Agency for Ecommerce Brands: Creator Ads, Spark Ads &amp; TikTok Shop',
       content: `
         <p>TikTok ads, Spark Ads, creator affiliates and TikTok Shop run as one system with the creative, the tracking and the Shopify store. Built by the team behind $50M+ in paid social spend and 150+ verified case studies.</p>
@@ -476,6 +478,12 @@ function renderRoute(route) {
       content: `
         <p>Brand Scaling runs paid acquisition, creative, the Shopify store and retention as one growth system: $50M+ in ad spend managed across 30+ niches.</p>
         ${SERVICES.map((svc) => `<h2><a href="${svc.path}">${escapeHtml(svc.name)}</a></h2><p>${escapeHtml(svc.description)}</p><ul>${svc.includes.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>`).join('')}
+        <h2>Specialist services</h2>
+        <ul>${CONTENT_PAGES_ALL.filter((c) => c.kind === 'service').map((c) => `<li><a href="${c.path}">${escapeHtml(c.eyebrow || c.h1)}</a>: ${escapeHtml(c.metaDescription)}</li>`).join('')}</ul>
+        <h2>Services by industry</h2>
+        <ul>${CONTENT_PAGES_ALL.filter((c) => c.kind === 'industry').map((c) => `<li><a href="${c.path}">${escapeHtml(c.h1)}</a></li>`).join('')}</ul>
+        <h2>Compare your options</h2>
+        <ul>${CONTENT_PAGES_ALL.filter((c) => c.kind === 'comparison').map((c) => `<li><a href="${c.path}">${escapeHtml(c.h1)}</a></li>`).join('')}</ul>
         <h2>How the services fit together</h2>
         <p>Creative feeds the ad accounts, the ad accounts send traffic to a store built for that traffic, and retention raises lifetime value so the accounts can afford a higher cost per acquisition. See the <a href="/growth">growth engine</a> and the <a href="/case-studies">case study library</a>.</p>
       `
@@ -508,12 +516,12 @@ function renderRoute(route) {
     }
   );
 
-  const { CASE_NICHES, casesForNiche } = await import('../src/data/caseNiches.js');
+  const { CASE_NICHES, casesForNiche, NICHE_INDUSTRY_PAGE } = await import('../src/data/caseNiches.js');
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
-  const { isIndexableCase } = await import('../src/data/caseIndexing.js');
+  const { isListedCase } = await import('../src/data/caseIndexing.js');
   const { caseSeo: caseSeoFn } = await import('../src/data/caseFacts.js');
   const nicheRoutes = CASE_NICHES.map((n) => {
-    const cases = casesForNiche(n, allCaseStudies, isIndexableCase);
+    const cases = casesForNiche(n, allCaseStudies, isListedCase);
     return {
       path: `/case-studies/${n.slug}`,
       outPath: `case-studies/${n.slug}/index.html`,
@@ -527,7 +535,7 @@ function renderRoute(route) {
         <h2>How Brand Scaling scales ${escapeHtml(n.name)} brands</h2>
         <p>Every account ran the same four-phase engine: a 14-day foundation (tracking, offer, product page), a creative testing phase with 30 to 50 new angles a month, an optimisation phase on conversion rate and average order value, then budget scaling in 20% to 30% steps with cost controls.</p>
         <p>Other niches: ${CASE_NICHES.filter((o) => o.slug !== n.slug).map((o) => `<a href="/case-studies/${o.slug}">${escapeHtml(o.name)}</a>`).join(' | ')} | <a href="/case-studies">All case studies</a></p>
-        <p><a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a> | <a href="/shopify-agency">Shopify agency</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
+        <p>${NICHE_INDUSTRY_PAGE[n.slug] ? `<a href="${NICHE_INDUSTRY_PAGE[n.slug].href}">${escapeHtml(NICHE_INDUSTRY_PAGE[n.slug].label)}</a> | ` : ''}<a href="/meta-ads-agency">Meta ads agency</a> | <a href="/growth">Ecommerce growth agency</a> | <a href="/shopify-agency">Shopify agency</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
       `
     };
   });
@@ -538,8 +546,10 @@ function renderRoute(route) {
   caseHub.content += `
       <h2>Case Studies by Niche</h2>
       <ul>${CASE_NICHES.map((n) => `<li><a href="/case-studies/${n.slug}">${escapeHtml(n.h1)}</a></li>`).join('')}</ul>
-      <h2>All ${indexableCaseRoutes.length} Case Studies</h2>
-      <ul>${indexableCaseRoutes.map((r) => `<li><a href="${r.path}">${r.h1}</a></li>`).join('')}</ul>`;
+      <h2>Featured Case Studies</h2>
+      <ul>${indexableCaseRoutes.map((r) => `<li><a href="${r.path}">${r.h1}</a></li>`).join('')}</ul>
+      <h2>More Client Results</h2>
+      <ul>${caseRoutes.filter((r) => r.listed && !r.inSitemapLists).map((r) => `<li><a href="${r.path}">${r.h1}</a></li>`).join('')}</ul>`;
   const home = routes.find((r) => r.path === '/');
   home.headExtra = '<link rel="preload" as="image" href="/hero-video-poster.jpg" fetchpriority="high" />';
   const blogHub = routes.find((r) => r.path === '/blog');
@@ -551,6 +561,8 @@ function renderRoute(route) {
   // Home: latest playbooks (newest first), so the most-crawled page links to fresh posts
   const home0 = routes.find((r) => r.path === '/');
   const latest = [...blogPosts].sort((x, y) => (y.updatedDate || y.publishDate).localeCompare(x.updatedDate || x.publishDate)).slice(0, 5);
+  const { MOST_SEARCHED } = await import('../src/data/mostSearched.js');
+  home0.content += `<h2>Most searched</h2><ul>${MOST_SEARCHED.map((l) => `<li><a href="${l.href}">${escapeHtml(l.label)}</a></li>`).join('')}</ul>`;
   home0.content += `<h2>Latest Ecommerce Scaling Playbooks</h2><ul>${latest.map((b) => `<li><a href="/blog/${b.slug}">${escapeHtml(b.title)}</a>: ${escapeHtml(b.metaDescription)}</li>`).join('')}</ul>`;
 
   // FAQ copy with contextual links on home and service pages (mirrors the React FAQ sections)
@@ -564,6 +576,26 @@ function renderRoute(route) {
     r.content += `<h2>Frequently Asked Questions</h2>${faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}`;
   }
 
+  // Quick answer, extra sections and FAQs on the original service pages (mirrors <ServiceUpgrade />)
+  const { default: SERVICE_UPGRADES } = await import('../src/data/pages/service-upgrades.js');
+  for (const [up, data] of Object.entries(SERVICE_UPGRADES)) {
+    const r = routes.find((x) => x.path === up);
+    if (!r) continue;
+    const ls = newLinkState(up, 6);
+    const qa = data.quickAnswer ? `<h2>${escapeHtml(data.quickAnswer.question)}</h2><p class="quick-answer">${escapeHtml(data.quickAnswer.answer)}</p>` : '';
+    // quick answer goes right after the opening paragraph
+    r.content = r.content.replace(/<\/p>/, () => `</p>${qa}`);
+    r.content += (data.sections || []).map((sec) => `
+      <h2>${escapeHtml(sec.h2)}</h2>
+      ${String(sec.content || '').split(/\n\s*\n/).filter((x) => x.trim()).map((x) => `<p>${linkHtml(x.trim(), ls)}</p>`).join('')}
+      ${sec.list ? `<ul>${sec.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}
+      ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((row) => `<tr>${row.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
+      ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${String(sub.content || '').split(/\n\s*\n/).filter((x) => x.trim()).map((x) => `<p>${linkHtml(x.trim(), ls)}</p>`).join('')}${sub.list ? `<ul>${sub.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}`).join('')}
+      ${(sec.links || []).length ? `<ul>${sec.links.map((l) => `<li><a href="${l.href}">${escapeHtml(l.text)}</a></li>`).join('')}</ul>` : ''}
+    `).join('');
+    if ((data.faqs || []).length) r.content += `<h2>More questions</h2>${data.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}`;
+  }
+
   // Guides strip under service and hub pages (mirrors <RelatedGuides />)
   for (const [page, guidePaths] of Object.entries(SERVICE_GUIDES)) {
     const r = routes.find((x) => x.path === SERVICE_PATHS[page]);
@@ -572,8 +604,47 @@ function renderRoute(route) {
     r.content += `<h2>Guides from the Brand Scaling playbook</h2><ul>${items.map((b) => `<li><a href="/blog/${b.slug}">${escapeHtml(b.title)}</a></li>`).join('')}</ul>`;
   }
 
-  const allRoutes = [...routes, ...nicheRoutes, ...blogRoutes, ...caseRoutes].map((r) => {
-    const graph = getRouteSchema(r.path);
+  // Data-driven content pages: services, industries, tools, glossary, comparisons, benchmarks and hubs
+  const { CONTENT_PAGES, KIND_HUB } = await import('../src/data/pageRegistry.js');
+  const { linkTitle } = await import('../src/data/linkTitles.js');
+  const { TOOL_DEFS } = await import('../src/data/toolDefs.js');
+  const paraHtml = (text, ls) => String(text || '').split(/\n\s*\n/).map((x) => x.trim()).filter(Boolean).map((x) => `<p>${linkHtml(x, ls)}</p>`).join('');
+  const contentRoutes = CONTENT_PAGES.map((pg) => {
+    const ls = newLinkState(pg.path, 10);
+    const hub = pg.kind === 'hub' ? null : KIND_HUB[pg.kind];
+    const tool = pg.tool && TOOL_DEFS[pg.tool];
+    const related = (pg.related || []).filter((h) => h !== pg.path && linkTitle(h));
+    return {
+      path: pg.path,
+      outPath: `${pg.path.slice(1)}/index.html`,
+      title: escapeHtml(pg.titleTag),
+      description: escapeHtml(pg.metaDescription),
+      h1: escapeHtml(pg.h1),
+      content: `
+        <p><a href="/">Home</a>${hub ? ` / <a href="${hub.path}">${escapeHtml(hub.name)}</a>` : ''} / ${escapeHtml(pg.term ? pg.term.name : pg.eyebrow || pg.h1)}</p>
+        ${paraHtml(pg.intro, ls)}
+        ${pg.quickAnswer ? `<h2>${escapeHtml(pg.quickAnswer.question)}</h2><p class="quick-answer">${escapeHtml(pg.quickAnswer.answer)}</p>` : ''}
+        ${pg.term ? `<dl><dt>${escapeHtml(pg.term.name)}${pg.term.alternateName && pg.term.alternateName !== pg.term.name ? ` (${escapeHtml(pg.term.alternateName)})` : ''}</dt><dd>${escapeHtml(pg.term.shortDefinition)}</dd></dl>${pg.term.formula ? `<p><strong>Formula:</strong> ${escapeHtml(pg.term.formula)}</p>` : ''}` : ''}
+        ${tool ? `<h2>${escapeHtml(tool.name)}</h2><p>Inputs: ${tool.inputs.map((i) => escapeHtml(i.label + (i.unit ? ` (${i.unit})` : ''))).join(', ')}. The calculator runs in your browser; nothing is stored.</p>` : ''}
+        ${(pg.sections || []).map((sec) => `
+          <h2>${escapeHtml(sec.h2)}</h2>
+          ${paraHtml(sec.content, ls)}
+          ${sec.list ? `<ul>${sec.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}
+          ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((r) => `<tr>${r.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
+          ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${paraHtml(sub.content, ls)}${sub.list ? `<ul>${sub.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}`).join('')}
+          ${sec.cards ? `<ul>${sec.cards.map((c) => `<li><a href="${c.href}">${escapeHtml(c.title)}</a>: ${escapeHtml(c.text)}</li>`).join('')}</ul>` : ''}
+        `).join('')}
+        ${(pg.proof || []).length ? `<h2>Proof from real accounts</h2><ul>${pg.proof.map((x) => `<li><strong>${escapeHtml(x.value)}</strong> ${escapeHtml(x.label)}${x.note ? `: ${escapeHtml(x.note)}` : ''}${x.href ? ` (<a href="${x.href}">see the proof</a>)` : ''}</li>`).join('')}</ul>` : ''}
+        ${(pg.faqs || []).length ? `<h2>Frequently asked questions</h2>${pg.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}` : ''}
+        ${related.length ? `<h2>Related</h2><ul>${related.map((h) => `<li><a href="${h}">${escapeHtml(linkTitle(h))}</a></li>`).join('')}</ul>` : ''}
+        ${pg.cta ? `<h2>${escapeHtml(pg.cta.heading)}</h2><p>${escapeHtml(pg.cta.text)} <a href="/contact">Book a Brand Growth Audit</a>.</p>` : ''}
+      `
+    };
+  });
+
+  const { contentPageSchema } = await import('../src/data/contentSchema.js');
+  const allRoutes = [...routes, ...nicheRoutes, ...contentRoutes, ...blogRoutes, ...caseRoutes].map((r) => {
+    const graph = getRouteSchema(r.path) || contentPageSchema(r.path);
     return {
       ...r,
       ogImage: r.ogImage || (r.path.startsWith('/cases/') ? null : ogImageFor(r.path)),
@@ -586,6 +657,9 @@ function renderRoute(route) {
     ['/', 'Home'], ['/services', 'Services'], ['/meta-ads-agency', 'Meta Ads Agency'], ['/tiktok-ads-agency', 'TikTok Ads Agency'],
     ['/shopify-agency', 'Shopify Agency'], ['/growth', 'Growth Engine'], ['/viral-creatives', 'Viral Creatives'],
     ['/case-studies', 'Case Studies'], ...CASE_NICHES.map((n) => [`/case-studies/${n.slug}`, `${n.name} Case Studies`]),
+    ...CONTENT_PAGES.filter((c) => c.kind === 'service').map((c) => [c.path, c.eyebrow || c.h1]),
+    ['/for', 'Industries'], ['/tools', 'Free Tools'], ['/benchmarks', 'Benchmarks'], ['/glossary', 'Glossary'],
+    ...CONTENT_PAGES.filter((c) => c.kind === 'comparison').map((c) => [c.path, c.h1]),
     ['/roas-calculator', 'ROAS Calculator'], ['/blog', 'Blog'], ...blogPosts.map((b) => [`/blog/${b.slug}`, b.title]),
     ['/about', 'About'], ['/contact', 'Contact'], ['/privacy-policy', 'Privacy Policy'], ['/terms', 'Terms of Service']
   ];
@@ -593,7 +667,7 @@ function renderRoute(route) {
 
   allRoutes.forEach(renderRoute);
   writeLlmsFull(allRoutes);
-  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.filter((r) => r.noindex).length} noindex, ${caseRoutes.filter((r) => !r.noindex && !r.inSitemapLists).length} canonicalised duplicates).`);
+  console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${contentRoutes.length} content pages + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.filter((r) => r.noindex).length} noindex, ${caseRoutes.filter((r) => !r.noindex && !r.inSitemapLists).length} canonicalised duplicates).`);
 })().catch((err) => {
   console.error('Prerender failed:', err);
   process.exit(1);

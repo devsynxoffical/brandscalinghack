@@ -68,6 +68,24 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               <a className="st-footer-link" href="/blog" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('blog'); }}>All Scaling Playbooks</a>
             </div>
 
+            {/* Resources: hubs that link to every service, industry, tool and glossary page */}
+            <div className="st-footer-group">
+              <h3 className="st-footer-heading">Resources</h3>
+              {[
+                ['/for', 'for', 'Industries We Scale'],
+                ['/tools', 'tools', 'Free Ecommerce Calculators'],
+                ['/glossary', 'glossary', 'Ecommerce Glossary'],
+                ['/benchmarks', 'benchmarks', 'ROAS Benchmarks'],
+                ['/meta-ads-audit', 'meta-ads-audit', 'Meta Ads Audit'],
+                ['/tiktok-shop-agency', 'tiktok-shop-agency', 'TikTok Shop Agency'],
+                ['/cro-agency', 'cro-agency', 'Ecommerce CRO Agency'],
+                ['/klaviyo-email-sms-agency', 'klaviyo-email-sms-agency', 'Klaviyo Email & SMS'],
+                ['/compare/agency-vs-in-house-media-buyer', 'compare/agency-vs-in-house-media-buyer', 'Agency vs In-House']
+              ].map(([href, id, label]) => (
+                <a key={href} className="st-footer-link" href={href} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(id); }}>{label}</a>
+              ))}
+            </div>
+
             {/* Find Us */}
             <div className="st-footer-group">
               <h3 className="st-footer-heading">Find Us</h3>

@@ -4280,6 +4280,7 @@ button {
 
 .st-footer-groups {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
   gap: 2.5rem;
@@ -4290,16 +4291,17 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  flex: 1;
+  flex: 1 1 10rem;
 }
 
 .st-footer-group-meta {
-  flex: 1.2;
+  flex: 1.2 1 13rem;
 }
 
+/* Newsletter gets its own row under the link columns so they stay readable */
 .st-footer-group-newsletter {
-  min-width: 21.25rem;
-  flex: 1.4;
+  flex: 1 1 100%;
+  max-width: 34rem;
 }
 
 .st-footer-heading {
@@ -11820,3 +11822,23 @@ button {
 
 
 
+
+.header-dropdown-hubs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  padding: 6px 12px 2px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 6px;
+}
+
+.header-dropdown-hubs a {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-dropdown-hubs a:hover {
+  color: #ffffff;
+}

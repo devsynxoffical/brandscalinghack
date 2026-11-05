@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, TrendingUp, Layers } from 'lucide-react';
 import { allCaseStudies } from '../data/allCaseStudies';
-import { CASE_NICHES, nicheBySlug, casesForNiche } from '../data/caseNiches';
-import { isIndexableCase } from '../data/caseIndexing';
+import { CASE_NICHES, nicheBySlug, casesForNiche, NICHE_INDUSTRY_PAGE } from '../data/caseNiches';
+import { isListedCase } from '../data/caseIndexing';
 import { displayFigures, caseSeo } from '../data/caseFacts';
 import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 import NotFoundPage from './NotFoundPage';
@@ -30,7 +30,7 @@ export default function CaseNichePage({ nicheSlug, onNavigate, onOpenBooking }) 
 
   if (!niche) return <NotFoundPage onNavigate={onNavigate} onOpenBooking={onOpenBooking} />;
 
-  const cases = casesForNiche(niche, allCaseStudies, isIndexableCase);
+  const cases = casesForNiche(niche, allCaseStudies, isListedCase);
   const go = (page) => (e) => { e.preventDefault(); onNavigate && onNavigate(page); };
 
   return (
@@ -64,6 +64,11 @@ export default function CaseNichePage({ nicheSlug, onNavigate, onOpenBooking }) 
           <a href="/meta-ads-agency" onClick={go('meta-ads-agency')} style={{ background: '#111116', color: '#e2e8f0', border: '1px solid #282836', padding: '14px 24px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, textDecoration: 'none' }}>
             Meta Ads Agency
           </a>
+          {NICHE_INDUSTRY_PAGE[niche.slug] && (
+            <a href={NICHE_INDUSTRY_PAGE[niche.slug].href} onClick={go(NICHE_INDUSTRY_PAGE[niche.slug].href.slice(1))} style={{ background: '#111116', color: '#e2e8f0', border: '1px solid #282836', padding: '14px 24px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, textDecoration: 'none' }}>
+              {NICHE_INDUSTRY_PAGE[niche.slug].label}
+            </a>
+          )}
         </div>
 
         {/* Niche switcher */}

@@ -45,6 +45,10 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   const { CASE_NICHES } = await import('../src/data/caseNiches.js');
   const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.8' }));
 
+  const { CONTENT_PAGES } = await import('../src/data/pageRegistry.js');
+  const PRIORITY = { service: '0.9', hub: '0.8', industry: '0.8', tool: '0.8', comparison: '0.7', benchmark: '0.7', glossary: '0.6' };
+  const contentRoutes = CONTENT_PAGES.map((p) => ({ loc: p.path, lastmod: p.updated, changefreq: p.kind === 'glossary' ? 'monthly' : 'weekly', priority: PRIORITY[p.kind] || '0.7' }));
+
   const blogRoutes = blogPosts.map((p) => ({
     loc: `/blog/${p.slug}`,
     lastmod: (p.updatedDate || p.publishDate || '2026-10-27').slice(0, 10),
@@ -61,7 +65,7 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
     caseRoutes.push({ loc: `/cases/${id}`, lastmod: CASE_LASTMOD, changefreq: 'monthly', priority: '0.6' });
   }
 
-  const all = [...staticRoutes, ...nicheRoutes, ...blogRoutes, ...caseRoutes];
+  const all = [...staticRoutes, ...nicheRoutes, ...contentRoutes, ...blogRoutes, ...caseRoutes];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${all.map(urlBlock).join('\n')}
@@ -94,7 +98,7 @@ ${rssItems}
 </rss>
 `;
   fs.writeFileSync(path.join(__dirname, '..', 'public', 'feed.xml'), rss, 'utf8');
-  console.log(`Sitemap written: ${all.length} URLs (${staticRoutes.length} static, ${nicheRoutes.length} niche hubs, ${blogRoutes.length} blog, ${caseRoutes.length} indexable case studies).`);
+  console.log(`Sitemap written: ${all.length} URLs (${staticRoutes.length} static, ${nicheRoutes.length} niche hubs, ${contentRoutes.length} content pages, ${blogRoutes.length} blog, ${caseRoutes.length} indexable case studies).`);
 })().catch((err) => {
   console.error('Sitemap generation failed:', err);
   process.exit(1);

@@ -12,6 +12,14 @@ export const SERVICE_LINKS = [
   { id: 'viral-creatives', href: '/viral-creatives', label: 'Viral Creatives', desc: 'Direct-response video and UGC ads', icon: Clapperboard }
 ];
 
+// Resource hubs shown under the service list (each hub links to all of its pages)
+export const HUB_LINKS = [
+  { id: 'for', href: '/for', label: 'Industries' },
+  { id: 'tools', href: '/tools', label: 'Free tools' },
+  { id: 'glossary', href: '/glossary', label: 'Glossary' },
+  { id: 'benchmarks', href: '/benchmarks', label: 'Benchmarks' }
+];
+
 export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -144,6 +152,11 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
               >
                 All services →
               </a>
+              <div className="header-dropdown-hubs">
+                {HUB_LINKS.map(({ id, href, label }) => (
+                  <a key={id} href={href} role="menuitem" onClick={(e) => handleNavClick(id, e)} tabIndex={servicesOpen ? 0 : -1}>{label}</a>
+                ))}
+              </div>
               <button
                 type="button"
                 className="header-dropdown-cta"
@@ -225,6 +238,9 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
               <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
             ))}
             <a href="/services" onClick={(e) => handleNavClick('services', e)}>All services</a>
+            {HUB_LINKS.map(({ id, href, label }) => (
+              <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
+            ))}
           </div>
           <a href="/case-studies" onClick={(e) => handleNavClick('case-studies', e)}>Case Studies</a>
           <a href="/roas-calculator" onClick={(e) => handleNavClick('roas-calculator', e)}>ROAS Calculator</a>

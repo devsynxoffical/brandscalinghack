@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Megaphone, Music2, ShoppingBag, Rocket, Clapperboard, Calculator } from 'lucide-react';
 import { getRouteSchema, toJsonLd, SERVICES } from '../data/pageSchemas';
+import { contentIndexOfKind as contentPagesOfKind } from '../data/contentIndex';
+import { pageIdFromHref } from '../data/internalLinks';
+
+const SPECIALIST = contentPagesOfKind('service');
+const COMPARISONS = contentPagesOfKind('comparison');
+const INDUSTRIES = contentPagesOfKind('industry');
 
 const ICONS = { 'meta-ads-agency': Megaphone, 'tiktok-ads-agency': Music2, 'shopify-agency': ShoppingBag, growth: Rocket, 'viral-creatives': Clapperboard, 'roas-calculator': Calculator };
 
@@ -58,6 +64,31 @@ export default function ServicesPage({ onNavigate, onOpenBooking }) {
               </a>
             );
           })}
+        </div>
+
+        <h2 style={{ fontSize: '26px', fontWeight: 850, color: '#ffffff', margin: '0 0 18px' }}>Specialist services</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '14px', marginBottom: '44px' }}>
+          {SPECIALIST.map((p) => (
+            <a key={p.path} href={p.path} onClick={go(pageIdFromHref(p.path))} style={{ display: 'block', background: '#111116', border: '1px solid #20202a', borderRadius: '14px', padding: '20px', textDecoration: 'none' }}>
+              <span style={{ display: 'block', color: '#ffffff', fontWeight: 800, fontSize: '16px', marginBottom: '6px' }}>{p.eyebrow || p.h1}</span>
+              <span style={{ display: 'block', color: '#94a3b8', fontSize: '13.5px', lineHeight: 1.55 }}>{p.metaDescription}</span>
+            </a>
+          ))}
+        </div>
+
+        <h2 style={{ fontSize: '26px', fontWeight: 850, color: '#ffffff', margin: '0 0 18px' }}>Services by industry</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '44px' }}>
+          {INDUSTRIES.map((p) => (
+            <a key={p.path} href={p.path} onClick={go(pageIdFromHref(p.path))} style={{ background: '#111116', border: '1px solid #20202a', borderRadius: '999px', padding: '9px 16px', color: '#e2e8f0', fontWeight: 700, fontSize: '14px', textDecoration: 'none' }}>{p.eyebrow || p.h1}</a>
+          ))}
+          <a href="/for" onClick={go('for')} style={{ borderRadius: '999px', padding: '9px 16px', color: '#ff7043', fontWeight: 800, fontSize: '14px', textDecoration: 'none' }}>All industries →</a>
+        </div>
+
+        <h2 style={{ fontSize: '26px', fontWeight: 850, color: '#ffffff', margin: '0 0 18px' }}>Compare your options</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '14px', marginBottom: '44px' }}>
+          {COMPARISONS.map((p) => (
+            <a key={p.path} href={p.path} onClick={go(pageIdFromHref(p.path))} style={{ display: 'block', background: '#111116', border: '1px solid #20202a', borderRadius: '14px', padding: '18px 20px', textDecoration: 'none', color: '#ffffff', fontWeight: 800, fontSize: '15px', lineHeight: 1.4 }}>{p.h1}</a>
+          ))}
         </div>
 
         <div style={{ background: '#0e0e13', border: '1px solid #1f1f2a', borderRadius: '18px', padding: '32px' }}>
