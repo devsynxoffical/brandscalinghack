@@ -130,7 +130,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   );
 }
 
-export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStudiesPage = false, onOpenBooking, onNavigate, onOpenInstagramModal }) {
+export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStudiesPage = false, nicheLinks = null, onOpenBooking, onNavigate, onOpenInstagramModal }) {
   const [visibleCount, setVisibleCount] = useState(isHomePage ? 8 : 16);
   const sentinelRef = useRef(null);
 
@@ -158,7 +158,7 @@ export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStu
   const displayedStudies = isHomePage ? allCaseStudies.slice(0, 8) : allCaseStudies.slice(0, visibleCount);
 
   return (
-    <section className="client-case-studies-section" id="case-studies">
+    <section className={`client-case-studies-section${isCaseStudiesPage ? ' is-case-studies-page' : ''}`} id="case-studies">
       <div className="container" style={{ textAlign: 'center' }}>
         {/* Tag Pill */}
         <div style={{ marginBottom: '18px', display: 'flex', justifyContent: 'center' }}>
@@ -182,9 +182,27 @@ export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStu
         </p>
 
         {/* Highlight Tagline */}
-        <div style={{ fontSize: '0.98rem', fontWeight: 900, letterSpacing: '0.12em', color: '#ffb300', marginBottom: '40px', textTransform: 'uppercase', textShadow: '0 0 20px rgba(255, 179, 0, 0.4)' }}>
+        <div style={{ fontSize: '0.98rem', fontWeight: 900, letterSpacing: '0.12em', color: '#ffb300', marginBottom: nicheLinks ? '26px' : '40px', textTransform: 'uppercase', textShadow: '0 0 20px rgba(255, 179, 0, 0.4)' }}>
           REAL BRANDS. REAL AD SPEND. REAL RESULTS. (150+ Case Studies & Proofs)
         </div>
+
+        {/* Niche filter pills (crawlable links to the category hubs) */}
+        {nicheLinks && (
+          <nav aria-label="Case studies by niche" className="case-niche-pills">
+            {nicheLinks.map((n) => (
+              <a
+                key={n.href}
+                href={n.href}
+                title={`${n.label} case studies`}
+                onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(n.pageId); }}
+                className="case-niche-pill"
+              >
+                {n.label}
+                {n.count ? <span className="case-niche-pill-count">{n.count}</span> : null}
+              </a>
+            ))}
+          </nav>
+        )}
 
         {/* Case Studies Grid */}
         <div className="showcase-studies-grid">

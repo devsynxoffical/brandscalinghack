@@ -3,7 +3,16 @@ import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
 import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
-import { CASE_NICHES } from '../data/caseNiches';
+import { CASE_NICHES, casesForNiche } from '../data/caseNiches';
+import { allCaseStudies } from '../data/allCaseStudies';
+import { isListedCase } from '../data/caseIndexing';
+
+const NICHE_LINKS = CASE_NICHES.map((n) => ({
+  href: `/case-studies/${n.slug}`,
+  pageId: `case-niche-${n.slug}`,
+  label: n.name,
+  count: casesForNiche(n, allCaseStudies, isListedCase).length
+}));
 
 export default function CaseStudiesPage({ 
   onOpenBooking, 
@@ -34,17 +43,9 @@ export default function CaseStudiesPage({
   return (
     <div className="case-studies-page-root" style={{ paddingTop: '80px', minHeight: '100vh', background: '#07090e', color: '#ffffff' }}>
       {/* 79 VERIFIED INSTAGRAM CASE STUDIES & REEL BREAKDOWNS */}
-      {/* Niche hub links (crawlable, keyword-targeted collections) */}
-      <nav aria-label="Case studies by niche" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', padding: '28px 20px 32px', background: '#05070c', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-        <span style={{ color: '#94a3b8', fontSize: '13px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', marginRight: '4px' }}>Browse by niche:</span>
-        {CASE_NICHES.map((n) => (
-          <a key={n.slug} href={`/case-studies/${n.slug}`} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(`case-niche-${n.slug}`); }} style={{ padding: '9px 16px', borderRadius: '999px', border: '1px solid #2a2a38', color: '#cbd5e1', fontSize: '13px', fontWeight: 700, textDecoration: 'none', background: '#0e0e13' }}>
-            {n.name} case studies
-          </a>
-        ))}
-      </nav>
       <ClientCaseStudiesSection
         isCaseStudiesPage={true}
+        nicheLinks={NICHE_LINKS}
         onOpenBooking={onOpenBooking}
         onNavigate={onNavigate}
         onOpenInstagramModal={onOpenInstagramModal}
