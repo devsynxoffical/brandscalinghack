@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import { MapPin, CalendarCheck, Users, ArrowRight } from 'lucide-react';
+import { MapPin, CalendarCheck, Users, ArrowRight, MessageCircle } from 'lucide-react';
+import BookingCalendar from '../components/BookingCalendar';
+import { WHATSAPP_DISPLAY, whatsappUrl } from '../data/contact';
 import { InstagramIcon as Instagram, YoutubeIcon as Youtube, LinkedinIcon as Linkedin } from '../components/Icons';
 
 const cardStyle = { background: '#111116', border: '1px solid #20202a', borderRadius: '16px', padding: '26px' };
@@ -37,16 +39,33 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '40px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', gap: '20px', marginBottom: '40px' }}>
           <div style={{ ...cardStyle, borderColor: 'rgba(255,87,34,0.45)', background: 'rgba(255,87,34,0.06)' }}>
             <CalendarCheck size={24} color="#ff5722" />
             <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '14px 0 8px' }}>Book a Brand Growth Audit</h2>
             <p style={{ color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.6, margin: '0 0 18px' }}>
-              Pick a time, answer four questions about your brand, and we come to the call with your account already reviewed.
+              Pick a time in the calendar below. Add your store link when you book and we come to the call with your account already reviewed.
             </p>
-            <button onClick={() => onOpenBooking && onOpenBooking()} style={{ background: '#ff5722', color: '#ffffff', border: 'none', padding: '13px 22px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <button onClick={() => { const el = document.getElementById('book'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); else if (onOpenBooking) onOpenBooking(); }} style={{ background: '#ff5722', color: '#ffffff', border: 'none', padding: '13px 22px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
               Book your audit <ArrowRight size={16} />
             </button>
+          </div>
+
+          <div style={cardStyle}>
+            <MessageCircle size={24} color="#25d366" />
+            <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '14px 0 8px' }}>WhatsApp</h2>
+            <p style={{ color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.6, margin: '0 0 18px' }}>
+              Quick question before booking? Message the team directly on WhatsApp.
+            </p>
+            <a
+              href={whatsappUrl('Hi Brand Scaling, I have a question before booking a Brand Growth Audit for my ecommerce brand.')}
+              target="_blank"
+              rel="noopener"
+              onClick={() => { if (typeof window.fbq === 'function') window.fbq('track', 'Contact', { method: 'whatsapp' }); }}
+              style={{ background: '#25d366', color: '#ffffff', padding: '13px 22px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
+            >
+              Chat {WHATSAPP_DISPLAY} <ArrowRight size={16} />
+            </a>
           </div>
 
           <div style={cardStyle}>
@@ -72,6 +91,10 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
             </ul>
           </div>
         </div>
+
+        <section id="book" aria-label="Book a Brand Growth Audit" style={{ marginBottom: '40px', scrollMarginTop: '100px' }}>
+          <BookingCalendar lazy />
+        </section>
 
         <div style={{ ...cardStyle, marginBottom: '20px' }}>
           <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '0 0 12px' }}>What happens after you book</h2>

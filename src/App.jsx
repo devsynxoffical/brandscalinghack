@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { ogImageFor } from './data/ogImages';
 import { contentIndexByPath as contentPageByPath } from './data/contentIndex';
 import { BLOG_META, CASE_META, NICHE_META } from './data/routeMeta';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Every page loads on demand, so a visitor only downloads the code and data for the page
 // they open (the home page's 3D, animation and video sections stay off blog and service pages).
@@ -489,6 +490,9 @@ function App() {
         onNavigate={handleNavigate}
         onOpenBooking={() => setIsBookingOpen(true)}
       />
+
+      {/* Floating WhatsApp chat (opening message depends on the current page) */}
+      <WhatsAppButton page={activePage} />
 
       {/* Discovery Booking & Audit Modal */}
       {isBookingOpen && (

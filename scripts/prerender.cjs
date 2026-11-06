@@ -533,6 +533,8 @@ function renderRoute(route) {
       h1: 'Contact Brand Scaling',
       content: `
         <p>The fastest way to work with us is a Brand Growth Audit: a 1-on-1 review of your ad account, creative, store and unit economics with Gaurav Kapoor. We work with DTC brands doing about $20K to $2M+ a month in the US, UK, Canada and Australia.</p>
+        <h2>Book a Brand Growth Audit</h2>
+        <p>Pick a time in our <a href="https://calendar.app.google/fLvA5ecUYM6L4LW68">booking calendar</a>, or message us on <a href="https://wa.me/919625695456">WhatsApp +91 96256 95456</a>.</p>
         <h2>Office</h2>
         <address>Brand Scaling Hacks LLC, 27 W 24th Street, Suite 702, New York, NY 10010, United States</address>
         <p>Visit <a href="/locations/new-york">our New York office</a> by appointment, or see <a href="/locations">all locations we serve</a> remotely: San Francisco, Los Angeles, Miami, London, Toronto and Sydney.</p>
