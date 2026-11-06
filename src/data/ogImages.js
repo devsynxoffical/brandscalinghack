@@ -11,6 +11,7 @@ export const OG_IMAGES = {
   '/tiktok-ads-agency': `${BASE_URL}/og/tiktok-ads-agency.png`,
   '/services': `${BASE_URL}/og/services.png`,
   '/contact': `${BASE_URL}/og/contact.png`,
+  '/book': `${BASE_URL}/og/book.png`,
   '/growth': `${BASE_URL}/og/growth.png`,
   '/shopify-agency': `${BASE_URL}/og/shopify-agency.png`,
   '/viral-creatives': `${BASE_URL}/og/viral-creatives.png`,

@@ -2,6 +2,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/book-a-call",
+      "destination": "/book",
+      "permanent": true
+    },
+    {
+      "source": "/booking",
+      "destination": "/book",
+      "permanent": true
+    },
+    {
       "source": "/facebook-ads-agency",
       "destination": "/meta-ads-agency",
       "permanent": true

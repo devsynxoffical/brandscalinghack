@@ -3,6 +3,8 @@ import { whatsappMessageFor, whatsappUrl } from '../data/contact';
 
 // Floating WhatsApp button. The opening message changes with the page the visitor is on.
 export default function WhatsAppButton({ page }) {
+  // The booking page has its own WhatsApp panel; a floating button there would cover the calendar
+  if (page === 'book') return null;
   const path = typeof window !== 'undefined' ? window.location.pathname : '/';
   const href = whatsappUrl(whatsappMessageFor(page, path));
   return (

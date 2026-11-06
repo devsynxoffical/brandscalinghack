@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { MapPin, CalendarCheck, Users, ArrowRight, MessageCircle } from 'lucide-react';
-import BookingCalendar from '../components/BookingCalendar';
 import { WHATSAPP_DISPLAY, whatsappUrl } from '../data/contact';
 import { InstagramIcon as Instagram, YoutubeIcon as Youtube, LinkedinIcon as Linkedin } from '../components/Icons';
 
@@ -44,11 +43,11 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
             <CalendarCheck size={24} color="#ff5722" />
             <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '14px 0 8px' }}>Book a Brand Growth Audit</h2>
             <p style={{ color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.6, margin: '0 0 18px' }}>
-              Pick a time in the calendar below. Add your store link when you book and we come to the call with your account already reviewed.
+              Pick a time on our booking page. Add your store link when you book and we come to the call with your account already reviewed.
             </p>
-            <button onClick={() => { const el = document.getElementById('book'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); else if (onOpenBooking) onOpenBooking(); }} style={{ background: '#ff5722', color: '#ffffff', border: 'none', padding: '13px 22px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-              Book your audit <ArrowRight size={16} />
-            </button>
+            <a href="/book" onClick={go('book')} style={{ background: '#ff5722', color: '#ffffff', padding: '13px 22px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+              Choose a time <ArrowRight size={16} />
+            </a>
           </div>
 
           <div style={cardStyle}>
@@ -91,10 +90,6 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
             </ul>
           </div>
         </div>
-
-        <section id="book" aria-label="Book a Brand Growth Audit" style={{ marginBottom: '40px', scrollMarginTop: '100px' }}>
-          <BookingCalendar lazy />
-        </section>
 
         <div style={{ ...cardStyle, marginBottom: '20px' }}>
           <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '0 0 12px' }}>What happens after you book</h2>

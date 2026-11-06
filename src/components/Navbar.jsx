@@ -21,7 +21,7 @@ export const HUB_LINKS = [
   { id: 'locations', href: '/locations', label: 'Locations' }
 ];
 
-export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
+export default function Navbar({ activePage, setActivePage }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpenState] = useState(false);
@@ -158,13 +158,14 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
                   <a key={id} href={href} role="menuitem" onClick={(e) => handleNavClick(id, e)} tabIndex={servicesOpen ? 0 : -1}>{label}</a>
                 ))}
               </div>
-              <button
-                type="button"
+              <a
+                href="/book"
                 className="header-dropdown-cta"
-                onClick={() => { setServicesOpen(false); onOpenBooking && onOpenBooking(); }}
+                onClick={(e) => handleNavClick('book', e)}
+                tabIndex={servicesOpen ? 0 : -1}
               >
                 Book a Brand Growth Audit →
-              </button>
+              </a>
             </div>
           </div>
 
@@ -207,13 +208,13 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
           >
             About
           </a>
-          <button
-            type="button"
-            className="header-cta-btn"
-            onClick={() => onOpenBooking && onOpenBooking()}
+          <a
+            href="/book"
+            className={`header-cta-btn ${activePage === 'book' ? 'active' : ''}`}
+            onClick={(e) => handleNavClick('book', e)}
           >
             Book Audit
-          </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger Menu Toggle */}
@@ -232,25 +233,38 @@ export default function Navbar({ activePage, setActivePage, onOpenBooking }) {
       {/* Mobile Drawer with semantic crawlable links */}
       {mobileMenuOpen && (
         <div className="mobile-drawer-ss1">
-          <a href="/" onClick={(e) => handleNavClick('home', e)}>Home</a>
-          <div className="mobile-drawer-group">
-            <span className="mobile-drawer-group-label">Services</span>
-            {SERVICE_LINKS.map(({ id, href, label }) => (
-              <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
-            ))}
-            <a href="/services" onClick={(e) => handleNavClick('services', e)}>All services</a>
-            {HUB_LINKS.map(({ id, href, label }) => (
-              <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
-            ))}
+          <div className="mobile-drawer-scroll">
+            <a href="/" onClick={(e) => handleNavClick('home', e)}>Home</a>
+            <div className="mobile-drawer-group">
+              <span className="mobile-drawer-group-label">Services</span>
+              <div className="mobile-drawer-grid">
+                {SERVICE_LINKS.map(({ id, href, label }) => (
+                  <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
+                ))}
+                <a href="/services" className={activePage === 'services' ? 'active' : ''} onClick={(e) => handleNavClick('services', e)}>All services</a>
+              </div>
+            </div>
+            <div className="mobile-drawer-group">
+              <span className="mobile-drawer-group-label">Resources</span>
+              <div className="mobile-drawer-grid">
+                {HUB_LINKS.map(({ id, href, label }) => (
+                  <a key={id} href={href} className={activePage === id ? 'active' : ''} onClick={(e) => handleNavClick(id, e)}>{label}</a>
+                ))}
+                <a href="/roas-calculator" className={activePage === 'roas-calculator' ? 'active' : ''} onClick={(e) => handleNavClick('roas-calculator', e)}>ROAS Calculator</a>
+              </div>
+            </div>
+            <div className="mobile-drawer-row">
+              <a href="/case-studies" onClick={(e) => handleNavClick('case-studies', e)}>Case Studies</a>
+              <a href="/blog" onClick={(e) => handleNavClick('blog', e)}>Blog</a>
+              <a href="/about" onClick={(e) => handleNavClick('about', e)}>About</a>
+              <a href="/contact" onClick={(e) => handleNavClick('contact', e)}>Contact</a>
+            </div>
           </div>
-          <a href="/case-studies" onClick={(e) => handleNavClick('case-studies', e)}>Case Studies</a>
-          <a href="/roas-calculator" onClick={(e) => handleNavClick('roas-calculator', e)}>ROAS Calculator</a>
-          <a href="/blog" onClick={(e) => handleNavClick('blog', e)}>Blog</a>
-          <a href="/about" onClick={(e) => handleNavClick('about', e)}>About</a>
-          <a href="/contact" onClick={(e) => handleNavClick('contact', e)}>Contact</a>
-          <button type="button" className="mobile-drawer-cta" onClick={() => { setMobileMenuOpen(false); onOpenBooking && onOpenBooking(); }}>
-            Book a Brand Growth Audit
-          </button>
+          <div className="mobile-drawer-footer">
+            <a href="/book" className="mobile-drawer-cta" onClick={(e) => handleNavClick('book', e)}>
+              Book a Brand Growth Audit
+            </a>
+          </div>
         </div>
       )}
     </nav>

@@ -75,9 +75,9 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
           {paras(page.intro).map((p, i) => <p key={i} style={{ ...pStyle, fontSize: '17.5px', color: '#b6c2d3' }}>{linked(p)}</p>)}
           {page.kind !== 'tool' && page.kind !== 'glossary' && page.kind !== 'hub' && (
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '22px' }}>
-              <button onClick={() => onOpenBooking && onOpenBooking()} style={{ background: '#ff5722', color: '#ffffff', border: 'none', padding: '14px 26px', borderRadius: '10px', fontSize: '15px', fontWeight: 750, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+              <a href="/book" onClick={go('/book')} style={{ background: '#ff5722', color: '#ffffff', padding: '14px 26px', borderRadius: '10px', fontSize: '15px', fontWeight: 750, display: 'inline-flex', alignItems: 'center', gap: '8px' , textDecoration: 'none' }}>
                 Book a Brand Growth Audit <ArrowRight size={16} />
-              </button>
+              </a>
               <a href="/case-studies" onClick={go('/case-studies')} style={{ background: '#111116', color: '#e2e8f0', border: '1px solid #282836', padding: '14px 22px', borderRadius: '10px', fontSize: '15px', fontWeight: 700, textDecoration: 'none' }}>See case studies</a>
             </div>
           )}
@@ -219,9 +219,9 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
           <section style={{ background: 'linear-gradient(135deg, rgba(255,87,34,0.16), rgba(255,87,34,0.04))', border: '1px solid rgba(255,87,34,0.3)', borderRadius: '18px', padding: 'clamp(22px, 4vw, 34px)', textAlign: 'center' }}>
             <h2 style={{ ...h2Style, textAlign: 'center' }}>{page.cta.heading}</h2>
             <p style={{ ...pStyle, maxWidth: '620px', margin: '0 auto 20px' }}>{page.cta.text}</p>
-            <button onClick={() => onOpenBooking && onOpenBooking()} style={{ background: '#ff5722', color: '#ffffff', border: 'none', padding: '14px 28px', borderRadius: '10px', fontSize: '15px', fontWeight: 750, cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+            <a href="/book" onClick={go('/book')} style={{ background: '#ff5722', color: '#ffffff', padding: '14px 28px', borderRadius: '10px', fontSize: '15px', fontWeight: 750, display: 'inline-flex', alignItems: 'center', gap: '8px' , textDecoration: 'none' }}>
               Book a Brand Growth Audit <ArrowRight size={16} />
-            </button>
+            </a>
           </section>
         )}
       </div>

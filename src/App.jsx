@@ -27,8 +27,8 @@ const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const BookPage = lazy(() => import('./pages/BookPage'));
 // Below-the-fold and on-demand pieces
-const DiscoveryModal = lazy(() => import('./components/DiscoveryModal'));
 const VideoModal = lazy(() => import('./components/VideoModal'));
 const InstagramModal = lazy(() => import('./components/InstagramModal'));
 const GlassWindowMarquee = lazy(() => import('./components/GlassWindowMarquee'));
@@ -44,7 +44,6 @@ const PageFallback = () => <div style={{ minHeight: '100vh', background: '#07070
 
 function App() {
   const [activePage, setActivePage] = useState('home');
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
   const [activeInstagramReel, setActiveInstagramReel] = useState(null);
   const hasTrackedFirstPageView = useRef(false);
@@ -86,6 +85,8 @@ function App() {
         setActivePage('tiktok-ads-agency');
       } else if (rawPath === '/services') {
         setActivePage('services');
+      } else if (rawPath === '/book' || rawPath === '/book-a-call' || rawPath === '/booking') {
+        setActivePage('book');
       } else if (rawPath === '/contact' || rawPath === '/contact-us') {
         setActivePage('contact');
       } else if (rawPath === '/about') {
@@ -217,6 +218,11 @@ function App() {
           description = 'Ecommerce marketing services for DTC brands: Meta ads, TikTok ads, Shopify CRO, direct-response creative and retention, run as one growth system.';
           pagePath = '/services';
           break;
+        case 'book':
+          title = 'Book a Free Brand Growth Audit Call | Brand Scaling';
+          description = 'Book a free 1-on-1 Brand Growth Audit with Gaurav Kapoor: we review your ad account, creative, store and unit economics and give you a 90-day plan.';
+          pagePath = '/book';
+          break;
         case 'contact':
           title = 'Contact Brand Scaling | Book a Brand Growth Audit';
           description = 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.';
@@ -320,16 +326,19 @@ function App() {
     }
   };
 
+  // Every "Book Audit" / "Book a call" button goes to the standalone booking page
+  const openBooking = () => handleNavigate('book');
+
   const renderActivePage = () => {
     if (contentPageByPath(`/${activePage}`)) {
-      return <ContentPage path={`/${activePage}`} onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
+      return <ContentPage path={`/${activePage}`} onNavigate={handleNavigate} onOpenBooking={openBooking} />;
     }
     if (activePage.startsWith('case-niche-')) {
       return (
         <CaseNichePage
           nicheSlug={activePage.replace('case-niche-', '')}
           onNavigate={handleNavigate}
-          onOpenBooking={() => setIsBookingOpen(true)}
+          onOpenBooking={openBooking}
         />
       );
     }
@@ -339,7 +348,7 @@ function App() {
         <CaseStudyDetailPage
           caseStudyId={caseId}
           onNavigate={handleNavigate}
-          onOpenBooking={() => setIsBookingOpen(true)}
+          onOpenBooking={openBooking}
         />
       );
     }
@@ -350,7 +359,7 @@ function App() {
         <BlogPostPage
           slug={postSlug}
           onNavigate={handleNavigate}
-          onOpenBooking={() => setIsBookingOpen(true)}
+          onOpenBooking={openBooking}
         />
       );
     }
@@ -359,7 +368,7 @@ function App() {
       case 'home':
         return (
           <HomePage
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
             onNavigate={handleNavigate}
             onOpenVideo={(video) => setActiveVideo(video)}
             onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
@@ -368,7 +377,7 @@ function App() {
       case 'case-studies':
         return (
           <CaseStudiesPage
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
             onNavigate={handleNavigate}
             onOpenVideo={(video) => setActiveVideo(video)}
             onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
@@ -377,44 +386,46 @@ function App() {
       case 'viral-creatives':
         return (
           <ViralCreativesPage
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
             onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
             onNavigate={handleNavigate}
           />
         );
       case 'growth':
-        return <GrowthPage onOpenBooking={() => setIsBookingOpen(true)} onNavigate={handleNavigate} />;
+        return <GrowthPage onOpenBooking={openBooking} onNavigate={handleNavigate} />;
       case 'shopify-agency':
         return (
           <ShopifyAgencyPage
             onNavigate={handleNavigate}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
           />
         );
       case 'tiktok-ads-agency':
-        return <TikTokAdsAgencyPage onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
+        return <TikTokAdsAgencyPage onNavigate={handleNavigate} onOpenBooking={openBooking} />;
       case 'services':
-        return <ServicesPage onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
+        return <ServicesPage onNavigate={handleNavigate} onOpenBooking={openBooking} />;
+      case 'book':
+        return <BookPage onNavigate={handleNavigate} />;
       case 'contact':
-        return <ContactPage onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
+        return <ContactPage onNavigate={handleNavigate} onOpenBooking={openBooking} />;
       case 'meta-ads-agency':
         return (
           <MetaAdsAgencyPage
             onNavigate={handleNavigate}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
           />
         );
       case 'blog':
         return (
           <BlogIndexPage
             onNavigate={handleNavigate}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
           />
         );
       case 'about':
         return (
           <AboutPage
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
             onNavigate={handleNavigate}
             onOpenVideo={(video) => setActiveVideo(video)}
           />
@@ -422,7 +433,7 @@ function App() {
       case 'roas-calculator':
         return (
           <RoasCalculatorPage
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
             onNavigate={handleNavigate}
             onOpenVideo={(video) => setActiveVideo(video)}
           />
@@ -431,27 +442,27 @@ function App() {
         return (
           <PrivacyPolicyPage
             onNavigate={handleNavigate}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
           />
         );
       case 'terms':
         return (
           <TermsPage
             onNavigate={handleNavigate}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
           />
         );
       case '404':
         return (
           <NotFoundPage
             onNavigate={handleNavigate}
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
           />
         );
       default:
         return (
           <HomePage
-            onOpenBooking={() => setIsBookingOpen(true)}
+            onOpenBooking={openBooking}
             onNavigate={handleNavigate}
             onOpenVideo={(video) => setActiveVideo(video)}
             onOpenInstagramModal={(reel) => setActiveInstagramReel(reel)}
@@ -466,7 +477,7 @@ function App() {
       <Navbar
         activePage={activePage}
         setActivePage={handleNavigate}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={openBooking}
       />
 
       {/* Main Dynamic Page View */}
@@ -488,18 +499,12 @@ function App() {
       {/* Global Footer */}
       <Footer
         onNavigate={handleNavigate}
-        onOpenBooking={() => setIsBookingOpen(true)}
+        onOpenBooking={openBooking}
       />
 
       {/* Floating WhatsApp chat (opening message depends on the current page) */}
       <WhatsAppButton page={activePage} />
 
-      {/* Discovery Booking & Audit Modal */}
-      {isBookingOpen && (
-        <Suspense fallback={null}>
-          <DiscoveryModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-        </Suspense>
-      )}
 
       {/* Masterclass Video Player Modal */}
       {activeVideo && (
@@ -509,7 +514,7 @@ function App() {
       {/* Live Instagram Proof & Lightbox Modal */}
       {activeInstagramReel && (
         <Suspense fallback={null}>
-          <InstagramModal item={activeInstagramReel} onClose={() => setActiveInstagramReel(null)} onOpenBooking={() => setIsBookingOpen(true)} />
+          <InstagramModal item={activeInstagramReel} onClose={() => setActiveInstagramReel(null)} onOpenBooking={openBooking} />
         </Suspense>
       )}
     </div>

@@ -51,6 +51,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               <a className="st-footer-link" href="/viral-creatives" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('viral-creatives'); }}>Viral Creatives</a>
               <a className="st-footer-link" href="/roas-calculator" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('roas-calculator'); }}>ROAS Calculator</a>
               <a className="st-footer-link" href="/about" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('about'); }}>About Us</a>
+              <a className="st-footer-link st-footer-link-accent" href="/book" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('book'); }}>Book a Call</a>
               <a className="st-footer-link" href="/contact" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('contact'); }}>Contact</a>
             </div>
 

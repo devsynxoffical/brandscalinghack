@@ -68,8 +68,8 @@ export const webPage = ({ path, type = 'WebPage', name, description, speakable, 
 /* FAQ copy (shared by the page components and the schema)                     */
 /* -------------------------------------------------------------------------- */
 
-export { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs } from './faqData.js';
-import { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs } from './faqData.js';
+export { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs } from './faqData.js';
+import { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs } from './faqData.js';
 
 const staticSchemas = {
   '/': () => [
@@ -154,6 +154,29 @@ const staticSchemas = {
       }
     }),
     breadcrumb([['Home', '/'], ['Services', '/services']])
+  ],
+
+  '/book': () => [
+    webPage({
+      path: '/book',
+      name: 'Book a Free Brand Growth Audit Call | Brand Scaling',
+      description: 'Book a free 1-on-1 Brand Growth Audit with Gaurav Kapoor: we review your ad account, creative, store and unit economics and give you a 90-day plan.',
+      speakable: ['h1', '.bkp-lead'],
+      extra: {
+        mainEntity: {
+          '@type': 'Service',
+          '@id': `${BASE_URL}/book#audit`,
+          name: 'Brand Growth Audit',
+          serviceType: 'Ecommerce growth audit (ad account, creative, store and unit economics review)',
+          provider: { '@id': ORG_ID },
+          areaServed: ['US', 'GB', 'CA', 'AU'],
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD', availability: 'https://schema.org/InStock', url: `${BASE_URL}/book` },
+          potentialAction: { '@type': 'ReserveAction', target: { '@type': 'EntryPoint', urlTemplate: 'https://calendar.app.google/fLvA5ecUYM6L4LW68', actionPlatform: ['https://schema.org/DesktopWebPlatform', 'https://schema.org/MobileWebPlatform'] }, result: { '@type': 'Reservation', name: 'Brand Growth Audit call' } }
+        }
+      }
+    }),
+    faqPage('/book#faq', bookFaqs),
+    breadcrumb([['Home', '/'], ['Book a Brand Growth Audit', '/book']])
   ],
 
   '/contact': () => [

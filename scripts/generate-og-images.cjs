@@ -13,6 +13,7 @@ const cards = [
   { file: 'meta-ads-agency', eyebrow: 'Meta Ads Agency', title: 'Meta Ads Agency for Ecommerce Brands That Need Profitable Scale', stats: [['$50M+', 'Meta ad spend'], ['$2.3M', 'at 11.6x ROAS'], ['30-50+', 'ads a month']] },
   { file: 'tiktok-ads-agency', eyebrow: 'TikTok Ads Agency', title: 'TikTok Ads Agency: Creator Ads, Spark Ads and TikTok Shop', stats: [['30-50+', 'videos a month'], ['$50M+', 'paid social spend'], ['150+', 'case studies']] },
   { file: 'services', eyebrow: 'Services', title: 'Ecommerce Marketing Services for DTC Brands', stats: [['Meta', 'and TikTok ads'], ['CRO', 'Shopify stores'], ['UGC', 'creative engine']] },
+  { file: 'book', eyebrow: 'Free 1-on-1 Audit', title: 'Book a Brand Growth Audit with Gaurav Kapoor', stats: [['Free', 'no obligation'], ['90-day', 'growth plan'], ['$50M+', 'ad spend managed']] },
   { file: 'contact', eyebrow: 'Contact', title: 'Book a Brand Growth Audit with Gaurav Kapoor', stats: [['NYC', 'headquarters'], ['US/UK', 'CA and AU'], ['1-on-1', 'audit call']] },
   { file: 'growth', eyebrow: 'Ecommerce Growth Agency', title: 'Meta, TikTok, Google and Shopify CRO in One Growth Engine', stats: [['4', 'phase system'], ['$50M+', 'ad spend'], ['150+', 'case studies']] },
   { file: 'shopify-agency', eyebrow: 'Shopify Agency', title: 'Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor', stats: [['5.25%', 'conversion rate'], ['862', 'orders in 24h'], ['<1s', 'mobile load']] },

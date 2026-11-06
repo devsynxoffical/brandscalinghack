@@ -203,3 +203,26 @@ export const roasFaqs = [
 /* -------------------------------------------------------------------------- */
 /* Route schemas                                                               */
 /* -------------------------------------------------------------------------- */
+
+export const bookFaqs = [
+  {
+    question: 'What is a Brand Growth Audit?',
+    answer: 'A Brand Growth Audit is a free 1-on-1 video call with Gaurav Kapoor. Before the call we look at your ad account, top creatives, product page and unit economics. On the call we walk through the three biggest bottlenecks holding back growth and the order to fix them in, so you leave with a clear 90-day plan.'
+  },
+  {
+    question: 'Is the audit really free?',
+    answer: 'Yes. The audit costs nothing and there is no obligation to hire us afterwards. Many brands use the plan to fix things in-house. If you do want help, we quote after the audit, because the right setup depends on your spend, margins and how much creative you need.'
+  },
+  {
+    question: 'Who is the audit for?',
+    answer: 'It fits DTC ecommerce brands, mostly on Shopify, doing about $20K to $2M+ a month with product-market fit, that spend or are ready to spend at least $10K to $20K a month on paid ads. Earlier-stage brands usually get more from our free calculators and playbooks first.'
+  },
+  {
+    question: 'What should I prepare before the call?',
+    answer: 'Have your store link ready and, if you can, view access to your Meta or TikTok ad account and Shopify analytics. Know your rough product cost, shipping and average order value. If you do not have numbers to hand, book anyway and bring what you know; we will work out break-even ROAS together.'
+  },
+  {
+    question: 'What if none of the times work for me?',
+    answer: 'Message us on WhatsApp at +91 96256 95456 and we will find a slot that suits your time zone. We work with brands in the US, UK, Canada and Australia, so early and late calls are normal for us.'
+  }
+];

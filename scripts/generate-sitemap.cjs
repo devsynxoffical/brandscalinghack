@@ -14,6 +14,7 @@ const staticRoutes = [
   { loc: '/meta-ads-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },
   { loc: '/tiktok-ads-agency', lastmod: '2026-11-03', changefreq: 'weekly', priority: '0.9' },
   { loc: '/services', lastmod: '2026-11-02', changefreq: 'monthly', priority: '0.8' },
+  { loc: '/book', lastmod: '2026-11-06', changefreq: 'monthly', priority: '0.9' },
   { loc: '/contact', lastmod: '2026-11-06', changefreq: 'yearly', priority: '0.6' },
   { loc: '/growth', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.9' },
   { loc: '/shopify-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },

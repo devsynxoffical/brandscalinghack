@@ -337,7 +337,7 @@ const PAGE_BY_PATH = {
   '/': 'HomePage', '/case-studies': 'CaseStudiesPage', '/viral-creatives': 'ViralCreativesPage', '/growth': 'GrowthPage',
   '/about': 'AboutPage', '/roas-calculator': 'RoasCalculatorPage', '/shopify-agency': 'ShopifyAgencyPage',
   '/meta-ads-agency': 'MetaAdsAgencyPage', '/tiktok-ads-agency': 'TikTokAdsAgencyPage', '/services': 'ServicesPage',
-  '/contact': 'ContactPage', '/blog': 'BlogIndexPage', '/privacy-policy': 'PrivacyPolicyPage', '/terms': 'TermsPage', '/404': 'NotFoundPage'
+  '/contact': 'ContactPage', '/book': 'BookPage', '/blog': 'BlogIndexPage', '/privacy-policy': 'PrivacyPolicyPage', '/terms': 'TermsPage', '/404': 'NotFoundPage'
 };
 function pageModuleFor(p) {
   if (PAGE_BY_PATH[p]) return PAGE_BY_PATH[p];
@@ -475,7 +475,7 @@ function renderRoute(route) {
     `
   }); });
 
-  const { SERVICES, tiktokFaqs } = await import('../src/data/pageSchemas.js');
+  const { SERVICES, tiktokFaqs, bookFaqs: PAGE_FAQS_BOOK } = await import('../src/data/pageSchemas.js');
   const { CONTENT_PAGES: CONTENT_PAGES_ALL } = await import('../src/data/pageRegistry.js');
   routes.push(
     {
@@ -523,6 +523,26 @@ function renderRoute(route) {
         <ul>${CONTENT_PAGES_ALL.filter((c) => c.kind === 'comparison').map((c) => `<li><a href="${c.path}">${escapeHtml(c.h1)}</a></li>`).join('')}</ul>
         <h2>How the services fit together</h2>
         <p>Creative feeds the ad accounts, the ad accounts send traffic to a store built for that traffic, and retention raises lifetime value so the accounts can afford a higher cost per acquisition. See the <a href="/growth">growth engine</a> and the <a href="/case-studies">case study library</a>.</p>
+      `
+    },
+    {
+      path: '/book',
+      outPath: 'book/index.html',
+      title: 'Book a Free Brand Growth Audit Call | Brand Scaling',
+      description: 'Book a free 1-on-1 Brand Growth Audit with Gaurav Kapoor: we review your ad account, creative, store and unit economics and give you a 90-day plan.',
+      h1: 'Book a Brand Growth Audit',
+      content: `
+        <p class="bkp-lead">A free video call with Gaurav Kapoor. We review your ad account, creative, store and unit economics before the call, then show you the three biggest levers for profitable growth.</p>
+        <p><a href="https://calendar.app.google/fLvA5ecUYM6L4LW68">Choose a time in the booking calendar</a> or message us on <a href="https://wa.me/919625695456">WhatsApp +91 96256 95456</a>.</p>
+        <h2>What we review</h2>
+        <ul><li>Your Meta or TikTok ad account: structure, spend and what is actually converting</li><li>Your top creatives and the angles and hooks behind them</li><li>Your product page, offer and checkout on mobile</li><li>Unit economics: margin, AOV, CAC and your break-even ROAS</li></ul>
+        <h2>What you leave with</h2>
+        <ul><li>The three biggest bottlenecks holding back growth</li><li>A 90-day plan in the order we would fix things</li><li>Your break-even ROAS from your real margins</li><li>An honest view on whether you need an agency at all</li></ul>
+        <h2>Who the audit is for</h2>
+        <p>DTC brands doing about $20K to $2M+ a month that spend, or are ready to spend, $10K to $20K+ a month on ads, mostly on Shopify in the US, UK, Canada and Australia. Earlier-stage brands should start with the <a href="/tools">free calculators</a> and <a href="/blog">scaling playbooks</a>.</p>
+        <h2>Questions about the audit</h2>
+        ${(PAGE_FAQS_BOOK || []).map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}
+        <p><a href="/case-studies">150+ verified case studies</a> | <a href="/services">Services</a> | <a href="/locations">Locations we serve</a> | <a href="/contact">Contact</a></p>
       `
     },
     {
@@ -677,7 +697,7 @@ function renderRoute(route) {
         ${(pg.proof || []).length ? `<h2>Proof from real accounts</h2><ul>${pg.proof.map((x) => `<li><strong>${escapeHtml(x.value)}</strong> ${escapeHtml(x.label)}${x.note ? `: ${escapeHtml(x.note)}` : ''}${x.href ? ` (<a href="${x.href}">see the proof</a>)` : ''}</li>`).join('')}</ul>` : ''}
         ${(pg.faqs || []).length ? `<h2>Frequently asked questions</h2>${pg.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}` : ''}
         ${related.length ? `<h2>Related</h2><ul>${related.map((h) => `<li><a href="${h}">${escapeHtml(linkTitle(h))}</a></li>`).join('')}</ul>` : ''}
-        ${pg.cta ? `<h2>${escapeHtml(pg.cta.heading)}</h2><p>${escapeHtml(pg.cta.text)} <a href="/contact">Book a Brand Growth Audit</a>.</p>` : ''}
+        ${pg.cta ? `<h2>${escapeHtml(pg.cta.heading)}</h2><p>${escapeHtml(pg.cta.text)} <a href="/book">Book a Brand Growth Audit</a>.</p>` : ''}
       `
     };
   });
@@ -702,7 +722,7 @@ function renderRoute(route) {
     ['/locations', 'Locations'], ...CONTENT_PAGES.filter((c) => c.kind === 'location').map((c) => [c.path, c.eyebrow || c.h1]),
     ...CONTENT_PAGES.filter((c) => c.kind === 'comparison').map((c) => [c.path, c.h1]),
     ['/roas-calculator', 'ROAS Calculator'], ['/blog', 'Blog'], ...blogPosts.map((b) => [`/blog/${b.slug}`, b.title]),
-    ['/about', 'About'], ['/contact', 'Contact'], ['/privacy-policy', 'Privacy Policy'], ['/terms', 'Terms of Service']
+    ['/about', 'About'], ['/book', 'Book a Brand Growth Audit'], ['/contact', 'Contact'], ['/privacy-policy', 'Privacy Policy'], ['/terms', 'Terms of Service']
   ];
   SITE_NAV_HTML = `<nav aria-label="Site"><ul>${navLinks.map(([href, label]) => `<li><a href="${href}">${escapeHtml(label)}</a></li>`).join('')}</ul></nav>`;
 

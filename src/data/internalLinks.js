@@ -18,6 +18,7 @@ export const LINK_RULES = [
   { re: /\b(real )?ROAS calculator\b|\bfree ROAS calculator\b/i, href: '/roas-calculator', title: 'Free ROAS Calculator' },
   { re: /\bbreak[ -]even ROAS\b|\bwhat a good ROAS\b|\bgood ROAS\b|\bROAS formula\b|\bwhat is ROAS\b|\bReturn On Ad Spend\b|\bimprov(e|ing) (your |ecommerce )?ROAS\b/i, href: '/blog/what-is-roas', title: 'What Is ROAS? Formula and Benchmarks' },
   { re: /\bblended ROAS\b/i, href: '/glossary/blended-roas', title: 'Blended ROAS' },
+  { re: /\bBrand Growth Audit\b|\bbook (a|an|your) (call|audit)\b/i, href: '/book', title: 'Book a Brand Growth Audit' },
   { re: /\bGoogle Ads agenc(y|ies)\b/i, href: '/blog/choose-google-ads-agency-dtc', title: 'How to Choose a Google Ads Agency for DTC' },
   { re: /\bretargeting( ads| campaigns| strategy)?\b|\bremarketing\b/i, href: '/blog/retargeting-for-dtc-brands', title: 'Retargeting for DTC Brands' },
   { re: /\bscal(e|ing) (a|your) DTC brand\b|\bDTC brand accelerator\b/i, href: '/blog/how-to-scale-a-dtc-brand', title: 'How to Scale a DTC Brand' },
