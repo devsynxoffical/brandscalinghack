@@ -23,7 +23,7 @@ import {
   HelpCircle,
   ArrowUpRight
 } from 'lucide-react';
-import { getRouteSchema, toJsonLd, growthFaqs } from '../data/pageSchemas';
+import { growthFaqs } from '../data/faqData';
 import LinkedText from '../components/LinkedText';
 import { newLinkState } from '../data/internalLinks';
 
@@ -43,7 +43,8 @@ export default function GrowthPage({ onOpenBooking, onNavigate }) {
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/growth'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/growth')); });
 
     return () => {
       const el = document.getElementById(schemaId);

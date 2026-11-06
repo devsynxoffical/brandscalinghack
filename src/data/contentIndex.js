@@ -417,6 +417,62 @@ export const CONTENT_INDEX = [
     "eyebrow": "Free Ecommerce Tool"
   },
   {
+    "path": "/locations/new-york",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency New York | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency New York DTC brands can visit: Meta, TikTok, Google and Shopify CRO run from our Manhattan office, with in-person audits.",
+    "h1": "Ecommerce Marketing Agency New York: DTC Growth From Manhattan",
+    "eyebrow": "New York Office"
+  },
+  {
+    "path": "/locations/san-francisco",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency San Francisco | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency San Francisco and Bay Area DTC brands use remotely from New York: paid growth, CCPA-aware tracking and investor-ready reporting.",
+    "h1": "Ecommerce Marketing Agency San Francisco: Remote Growth for Bay Area Brands",
+    "eyebrow": "San Francisco and Bay Area"
+  },
+  {
+    "path": "/locations/los-angeles",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency Los Angeles | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency Los Angeles DTC brands work with remotely from New York: TikTok, creator and UGC ads, Meta, Shopify CRO and CCPA-aware tracking.",
+    "h1": "Ecommerce Marketing Agency Los Angeles: Creator-Led DTC Growth",
+    "eyebrow": "Los Angeles"
+  },
+  {
+    "path": "/locations/miami",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency Miami | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency Miami DTC brands work with from New York on the same Eastern time: bilingual ad creative, Meta, TikTok and LatAm shipping.",
+    "h1": "Ecommerce Marketing Agency Miami: Bilingual DTC Growth on Eastern Time",
+    "eyebrow": "Miami"
+  },
+  {
+    "path": "/locations/london",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency London | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency London DTC brands can work with remotely from New York: Meta, TikTok and Shopify growth built for UK VAT, GDPR and Boxing Day.",
+    "h1": "Ecommerce Marketing Agency London: Paid Growth for UK DTC Brands",
+    "eyebrow": "London and the UK"
+  },
+  {
+    "path": "/locations/toronto",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency Toronto | Brand Scaling",
+    "metaDescription": "An ecommerce marketing agency Toronto brands work with on Eastern time: Meta, TikTok and Shopify growth for CAD pricing, sales tax and Quebec French.",
+    "h1": "Ecommerce Marketing Agency Toronto: Growth for Canadian DTC Brands",
+    "eyebrow": "Toronto and Canada"
+  },
+  {
+    "path": "/locations/sydney",
+    "kind": "location",
+    "titleTag": "Ecommerce Marketing Agency Sydney | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency Sydney brands can run remotely with a New York team: async reports, an early call slot, AUD pricing, GST and EOFY sale planning.",
+    "h1": "Ecommerce Marketing Agency Sydney: Growth for Australian DTC Brands",
+    "eyebrow": "Sydney and Australia"
+  },
+  {
     "path": "/for",
     "kind": "hub",
     "titleTag": "Ecommerce Marketing Agency by Industry | Brand Scaling",
@@ -447,6 +503,14 @@ export const CONTENT_INDEX = [
     "metaDescription": "Ecommerce benchmarks built from our own published case studies, starting with ROAS by niche: median, middle half and range, with every source linked.",
     "h1": "Ecommerce Benchmarks from Real Ad Accounts",
     "eyebrow": "Benchmarks"
+  },
+  {
+    "path": "/locations",
+    "kind": "hub",
+    "titleTag": "Ecommerce Marketing Agency Locations | Brand Scaling",
+    "metaDescription": "Ecommerce marketing agency locations: our New York office plus remote work for DTC brands in San Francisco, LA, Miami, London, Toronto and Sydney.",
+    "h1": "Ecommerce Marketing Agency Locations",
+    "eyebrow": "Where we work"
   }
 ];
 

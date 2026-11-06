@@ -3,6 +3,7 @@
 
 import blogBatch1 from './blog/batch-1.js';
 import blogBatch2 from './blog/batch-2.js';
+import blogBatch3 from './blog/batch-3.js';
 
 const corePosts = [
   {
@@ -559,7 +560,7 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
   {
     slug: 'performance-marketing-agency',
     title: 'What Is a Performance Marketing Agency? DTC Growth Blueprint & ROAS Framework',
-    titleTag: "What Is a Performance Marketing Agency? DTC Guide",
+    titleTag: "DTC Performance Marketing Agency Explained | Brand Scaling",
     metaDescription: 'What is a performance marketing agency? Learn how top DTC agencies scale Shopify brands with Meta & TikTok ads, CRO, creative testing, and measurable ROAS.',
     primaryKeyword: 'performance marketing agency',
     secondaryKeywords: ['ecommerce marketing agency usa', 'dtc growth agency', 'direct response marketing agency', 'meta ads agency'],
@@ -1859,4 +1860,4 @@ Always agree usage rights in writing before the shoot: how long you can run the 
 ];
 
 // Posts added 5 Nov 2026 (SEO page plan), kept in their own modules
-export const blogPosts = [...corePosts, ...blogBatch1, ...blogBatch2];
+export const blogPosts = [...corePosts, ...blogBatch1, ...blogBatch2, ...blogBatch3];

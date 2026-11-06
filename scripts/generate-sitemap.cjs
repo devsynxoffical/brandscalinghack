@@ -10,11 +10,11 @@ const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
 // lastmod = the date the page content last materially changed. Bump by hand when
 // a page is rewritten; do not bump every build (Google ignores fake freshness).
 const staticRoutes = [
-  { loc: '/', lastmod: '2026-11-05', changefreq: 'weekly', priority: '1.0' },
+  { loc: '/', lastmod: '2026-11-06', changefreq: 'weekly', priority: '1.0' },
   { loc: '/meta-ads-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },
   { loc: '/tiktok-ads-agency', lastmod: '2026-11-03', changefreq: 'weekly', priority: '0.9' },
   { loc: '/services', lastmod: '2026-11-02', changefreq: 'monthly', priority: '0.8' },
-  { loc: '/contact', lastmod: '2026-10-31', changefreq: 'yearly', priority: '0.6' },
+  { loc: '/contact', lastmod: '2026-11-06', changefreq: 'yearly', priority: '0.6' },
   { loc: '/growth', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.9' },
   { loc: '/shopify-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },
   { loc: '/viral-creatives', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.8' },
@@ -46,7 +46,7 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.8' }));
 
   const { CONTENT_PAGES } = await import('../src/data/pageRegistry.js');
-  const PRIORITY = { service: '0.9', hub: '0.8', industry: '0.8', tool: '0.8', comparison: '0.7', benchmark: '0.7', glossary: '0.6' };
+  const PRIORITY = { service: '0.9', hub: '0.8', industry: '0.8', location: '0.7', tool: '0.8', comparison: '0.7', benchmark: '0.7', glossary: '0.6' };
   const contentRoutes = CONTENT_PAGES.map((p) => ({ loc: p.path, lastmod: p.updated, changefreq: p.kind === 'glossary' ? 'monthly' : 'weekly', priority: PRIORITY[p.kind] || '0.7' }));
 
   const blogRoutes = blogPosts.map((p) => ({

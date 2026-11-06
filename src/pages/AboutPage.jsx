@@ -21,7 +21,6 @@ import {
   Play,
   Award
 } from 'lucide-react';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
   const [openFaq, setOpenFaq] = useState(0);
@@ -38,7 +37,8 @@ export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/about'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/about')); });
 
     return () => {
       const el = document.getElementById(schemaId);

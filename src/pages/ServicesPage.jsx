@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Megaphone, Music2, ShoppingBag, Rocket, Clapperboard, Calculator } from 'lucide-react';
-import { getRouteSchema, toJsonLd, SERVICES } from '../data/pageSchemas';
+import { SERVICES } from '../data/faqData';
 import { contentIndexOfKind as contentPagesOfKind } from '../data/contentIndex';
 import { pageIdFromHref } from '../data/internalLinks';
 
@@ -21,7 +21,8 @@ export default function ServicesPage({ onNavigate, onOpenBooking }) {
       script.type = 'application/ld+json';
       document.head.appendChild(script);
     }
-    script.textContent = toJsonLd(getRouteSchema('/services'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/services')); });
     return () => {
       const el = document.getElementById(schemaId);
       if (el) el.remove();

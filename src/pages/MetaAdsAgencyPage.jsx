@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Megaphone, ArrowRight, ChevronDown, ChevronUp, FlaskConical, Layers, Activity, CheckCircle2, XCircle } from 'lucide-react';
-import { getRouteSchema, toJsonLd, metaAdsFaqs as faqs } from '../data/pageSchemas';
+import { metaAdsFaqs as faqs } from '../data/faqData';
 import LinkedText from '../components/LinkedText';
 import { newLinkState } from '../data/internalLinks';
 
@@ -59,7 +59,8 @@ export default function MetaAdsAgencyPage({ onNavigate, onOpenBooking }) {
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/meta-ads-agency'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/meta-ads-agency')); });
 
     return () => {
       const el = document.getElementById(schemaId);

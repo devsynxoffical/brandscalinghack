@@ -85,6 +85,15 @@ const CAPABILITIES = [
 export default function ScalingSystemSection({ onOpenBooking }) {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
+  // The 8 MB demo clip only downloads once the phone mockup scrolls near the screen
+  const [videoNear, setVideoNear] = useState(false);
+  useEffect(() => {
+    const el = videoRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') { setVideoNear(true); return undefined; }
+    const io = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) { setVideoNear(true); io.disconnect(); } }, { rootMargin: '300px' });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
   const [activeCard, setActiveCard] = useState(null);
 
   useEffect(() => {
@@ -316,13 +325,13 @@ export default function ScalingSystemSection({ onOpenBooking }) {
                 <div className="scaling-phone-screen">
                   <video
                     ref={videoRef}
-                    src="/assets/insta-video/ClzYLasvGb7.mp4"
+                    src={videoNear ? '/assets/insta-video/ClzYLasvGb7.mp4' : undefined}
                     poster="/assets/insta-video/ClzYLasvGb7.webp"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    preload="auto"
+                    preload={videoNear ? 'auto' : 'none'}
                     disablePictureInPicture
                     disableRemotePlayback
                     className="scaling-phone-video"

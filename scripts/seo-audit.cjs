@@ -41,7 +41,7 @@ for (const [u, h] of pages) {
   const schema = h.match(/id="route-schema">([\s\S]*?)<\/script>/);
   if (!schema && u !== '/404') problems.push(`missing JSON-LD: ${u}`);
   if (schema) { try { JSON.parse(schema[1]); } catch { problems.push(`invalid JSON-LD: ${u}`); } }
-  const body = h.slice(h.indexOf('prerendered-route-view'));
+  const body = h.slice(h.indexOf('<div class="prerendered-route-view"'));
   for (const m of body.matchAll(/href="(\/[^"#?]*)"/g)) {
     const t = m[1] === '/' ? '/' : m[1].replace(/\/$/, '');
     if (!pages.has(t) && !redirects.has(t) && !files.has(t)) problems.push(`broken link ${t} on ${u}`);

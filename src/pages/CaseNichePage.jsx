@@ -4,7 +4,6 @@ import { allCaseStudies } from '../data/allCaseStudies';
 import { CASE_NICHES, nicheBySlug, casesForNiche, NICHE_INDUSTRY_PAGE } from '../data/caseNiches';
 import { isListedCase } from '../data/caseIndexing';
 import { displayFigures, caseSeo } from '../data/caseFacts';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 import NotFoundPage from './NotFoundPage';
 
 export default function CaseNichePage({ nicheSlug, onNavigate, onOpenBooking }) {
@@ -21,7 +20,8 @@ export default function CaseNichePage({ nicheSlug, onNavigate, onOpenBooking }) 
       script.type = 'application/ld+json';
       document.head.appendChild(script);
     }
-    script.textContent = toJsonLd(getRouteSchema(`/case-studies/${niche.slug}`));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema(`/case-studies/${niche.slug}`)); });
     return () => {
       const el = document.getElementById(schemaId);
       if (el) el.remove();

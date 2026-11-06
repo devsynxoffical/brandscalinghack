@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyVideo from './LazyVideo';
 import { ArrowRight } from 'lucide-react';
 
 export const ugcCreativesList = [
@@ -140,13 +141,10 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
                 title={`Click to view verified proof: ${item.hook}`}
               >
                 {item.video ? (
-                  <video
+                  <LazyVideo
                     src={item.video}
                     poster={item.image}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                    alt={item.hook}
                     className="ss3-pure-img"
                   />
                 ) : (
@@ -175,13 +173,10 @@ export default function LiveResultsSection({ onOpenBooking, onNavigate, onOpenIn
                 title={`Click to view verified proof: ${item.hook}`}
               >
                 {item.video ? (
-                  <video
+                  <LazyVideo
                     src={item.video}
                     poster={item.image}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                    alt={item.hook}
                     className="ss3-pure-img"
                   />
                 ) : (

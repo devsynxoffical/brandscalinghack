@@ -39,6 +39,21 @@ export function contentPageSchema(pageOrPath) {
     breadcrumb(hub ? [['Home', '/'], [hub.name, hub.path], [crumbName, path]] : [['Home', '/'], [crumbName, path]])
   ];
 
+  if (page.kind === 'location' && page.location) {
+    const loc = page.location;
+    graph.push({
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: page.h1,
+      serviceType: page.serviceType || page.primaryKeyword,
+      description: page.metaDescription,
+      provider: { '@id': ORG_ID },
+      areaServed: { '@type': 'City', name: loc.city, containedInPlace: { '@type': loc.country === 'US' ? 'State' : 'Country', name: loc.country === 'US' ? loc.region : ({ GB: 'United Kingdom', CA: 'Canada', AU: 'Australia' }[loc.country] || loc.region) } },
+      audience: { '@type': 'BusinessAudience', audienceType: `DTC ecommerce brands in ${loc.city}` },
+      url
+    });
+  }
+
   if (page.kind === 'service' || page.kind === 'industry') {
     graph.push({
       '@type': 'Service',

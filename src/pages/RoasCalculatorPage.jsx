@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, ArrowRight, ClipboardCheck } from 'lucide-react';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVideo }) {
   useEffect(() => {
@@ -17,7 +16,8 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/roas-calculator'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/roas-calculator')); });
 
     return () => {
       const el = document.getElementById(schemaId);

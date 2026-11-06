@@ -5,6 +5,8 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   build: {
+    // manifest lets scripts/prerender.cjs preload each route's lazy page chunk
+    manifest: true,
     rollupOptions: {
       output: {
         manualChunks(id) {

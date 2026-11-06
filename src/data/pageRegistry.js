@@ -8,6 +8,8 @@ import industry2 from './pages/industry-2.js';
 import glossary from './pages/glossary.js';
 import compareBenchmarks from './pages/compare-benchmarks.js';
 import tools from './pages/tools.js';
+import locationsUs from './pages/locations-us.js';
+import locationsIntl from './pages/locations-intl.js';
 
 // Date each group of pages was published / last substantively updated (sitemap lastmod, schema dates)
 export const CONTENT_PUBLISHED = '2026-11-05';
@@ -19,11 +21,13 @@ export const KIND_HUB = {
   tool: { path: '/tools', name: 'Free Tools' },
   glossary: { path: '/glossary', name: 'Glossary' },
   benchmark: { path: '/benchmarks', name: 'Benchmarks' },
-  comparison: { path: '/services', name: 'Services' }
+  comparison: { path: '/services', name: 'Services' },
+  location: { path: '/locations', name: 'Locations' }
 };
 
 const LEAF_PAGES = [...services1, ...services2, ...industry1, ...industry2, ...glossary, ...compareBenchmarks, ...tools]
-  .map((p) => ({ ...p, published: p.published || CONTENT_PUBLISHED, updated: p.updated || CONTENT_PUBLISHED }));
+  .map((p) => ({ ...p, published: p.published || CONTENT_PUBLISHED, updated: p.updated || CONTENT_PUBLISHED }))
+  .concat([...locationsUs, ...locationsIntl].map((p) => ({ ...p, published: p.published || '2026-11-06', updated: p.updated || '2026-11-06' })));
 
 const byKind = (kind) => LEAF_PAGES.filter((p) => p.kind === kind);
 const card = (p) => ({ href: p.path, title: p.term ? `${p.term.name}${p.term.alternateName && p.term.alternateName !== p.term.name ? ` (${p.term.alternateName})` : ''}` : p.h1, text: p.term ? p.term.shortDefinition : p.quickAnswer.answer.split(/(?<=\.)\s/)[0] });
@@ -141,6 +145,29 @@ const HUBS = [
     ],
     related: ['/case-studies', '/blog/what-is-roas', '/tools/break-even-roas-calculator', '/glossary/blended-roas'],
     cta: { heading: 'See how your account compares', text: 'Book a Brand Growth Audit and we will compare your ROAS, MER and CAC with your own break-even point and with what we see across client accounts.' }
+  },
+  {
+    path: '/locations',
+    kind: 'hub',
+    childKind: 'location',
+    primaryKeyword: 'ecommerce marketing agency locations',
+    titleTag: 'Ecommerce Marketing Agency Locations | Brand Scaling',
+    metaDescription: 'Ecommerce marketing agency locations: our New York office plus remote work for DTC brands in San Francisco, LA, Miami, London, Toronto and Sydney.',
+    h1: 'Ecommerce Marketing Agency Locations',
+    eyebrow: 'Where we work',
+    quickAnswer: {
+      question: 'Where is Brand Scaling based, and which markets do you serve?',
+      answer: 'Brand Scaling has one office, in New York at 27 W 24th Street, Suite 702. We run ads, creative and Shopify growth remotely for DTC brands across the United States, the United Kingdom, Canada and Australia. Each page below explains how we work with brands in that market, including time zones, currency, tax and privacy rules.'
+    },
+    intro: `These are the ecommerce marketing agency locations we serve. Our only office is in New York, and every other market is run remotely from there, with reporting and calls scheduled around your time zone.\n\nEach city page covers what actually changes for a DTC brand in that market: pricing with sales tax or VAT, consent rules that affect tracking, shipping expectations and the local sales calendar.`,
+    sections: [],
+    faqs: [
+      { question: 'Do you only work with brands in these cities?', answer: 'No. These pages cover the markets we are asked about most. We work with DTC brands anywhere in the United States, the United Kingdom, Canada and Australia, all managed from our New York office. What matters more than the city is your margin, your offer and whether you are ready to spend at least $10K to $20K a month on ads.' },
+      { question: 'Can I meet the team in person?', answer: 'Yes, in New York. Brand Growth Audits can be held at our office at 27 W 24th Street, Suite 702 by appointment. For every other market the audit and the ongoing work run over video calls, shared dashboards and written weekly reports, which is how most of our client relationships work anyway.' },
+      { question: 'How do you handle time zones?', answer: 'We schedule a fixed weekly call in a slot that suits both sides and send written reports so nothing waits on a meeting. New York, Toronto and Miami share Eastern time, London overlaps with New York mornings, the US West Coast is three hours behind, and Sydney gets a report waiting each morning plus an early or late call.' }
+    ],
+    related: ['/contact', '/about', '/services', '/for'],
+    cta: { heading: 'Book an audit from anywhere', text: 'Book a Brand Growth Audit at our New York office or on a video call, and get a 90-day plan for your market.' }
   }
 ];
 
@@ -153,7 +180,7 @@ const hubWithChildren = (h) => {
     updated: CONTENT_PUBLISHED,
     children: items,
     // children are prepended as the first section so the hub always leads with its links
-    sections: [{ id: 'all', h2: h.childKind === 'tool' ? 'All calculators' : h.childKind === 'glossary' ? 'All terms' : h.childKind === 'benchmark' ? 'Benchmark reports' : 'Industries', cards: items }, ...h.sections]
+    sections: [{ id: 'all', h2: h.childKind === 'tool' ? 'All calculators' : h.childKind === 'glossary' ? 'All terms' : h.childKind === 'benchmark' ? 'Benchmark reports' : h.childKind === 'location' ? 'Markets we serve' : 'Industries', cards: items }, ...h.sections]
   };
 };
 

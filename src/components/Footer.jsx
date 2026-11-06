@@ -76,6 +76,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
                 ['/tools', 'tools', 'Free Ecommerce Calculators'],
                 ['/glossary', 'glossary', 'Ecommerce Glossary'],
                 ['/benchmarks', 'benchmarks', 'ROAS Benchmarks'],
+                ['/locations', 'locations', 'Locations We Serve'],
                 ['/meta-ads-audit', 'meta-ads-audit', 'Meta Ads Audit'],
                 ['/tiktok-shop-agency', 'tiktok-shop-agency', 'TikTok Shop Agency'],
                 ['/cro-agency', 'cro-agency', 'Ecommerce CRO Agency'],

@@ -10,7 +10,6 @@ import {
   Flame, 
   Maximize2
 } from 'lucide-react';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 export const viralCreativesData = [
   // 1. Roofing (6)
@@ -133,7 +132,8 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/viral-creatives'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/viral-creatives')); });
 
     return () => {
       const el = document.getElementById(schemaId);

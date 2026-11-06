@@ -17,7 +17,8 @@ export const HUB_LINKS = [
   { id: 'for', href: '/for', label: 'Industries' },
   { id: 'tools', href: '/tools', label: 'Free tools' },
   { id: 'glossary', href: '/glossary', label: 'Glossary' },
-  { id: 'benchmarks', href: '/benchmarks', label: 'Benchmarks' }
+  { id: 'benchmarks', href: '/benchmarks', label: 'Benchmarks' },
+  { id: 'locations', href: '/locations', label: 'Locations' }
 ];
 
 export default function Navbar({ activePage, setActivePage, onOpenBooking }) {

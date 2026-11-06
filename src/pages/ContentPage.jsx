@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, ChevronDown, ChevronUp, CheckCircle2, BookOpen, Calculator, Sparkles } from 'lucide-react';
 import { contentPageByPath, KIND_HUB } from '../data/pageRegistry';
-import { toJsonLd } from '../data/pageSchemas';
-import { contentPageSchema } from '../data/contentSchema';
 import { newLinkState, pageIdFromHref } from '../data/internalLinks';
 import { linkTitle } from '../data/linkTitles';
 import LinkedText from '../components/LinkedText';
@@ -19,8 +17,6 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
   useEffect(() => {
     window.scrollTo(0, 0);
     setOpenFaq(0);
-    const graph = contentPageSchema(path);
-    if (!graph) return undefined;
     const id = 'content-page-schema';
     let script = document.getElementById(id);
     if (!script) {
@@ -29,7 +25,11 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
       script.type = 'application/ld+json';
       document.head.appendChild(script);
     }
-    script.textContent = toJsonLd(graph);
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    Promise.all([import('../data/contentSchema'), import('../data/pageSchemas')]).then(([c, m]) => {
+      const graph = c.contentPageSchema(path);
+      if (graph && script.isConnected) script.textContent = m.toJsonLd(graph);
+    });
     return () => {
       const el = document.getElementById(id);
       if (el) el.remove();

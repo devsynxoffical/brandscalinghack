@@ -16,5 +16,9 @@ export const MOST_SEARCHED = [
   { href: '/blog/how-much-does-a-dtc-agency-cost', label: 'How much does a DTC agency cost?' },
   { href: '/blog/how-to-scale-facebook-ads', label: 'How to scale Facebook ads' },
   { href: '/benchmarks/ecommerce-roas', label: 'Ecommerce ROAS benchmarks' },
-  { href: '/compare/meta-ads-vs-tiktok-ads', label: 'Meta ads vs TikTok ads' }
+  { href: '/compare/meta-ads-vs-tiktok-ads', label: 'Meta ads vs TikTok ads' },
+  { href: '/blog/how-to-scale-a-dtc-brand', label: 'How to scale a DTC brand' },
+  { href: '/blog/retargeting-for-dtc-brands', label: 'Retargeting for DTC brands' },
+  { href: '/blog/choose-google-ads-agency-dtc', label: 'Choosing a Google Ads agency' },
+  { href: '/locations/new-york', label: 'Ecommerce marketing agency New York' }
 ];

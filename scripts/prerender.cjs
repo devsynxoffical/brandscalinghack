@@ -141,7 +141,7 @@ const routes = [
   {
     path: '/roas-calculator',
     outPath: 'roas-calculator/index.html',
-    title: 'Free Ecommerce ROAS Calculator & Break-Even ROAS',
+    title: 'Real ROAS Calculator for Ecommerce: Break-Even & Profit',
     description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.',
     h1: 'Free ROAS Calculator for Ecommerce',
     content: `
@@ -330,6 +330,39 @@ function writeLlmsFull(allRoutes) {
   fs.writeFileSync(path.join(distDir, 'llms-full.txt'), out, 'utf8');
 }
 
+// Vite manifest: route -> page module -> chunk files to modulepreload
+const manifestPath = path.join(distDir, '.vite', 'manifest.json');
+const MANIFEST = fs.existsSync(manifestPath) ? JSON.parse(fs.readFileSync(manifestPath, 'utf8')) : {};
+const PAGE_BY_PATH = {
+  '/': 'HomePage', '/case-studies': 'CaseStudiesPage', '/viral-creatives': 'ViralCreativesPage', '/growth': 'GrowthPage',
+  '/about': 'AboutPage', '/roas-calculator': 'RoasCalculatorPage', '/shopify-agency': 'ShopifyAgencyPage',
+  '/meta-ads-agency': 'MetaAdsAgencyPage', '/tiktok-ads-agency': 'TikTokAdsAgencyPage', '/services': 'ServicesPage',
+  '/contact': 'ContactPage', '/blog': 'BlogIndexPage', '/privacy-policy': 'PrivacyPolicyPage', '/terms': 'TermsPage', '/404': 'NotFoundPage'
+};
+function pageModuleFor(p) {
+  if (PAGE_BY_PATH[p]) return PAGE_BY_PATH[p];
+  if (p.startsWith('/blog/')) return 'BlogPostPage';
+  if (p.startsWith('/cases/')) return 'CaseStudyDetailPage';
+  if (p.startsWith('/case-studies/')) return 'CaseNichePage';
+  return 'ContentPage';
+}
+function pagePreloads(p) {
+  const key = `src/pages/${pageModuleFor(p)}.jsx`;
+  if (!MANIFEST[key]) return '';
+  const files = new Set();
+  const walk = (k) => {
+    const e = MANIFEST[k];
+    if (!e || files.has(e.file)) return;
+    files.add(e.file);
+    (e.imports || []).forEach(walk);
+  };
+  walk(key);
+  // the entry chunk is already loaded by the page's own <script>
+  const entry = Object.values(MANIFEST).find((e) => e.isEntry);
+  if (entry) { files.delete(entry.file); (entry.imports || []).forEach((k) => MANIFEST[k] && files.delete(MANIFEST[k].file)); }
+  return [...files].map((f) => `<link rel="modulepreload" crossorigin href="/${f}" />`).join('\n    ');
+}
+
 function renderRoute(route) {
   const fullOutPath = path.join(distDir, route.outPath);
   const outDir = path.dirname(fullOutPath);
@@ -372,6 +405,10 @@ function renderRoute(route) {
   if (route.schema) {
     html = html.replace('</head>', () => `<script type="application/ld+json" id="route-schema">${route.schema}</script>\n  </head>`);
   }
+
+  // Preload this route's lazy page chunk (and its imports) so it downloads alongside the app shell
+  const preload = pagePreloads(route.path);
+  if (preload) html = html.replace('</head>', () => `${preload}\n  </head>`);
 
   if (route.headExtra) {
     html = html.replace('</head>', () => `${route.headExtra}\n  </head>`);
@@ -498,6 +535,7 @@ function renderRoute(route) {
         <p>The fastest way to work with us is a Brand Growth Audit: a 1-on-1 review of your ad account, creative, store and unit economics with Gaurav Kapoor. We work with DTC brands doing about $20K to $2M+ a month in the US, UK, Canada and Australia.</p>
         <h2>Office</h2>
         <address>Brand Scaling Hacks LLC, 27 W 24th Street, Suite 702, New York, NY 10010, United States</address>
+        <p>Visit <a href="/locations/new-york">our New York office</a> by appointment, or see <a href="/locations">all locations we serve</a> remotely: San Francisco, Los Angeles, Miami, London, Toronto and Sydney.</p>
         <h2>Follow and message</h2>
         <ul>
           <li><a href="https://www.instagram.com/gauravecomm/">Instagram @gauravecomm</a></li>
@@ -659,6 +697,7 @@ function renderRoute(route) {
     ['/case-studies', 'Case Studies'], ...CASE_NICHES.map((n) => [`/case-studies/${n.slug}`, `${n.name} Case Studies`]),
     ...CONTENT_PAGES.filter((c) => c.kind === 'service').map((c) => [c.path, c.eyebrow || c.h1]),
     ['/for', 'Industries'], ['/tools', 'Free Tools'], ['/benchmarks', 'Benchmarks'], ['/glossary', 'Glossary'],
+    ['/locations', 'Locations'], ...CONTENT_PAGES.filter((c) => c.kind === 'location').map((c) => [c.path, c.eyebrow || c.h1]),
     ...CONTENT_PAGES.filter((c) => c.kind === 'comparison').map((c) => [c.path, c.h1]),
     ['/roas-calculator', 'ROAS Calculator'], ['/blog', 'Blog'], ...blogPosts.map((b) => [`/blog/${b.slug}`, b.title]),
     ['/about', 'About'], ['/contact', 'Contact'], ['/privacy-policy', 'Privacy Policy'], ['/terms', 'Terms of Service']
@@ -666,6 +705,8 @@ function renderRoute(route) {
   SITE_NAV_HTML = `<nav aria-label="Site"><ul>${navLinks.map(([href, label]) => `<li><a href="${href}">${escapeHtml(label)}</a></li>`).join('')}</ul></nav>`;
 
   allRoutes.forEach(renderRoute);
+  // The Vite manifest was only needed for modulepreload tags; do not deploy it
+  fs.rmSync(path.join(distDir, '.vite'), { recursive: true, force: true });
   writeLlmsFull(allRoutes);
   console.log(`Prerender complete: Generated ${generatedCount} static HTML files (${routes.length} core + ${nicheRoutes.length} niche hubs + ${contentRoutes.length} content pages + ${blogRoutes.length} blog + ${caseRoutes.length} case studies, ${caseRoutes.filter((r) => r.noindex).length} noindex, ${caseRoutes.filter((r) => !r.noindex && !r.inSitemapLists).length} canonicalised duplicates).`);
 })().catch((err) => {

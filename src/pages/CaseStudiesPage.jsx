@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import ClientCaseStudiesSection from '../components/ClientCaseStudiesSection';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 import { CASE_NICHES, casesForNiche } from '../data/caseNiches';
 import { allCaseStudies } from '../data/allCaseStudies';
 import { isListedCase } from '../data/caseIndexing';
@@ -32,7 +31,8 @@ export default function CaseStudiesPage({
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/case-studies'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/case-studies')); });
 
     return () => {
       const el = document.getElementById(schemaId);

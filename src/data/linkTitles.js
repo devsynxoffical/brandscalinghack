@@ -1,9 +1,9 @@
 // Human-readable anchor text for any internal href (related-link blocks on content pages).
-import { blogPosts } from './blogPosts.js';
+// Uses the small generated route index (not the full blog and case data) to stay out of page bundles.
 import { contentPageByPath, contentLabel } from './pageRegistry.js';
-import { allCaseStudies } from './allCaseStudies.js';
-import { caseSeo } from './caseFacts.js';
-import { nicheBySlug } from './caseNiches.js';
+import { BLOG_META, CASE_META, NICHE_META } from './routeMeta.js';
+
+const strip = (t) => String(t || '').replace(/\s*\|\s*Brand Scaling\s*$/, '');
 
 const STATIC_TITLES = {
   '/': 'Brand Scaling home',
@@ -25,17 +25,16 @@ export function linkTitle(href) {
   const page = contentPageByPath(href);
   if (page) return contentLabel(page);
   if (href.startsWith('/blog/')) {
-    const post = blogPosts.find((p) => `/blog/${p.slug}` === href);
-    if (post) return post.title;
+    const post = BLOG_META[href.slice('/blog/'.length)];
+    if (post) return strip(post[0]);
   }
   if (href.startsWith('/case-studies/')) {
-    const niche = nicheBySlug(href.slice('/case-studies/'.length));
-    if (niche) return niche.h1;
+    const niche = NICHE_META[href.slice('/case-studies/'.length)];
+    if (niche) return strip(niche[0]);
   }
   if (href.startsWith('/cases/')) {
-    const id = href.slice('/cases/'.length);
-    const cs = allCaseStudies.find((c) => c.slug === id || c.id === id);
-    if (cs) return caseSeo(cs).h1;
+    const cs = CASE_META[href.slice('/cases/'.length)];
+    if (cs) return strip(cs[0]);
   }
   return null;
 }

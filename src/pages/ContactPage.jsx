@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { MapPin, CalendarCheck, Users, ArrowRight } from 'lucide-react';
 import { InstagramIcon as Instagram, YoutubeIcon as Youtube, LinkedinIcon as Linkedin } from '../components/Icons';
-import { getRouteSchema, toJsonLd } from '../data/pageSchemas';
 
 const cardStyle = { background: '#111116', border: '1px solid #20202a', borderRadius: '16px', padding: '26px' };
 
@@ -16,7 +15,8 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
       script.type = 'application/ld+json';
       document.head.appendChild(script);
     }
-    script.textContent = toJsonLd(getRouteSchema('/contact'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/contact')); });
     return () => {
       const el = document.getElementById(schemaId);
       if (el) el.remove();
@@ -58,7 +58,7 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
               New York, NY 10010<br />
               United States
             </address>
-            <p style={{ color: '#94a3b8', fontSize: '13px', margin: '10px 0 0' }}>Calls by appointment. We work remotely with brands worldwide.</p>
+            <p style={{ color: '#94a3b8', fontSize: '13px', margin: '10px 0 0' }}>Calls by appointment. We work remotely with brands worldwide: see <a href="/locations/new-york" onClick={go('locations/new-york')} style={{ color: '#ff7043' }}>our New York office</a> and <a href="/locations" onClick={go('locations')} style={{ color: '#ff7043' }}>all locations we serve</a>.</p>
           </div>
 
           <div style={cardStyle}>

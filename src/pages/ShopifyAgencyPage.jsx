@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ShoppingBag, Zap, CheckCircle2, ArrowRight, TrendingUp, ShieldCheck, ChevronDown, ChevronUp, Layers, Gauge, Target } from 'lucide-react';
-import { getRouteSchema, toJsonLd, shopifyFaqs as faqs } from '../data/pageSchemas';
+import { shopifyFaqs as faqs } from '../data/faqData';
 import LinkedText from '../components/LinkedText';
 import { newLinkState } from '../data/internalLinks';
 
@@ -21,7 +21,8 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/shopify-agency'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/shopify-agency')); });
 
     return () => {
       const el = document.getElementById(schemaId);

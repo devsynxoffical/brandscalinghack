@@ -1,43 +1,45 @@
 import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import CaseStudiesPage from './pages/CaseStudiesPage';
-import CaseStudyDetailPage from './pages/CaseStudyDetailPage';
-import ViralCreativesPage from './pages/ViralCreativesPage';
-import GrowthPage from './pages/GrowthPage';
-import AboutPage from './pages/AboutPage';
-import RoasCalculatorPage from './pages/RoasCalculatorPage';
-import DiscoveryModal from './components/DiscoveryModal';
-import VideoModal from './components/VideoModal';
-import InstagramModal from './components/InstagramModal';
-import { allCaseStudies } from './data/allCaseStudies';
-import { cleanSeoText, caseStudyDescription } from './data/seoText';
-import { ogImageFor } from './data/pageSchemas';
-import { nicheBySlug } from './data/caseNiches';
-import { isNoindexCase, canonicalCasePath } from './data/caseIndexing';
-import { allCaseSeo } from './data/caseFacts';
-import CaseNichePage from './pages/CaseNichePage';
+import { ogImageFor } from './data/ogImages';
 import { contentIndexByPath as contentPageByPath } from './data/contentIndex';
-// Content pages (services, industries, tools, glossary...) carry a lot of copy: load on demand
+import { BLOG_META, CASE_META, NICHE_META } from './data/routeMeta';
+
+// Every page loads on demand, so a visitor only downloads the code and data for the page
+// they open (the home page's 3D, animation and video sections stay off blog and service pages).
+const HomePage = lazy(() => import('./pages/HomePage'));
+const CaseStudiesPage = lazy(() => import('./pages/CaseStudiesPage'));
+const CaseStudyDetailPage = lazy(() => import('./pages/CaseStudyDetailPage'));
+const ViralCreativesPage = lazy(() => import('./pages/ViralCreativesPage'));
+const GrowthPage = lazy(() => import('./pages/GrowthPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const RoasCalculatorPage = lazy(() => import('./pages/RoasCalculatorPage'));
+const CaseNichePage = lazy(() => import('./pages/CaseNichePage'));
 const ContentPage = lazy(() => import('./pages/ContentPage'));
+const ShopifyAgencyPage = lazy(() => import('./pages/ShopifyAgencyPage'));
+const MetaAdsAgencyPage = lazy(() => import('./pages/MetaAdsAgencyPage'));
+const TikTokAdsAgencyPage = lazy(() => import('./pages/TikTokAdsAgencyPage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
+const BlogIndexPage = lazy(() => import('./pages/BlogIndexPage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const PrivacyPolicyPage = lazy(() => import('./pages/PrivacyPolicyPage'));
+const TermsPage = lazy(() => import('./pages/TermsPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+// Below-the-fold and on-demand pieces
+const DiscoveryModal = lazy(() => import('./components/DiscoveryModal'));
+const VideoModal = lazy(() => import('./components/VideoModal'));
+const InstagramModal = lazy(() => import('./components/InstagramModal'));
+const GlassWindowMarquee = lazy(() => import('./components/GlassWindowMarquee'));
+const RelatedGuides = lazy(() => import('./components/RelatedGuides'));
+const ServiceUpgrade = lazy(() => import('./components/ServiceUpgrade'));
 
-import ShopifyAgencyPage from './pages/ShopifyAgencyPage';
-import MetaAdsAgencyPage from './pages/MetaAdsAgencyPage';
-import TikTokAdsAgencyPage from './pages/TikTokAdsAgencyPage';
-import ServicesPage from './pages/ServicesPage';
-import ContactPage from './pages/ContactPage';
-import BlogIndexPage from './pages/BlogIndexPage';
-import BlogPostPage from './pages/BlogPostPage';
-import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
-import TermsPage from './pages/TermsPage';
-import NotFoundPage from './pages/NotFoundPage';
-import { blogPosts } from './data/blogPosts';
-import GlassWindowMarquee from './components/GlassWindowMarquee';
-import RelatedGuides from './components/RelatedGuides';
-import ServiceUpgrade from './components/ServiceUpgrade';
+import { SERVICE_GUIDES } from './data/internalLinks';
 
-const caseSeoMap = allCaseSeo(allCaseStudies);
+// Original service pages that carry the extra quick answer / sections / FAQs block
+const UPGRADED_PAGES = new Set(['services', 'meta-ads-agency', 'tiktok-ads-agency', 'shopify-agency', 'growth', 'viral-creatives', 'roas-calculator']);
+
+const PageFallback = () => <div style={{ minHeight: '100vh', background: '#070709' }} />;
 
 function App() {
   const [activePage, setActivePage] = useState('home');
@@ -56,7 +58,7 @@ function App() {
         setActivePage('case-studies');
       } else if (rawPath.startsWith('/case-studies/')) {
         const nicheSlug = rawPath.replace('/case-studies/', '');
-        setActivePage(nicheBySlug(nicheSlug) ? `case-niche-${nicheSlug}` : '404');
+        setActivePage(NICHE_META[nicheSlug] ? `case-niche-${nicheSlug}` : '404');
       } else if (rawPath.startsWith('/cases/')) {
         const caseId = rawPath.replace('/cases/', '');
         if (caseId && caseId !== 'studies') {
@@ -94,7 +96,7 @@ function App() {
       } else if (rawPath.startsWith('/blog/')) {
         const postSlug = rawPath.replace('/blog/', '');
         // Unknown slugs must render the 404 page, not a fallback post (avoids duplicate content)
-        setActivePage(blogPosts.some((p) => p.slug === postSlug) ? `blog-${postSlug}` : '404');
+        setActivePage(BLOG_META[postSlug] ? `blog-${postSlug}` : '404');
       } else if (rawPath === '/privacy-policy') {
         setActivePage('privacy-policy');
       } else if (rawPath === '/terms') {
@@ -148,30 +150,30 @@ function App() {
       description = contentPage.metaDescription;
       pagePath = contentPage.path;
     } else if (activePage.startsWith('case-niche-')) {
-      const niche = nicheBySlug(activePage.replace('case-niche-', ''));
-      title = niche ? niche.titleTag : 'Ecommerce Case Studies | Brand Scaling';
-      description = niche ? niche.metaDescription : '';
-      pagePath = niche ? `/case-studies/${niche.slug}` : '/case-studies';
+      const nicheSlug = activePage.replace('case-niche-', '');
+      const niche = NICHE_META[nicheSlug];
+      title = niche ? niche[0] : 'Ecommerce Case Studies | Brand Scaling';
+      description = niche ? niche[1] : '';
+      pagePath = niche ? `/case-studies/${nicheSlug}` : '/case-studies';
     } else if (activePage.startsWith('case-') && activePage !== 'case-studies') {
       const caseId = activePage.replace('case-', '');
-      const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
+      const study = CASE_META[caseId];
       if (study) {
-        const seo = caseSeoMap.get(study.slug || study.id);
-        title = seo ? seo.titleTag : `${cleanSeoText(study.title || 'Verified eCommerce Case Study', 44)} | Brand Scaling`;
-        description = seo ? seo.metaDescription : caseStudyDescription(study);
-        if (isNoindexCase(study)) noindex = true;
+        title = study[0];
+        description = study[1];
+        if (study[3]) noindex = true;
       } else {
         title = `eCommerce Case Study #${caseId} | Brand Scaling`;
         description = 'Direct-response case study breakdown showing verified ROAS and scalable revenue results.';
       }
       // Canonical always points at the descriptive slug, even when an old shortcode URL was opened
-      pagePath = study ? canonicalCasePath(study) : `/cases/${caseId}`;
+      pagePath = study ? study[2] : `/cases/${caseId}`;
     } else if (activePage.startsWith('blog-') && activePage !== 'blog') {
       const postSlug = activePage.replace('blog-', '');
-      const post = blogPosts.find((p) => p.slug === postSlug);
+      const post = BLOG_META[postSlug];
       if (post) {
-        title = post.titleTag;
-        description = post.metaDescription;
+        title = post[0];
+        description = post[1];
       } else {
         title = 'Ecommerce Growth Playbook | Brand Scaling';
         description = 'Actionable performance marketing and creative strategy playbook for DTC brands.';
@@ -220,7 +222,7 @@ function App() {
           pagePath = '/contact';
           break;
         case 'roas-calculator':
-          title = 'Free Ecommerce ROAS Calculator & Break-Even ROAS';
+          title = 'Real ROAS Calculator for Ecommerce: Break-Even & Profit';
           description = 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.';
           pagePath = '/roas-calculator';
           break;
@@ -274,8 +276,8 @@ function App() {
     let og = ogImageFor(pagePath);
     if (activePage.startsWith('case-') && activePage !== 'case-studies') {
       const caseId = activePage.replace('case-', '');
-      const study = allCaseStudies.find((s) => s.id === caseId || s.slug === caseId || s.shortcode === caseId);
-      if (study && study.image) og = `${baseUrl}${study.image}`;
+      const study = CASE_META[caseId];
+      if (study && study[4]) og = `${baseUrl}${study[4]}`;
     }
     updateMeta('og:image', og, true);
     updateMeta('og:image:secure_url', og, true);
@@ -319,11 +321,7 @@ function App() {
 
   const renderActivePage = () => {
     if (contentPageByPath(`/${activePage}`)) {
-      return (
-        <Suspense fallback={<div style={{ minHeight: '100vh', background: '#070709' }} />}>
-          <ContentPage path={`/${activePage}`} onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />
-        </Suspense>
-      );
+      return <ContentPage path={`/${activePage}`} onNavigate={handleNavigate} onOpenBooking={() => setIsBookingOpen(true)} />;
     }
     if (activePage.startsWith('case-niche-')) {
       return (
@@ -471,16 +469,20 @@ function App() {
       />
 
       {/* Main Dynamic Page View */}
-      <main>{renderActivePage()}</main>
+      <main><Suspense fallback={<PageFallback />}>{renderActivePage()}</Suspense></main>
 
       {/* Quick answer, extra sections and FAQs for the original service pages */}
-      <ServiceUpgrade key={activePage} page={activePage} onNavigate={handleNavigate} />
+      {UPGRADED_PAGES.has(activePage) && (
+        <Suspense fallback={null}><ServiceUpgrade key={activePage} page={activePage} onNavigate={handleNavigate} /></Suspense>
+      )}
 
       {/* Contextual guide links under service and hub pages */}
-      <RelatedGuides page={activePage} onNavigate={handleNavigate} />
+      {SERVICE_GUIDES[activePage] && (
+        <Suspense fallback={null}><RelatedGuides page={activePage} onNavigate={handleNavigate} /></Suspense>
+      )}
 
       {/* 3D Glass Window Marquee Showcase (Above Footer) */}
-      <GlassWindowMarquee />
+      <Suspense fallback={null}><GlassWindowMarquee /></Suspense>
 
       {/* Global Footer */}
       <Footer
@@ -489,23 +491,23 @@ function App() {
       />
 
       {/* Discovery Booking & Audit Modal */}
-      <DiscoveryModal
-        isOpen={isBookingOpen}
-        onClose={() => setIsBookingOpen(false)}
-      />
+      {isBookingOpen && (
+        <Suspense fallback={null}>
+          <DiscoveryModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
+        </Suspense>
+      )}
 
       {/* Masterclass Video Player Modal */}
-      <VideoModal
-        video={activeVideo}
-        onClose={() => setActiveVideo(null)}
-      />
+      {activeVideo && (
+        <Suspense fallback={null}><VideoModal video={activeVideo} onClose={() => setActiveVideo(null)} /></Suspense>
+      )}
 
       {/* Live Instagram Proof & Lightbox Modal */}
-      <InstagramModal
-        item={activeInstagramReel}
-        onClose={() => setActiveInstagramReel(null)}
-        onOpenBooking={() => setIsBookingOpen(true)}
-      />
+      {activeInstagramReel && (
+        <Suspense fallback={null}>
+          <InstagramModal item={activeInstagramReel} onClose={() => setActiveInstagramReel(null)} onOpenBooking={() => setIsBookingOpen(true)} />
+        </Suspense>
+      )}
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, ShieldCheck, Copy, Check } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import { allCaseStudies } from '../data/allCaseStudies';
-import { caseStudySchema, toJsonLd } from '../data/pageSchemas';
 import { editorialFor } from '../data/caseEditorial';
 import { caseSeo, displayFigures } from '../data/caseFacts';
 import { relatedCases, nicheForCase } from '../data/caseNiches';
@@ -32,7 +31,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
       script.type = 'application/ld+json';
       document.head.appendChild(script);
     }
-    script.textContent = toJsonLd(caseStudySchema(caseStudy));
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.caseStudySchema(caseStudy)); });
     return () => {
       const el = document.getElementById(schemaId);
       if (el) el.remove();

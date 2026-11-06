@@ -22,7 +22,6 @@ import {
   Flame,
   Bookmark
 } from 'lucide-react';
-import { blogPostSchema, toJsonLd } from '../data/pageSchemas';
 import { linkifySegments, newLinkState, pageIdFromHref } from '../data/internalLinks';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
@@ -139,7 +138,7 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
       document.head.appendChild(scriptEl);
     }
 
-    scriptEl.textContent = toJsonLd(blogPostSchema(post));
+    import('../data/pageSchemas').then((m) => { if (scriptEl.isConnected) scriptEl.textContent = m.toJsonLd(m.blogPostSchema(post)); });
 
     return () => {
       const el = document.getElementById(schemaScriptId);

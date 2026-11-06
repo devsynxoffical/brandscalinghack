@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyVideo from './LazyVideo';
 import { ArrowUpRight } from 'lucide-react';
 import { instaVideosList } from '../data/instaVideosData';
 
@@ -14,13 +15,10 @@ function CreativeMediaCard({ item, onClick }) {
   return (
     <div className="tilted-card-pure" onClick={onClick}>
       {item.isVideo || item.video ? (
-        <video
+        <LazyVideo
           src={item.video}
           poster={item.image}
-          autoPlay
-          loop
-          muted
-          playsInline
+          alt={item.title}
           className="tilted-pure-media"
         />
       ) : (

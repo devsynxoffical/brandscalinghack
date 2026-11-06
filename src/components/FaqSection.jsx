@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Plus, Minus, ArrowRight, Sparkles, HelpCircle } from 'lucide-react';
-import { getRouteSchema, toJsonLd, homeFaqs as faqs } from '../data/pageSchemas';
+import { homeFaqs as faqs } from '../data/faqData';
 import LinkedText from '../components/LinkedText';
 import { newLinkState } from '../data/internalLinks';
 
@@ -18,7 +18,8 @@ export default function FaqSection({ onOpenBooking, onNavigate }) {
       document.head.appendChild(script);
     }
 
-    script.textContent = toJsonLd(getRouteSchema('/'));
+    // Structured data loads after first paint (the prerendered HTML already carries it)
+    import('../data/pageSchemas').then((m) => { if (script.isConnected) script.textContent = m.toJsonLd(m.getRouteSchema('/')); });
 
     return () => {
       const el = document.getElementById(faqSchemaId);
