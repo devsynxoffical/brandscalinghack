@@ -315,6 +315,17 @@ Linking: Services dropdown and mobile drawer link the 4 hubs; footer "Resources"
 
 Checks: lint exit 0; `npm run seo:audit` 220 pages, 115 sitemap URLs, min 3 inbound links per URL, 0 problems; structured data 0 errors; browser check desktop and 390px mobile on every template, no horizontal overflow, no page errors.
 
+## 4k. Day 8 (Nov 6, 2026): locations, demand-led guides, performance
+
+Research: Search Console (28 days to Nov 3: 25 pages with impressions, best near-misses "which google ads agencies are best for scaling dtc ecommerce brands" pos 38 to 48, "scaling dtc brands with retargeting" pos 61, "tiktok shop scaling services", "how to scale a dtc brand", "ecommerce scaling services oakland", "scaling ecommerce brands san francisco"); live SERP review of competitors (agency listicles, Netalico/Webtonic city pages, CTC growth map). OpenSEO keyword credits were exhausted, so no paid volume data.
+
+Shipped:
+- /locations hub plus 7 location pages (New York office; San Francisco, Los Angeles, Miami, London, Toronto, Sydney served remotely, stated plainly). Service schema with areaServed City.
+- 3 guides: /blog/retargeting-for-dtc-brands, /blog/how-to-scale-a-dtc-brand, /blog/choose-google-ads-agency-dtc.
+- Retitled /blog/performance-marketing-agency and /roas-calculator for the queries they get; link rules for Google Ads agency, retargeting, scaling a DTC brand.
+- Performance: route-level code splitting, generated route metadata, deferred JSON-LD code, modulepreload per route, lazy videos. Main JS 1,288 KB to 161 KB; homepage transfer 243 MB to about 20 MB; Lighthouse mobile performance home 40 to 63-71, blog post 47 to 75-81, Meta ads page 44 to 76, location page 71.
+- Indexing: 23 URLs to the Google Indexing API (all accepted), sitemap and feed resubmitted, 18 URLs to IndexNow; 21 case pages from yesterday accepted after the quota reset.
+
 ---
 
 ## 5. Files changed in this commit
