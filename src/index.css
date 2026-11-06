@@ -11916,3 +11916,250 @@ button {
 .client-case-studies-section.is-case-studies-page {
   padding-top: 64px;
 }
+
+/* ---------- Home: playbooks teaser (featured + compact) ---------- */
+.bt-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+}
+.bt-card {
+  display: flex;
+  background: #0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.bt-card:hover,
+.bt-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(239, 68, 68, 0.45);
+  box-shadow: 0 20px 40px -18px rgba(239, 68, 68, 0.35);
+}
+.bt-card-featured {
+  grid-row: 1 / span 3;
+  flex-direction: column;
+}
+.bt-card-compact {
+  flex-direction: row;
+  align-items: stretch;
+}
+.bt-thumb {
+  --bt-accent: #ef4444;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  background:
+    radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--bt-accent) 38%, transparent), transparent 60%),
+    radial-gradient(circle at 85% 90%, color-mix(in srgb, var(--bt-accent) 18%, transparent), transparent 55%),
+    #0f141c;
+}
+.bt-thumb-grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(circle at 50% 50%, #000 30%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 30%, transparent 80%);
+}
+.bt-thumb-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  color: var(--bt-accent);
+  background: color-mix(in srgb, var(--bt-accent) 14%, #0d1117);
+  border: 1px solid color-mix(in srgb, var(--bt-accent) 40%, transparent);
+  box-shadow: 0 10px 30px -10px var(--bt-accent);
+  transition: transform 0.3s ease;
+}
+.bt-card-featured .bt-thumb-icon { width: 76px; height: 76px; border-radius: 22px; }
+.bt-card:hover .bt-thumb-icon { transform: translateY(-3px) scale(1.05); }
+.bt-thumb-label {
+  position: absolute;
+  left: 22px;
+  bottom: 18px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+.bt-card-featured .bt-thumb { aspect-ratio: 16 / 7; }
+.bt-card-compact .bt-thumb { width: 120px; }
+.bt-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px 24px;
+  min-width: 0;
+  flex: 1;
+}
+.bt-card-featured .bt-body { padding: 28px 30px 30px; gap: 14px; }
+.bt-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.bt-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.bt-cat {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.bt-time {
+  margin-left: auto;
+  color: #64748b;
+  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.bt-title {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+.bt-card-featured .bt-title {
+  font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.bt-snippet {
+  color: #94a3b8;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+.bt-read {
+  margin-top: auto;
+  color: #ef4444;
+  font-weight: 800;
+  font-size: 0.86rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+@media (max-width: 900px) {
+  .bt-grid { grid-template-columns: 1fr; grid-template-rows: none; }
+  .bt-card-featured { grid-row: auto; }
+}
+@media (max-width: 520px) {
+  .bt-card-compact .bt-thumb { width: 84px; }
+  .bt-card-compact .bt-thumb-icon { width: 42px; height: 42px; border-radius: 13px; }
+  .bt-body { padding: 16px 18px; }
+  .bt-card-compact .bt-time { display: none; }
+}
+
+/* ---------- Home: most searched panel ---------- */
+.ms-section {
+  background: #07090e;
+  padding: 0 0 90px;
+}
+.ms-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.ms-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: clamp(24px, 4vw, 44px);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(239, 68, 68, 0.12), transparent 45%),
+    linear-gradient(180deg, #0d1117, #0a0d13);
+}
+.ms-head { margin-bottom: 32px; }
+.ms-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ef4444;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.ms-title {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+.ms-sub { color: #94a3b8; font-size: 1rem; margin: 0; }
+.ms-groups {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+.ms-group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ms-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+  flex-shrink: 0;
+}
+.ms-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.ms-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 10px;
+  margin: 0 -10px;
+  border-radius: 10px;
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.ms-arrow { color: #475569; flex-shrink: 0; transition: color 0.2s ease, transform 0.2s ease; }
+.ms-link:hover,
+.ms-link:focus-visible { background: rgba(255, 255, 255, 0.05); color: #ffffff; }
+.ms-link:hover .ms-arrow,
+.ms-link:focus-visible .ms-arrow { color: #ef4444; transform: translate(2px, -2px); }
+@media (max-width: 1024px) {
+  .ms-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .ms-groups { grid-template-columns: 1fr; gap: 22px; }
+}

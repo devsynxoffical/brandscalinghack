@@ -1,11 +1,20 @@
 import React from 'react';
-import { ArrowRight, BookOpen, Clock, Sparkles, TrendingUp, Video } from 'lucide-react';
+import { ArrowRight, Clock, Sparkles, Megaphone, Clapperboard, Search, TrendingUp, Calculator, Share2, ShoppingBag, Mail, BookOpen } from 'lucide-react';
+
+const CATEGORY_ICONS = {
+  'Meta Ads': Megaphone, 'Creative Production': Clapperboard, 'Creative Research': Search, 'Strategy & Scaling': TrendingUp,
+  'Metrics & Unit Economics': Calculator, 'Growth Channels': Share2, 'Shopify & CRO': ShoppingBag, Retention: Mail
+};
+const CategoryIcon = ({ category, size }) => {
+  const Icon = CATEGORY_ICONS[category] || BookOpen;
+  return <Icon size={size} />;
+};
 import { blogPosts } from '../data/blogPosts';
 
 export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
   // Newest or most recently updated posts first, so the home page (Google's most-crawled
   // URL) always links to fresh content.
-  const BADGES = { 'Creative Research': '#38bdf8', 'Creative Production': '#a78bfa', 'Meta Ads': '#ff5722', 'Strategy & Scaling': '#ef4444', 'Metrics & Unit Economics': '#fbbf24', 'Growth Channels': '#22c55e', 'Agency Blueprint': '#ff5722' };
+  const BADGES = { 'Creative Research': '#38bdf8', 'Creative Production': '#a78bfa', 'Meta Ads': '#ff5722', 'Strategy & Scaling': '#ef4444', 'Metrics & Unit Economics': '#fbbf24', 'Growth Channels': '#22c55e', 'Agency Blueprint': '#ff5722', 'Shopify & CRO': '#34d399', Retention: '#f472b6' };
   const articles = [...blogPosts]
     .sort((x, y) => (y.updatedDate || y.publishDate).localeCompare(x.updatedDate || x.publishDate) || (y.publishDate || '').localeCompare(x.publishDate || ''))
     .slice(0, 4)
@@ -26,7 +35,7 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
       className="bsh-blog-teaser-section"
       style={{
         background: '#07090e',
-        padding: '90px 0',
+        padding: '90px 0 44px',
         borderTop: '1px solid rgba(255, 255, 255, 0.08)',
         position: 'relative'
       }}
@@ -109,100 +118,31 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
           </a>
         </div>
 
-        {/* 3-Column Card Grid */}
-        <div 
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '24px'
-          }}
-        >
-          {articles.map((item) => (
-            <div
-              key={item.slug}
-              style={{
-                background: '#0d1117',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-                borderRadius: '20px',
-                padding: '30px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                transition: 'transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease',
-                cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-6px)';
-                e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.4)';
-                e.currentTarget.style.boxShadow = '0 20px 40px -15px rgba(239, 68, 68, 0.2)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-              onClick={() => onNavigate && onNavigate(item.route)}
-            >
-              <div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '18px' }}>
-                  <span 
-                    style={{
-                      background: `${item.badgeColor}18`,
-                      border: `1px solid ${item.badgeColor}40`,
-                      color: item.badgeColor,
-                      fontSize: '0.74rem',
-                      fontWeight: 800,
-                      padding: '4px 12px',
-                      borderRadius: '9999px',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.04em'
-                    }}
-                  >
-                    {item.badge}
-                  </span>
-                  <span style={{ color: '#64748b', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                    <Clock size={13} /> {item.readTime}
-                  </span>
-                </div>
-
-                <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: '#ffffff', lineHeight: 1.35, marginBottom: '12px' }}>
-                  <a
-                    href={item.url}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onNavigate && onNavigate(item.route);
-                    }}
-                    style={{ color: '#ffffff', textDecoration: 'none' }}
-                  >
-                    {item.title}
-                  </a>
-                </h3>
-
-                <p style={{ color: '#94a3b8', fontSize: '0.92rem', lineHeight: 1.6, margin: 0 }}>
-                  {item.snippet}
-                </p>
-              </div>
-
-              <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid rgba(255, 255, 255, 0.06)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                  {item.category}
+        {/* Featured post + three compact posts */}
+        <div className="bt-grid">
+          {articles.map((item, i) => {
+            const featured = i === 0;
+            const open = (e) => { e.preventDefault(); onNavigate && onNavigate(item.route); };
+            return (
+              <a key={item.slug} href={item.url} onClick={open} className={featured ? 'bt-card bt-card-featured' : 'bt-card bt-card-compact'}>
+                <span className="bt-thumb" aria-hidden="true" style={{ '--bt-accent': item.badgeColor }}>
+                  <span className="bt-thumb-grid" />
+                  <span className="bt-thumb-icon"><CategoryIcon category={item.category} size={featured ? 30 : 22} /></span>
+                  {featured && <span className="bt-thumb-label">Latest playbook</span>}
                 </span>
-                <span 
-                  style={{ 
-                    color: '#ef4444', 
-                    fontWeight: 800, 
-                    fontSize: '0.86rem', 
-                    display: 'inline-flex', 
-                    alignItems: 'center', 
-                    gap: '4px' 
-                  }}
-                >
-                  <span>Read Article</span>
-                  <ArrowRight size={14} />
+                <span className="bt-body">
+                  <span className="bt-meta">
+                    <span className="bt-badge" style={{ color: item.badgeColor, background: `${item.badgeColor}18`, borderColor: `${item.badgeColor}40` }}>{item.badge}</span>
+                    <span className="bt-cat">{item.category}</span>
+                    <span className="bt-time"><Clock size={12} /> {item.readTime}</span>
+                  </span>
+                  <span className="bt-title">{item.title}</span>
+                  {featured && <span className="bt-snippet">{item.snippet}</span>}
+                  <span className="bt-read">Read {featured ? 'the playbook' : 'article'} <ArrowRight size={14} /></span>
                 </span>
-              </div>
-            </div>
-          ))}
+              </a>
+            );
+          })}
         </div>
 
       </div>
