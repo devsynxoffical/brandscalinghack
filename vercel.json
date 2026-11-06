@@ -2,6 +2,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "brandscalinghacks.com"
+        }
+      ],
+      "destination": "https://www.brandscalinghacks.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/book-a-call",
       "destination": "/book",
       "permanent": true
