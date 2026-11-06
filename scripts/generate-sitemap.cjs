@@ -93,7 +93,7 @@ ${all.map(urlBlock).join('\n')}
     <atom:link href="${BASE}/feed.xml" rel="self" type="application/rss+xml" />
     <description>Direct-response ad breakdowns, Meta ads playbooks and unit-economic benchmarks from managing $50M+ in ad spend across 150+ Shopify brands.</description>
     <language>en-us</language>
-    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
+    <lastBuildDate>${new Date(([...blogPosts].map((p) => p.updatedDate || p.publishDate).sort().pop() || '2026-10-27') + 'T09:00:00Z').toUTCString()}</lastBuildDate>
 ${rssItems}
   </channel>
 </rss>
