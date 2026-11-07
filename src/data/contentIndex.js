@@ -411,7 +411,7 @@ export const CONTENT_INDEX = [
   {
     "path": "/tools/conversion-rate-calculator",
     "kind": "tool",
-    "titleTag": "Ecommerce Conversion Rate Calculator | Brand Scaling",
+    "titleTag": "Conversion Rate Calculator for Ecommerce | Brand Scaling",
     "metaDescription": "Free ecommerce conversion rate calculator. Enter sessions, orders and AOV to get conversion rate, revenue per session and the value of a 0.5 point lift.",
     "h1": "Ecommerce Conversion Rate Calculator",
     "eyebrow": "Free Ecommerce Tool"

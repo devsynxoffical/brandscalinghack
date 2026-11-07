@@ -42,75 +42,78 @@ const UPGRADED_PAGES = new Set(['services', 'meta-ads-agency', 'tiktok-ads-agenc
 
 const PageFallback = () => <div style={{ minHeight: '100vh', background: '#070709' }} />;
 
+/** App page id for a URL path (used for the first render and for back/forward navigation). */
+function pageFromPath(pathname) {
+  const rawPath = String(pathname || '').replace(/\/$/, '');
+  if (!rawPath || rawPath === '') {
+    return 'home';
+  } else if (rawPath === '/case-studies' || rawPath === '/cases' || rawPath === '/cases/studies' || rawPath === '/case') {
+    return 'case-studies';
+  } else if (rawPath.startsWith('/case-studies/')) {
+    const nicheSlug = rawPath.replace('/case-studies/', '');
+    return NICHE_META[nicheSlug] ? `case-niche-${nicheSlug}` : '404';
+  } else if (rawPath.startsWith('/cases/')) {
+    const caseId = rawPath.replace('/cases/', '');
+    if (caseId && caseId !== 'studies') {
+      return `case-${caseId}`;
+    } else {
+      return 'case-studies';
+    }
+  } else if (rawPath.startsWith('/case/')) {
+    const caseId = rawPath.replace('/case/', '');
+    if (caseId) {
+      return `case-${caseId}`;
+    } else {
+      return 'case-studies';
+    }
+  } else if (rawPath === '/viral-creatives') {
+    return 'viral-creatives';
+  } else if (rawPath === '/growth') {
+    return 'growth';
+  } else if (rawPath === '/shopify-agency') {
+    return 'shopify-agency';
+  } else if (rawPath === '/meta-ads-agency' || rawPath === '/facebook-ads-agency') {
+    return 'meta-ads-agency';
+  } else if (rawPath === '/tiktok-ads-agency') {
+    return 'tiktok-ads-agency';
+  } else if (rawPath === '/services') {
+    return 'services';
+  } else if (rawPath === '/book' || rawPath === '/book-a-call' || rawPath === '/booking') {
+    return 'book';
+  } else if (rawPath === '/contact' || rawPath === '/contact-us') {
+    return 'contact';
+  } else if (rawPath === '/about') {
+    return 'about';
+  } else if (rawPath === '/roas-calculator' || rawPath === '/viral-products') {
+    return 'roas-calculator';
+  } else if (rawPath === '/blog') {
+    return 'blog';
+  } else if (rawPath.startsWith('/blog/')) {
+    const postSlug = rawPath.replace('/blog/', '');
+    // Unknown slugs must render the 404 page, not a fallback post (avoids duplicate content)
+    return BLOG_META[postSlug] ? `blog-${postSlug}` : '404';
+  } else if (rawPath === '/privacy-policy') {
+    return 'privacy-policy';
+  } else if (rawPath === '/terms') {
+    return 'terms';
+  } else if (contentPageByPath(rawPath)) {
+    // Data-driven pages (services, industries, tools, glossary, comparisons, benchmarks)
+    return rawPath.slice(1);
+  }
+  return '404';
+}
+
 function App() {
-  const [activePage, setActivePage] = useState('home');
+  // Resolve the page from the URL before the first render, so a deep link never renders
+  // (or downloads) the home page first and never flashes the home title/canonical
+  const [activePage, setActivePage] = useState(() => pageFromPath(typeof window !== 'undefined' ? window.location.pathname : '/'));
   const [activeVideo, setActiveVideo] = useState(null);
   const [activeInstagramReel, setActiveInstagramReel] = useState(null);
   const hasTrackedFirstPageView = useRef(false);
 
   // Initialize route from current window path on load and handle popstate
   useEffect(() => {
-    const handleLocationChange = () => {
-      const rawPath = window.location.pathname.replace(/\/$/, '');
-      if (!rawPath || rawPath === '') {
-        setActivePage('home');
-      } else if (rawPath === '/case-studies' || rawPath === '/cases' || rawPath === '/cases/studies' || rawPath === '/case') {
-        setActivePage('case-studies');
-      } else if (rawPath.startsWith('/case-studies/')) {
-        const nicheSlug = rawPath.replace('/case-studies/', '');
-        setActivePage(NICHE_META[nicheSlug] ? `case-niche-${nicheSlug}` : '404');
-      } else if (rawPath.startsWith('/cases/')) {
-        const caseId = rawPath.replace('/cases/', '');
-        if (caseId && caseId !== 'studies') {
-          setActivePage(`case-${caseId}`);
-        } else {
-          setActivePage('case-studies');
-        }
-      } else if (rawPath.startsWith('/case/')) {
-        const caseId = rawPath.replace('/case/', '');
-        if (caseId) {
-          setActivePage(`case-${caseId}`);
-        } else {
-          setActivePage('case-studies');
-        }
-      } else if (rawPath === '/viral-creatives') {
-        setActivePage('viral-creatives');
-      } else if (rawPath === '/growth') {
-        setActivePage('growth');
-      } else if (rawPath === '/shopify-agency') {
-        setActivePage('shopify-agency');
-      } else if (rawPath === '/meta-ads-agency' || rawPath === '/facebook-ads-agency') {
-        setActivePage('meta-ads-agency');
-      } else if (rawPath === '/tiktok-ads-agency') {
-        setActivePage('tiktok-ads-agency');
-      } else if (rawPath === '/services') {
-        setActivePage('services');
-      } else if (rawPath === '/book' || rawPath === '/book-a-call' || rawPath === '/booking') {
-        setActivePage('book');
-      } else if (rawPath === '/contact' || rawPath === '/contact-us') {
-        setActivePage('contact');
-      } else if (rawPath === '/about') {
-        setActivePage('about');
-      } else if (rawPath === '/roas-calculator' || rawPath === '/viral-products') {
-        setActivePage('roas-calculator');
-      } else if (rawPath === '/blog') {
-        setActivePage('blog');
-      } else if (rawPath.startsWith('/blog/')) {
-        const postSlug = rawPath.replace('/blog/', '');
-        // Unknown slugs must render the 404 page, not a fallback post (avoids duplicate content)
-        setActivePage(BLOG_META[postSlug] ? `blog-${postSlug}` : '404');
-      } else if (rawPath === '/privacy-policy') {
-        setActivePage('privacy-policy');
-      } else if (rawPath === '/terms') {
-        setActivePage('terms');
-      } else if (contentPageByPath(rawPath)) {
-        // Data-driven pages (services, industries, tools, glossary, comparisons, benchmarks)
-        setActivePage(rawPath.slice(1));
-      } else {
-        setActivePage('404');
-      }
-    };
-
+    const handleLocationChange = () => setActivePage(pageFromPath(window.location.pathname));
     handleLocationChange();
     window.addEventListener('popstate', handleLocationChange);
     return () => window.removeEventListener('popstate', handleLocationChange);

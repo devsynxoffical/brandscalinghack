@@ -14,7 +14,7 @@ const corePosts = [
     primaryKeyword: 'bfcm',
     secondaryKeywords: ['black friday ads', 'what is bfcm in marketing', 'bfcm dates 2026', 'best bfcm ads'],
     publishDate: '2026-10-22',
-    updatedDate: "2026-11-03",
+    updatedDate: '2026-11-07',
     readTime: "15 min read",
     relatedLinks: [
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Get the BFCM creative bank and campaign structure built for you.' },
@@ -41,6 +41,7 @@ const corePosts = [
     tableOfContents: [
       { id: 'what-is-bfcm', text: 'What is BFCM in marketing?' },
       { id: 'bfcm-timeline', text: 'BFCM 2026 dates and the Meta ads timeline' },
+      { id: 'bfcm-countdown', text: 'Three weeks out: the BFCM countdown checklist' },
       { id: 'phase-1-creative', text: 'Phase 1 (3 to 13 Nov): Build the creative bank' },
       { id: 'phase-2-early-access', text: 'Phase 2 (16 to 25 Nov): Early access & warm audiences' },
       { id: 'phase-3-scale', text: 'Phase 3 (26 to 30 Nov): Scale without burning margin' },
@@ -79,6 +80,22 @@ Top performing Shopify brands do not wait until Thanksgiving morning to launch c
             ['Tue 1 Dec to Fri 4 Dec', 'Post Cyber Week', 'Last chance extended offers; transition into December gift flows', 'First party customer LTV']
           ]
         }
+      },
+      {
+        id: 'bfcm-countdown',
+        h2: 'Three weeks out: the BFCM countdown checklist',
+        content: `Black Friday 2026 falls on Friday 27 November and Cyber Monday on 30 November, so the second week of November is the last point where changes can still be tested before spend peaks. Anything you launch after about 20 November is running on guesswork, because the auction gets more expensive every day and there is no time left to read results.
+
+Work through this list in order this week. Each item is something we check on partner accounts before Thanksgiving week.`,
+        list: [
+          'Confirm tracking: the Meta pixel and Conversions API both fire on purchase, and Events Manager shows a healthy event match quality score. Fix this first; nothing else can be judged without it.',
+          'Lock the offer: one headline discount or bundle, the same on ads, product pages, email and SMS. Changing the offer mid-week resets everything you have learned.',
+          'Work out your break-even ROAS at the discounted price, not the full price. A 30 percent discount can push the break-even point up sharply, so set CPA and ROAS floors from the new margin.',
+          'Finish the creative bank: at least three angles with several hook variations each, plus a static and a video version of the offer, so fatigue never forces you to launch untested ads in Cyber Week.',
+          'Build the early access list now: email and SMS sign-ups collected in November are the cheapest buyers you will reach on Black Friday.',
+          'Check the store on a phone: page speed, the offer above the fold, and a checkout that works with the discount applied. Paid traffic exposes every friction point.',
+          'Agree the budget steps in advance: how much you raise spend each day and the CPA level at which you pull back, so decisions on the day are rules, not panic.'
+        ]
       },
       {
         id: 'phase-1-creative',
@@ -319,7 +336,7 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
   {
     slug: 'what-is-roas',
     title: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
-    titleTag: "What Is ROAS? Meaning, Formula & Good ROAS | Brand Scaling",
+    titleTag: "What Is ROAS? Formula, Meaning & Examples | Brand Scaling",
     metaDescription: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
     primaryKeyword: 'what is roas',
     secondaryKeywords: ['good roas ecommerce', 'roas formula', 'break even roas', 'roas vs mer'],
@@ -350,7 +367,7 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
     },
     tableOfContents: [
       { id: 'roas-definition', text: 'What is ROAS and how is it calculated?' },
-      { id: 'break even-formula', text: 'How to calculate your break even ROAS' },
+      { id: 'break-even-formula', text: 'How to calculate your break even ROAS' },
       { id: 'industry-benchmarks', text: 'What is a good ROAS? Benchmarks by industry' },
       { id: 'roas-vs-mer', text: 'ROAS vs. MER: Which metric should you scale on?' },
       { id: 'how-to-improve-roas', text: 'How to improve ecommerce ROAS' },
@@ -376,7 +393,7 @@ ROAS = $20,000 / $5,000 = 4.00x (or 400%)
 While platform ROAS is straightforward to monitor inside Meta Ads Manager or Google Ads, scaling a profitable brand requires looking beyond platform metrics to calculate your net contribution margin.`
       },
       {
-        id: 'break even-formula',
+        id: 'break-even-formula',
         h2: 'How to calculate your break even ROAS',
         content: `Many brand founders make the fatal mistake of celebrating a 2.5x ROAS on Meta when their unit economics actually mean they are losing money on every order.
 
@@ -565,7 +582,7 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
     primaryKeyword: 'performance marketing agency',
     secondaryKeywords: ['ecommerce marketing agency usa', 'dtc growth agency', 'direct response marketing agency', 'meta ads agency'],
     publishDate: '2026-10-26',
-    updatedDate: "2026-11-03",
+    updatedDate: '2026-11-07',
     readTime: "14 min read",
     relatedLinks: [
       { href: '/', title: 'Performance Marketing Agency for Ecommerce', text: 'What the Brand Scaling engagement includes and who it is for.' },
@@ -672,8 +689,8 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
       },
       {
         "id": "choose-ecommerce-growth-agency",
-        "h2": "How to choose an ecommerce growth agency for a DTC brand",
-        "content": "Agencies that specialise in scaling DTC brands look similar on their websites. The difference shows up in how they answer a few specific questions.",
+        "h2": "How to choose an ecommerce growth agency that specializes in scaling DTC brands",
+        "content": "Ecommerce growth agencies that specialize in scaling DTC brands look similar on their websites: the same platform logos, the same ROAS screenshots. The difference shows up in how the work is set up. A specialist runs creative, media buying, the store and retention as one system, because a DTC brand rarely stalls for a single reason. Spend stops scaling when creative fatigues, when the product page cannot convert colder traffic, or when first-order margin cannot cover the cost of a new customer.\n\nSo judge an agency on three things: who makes the ads and how many new ones launch each month, whether they will change the store and the offer rather than only the campaigns, and which number they report first. An agency that leads with blended MER and new-customer CAC is managing your business; one that leads with platform ROAS is managing a dashboard. Ask the questions below on the first call.",
         "subsections": [
           {
             "h3": "Questions to ask before you sign",

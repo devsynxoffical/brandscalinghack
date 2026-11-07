@@ -16,7 +16,11 @@ export const LINK_RULES = [
   { re: /\b(DTC |creator |ecommerce )?affiliate (program|marketing)\b|\bTikTok Shop affiliates\b/i, href: '/blog/dtc-affiliate-program', title: 'How to Scale a DTC Affiliate Program' },
   { re: /\bbreak[ -]even ROAS calculator\b/i, href: '/tools/break-even-roas-calculator', title: 'Break-Even ROAS Calculator' },
   { re: /\b(real )?ROAS calculator\b|\bfree ROAS calculator\b/i, href: '/roas-calculator', title: 'Free ROAS Calculator' },
-  { re: /\bbreak[ -]even ROAS\b|\bwhat a good ROAS\b|\bgood ROAS\b|\bROAS formula\b|\bwhat is ROAS\b|\bReturn On Ad Spend\b|\bimprov(e|ing) (your |ecommerce )?ROAS\b/i, href: '/blog/what-is-roas', title: 'What Is ROAS? Formula and Benchmarks' },
+  // ROAS cluster: each intent points at one page so internal anchors do not make them compete
+  { re: /\b(what is a |a )?good ROAS( for ecommerce)?\b|\bwhat a good ROAS\b/i, href: '/blog/good-roas-for-ecommerce', title: 'What Is a Good ROAS for Ecommerce?' },
+  { re: /\baverage (ecommerce )?ROAS\b|\bROAS benchmarks?\b/i, href: '/benchmarks/ecommerce-roas', title: 'Ecommerce ROAS Benchmarks' },
+  { re: /\bbreak[ -]even ROAS\b/i, href: '/tools/break-even-roas-calculator', title: 'Break-Even ROAS Calculator' },
+  { re: /\bROAS formula\b|\bwhat is ROAS\b|\bReturn On Ad Spend\b|\bimprov(e|ing) (your |ecommerce )?ROAS\b/i, href: '/blog/what-is-roas', title: 'What Is ROAS? Formula and Examples' },
   { re: /\bblended ROAS\b/i, href: '/glossary/blended-roas', title: 'Blended ROAS' },
   { re: /\bBrand Growth Audit\b|\bbook (a|an|your) (call|audit)\b/i, href: '/book', title: 'Book a Brand Growth Audit' },
   { re: /\bGoogle Ads agenc(y|ies)\b/i, href: '/blog/choose-google-ads-agency-dtc', title: 'How to Choose a Google Ads Agency for DTC' },
