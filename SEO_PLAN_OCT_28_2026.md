@@ -326,6 +326,16 @@ Shipped:
 - Performance: route-level code splitting, generated route metadata, deferred JSON-LD code, modulepreload per route, lazy videos. Main JS 1,288 KB to 161 KB; homepage transfer 243 MB to about 20 MB; Lighthouse mobile performance home 40 to 63-71, blog post 47 to 75-81, Meta ads page 44 to 76, location page 71.
 - Indexing: 23 URLs to the Google Indexing API (all accepted), sitemap and feed resubmitted, 18 URLs to IndexNow; 21 case pages from yesterday accepted after the quota reset.
 
+## 4l. Day 9 (Nov 7, 2026): root-cause audit of low impressions
+
+Data (Search Console API, service account, dataState=all, 19 Oct to 7 Nov): 311 impressions, 7 clicks, average position 58 to 63; daily impressions rising from 2-15 (mid Oct) to 20-40 (Nov). No brand queries at all. Live web search for the brand and domain returns nothing: no external mentions or links.
+
+URL Inspection of every known URL (351): sitemap 39 of 127 indexed, 54 "Discovered - currently not indexed", 34 "unknown to Google", 0 "Crawled - not indexed", 0 canonical conflicts; noindex case pages 3 of 100 still indexed (dropping); old shortcode case URLs 22 of 124 still indexed (301 since Oct 31, not yet recrawled). 7 indexed pages were last crawled 22-27 Oct with a non-www canonical. 26 of 39 indexed pages were crawled 5-7 Nov (crawl rate rising).
+
+Root causes: (1) new domain with no external links or mentions, so pages rank on pages 5-10 where few impressions occur; (2) most pages not yet crawled; (3) head terms ("roas", "roas formula") owned by large sites; (4) shared Indexing API quota exhausted by other sites. Content is not thin (900+ words, max 3.7% 5-gram overlap).
+
+Fixed: deep links rendered and downloaded the home page first (App now resolves the route before first render); ROAS intent split in internal anchors; invalid anchor id; conversion rate calculator retitled (position 6); growth-agency section expanded (position 26 query); BFCM countdown checklist; non-www 301 (previous commit). 95 not-indexed or stale URLs queued for the Indexing API on Nov 8; 34 sent to IndexNow.
+
 ---
 
 ## 5. Files changed in this commit
