@@ -84,7 +84,7 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
               margin: '0 0 14px 0', 
               textTransform: 'uppercase' 
             }}>
-              Free ROAS Calculator for Ecommerce
+              Real ROAS Calculator for Ecommerce
             </h1>
 
             <p style={{ fontSize: '1.08rem', color: '#64748b', maxWidth: '720px', margin: '0 auto', lineHeight: 1.65 }}>

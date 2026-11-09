@@ -50,7 +50,7 @@ const indexIn = (list, href) => Math.max(0, list.findIndex((x) => x.href === hre
 /** Groups of related links for a page path, or null when the page type has no block. */
 export function relatedBlockFor(path) {
   const page = CONTENT_INDEX.find((p) => p.path === path);
-  const kind = page ? page.kind : SERVICES.some((s) => s.href === path) ? 'service' : path.startsWith('/blog/') ? 'blog' : null;
+  const kind = page ? page.kind : path === '/roas-calculator' ? 'tool' : SERVICES.some((s) => s.href === path) ? 'service' : path.startsWith('/blog/') ? 'blog' : null;
   if (!kind || kind === 'hub') return null;
   const seed = (list) => indexIn(list, path) + 1;
   const g = (title, links) => (links.length ? { title, links } : null);

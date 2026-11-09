@@ -38,6 +38,7 @@ export const LINK_RULES = [
   { re: /\bretention marketing\b/i, href: '/retention-marketing-agency', title: 'Retention Marketing Agency' },
   { re: /\binfluencer marketing\b/i, href: '/influencer-marketing-agency', title: 'Influencer Marketing Agency' },
   { re: /\bcreative strateg(y|ist)\b/i, href: '/creative-strategy-agency', title: 'Creative Strategy Agency' },
+  { re: /\bLondon page\b/i, href: '/locations/london', title: 'Ecommerce Marketing Agency London' },
   { re: /\bin-house media buyer\b/i, href: '/compare/agency-vs-in-house-media-buyer', title: 'Agency vs In-House Media Buyer' },
   { re: /\b(ecommerce )?growth (engine|agency)\b/i, href: '/growth', title: 'Ecommerce Growth Engine' },
   { re: /\b(scale|scaling) UGC( production)?\b|\bUGC production\b|\bcreator brief\b/i, href: '/blog/scale-ugc-production', title: 'How to Scale UGC Production' },

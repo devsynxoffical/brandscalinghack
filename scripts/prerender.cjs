@@ -143,7 +143,7 @@ const routes = [
     outPath: 'roas-calculator/index.html',
     title: 'Real ROAS Calculator for Ecommerce: Break-Even & Profit',
     description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.',
-    h1: 'Free ROAS Calculator for Ecommerce',
+    h1: 'Real ROAS Calculator for Ecommerce',
     content: `
       <p>Model your product pricing, product cost (COGS), and target customer acquisition cost (CAC) to calculate break-even ROAS and monthly net profit before scaling paid ad spend.</p>
       <h2>The Formulas</h2>

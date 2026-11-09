@@ -176,6 +176,20 @@ The two can run together, but the decision is separate. TikTok ads suit brands t
     },
     sections: [
       {
+        id: 'choose-shopify-agency',
+        h2: 'How to choose a Shopify agency for scaling a DTC brand',
+        content: `Shopify agencies fall into two groups, and DTC brands often hire the wrong one. Design and development studios build beautiful stores and hand them over. Growth agencies treat the store as part of the ad funnel and keep changing it after launch, because the product page that converts cold paid traffic is rarely the one that looks best in a portfolio.
+
+If your traffic comes mainly from Meta and TikTok ads, choose an agency that will commit to numbers after launch, not only to a launch date. Ask these questions on the first call.`,
+        list: [
+          'Will you change the store after launch, and how often do you test product pages, offers and bundles?',
+          'Do you plan the page around the ads that send traffic to it (the same angle, offer and proof)?',
+          'Which numbers do you report: conversion rate, revenue per session and AOV by traffic source, or only page speed scores?',
+          'Who owns the theme, apps and code if we stop working together?',
+          'Can you show a store you rebuilt and what happened to its conversion rate? Ours: a clinical skincare store reached a 5.25 percent conversion rate in a $61,000 month.'
+        ]
+      },
+      {
         id: 'what-a-paid-traffic-store-needs',
         h2: 'What a store built for paid traffic needs',
         content: `A store built for organic and returning visitors can look good and still lose money on cold paid traffic. Someone arriving from a 15-second video knows almost nothing about the brand, so the page has to finish the job the ad started. When we build or rebuild a Shopify store for a growth engagement, these are the parts we work on first.`,
@@ -363,6 +377,22 @@ Required ROAS is not the same as break-even ROAS. Break-even is the point where 
             ['Net profit margin', 'What share of revenue is profit before overheads?', 'If it is thin, a small rise in ad costs will wipe it out'],
             ['Monthly revenue and net profit', 'What does this volume add up to over 30 days?', 'Check it covers fixed costs: salaries, apps, agency fees, software']
           ]
+        }
+      },
+      {
+        id: 'real-roas',
+        h2: 'Why this is a real ROAS calculator, not just revenue divided by spend',
+        content: `A basic ROAS calculator only divides revenue by ad spend, which tells you nothing about profit. A real ROAS calculator for ecommerce starts from what each order costs you: product, shipping, payment fees and the ad cost per purchase. From those it works out your break-even ROAS (the lowest ROAS where an order still pays for itself) and the profit or loss each order leaves at your current cost per purchase.
+
+That is the difference between a dashboard number and a decision. A 3x ROAS can be excellent for a store with a 1.6x break-even and loss-making for a store with a 3.5x break-even. If you only need the break-even point from your margin, the break-even ROAS calculator does that in one step; to plan budget for a revenue goal, use the Facebook ads budget calculator.`
+      },
+      {
+        id: 'acos-to-roas',
+        h2: 'ACoS to ROAS: converting Amazon numbers',
+        content: `Amazon reports ACoS (advertising cost of sale) instead of ROAS. ACoS is ad spend divided by ad revenue, so it is simply the inverse of ROAS. To convert, divide 1 by ACoS as a decimal; to go back, divide 1 by ROAS.`,
+        table: {
+          headers: ['ACoS', 'Equivalent ROAS'],
+          rows: [['50%', '2.0x'], ['40%', '2.5x'], ['33%', '3.0x'], ['25%', '4.0x'], ['20%', '5.0x']]
         }
       },
       {

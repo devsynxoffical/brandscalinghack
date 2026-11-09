@@ -800,6 +800,7 @@ Offers lean on bundles and quantity breaks rather than deep discounts, and we wa
     path: '/for/health-wellness',
     kind: 'industry',
     primaryKeyword: 'wellness brand marketing',
+    updated: '2026-11-09',
     titleTag: 'Wellness Brand Marketing for DTC Brands | Brand Scaling',
     metaDescription: 'Wellness brand marketing for DTC brands: compliant, education-led Meta and TikTok ads, trust-first product pages and retention flows that keep buyers.',
     h1: 'Wellness Brand Marketing Built on Trust and Compliance',
@@ -886,6 +887,10 @@ The adjacent results show what this approach does in practice. A supplement bran
       { value: '30+', label: 'Niches served', note: 'Across our client accounts over 12+ years' }
     ],
     faqs: [
+      {
+        question: 'Do you work with wellness brands that also offer telehealth or services?',
+        answer: 'Yes, on the ecommerce side. Many health and wellness brands now sell products alongside consultations or telehealth. We run the paid acquisition, creative and Shopify store for the products: supplements, devices, kits and subscriptions. Regulated medical claims and the clinical or telehealth service itself stay with your compliance team, and every ad goes through Meta and TikTok health policy checks.'
+      },
       {
         question: 'Do you have case studies for wellness brands?',
         answer: "Not specifically for wellness. Our published results in this area come from supplement and fitness brands, which share the same ad policy limits, trust challenges and repeat purchase economics. Examples include $137,620 in a month at 3.89x ROAS for a supplement brand. We label these as adjacent so you know exactly what the evidence covers."

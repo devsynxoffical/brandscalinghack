@@ -129,6 +129,28 @@ const HUBS = [
     intro: `Most ecommerce benchmarks online come from surveys or platform averages you cannot check. These ecommerce benchmarks are different: they are calculated from our own published case studies, and every figure links back to the case it came from.\n\nThe first report covers ROAS by niche. We will add CPM, conversion rate and CAC reports once we have enough consistently measured accounts to publish them honestly.`,
     sections: [
       {
+        id: 'roas-by-niche',
+        h2: 'Ecommerce ROAS benchmarks by niche',
+        content: `ROAS from Brand Scaling case studies that publish one, grouped by niche. Ranges show the lowest and highest published figure in each group; every number links back to a case in the case study library. Across all 25 cases the median is 3.97x and the middle half sits between 3.61x and 4.39x.`,
+        table: {
+          headers: ['Niche', 'Published ROAS range', 'Where to see the cases'],
+          rows: [
+            ['Supplements', '3.89x to 4.51x', 'Supplement case studies'],
+            ['Fashion and apparel', '3.56x to 5.49x', 'Fashion and jewelry case studies'],
+            ['Jewelry', '4.43x (one case)', 'Fashion and jewelry case studies'],
+            ['Fitness', '3.61x to 4.37x', 'Fitness and health case studies'],
+            ['Skincare', '3.64x to 4.39x', 'Skincare and beauty case studies'],
+            ['Dropshipping', '2.53x to 11.6x', 'Dropshipping and DTC store case studies'],
+            ['General DTC', '2.06x to 3.8x', 'All case studies']
+          ]
+        }
+      },
+      {
+        id: 'uk-roas',
+        h2: 'What about average ROAS for UK ecommerce?',
+        content: `We have one published UK result, a skincare brand that reached EUR 118,000 in its first month, and that post does not state a ROAS, so we do not publish a UK average. UK brands price with 20 percent VAT included, so calculate ROAS and break-even on revenue excluding VAT, or the number will look about a fifth better than it is. How we work with UK brands is on the London page.`
+      },
+      {
         id: 'method',
         h2: 'How the benchmarks are built',
         content: `We only use figures that appear in a published case study with a screenshot of the ad account or store. Where a case shows revenue and spend, we calculate ROAS from those two numbers. Cases without both numbers are left out rather than estimated.\n\nThe sample is our own client work, so it reflects brands that chose to scale with an agency and accounts that went well enough to publish. Treat the numbers as what good looks like for brands like these, not as an industry average.`,
@@ -173,13 +195,15 @@ const HUBS = [
   }
 ];
 
+const HUB_UPDATED = { '/benchmarks': '2026-11-09' };
+
 const hubWithChildren = (h) => {
   const children = byKind(h.childKind);
   const items = [...children.map(card), ...(h.extraLinks || [])];
   return {
     ...h,
     published: CONTENT_PUBLISHED,
-    updated: CONTENT_PUBLISHED,
+    updated: HUB_UPDATED[h.path] || CONTENT_PUBLISHED,
     children: items,
     // children are prepended as the first section so the hub always leads with its links
     sections: [{ id: 'all', h2: h.childKind === 'tool' ? 'All calculators' : h.childKind === 'glossary' ? 'All terms' : h.childKind === 'benchmark' ? 'Benchmark reports' : h.childKind === 'location' ? 'Markets we serve' : 'Industries', cards: items }, ...h.sections]

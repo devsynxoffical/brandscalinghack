@@ -336,6 +336,20 @@ Root causes: (1) new domain with no external links or mentions, so pages rank on
 
 Fixed: deep links rendered and downloaded the home page first (App now resolves the route before first render); ROAS intent split in internal anchors; invalid anchor id; conversion rate calculator retitled (position 6); growth-agency section expanded (position 26 query); BFCM countdown checklist; non-www 301 (previous commit). 95 not-indexed or stale URLs queued for the Indexing API on Nov 8; 34 sent to IndexNow.
 
+## 4m. Day 11 (Nov 9, 2026): playbook structure, indexed-page content upgrades
+
+Site Growth Playbook applied (see docs/SITE_GROWTH_PLAYBOOK.md): explore-more block on every typed page, sitemap index with 5 group sitemaps, 2 new tools, /about facts and FAQs, meta descriptions <= 155, weekly per-type report script.
+
+Indexed-page upgrades, each driven by the queries Search Console shows that page is found for:
+- /blog/what-is-roas ("roas formula" 26 impr, pos 95; "roas" 15): rebuilt around the formula (worked table, percentage form, ACoS conversion, mistakes), break-even with a margin table, real case ROAS (median 3.97x of 25 cases) replacing unverifiable industry ranges and two unsourced conversion statistics; full FAQ answers.
+- /tiktok-shop-agency ("tiktok shop scaling services" 25 impr, landing on /growth and home): title, description, section heading and a new FAQ use the phrase.
+- /roas-calculator ("real roas calculator ecommerce" 20, "acos to roas calculator"): H1 now Real ROAS Calculator; new sections on what makes it a real ROAS calculator and ACoS to ROAS conversion table.
+- /blog/performance-marketing-agency ("dtc performance marketing" 14, "ecommerce roas improvement agency" 15): new sections "What is DTC performance marketing?" and "What an ecommerce ROAS improvement agency actually changes".
+- /shopify-agency ("dtc shopify agency", "best shopify agencies for scaling dtc brands"): new section on choosing a Shopify agency for a DTC brand.
+- /benchmarks ("roas benchmarks by industry", "average roas ecommerce uk"): ROAS-by-niche table from published cases and an honest UK section.
+- /for/health-wellness (position 17 query): FAQ on wellness brands that also offer telehealth.
+New posts: /blog/black-friday-discount-strategy, /blog/ecommerce-profit-margin.
+
 ---
 
 ## 5. Files changed in this commit

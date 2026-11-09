@@ -3,8 +3,8 @@ export const CONTENT_INDEX = [
   {
     "path": "/tiktok-shop-agency",
     "kind": "service",
-    "titleTag": "TikTok Shop Agency for DTC Brands | Brand Scaling",
-    "metaDescription": "TikTok Shop agency for DTC brands: shop setup, listings, affiliate creators and samples, LIVE shopping, GMV Max and Spark Ads, run on your real margins.",
+    "titleTag": "TikTok Shop Agency & Scaling Services | Brand Scaling",
+    "metaDescription": "TikTok Shop agency and scaling services for DTC brands: shop setup, listings, affiliate creators, LIVE, GMV Max and Spark Ads, run on your real margins.",
     "h1": "TikTok Shop Agency for DTC Brands That Want In-App Sales to Pay",
     "eyebrow": "TikTok Shop Agency"
   },

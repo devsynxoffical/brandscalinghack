@@ -3,8 +3,9 @@ export default [
     path: '/tiktok-shop-agency',
     kind: 'service',
     primaryKeyword: 'tiktok shop agency',
-    titleTag: 'TikTok Shop Agency for DTC Brands | Brand Scaling',
-    metaDescription: 'TikTok Shop agency for DTC brands: shop setup, listings, affiliate creators and samples, LIVE shopping, GMV Max and Spark Ads, run on your real margins.',
+    titleTag: 'TikTok Shop Agency & Scaling Services | Brand Scaling',
+    updated: '2026-11-09',
+    metaDescription: 'TikTok Shop agency and scaling services for DTC brands: shop setup, listings, affiliate creators, LIVE, GMV Max and Spark Ads, run on your real margins.',
     h1: 'TikTok Shop Agency for DTC Brands That Want In-App Sales to Pay',
     eyebrow: 'TikTok Shop Agency',
     quickAnswer: {
@@ -34,7 +35,7 @@ That changes the economics. On TikTok Shop you are paying a platform referral fe
       },
       {
         id: 'what-we-run',
-        h2: 'What our TikTok Shop service includes',
+        h2: 'TikTok Shop scaling services: what is included',
         content: `We run the shop as an operating channel, not a one-off setup. Each part below feeds the next: listings make creator videos convert, creator videos give us ad material, and ad spend gives the best videos the reach they need.`,
         subsections: [
           {
@@ -90,6 +91,10 @@ We quote after a Brand Growth Audit, a 1-on-1 review with Gaurav of your margins
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
+      {
+        question: 'What do TikTok Shop scaling services include?',
+        answer: 'TikTok Shop scaling services cover the whole shop, not only ads: setting up the shop and product listings, recruiting and briefing affiliate creators, managing free samples and commissions, running LIVE sessions, and putting GMV Max and Spark Ads budget behind the videos that already sell. Budgets rise in steps only while margin after fees, commissions and ads stays positive.'
+      },
       {
         question: 'How is a TikTok Shop agency different from a TikTok ads agency?',
         answer: 'A TikTok ads agency runs paid campaigns that usually send people to your own website. A TikTok Shop agency runs the in-app store: listings, affiliate creators, samples, LIVE sessions and GMV Max. The two overlap on creative and Spark Ads, so we often run them together, but the costs and metrics differ.'
