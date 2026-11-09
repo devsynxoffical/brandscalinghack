@@ -417,6 +417,22 @@ export const CONTENT_INDEX = [
     "eyebrow": "Free Ecommerce Tool"
   },
   {
+    "path": "/tools/discount-break-even-calculator",
+    "kind": "tool",
+    "titleTag": "Discount Break Even Calculator for Sales | Brand Scaling",
+    "metaDescription": "Free discount break even calculator for ecommerce sales. See your margin after a discount, the new break-even ROAS and how many more orders you need.",
+    "h1": "Discount Break Even Calculator",
+    "eyebrow": "Free Ecommerce Tool"
+  },
+  {
+    "path": "/tools/profit-margin-calculator",
+    "kind": "tool",
+    "titleTag": "Free Ecommerce Profit Margin Calculator | Brand Scaling",
+    "metaDescription": "Free ecommerce profit margin calculator. Enter price, COGS, shipping, fees, ad cost and returns to see gross margin, net profit and net margin per order.",
+    "h1": "Ecommerce Profit Margin Calculator",
+    "eyebrow": "Free Ecommerce Tool"
+  },
+  {
     "path": "/locations/new-york",
     "kind": "location",
     "titleTag": "Ecommerce Marketing Agency New York | Brand Scaling",
@@ -476,7 +492,7 @@ export const CONTENT_INDEX = [
     "path": "/for",
     "kind": "hub",
     "titleTag": "Ecommerce Marketing Agency by Industry | Brand Scaling",
-    "metaDescription": "Ecommerce marketing agency by industry: how Brand Scaling runs Meta, TikTok and Shopify growth for skincare, supplements, fashion, fitness and 11 more niches.",
+    "metaDescription": "Ecommerce marketing agency by industry: how we run Meta, TikTok and Shopify growth for skincare, supplements, fashion, fitness and 11 more niches.",
     "h1": "Ecommerce Marketing Agency by Industry",
     "eyebrow": "Industries we scale"
   },

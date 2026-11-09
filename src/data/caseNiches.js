@@ -31,7 +31,7 @@ export const CASE_NICHES = [
     name: 'Fashion & Jewelry',
     h1: 'Fashion, Apparel & Jewelry DTC Case Studies: Scaling on Meta Ads',
     titleTag: 'Fashion Brand Meta Ads Case Studies | Brand Scaling',
-    metaDescription: 'Fashion, apparel and jewelry DTC case studies: $59,241 at 3.56x ROAS in a 4-day BFCM peak, $79,859 in a day and $54K in 7 days for a jewelry brand on Meta ads.',
+    metaDescription: 'Fashion, apparel and jewelry DTC case studies: $59,241 at 3.56x ROAS over BFCM, $79,859 in a day and $54K in 7 days for a jewelry brand on Meta ads.',
     intro: 'Apparel has the thinnest margins and the highest return rates of any DTC vertical, so profitable scale depends on creative volume, fast testing and offers that lift average order value without discounting the whole catalog. These are the apparel, fashion and jewelry accounts Brand Scaling has published, including a jewelry brand scaled with manual bidding. Healthy accounts in this vertical run 2.8x to 4.2x ROAS, and seasonal peaks such as BFCM can double that for a week.',
     keywords: ['fashion brand meta ads case study', 'apparel dtc ecommerce results', 'clothing brand facebook ads agency']
   },

@@ -337,7 +337,7 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
     slug: 'what-is-roas',
     title: 'What Is ROAS? Formula, Good ROAS Benchmarks & Break Even Calculator for Ecommerce',
     titleTag: "What Is ROAS? Formula, Meaning & Examples | Brand Scaling",
-    metaDescription: 'What is ROAS in marketing? Learn the exact ROAS formula, break even thresholds, healthy industry benchmarks (3x to 5x), and how to scale ad spend profitably.',
+    metaDescription: 'What is ROAS? The ROAS formula, worked examples, how to find your break-even ROAS and how ROAS differs from ROI and MER for ecommerce brands.',
     primaryKeyword: 'what is roas',
     secondaryKeywords: ['good roas ecommerce', 'roas formula', 'break even roas', 'roas vs mer'],
     publishDate: '2026-10-24',

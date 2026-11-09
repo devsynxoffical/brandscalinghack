@@ -5,6 +5,7 @@ import { ogImageFor } from './data/ogImages';
 import { contentIndexByPath as contentPageByPath } from './data/contentIndex';
 import { BLOG_META, CASE_META, NICHE_META } from './data/routeMeta';
 import WhatsAppButton from './components/WhatsAppButton';
+import RelatedLinksBlock from './components/RelatedLinksBlock';
 
 // Every page loads on demand, so a visitor only downloads the code and data for the page
 // they open (the home page's 3D, animation and video sections stay off blog and service pages).
@@ -228,7 +229,7 @@ function App() {
           break;
         case 'contact':
           title = 'Contact Brand Scaling | Book a Brand Growth Audit';
-          description = 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.';
+          description = 'Contact Brand Scaling, a DTC ecommerce growth agency in New York: book a Brand Growth Audit with Gaurav Kapoor or message us on WhatsApp or Instagram.';
           pagePath = '/contact';
           break;
         case 'roas-calculator':
@@ -495,6 +496,9 @@ function App() {
       {SERVICE_GUIDES[activePage] && (
         <Suspense fallback={null}><RelatedGuides page={activePage} onNavigate={handleNavigate} /></Suspense>
       )}
+
+      {/* Explore more: related pages by type, so every page links to its neighbours */}
+      <RelatedLinksBlock page={activePage} onNavigate={handleNavigate} />
 
       {/* 3D Glass Window Marquee Showcase (Above Footer) */}
       <Suspense fallback={null}><GlassWindowMarquee /></Suspense>

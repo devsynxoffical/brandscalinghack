@@ -279,7 +279,7 @@ export function caseSeo(cs) {
   let meta;
   pad = (key || '').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
   if (editorial) {
-    meta = cleanSeoText(editorial.summary, 158);
+    meta = cleanSeoText(editorial.summary, 155);
   } else {
     const lead = facts.revenue
       ? `${niche.label} case study: ${facts.revenue.text}${facts.timeframe ? ` in ${facts.timeframe}` : ''}${facts.roas ? ` at ${facts.roas} ROAS` : ''}${facts.spend ? ` on ${facts.spend.text} ad spend` : ''}.`
@@ -290,7 +290,7 @@ export function caseSeo(cs) {
     meta = (lead + how).trim();
     if (meta.length < 125) meta = `${meta} ${PAD[pad % PAD.length].replace('{n}', niche.long)}`;
     if (meta.length < 125) meta = `${meta} Proof from the live dashboard.`;
-    meta = trimTo(meta, 158);
+    meta = trimTo(meta, 155);
   }
 
   const factRows = [

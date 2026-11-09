@@ -8,6 +8,7 @@ import industry2 from './pages/industry-2.js';
 import glossary from './pages/glossary.js';
 import compareBenchmarks from './pages/compare-benchmarks.js';
 import tools from './pages/tools.js';
+import tools2 from './pages/tools-2.js';
 import locationsUs from './pages/locations-us.js';
 import locationsIntl from './pages/locations-intl.js';
 
@@ -25,8 +26,9 @@ export const KIND_HUB = {
   location: { path: '/locations', name: 'Locations' }
 };
 
-const LEAF_PAGES = [...services1, ...services2, ...industry1, ...industry2, ...glossary, ...compareBenchmarks, ...tools]
+const LEAF_PAGES = [...services1, ...services2, ...industry1, ...industry2, ...glossary, ...compareBenchmarks, ...tools, ...tools2]
   .map((p) => ({ ...p, published: p.published || CONTENT_PUBLISHED, updated: p.updated || CONTENT_PUBLISHED }))
+  .map((p) => (p.path === '/tools/discount-break-even-calculator' || p.path === '/tools/profit-margin-calculator' ? { ...p, published: '2026-11-09', updated: '2026-11-09' } : p))
   .concat([...locationsUs, ...locationsIntl].map((p) => ({ ...p, published: p.published || '2026-11-06', updated: p.updated || '2026-11-06' })));
 
 const byKind = (kind) => LEAF_PAGES.filter((p) => p.kind === kind);
@@ -43,7 +45,7 @@ const HUBS = [
     childKind: 'industry',
     primaryKeyword: 'ecommerce marketing agency by industry',
     titleTag: 'Ecommerce Marketing Agency by Industry | Brand Scaling',
-    metaDescription: 'Ecommerce marketing agency by industry: how Brand Scaling runs Meta, TikTok and Shopify growth for skincare, supplements, fashion, fitness and 11 more niches.',
+    metaDescription: 'Ecommerce marketing agency by industry: how we run Meta, TikTok and Shopify growth for skincare, supplements, fashion, fitness and 11 more niches.',
     h1: 'Ecommerce Marketing Agency by Industry',
     eyebrow: 'Industries we scale',
     quickAnswer: {

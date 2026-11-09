@@ -226,3 +226,31 @@ export const bookFaqs = [
     answer: 'Message us on WhatsApp at +91 96256 95456 and we will find a slot that suits your time zone. We work with brands in the US, UK, Canada and Australia, so early and late calls are normal for us.'
   }
 ];
+
+// About page FAQs (rendered by AboutPage, prerendered and marked up as FAQPage)
+export const aboutFaqs = [
+  {
+    question: "How is Brand Scaling Hacks different from typical marketing agencies?",
+    answer: "Most traditional agencies delegate your brand to junior media buyers who simply cycle through basic interest targeting. Brand Scaling Hacks is a complete, connected eCommerce Growth Engine. We don't just tweak ad accounts — we engineer your entire revenue ecosystem: paid traffic, creative production, offer economics, CRO, and post-purchase retention systems backed by $50M+ in real ad spend experience."
+  },
+  {
+    question: "What types of eCommerce brands do you work with?",
+    answer: "We partner with ambitious direct-to-consumer (DTC) and eCommerce brands doing between $20k/month and $2M+/month that have proven product-market fit and want to build predictable 8 & 9-figure scaling systems. We work across apparel, beauty & skincare, wellness, home goods, electronics, supplements, and specialized luxury niches."
+  },
+  {
+    question: "What is the minimum ad spend required to partner with you?",
+    answer: "To ensure statistical significance and provide meaningful weekly creative iterations, our partners typically spend at least $10,000 to $20,000+ per month in paid ad spend, with the infrastructure to scale rapidly to $100k-$500k+/month as profit milestones are hit."
+  },
+  {
+    question: "Do you handle creative scripting, UGC production, and video editing?",
+    answer: "Yes, 100%. Direct-response creative is the #1 lever for Meta and TikTok ad performance. We write the data-backed scripts, source and manage vetted creators, produce high-converting UGC and motion design assets, and deploy 30–50+ angle iterations each month so your ad accounts never hit fatigue."
+  },
+  {
+    question: "How quickly do we see results after launching?",
+    answer: "During the first 7–14 days, we execute our Deep Diagnostic Audit, restructure ad accounts, rebuild high-converting PDPs/offers, and install our tracking infrastructure. We typically begin seeing measurable improvements in CPA, AOV, and ROAS within the first 2 to 4 weeks of launching our initial creative wave."
+  },
+  {
+    question: "How does the initial Brand Growth Audit work?",
+    answer: "Our Brand Growth Audit is a 1-on-1 diagnostic where Gaurav and our senior growth architects analyze your Meta ad accounts, creative performance, conversion rate bottlenecks, and offer unit economics. We identify exactly why you are stuck and deliver a customized step-by-step roadmap to scale."
+  }
+];

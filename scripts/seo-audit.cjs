@@ -22,7 +22,10 @@ const pages = new Map();
 
 const redirects = new Set(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'vercel.json'), 'utf8')).redirects.map((r) => r.source));
 const files = new Set(fs.readdirSync(dist).map((f) => '/' + f));
-const sitemap = new Set([...fs.readFileSync(path.join(__dirname, '..', 'public', 'sitemap.xml'), 'utf8').matchAll(/<loc>https:\/\/www\.brandscalinghacks\.com(.*?)<\/loc>/g)].map((m) => m[1] || '/'));
+// sitemap.xml is an index of per-type sitemaps; read every child file it lists
+const pub = path.join(__dirname, '..', 'public');
+const children = [...fs.readFileSync(path.join(pub, 'sitemap.xml'), 'utf8').matchAll(/<loc>https:\/\/www\.brandscalinghacks\.com\/(sitemap-[a-z]+\.xml)<\/loc>/g)].map((m) => m[1]);
+const sitemap = new Set(children.flatMap((f) => [...fs.readFileSync(path.join(pub, f), 'utf8').matchAll(/<loc>https:\/\/www\.brandscalinghacks\.com(.*?)<\/loc>/g)].map((m) => m[1] || '/')));
 
 const problems = [];
 const titles = new Map();

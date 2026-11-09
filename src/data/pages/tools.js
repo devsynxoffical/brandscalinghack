@@ -799,6 +799,10 @@ Revenue per session is often the better single measure, because it captures both
         question: 'What improves ecommerce conversion rate fastest?',
         answer: `Fixes on the pages most visitors see usually pay off first. Speed up mobile load times, make the main benefit clear above the fold, show real reviews close to the add to cart button, simplify variant selection and remove surprises at checkout such as unexpected shipping costs. Test changes one at a time so you know what worked.`,
       },
+      {
+        question: 'What is a good online conversion rate for an ecommerce store?',
+        answer: 'Online conversion rates vary widely by category, price, traffic source and device, so a single average is a weak target. Compare your own rate over time and by source: paid social, email and returning visitors convert very differently. One clinical skincare store we work with converts at 5.25 percent, which is strong because the product page answers the main buying objection.'
+      },
     ],
     related: ['/tools', '/glossary/conversion-rate', '/roas-calculator', '/cro-agency', '/blog/shopify-conversion-rate-optimization'],
     cta: {

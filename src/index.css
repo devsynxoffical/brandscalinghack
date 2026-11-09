@@ -12483,3 +12483,17 @@ a.mobile-drawer-cta { display: flex; width: 100%; }
   background: rgba(7, 9, 14, 0.98);
 }
 .mobile-drawer-footer .mobile-drawer-cta { margin-top: 0; }
+
+/* ---------- Explore more (related links above the footer) ---------- */
+.rl-section { background: #07090e; padding: 56px 0 24px; border-top: 1px solid rgba(255, 255, 255, 0.06); }
+.rl-container { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+.rl-title { color: #ffffff; font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 900; letter-spacing: -0.02em; margin: 0 0 22px; }
+.rl-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 26px; }
+.rl-group-title { color: #ff7043; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 10px; }
+.rl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.rl-list a { display: inline-flex; align-items: center; gap: 5px; color: #cbd5e1; font-size: 0.92rem; font-weight: 600; text-decoration: none; padding: 4px 0; line-height: 1.4; }
+.rl-list a svg { color: #475569; flex-shrink: 0; transition: color 0.2s ease; }
+.rl-list a:hover { color: #ffffff; }
+.rl-list a:hover svg { color: #ff7043; }
+@media (max-width: 1024px) { .rl-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .rl-groups { grid-template-columns: 1fr; gap: 18px; } }

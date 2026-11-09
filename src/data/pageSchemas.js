@@ -69,7 +69,7 @@ export const webPage = ({ path, type = 'WebPage', name, description, speakable, 
 /* -------------------------------------------------------------------------- */
 
 export { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs } from './faqData.js';
-import { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs } from './faqData.js';
+import { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs, aboutFaqs } from './faqData.js';
 
 const staticSchemas = {
   '/': () => [
@@ -184,7 +184,7 @@ const staticSchemas = {
       path: '/contact',
       type: 'ContactPage',
       name: 'Contact Brand Scaling | Book a Brand Growth Audit',
-      description: 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.',
+      description: 'Contact Brand Scaling, a DTC ecommerce growth agency in New York: book a Brand Growth Audit with Gaurav Kapoor or message us on WhatsApp or Instagram.',
       extra: {
         mainEntity: {
           '@type': 'Organization',
@@ -325,7 +325,7 @@ const staticSchemas = {
       name: 'Gaurav Kapoor: Founder of Brand Scaling, DTC Growth Agency',
       description: 'Gaurav Kapoor founded Brand Scaling after 12+ years in ecommerce: $50M+ in Meta ad spend managed and 150+ DTC case studies. Meet the team in New York.',
       speakable: ['h1'],
-      extra: { about: { '@id': FOUNDER_ID }, mainEntity: { '@id': FOUNDER_ID }, dateCreated: isoDate('2026-10-22'), dateModified: isoDate('2026-11-03') }
+      extra: { about: { '@id': FOUNDER_ID }, mainEntity: { '@id': FOUNDER_ID }, dateCreated: isoDate('2026-10-22'), dateModified: isoDate('2026-11-09') }
     }),
     {
       '@type': 'Person',
@@ -346,7 +346,8 @@ const staticSchemas = {
         'https://www.facebook.com/gaurav.kapoor.3994'
       ]
     },
-    breadcrumb([['Home', '/'], ['About Us', '/about']])
+    breadcrumb([['Home', '/'], ['About Us', '/about']]),
+    faqPage('/about#faq', aboutFaqs)
   ],
 
   '/blog': () => [

@@ -75,6 +75,8 @@ Brand Scaling works with DTC and ecommerce brands doing about $20K to $2M+ per m
 ## Tools
 - [Free ROAS calculator](https://www.brandscalinghacks.com/roas-calculator): break-even ROAS and profit per order
 - [All free ecommerce calculators](https://www.brandscalinghacks.com/tools)
+- [Discount Break-Even Calculator](https://www.brandscalinghacks.com/tools/discount-break-even-calculator)
+- [Ecommerce Profit Margin Calculator](https://www.brandscalinghacks.com/tools/profit-margin-calculator)
 - [Break Even ROAS Calculator](https://www.brandscalinghacks.com/tools/break-even-roas-calculator)
 - [MER Calculator for Ecommerce Brands](https://www.brandscalinghacks.com/tools/mer-calculator)
 - [Ecommerce CAC Calculator](https://www.brandscalinghacks.com/tools/cac-calculator)

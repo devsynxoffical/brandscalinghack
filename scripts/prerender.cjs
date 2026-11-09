@@ -168,6 +168,27 @@ const routes = [
         <li>150+ verified case studies and client revenue proofs</li>
         <li>Headquartered at 27 W 24 Street, Suite 702, New York, NY 10010</li>
       </ul>
+      <h2>Company facts</h2>
+      <table><tbody>
+        <tr><th>Brand name</th><td>Brand Scaling</td></tr>
+        <tr><th>Legal entity</th><td>Brand Scaling Hacks LLC</td></tr>
+        <tr><th>Headquarters</th><td>27 W 24 Street, Suite 702, New York, NY 10010, United States</td></tr>
+        <tr><th>Founder</th><td>Gaurav Kapoor (12+ years in ecommerce, $50M+ Meta ad spend managed)</td></tr>
+        <tr><th>Core services</th><td>Paid acquisition (Meta, TikTok, Google), direct-response UGC and video creative, Shopify CRO and offer design, retention marketing (Klaviyo email and SMS)</td></tr>
+        <tr><th>Markets served</th><td>United States, United Kingdom, Canada, Australia</td></tr>
+        <tr><th>Typical clients</th><td>DTC ecommerce brands doing about $20K to $2M+ a month, spending at least $10K to $20K a month on ads</td></tr>
+        <tr><th>Contact</th><td>team@brandscalinghacks.com, <a href="/book">book a Brand Growth Audit</a></td></tr>
+      </tbody></table>
+      <h2>The four engines we build</h2>
+      <ul>
+        <li><a href="/meta-ads-agency">Paid acquisition</a>: Advantage+ account structures, broad targeting, bid caps and budget steps that keep efficiency as spend grows.</li>
+        <li><a href="/viral-creatives">Creative</a>: weekly testing on a hook and angle matrix, creator briefs and 30 to 50+ new ads a month.</li>
+        <li><a href="/shopify-agency">Shopify CRO and offers</a>: product page rebuilds, bundles, pre and post-purchase upsells and site speed.</li>
+        <li><a href="/retention-marketing-agency">Retention</a>: Klaviyo email and SMS flows, VIP segments and win-back so first orders turn into repeat customers.</li>
+      </ul>
+      <h2>Frequently asked questions</h2>
+      <!--ABOUT_FAQS-->
+      <p><a href="/case-studies">150+ case studies</a> | <a href="/services">Services</a> | <a href="/locations/new-york">New York office</a> | <a href="/contact">Contact</a></p>
     `
   },
   {
@@ -476,6 +497,9 @@ function renderRoute(route) {
   }); });
 
   const { SERVICES, tiktokFaqs, bookFaqs: PAGE_FAQS_BOOK } = await import('../src/data/pageSchemas.js');
+  const { aboutFaqs } = await import('../src/data/faqData.js');
+  const aboutRoute = routes.find((r) => r.path === '/about');
+  aboutRoute.content = aboutRoute.content.replace('<!--ABOUT_FAQS-->', aboutFaqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join(''));
   const { CONTENT_PAGES: CONTENT_PAGES_ALL } = await import('../src/data/pageRegistry.js');
   routes.push(
     {
@@ -549,7 +573,7 @@ function renderRoute(route) {
       path: '/contact',
       outPath: 'contact/index.html',
       title: 'Contact Brand Scaling | Book a Brand Growth Audit',
-      description: 'Contact Brand Scaling, a DTC ecommerce growth agency in New York. Book a Brand Growth Audit with Gaurav Kapoor or reach us on Instagram, YouTube or LinkedIn.',
+      description: 'Contact Brand Scaling, a DTC ecommerce growth agency in New York: book a Brand Growth Audit with Gaurav Kapoor or message us on WhatsApp or Instagram.',
       h1: 'Contact Brand Scaling',
       content: `
         <p>The fastest way to work with us is a Brand Growth Audit: a 1-on-1 review of your ad account, creative, store and unit economics with Gaurav Kapoor. We work with DTC brands doing about $20K to $2M+ a month in the US, UK, Canada and Australia.</p>
@@ -701,6 +725,15 @@ function renderRoute(route) {
       `
     };
   });
+
+  // Explore-more block (mirrors <RelatedLinksBlock />) on service, industry, location, tool, glossary,
+  // comparison and benchmark pages and blog posts
+  const { relatedBlockFor } = await import('../src/data/relatedBlock.js');
+  for (const r of [...routes, ...contentRoutes, ...blogRoutes]) {
+    const groups = relatedBlockFor(r.path);
+    if (!groups) continue;
+    r.content += `<h2>Explore more</h2>${groups.map((g) => `<h3>${escapeHtml(g.title)}</h3><ul>${g.links.map((l) => `<li><a href="${l.href}">${escapeHtml(l.label)}</a></li>`).join('')}</ul>`).join('')}`;
+  }
 
   const { contentPageSchema } = await import('../src/data/contentSchema.js');
   const allRoutes = [...routes, ...nicheRoutes, ...contentRoutes, ...blogRoutes, ...caseRoutes].map((r) => {

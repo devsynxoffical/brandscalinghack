@@ -21,7 +21,7 @@ const staticRoutes = [
   { loc: '/viral-creatives', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.8' },
   { loc: '/case-studies', lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.9' },
   { loc: '/roas-calculator', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.8' },
-  { loc: '/about', lastmod: '2026-11-03', changefreq: 'monthly', priority: '0.7' },
+  { loc: '/about', lastmod: '2026-11-09', changefreq: 'monthly', priority: '0.7' },
   { loc: '/blog', lastmod: '2026-11-05', changefreq: 'daily', priority: '0.9' },
   { loc: '/privacy-policy', lastmod: '2026-11-03', changefreq: 'yearly', priority: '0.3' },
   { loc: '/terms', lastmod: '2026-11-03', changefreq: 'yearly', priority: '0.3' }
@@ -67,10 +67,37 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   }
 
   const all = [...staticRoutes, ...nicheRoutes, ...contentRoutes, ...blogRoutes, ...caseRoutes];
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+
+  // Split by page type so Search Console reports indexing per group; /sitemap.xml is the index.
+  const groupOf = (loc) => {
+    if (loc.startsWith('/for/') || loc === '/for') return 'industries';
+    if (loc.startsWith('/locations')) return 'locations';
+    if (loc.startsWith('/cases/') || loc.startsWith('/case-studies')) return 'cases';
+    if (loc.startsWith('/blog/') || loc.startsWith('/tools') || loc.startsWith('/glossary') || loc.startsWith('/compare/') || loc.startsWith('/benchmarks') || loc === '/roas-calculator') return 'content';
+    return 'core';
+  };
+  const GROUPS = ['core', 'industries', 'locations', 'content', 'cases'];
+  const publicDir = path.join(__dirname, '..', 'public');
+  const index = [];
+  for (const g of GROUPS) {
+    const items = all.filter((r) => groupOf(r.loc) === g);
+    if (!items.length) continue;
+    const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${all.map(urlBlock).join('\n')}
+${items.map(urlBlock).join('\n')}
 </urlset>
+`;
+    fs.writeFileSync(path.join(publicDir, `sitemap-${g}.xml`), body, 'utf8');
+    // a child sitemap's lastmod is the newest lastmod of the pages it lists
+    index.push({ file: `sitemap-${g}.xml`, lastmod: items.map((r) => r.lastmod).sort().pop(), count: items.length });
+  }
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${index.map((i) => `  <sitemap>
+    <loc>${BASE}/${i.file}</loc>
+    <lastmod>${i.lastmod}</lastmod>
+  </sitemap>`).join('\n')}
+</sitemapindex>
 `;
   fs.writeFileSync(sitemapPath, xml, 'utf8');
 
@@ -99,7 +126,7 @@ ${rssItems}
 </rss>
 `;
   fs.writeFileSync(path.join(__dirname, '..', 'public', 'feed.xml'), rss, 'utf8');
-  console.log(`Sitemap written: ${all.length} URLs (${staticRoutes.length} static, ${nicheRoutes.length} niche hubs, ${contentRoutes.length} content pages, ${blogRoutes.length} blog, ${caseRoutes.length} indexable case studies).`);
+  console.log(`Sitemap index written: ${index.map((i) => `${i.file} ${i.count}`).join(', ')}; ${all.length} URLs (${staticRoutes.length} static, ${nicheRoutes.length} niche hubs, ${contentRoutes.length} content pages, ${blogRoutes.length} blog, ${caseRoutes.length} indexable case studies).`);
 })().catch((err) => {
   console.error('Sitemap generation failed:', err);
   process.exit(1);

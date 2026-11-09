@@ -9,6 +9,51 @@ const num = (n, d = 0) => (Number.isFinite(n) ? n.toLocaleString('en-US', { maxi
 const div = (a, b) => (b ? a / b : NaN);
 
 export const TOOL_DEFS = {
+  'discount-break-even': {
+    name: 'Discount break-even calculator',
+    inputs: [
+      { id: 'price', label: 'Selling price per order', unit: '$', default: 80 },
+      { id: 'cogs', label: 'Product cost (COGS) per order', unit: '$', default: 24 },
+      { id: 'ship', label: 'Shipping and fulfilment per order', unit: '$', default: 9 },
+      { id: 'fee', label: 'Payment processing fee', unit: '%', default: 3 },
+      { id: 'discount', label: 'Discount', unit: '%', default: 25 }
+    ],
+    compute: ({ price, cogs, ship, fee, discount }) => {
+      const before = price - cogs - ship - price * (fee / 100);
+      const sale = price * (1 - discount / 100);
+      const after = sale - cogs - ship - sale * (fee / 100);
+      const mult = after > 0 ? before / after : NaN;
+      return [
+        { label: 'Orders needed for the same profit', value: after > 0 ? `${mult.toFixed(2)}x` : 'Loses money', primary: true, note: after > 0 ? `${Math.round((mult - 1) * 100)}% more orders than at full price.` : 'The discount wipes out the margin on every order.' },
+        { label: 'Break-even ROAS after discount', value: after > 0 ? x(sale / after) : 'No margin', note: `Was ${before > 0 ? x(price / before) : 'n/a'} at full price.` },
+        { label: 'Margin per order after discount', value: usd(after), note: `Was ${usd(before)} at full price.` },
+        { label: 'Discounted price', value: usd(sale) }
+      ];
+    }
+  },
+  'profit-margin': {
+    name: 'Ecommerce profit margin calculator',
+    inputs: [
+      { id: 'price', label: 'Selling price per order', unit: '$', default: 70 },
+      { id: 'cogs', label: 'Product cost (COGS) per order', unit: '$', default: 21 },
+      { id: 'ship', label: 'Shipping and fulfilment per order', unit: '$', default: 8 },
+      { id: 'fee', label: 'Payment processing fee', unit: '%', default: 3 },
+      { id: 'cpa', label: 'Ad cost per order (CPA)', unit: '$', default: 25 },
+      { id: 'returns', label: 'Return rate', unit: '%', default: 6 }
+    ],
+    compute: ({ price, cogs, ship, fee, cpa, returns }) => {
+      const cm = price - cogs - ship - price * (fee / 100);
+      const ret = price * (returns / 100);
+      const net = cm - cpa - ret;
+      return [
+        { label: 'Net profit per order', value: usd(net), primary: true, note: net < 0 ? 'Each order loses money after ads and returns.' : 'After product, shipping, fees, ads and returns.' },
+        { label: 'Net margin', value: pct(div(net, price)) },
+        { label: 'Contribution margin before ads', value: usd(cm), note: 'Price minus COGS, shipping and fees.' },
+        { label: 'Gross margin', value: pct(div(price - cogs, price)), note: '(Price minus COGS) / price.' },
+        { label: 'Expected return cost per order', value: usd(ret), note: 'Each return treated as a full refund.' }
+      ];
+    }
+  },
   'break-even-roas': {
     name: 'Break-even ROAS calculator',
     inputs: [

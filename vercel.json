@@ -670,7 +670,7 @@
   ],
   "headers": [
     {
-      "source": "/sitemap.xml",
+      "source": "/(sitemap|sitemap-[a-z]+)\\.xml",
       "headers": [
         {
           "key": "Content-Type",
