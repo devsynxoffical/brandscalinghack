@@ -252,9 +252,10 @@ We have not published Google Shopping case studies, so we will not promise you a
     path: '/cro-agency',
     kind: 'service',
     primaryKeyword: 'ecommerce cro agency',
-    titleTag: 'Ecommerce CRO Agency for Shopify Brands | Brand Scaling',
-    metaDescription: 'Ecommerce CRO agency for Shopify brands: research, speed, product pages, bundles, checkout, A/B tests and post-purchase upsells built for paid traffic.',
-    h1: 'Ecommerce CRO Agency for Shopify Stores Running Paid Traffic',
+    titleTag: 'DTC Ecommerce CRO Agency for Shopify Brands | Brand Scaling',
+    updated: '2026-11-10',
+    metaDescription: 'DTC ecommerce CRO agency for Shopify brands: research, speed, product pages, bundles, checkout, A/B tests and post-purchase upsells built for paid traffic.',
+    h1: 'DTC Ecommerce CRO Agency for Shopify Stores Running Paid Traffic',
     eyebrow: 'Ecommerce CRO Agency',
     quickAnswer: {
       question: 'What does an ecommerce CRO agency do?',

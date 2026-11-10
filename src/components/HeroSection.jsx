@@ -114,7 +114,6 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="bsh-hero-video-bg" aria-hidden="true">
           <video
             ref={videoRef}
-            src="/brand-scaling-video.mp4"
             poster="/hero-video-poster.jpg"
             autoPlay
             loop
@@ -125,6 +124,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             disableRemotePlayback
             className="bsh-hero-bg-video-element"
           >
+            {/* 720p (8.5MB) for phones and small tablets, 1080p for larger screens */}
+            <source src="/brand-scaling-video-720.mp4" type="video/mp4" media="(max-width: 900px)" />
             <source src="/brand-scaling-video.mp4" type="video/mp4" />
           </video>
           {/* Subtle Transparent Vignette for High Video Clarity */}

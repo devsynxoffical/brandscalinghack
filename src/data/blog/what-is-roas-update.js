@@ -4,9 +4,9 @@
 // every number below is either arithmetic or a published Brand Scaling case result.
 export default {
   title: 'What Is ROAS? The ROAS Formula, Meaning and Examples',
-  updatedDate: '2026-11-09',
+  updatedDate: '2026-11-10',
   readTime: '11 min read',
-  secondaryKeywords: ['roas formula', 'roas meaning', 'how to calculate roas', 'break even roas', 'acos to roas'],
+  secondaryKeywords: ['roas formula', 'roas meaning', 'how to calculate roas', 'break even roas', 'acos to roas', 'gross roas', 'net roas', 'roas tracking tools'],
   directAnswer:
     'ROAS (return on ad spend) is the revenue your ads generate for every dollar spent on them. The ROAS formula is revenue attributed to ads divided by ad spend: $20,000 in sales from $5,000 of ads is a 4x ROAS. Whether 4x is profitable depends on your margin, which sets your break-even ROAS.',
   definitionBox: {
@@ -19,6 +19,7 @@ export default {
     { id: 'break-even-formula', text: 'Break-even ROAS: the number that matters' },
     { id: 'roas-vs-roi', text: 'ROAS vs ROI' },
     { id: 'roas-vs-mer', text: 'ROAS vs MER' },
+    { id: 'gross-vs-net-roas', text: 'Gross ROAS vs net ROAS' },
     { id: 'target-roas', text: 'How to set a target ROAS' },
     { id: 'how-to-improve-roas', text: 'How to improve ecommerce ROAS' },
     { id: 'roas-in-practice', text: 'What ROAS looks like in real accounts' },
@@ -91,6 +92,19 @@ Use ROAS to compare ads and campaigns day to day, because it is fast and every p
       content: `Since iOS 14.5 and browser privacy changes, platform-reported ROAS misses some sales and double counts others. MER (marketing efficiency ratio) avoids attribution entirely: total store revenue divided by total marketing spend across every channel.
 
 Run campaigns on platform ROAS, because it is the only number available at ad level. Judge the business on MER and new-customer acquisition cost, because they match what actually lands in Shopify. If Meta ROAS dips but MER holds, the ads are usually still working and the purchases are being credited elsewhere.`
+    },
+    {
+      id: 'gross-vs-net-roas',
+      h2: 'Gross ROAS vs net ROAS',
+      content: `Gross ROAS is the number ad platforms report: total attributed revenue divided by ad spend, before anything is taken off. Net ROAS uses the revenue you actually keep, after refunds, returns, discounts, shipping charged and sales tax are removed.
+
+The gap matters most for brands with high return rates or heavy discounting. If ads drive $40,000 in attributed sales on $10,000 of spend, gross ROAS is 4x. If $4,000 of those orders are refunded and $2,000 was tax and shipping, net revenue is $34,000 and net ROAS is 3.4x. Compare net ROAS, not gross, with your break-even ROAS, because break-even is calculated from margin on the money you keep.`,
+      list: [
+        'ROAS tracking tools: Meta Ads Manager, TikTok Ads Manager and Google Ads report platform (gross) ROAS per campaign and ad.',
+        'Shopify analytics shows net sales after returns and discounts, which you need for net ROAS and MER.',
+        'Server-side tracking (Meta Conversions API, TikTok Events API) recovers purchases that browser pixels miss.',
+        'Attribution tools such as Triple Whale or Northbeam combine store and ad data in one view; a spreadsheet of daily Shopify net sales against total ad spend gives you MER for free.'
+      ]
     },
     {
       id: 'target-roas',

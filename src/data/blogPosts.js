@@ -5,8 +5,10 @@ import blogBatch1 from './blog/batch-1.js';
 import blogBatch2 from './blog/batch-2.js';
 import blogBatch3 from './blog/batch-3.js';
 import blogBatch4 from './blog/batch-4.js';
+import blogBatch5 from './blog/batch-5.js';
 import whatIsRoasUpdate from './blog/what-is-roas-update.js';
 import performanceMarketingUpdate from './blog/performance-marketing-update.js';
+import affiliateProgramUpdate from './blog/affiliate-program-update.js';
 
 const corePosts = [
   {
@@ -1881,5 +1883,5 @@ Always agree usage rights in writing before the shoot: how long you can run the 
 
 // Posts added 5 Nov 2026 (SEO page plan), kept in their own modules
 // Rewrites of indexed posts are kept in their own modules and applied over the original entries
-const UPDATES = { 'what-is-roas': whatIsRoasUpdate, 'performance-marketing-agency': performanceMarketingUpdate };
-export const blogPosts = [...corePosts.map((p) => { const u = UPDATES[p.slug]; return u ? { ...p, ...(typeof u === 'function' ? u(p) : u) } : p; }), ...blogBatch1, ...blogBatch2, ...blogBatch3, ...blogBatch4];
+const UPDATES = { 'what-is-roas': whatIsRoasUpdate, 'performance-marketing-agency': performanceMarketingUpdate, 'dtc-affiliate-program': affiliateProgramUpdate };
+export const blogPosts = [...corePosts.map((p) => { const u = UPDATES[p.slug]; return u ? { ...p, ...(typeof u === 'function' ? u(p) : u) } : p; }), ...blogBatch1, ...blogBatch2, ...blogBatch3, ...blogBatch4, ...blogBatch5];

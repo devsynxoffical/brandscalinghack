@@ -41,7 +41,15 @@ export const BEST_CASE_SLUGS = new Set([
   'these-5days-has-been-fire-spent-26594-generated-99576-profit',
   '16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women',
   'drove-54k-7-days-using-manual-bidding-campaigns-jewelry',
-  'day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders'
+  'day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders',
+  'if-you-re-brand-owner-or-media-buyer-looking-viral-strategy-make',
+  'finally-have-taken-brand-128k-14days-insane-profits',
+  'dropshipping-isn-get-rich-quick-scheme-it-path-building',
+  'structure-campaigns-50000-day-profits',
+  'journey-client-behind-touching-way-100000-month-mark',
+  'generated-61960-3-80-roas-single-day-what-you-can-learn-from-it',
+  'brand-exploding-black-friday-20k-day-39-healthy-margins',
+  '5-crucial-things-learned-while-scaling-brand-105000-23-days'
 ]);
 
 const reasons = new Map();
