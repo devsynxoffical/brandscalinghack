@@ -20,6 +20,7 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ### 10 Nov 2026 (session 2)
 Done:
+- GA4 installed (G-4NHL9F0B3C) on every page, loaded after render; lead clicks (WhatsApp, /book and calendar links, email, phone) sent as generate_lead with a method parameter.
 - /blog/performance-marketing-agency: new answer-first section "How to find an ecommerce growth agency that specializes in scaling DTC brands" (query at position 26) and 2 FAQs incl. "Which Google Ads agencies are best for scaling DTC ecommerce brands?" (position 38), with FAQPage schema.
 - /blog/bfcm-meta-ads-playbook: title tag now "BFCM 2026 Ad Strategy: Meta Ads Playbook" (page average position 21; "bfcm ad strategy", "bfcm ads").
 - /growth: new section on channels with a "TikTok Shop scaling services" link to /tiktok-shop-agency (the query lands on /growth at 73).
@@ -30,7 +31,7 @@ See docs/seo-report-2026-11-10.md: 2 new guides, 8 indexable cases, /cro-agency 
 ## Outstanding
 
 Needs the owner (no access from here):
-- Connect GA4 to the OpenSEO project (Integrations page) so organic sessions and leads can be tracked.
+- GA4: tag is live. Owner still to (1) link Search Console in GA4, (2) mark generate_lead as a key event, (3) give read access (OpenSEO Integrations, or Viewer for the service account).
 - Approve AI visibility tracking (OpenSEO, about $1.16/month weekly for 5 prompts on 4 engines), or decline.
 - Backlinks and profiles that need your identity: Clutch, Google Business Profile, Shopify Partner Directory, DesignRush, GoodFirms, Sortlist, UpCity, podcast pitches, Qwoted.
 

@@ -163,6 +163,36 @@
     </script>
     <!-- End Meta Pixel Code -->
 
+    <!-- Google Analytics 4 (G-4NHL9F0B3C). gtag.js loads after the page has rendered so it does
+         not compete with the hero for bandwidth; calls made earlier queue in dataLayer.
+         SPA page views come from GA4 enhanced measurement (browser history changes). -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4NHL9F0B3C');
+    (function () {
+      var load = function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4NHL9F0B3C';
+        document.head.appendChild(s);
+      };
+      if (document.readyState === 'complete') setTimeout(load, 1500);
+      else window.addEventListener('load', function () { setTimeout(load, 1500); });
+      // Lead actions: WhatsApp chats, booking-page and calendar links, email and phone.
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a) return;
+        var h = a.getAttribute('href') || '';
+        var method = /wa\.me|whatsapp\.com/.test(h) ? 'whatsapp'
+          : /^\/book\/?$|calendar\.app\.google|calendar\.google\.com/.test(h) ? 'book_call'
+          : /^mailto:/.test(h) ? 'email' : /^tel:/.test(h) ? 'phone' : null;
+        if (method) gtag('event', 'generate_lead', { method: method, link_url: h.slice(0, 100), page_path: location.pathname });
+      }, true);
+    })();
+    </script>
+
     <!-- Google Fonts: Anton, Cormorant Garamond, Plus Jakarta Sans, Outfit, Syne, Inter, Alex Brush -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
