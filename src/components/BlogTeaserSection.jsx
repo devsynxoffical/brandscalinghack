@@ -10,6 +10,7 @@ const CategoryIcon = ({ category, size }) => {
   return <Icon size={size} />;
 };
 import { blogPosts } from '../data/blogPosts';
+import { BLOG_THUMBS } from '../data/blogThumbs';
 
 export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
   // Newest or most recently updated posts first, so the home page (Google's most-crawled
@@ -26,6 +27,7 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
       snippet: p.metaDescription,
       readTime: p.readTime,
       category: p.category,
+      thumb: BLOG_THUMBS[p.slug] || null,
       route: `blog-${p.slug}`,
       url: `/blog/${p.slug}`
     }));
@@ -125,9 +127,18 @@ export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
             const open = (e) => { e.preventDefault(); onNavigate && onNavigate(item.route); };
             return (
               <a key={item.slug} href={item.url} onClick={open} className={featured ? 'bt-card bt-card-featured' : 'bt-card bt-card-compact'}>
-                <span className="bt-thumb" aria-hidden="true" style={{ '--bt-accent': item.badgeColor }}>
-                  <span className="bt-thumb-grid" />
-                  <span className="bt-thumb-icon"><CategoryIcon category={item.category} size={featured ? 30 : 22} /></span>
+                <span className={item.thumb ? 'bt-thumb bt-thumb-has-img' : 'bt-thumb'} aria-hidden="true" style={{ '--bt-accent': item.badgeColor }}>
+                  {item.thumb ? (
+                    <>
+                      <img className="bt-thumb-img" src={item.thumb} alt="" loading="lazy" decoding="async" width="640" height="360" />
+                      <span className="bt-thumb-shade" />
+                    </>
+                  ) : (
+                    <>
+                      <span className="bt-thumb-grid" />
+                      <span className="bt-thumb-icon"><CategoryIcon category={item.category} size={featured ? 30 : 22} /></span>
+                    </>
+                  )}
                   {featured && <span className="bt-thumb-label">Latest playbook</span>}
                 </span>
                 <span className="bt-body">
