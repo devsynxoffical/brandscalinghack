@@ -350,6 +350,15 @@ Indexed-page upgrades, each driven by the queries Search Console shows that page
 - /for/health-wellness (position 17 query): FAQ on wellness brands that also offer telehealth.
 New posts: /blog/black-friday-discount-strategy, /blog/ecommerce-profit-margin.
 
+## 4n. Day 12 (Nov 10, 2026): case studies, two guides, query-gap upgrades, lighter hero video
+
+Full report: docs/seo-report-2026-11-10.md.
+- 8 verified cases promoted to indexable (29 total) with caption-only write-ups; facts overrides where a headline figure was a goal ($50K/day, $100K/month), not a result.
+- New posts: /blog/meta-ads-learning-phase, /blog/tiktok-shop-vs-shopify.
+- /cro-agency retitled for "dtc ecommerce cro agency"; what-is-roas gained gross vs net ROAS and tracking tools; dtc-affiliate-program gained affiliate ROAS and scaling challenges.
+- Hero video 19.4MB to 16.4MB, plus an 8.5MB 720p source for screens up to 900px.
+- 60 URLs sent to the Indexing API (all accepted), 16 to IndexNow, all sitemaps resubmitted.
+
 ---
 
 ## 5. Files changed in this commit
