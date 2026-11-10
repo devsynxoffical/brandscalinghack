@@ -279,6 +279,17 @@ Most brands need both, in order. The rebuild fixes the obvious problems quickly.
           { href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money', text: '$52,000 in 17 days, supplements' },
           { href: '/shopify-agency', text: '5.25% store conversion rate' }
         ]
+      },
+      {
+        id: 'growth-channels',
+        h2: 'Which channels the growth engine scales',
+        content: `The growth engine is channel-led by where your customers already buy. Most DTC brands start on Meta, add TikTok ads once creative output is steady, and add Google Shopping to capture the demand those ads create. Brands that sell impulse-friendly products can also run TikTok Shop scaling services alongside, where the sale happens inside the TikTok app through creator affiliates and GMV Max.`,
+        links: [
+          { href: '/meta-ads-agency', text: 'Meta ads agency' },
+          { href: '/tiktok-ads-agency', text: 'TikTok ads agency' },
+          { href: '/tiktok-shop-agency', text: 'TikTok Shop scaling services' },
+          { href: '/google-shopping-ads-agency', text: 'Google Shopping ads' }
+        ]
       }
     ],
     faqs: []

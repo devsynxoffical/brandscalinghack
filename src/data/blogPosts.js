@@ -14,10 +14,10 @@ const corePosts = [
   {
     slug: 'bfcm-meta-ads-playbook',
     title: 'BFCM 2026: The Meta Ads Playbook for Shopify Brands',
-    titleTag: 'BFCM 2026: Meta Ads Playbook for Shopify | Brand Scaling',
+    titleTag: 'BFCM 2026 Ad Strategy: Meta Ads Playbook | Brand Scaling',
     metaDescription: 'BFCM 2026 runs 26 to 30 Nov. Our Meta ads playbook for Shopify brands: dates, budget plan, offers and creative that hit 3.98x ROAS. Read it now.',
     primaryKeyword: 'bfcm',
-    secondaryKeywords: ['black friday ads', 'what is bfcm in marketing', 'bfcm dates 2026', 'best bfcm ads'],
+    secondaryKeywords: ['bfcm ad strategy', 'bfcm ads', 'black friday ads', 'what is bfcm in marketing', 'bfcm dates 2026', 'best bfcm ads'],
     publishDate: '2026-10-22',
     updatedDate: '2026-11-07',
     readTime: "15 min read",
