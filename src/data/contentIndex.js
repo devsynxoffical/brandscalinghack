@@ -19,9 +19,9 @@ export const CONTENT_INDEX = [
   {
     "path": "/cro-agency",
     "kind": "service",
-    "titleTag": "Ecommerce CRO Agency for Shopify Brands | Brand Scaling",
-    "metaDescription": "Ecommerce CRO agency for Shopify brands: research, speed, product pages, bundles, checkout, A/B tests and post-purchase upsells built for paid traffic.",
-    "h1": "Ecommerce CRO Agency for Shopify Stores Running Paid Traffic",
+    "titleTag": "DTC Ecommerce CRO Agency for Shopify Brands | Brand Scaling",
+    "metaDescription": "DTC ecommerce CRO agency for Shopify brands: research, speed, product pages, bundles, checkout, A/B tests and post-purchase upsells built for paid traffic.",
+    "h1": "DTC Ecommerce CRO Agency for Shopify Stores Running Paid Traffic",
     "eyebrow": "Ecommerce CRO Agency"
   },
   {

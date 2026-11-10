@@ -202,6 +202,20 @@ const cache = new Map();
  * Returns the SEO package for a case study.
  * { facts, niche, verified, titleTag, h1, metaDescription, summary, takeaways, factRows, wordCount }
  */
+// Cases where the headline figure is a goal, not a result. Values are quoted from the caption.
+const FACT_OVERRIDES = {
+  // "$50,000+/Day Profits" is the goal; the client spent $19,118 and made $66,168 in one day
+  'structure-campaigns-50000-day-profits': {
+    facts: { revenue: { value: 66168, text: '$66,168' }, spend: { value: 19118, text: '$19,118' }, timeframe: 'one day' }
+  },
+  // "$100,000/Month mark" is where the brand is heading; the result is $64,000 in 24 days of January.
+  // "supplementary products" in the caption are upsells, not the brand's niche.
+  'journey-client-behind-touching-way-100000-month-mark': {
+    facts: { revenue: { value: 64000, text: '$64,000' }, timeframe: '24 days' },
+    niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
+  }
+};
+
 export function caseSeo(cs) {
   const key = cs.slug || cs.id;
   if (cache.has(key)) return cache.get(key);
@@ -222,7 +236,9 @@ export function caseSeo(cs) {
     // headline has no figure: only trust a caption figure that the caption states with sales/revenue context
     if (fromCaption.revenue.score < 2) delete facts.revenue;
   }
-  const niche = detectNiche(cs, caption);
+  const fix = FACT_OVERRIDES[key];
+  if (fix) Object.assign(facts, fix.facts);
+  const niche = fix?.niche || detectNiche(cs, caption);
   const verified = Boolean(facts.revenue || facts.roas || facts.spend);
   const editorial = editorialFor(cs);
   const wordCount = String(cs.fullCaption || '').replace(/#\S+/g, '').split(/\s+/).filter(Boolean).length;
