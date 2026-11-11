@@ -3,17 +3,10 @@ import { allCaseStudies } from '../data/allCaseStudies';
 import { displayFigures, caseSeo } from '../data/caseFacts';
 import { ArrowRight, ExternalLink, Play, ShieldCheck, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
+import LazyVideo from './LazyVideo';
 
 function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   const figures = displayFigures(study);
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {});
-    }
-  }, [study.videoUrl]);
-
   return (
     <div
       className="showcase-study-card"
@@ -27,15 +20,9 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
 
         {/* Video Player (Always Autoplaying in continuous loop) */}
         {study.videoUrl && study.videoType !== 'image' ? (
-          <video
-            ref={videoRef}
+          <LazyVideo
             src={study.videoUrl}
             poster={study.image}
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
             className="showcase-card-img"
             style={{
               position: 'relative',

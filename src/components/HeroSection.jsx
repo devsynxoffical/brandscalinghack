@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { ArrowUpRight, TrendingUp, Sparkles, Zap, ArrowRight, Play, Flame, Award } from 'lucide-react';
 
 // Client Logos for Marquee (18 Verified eCommerce Brands Scaled)
@@ -49,10 +49,22 @@ export const BRANDS_SCALED = [
 
 export default function HeroSection({ onOpenBooking, onNavigate }) {
   const videoRef = useRef(null);
+  // The poster paints first (it is the LCP image); the video sources are attached only after
+  // the page has loaded, so the clip does not compete with the page for bandwidth.
+  const [videoOn, setVideoOn] = useState(false);
+
+  useEffect(() => {
+    let t;
+    const start = () => { t = setTimeout(() => setVideoOn(true), 600); };
+    if (document.readyState === 'complete') start();
+    else window.addEventListener('load', start, { once: true });
+    return () => { clearTimeout(t); window.removeEventListener('load', start); };
+  }, []);
 
   useEffect(() => {
     const video = videoRef.current;
-    if (!video) return;
+    if (!video || !videoOn) return;
+    video.load();
 
     // Direct DOM property enforcement for 100% reliable autoplay across Chrome, Safari, Firefox
     video.muted = true;
@@ -102,7 +114,7 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
       document.removeEventListener('visibilitychange', handleVisibility);
       window.removeEventListener('focus', playVideo);
     };
-  }, []);
+  }, [videoOn]);
 
   return (
     <div className="bsh-hero-root">
@@ -119,14 +131,14 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             loop
             muted
             playsInline
-            preload="auto"
+            preload={videoOn ? 'auto' : 'none'}
             disablePictureInPicture
             disableRemotePlayback
             className="bsh-hero-bg-video-element"
           >
             {/* 720p (8.5MB) for phones and small tablets, 1080p for larger screens */}
-            <source src="/brand-scaling-video-720.mp4" type="video/mp4" media="(max-width: 900px)" />
-            <source src="/brand-scaling-video.mp4" type="video/mp4" />
+            {videoOn && <source src="/brand-scaling-video-720.mp4" type="video/mp4" media="(max-width: 900px)" />}
+            {videoOn && <source src="/brand-scaling-video.mp4" type="video/mp4" />}
           </video>
           {/* Subtle Transparent Vignette for High Video Clarity */}
           <div className="bsh-hero-video-overlay" />

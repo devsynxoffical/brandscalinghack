@@ -1,5 +1,6 @@
 import { CASE_EDITORIAL_EXTRA } from './caseEditorialExtra.js';
 import { CASE_EDITORIAL_EXTRA_2 } from './caseEditorialExtra2.js';
+import { CASE_EDITORIAL_EXTRA_3 } from './caseEditorialExtra3.js';
 
 // Hand-written editorial breakdowns for the highest-value case studies. Rendered at the
 // top of the case page (visible to visitors), prerendered for crawlers, and used as the
@@ -69,6 +70,6 @@ export const CASE_EDITORIAL = {
 
 // Write-ups added 5 Nov 2026 (challenge / approach fields; whatWeDid may be null when the post has no detail)
 export const editorialFor = (cs) => {
-  const e = CASE_EDITORIAL[cs.slug] || CASE_EDITORIAL[cs.id] || CASE_EDITORIAL_EXTRA[cs.slug] || CASE_EDITORIAL_EXTRA[cs.id] || CASE_EDITORIAL_EXTRA_2[cs.slug] || CASE_EDITORIAL_EXTRA_2[cs.id] || null;
+  const e = CASE_EDITORIAL[cs.slug] || CASE_EDITORIAL[cs.id] || CASE_EDITORIAL_EXTRA[cs.slug] || CASE_EDITORIAL_EXTRA[cs.id] || CASE_EDITORIAL_EXTRA_2[cs.slug] || CASE_EDITORIAL_EXTRA_2[cs.id] || CASE_EDITORIAL_EXTRA_3[cs.slug] || CASE_EDITORIAL_EXTRA_3[cs.id] || null;
   return e ? { ...e, whatWeDid: e.whatWeDid || [] } : null;
 };

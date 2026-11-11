@@ -213,6 +213,21 @@ const FACT_OVERRIDES = {
   'journey-client-behind-touching-way-100000-month-mark': {
     facts: { revenue: { value: 64000, text: '$64,000' }, timeframe: '24 days' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
+  },
+  // "$261K" belongs to his friend Julia; Albert's own result is "$153,163 per month". He only
+  // "tried" dropshipping before; the caption does not name his store's niche.
+  'massive-success-once-again-didn-expected-dfy-program': {
+    facts: { revenue: { value: 153163, text: '$153,163' }, timeframe: 'one month' },
+    niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
+  },
+  // Headline is a question; the result is "$19,167 in a SINGLE day with just $5,310 in ad spend (3.61 ROAS)"
+  'why-do-fitness-brands-struggle-scale-hint-it-not-about-ads': {
+    facts: { revenue: { value: 19167, text: '$19,167' }, spend: { value: 5310, text: '$5,310' }, timeframe: 'one day' }
+  },
+  // "$43,970 in sales from $10,077 in a single day"; the niche came only from a hashtag (#apparelbrand)
+  'happy-monday-everyone-let-kick-off-week-some-serious-momentum': {
+    facts: { spend: { value: 10077, text: '$10,077' } },
+    niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   }
 };
 

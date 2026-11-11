@@ -49,7 +49,15 @@ export const BEST_CASE_SLUGS = new Set([
   'journey-client-behind-touching-way-100000-month-mark',
   'generated-61960-3-80-roas-single-day-what-you-can-learn-from-it',
   'brand-exploding-black-friday-20k-day-39-healthy-margins',
-  '5-crucial-things-learned-while-scaling-brand-105000-23-days'
+  '5-crucial-things-learned-while-scaling-brand-105000-23-days',
+  'massive-win-books-98k-23-days',
+  'why-do-fitness-brands-struggle-scale-hint-it-not-about-ads',
+  'bombshell-update-100k-hit-month',
+  'pov-curious-pulled-off-40669-sales-7-days-134-high-ticket',
+  'happy-monday-everyone-let-kick-off-week-some-serious-momentum',
+  'ecom-world-split-into-two-groups',
+  'massive-success-once-again-didn-expected-dfy-program',
+  '1st-day-november-seems-very-great-42k-day'
 ]);
 
 const reasons = new Map();
@@ -61,8 +69,15 @@ for (const cs of allCaseStudies) {
 export const NON_INDEXABLE_CASE_SLUGS = new Set(reasons.keys());
 export const nonIndexableReason = (cs) => reasons.get(cs.slug || cs.id) || null;
 export const isIndexableCase = (cs) => !NON_INDEXABLE_CASE_SLUGS.has(cs.slug || cs.id);
-/** Only thin pages carry noindex; duplicates rely on the canonical alone (no mixed signals). */
-export const isNoindexCase = (cs) => reasons.get(cs.slug || cs.id) === 'consolidated';
+/** Thin pages carry noindex. A duplicate relies on its canonical alone while the original is
+ *  indexable; when the original is noindex, the duplicate is noindex too, so it never says
+ *  "index me" while pointing at a page that says "don't". */
+export const isNoindexCase = (cs) => {
+  const slug = cs.slug || cs.id;
+  const reason = reasons.get(slug);
+  if (reason === 'consolidated') return true;
+  return reason === 'duplicate' && !BEST_CASE_SLUGS.has(DUPLICATE_OF.get(slug));
+};
 /** Unique (non-duplicate) cases: listed on hubs for visitors even when noindex. */
 export const isListedCase = (cs) => reasons.get(cs.slug || cs.id) !== 'duplicate';
 
