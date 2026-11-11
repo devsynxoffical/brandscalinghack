@@ -26,6 +26,7 @@ Done:
 - /tools: meta description and ROAS calculator card now name "ROAS" and the Meta, Facebook, TikTok and dropshipping uses.
 - /tools/conversion-rate-calculator: explicit "revenue = sessions x conversion rate x AOV" formula (new query "ecommerce revenue formula sessions conversion rate aov").
 - Sitemap dates corrected for /growth, /shopify-agency, /roas-calculator, /tools.
+- Submitted 70 URLs to the Indexing API (70 accepted: today's and yesterday's changed pages plus every non-case page not yet indexed) and 4 to IndexNow.
 
 ### 10 Nov 2026 (session 2)
 Done:
