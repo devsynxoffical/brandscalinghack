@@ -699,7 +699,7 @@ Target CPA is the number to manage daily. If cost per purchase holds at or below
     tool: 'conversion-rate',
     primaryKeyword: 'conversion rate calculator',
     titleTag: 'Conversion Rate Calculator for Ecommerce | Brand Scaling',
-    updated: '2026-11-09',
+    updated: '2026-11-11',
     metaDescription: `Free ecommerce conversion rate calculator. Enter sessions, orders and AOV to get conversion rate, revenue per session and the value of a 0.5 point lift.`,
     h1: 'Ecommerce Conversion Rate Calculator',
     eyebrow: 'Free Ecommerce Tool',
@@ -727,6 +727,8 @@ Conversion rate is the multiplier behind every channel. When more visitors buy, 
         content: `Conversion rate = orders / sessions
 
 Revenue per session = conversion rate x AOV
+
+Ecommerce revenue formula: revenue = sessions x conversion rate x AOV
 
 Extra monthly revenue from a 0.5 point lift = sessions x 0.005 x AOV
 

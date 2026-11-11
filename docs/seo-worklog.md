@@ -18,6 +18,15 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 11 Nov 2026
+Data (Search Console, week 4 to 10 Nov vs 28 Oct to 3 Nov): impressions 230 vs 145 (+59%), clicks 3 vs 1, pages with impressions 20 vs 10, queries 85 vs 40, average position 64. Indexing: 48 indexed (42 + 6 newly indexed: /meta-ads-agency, /blog/meta-ads-library, /blog/meta-andromeda, /case-studies/dropshipping-dtc, 1 case, /privacy-policy); 23 discovered, 60 unknown.
+Done:
+- /shopify-agency: title "DTC Shopify Growth Agency: Stores & CRO", description, and a new answer-first section "What a DTC Shopify agency does" (queries: dtc shopify agency 62, website design agency 90, cro 87, d2c shopify growth agency 99).
+- /roas-calculator: new section on using it as a Meta, Facebook, TikTok or dropshipping ROAS calculator (those queries land on /tools at 79 to 85; "ecommerce roas calculator" is at 7).
+- /tools: meta description and ROAS calculator card now name "ROAS" and the Meta, Facebook, TikTok and dropshipping uses.
+- /tools/conversion-rate-calculator: explicit "revenue = sessions x conversion rate x AOV" formula (new query "ecommerce revenue formula sessions conversion rate aov").
+- Sitemap dates corrected for /growth, /shopify-agency, /roas-calculator, /tools.
+
 ### 10 Nov 2026 (session 2)
 Done:
 - GA4 installed (G-4NHL9F0B3C) on every page, loaded after render; lead clicks (WhatsApp, /book and calendar links, email, phone) sent as generate_lead with a method parameter.
@@ -36,8 +45,8 @@ Needs the owner (no access from here):
 - Backlinks and profiles that need your identity: Clutch, Google Business Profile, Shopify Partner Directory, DesignRush, GoodFirms, Sortlist, UpCity, podcast pitches, Qwoted.
 
 Queue (next sessions, highest impact first):
-- Re-inspect indexing (scheduled 11 Nov 08:10 UTC); resubmit pages still unknown.
-- Photo thumbnails for the other 22 blog posts.
+- Resubmit pages still unknown (60) in batches as the shared Indexing API quota allows.
+- Photo thumbnails for the other 22 blog posts (needs owner OK: uses Higgsfield credits).
 - Fix template card figures in allCaseStudies.js that contradict captions.
 - Competitor SERP check for "meta ads agency for ecommerce", "tiktok shop agency", "ecommerce growth agency" and close content gaps.
 - CTR work on any page that reaches positions 1 to 15 with 0 clicks (currently /about at 5.4).

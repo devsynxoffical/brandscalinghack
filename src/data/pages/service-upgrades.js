@@ -176,6 +176,22 @@ The two can run together, but the decision is separate. TikTok ads suit brands t
     },
     sections: [
       {
+        id: 'dtc-shopify-agency',
+        h2: 'What a DTC Shopify agency does',
+        content: `A DTC Shopify agency builds and improves Shopify stores for brands that sell their own products direct to consumers, usually with paid social as the main traffic source. That is different from a general web design agency: the store is judged on conversion rate, average order value and revenue per session, not on how it looks in a portfolio.
+
+Our Shopify work covers three areas, all tied to the ads that send the traffic.`,
+        list: [
+          'Store builds and redesigns: new Shopify stores and rebuilds of existing ones, with fast mobile pages and product pages written around the angles that win in your ads.',
+          'Shopify CRO: product page, offer, bundle and checkout tests, measured on revenue per session.',
+          'AOV and retention: bundles, post-purchase upsells and the email and SMS flows that follow the first order.'
+        ],
+        links: [
+          { href: '/cro-agency', text: 'DTC ecommerce CRO agency' },
+          { href: '/blog/shopify-conversion-rate-optimization', text: 'Shopify conversion rate optimization guide' }
+        ]
+      },
+      {
         id: 'choose-shopify-agency',
         h2: 'How to choose a Shopify agency for scaling a DTC brand',
         content: `Shopify agencies fall into two groups, and DTC brands often hire the wrong one. Design and development studios build beautiful stores and hand them over. Growth agencies treat the store as part of the ad funnel and keep changing it after launch, because the product page that converts cold paid traffic is rarely the one that looks best in a portfolio.
@@ -405,6 +421,22 @@ That is the difference between a dashboard number and a decision. A 3x ROAS can 
           headers: ['ACoS', 'Equivalent ROAS'],
           rows: [['50%', '2.0x'], ['40%', '2.5x'], ['33%', '3.0x'], ['25%', '4.0x'], ['20%', '5.0x']]
         }
+      },
+      {
+        id: 'roas-calculator-by-channel',
+        h2: 'Using it as a Meta ads, Facebook ads, TikTok or dropshipping ROAS calculator',
+        content: `The formula is the same on every channel: ROAS = revenue from ads / ad spend, and the ROAS you need is price / (price - cost per order). What changes is where you read the numbers and what goes into cost.`,
+        list: [
+          'Meta (Facebook and Instagram) ads: compare the result with the Purchase ROAS column in Ads Manager, and with blended MER from Shopify, because Meta can over-credit itself.',
+          'TikTok ads: use the Complete Payment ROAS column, and check it against MER from Shopify, since in-app attribution often differs from what the store records.',
+          'Dropshipping stores: include supplier price, shipping to the customer and payment fees in product cost; long shipping times also raise refunds, so add an allowance for them.',
+          'Amazon: use the ACoS to ROAS table above.'
+        ],
+        links: [
+          { href: '/meta-ads-agency', text: 'Meta ads agency' },
+          { href: '/tools/meta-ads-budget-calculator', text: 'Meta ads budget calculator' },
+          { href: '/tools/mer-calculator', text: 'MER calculator' }
+        ]
       },
       {
         id: 'common-mistakes',

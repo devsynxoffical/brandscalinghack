@@ -246,7 +246,7 @@ const staticSchemas = {
   '/shopify-agency': () => [
     webPage({
       path: '/shopify-agency',
-      name: 'Shopify Growth Agency for DTC Brands | Brand Scaling',
+      name: 'DTC Shopify Growth Agency: Stores & CRO | Brand Scaling',
       description: 'Shopify growth agency for DTC brands: stores built for paid traffic, sub-1s mobile pages, bundles and upsells tied to your Meta ads. Book a store audit.'
     }),
     {

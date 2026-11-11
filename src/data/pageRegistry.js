@@ -69,7 +69,7 @@ const HUBS = [
     childKind: 'tool',
     primaryKeyword: 'free ecommerce calculators',
     titleTag: 'Free Ecommerce Calculators for DTC Brands | Brand Scaling',
-    metaDescription: 'Free ecommerce calculators for DTC brands: break-even ROAS, MER, CAC, LTV, AOV, Meta ads budget and conversion rate. No signup, results update instantly.',
+    metaDescription: 'Free ecommerce calculators for DTC brands: ROAS and break-even ROAS, MER, CAC, LTV, AOV, Meta ads budget and conversion rate. No signup, instant results.',
     h1: 'Free Ecommerce Calculators for DTC Brands',
     eyebrow: 'Free tools',
     quickAnswer: {
@@ -78,7 +78,7 @@ const HUBS = [
     },
     intro: `These free ecommerce calculators are the same numbers we check in every Brand Growth Audit before we scale a single ad account. Each one runs in your browser, needs no signup and explains the formula, a worked example and what to do with the result.\n\nFor a full profit model with price, product cost, fees and CAC together, use the original ROAS calculator; the tools below each answer one specific question.`,
     sections: [],
-    extraLinks: [{ href: '/roas-calculator', title: 'ROAS calculator with profit model', text: 'Price, product cost, fees and CAC in one model: break-even ROAS, profit per order and monthly profit.' }],
+    extraLinks: [{ href: '/roas-calculator', title: 'Ecommerce ROAS calculator with profit model', text: 'For Meta, Facebook, TikTok and dropshipping stores: price, product cost, fees and CAC in one model, giving break-even ROAS, profit per order and monthly profit.' }],
     faqs: [
       { question: 'Are these ecommerce calculators free?', answer: 'Yes. Every calculator on this page is free, runs in your browser and does not ask for an email. Nothing you type is stored or sent anywhere. They are built from the same formulas we use when we audit an ad account, and each page explains the maths so you can rebuild it in a spreadsheet.' },
       { question: 'Which calculator should I use before scaling Meta ads?', answer: 'Use the break-even ROAS calculator first, then the Meta ads budget calculator. Break-even ROAS tells you the floor your campaigns must stay above, and the budget calculator turns a revenue goal into the daily spend, target CPA and weekly purchases you need. Together they show whether a scaling plan is realistic.' },
@@ -195,7 +195,7 @@ const HUBS = [
   }
 ];
 
-const HUB_UPDATED = { '/benchmarks': '2026-11-09' };
+const HUB_UPDATED = { '/benchmarks': '2026-11-09', '/tools': '2026-11-11' };
 
 const hubWithChildren = (h) => {
   const children = byKind(h.childKind);
