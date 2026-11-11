@@ -25,6 +25,11 @@ Done:
 - Fixed mixed signals: duplicate case URLs said "index" while their canonical pointed at a noindex original; duplicates now follow the original's status.
 - Mobile speed (Lighthouse, home): performance 42 to 62-63, LCP 16.5 s to 5.8 s, CLS 0.19 to 0.11. Case-study videos lazy-load near the viewport; hero video starts after page load; poster 163 KB to 98 KB.
 - Indexing audit: non-indexed pages are not short of internal links (blog posts 237 inlinks, industry pages 15-25); titles, canonicals, robots and sitemap consistent. Remaining blocker is authority.
+Bing Webmaster (API connected):
+- Status before: 91 pages in Bing's index (3 Nov), 0 crawl issues listed, 0 blocked URLs, 0 Bing impressions/clicks in the last 12 days, two stale non-www sitemaps from June registered.
+- Removed the stale https://brandscalinghacks.com/sitemap.xml and .xml.gz feeds; submitted sitemap.xml, the 5 child sitemaps and feed.xml.
+- Submitted 100 URLs via SubmitUrlBatch (daily quota 100; 51 remaining for tomorrow).
+- Fixed site-wide Bing SEO-report issues on all 153 indexable pages: two H1 tags (noscript copy now a paragraph) and an image without alt (Meta Pixel noscript image, alt=""). seo-audit now enforces exactly one H1.
 Research (competitors): page 1 for core queries is mostly "best X agencies" listicles; pitch list and 7 content gaps recorded below.
 
 ### 11 Nov 2026
@@ -57,7 +62,7 @@ Needs the owner (no access from here):
 Queue (next sessions, highest impact first):
 - Content gaps from competitor research: TikTok GMV Max guide, TikTok Shop affiliate commission rates (or a TikTok Shop profit calculator), AppLovin for DTC readiness post, KlientBoost alternatives compare page, agency pricing models section in how-much-does-a-dtc-agency-cost.
 - Listicle outreach (owner): influencermarketinghub.com, shipfusion.com, webtonic.io, mobiloud.com, 99minds.io, knowlify.com, stryde.com, newengen.com; directories 1800dtc.com/get-listed, DesignRush, Clutch, Foreplay agencies.
-- Bing Webmaster: API host blocked by this environment's network policy; needs ssl.bing.com allowed.
+- Bing: submit the remaining 51 sitemap URLs (SubmitUrlBatch) and recheck GetCrawlStats / GetRankAndTrafficStats daily.
 - Resubmit pages still unknown (60) in batches as the shared Indexing API quota allows.
 - Photo thumbnails for the other 22 blog posts (needs owner OK: uses Higgsfield credits).
 - Fix template card figures in allCaseStudies.js that contradict captions.

@@ -39,8 +39,8 @@ for (const [u, h] of pages) {
     if (desc.length < 70 || desc.length > 160) problems.push(`description ${desc.length} chars: ${u}`);
     titles.set(title, (titles.get(title) || []).concat(u));
   }
-  const h1 = (h.match(/<h1>/g) || []).length;
-  if (h1 !== 2) problems.push(`expected 1 H1 (2 incl. noscript), found ${h1}: ${u}`);
+  const h1 = (h.match(/<h1[\s>]/g) || []).length;
+  if (h1 !== 1) problems.push(`expected exactly 1 H1 (the noscript copy uses a paragraph), found ${h1}: ${u}`);
   const schema = h.match(/id="route-schema">([\s\S]*?)<\/script>/);
   if (!schema && u !== '/404') problems.push(`missing JSON-LD: ${u}`);
   if (schema) { try { JSON.parse(schema[1]); } catch { problems.push(`invalid JSON-LD: ${u}`); } }

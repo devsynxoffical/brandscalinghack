@@ -459,7 +459,7 @@ function renderRoute(route) {
     </div>
   `;
 
-  html = html.replace('<div id="root"></div>', () => `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><h1>${route.h1}</h1><div>${route.content}</div>${SITE_NAV_HTML}</div></noscript>`);
+  html = html.replace('<div id="root"></div>', () => `<div id="root">${prerenderedBody}</div><noscript><div class="noscript-seo-content" style="padding: 24px; color: #fff; background: #07090e;"><p style="font-size: 2em; font-weight: 800; margin: 0 0 16px;">${route.h1}</p><div>${route.content}</div>${SITE_NAV_HTML}</div></noscript>`);
 
   fs.writeFileSync(fullOutPath, html, 'utf8');
   generatedCount++;
