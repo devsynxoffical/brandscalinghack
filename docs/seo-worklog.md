@@ -18,6 +18,15 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 11 Nov 2026 (session 2: growth strategy run)
+Done:
+- 8 more verified case studies made indexable with caption-only write-ups (37 indexable): $98K in 23 days (fashion), $19,167 in a day at 3.61x (fitness), $100K month (skincare), $40,669 in 7 days (high-ticket), $43,970 in a day at 4.36x, $80,227 in 7 days at 3.97x, $153,163 month, $42K day. 3 headline corrections via FACT_OVERRIDES. Skipped the "$63K in 14 days" post (figure not backed by its caption).
+- New posts: /blog/questions-to-ask-meta-ads-agency, /blog/meta-ad-account-restricted (competitor gap research: buyer-guide posts rank for Meta agency queries; no account-restriction content on the site).
+- Fixed mixed signals: duplicate case URLs said "index" while their canonical pointed at a noindex original; duplicates now follow the original's status.
+- Mobile speed (Lighthouse, home): performance 42 to 62-63, LCP 16.5 s to 5.8 s, CLS 0.19 to 0.11. Case-study videos lazy-load near the viewport; hero video starts after page load; poster 163 KB to 98 KB.
+- Indexing audit: non-indexed pages are not short of internal links (blog posts 237 inlinks, industry pages 15-25); titles, canonicals, robots and sitemap consistent. Remaining blocker is authority.
+Research (competitors): page 1 for core queries is mostly "best X agencies" listicles; pitch list and 7 content gaps recorded below.
+
 ### 11 Nov 2026
 Data (Search Console, week 4 to 10 Nov vs 28 Oct to 3 Nov): impressions 230 vs 145 (+59%), clicks 3 vs 1, pages with impressions 20 vs 10, queries 85 vs 40, average position 64. Indexing: 48 indexed (42 + 6 newly indexed: /meta-ads-agency, /blog/meta-ads-library, /blog/meta-andromeda, /case-studies/dropshipping-dtc, 1 case, /privacy-policy); 23 discovered, 60 unknown.
 Done:
@@ -46,6 +55,9 @@ Needs the owner (no access from here):
 - Backlinks and profiles that need your identity: Clutch, Google Business Profile, Shopify Partner Directory, DesignRush, GoodFirms, Sortlist, UpCity, podcast pitches, Qwoted.
 
 Queue (next sessions, highest impact first):
+- Content gaps from competitor research: TikTok GMV Max guide, TikTok Shop affiliate commission rates (or a TikTok Shop profit calculator), AppLovin for DTC readiness post, KlientBoost alternatives compare page, agency pricing models section in how-much-does-a-dtc-agency-cost.
+- Listicle outreach (owner): influencermarketinghub.com, shipfusion.com, webtonic.io, mobiloud.com, 99minds.io, knowlify.com, stryde.com, newengen.com; directories 1800dtc.com/get-listed, DesignRush, Clutch, Foreplay agencies.
+- Bing Webmaster: API host blocked by this environment's network policy; needs ssl.bing.com allowed.
 - Resubmit pages still unknown (60) in batches as the shared Indexing API quota allows.
 - Photo thumbnails for the other 22 blog posts (needs owner OK: uses Higgsfield credits).
 - Fix template card figures in allCaseStudies.js that contradict captions.
