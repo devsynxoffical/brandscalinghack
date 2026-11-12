@@ -433,6 +433,14 @@ export const CONTENT_INDEX = [
     "eyebrow": "Free Ecommerce Tool"
   },
   {
+    "path": "/tools/tiktok-shop-break-even-roas-calculator",
+    "kind": "tool",
+    "titleTag": "TikTok Shop Break Even ROAS Calculator | Brand Scaling",
+    "metaDescription": "Free TikTok Shop break even ROAS calculator. Enter price, costs, referral fee and affiliate commission to see profit per order and your break-even ROAS.",
+    "h1": "TikTok Shop Break Even ROAS Calculator",
+    "eyebrow": "Free Ecommerce Tool"
+  },
+  {
     "path": "/locations/new-york",
     "kind": "location",
     "titleTag": "Ecommerce Marketing Agency New York | Brand Scaling",
@@ -500,7 +508,7 @@ export const CONTENT_INDEX = [
     "path": "/tools",
     "kind": "hub",
     "titleTag": "Free Ecommerce Calculators for DTC Brands | Brand Scaling",
-    "metaDescription": "Free ecommerce calculators for DTC brands: ROAS and break-even ROAS, MER, CAC, LTV, AOV, Meta ads budget and conversion rate. No signup, instant results.",
+    "metaDescription": "Free ecommerce calculators for DTC brands: break-even ROAS, TikTok Shop profit, MER, CAC, LTV, AOV, Meta ads budget and more. No signup, instant results.",
     "h1": "Free Ecommerce Calculators for DTC Brands",
     "eyebrow": "Free tools"
   },

@@ -14,6 +14,7 @@ export const LINK_RULES = [
   { re: /\b(BFCM|Black Friday) ads management\b/i, href: '/bfcm-ads-management', title: 'BFCM Ads Management' },
   { re: /\baffiliate program management\b|\bmanaged affiliate program\b/i, href: '/dtc-affiliate-program-management', title: 'DTC Affiliate Program Management' },
   { re: /\b(DTC |creator |ecommerce )?affiliate (program|marketing)\b|\bTikTok Shop affiliates\b/i, href: '/blog/dtc-affiliate-program', title: 'How to Scale a DTC Affiliate Program' },
+  { re: /\bTikTok Shop break[ -]even ROAS( calculator)?\b|\bTikTok Shop (profit|fees?) calculator\b/i, href: '/tools/tiktok-shop-break-even-roas-calculator', title: 'TikTok Shop Break-Even ROAS Calculator' },
   { re: /\bbreak[ -]even ROAS calculator\b/i, href: '/tools/break-even-roas-calculator', title: 'Break-Even ROAS Calculator' },
   { re: /\b(real )?ROAS calculator\b|\bfree ROAS calculator\b/i, href: '/roas-calculator', title: 'Free ROAS Calculator' },
   // ROAS cluster: each intent points at one page so internal anchors do not make them compete

@@ -29,6 +29,7 @@ export const KIND_HUB = {
 const LEAF_PAGES = [...services1, ...services2, ...industry1, ...industry2, ...glossary, ...compareBenchmarks, ...tools, ...tools2]
   .map((p) => ({ ...p, published: p.published || CONTENT_PUBLISHED, updated: p.updated || CONTENT_PUBLISHED }))
   .map((p) => (p.path === '/tools/discount-break-even-calculator' || p.path === '/tools/profit-margin-calculator' ? { ...p, published: '2026-11-09', updated: '2026-11-09' } : p))
+  .map((p) => (p.path === '/tools/tiktok-shop-break-even-roas-calculator' ? { ...p, published: '2026-11-12', updated: '2026-11-12' } : p))
   .concat([...locationsUs, ...locationsIntl].map((p) => ({ ...p, published: p.published || '2026-11-06', updated: p.updated || '2026-11-06' })));
 
 const byKind = (kind) => LEAF_PAGES.filter((p) => p.kind === kind);
@@ -69,7 +70,7 @@ const HUBS = [
     childKind: 'tool',
     primaryKeyword: 'free ecommerce calculators',
     titleTag: 'Free Ecommerce Calculators for DTC Brands | Brand Scaling',
-    metaDescription: 'Free ecommerce calculators for DTC brands: ROAS and break-even ROAS, MER, CAC, LTV, AOV, Meta ads budget and conversion rate. No signup, instant results.',
+    metaDescription: 'Free ecommerce calculators for DTC brands: break-even ROAS, TikTok Shop profit, MER, CAC, LTV, AOV, Meta ads budget and more. No signup, instant results.',
     h1: 'Free Ecommerce Calculators for DTC Brands',
     eyebrow: 'Free tools',
     quickAnswer: {

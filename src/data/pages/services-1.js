@@ -120,7 +120,7 @@ We quote after a Brand Growth Audit, a 1-on-1 review with Gaurav of your margins
         answer: 'We work with brands selling into the US, UK, Canada and Australia. TikTok Shop availability and rules vary by country and change over time, so in the audit we confirm whether the shop is open in your markets and what fulfilment you need before building anything.'
       }
     ],
-    related: ['/tiktok-ads-agency', '/blog/tiktok-shop-strategy', '/dtc-affiliate-program-management', '/compare/meta-ads-vs-tiktok-ads', '/viral-creatives', '/services'],
+    related: ['/tiktok-ads-agency', '/blog/tiktok-shop-strategy', '/tools/tiktok-shop-break-even-roas-calculator', '/dtc-affiliate-program-management', '/compare/meta-ads-vs-tiktok-ads', '/viral-creatives', '/services'],
     cta: {
       heading: 'Find out if TikTok Shop will pay for your brand',
       text: 'Book a Brand Growth Audit. Gaurav will model your margin per shop order, review your creative and tell you whether to open a shop, fix the one you have, or put the budget elsewhere.'

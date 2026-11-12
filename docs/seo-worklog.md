@@ -18,6 +18,15 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 12 Nov 2026
+Data: Google 5 to 11 Nov vs 29 Oct to 4 Nov: impressions 230 vs 147, clicks 2 vs 1, avg position 59.6 vs 65.7, queries 83 vs 42, pages 20 vs 9. Top-20 positions: conversion rate calculator 6, ecommerce roas calculator 7, health-wellness telehealth query 17. New: "roas calculator ecommerce" (8 impr, /tools 26.5 and /roas-calculator 35.5), "tiktok shop break even roas calculator" (/tools 42), "ecommerce performance marketing agency" (23). Bing: all 6 sitemaps + feed read 11 Nov; 0 crawl issues; still 0 impressions.
+Done:
+- New tool /tools/tiktok-shop-break-even-roas-calculator (10th calculator): price, COGS, shipping, referral fee (labelled example 8%; TikTok's official 2024 table says 6%, 2026 seller guides report 8%, page states both), affiliate commission, other fee; outputs break-even ROAS, profit before ads, break-even CPA, fees, margin. Linked from /tiktok-shop-agency, /tools hub, llms.txt, link rule.
+- /blog/performance-marketing-agency: meta description and opening target "ecommerce performance marketing agency".
+- Service pages' guide blocks now link the newest guides: /meta-ads-agency (questions to ask, learning phase, account restricted), /tiktok-ads-agency and /shopify-agency (TikTok Shop vs Shopify), /services (questions to ask).
+- Bing: submitted the remaining 51 sitemap URLs (all 151 now submitted).
+Checked, no change needed: agency pricing models already covered in how-much-does-a-dtc-agency-cost; /about (pos 2.6) queries are anonymised.
+
 ### 11 Nov 2026 (session 2: growth strategy run)
 Done:
 - 8 more verified case studies made indexable with caption-only write-ups (37 indexable): $98K in 23 days (fashion), $19,167 in a day at 3.61x (fitness), $100K month (skincare), $40,669 in 7 days (high-ticket), $43,970 in a day at 4.36x, $80,227 in 7 days at 3.97x, $153,163 month, $42K day. 3 headline corrections via FACT_OVERRIDES. Skipped the "$63K in 14 days" post (figure not backed by its caption).
@@ -60,9 +69,9 @@ Needs the owner (no access from here):
 - Backlinks and profiles that need your identity: Clutch, Google Business Profile, Shopify Partner Directory, DesignRush, GoodFirms, Sortlist, UpCity, podcast pitches, Qwoted.
 
 Queue (next sessions, highest impact first):
-- Content gaps from competitor research: TikTok GMV Max guide, TikTok Shop affiliate commission rates (or a TikTok Shop profit calculator), AppLovin for DTC readiness post, KlientBoost alternatives compare page, agency pricing models section in how-much-does-a-dtc-agency-cost.
+- Content gaps from competitor research: TikTok GMV Max guide, TikTok Shop affiliate commission rates (calculator done 12 Nov), AppLovin for DTC readiness post, KlientBoost alternatives compare page.
 - Listicle outreach (owner): influencermarketinghub.com, shipfusion.com, webtonic.io, mobiloud.com, 99minds.io, knowlify.com, stryde.com, newengen.com; directories 1800dtc.com/get-listed, DesignRush, Clutch, Foreplay agencies.
-- Bing: submit the remaining 51 sitemap URLs (SubmitUrlBatch) and recheck GetCrawlStats / GetRankAndTrafficStats daily.
+- Bing: recheck GetCrawlStats / GetRankAndTrafficStats daily; submit new and changed URLs.
 - Resubmit pages still unknown (60) in batches as the shared Indexing API quota allows.
 - Photo thumbnails for the other 22 blog posts (needs owner OK: uses Higgsfield credits).
 - Fix template card figures in allCaseStudies.js that contradict captions.

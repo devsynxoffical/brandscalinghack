@@ -179,5 +179,30 @@ export const TOOL_DEFS = {
         { label: 'Extra revenue at +0.5 pts CVR', value: usd0(sessions * 0.005 * aov), note: 'Same traffic, conversion rate 0.5 percentage points higher.' }
       ];
     }
+  },
+  'tiktok-shop-break-even': {
+    name: 'TikTok Shop break-even ROAS calculator',
+    inputs: [
+      { id: 'price', label: 'Selling price per order', unit: '$', default: 35 },
+      { id: 'cogs', label: 'Product cost (COGS) per order', unit: '$', default: 8 },
+      { id: 'ship', label: 'Shipping and fulfilment you pay per order', unit: '$', default: 6 },
+      { id: 'referral', label: 'TikTok Shop referral fee (example rate)', unit: '%', default: 8 },
+      { id: 'affiliate', label: 'Affiliate commission you set (0 if none)', unit: '%', default: 15 },
+      { id: 'other', label: 'Other fee if charged separately (often 0)', unit: '%', default: 0 }
+    ],
+    compute: ({ price, cogs, ship, referral, affiliate, other }) => {
+      const refFee = price * (referral / 100);
+      const affFee = price * (affiliate / 100);
+      const otherFee = price * (other / 100);
+      const fees = refFee + affFee + otherFee;
+      const cm = price - cogs - ship - fees;
+      return [
+        { label: 'Break-even ROAS for TikTok ads and GMV Max', value: cm > 0 ? x(price / cm) : 'No margin', primary: true, note: cm > 0 ? 'Price / profit per order before ads. Below this ROAS each ad-driven order loses money.' : 'Fees, commission and costs use up the whole price, so no ROAS breaks even.' },
+        { label: 'Profit per order before ads', value: usd(cm), note: 'Price minus COGS, shipping, referral fee, affiliate commission and other fees.' },
+        { label: 'Break-even ad cost per order (CPA)', value: cm > 0 ? usd(cm) : 'No margin', note: 'The most you can spend on ads to win one order and still break even.' },
+        { label: 'Fees and commission per order', value: usd(fees), note: `Referral ${usd(refFee)}, affiliate ${usd(affFee)}, other ${usd(otherFee)}.` },
+        { label: 'Margin before ads', value: pct(div(cm, price)), note: 'Profit per order before ads / price.' }
+      ];
+    }
   }
 };

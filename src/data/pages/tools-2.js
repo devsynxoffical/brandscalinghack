@@ -234,4 +234,119 @@ A negative net profit does not always mean stop. A first order can lose a little
       text: `Book a Brand Growth Audit. Gaurav walks through your ad account, store and unit economics with you to find where each order loses margin.`,
     },
   },
+  {
+    path: '/tools/tiktok-shop-break-even-roas-calculator',
+    kind: 'tool',
+    tool: 'tiktok-shop-break-even',
+    primaryKeyword: 'tiktok shop break even roas calculator',
+    titleTag: 'TikTok Shop Break Even ROAS Calculator | Brand Scaling',
+    metaDescription: `Free TikTok Shop break even ROAS calculator. Enter price, costs, referral fee and affiliate commission to see profit per order and your break-even ROAS.`,
+    h1: 'TikTok Shop Break Even ROAS Calculator',
+    eyebrow: 'Free Ecommerce Tool',
+    quickAnswer: {
+      question: 'How do I calculate break-even ROAS for TikTok Shop?',
+      answer: `Take your selling price and subtract product cost, shipping, the TikTok Shop referral fee and any affiliate commission. That is your profit per order before ads. Divide the price by it. A $35 order with $8 COGS, $6 shipping, an 8% example referral fee and 15% affiliate commission leaves $12.95, so break-even ROAS is 2.70x.`,
+    },
+    intro: `This TikTok Shop break even ROAS calculator shows what you keep from each order after TikTok and your creators take their share, and the lowest return your TikTok ads or GMV Max campaigns can run at without losing money. It also works as a TikTok Shop profit calculator and fees calculator: enter your price, product cost, shipping, referral fee and affiliate commission, and it returns profit per order before ads, total fees and commission, margin, break-even ROAS and the most you can pay in ads for one order.
+
+TikTok Shop costs stack up faster than on your own Shopify store. The platform takes a referral fee on every sale, creators often take a commission on top, and ads come after both. Run the numbers per order first, then set your ad targets from the result.`,
+    sections: [
+      {
+        id: 'how-to-use',
+        h2: 'How to use the TikTok Shop profit calculator',
+        content: `Use per-order figures for a typical order, not monthly totals. Fees and commission are calculated as a percentage of the selling price, so the calculator adds them up for you.
+
+A note on the referral fee: TikTok Shop rates vary by region, category and date. TikTok's US Seller University fee table listed a 6% referral fee for most categories, in effect since April 1, 2024, with a few jewelry and pre-owned categories lower. Several seller guides published in 2026 report a rise to 8% for most US categories from August 2026, but we could not confirm that figure on an official TikTok page as of November 2026. The calculator uses 8% as an example rate. Check Seller Center for the rate on your category and enter that.`,
+        list: [
+          `Selling price per order: what the customer pays for a typical order, before tax.`,
+          `Product cost (COGS) per order: the landed cost of the goods, including supplier price, inbound freight and duties.`,
+          `Shipping and fulfilment you pay: postage, packaging and any 3PL or pick and pack fees that come out of your pocket. If TikTok or the buyer covers shipping, enter only your share.`,
+          `TikTok Shop referral fee %: the platform fee for your category, taken from Seller Center.`,
+          `Affiliate commission %: the rate you set for creators in your affiliate plan. If only some orders come through creators, enter a blended rate. For example, 40% of orders at 15% commission is 6%.`,
+          `Other fee %: any payment or extra platform fee your region charges separately. Leave it at 0 if your Seller Center statement shows none.`,
+        ],
+      },
+      {
+        id: 'formula-and-example',
+        h2: 'The formula with a worked example',
+        content: `The calculator works out what one order leaves you before ads, then turns that into a ROAS floor.
+
+Fees and commission = price x (referral % + affiliate % + other %)
+
+Profit per order before ads = price - COGS - shipping - fees and commission
+
+Break-even ROAS = price / profit per order before ads
+
+Break-even CPA = profit per order before ads
+
+Margin before ads = profit per order before ads / price
+
+Example (illustrative numbers, not client data): a $35 order with $8 COGS and $6 shipping and fulfilment. At an 8% example referral fee, TikTok takes $2.80. A 15% affiliate commission costs $5.25. With no other fee, fees and commission total $8.05. Profit per order before ads is $35 - $8 - $6 - $8.05 = $12.95, a 37.0% margin. Break-even ROAS is $35 / $12.95 = 2.70x, and you can spend up to $12.95 in ads to win one order before you lose money.
+
+The table keeps everything else the same and changes only the affiliate commission, to show how much each extra point of commission raises your ROAS floor.`,
+        table: {
+          headers: ['Affiliate commission', 'Fees and commission', 'Profit before ads', 'Margin', 'Break-even ROAS'],
+          rows: [
+            ['0%', '$2.80', '$18.20', '52.0%', '1.92x'],
+            ['10%', '$6.30', '$14.70', '42.0%', '2.38x'],
+            ['15%', '$8.05', '$12.95', '37.0%', '2.70x'],
+            ['20%', '$9.80', '$11.20', '32.0%', '3.13x'],
+            ['25%', '$11.55', '$9.45', '27.0%', '3.70x'],
+          ],
+        },
+      },
+      {
+        id: 'reading-the-result',
+        h2: 'How to read the result',
+        content: `Break-even ROAS is your floor, not your goal. If your GMV Max campaign or TikTok ads deliver a ROAS above it, each ad-driven order makes money before overheads. Below it, every order you buy with ads loses money, even if revenue looks strong in Seller Center. GMV Max asks for a ROI target, which is gross revenue divided by ad spend, so you can compare it directly with the break-even ROAS here.
+
+Two things change the answer more than people expect. First, affiliate commission: an order that comes through a creator video you also boost pays both the commission and the ad cost, so include the commission when you set ad targets for those orders. If your ad-driven orders pay no commission, run the calculator with affiliate at 0 for your ad floor. Second, price: a low-priced product leaves little room once fixed costs like shipping are paid, which is why bundles often make TikTok Shop maths work.
+
+If the calculator shows No margin, your fees, commission and costs already use up the whole price, and no ad result can fix that.`,
+      },
+      {
+        id: 'what-to-do-next',
+        h2: 'What to do next',
+        content: `Use the break-even ROAS as the minimum for your campaigns, then aim above it so there is profit left for overheads and returns, which this calculator does not include. For the full plan, read our TikTok Shop strategy guide at /blog/tiktok-shop-strategy.`,
+        list: [
+          `Raise order value with bundles or multi-packs, which spreads shipping across more product.`,
+          `Set affiliate commission from your margin, not from what other sellers offer.`,
+          `Compare TikTok Shop unit economics with your own site using the break-even ROAS calculator at /tools/break-even-roas-calculator and our TikTok Shop vs Shopify guide at /blog/tiktok-shop-vs-shopify.`,
+          `If you want the shop and creator programme run for you, see our TikTok Shop agency at /tiktok-shop-agency. For in-feed ads that send traffic to your own store, see our TikTok ads agency at /tiktok-ads-agency.`,
+        ],
+      },
+    ],
+    proof: [
+      { value: '30 to 50+', label: 'New ad creatives a month', note: 'Produced for partner brands, reusable as shop and Spark Ads creative', href: '/viral-creatives' },
+      { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' },
+      { value: '$50M+', label: 'Paid social spend managed', note: 'Agency-wide Meta ad spend across 30+ niches' },
+    ],
+    faqs: [
+      {
+        question: 'What is a good break-even ROAS for TikTok Shop?',
+        answer: `There is no single good number, because it depends on your price, costs, referral fee and affiliate commission. A lower break-even ROAS is better, because it gives your ads more room. In our example it is 2.70x. Work out your own figure with the calculator, then set your GMV Max ROI target above it.`,
+      },
+      {
+        question: 'How much does TikTok Shop take per sale?',
+        answer: `TikTok charges a referral fee as a percentage of each sale, and the rate depends on your region and category. TikTok's US fee table listed 6% for most categories from April 2024, and 2026 seller guides report 8% from August 2026, which we could not confirm officially. Seller Center shows the current rate for your category. Affiliate commission, if you use creators, is on top.`,
+      },
+      {
+        question: 'Should I include affiliate commission in my break-even ROAS?',
+        answer: `Include it for any order that pays both commission and ad cost, such as a boosted creator video. Leave it out for ad orders that pay no commission. If you are not sure, enter a blended rate based on the share of orders that come through creators.`,
+      },
+      {
+        question: 'How is TikTok Shop break-even ROAS different from my Shopify break-even ROAS?',
+        answer: `The formula is the same, price divided by profit per order before ads, but TikTok Shop adds a referral fee and often a creator commission. That usually means less profit per order and a higher break-even ROAS for the same product.`,
+      },
+      {
+        question: 'What does break-even CPA mean on TikTok Shop?',
+        answer: `It is the most you can spend on ads to win one order without losing money. It equals your profit per order before ads. In the example, that is $12.95. If your cost per purchase is higher than that, each ad-driven order loses money.`,
+      },
+    ],
+    related: ['/tools', '/tools/break-even-roas-calculator', '/tiktok-shop-agency', '/tiktok-ads-agency', '/blog/tiktok-shop-strategy', '/blog/tiktok-shop-vs-shopify'],
+    cta: {
+      heading: 'Selling on TikTok Shop but unsure about profit?',
+      text: `Book a Brand Growth Audit. Gaurav reviews your shop, fees, creator commission and ad results with you and helps set a ROAS floor your margin can carry.`,
+    },
+  },
 ];
