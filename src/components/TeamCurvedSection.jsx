@@ -8,21 +8,21 @@ export default function TeamCurvedSection({ onOpenBooking }) {
   const teamMembers = [
     {
       id: 'member-4',
-      imgSrc: '/teamm/4.png',
+      imgSrc: '/teamm/4.webp',
       bgColor: 'linear-gradient(180deg, #c2410c 0%, #7c2d12 100%)',
       side: 'left-outer',
       transformDefault: 'rotateY(24deg) rotateZ(-3.5deg) translateY(18px) scale(0.91)',
     },
     {
       id: 'member-3',
-      imgSrc: '/teamm/3.png',
+      imgSrc: '/teamm/3.webp',
       bgColor: 'linear-gradient(180deg, #1e3a8a 0%, #0f172a 100%)',
       side: 'left-inner',
       transformDefault: 'rotateY(12deg) rotateZ(-1.5deg) translateY(8px) scale(0.97)',
     },
     {
       id: 'member-2',
-      imgSrc: '/teamm/2.png',
+      imgSrc: '/teamm/2.webp',
       bgColor: 'linear-gradient(180deg, #b45309 0%, #78350f 100%)',
       side: 'center',
       isCenter: true,
@@ -30,14 +30,14 @@ export default function TeamCurvedSection({ onOpenBooking }) {
     },
     {
       id: 'member-1',
-      imgSrc: '/teamm/1.png',
+      imgSrc: '/teamm/1.webp',
       bgColor: 'linear-gradient(180deg, #ea580c 0%, #9a3412 100%)',
       side: 'right-inner',
       transformDefault: 'rotateY(-12deg) rotateZ(1.5deg) translateY(8px) scale(0.97)',
     },
     {
       id: 'member-5',
-      imgSrc: '/teamm/5.png',
+      imgSrc: '/teamm/5.webp',
       bgColor: 'linear-gradient(180deg, #831843 0%, #500724 100%)',
       side: 'right-outer',
       transformDefault: 'rotateY(-24deg) rotateZ(3.5deg) translateY(18px) scale(0.91)',
