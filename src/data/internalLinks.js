@@ -137,13 +137,13 @@ const DEFAULT_GUIDES = [
 
 /** Hand-picked guides shown under each service page. */
 export const SERVICE_GUIDES = {
-  'meta-ads-agency': ['/blog/how-to-scale-facebook-ads', '/blog/meta-advantage-plus-guide', '/blog/meta-ads-library'],
-  'tiktok-ads-agency': ['/blog/tiktok-shop-strategy', '/blog/ugc-ads-for-dtc', '/blog/dtc-affiliate-program'],
-  'shopify-agency': ['/blog/shopify-conversion-rate-optimization', '/blog/facebook-ads-for-shopify', '/blog/how-to-lower-cac'],
+  'meta-ads-agency': ['/blog/questions-to-ask-meta-ads-agency', '/blog/meta-ads-learning-phase', '/blog/how-to-scale-facebook-ads', '/blog/meta-ad-account-restricted', '/blog/meta-advantage-plus-guide', '/blog/meta-ads-library'],
+  'tiktok-ads-agency': ['/blog/tiktok-shop-strategy', '/blog/tiktok-shop-vs-shopify', '/blog/ugc-ads-for-dtc'],
+  'shopify-agency': ['/blog/shopify-conversion-rate-optimization', '/blog/facebook-ads-for-shopify', '/blog/tiktok-shop-vs-shopify'],
   growth: ['/blog/q4-ecommerce-ads-strategy', '/blog/ecommerce-email-flows', '/blog/performance-marketing-agency'],
   'viral-creatives': ['/blog/ugc-ads-for-dtc', '/blog/meta-ads-creative-testing', '/blog/scale-ugc-production'],
   'roas-calculator': ['/blog/good-roas-for-ecommerce', '/blog/what-is-roas', '/blog/how-to-lower-cac'],
-  services: ['/blog/how-much-does-a-dtc-agency-cost', '/blog/performance-marketing-agency', '/blog/how-to-scale-facebook-ads'],
+  services: ['/blog/how-much-does-a-dtc-agency-cost', '/blog/performance-marketing-agency', '/blog/questions-to-ask-meta-ads-agency'],
   about: ['/blog/meta-ads-library', '/blog/performance-marketing-agency', '/blog/facebook-ads-for-shopify'],
   'case-studies': ['/blog/meta-ads-library', '/blog/facebook-ads-for-shopify', '/blog/what-is-roas']
 };

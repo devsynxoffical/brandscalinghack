@@ -4,7 +4,7 @@
 const dtcSection = {
   id: 'what-is-dtc-performance-marketing',
   h2: 'What is DTC performance marketing?',
-  content: `DTC performance marketing is paid advertising for direct-to-consumer brands that is judged only on what it sells. Every campaign on Meta, TikTok or Google is measured on orders, revenue, cost per new customer and profit after ad spend, not on reach or awareness.
+  content: `DTC performance marketing is paid advertising for direct-to-consumer brands that is judged only on what it sells. An ecommerce performance marketing agency is the team that runs it for you, paid to grow orders and profit rather than reach. Every campaign on Meta, TikTok or Google is measured on orders, revenue, cost per new customer and profit after ad spend, not on reach or awareness.
 
 It differs from performance marketing for lead generation or apps in three ways. The product is bought on the spot, often from a single video, so creative carries most of the work. The store is part of the funnel, so product page speed, the offer and checkout decide how much of the paid traffic converts. And margins are thin enough that the same ROAS can be profitable for one brand and a loss for another, so targets start from unit economics rather than benchmarks.`
 };
@@ -57,5 +57,13 @@ export default (post) => {
   const toc = [...post.tableOfContents];
   const tAt = toc.findIndex((t) => t.id === 'what-is-performance-marketing') + 1;
   toc.splice(tAt, 0, { id: dtcSection.id, text: 'What is DTC performance marketing?' }, { id: roasSection.id, text: 'What a ROAS improvement agency changes' }, { id: specialistSection.id, text: 'Finding an agency that specializes in DTC' });
-  return { sections, tableOfContents: toc, faqs: [...(post.faqs || []), ...extraFaqs], updatedDate: '2026-11-10' };
+  return {
+    sections,
+    tableOfContents: toc,
+    faqs: [...(post.faqs || []), ...extraFaqs],
+    // 12 Nov: the post now appears at position 23 for "ecommerce performance marketing agency"
+    metaDescription: 'What does an ecommerce performance marketing agency do? How DTC agencies scale Shopify brands with Meta and TikTok ads, CRO, creative testing and profit ROAS.',
+    secondaryKeywords: [...(post.secondaryKeywords || []), 'ecommerce performance marketing agency', 'dtc performance marketing agency'],
+    updatedDate: '2026-11-12'
+  };
 };
