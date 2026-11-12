@@ -30,6 +30,7 @@ export const LINK_RULES = [
   { re: /\bperformance marketing agenc(y|ies)\b/i, href: '/blog/performance-marketing-agency', title: 'What Is a Performance Marketing Agency?' },
   { re: /\b(Meta|Facebook) ads? (account )?audit\b|\bad account audit\b/i, href: '/meta-ads-audit', title: 'Meta Ads Audit' },
   { re: /\bMeta ads agency\b/i, href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce' },
+  { re: /\b(Product |LIVE )?GMV Max\b/i, href: '/blog/tiktok-gmv-max', title: 'TikTok GMV Max Guide' },
   { re: /\bTikTok Shop( agency| scaling( services)?)?\b/i, href: '/tiktok-shop-agency', title: 'TikTok Shop Agency' },
   { re: /\bTikTok (ads|Spark Ads)( agency)?\b|\bSpark Ads\b/i, href: '/tiktok-ads-agency', title: 'TikTok Ads Agency' },
   { re: /\bGoogle Shopping( ads)?\b|\bPerformance Max\b/i, href: '/google-shopping-ads-agency', title: 'Google Shopping Ads Agency' },
@@ -139,7 +140,7 @@ const DEFAULT_GUIDES = [
 /** Hand-picked guides shown under each service page. */
 export const SERVICE_GUIDES = {
   'meta-ads-agency': ['/blog/questions-to-ask-meta-ads-agency', '/blog/meta-ads-learning-phase', '/blog/how-to-scale-facebook-ads', '/blog/meta-ad-account-restricted', '/blog/meta-advantage-plus-guide', '/blog/meta-ads-library'],
-  'tiktok-ads-agency': ['/blog/tiktok-shop-strategy', '/blog/tiktok-shop-vs-shopify', '/blog/ugc-ads-for-dtc'],
+  'tiktok-ads-agency': ['/blog/tiktok-shop-strategy', '/blog/tiktok-shop-vs-shopify', '/blog/tiktok-gmv-max'],
   'shopify-agency': ['/blog/shopify-conversion-rate-optimization', '/blog/facebook-ads-for-shopify', '/blog/tiktok-shop-vs-shopify'],
   growth: ['/blog/q4-ecommerce-ads-strategy', '/blog/ecommerce-email-flows', '/blog/performance-marketing-agency'],
   'viral-creatives': ['/blog/ugc-ads-for-dtc', '/blog/meta-ads-creative-testing', '/blog/scale-ugc-production'],

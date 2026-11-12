@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 // Muted looping video that only downloads and plays while it is near the viewport.
 // Until then it shows the poster image, so pages with many autoplay clips (proof walls,
 // creative marquees) no longer download every MP4 on load.
-export default function LazyVideo({ src, poster, alt = '', className, style, rootMargin = '200px' }) {
+export default function LazyVideo({ src, poster, alt = '', className, style, rootMargin = '400px' }) {
   const ref = useRef(null);
   const [near, setNear] = useState(false);
 
@@ -28,7 +28,9 @@ export default function LazyVideo({ src, poster, alt = '', className, style, roo
       ref={ref}
       // src is attached the first time the clip comes near the screen and kept afterwards
       src={near || (ref.current && ref.current.getAttribute('src')) ? src : undefined}
-      poster={poster}
+      // the poster also waits until the clip is near the screen, so a page with many clips does
+      // not download every poster image on load
+      poster={near || (ref.current && ref.current.getAttribute('poster')) ? poster : undefined}
       aria-label={alt || undefined}
       muted
       loop

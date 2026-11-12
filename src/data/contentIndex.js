@@ -355,7 +355,7 @@ export const CONTENT_INDEX = [
   {
     "path": "/benchmarks/ecommerce-roas",
     "kind": "benchmark",
-    "titleTag": "Average Ecommerce ROAS: Our Case Data | Brand Scaling",
+    "titleTag": "Average Ecommerce ROAS Benchmarks by Niche | Brand Scaling",
     "metaDescription": "Average ecommerce ROAS from our 25 published case studies: median 3.97x, ranges by niche, and an honest note on why this sample is biased.",
     "h1": "Average Ecommerce ROAS: What Our Published Case Studies Show",
     "eyebrow": "ROAS Benchmark"

@@ -122,7 +122,7 @@
   </url>
   <url>
     <loc>https://www.brandscalinghacks.com/benchmarks/ecommerce-roas</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -188,7 +188,7 @@
   </url>
   <url>
     <loc>https://www.brandscalinghacks.com/tools</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -369,6 +369,12 @@
   <url>
     <loc>https://www.brandscalinghacks.com/blog/meta-ad-account-restricted</loc>
     <lastmod>2026-11-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.brandscalinghacks.com/blog/tiktok-gmv-max</loc>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

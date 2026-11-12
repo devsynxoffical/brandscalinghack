@@ -477,7 +477,7 @@ Choose the host carefully. A founder or team member who knows the product and en
         subsections: [
           {
             h3: 'How to feed GMV Max',
-            content: `GMV Max works with the content it can access, so its results depend on how many good videos exist for each product. Keep authorising strong creator posts, set a realistic return target based on your contribution margin and give the campaign time to learn before judging it.`
+            content: `GMV Max works with the content it can access, so its results depend on how many good videos exist for each product. Keep authorising strong creator posts, set a realistic return target based on your contribution margin and give the campaign time to learn before judging it. Our GMV Max guide covers ROI targets, Max delivery and what to do when a campaign will not spend.`
           }
         ]
       },

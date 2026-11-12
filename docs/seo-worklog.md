@@ -18,6 +18,15 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 12 Nov 2026 (session 2: growth strategy run)
+Done:
+- New guide /blog/tiktok-gmv-max (Product vs LIVE GMV Max, Target ROI vs Max delivery vs Growth autopilot, ROI from unit economics, under-spending, attribution); facts from TikTok help-center articles (summaries via search; host blocked here). Link rule "GMV Max", linked from /tiktok-ads-agency guides and /blog/tiktok-shop-strategy.
+- Cannibalisation: "roas calculator ecommerce" split /tools (26.5) vs /roas-calculator (35.5). /tools hub now leads with the ROAS calculator card ("ROAS calculator for ecommerce"). Hubs (/blog, /, /growth, /benchmarks) rank for queries whose target pages are not indexed yet; fix is indexing, not content.
+- /benchmarks/ecommerce-roas title now "Average Ecommerce ROAS Benchmarks by Niche" (queries: roas benchmarks, benchmark roas, roas benchmarks by industry).
+- Images: team photos PNG to WebP (1.8 MB to 60 KB); 64 oversized thumbnails and video posters resized to 720 px (12.6 MB to 2.7 MB); LazyVideo posters load only near the viewport. Home on load: images 110 (5.8 MB) to 28 (584 KB), total transfer about 11 MB to 4.4 MB; LCP 5.6 s.
+- Live verification (OpenSEO crawl of 50 live pages, free plan cap): 0 issues; every page 1 H1, no missing alt, new cases live with corrected titles; response 30 to 250 ms.
+- Indexing audit (URL Inspection, all 152 sitemap URLs): 51 indexed (was 48), 21 discovered, 80 unknown (incl. this week's new pages); 0 errors, 0 crawled-not-indexed, 0 excluded, 0 Google-chosen canonical conflicts.
+
 ### 12 Nov 2026
 Data: Google 5 to 11 Nov vs 29 Oct to 4 Nov: impressions 230 vs 147, clicks 2 vs 1, avg position 59.6 vs 65.7, queries 83 vs 42, pages 20 vs 9. Top-20 positions: conversion rate calculator 6, ecommerce roas calculator 7, health-wellness telehealth query 17. New: "roas calculator ecommerce" (8 impr, /tools 26.5 and /roas-calculator 35.5), "tiktok shop break even roas calculator" (/tools 42), "ecommerce performance marketing agency" (23). Bing: all 6 sitemaps + feed read 11 Nov; 0 crawl issues; still 0 impressions.
 Done:
@@ -69,7 +78,7 @@ Needs the owner (no access from here):
 - Backlinks and profiles that need your identity: Clutch, Google Business Profile, Shopify Partner Directory, DesignRush, GoodFirms, Sortlist, UpCity, podcast pitches, Qwoted.
 
 Queue (next sessions, highest impact first):
-- Content gaps from competitor research: TikTok GMV Max guide, TikTok Shop affiliate commission rates (calculator done 12 Nov), AppLovin for DTC readiness post, KlientBoost alternatives compare page.
+- Content gaps from competitor research: TikTok Shop affiliate commission rates (calculator done 12 Nov), AppLovin for DTC readiness post, KlientBoost alternatives compare page.
 - Listicle outreach (owner): influencermarketinghub.com, shipfusion.com, webtonic.io, mobiloud.com, 99minds.io, knowlify.com, stryde.com, newengen.com; directories 1800dtc.com/get-listed, DesignRush, Clutch, Foreplay agencies.
 - Bing: recheck GetCrawlStats / GetRankAndTrafficStats daily; submit new and changed URLs.
 - Resubmit pages still unknown (60) in batches as the shared Indexing API quota allows.
