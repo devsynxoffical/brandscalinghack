@@ -27,53 +27,75 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
       <ScalingSystemSection onOpenBooking={onOpenBooking} />
 
       {/* REPEATABLE GROWTH ENGINE (High Beam 3D Creative Grid Style) */}
-      <RepeatableGrowthSection
-        onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
-        onOpenInstagramModal={onOpenInstagramModal}
-      />
+      <div className="cv-auto">
+        <RepeatableGrowthSection
+          onOpenBooking={onOpenBooking}
+          onNavigate={onNavigate}
+          onOpenInstagramModal={onOpenInstagramModal}
+        />
+      </div>
 
       {/* EXPERIENCE ($50M+ IN AD SPEND & 4 CREDENTIAL CARDS) */}
-      <ExperienceStatsSection />
+      <div className="cv-auto">
+        <ExperienceStatsSection />
+      </div>
 
       {/* EVERY PIECE WORKS TOGETHER (Starting Zero, Existing Brands Funnel, Scaling Deck) */}
-      <EveryPieceWorksTogetherSection onOpenBooking={onOpenBooking} />
+      <div className="cv-auto">
+        <EveryPieceWorksTogetherSection onOpenBooking={onOpenBooking} />
+      </div>
 
       {/* RESULTS & PROOF (Instagram Live Proof) */}
-      <LiveResultsSection
-        onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
-        onOpenInstagramModal={onOpenInstagramModal}
-      />
+      <div className="cv-auto">
+        <LiveResultsSection
+          onOpenBooking={onOpenBooking}
+          onNavigate={onNavigate}
+          onOpenInstagramModal={onOpenInstagramModal}
+        />
+      </div>
 
       {/* LIVE SESSIONS & MASTERCLASSES (Video Theater Style) */}
-      <LiveSessionsSection onOpenVideo={onOpenVideo} />
+      <div className="cv-auto">
+        <LiveSessionsSection onOpenVideo={onOpenVideo} />
+      </div>
 
       {/* 04 — CASE STUDIES & LIVE INSTAGRAM REELS */}
-      <ClientCaseStudiesSection
-        isHomePage={true}
-        onOpenBooking={onOpenBooking}
-        onNavigate={onNavigate}
-        onOpenInstagramModal={onOpenInstagramModal}
-      />
+      <div className="cv-auto">
+        <ClientCaseStudiesSection
+          isHomePage={true}
+          onOpenBooking={onOpenBooking}
+          onNavigate={onNavigate}
+          onOpenInstagramModal={onOpenInstagramModal}
+        />
+      </div>
 
       {/* 08 — EXPERIENCE + FINAL CTA (Light Theme with 3D Flip Cards & Final CTA) */}
-      <ExperienceCtaSection onOpenBooking={onOpenBooking} />
+      <div className="cv-auto">
+        <ExperienceCtaSection onOpenBooking={onOpenBooking} />
+      </div>
 
       {/* DTC SCALING RESEARCH & PLAYBOOKS (Internal Linking Hub) */}
-      <BlogTeaserSection
-        onNavigate={onNavigate}
-        onOpenBooking={onOpenBooking}
-      />
+      <div className="cv-auto">
+        <BlogTeaserSection
+          onNavigate={onNavigate}
+          onOpenBooking={onOpenBooking}
+        />
+      </div>
 
       {/* MOST SEARCHED (links to the highest-demand services, tools and guides) */}
-      <MostSearchedSection onNavigate={onNavigate} />
+      <div className="cv-auto">
+        <MostSearchedSection onNavigate={onNavigate} />
+      </div>
 
       {/* 10 — FREQUENTLY ASKED QUESTIONS (Interactive Accordion) */}
-      <FaqSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
+      <div className="cv-auto">
+        <FaqSection onOpenBooking={onOpenBooking} onNavigate={onNavigate} />
+      </div>
 
       {/* KNOCKOUT 3D TYPOGRAPHY & AUTHORITY SCALE BANNER (Directly Upper Footer) */}
-      <KnockoutAuthorityBannerSection onOpenBooking={onOpenBooking} />
+      <div className="cv-auto">
+        <KnockoutAuthorityBannerSection onOpenBooking={onOpenBooking} />
+      </div>
     </div>
   );
 }

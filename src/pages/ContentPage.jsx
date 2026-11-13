@@ -93,7 +93,7 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
         {page.quickAnswer && (
           <section className="quick-answer" aria-label="Quick answer" style={{ ...card, borderLeft: '4px solid #ff5722', padding: '22px 24px', margin: '0 0 40px' }}>
             <h2 style={{ fontSize: '18px', fontWeight: 850, color: '#ffffff', margin: '0 0 10px' }}>{page.quickAnswer.question}</h2>
-            <p style={{ ...pStyle, margin: 0, color: '#e2e8f0' }}>{page.quickAnswer.answer}</p>
+            <p className="quick-answer" style={{ ...pStyle, margin: 0, color: '#e2e8f0' }}>{page.quickAnswer.answer}</p>
           </section>
         )}
 

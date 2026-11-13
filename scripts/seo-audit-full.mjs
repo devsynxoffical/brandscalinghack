@@ -34,7 +34,8 @@ const attr = (h, re) => { const m = h.match(re); return m ? m[1] : ''; };
 
 // Main content = the prerendered crawler view, minus the shared site nav and footer link lists
 function mainHtml(h) {
-  const i = h.indexOf('prerendered-route-view');
+  // the class name also appears in <head> (speakable selector), so match the element itself
+  const i = h.indexOf('<div class="prerendered-route-view"');
   let body = i > 0 ? h.slice(i) : h;
   const j = body.indexOf('<noscript');
   if (j > 0) body = body.slice(0, j);

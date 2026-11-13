@@ -1,7 +1,7 @@
 {
  "summary": {
   "label": "baseline",
-  "generated": "2026-11-13T09:24:55.273Z",
+  "generated": "2026-11-13T09:31:56.103Z",
   "pages": 242,
   "indexable": 153,
   "sitemapUrls": 153,
@@ -14,11 +14,12 @@
    "imagesNoAlt": 0,
    "missingOgOrTwitter": 0,
    "orphans": 2,
-   "thinMoneyPages": 2,
+   "thinMoneyPages": 1,
    "thinIndexable": 42,
    "indexableNotInSitemap": 0,
    "sitemapNotIndexable": 0,
-   "nearDuplicatePairs": 1
+   "nearDuplicatePairs": 1,
+   "brandFactMismatches": 3
   },
   "nearDuplicateBySection": {
    "about": {
@@ -28,8 +29,8 @@
    },
    "benchmarks": {
     "pages": 2,
-    "avg": 0.033,
-    "max": 0.033
+    "avg": 0.026,
+    "max": 0.026
    },
    "bfcm-ads-management": {
     "pages": 1,
@@ -38,8 +39,8 @@
    },
    "blog": {
     "pages": 30,
-    "avg": 0.01,
-    "max": 0.018
+    "avg": 0.006,
+    "max": 0.014
    },
    "book": {
     "pages": 1,
@@ -48,18 +49,18 @@
    },
    "case-studies": {
     "pages": 6,
-    "avg": 0.139,
-    "max": 0.456
+    "avg": 0.12,
+    "max": 0.453
    },
    "cases": {
     "pages": 37,
-    "avg": 0.062,
-    "max": 0.172
+    "avg": 0.041,
+    "max": 0.138
    },
    "compare": {
     "pages": 4,
-    "avg": 0.017,
-    "max": 0.03
+    "avg": 0.011,
+    "max": 0.024
    },
    "contact": {
     "pages": 1,
@@ -83,13 +84,13 @@
    },
    "for": {
     "pages": 16,
-    "avg": 0.029,
-    "max": 0.059
+    "avg": 0.023,
+    "max": 0.053
    },
    "glossary": {
     "pages": 16,
-    "avg": 0.02,
-    "max": 0.036
+    "avg": 0.013,
+    "max": 0.03
    },
    "google-shopping-ads-agency": {
     "pages": 1,
@@ -118,8 +119,8 @@
    },
    "locations": {
     "pages": 8,
-    "avg": 0.046,
-    "max": 0.07
+    "avg": 0.037,
+    "max": 0.062
    },
    "meta-ads-agency": {
     "pages": 1,
@@ -173,8 +174,8 @@
    },
    "tools": {
     "pages": 11,
-    "avg": 0.033,
-    "max": 0.058
+    "avg": 0.026,
+    "max": 0.052
    },
    "viral-creatives": {
     "pages": 1,
@@ -190,7 +191,7 @@
     "bytes": 15554
    },
    "llms-full.txt": {
-    "bytes": 1452674
+    "bytes": 1452010
    },
    "sitemap.xml": {
     "bytes": 762
@@ -219,181 +220,177 @@
   "thinMoneyPages": [
    [
     "https://www.brandscalinghacks.com/book",
-    497
-   ],
-   [
-    "https://www.brandscalinghacks.com/",
-    517
+    475
    ]
   ],
   "thinIndexable": [
    [
     "https://www.brandscalinghacks.com/book",
-    497
+    475
    ],
    [
     "https://www.brandscalinghacks.com/case-studies/apparel-fashion",
-    274
+    252
    ],
    [
     "https://www.brandscalinghacks.com/case-studies/fitness-health",
-    253
+    231
    ],
    [
     "https://www.brandscalinghacks.com/case-studies/skincare-beauty",
-    317
+    295
    ],
    [
     "https://www.brandscalinghacks.com/case-studies/supplements-nutrition",
-    241
+    219
    ],
    [
     "https://www.brandscalinghacks.com/cases/118k-first-month-scaling-uk-skincare-brand",
-    356
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/148k-day-best-day-whole-career-ending-up-phenomenal",
-    590
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women",
-    594
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond",
-    474
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/1st-day-november-seems-very-great-42k-day",
-    481
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/449221-last-49-days-newer-client-dropshipping-brands-starting",
-    421
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/5-crucial-things-learned-while-scaling-brand-105000-23-days",
     334
    ],
    [
-    "https://www.brandscalinghacks.com/cases/bombshell-update-100k-hit-month",
-    408
+    "https://www.brandscalinghacks.com/cases/148k-day-best-day-whole-career-ending-up-phenomenal",
+    568
    ],
    [
-    "https://www.brandscalinghacks.com/cases/brand-exploding-black-friday-20k-day-39-healthy-margins",
-    369
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders",
-    296
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry",
-    596
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/ecom-world-split-into-two-groups",
-    444
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/finally-built-million-dollar-brand-2022-ending-2-3",
-    461
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/finally-client-touched-1-6m-year-mark-insane-roas",
+    "https://www.brandscalinghacks.com/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women",
     572
    ],
    [
+    "https://www.brandscalinghacks.com/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond",
+    452
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/1st-day-november-seems-very-great-42k-day",
+    459
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/449221-last-49-days-newer-client-dropshipping-brands-starting",
+    399
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/5-crucial-things-learned-while-scaling-brand-105000-23-days",
+    312
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/bombshell-update-100k-hit-month",
+    386
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/brand-exploding-black-friday-20k-day-39-healthy-margins",
+    347
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders",
+    274
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry",
+    574
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/ecom-world-split-into-two-groups",
+    422
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/finally-built-million-dollar-brand-2022-ending-2-3",
+    439
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/finally-client-touched-1-6m-year-mark-insane-roas",
+    550
+   ],
+   [
     "https://www.brandscalinghacks.com/cases/finally-have-closed-117k-month-client",
-    271
+    249
    ],
    [
     "https://www.brandscalinghacks.com/cases/finally-have-taken-brand-128k-14days-insane-profits",
-    584
+    562
    ],
    [
     "https://www.brandscalinghacks.com/cases/finally-scale-client-almost-1m-sales-6-months",
-    350
+    328
    ],
    [
     "https://www.brandscalinghacks.com/cases/generated-61960-3-80-roas-single-day-what-you-can-learn-from-it",
-    581
+    559
    ],
    [
     "https://www.brandscalinghacks.com/cases/happy-monday-everyone-let-kick-off-week-some-serious-momentum",
-    433
+    411
    ],
    [
     "https://www.brandscalinghacks.com/cases/it-12-57-am-here-have-successfully-scaled-brand-early-bfcm",
-    380
+    358
    ],
    [
     "https://www.brandscalinghacks.com/cases/it-safe-say-figured-out-make-supplement-brand-print-money",
-    529
+    507
    ],
    [
     "https://www.brandscalinghacks.com/cases/journey-client-behind-touching-way-100000-month-mark",
-    564
+    542
    ],
    [
     "https://www.brandscalinghacks.com/cases/massive-success-once-again-didn-expected-dfy-program",
-    553
+    531
+   ],
+   [
+    "https://www.brandscalinghacks.com/cases/massive-win-books-98k-23-days",
+    578
    ],
    [
     "https://www.brandscalinghacks.com/cases/meet-com-clients-sasha-whom-have-been-helping-four",
-    374
+    352
    ],
    [
     "https://www.brandscalinghacks.com/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103",
-    395
+    373
    ],
    [
     "https://www.brandscalinghacks.com/cases/pov-curious-pulled-off-40669-sales-7-days-134-high-ticket",
-    498
+    476
    ],
    [
     "https://www.brandscalinghacks.com/cases/q4-here-it-biggest-money-making-season-year",
-    454
+    432
    ],
    [
     "https://www.brandscalinghacks.com/cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve",
-    458
+    436
    ],
    [
     "https://www.brandscalinghacks.com/cases/record-breaking-month-generating-137620-25-revenue-roas-3",
-    268
+    246
    ],
    [
     "https://www.brandscalinghacks.com/cases/rule-thumb-scaling-facebook-ads-hit-3-77-roas-body-contouring",
-    541
+    519
    ],
    [
     "https://www.brandscalinghacks.com/cases/these-5days-has-been-fire-spent-26594-generated-99576-profit",
-    532
-   ],
-   [
-    "https://www.brandscalinghacks.com/cases/why-do-fitness-brands-struggle-scale-hint-it-not-about-ads",
     510
    ],
    [
-    "https://www.brandscalinghacks.com/contact",
-    210
+    "https://www.brandscalinghacks.com/cases/why-do-fitness-brands-struggle-scale-hint-it-not-about-ads",
+    488
    ],
    [
-    "https://www.brandscalinghacks.com/",
-    517
+    "https://www.brandscalinghacks.com/contact",
+    188
    ],
    [
     "https://www.brandscalinghacks.com/locations",
-    584
+    562
    ],
    [
     "https://www.brandscalinghacks.com/privacy-policy",
-    70
+    48
    ],
    [
     "https://www.brandscalinghacks.com/terms",
-    69
+    47
    ]
   ],
   "indexableNotInSitemap": [],
@@ -402,1112 +399,31 @@
    {
     "a": "/case-studies/dropshipping-dtc",
     "b": "/case-studies",
-    "score": 0.456
+    "score": 0.453
    }
+  ],
+  "brandFactMismatches": [
+   [
+    "index.html",
+    [
+     "27 W 24th Street, Suite 702"
+    ]
+   ],
+   [
+    "llms.txt",
+    [
+     "team@brandscalinghacks.com"
+    ]
+   ],
+   [
+    "about/index.html",
+    [
+     "27 W 24th Street, Suite 702"
+    ]
+   ]
   ]
  },
- "uaChecks": [
-  {
-   "url": "/",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/meta-ads-agency",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/tiktok-ads-agency",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/tiktok-shop-agency",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/shopify-agency",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/cro-agency",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/growth",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/services",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/about",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/book",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/case-studies",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/blog",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/roas-calculator",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/tools",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/benchmarks/ecommerce-roas",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/blog/what-is-roas",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/blog/meta-ads-library",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/blog/performance-marketing-agency",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/for/skincare-beauty",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  },
-  {
-   "url": "/cases/structure-campaigns-50000-day-profits",
-   "Chrome": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Googlebot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Bingbot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "GPTBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "OAI-SearchBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ChatGPT-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "ClaudeBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Claude-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "PerplexityBot": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Perplexity-User": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Google-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "Applebot-Extended": {
-    "status": 200,
-    "sameMain": true
-   },
-   "CCBot": {
-    "status": 200,
-    "sameMain": true
-   }
-  }
- ],
+ "uaChecks": null,
  "pages": [
   {
    "url": "https://www.brandscalinghacks.com/about",
@@ -1516,7 +432,7 @@
    "titleLen": 58,
    "descLen": 150,
    "h1": 1,
-   "words": 665,
+   "words": 643,
    "linksIn": 10,
    "linksOut": 12,
    "jsonLdTypes": "AboutPage Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService ProfilePage Question SpeakableSpecification WebSite",
@@ -1537,8 +453,8 @@
    "titleLen": 58,
    "descLen": 138,
    "h1": 1,
-   "words": 1605,
-   "linksIn": 13,
+   "words": 1583,
+   "linksIn": 14,
    "linksOut": 24,
    "jsonLdTypes": "Answer Article BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1558,7 +474,7 @@
    "titleLen": 58,
    "descLen": 149,
    "h1": 1,
-   "words": 764,
+   "words": 742,
    "linksIn": 9,
    "linksOut": 12,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint FAQPage ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebSite",
@@ -1579,7 +495,7 @@
    "titleLen": 50,
    "descLen": 147,
    "h1": 1,
-   "words": 1607,
+   "words": 1585,
    "linksIn": 25,
    "linksOut": 35,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -1600,7 +516,7 @@
    "titleLen": 56,
    "descLen": 144,
    "h1": 1,
-   "words": 2608,
+   "words": 2586,
    "linksIn": 56,
    "linksOut": 22,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1621,7 +537,7 @@
    "titleLen": 54,
    "descLen": 148,
    "h1": 1,
-   "words": 2389,
+   "words": 2367,
    "linksIn": 6,
    "linksOut": 21,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1642,8 +558,8 @@
    "titleLen": 59,
    "descLen": 145,
    "h1": 1,
-   "words": 2006,
-   "linksIn": 8,
+   "words": 1984,
+   "linksIn": 9,
    "linksOut": 23,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1663,7 +579,7 @@
    "titleLen": 60,
    "descLen": 150,
    "h1": 1,
-   "words": 1869,
+   "words": 1847,
    "linksIn": 14,
    "linksOut": 21,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1684,7 +600,7 @@
    "titleLen": 56,
    "descLen": 145,
    "h1": 1,
-   "words": 1901,
+   "words": 1879,
    "linksIn": 10,
    "linksOut": 16,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1705,7 +621,7 @@
    "titleLen": 49,
    "descLen": 151,
    "h1": 1,
-   "words": 2078,
+   "words": 2056,
    "linksIn": 5,
    "linksOut": 23,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1726,7 +642,7 @@
    "titleLen": 56,
    "descLen": 148,
    "h1": 1,
-   "words": 2011,
+   "words": 1989,
    "linksIn": 108,
    "linksOut": 23,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1747,8 +663,8 @@
    "titleLen": 50,
    "descLen": 153,
    "h1": 1,
-   "words": 1816,
-   "linksIn": 14,
+   "words": 1794,
+   "linksIn": 15,
    "linksOut": 24,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1768,8 +684,8 @@
    "titleLen": 57,
    "descLen": 154,
    "h1": 1,
-   "words": 1854,
-   "linksIn": 11,
+   "words": 1832,
+   "linksIn": 12,
    "linksOut": 24,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1789,7 +705,7 @@
    "titleLen": 57,
    "descLen": 155,
    "h1": 1,
-   "words": 1782,
+   "words": 1760,
    "linksIn": 9,
    "linksOut": 24,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1810,8 +726,8 @@
    "titleLen": 56,
    "descLen": 142,
    "h1": 1,
-   "words": 2082,
-   "linksIn": 7,
+   "words": 2060,
+   "linksIn": 8,
    "linksOut": 26,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1831,8 +747,8 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 1824,
-   "linksIn": 13,
+   "words": 1802,
+   "linksIn": 14,
    "linksOut": 23,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1852,7 +768,7 @@
    "titleLen": 54,
    "descLen": 140,
    "h1": 1,
-   "words": 1105,
+   "words": 1083,
    "linksIn": 31,
    "linksOut": 29,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -1873,8 +789,8 @@
    "titleLen": 57,
    "descLen": 154,
    "h1": 1,
-   "words": 2103,
-   "linksIn": 8,
+   "words": 2081,
+   "linksIn": 9,
    "linksOut": 18,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -1894,7 +810,7 @@
    "titleLen": 51,
    "descLen": 154,
    "h1": 1,
-   "words": 1774,
+   "words": 1752,
    "linksIn": 10,
    "linksOut": 17,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1915,7 +831,7 @@
    "titleLen": 55,
    "descLen": 154,
    "h1": 1,
-   "words": 2820,
+   "words": 2798,
    "linksIn": 7,
    "linksOut": 20,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1933,10 +849,10 @@
    "url": "https://www.brandscalinghacks.com/blog/meta-ads-library",
    "indexable": true,
    "inSitemap": true,
-   "titleLen": 51,
-   "descLen": 159,
+   "titleLen": 60,
+   "descLen": 148,
    "h1": 1,
-   "words": 3091,
+   "words": 3069,
    "linksIn": 146,
    "linksOut": 18,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1947,7 +863,7 @@
    "lang": "en",
    "canonical": "https://www.brandscalinghacks.com/blog/meta-ads-library",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-   "title": "Meta Ads Library: How to Use It to Find Winning Ads",
+   "title": "Meta Ads Library: How We Find Winning Ads ($376K Case Study)",
    "h2": "Key takeaways | Video chapters | What is the Meta Ads Library? | How to find winning ads in the Meta Ads Library | The winning ad scorecard | Why those ads work: 5 patterns we copied | Our DTC Meta ads testing playbook | The 8 audience types we test | What to test in every ad | KPIs, test setup and when to kill an ad set | Scaling winners into a CBO campaign | The result: $376K in 25 days | Searching the library like a media buyer | Downloads, the API and when the library is not working | Frequently Asked Questions"
   },
   {
@@ -1957,7 +873,7 @@
    "titleLen": 55,
    "descLen": 155,
    "h1": 1,
-   "words": 1816,
+   "words": 1794,
    "linksIn": 11,
    "linksOut": 21,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1978,7 +894,7 @@
    "titleLen": 58,
    "descLen": 155,
    "h1": 1,
-   "words": 2143,
+   "words": 2121,
    "linksIn": 13,
    "linksOut": 23,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -1999,8 +915,8 @@
    "titleLen": 58,
    "descLen": 158,
    "h1": 1,
-   "words": 2256,
-   "linksIn": 22,
+   "words": 2234,
+   "linksIn": 23,
    "linksOut": 24,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -2020,7 +936,7 @@
    "titleLen": 51,
    "descLen": 152,
    "h1": 1,
-   "words": 1776,
+   "words": 1754,
    "linksIn": 10,
    "linksOut": 21,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -2041,8 +957,8 @@
    "titleLen": 50,
    "descLen": 158,
    "h1": 1,
-   "words": 2500,
-   "linksIn": 8,
+   "words": 2478,
+   "linksIn": 9,
    "linksOut": 22,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -2062,8 +978,8 @@
    "titleLen": 54,
    "descLen": 146,
    "h1": 1,
-   "words": 2116,
-   "linksIn": 34,
+   "words": 2094,
+   "linksIn": 35,
    "linksOut": 24,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -2083,7 +999,7 @@
    "titleLen": 58,
    "descLen": 153,
    "h1": 1,
-   "words": 1643,
+   "words": 1621,
    "linksIn": 39,
    "linksOut": 16,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -2104,7 +1020,7 @@
    "titleLen": 54,
    "descLen": 148,
    "h1": 1,
-   "words": 1791,
+   "words": 1769,
    "linksIn": 11,
    "linksOut": 19,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -2125,8 +1041,8 @@
    "titleLen": 58,
    "descLen": 155,
    "h1": 1,
-   "words": 2344,
-   "linksIn": 13,
+   "words": 2322,
+   "linksIn": 14,
    "linksOut": 22,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -2146,7 +1062,7 @@
    "titleLen": 51,
    "descLen": 153,
    "h1": 1,
-   "words": 1810,
+   "words": 1788,
    "linksIn": 14,
    "linksOut": 18,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -2167,7 +1083,7 @@
    "titleLen": 53,
    "descLen": 146,
    "h1": 1,
-   "words": 2586,
+   "words": 2564,
    "linksIn": 10,
    "linksOut": 22,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -2188,7 +1104,7 @@
    "titleLen": 59,
    "descLen": 152,
    "h1": 1,
-   "words": 1873,
+   "words": 1851,
    "linksIn": 7,
    "linksOut": 16,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -2209,8 +1125,8 @@
    "titleLen": 57,
    "descLen": 141,
    "h1": 1,
-   "words": 1865,
-   "linksIn": 69,
+   "words": 1843,
+   "linksIn": 70,
    "linksOut": 22,
    "jsonLdTypes": "Answer BlogPosting BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -2230,8 +1146,8 @@
    "titleLen": 51,
    "descLen": 147,
    "h1": 1,
-   "words": 497,
-   "linksIn": 77,
+   "words": 475,
+   "linksIn": 78,
    "linksOut": 6,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint EntryPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question Reservation ReserveAction Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -2251,7 +1167,7 @@
    "titleLen": 51,
    "descLen": 148,
    "h1": 1,
-   "words": 274,
+   "words": 252,
    "linksIn": 20,
    "linksOut": 17,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -2272,7 +1188,7 @@
    "titleLen": 50,
    "descLen": 146,
    "h1": 1,
-   "words": 1064,
+   "words": 1042,
    "linksIn": 109,
    "linksOut": 102,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -2293,7 +1209,7 @@
    "titleLen": 51,
    "descLen": 147,
    "h1": 1,
-   "words": 253,
+   "words": 231,
    "linksIn": 15,
    "linksOut": 16,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -2314,7 +1230,7 @@
    "titleLen": 56,
    "descLen": 144,
    "h1": 1,
-   "words": 1404,
+   "words": 1382,
    "linksIn": 189,
    "linksOut": 129,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -2335,7 +1251,7 @@
    "titleLen": 52,
    "descLen": 151,
    "h1": 1,
-   "words": 317,
+   "words": 295,
    "linksIn": 26,
    "linksOut": 21,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -2356,7 +1272,7 @@
    "titleLen": 54,
    "descLen": 154,
    "h1": 1,
-   "words": 241,
+   "words": 219,
    "linksIn": 17,
    "linksOut": 15,
    "jsonLdTypes": "BreadcrumbList CollectionPage ContactPoint ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -2377,7 +1293,7 @@
    "titleLen": 59,
    "descLen": 145,
    "h1": 1,
-   "words": 267,
+   "words": 245,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2398,7 +1314,7 @@
    "titleLen": 55,
    "descLen": 153,
    "h1": 1,
-   "words": 356,
+   "words": 334,
    "linksIn": 16,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2419,7 +1335,7 @@
    "titleLen": 55,
    "descLen": 154,
    "h1": 1,
-   "words": 590,
+   "words": 568,
    "linksIn": 14,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2440,7 +1356,7 @@
    "titleLen": 46,
    "descLen": 154,
    "h1": 1,
-   "words": 260,
+   "words": 238,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2461,7 +1377,7 @@
    "titleLen": 57,
    "descLen": 154,
    "h1": 1,
-   "words": 594,
+   "words": 572,
    "linksIn": 15,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2482,7 +1398,7 @@
    "titleLen": 60,
    "descLen": 148,
    "h1": 1,
-   "words": 474,
+   "words": 452,
    "linksIn": 13,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2503,7 +1419,7 @@
    "titleLen": 55,
    "descLen": 152,
    "h1": 1,
-   "words": 481,
+   "words": 459,
    "linksIn": 31,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2524,7 +1440,7 @@
    "titleLen": 54,
    "descLen": 141,
    "h1": 1,
-   "words": 342,
+   "words": 320,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2545,7 +1461,7 @@
    "titleLen": 58,
    "descLen": 152,
    "h1": 1,
-   "words": 329,
+   "words": 307,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2566,7 +1482,7 @@
    "titleLen": 56,
    "descLen": 154,
    "h1": 1,
-   "words": 663,
+   "words": 641,
    "linksIn": 19,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2587,7 +1503,7 @@
    "titleLen": 57,
    "descLen": 150,
    "h1": 1,
-   "words": 231,
+   "words": 209,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2608,7 +1524,7 @@
    "titleLen": 49,
    "descLen": 151,
    "h1": 1,
-   "words": 200,
+   "words": 178,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2629,7 +1545,7 @@
    "titleLen": 60,
    "descLen": 147,
    "h1": 1,
-   "words": 421,
+   "words": 399,
    "linksIn": 10,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2650,7 +1566,7 @@
    "titleLen": 60,
    "descLen": 148,
    "h1": 1,
-   "words": 334,
+   "words": 312,
    "linksIn": 16,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2671,7 +1587,7 @@
    "titleLen": 56,
    "descLen": 155,
    "h1": 1,
-   "words": 308,
+   "words": 286,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2692,7 +1608,7 @@
    "titleLen": 54,
    "descLen": 150,
    "h1": 1,
-   "words": 325,
+   "words": 303,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2713,7 +1629,7 @@
    "titleLen": 55,
    "descLen": 149,
    "h1": 1,
-   "words": 300,
+   "words": 278,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2734,7 +1650,7 @@
    "titleLen": 53,
    "descLen": 153,
    "h1": 1,
-   "words": 323,
+   "words": 301,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2755,7 +1671,7 @@
    "titleLen": 52,
    "descLen": 150,
    "h1": 1,
-   "words": 330,
+   "words": 308,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2776,7 +1692,7 @@
    "titleLen": 52,
    "descLen": 158,
    "h1": 1,
-   "words": 433,
+   "words": 411,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2797,7 +1713,7 @@
    "titleLen": 49,
    "descLen": 131,
    "h1": 1,
-   "words": 306,
+   "words": 284,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2818,7 +1734,7 @@
    "titleLen": 56,
    "descLen": 149,
    "h1": 1,
-   "words": 215,
+   "words": 193,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2839,7 +1755,7 @@
    "titleLen": 46,
    "descLen": 149,
    "h1": 1,
-   "words": 226,
+   "words": 204,
    "linksIn": 0,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2860,7 +1776,7 @@
    "titleLen": 50,
    "descLen": 153,
    "h1": 1,
-   "words": 408,
+   "words": 386,
    "linksIn": 11,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2881,7 +1797,7 @@
    "titleLen": 54,
    "descLen": 151,
    "h1": 1,
-   "words": 369,
+   "words": 347,
    "linksIn": 27,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2902,7 +1818,7 @@
    "titleLen": 59,
    "descLen": 143,
    "h1": 1,
-   "words": 195,
+   "words": 173,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2923,7 +1839,7 @@
    "titleLen": 54,
    "descLen": 141,
    "h1": 1,
-   "words": 263,
+   "words": 241,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -2944,7 +1860,7 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 296,
+   "words": 274,
    "linksIn": 14,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2965,7 +1881,7 @@
    "titleLen": 54,
    "descLen": 129,
    "h1": 1,
-   "words": 261,
+   "words": 239,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -2986,7 +1902,7 @@
    "titleLen": 56,
    "descLen": 146,
    "h1": 1,
-   "words": 246,
+   "words": 224,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3007,7 +1923,7 @@
    "titleLen": 54,
    "descLen": 153,
    "h1": 1,
-   "words": 272,
+   "words": 250,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3028,7 +1944,7 @@
    "titleLen": 53,
    "descLen": 151,
    "h1": 1,
-   "words": 365,
+   "words": 343,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3049,7 +1965,7 @@
    "titleLen": 51,
    "descLen": 153,
    "h1": 1,
-   "words": 627,
+   "words": 605,
    "linksIn": 5,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3070,7 +1986,7 @@
    "titleLen": 50,
    "descLen": 154,
    "h1": 1,
-   "words": 596,
+   "words": 574,
    "linksIn": 8,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3091,7 +2007,7 @@
    "titleLen": 46,
    "descLen": 153,
    "h1": 1,
-   "words": 406,
+   "words": 384,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3112,7 +2028,7 @@
    "titleLen": 57,
    "descLen": 159,
    "h1": 1,
-   "words": 326,
+   "words": 304,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3133,7 +2049,7 @@
    "titleLen": 58,
    "descLen": 154,
    "h1": 1,
-   "words": 444,
+   "words": 422,
    "linksIn": 31,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3154,7 +2070,7 @@
    "titleLen": 59,
    "descLen": 153,
    "h1": 1,
-   "words": 212,
+   "words": 190,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3175,7 +2091,7 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 295,
+   "words": 273,
    "linksIn": 6,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3196,7 +2112,7 @@
    "titleLen": 55,
    "descLen": 150,
    "h1": 1,
-   "words": 180,
+   "words": 158,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3217,7 +2133,7 @@
    "titleLen": 60,
    "descLen": 154,
    "h1": 1,
-   "words": 461,
+   "words": 439,
    "linksIn": 26,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3238,7 +2154,7 @@
    "titleLen": 54,
    "descLen": 148,
    "h1": 1,
-   "words": 572,
+   "words": 550,
    "linksIn": 11,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3259,7 +2175,7 @@
    "titleLen": 60,
    "descLen": 151,
    "h1": 1,
-   "words": 233,
+   "words": 211,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3280,7 +2196,7 @@
    "titleLen": 59,
    "descLen": 152,
    "h1": 1,
-   "words": 271,
+   "words": 249,
    "linksIn": 12,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3301,7 +2217,7 @@
    "titleLen": 58,
    "descLen": 150,
    "h1": 1,
-   "words": 584,
+   "words": 562,
    "linksIn": 7,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3322,7 +2238,7 @@
    "titleLen": 53,
    "descLen": 154,
    "h1": 1,
-   "words": 472,
+   "words": 450,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3343,7 +2259,7 @@
    "titleLen": 57,
    "descLen": 154,
    "h1": 1,
-   "words": 350,
+   "words": 328,
    "linksIn": 4,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3364,7 +2280,7 @@
    "titleLen": 59,
    "descLen": 151,
    "h1": 1,
-   "words": 372,
+   "words": 350,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3385,7 +2301,7 @@
    "titleLen": 56,
    "descLen": 153,
    "h1": 1,
-   "words": 341,
+   "words": 319,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3406,7 +2322,7 @@
    "titleLen": 53,
    "descLen": 154,
    "h1": 1,
-   "words": 266,
+   "words": 244,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3427,7 +2343,7 @@
    "titleLen": 56,
    "descLen": 153,
    "h1": 1,
-   "words": 344,
+   "words": 322,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3448,7 +2364,7 @@
    "titleLen": 58,
    "descLen": 153,
    "h1": 1,
-   "words": 581,
+   "words": 559,
    "linksIn": 36,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3469,7 +2385,7 @@
    "titleLen": 56,
    "descLen": 151,
    "h1": 1,
-   "words": 463,
+   "words": 441,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3490,7 +2406,7 @@
    "titleLen": 47,
    "descLen": 148,
    "h1": 1,
-   "words": 178,
+   "words": 156,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3511,7 +2427,7 @@
    "titleLen": 58,
    "descLen": 150,
    "h1": 1,
-   "words": 190,
+   "words": 168,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3532,7 +2448,7 @@
    "titleLen": 59,
    "descLen": 149,
    "h1": 1,
-   "words": 249,
+   "words": 227,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3553,7 +2469,7 @@
    "titleLen": 58,
    "descLen": 153,
    "h1": 1,
-   "words": 433,
+   "words": 411,
    "linksIn": 34,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3574,7 +2490,7 @@
    "titleLen": 53,
    "descLen": 158,
    "h1": 1,
-   "words": 243,
+   "words": 221,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3595,7 +2511,7 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 296,
+   "words": 274,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3616,7 +2532,7 @@
    "titleLen": 55,
    "descLen": 155,
    "h1": 1,
-   "words": 318,
+   "words": 296,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3637,7 +2553,7 @@
    "titleLen": 58,
    "descLen": 152,
    "h1": 1,
-   "words": 358,
+   "words": 336,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3658,7 +2574,7 @@
    "titleLen": 46,
    "descLen": 131,
    "h1": 1,
-   "words": 209,
+   "words": 187,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3679,7 +2595,7 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 613,
+   "words": 591,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3700,7 +2616,7 @@
    "titleLen": 49,
    "descLen": 145,
    "h1": 1,
-   "words": 244,
+   "words": 222,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3721,7 +2637,7 @@
    "titleLen": 54,
    "descLen": 131,
    "h1": 1,
-   "words": 265,
+   "words": 243,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3742,7 +2658,7 @@
    "titleLen": 54,
    "descLen": 140,
    "h1": 1,
-   "words": 329,
+   "words": 307,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3763,7 +2679,7 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 736,
+   "words": 714,
    "linksIn": 8,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3784,7 +2700,7 @@
    "titleLen": 55,
    "descLen": 154,
    "h1": 1,
-   "words": 388,
+   "words": 366,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3805,7 +2721,7 @@
    "titleLen": 60,
    "descLen": 154,
    "h1": 1,
-   "words": 380,
+   "words": 358,
    "linksIn": 16,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3826,7 +2742,7 @@
    "titleLen": 57,
    "descLen": 153,
    "h1": 1,
-   "words": 529,
+   "words": 507,
    "linksIn": 14,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3847,7 +2763,7 @@
    "titleLen": 60,
    "descLen": 152,
    "h1": 1,
-   "words": 564,
+   "words": 542,
    "linksIn": 8,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3868,7 +2784,7 @@
    "titleLen": 59,
    "descLen": 154,
    "h1": 1,
-   "words": 269,
+   "words": 247,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3889,7 +2805,7 @@
    "titleLen": 54,
    "descLen": 151,
    "h1": 1,
-   "words": 278,
+   "words": 256,
    "linksIn": 0,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3910,7 +2826,7 @@
    "titleLen": 55,
    "descLen": 151,
    "h1": 1,
-   "words": 212,
+   "words": 190,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3931,7 +2847,7 @@
    "titleLen": 57,
    "descLen": 154,
    "h1": 1,
-   "words": 259,
+   "words": 237,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -3952,7 +2868,7 @@
    "titleLen": 41,
    "descLen": 149,
    "h1": 1,
-   "words": 260,
+   "words": 238,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3973,7 +2889,7 @@
    "titleLen": 58,
    "descLen": 148,
    "h1": 1,
-   "words": 321,
+   "words": 299,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -3994,7 +2910,7 @@
    "titleLen": 48,
    "descLen": 153,
    "h1": 1,
-   "words": 391,
+   "words": 369,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4015,7 +2931,7 @@
    "titleLen": 56,
    "descLen": 153,
    "h1": 1,
-   "words": 261,
+   "words": 239,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4036,7 +2952,7 @@
    "titleLen": 52,
    "descLen": 151,
    "h1": 1,
-   "words": 553,
+   "words": 531,
    "linksIn": 8,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4057,7 +2973,7 @@
    "titleLen": 51,
    "descLen": 150,
    "h1": 1,
-   "words": 600,
+   "words": 578,
    "linksIn": 8,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4078,7 +2994,7 @@
    "titleLen": 46,
    "descLen": 153,
    "h1": 1,
-   "words": 417,
+   "words": 395,
    "linksIn": 0,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4099,7 +3015,7 @@
    "titleLen": 56,
    "descLen": 144,
    "h1": 1,
-   "words": 357,
+   "words": 335,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4120,7 +3036,7 @@
    "titleLen": 58,
    "descLen": 152,
    "h1": 1,
-   "words": 374,
+   "words": 352,
    "linksIn": 8,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4141,7 +3057,7 @@
    "titleLen": 59,
    "descLen": 147,
    "h1": 1,
-   "words": 389,
+   "words": 367,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4162,7 +3078,7 @@
    "titleLen": 59,
    "descLen": 149,
    "h1": 1,
-   "words": 290,
+   "words": 268,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4183,7 +3099,7 @@
    "titleLen": 60,
    "descLen": 152,
    "h1": 1,
-   "words": 411,
+   "words": 389,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4204,7 +3120,7 @@
    "titleLen": 50,
    "descLen": 152,
    "h1": 1,
-   "words": 395,
+   "words": 373,
    "linksIn": 10,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4225,7 +3141,7 @@
    "titleLen": 57,
    "descLen": 153,
    "h1": 1,
-   "words": 398,
+   "words": 376,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4246,7 +3162,7 @@
    "titleLen": 56,
    "descLen": 128,
    "h1": 1,
-   "words": 285,
+   "words": 263,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4267,7 +3183,7 @@
    "titleLen": 49,
    "descLen": 152,
    "h1": 1,
-   "words": 522,
+   "words": 500,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4288,7 +3204,7 @@
    "titleLen": 49,
    "descLen": 133,
    "h1": 1,
-   "words": 265,
+   "words": 243,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4309,7 +3225,7 @@
    "titleLen": 56,
    "descLen": 150,
    "h1": 1,
-   "words": 326,
+   "words": 304,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4330,7 +3246,7 @@
    "titleLen": 60,
    "descLen": 149,
    "h1": 1,
-   "words": 320,
+   "words": 298,
    "linksIn": 0,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4351,7 +3267,7 @@
    "titleLen": 56,
    "descLen": 150,
    "h1": 1,
-   "words": 271,
+   "words": 249,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4372,7 +3288,7 @@
    "titleLen": 57,
    "descLen": 151,
    "h1": 1,
-   "words": 498,
+   "words": 476,
    "linksIn": 3,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4393,7 +3309,7 @@
    "titleLen": 56,
    "descLen": 153,
    "h1": 1,
-   "words": 454,
+   "words": 432,
    "linksIn": 14,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4414,7 +3330,7 @@
    "titleLen": 59,
    "descLen": 154,
    "h1": 1,
-   "words": 458,
+   "words": 436,
    "linksIn": 14,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4435,7 +3351,7 @@
    "titleLen": 52,
    "descLen": 151,
    "h1": 1,
-   "words": 300,
+   "words": 278,
    "linksIn": 0,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4456,7 +3372,7 @@
    "titleLen": 60,
    "descLen": 150,
    "h1": 1,
-   "words": 268,
+   "words": 246,
    "linksIn": 13,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4477,7 +3393,7 @@
    "titleLen": 52,
    "descLen": 148,
    "h1": 1,
-   "words": 541,
+   "words": 519,
    "linksIn": 9,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4498,7 +3414,7 @@
    "titleLen": 58,
    "descLen": 151,
    "h1": 1,
-   "words": 223,
+   "words": 201,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4519,7 +3435,7 @@
    "titleLen": 44,
    "descLen": 142,
    "h1": 1,
-   "words": 203,
+   "words": 181,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4540,7 +3456,7 @@
    "titleLen": 53,
    "descLen": 141,
    "h1": 1,
-   "words": 256,
+   "words": 234,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4561,7 +3477,7 @@
    "titleLen": 54,
    "descLen": 150,
    "h1": 1,
-   "words": 252,
+   "words": 230,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4582,7 +3498,7 @@
    "titleLen": 60,
    "descLen": 150,
    "h1": 1,
-   "words": 306,
+   "words": 284,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4603,7 +3519,7 @@
    "titleLen": 51,
    "descLen": 154,
    "h1": 1,
-   "words": 300,
+   "words": 278,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4624,7 +3540,7 @@
    "titleLen": 56,
    "descLen": 155,
    "h1": 1,
-   "words": 513,
+   "words": 491,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4645,7 +3561,7 @@
    "titleLen": 55,
    "descLen": 154,
    "h1": 1,
-   "words": 285,
+   "words": 263,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4666,7 +3582,7 @@
    "titleLen": 58,
    "descLen": 152,
    "h1": 1,
-   "words": 638,
+   "words": 616,
    "linksIn": 9,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4687,7 +3603,7 @@
    "titleLen": 42,
    "descLen": 148,
    "h1": 1,
-   "words": 175,
+   "words": 153,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4708,7 +3624,7 @@
    "titleLen": 59,
    "descLen": 153,
    "h1": 1,
-   "words": 301,
+   "words": 279,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4729,7 +3645,7 @@
    "titleLen": 58,
    "descLen": 152,
    "h1": 1,
-   "words": 532,
+   "words": 510,
    "linksIn": 42,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4750,7 +3666,7 @@
    "titleLen": 58,
    "descLen": 153,
    "h1": 1,
-   "words": 308,
+   "words": 286,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4771,7 +3687,7 @@
    "titleLen": 52,
    "descLen": 153,
    "h1": 1,
-   "words": 279,
+   "words": 257,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4792,7 +3708,7 @@
    "titleLen": 49,
    "descLen": 154,
    "h1": 1,
-   "words": 201,
+   "words": 179,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4813,7 +3729,7 @@
    "titleLen": 52,
    "descLen": 151,
    "h1": 1,
-   "words": 185,
+   "words": 163,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4834,7 +3750,7 @@
    "titleLen": 58,
    "descLen": 147,
    "h1": 1,
-   "words": 310,
+   "words": 288,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4855,7 +3771,7 @@
    "titleLen": 56,
    "descLen": 154,
    "h1": 1,
-   "words": 533,
+   "words": 511,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4876,7 +3792,7 @@
    "titleLen": 60,
    "descLen": 146,
    "h1": 1,
-   "words": 262,
+   "words": 240,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4897,7 +3813,7 @@
    "titleLen": 54,
    "descLen": 150,
    "h1": 1,
-   "words": 211,
+   "words": 189,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -4918,7 +3834,7 @@
    "titleLen": 52,
    "descLen": 150,
    "h1": 1,
-   "words": 227,
+   "words": 205,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4939,7 +3855,7 @@
    "titleLen": 52,
    "descLen": 151,
    "h1": 1,
-   "words": 510,
+   "words": 488,
    "linksIn": 7,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4960,7 +3876,7 @@
    "titleLen": 57,
    "descLen": 158,
    "h1": 1,
-   "words": 534,
+   "words": 512,
    "linksIn": 13,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -4981,7 +3897,7 @@
    "titleLen": 60,
    "descLen": 149,
    "h1": 1,
-   "words": 438,
+   "words": 416,
    "linksIn": 2,
    "linksOut": 11,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing WebPage WebSite",
@@ -5002,7 +3918,7 @@
    "titleLen": 58,
    "descLen": 150,
    "h1": 1,
-   "words": 357,
+   "words": 335,
    "linksIn": 2,
    "linksOut": 10,
    "jsonLdTypes": "Article BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService Thing VideoObject WebPage WebSite",
@@ -5023,7 +3939,7 @@
    "titleLen": 56,
    "descLen": 152,
    "h1": 1,
-   "words": 1699,
+   "words": 1677,
    "linksIn": 15,
    "linksOut": 24,
    "jsonLdTypes": "Answer Article BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5044,7 +3960,7 @@
    "titleLen": 56,
    "descLen": 145,
    "h1": 1,
-   "words": 1518,
+   "words": 1496,
    "linksIn": 12,
    "linksOut": 21,
    "jsonLdTypes": "Answer Article BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5065,7 +3981,7 @@
    "titleLen": 56,
    "descLen": 146,
    "h1": 1,
-   "words": 1604,
+   "words": 1582,
    "linksIn": 15,
    "linksOut": 21,
    "jsonLdTypes": "Answer Article BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5086,8 +4002,8 @@
    "titleLen": 52,
    "descLen": 153,
    "h1": 1,
-   "words": 1594,
-   "linksIn": 15,
+   "words": 1572,
+   "linksIn": 16,
    "linksOut": 20,
    "jsonLdTypes": "Answer Article BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5107,7 +4023,7 @@
    "titleLen": 49,
    "descLen": 150,
    "h1": 1,
-   "words": 210,
+   "words": 188,
    "linksIn": 6,
    "linksOut": 5,
    "jsonLdTypes": "BreadcrumbList ContactPage ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService WebSite",
@@ -5128,7 +4044,7 @@
    "titleLen": 50,
    "descLen": 146,
    "h1": 1,
-   "words": 1660,
+   "words": 1638,
    "linksIn": 31,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5149,8 +4065,8 @@
    "titleLen": 59,
    "descLen": 155,
    "h1": 1,
-   "words": 1640,
-   "linksIn": 33,
+   "words": 1618,
+   "linksIn": 34,
    "linksOut": 32,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5170,7 +4086,7 @@
    "titleLen": 48,
    "descLen": 153,
    "h1": 1,
-   "words": 1572,
+   "words": 1550,
    "linksIn": 21,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5191,8 +4107,8 @@
    "titleLen": 56,
    "descLen": 144,
    "h1": 1,
-   "words": 1497,
-   "linksIn": 22,
+   "words": 1475,
+   "linksIn": 23,
    "linksOut": 32,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5212,7 +4128,7 @@
    "titleLen": 53,
    "descLen": 151,
    "h1": 1,
-   "words": 1537,
+   "words": 1515,
    "linksIn": 18,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5233,7 +4149,7 @@
    "titleLen": 58,
    "descLen": 139,
    "h1": 1,
-   "words": 1588,
+   "words": 1566,
    "linksIn": 18,
    "linksOut": 35,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5254,7 +4170,7 @@
    "titleLen": 55,
    "descLen": 150,
    "h1": 1,
-   "words": 1536,
+   "words": 1514,
    "linksIn": 18,
    "linksOut": 34,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5275,7 +4191,7 @@
    "titleLen": 54,
    "descLen": 142,
    "h1": 1,
-   "words": 1502,
+   "words": 1480,
    "linksIn": 24,
    "linksOut": 31,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5296,7 +4212,7 @@
    "titleLen": 54,
    "descLen": 150,
    "h1": 1,
-   "words": 1570,
+   "words": 1548,
    "linksIn": 18,
    "linksOut": 31,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5317,7 +4233,7 @@
    "titleLen": 55,
    "descLen": 150,
    "h1": 1,
-   "words": 1580,
+   "words": 1558,
    "linksIn": 21,
    "linksOut": 33,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5338,7 +4254,7 @@
    "titleLen": 53,
    "descLen": 154,
    "h1": 1,
-   "words": 1557,
+   "words": 1535,
    "linksIn": 24,
    "linksOut": 30,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5359,7 +4275,7 @@
    "titleLen": 54,
    "descLen": 146,
    "h1": 1,
-   "words": 936,
+   "words": 914,
    "linksIn": 16,
    "linksOut": 21,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint FAQPage ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebSite",
@@ -5380,7 +4296,7 @@
    "titleLen": 44,
    "descLen": 148,
    "h1": 1,
-   "words": 1525,
+   "words": 1503,
    "linksIn": 19,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5401,7 +4317,7 @@
    "titleLen": 50,
    "descLen": 151,
    "h1": 1,
-   "words": 1479,
+   "words": 1457,
    "linksIn": 17,
    "linksOut": 28,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5422,7 +4338,7 @@
    "titleLen": 54,
    "descLen": 152,
    "h1": 1,
-   "words": 1545,
+   "words": 1523,
    "linksIn": 21,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5443,7 +4359,7 @@
    "titleLen": 50,
    "descLen": 153,
    "h1": 1,
-   "words": 1735,
+   "words": 1713,
    "linksIn": 21,
    "linksOut": 28,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5464,8 +4380,8 @@
    "titleLen": 47,
    "descLen": 140,
    "h1": 1,
-   "words": 1807,
-   "linksIn": 24,
+   "words": 1785,
+   "linksIn": 25,
    "linksOut": 32,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5485,7 +4401,7 @@
    "titleLen": 49,
    "descLen": 153,
    "h1": 1,
-   "words": 1565,
+   "words": 1543,
    "linksIn": 16,
    "linksOut": 30,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5506,8 +4422,8 @@
    "titleLen": 49,
    "descLen": 152,
    "h1": 1,
-   "words": 1573,
-   "linksIn": 21,
+   "words": 1551,
+   "linksIn": 22,
    "linksOut": 31,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5527,7 +4443,7 @@
    "titleLen": 59,
    "descLen": 141,
    "h1": 1,
-   "words": 1290,
+   "words": 1268,
    "linksIn": 16,
    "linksOut": 19,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5548,7 +4464,7 @@
    "titleLen": 56,
    "descLen": 146,
    "h1": 1,
-   "words": 1244,
+   "words": 1222,
    "linksIn": 31,
    "linksOut": 19,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5569,7 +4485,7 @@
    "titleLen": 56,
    "descLen": 140,
    "h1": 1,
-   "words": 1320,
+   "words": 1298,
    "linksIn": 16,
    "linksOut": 18,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5590,7 +4506,7 @@
    "titleLen": 55,
    "descLen": 145,
    "h1": 1,
-   "words": 1321,
+   "words": 1299,
    "linksIn": 19,
    "linksOut": 25,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5611,7 +4527,7 @@
    "titleLen": 54,
    "descLen": 149,
    "h1": 1,
-   "words": 1311,
+   "words": 1289,
    "linksIn": 18,
    "linksOut": 20,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5632,8 +4548,8 @@
    "titleLen": 59,
    "descLen": 148,
    "h1": 1,
-   "words": 1300,
-   "linksIn": 53,
+   "words": 1278,
+   "linksIn": 54,
    "linksOut": 20,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5653,7 +4569,7 @@
    "titleLen": 60,
    "descLen": 144,
    "h1": 1,
-   "words": 1296,
+   "words": 1274,
    "linksIn": 9,
    "linksOut": 21,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5674,7 +4590,7 @@
    "titleLen": 53,
    "descLen": 147,
    "h1": 1,
-   "words": 1288,
+   "words": 1266,
    "linksIn": 47,
    "linksOut": 17,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5695,7 +4611,7 @@
    "titleLen": 51,
    "descLen": 153,
    "h1": 1,
-   "words": 1287,
+   "words": 1265,
    "linksIn": 10,
    "linksOut": 17,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5716,7 +4632,7 @@
    "titleLen": 55,
    "descLen": 151,
    "h1": 1,
-   "words": 1254,
+   "words": 1232,
    "linksIn": 10,
    "linksOut": 19,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5737,7 +4653,7 @@
    "titleLen": 56,
    "descLen": 146,
    "h1": 1,
-   "words": 1253,
+   "words": 1231,
    "linksIn": 16,
    "linksOut": 23,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5758,7 +4674,7 @@
    "titleLen": 55,
    "descLen": 149,
    "h1": 1,
-   "words": 1287,
+   "words": 1265,
    "linksIn": 14,
    "linksOut": 20,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5779,7 +4695,7 @@
    "titleLen": 55,
    "descLen": 151,
    "h1": 1,
-   "words": 887,
+   "words": 865,
    "linksIn": 16,
    "linksOut": 22,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint DefinedTerm DefinedTermSet FAQPage ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebSite",
@@ -5800,7 +4716,7 @@
    "titleLen": 60,
    "descLen": 145,
    "h1": 1,
-   "words": 1260,
+   "words": 1238,
    "linksIn": 20,
    "linksOut": 20,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5821,8 +4737,8 @@
    "titleLen": 55,
    "descLen": 151,
    "h1": 1,
-   "words": 1363,
-   "linksIn": 45,
+   "words": 1341,
+   "linksIn": 46,
    "linksOut": 22,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5842,7 +4758,7 @@
    "titleLen": 55,
    "descLen": 147,
    "h1": 1,
-   "words": 1303,
+   "words": 1281,
    "linksIn": 10,
    "linksOut": 22,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint DefinedTerm FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
@@ -5863,8 +4779,8 @@
    "titleLen": 50,
    "descLen": 151,
    "h1": 1,
-   "words": 1633,
-   "linksIn": 40,
+   "words": 1611,
+   "linksIn": 41,
    "linksOut": 33,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5884,8 +4800,8 @@
    "titleLen": 58,
    "descLen": 147,
    "h1": 1,
-   "words": 988,
-   "linksIn": 160,
+   "words": 966,
+   "linksIn": 161,
    "linksOut": 34,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer OfferCatalog Organization Person PostalAddress ProfessionalService Question Service WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5905,9 +4821,9 @@
    "titleLen": 58,
    "descLen": 146,
    "h1": 1,
-   "words": 517,
+   "words": 1003,
    "linksIn": 68,
-   "linksOut": 9,
+   "linksOut": 33,
    "jsonLdTypes": "Answer ContactPoint FAQPage ImageObject Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
    "imagesNoAlt": 0,
@@ -5917,7 +4833,7 @@
    "canonical": "https://www.brandscalinghacks.com/",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "title": "Performance Marketing Agency for Ecommerce | Brand Scaling",
-   "h2": ""
+   "h2": "What a Performance Marketing Agency Does for an Ecommerce Brand | Results from Real Ad Accounts | Services: One Growth Engine, Six Levers | Most searched | Latest Ecommerce Scaling Playbooks | Frequently Asked Questions"
   },
   {
    "url": "https://www.brandscalinghacks.com/influencer-marketing-agency",
@@ -5926,7 +4842,7 @@
    "titleLen": 53,
    "descLen": 153,
    "h1": 1,
-   "words": 1744,
+   "words": 1722,
    "linksIn": 24,
    "linksOut": 30,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -5947,8 +4863,8 @@
    "titleLen": 48,
    "descLen": 154,
    "h1": 1,
-   "words": 1572,
-   "linksIn": 51,
+   "words": 1550,
+   "linksIn": 52,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -5968,8 +4884,8 @@
    "titleLen": 52,
    "descLen": 146,
    "h1": 1,
-   "words": 584,
-   "linksIn": 9,
+   "words": 562,
+   "linksIn": 10,
    "linksOut": 13,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint FAQPage ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebSite",
    "jsonLdErrors": 0,
@@ -5989,7 +4905,7 @@
    "titleLen": 49,
    "descLen": 153,
    "h1": 1,
-   "words": 1442,
+   "words": 1420,
    "linksIn": 24,
    "linksOut": 26,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint Country FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -6010,7 +4926,7 @@
    "titleLen": 54,
    "descLen": 155,
    "h1": 1,
-   "words": 1318,
+   "words": 1296,
    "linksIn": 25,
    "linksOut": 26,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification State WebPage WebSite",
@@ -6031,7 +4947,7 @@
    "titleLen": 48,
    "descLen": 149,
    "h1": 1,
-   "words": 1333,
+   "words": 1311,
    "linksIn": 25,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification State WebPage WebSite",
@@ -6052,8 +4968,8 @@
    "titleLen": 51,
    "descLen": 148,
    "h1": 1,
-   "words": 1317,
-   "linksIn": 27,
+   "words": 1295,
+   "linksIn": 28,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification State WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6073,7 +4989,7 @@
    "titleLen": 56,
    "descLen": 155,
    "h1": 1,
-   "words": 1309,
+   "words": 1287,
    "linksIn": 25,
    "linksOut": 31,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification State WebPage WebSite",
@@ -6094,7 +5010,7 @@
    "titleLen": 49,
    "descLen": 155,
    "h1": 1,
-   "words": 1398,
+   "words": 1376,
    "linksIn": 23,
    "linksOut": 27,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint Country FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -6115,7 +5031,7 @@
    "titleLen": 50,
    "descLen": 149,
    "h1": 1,
-   "words": 1385,
+   "words": 1363,
    "linksIn": 23,
    "linksOut": 24,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience City ContactPoint Country FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -6136,8 +5052,8 @@
    "titleLen": 52,
    "descLen": 152,
    "h1": 1,
-   "words": 1284,
-   "linksIn": 206,
+   "words": 1262,
+   "linksIn": 207,
    "linksOut": 38,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Offer OfferCatalog Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6157,8 +5073,8 @@
    "titleLen": 51,
    "descLen": 148,
    "h1": 1,
-   "words": 1693,
-   "linksIn": 29,
+   "words": 1671,
+   "linksIn": 30,
    "linksOut": 31,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6178,7 +5094,7 @@
    "titleLen": 30,
    "descLen": 78,
    "h1": 1,
-   "words": 70,
+   "words": 48,
    "linksIn": 0,
    "linksOut": 0,
    "jsonLdTypes": "BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService WebPage WebSite",
@@ -6199,7 +5115,7 @@
    "titleLen": 52,
    "descLen": 154,
    "h1": 1,
-   "words": 1621,
+   "words": 1599,
    "linksIn": 27,
    "linksOut": 29,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -6220,8 +5136,8 @@
    "titleLen": 55,
    "descLen": 155,
    "h1": 1,
-   "words": 1349,
-   "linksIn": 183,
+   "words": 1327,
+   "linksIn": 184,
    "linksOut": 23,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question WebApplication WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6241,7 +5157,7 @@
    "titleLen": 59,
    "descLen": 145,
    "h1": 1,
-   "words": 1746,
+   "words": 1724,
    "linksIn": 20,
    "linksOut": 41,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint FAQPage ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService Question WebSite",
@@ -6262,8 +5178,8 @@
    "titleLen": 55,
    "descLen": 142,
    "h1": 1,
-   "words": 1512,
-   "linksIn": 41,
+   "words": 1490,
+   "linksIn": 42,
    "linksOut": 26,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6283,7 +5199,7 @@
    "titleLen": 32,
    "descLen": 83,
    "h1": 1,
-   "words": 69,
+   "words": 47,
    "linksIn": 0,
    "linksOut": 0,
    "jsonLdTypes": "BreadcrumbList ContactPoint ImageObject ListItem Organization Person PostalAddress ProfessionalService WebPage WebSite",
@@ -6304,7 +5220,7 @@
    "titleLen": 54,
    "descLen": 154,
    "h1": 1,
-   "words": 1135,
+   "words": 1113,
    "linksIn": 47,
    "linksOut": 26,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Offer OfferCatalog Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
@@ -6325,8 +5241,8 @@
    "titleLen": 57,
    "descLen": 152,
    "h1": 1,
-   "words": 1839,
-   "linksIn": 31,
+   "words": 1817,
+   "linksIn": 32,
    "linksOut": 31,
    "jsonLdTypes": "Answer BreadcrumbList BusinessAudience ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question Service SpeakableSpecification WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6346,7 +5262,7 @@
    "titleLen": 58,
    "descLen": 151,
    "h1": 1,
-   "words": 1296,
+   "words": 1274,
    "linksIn": 24,
    "linksOut": 21,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6367,8 +5283,8 @@
    "titleLen": 56,
    "descLen": 151,
    "h1": 1,
-   "words": 1361,
-   "linksIn": 52,
+   "words": 1339,
+   "linksIn": 53,
    "linksOut": 25,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6388,7 +5304,7 @@
    "titleLen": 59,
    "descLen": 140,
    "h1": 1,
-   "words": 1307,
+   "words": 1285,
    "linksIn": 23,
    "linksOut": 25,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6409,7 +5325,7 @@
    "titleLen": 56,
    "descLen": 152,
    "h1": 1,
-   "words": 1386,
+   "words": 1364,
    "linksIn": 21,
    "linksOut": 23,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6430,7 +5346,7 @@
    "titleLen": 56,
    "descLen": 149,
    "h1": 1,
-   "words": 1564,
+   "words": 1425,
    "linksIn": 17,
    "linksOut": 23,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6442,7 +5358,7 @@
    "canonical": "https://www.brandscalinghacks.com/tools/discount-break-even-calculator",
    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
    "title": "Discount Break Even Calculator for Sales | Brand Scaling",
-   "h2": "How much more do I need to sell to break even on a discount? | Discount break-even calculator | How to use the discount break-even calculator | The formulas with a worked example | How many extra orders each discount needs | How to read the result and what to do next | Common discount planning mistakes | Proof from real accounts | Frequently asked questions | Related | Planning a sale and worried about margin? | Explore more"
+   "h2": "How much more do I need to sell to break even on a discount? | Discount break-even calculator | How to use the discount break-even calculator | The formulas with a worked example | How to read the result and what to do next | Common discount planning mistakes | Proof from real accounts | Frequently asked questions | Related | Planning a sale and worried about margin? | Explore more"
   },
   {
    "url": "https://www.brandscalinghacks.com/tools",
@@ -6451,7 +5367,7 @@
    "titleLen": 57,
    "descLen": 153,
    "h1": 1,
-   "words": 728,
+   "words": 706,
    "linksIn": 13,
    "linksOut": 17,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint FAQPage ImageObject ItemList ListItem Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebSite",
@@ -6472,7 +5388,7 @@
    "titleLen": 54,
    "descLen": 151,
    "h1": 1,
-   "words": 1316,
+   "words": 1294,
    "linksIn": 22,
    "linksOut": 24,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6493,7 +5409,7 @@
    "titleLen": 58,
    "descLen": 146,
    "h1": 1,
-   "words": 1292,
+   "words": 1270,
    "linksIn": 27,
    "linksOut": 25,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6514,8 +5430,8 @@
    "titleLen": 54,
    "descLen": 148,
    "h1": 1,
-   "words": 1295,
-   "linksIn": 20,
+   "words": 1273,
+   "linksIn": 21,
    "linksOut": 25,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
    "jsonLdErrors": 0,
@@ -6535,7 +5451,7 @@
    "titleLen": 55,
    "descLen": 153,
    "h1": 1,
-   "words": 1357,
+   "words": 1335,
    "linksIn": 17,
    "linksOut": 24,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6556,7 +5472,7 @@
    "titleLen": 54,
    "descLen": 152,
    "h1": 1,
-   "words": 1608,
+   "words": 1586,
    "linksIn": 20,
    "linksOut": 23,
    "jsonLdTypes": "Answer BreadcrumbList ContactPoint FAQPage ImageObject ListItem Offer Organization Person PostalAddress ProfessionalService Question SpeakableSpecification WebApplication WebPage WebSite",
@@ -6577,8 +5493,8 @@
    "titleLen": 57,
    "descLen": 154,
    "h1": 1,
-   "words": 991,
-   "linksIn": 58,
+   "words": 969,
+   "linksIn": 59,
    "linksOut": 23,
    "jsonLdTypes": "Answer BreadcrumbList CollectionPage ContactPoint FAQPage ImageObject ListItem Organization Person PostalAddress ProfessionalService Question WebSite",
    "jsonLdErrors": 0,

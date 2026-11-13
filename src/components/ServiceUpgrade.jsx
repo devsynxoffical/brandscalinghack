@@ -36,7 +36,7 @@ export default function ServiceUpgrade({ page, onNavigate }) {
         {data.quickAnswer && (
           <div className="quick-answer" style={{ ...card, borderLeft: '4px solid #ff5722', padding: '22px 24px', margin: '0 0 44px' }}>
             <h2 style={{ fontSize: '19px', fontWeight: 850, color: '#ffffff', margin: '0 0 10px' }}>{data.quickAnswer.question}</h2>
-            <p style={{ ...pStyle, margin: 0, color: '#e2e8f0' }}>{data.quickAnswer.answer}</p>
+            <p className="quick-answer" style={{ ...pStyle, margin: 0, color: '#e2e8f0' }}>{data.quickAnswer.answer}</p>
           </div>
         )}
 

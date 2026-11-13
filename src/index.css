@@ -12515,3 +12515,11 @@ a.mobile-drawer-cta { display: flex; width: 100%; }
 .rl-list a:hover svg { color: #ff7043; }
 @media (max-width: 1024px) { .rl-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .rl-groups { grid-template-columns: 1fr; gap: 18px; } }
+
+/* Home sections below the hero: the browser skips style, layout and paint for them until they
+   come near the viewport (Core Web Vitals: total blocking time and rendering work). The intrinsic
+   size keeps the scrollbar stable and is replaced by the real height once a section has rendered. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}

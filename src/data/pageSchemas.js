@@ -87,7 +87,7 @@ const staticSchemas = {
       path: '/meta-ads-agency',
       name: 'Meta Ads Agency for Ecommerce Brands | Brand Scaling',
       description: 'Meta ads agency for DTC ecommerce: $50M+ Facebook and Instagram ad spend managed, creative testing, Advantage+ scaling and CAPI tracking. Book an audit.',
-      speakable: ['h1']
+      speakable: ['h1', '.quick-answer'],
     }),
     {
       '@type': 'Service',
@@ -119,7 +119,7 @@ const staticSchemas = {
       path: '/tiktok-ads-agency',
       name: 'TikTok Ads Agency for Ecommerce Brands | Brand Scaling',
       description: 'TikTok ads agency for DTC brands: native creator ads, Spark Ads and in-feed campaigns, run with the same creative engine as Meta. Book a TikTok ads audit.',
-      speakable: ['h1']
+      speakable: ['h1', '.quick-answer'],
     }),
     {
       '@type': 'Service',
@@ -146,6 +146,7 @@ const staticSchemas = {
       type: 'CollectionPage',
       name: 'Ecommerce Marketing Services for DTC Brands | Brand Scaling',
       description: 'Ecommerce marketing services for DTC brands: Meta ads, TikTok ads, Shopify CRO, direct-response creative and retention, run as one growth system.',
+      speakable: ['h1', '.quick-answer'],
       extra: {
         mainEntity: {
           '@type': 'ItemList',
@@ -216,7 +217,8 @@ const staticSchemas = {
     webPage({
       path: '/growth',
       name: 'Ecommerce Growth Agency: Meta, TikTok, CRO | Brand Scaling',
-      description: 'Ecommerce growth agency for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention in one system. Book a Brand Growth Audit.'
+      description: 'Ecommerce growth agency for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention in one system. Book a Brand Growth Audit.',
+      speakable: ['h1', '.quick-answer'],
     }),
     {
       '@type': 'Service',
@@ -247,7 +249,8 @@ const staticSchemas = {
     webPage({
       path: '/shopify-agency',
       name: 'DTC Shopify Growth Agency: Stores & CRO | Brand Scaling',
-      description: 'Shopify growth agency for DTC brands: stores built for paid traffic, sub-1s mobile pages, bundles and upsells tied to your Meta ads. Book a store audit.'
+      description: 'Shopify growth agency for DTC brands: stores built for paid traffic, sub-1s mobile pages, bundles and upsells tied to your Meta ads. Book a store audit.',
+      speakable: ['h1', '.quick-answer'],
     }),
     {
       '@type': 'Service',
@@ -267,7 +270,8 @@ const staticSchemas = {
       path: '/viral-creatives',
       type: 'CollectionPage',
       name: 'Direct-Response Video Creatives & UGC Ads | Brand Scaling',
-      description: 'Vault of 58+ live direct-response video ads, UGC hooks, and high-ROAS creative angles deployed across 13+ industry verticals.'
+      description: 'Vault of 58+ live direct-response video ads, UGC hooks, and high-ROAS creative angles deployed across 13+ industry verticals.',
+      speakable: ['h1', '.quick-answer'],
     }),
     breadcrumb([['Home', '/'], ['Viral Creatives', '/viral-creatives']])
   ],
@@ -298,7 +302,8 @@ const staticSchemas = {
     webPage({
       path: '/roas-calculator',
       name: 'Real ROAS Calculator for Ecommerce: Break-Even & Profit',
-      description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.'
+      description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.',
+      speakable: ['h1', '.quick-answer'],
     }),
     {
       '@type': 'WebApplication',

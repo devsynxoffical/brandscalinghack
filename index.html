@@ -188,7 +188,30 @@
         var method = /wa\.me|whatsapp\.com/.test(h) ? 'whatsapp'
           : /^\/book\/?$|calendar\.app\.google|calendar\.google\.com/.test(h) ? 'book_call'
           : /^mailto:/.test(h) ? 'email' : /^tel:/.test(h) ? 'phone' : null;
-        if (method) gtag('event', 'generate_lead', { method: method, link_url: h.slice(0, 100), page_path: location.pathname });
+        if (!method) return;
+        var params = { method: method, link_url: h.slice(0, 100), page_path: location.pathname };
+        // One event per channel, plus generate_lead (the key event) for WhatsApp and booking clicks
+        gtag('event', { whatsapp: 'click_whatsapp', book_call: 'book_click', email: 'click_email', phone: 'click_phone' }[method], params);
+        if (method === 'whatsapp' || method === 'book_call') gtag('event', 'generate_lead', params);
+      }, true);
+      // scroll_75: once per page view (the SPA changes path without reloading)
+      var scrolledFor = null;
+      window.addEventListener('scroll', function () {
+        if (scrolledFor === location.pathname) return;
+        var d = document.documentElement;
+        if ((window.scrollY + window.innerHeight) / Math.max(d.scrollHeight, 1) >= 0.75) {
+          scrolledFor = location.pathname;
+          gtag('event', 'scroll_75', { page_path: location.pathname });
+        }
+      }, { passive: true });
+      // tool_used: first input change on any calculator, once per page view
+      var toolFor = null;
+      document.addEventListener('input', function (e) {
+        var t = e.target;
+        if (!t || t.tagName !== 'INPUT' || toolFor === location.pathname) return;
+        if (!/^\/(tools\/|roas-calculator)/.test(location.pathname)) return;
+        toolFor = location.pathname;
+        gtag('event', 'tool_used', { page_path: location.pathname });
       }, true);
     })();
     </script>
