@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BYLINE_KINDS, AUTHOR, humanDate } from '../data/byline';
 import { ArrowRight, ChevronDown, ChevronUp, CheckCircle2, BookOpen, Calculator, Sparkles } from 'lucide-react';
 import { contentPageByPath, KIND_HUB } from '../data/pageRegistry';
 import { newLinkState, pageIdFromHref } from '../data/internalLinks';
@@ -72,6 +73,11 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
             </div>
           )}
           <h1 style={{ fontSize: 'clamp(30px, 5vw, 48px)', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.03em', lineHeight: 1.15, margin: '0 0 20px' }}>{page.h1}</h1>
+          {BYLINE_KINDS.has(page.kind) && page.updated && (
+            <p style={{ color: '#94a3b8', fontSize: '14px', margin: '-8px 0 18px' }}>
+              By <a href={AUTHOR.url} onClick={go(AUTHOR.url)} style={{ color: '#ff7043', textDecoration: 'none', fontWeight: 700 }}>{AUTHOR.name}</a>, {AUTHOR.role} · Updated <time dateTime={page.updated}>{humanDate(page.updated)}</time>
+            </p>
+          )}
           {paras(page.intro).map((p, i) => <p key={i} style={{ ...pStyle, fontSize: '17.5px', color: '#b6c2d3' }}>{linked(p)}</p>)}
           {page.kind !== 'tool' && page.kind !== 'glossary' && page.kind !== 'hub' && (
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginTop: '22px' }}>

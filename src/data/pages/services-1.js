@@ -316,7 +316,7 @@ For testing, we run one clear hypothesis at a time on high-traffic pages, with a
           'Month 2 onward: a steady testing rhythm on product pages, offers and landing pages, with results reported as revenue per visitor and conversion rate.',
           'Ongoing: new landing pages matched to new ad angles as the creative team ships them.'
         ],
-        content: `For brands that need dedicated funnels or advertorial landing pages for cold traffic, we build those too, using the frameworks from our sister site https://www.funnelsthatprint.com.`
+        content: `For brands that need dedicated funnels or advertorial landing pages for cold traffic, we build those too, using the frameworks from our sister site FunnelsThatPrint.`
       },
       {
         id: 'pricing',

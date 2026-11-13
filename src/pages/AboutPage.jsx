@@ -1,5 +1,6 @@
 import { aboutFaqs as faqs } from '../data/faqData';
 import React, { useState, useEffect, lazy, Suspense } from 'react';
+import { BRAND, ADDRESS_ONE_LINE } from '../data/brandFacts';
 import GauravAboutHero from '../components/GauravAboutHero';
 // Lazy: AboutJourney pulls in three.js, gsap and lottie (~600 KB); keep them off every other page
 const AboutJourney = lazy(() => import('../components/AboutJourney'));
@@ -294,11 +295,11 @@ export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
                 </tr>
                 <tr style={{ borderBottom: '1px solid #1b1b24' }}>
                   <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Legal Entity</td>
-                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>Brand Scaling Hacks LLC</td>
+                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>{BRAND.legalName}</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid #1b1b24' }}>
                   <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Headquarters</td>
-                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>27 W 24 Street, Suite 702, New York, NY 10010, United States</td>
+                  <td style={{ padding: '14px 20px', color: '#ffffff' }}>{ADDRESS_ONE_LINE}</td>
                 </tr>
                 <tr style={{ borderBottom: '1px solid #1b1b24' }}>
                   <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Founder</td>
@@ -314,7 +315,7 @@ export default function AboutPage({ onOpenBooking, onNavigate, onOpenVideo }) {
                 </tr>
                 <tr>
                   <td style={{ padding: '14px 20px', fontWeight: 700, color: '#ff5722' }}>Inquiries</td>
-                  <td style={{ padding: '14px 20px', color: '#cbd5e1' }}>team@brandscalinghacks.com</td>
+                  <td style={{ padding: '14px 20px', color: '#cbd5e1' }}>{BRAND.email}</td>
                 </tr>
               </tbody>
             </table>

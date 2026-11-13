@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { AUTHOR, humanDate } from '../data/byline';
 import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, ShieldCheck, Copy, Check } from 'lucide-react';
 import { InstagramIcon } from '../components/Icons';
 import { allCaseStudies } from '../data/allCaseStudies';
@@ -188,6 +189,12 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
         <p style={{ maxWidth: '840px', margin: '0 auto 14px auto', fontSize: '0.98rem', color: '#ff9e80', fontStyle: 'italic', lineHeight: 1.5 }}>
           Original post: “{cleanSeoText(caseStudy.title, 140)}”
         </p>
+
+        {editorialFor(caseStudy)?.updated && (
+          <p style={{ maxWidth: '840px', margin: '0 auto 14px auto', fontSize: '0.9rem', color: '#94a3b8' }}>
+            Write-up by <a href={AUTHOR.url} style={{ color: '#ff7043', textDecoration: 'none', fontWeight: 700 }}>{AUTHOR.name}</a>, {AUTHOR.role} · Updated <time dateTime={editorialFor(caseStudy).updated}>{humanDate(editorialFor(caseStudy).updated)}</time>
+          </p>
+        )}
 
         <p className="case-seo-summary" style={{ maxWidth: '840px', margin: '0 auto 30px auto', fontSize: '1.1rem', color: '#cbd5e1', lineHeight: 1.65 }}>
           {seo.summary}

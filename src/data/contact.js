@@ -1,5 +1,6 @@
 // Contact channels used across the site (booking calendar, WhatsApp).
 import { contentIndexByPath } from './contentIndex.js';
+import { BRAND } from './brandFacts.js';
 import { BLOG_META, CASE_META, NICHE_META } from './routeMeta.js';
 
 // Google Calendar appointment scheduling (Brand Growth Audit)
@@ -7,8 +8,8 @@ export const BOOKING_URL = 'https://calendar.app.google/fLvA5ecUYM6L4LW68';
 export const BOOKING_EMBED_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Yw3LMRWWBOizNlobvc58M8NBhLjWzfrHnj0FS0Rfegx_vV9Z6V3D7j0OlJbFwUSKGDg90xGBN?gv=true';
 
 // WhatsApp: international format, digits only (wa.me requires no +, spaces or dashes)
-export const WHATSAPP_NUMBER = '919625695456';
-export const WHATSAPP_DISPLAY = '+91 96256 95456';
+export const WHATSAPP_NUMBER = BRAND.whatsapp.number;
+export const WHATSAPP_DISPLAY = BRAND.whatsapp.display;
 
 const BASE = 'https://www.brandscalinghacks.com';
 const strip = (t) => String(t || '').replace(/\s*\|\s*Brand Scaling\s*$/, '').trim();

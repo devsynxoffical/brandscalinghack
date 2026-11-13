@@ -812,7 +812,6 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Have us run this research, testing and CBO scaling for your brand.' },
       { href: '/case-studies/skincare-beauty', title: 'Skincare Case Studies', text: 'More skincare and beauty accounts scaled on Meta ads.' },
       { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Set your break-even ROAS and target CPA before you test.' },
-      { href: 'https://sevenfigurestudio.us/ugc-video-ads', title: 'SevenFigureStudio UGC Ads', text: 'Our creative studio makes UGC video ads for DTC brands to test.' }
     ],
     category: 'Creative Research',
     author: {

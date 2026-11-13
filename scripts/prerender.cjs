@@ -30,13 +30,40 @@ const routes = [
         <li>€118,000 in the first month for a UK skincare brand</li>
         <li>$1.6M on $140K ad spend at 11.98x ROAS</li>
       </ul>
-      <h2>Services: One Growth Engine, Six Levers</h2>
+      <h2>Your Entire Ecommerce Growth Engine</h2>
+      <p>We build the integrated acquisition, creative and conversion infrastructure around your brand that turns traffic into predictable, compounding revenue.</p>
       <ul>
-        <li><a href="/growth">Meta ads &amp; TikTok ads scaling</a></li>
-        <li><a href="/viral-creatives">Direct-response video creatives and UGC</a></li>
-        <li><a href="/shopify-agency">Shopify store builds and CRO testing</a></li>
-        <li><a href="/roas-calculator">Free DTC ROAS Calculator</a></li>
+        <li><strong><a href="/shopify-agency">Shopify</a>:</strong> fast, mobile-first stores with custom landing pages and checkout flows built to raise average order value.</li>
+        <li><strong><a href="/viral-creatives">Creative</a>:</strong> high-converting hooks, direct-response video ads and UGC angle testing pipelines built for scale.</li>
+        <li><strong><a href="/meta-ads-agency">Meta ads</a>:</strong> media buying, broad-targeting structures and budget scaling across Facebook and Instagram.</li>
+        <li><strong><a href="/google-shopping-ads-agency">Google ads</a>:</strong> capture high-intent shoppers searching for your products with Performance Max, Search and Shopping campaigns.</li>
+        <li><strong><a href="/cro-agency">CRO</a>:</strong> split testing, offer engineering and retention loops that get more profit from existing traffic.</li>
+        <li><strong><a href="/growth">Scaling</a>:</strong> identify winning units, remove backend bottlenecks and scale daily ad spend from $5K to $50K+.</li>
       </ul>
+      <h2>Build, Test, Optimize, Scale</h2>
+      <ol>
+        <li><strong>Build:</strong> create the right foundation, offer, store and customer journey: angles, offer setup, a fast mobile Shopify store and unit margin economics.</li>
+        <li><strong>Test:</strong> continuously test products, creatives, hooks, audiences and messaging, with a weekly UGC ad cadence and a 45+ hook and angle matrix.</li>
+        <li><strong>Optimize:</strong> improve CAC, conversion rate, AOV, ROAS and overall profitability, including checkout friction removal and in-cart offers.</li>
+        <li><strong>Scale:</strong> put more budget, creative and resources behind what is working: daily budget scaling, a high-volume creative lab, new channels and markets, and 90-day LTV.</li>
+      </ol>
+      <h2>Performance Creatives Built to Hit Revenue Goals</h2>
+      <p>We help ecommerce brands scale through a repeatable creative system, not random ads: full-service ad creative from research and ideation to execution and delivery. <a href="/viral-creatives">See the creative work</a>.</p>
+      <h2>From First Sale to the Next Revenue Milestone</h2>
+      <ul>
+        <li>Validate 2 to 3 winning creative hooks, build a fast mobile Shopify baseline and establish profitable Meta ROAS with a low-CPA broad structure.</li>
+        <li>Run a fixed weekly UGC creative cadence, fix product page drop-offs and mobile checkout friction, and scale daily budget to $500+ a day sustainably.</li>
+        <li>Combine Meta Advantage+ with Google Shopping and TikTok Spark Ads, and add in-cart bundle upsells to lift AOV.</li>
+        <li>Scale creative production (40+ assets a month), localise for international markets and build advanced retention email and SMS flows.</li>
+      </ul>
+      <h2>Most Searched by DTC Founders</h2>
+      <ul>
+        <li>Services: <a href="/meta-ads-agency">Meta ads agency</a>, <a href="/tiktok-shop-agency">TikTok Shop agency</a>, <a href="/cro-agency">ecommerce CRO agency</a>, <a href="/klaviyo-email-sms-agency">Klaviyo email and SMS</a>, <a href="/google-shopping-ads-agency">Google Shopping ads</a>, <a href="/meta-ads-audit">Meta ads audit</a>.</li>
+        <li>Industries and locations: <a href="/for/skincare-beauty">skincare marketing agency</a>, <a href="/for/supplements">supplement marketing agency</a>, <a href="/for/apparel-fashion">fashion ecommerce marketing</a>, <a href="/locations/new-york">ecommerce agency in New York</a>, <a href="/locations">all locations we serve</a>.</li>
+        <li>Free tools and data: <a href="/tools/break-even-roas-calculator">break-even ROAS calculator</a>, <a href="/tools/meta-ads-budget-calculator">Facebook ads budget calculator</a>, <a href="/benchmarks/ecommerce-roas">ecommerce ROAS benchmarks</a>, <a href="/blog/good-roas-for-ecommerce">what is a good ROAS?</a></li>
+        <li>Guides: <a href="/blog/how-to-scale-a-dtc-brand">how to scale a DTC brand</a>, <a href="/blog/how-to-scale-facebook-ads">how to scale Facebook ads</a>, <a href="/blog/retargeting-for-dtc-brands">retargeting for DTC brands</a>, <a href="/blog/how-much-does-a-dtc-agency-cost">how much a DTC agency costs</a>, <a href="/compare/meta-ads-vs-tiktok-ads">Meta ads vs TikTok ads</a>.</li>
+      </ul>
+      <p><a href="/book">Book a Brand Growth Audit</a> to see what the next stage looks like for your brand.</p>
     `
   },
   {
@@ -166,13 +193,13 @@ const routes = [
         <li>12+ years in ecommerce and performance marketing</li>
         <li>$50M+ in Meta ad spend managed across 30+ niches</li>
         <li>150+ verified case studies and client revenue proofs</li>
-        <li>Headquartered at 27 W 24 Street, Suite 702, New York, NY 10010</li>
+        <li>Headquartered at 27 W 24th Street, Suite 702, New York, NY 10010</li>
       </ul>
       <h2>Company facts</h2>
       <table><tbody>
         <tr><th>Brand name</th><td>Brand Scaling</td></tr>
         <tr><th>Legal entity</th><td>Brand Scaling Hacks LLC</td></tr>
-        <tr><th>Headquarters</th><td>27 W 24 Street, Suite 702, New York, NY 10010, United States</td></tr>
+        <tr><th>Headquarters</th><td>27 W 24th Street, Suite 702, New York, NY 10010, United States</td></tr>
         <tr><th>Founder</th><td>Gaurav Kapoor (12+ years in ecommerce, $50M+ Meta ad spend managed)</td></tr>
         <tr><th>Core services</th><td>Paid acquisition (Meta, TikTok, Google), direct-response UGC and video creative, Shopify CRO and offer design, retention marketing (Klaviyo email and SMS)</td></tr>
         <tr><th>Markets served</th><td>United States, United Kingdom, Canada, Australia</td></tr>
@@ -284,6 +311,7 @@ async function buildCaseRoutes() {
       listed: isListedCase(cs),
       content: `
         <p>${escapeHtml(seo.summary)}</p>
+        ${editorial && editorial.updated ? `<p class="byline">Write-up by <a href="/about">Gaurav Kapoor</a>, Founder, Brand Scaling · Updated <time datetime="${editorial.updated}">${editorial.updated}</time></p>` : ''}
         <h2>Results at a Glance</h2>
         <table><tbody>${seo.factRows.map(([k, v]) => `<tr><th>${escapeHtml(k)}</th><td>${escapeHtml(v)}</td></tr>`).join('')}</tbody></table>
         ${editorial ? `${editorial.challenge ? `<h2>The Challenge</h2><p>${escapeHtml(editorial.challenge)}</p>` : ''}${editorial.approach ? `<h2>The Approach</h2><p>${escapeHtml(editorial.approach)}</p>` : ''}${editorial.whatWeDid.length ? `<h2>What We Did</h2><ul>${editorial.whatWeDid.map((w) => `<li>${escapeHtml(w)}</li>`).join('')}</ul>` : ''}<p><strong>Result:</strong> ${escapeHtml(editorial.result)}</p>` : ''}
@@ -332,23 +360,32 @@ function htmlToMarkdown(html) {
 }
 
 function writeLlmsFull(allRoutes) {
-  const core = allRoutes.filter((r) => !r.noindex && !r.path.startsWith('/cases/'));
-  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/') && r.inSitemapLists).slice(0, 40);
+  // The pages AI assistants should cite: core and service pages, guides, tools, benchmarks,
+  // comparisons and industries. Glossary and location pages stay in llms.txt and the sitemap;
+  // keeping this file near 500 KB makes it practical for engines that fetch it whole.
+  const KEY_GUIDES = ['what-is-roas', 'good-roas-for-ecommerce', 'how-much-does-a-dtc-agency-cost', 'performance-marketing-agency', 'questions-to-ask-meta-ads-agency', 'meta-ads-learning-phase', 'how-to-scale-facebook-ads', 'meta-ads-library', 'tiktok-shop-vs-shopify', 'tiktok-shop-strategy', 'tiktok-gmv-max', 'how-to-scale-a-dtc-brand', 'shopify-conversion-rate-optimization', 'ecommerce-profit-margin', 'meta-ad-account-restricted'].map((s) => `/blog/${s}`);
+  const KEY_TOOLS = ['/tools', '/roas-calculator', '/tools/break-even-roas-calculator', '/tools/tiktok-shop-break-even-roas-calculator'];
+  const skip = (p) => /^\/(cases|glossary|locations|case-studies|for|blog|tools)\//.test(p) || ['/privacy-policy', '/terms', '/404', '/tools', '/blog', '/for', '/glossary', '/locations'].includes(p);
+  const keep = (p) => !skip(p) || KEY_GUIDES.includes(p) || KEY_TOOLS.includes(p);
+  const core = allRoutes.filter((r) => !r.noindex && !r.path.startsWith('/cases/') && keep(r.path));
+  const cases = allRoutes.filter((r) => r.path.startsWith('/cases/') && r.inSitemapLists).slice(0, 5);
   const section = (r) => `# ${r.h1}\nURL: https://www.brandscalinghacks.com${r.path === '/' ? '/' : r.path}\nSummary: ${r.description}\n\n${htmlToMarkdown(r.content)}\n`;
   const intro = [
     '# Brand Scaling: full site content for AI assistants',
     '',
     'Brand Scaling (Brand Scaling Hacks LLC) is a DTC ecommerce performance marketing agency founded by Gaurav Kapoor: Meta and TikTok ads, direct-response creative, Shopify CRO. $50M+ in Meta ad spend managed, 150+ verified case studies, 30+ niches. New York, NY. Serves US, UK, Canada and Australia.',
-    'Short index: https://www.brandscalinghacks.com/llms.txt',
+    'Short index of every page: https://www.brandscalinghacks.com/llms.txt (industries, locations, glossary and all guides are listed there).',
     'Last generated: ' + new Date().toISOString().slice(0, 10)
   ].join('\n');
   const out = [
     intro,
     ...core.map(section),
-    '# Case study library (first 40 of 120+)',
+    '# Selected case studies (5 of the published library; all at https://www.brandscalinghacks.com/case-studies)',
     ...cases.map(section)
   ].join('\n\n---\n\n');
-  fs.writeFileSync(path.join(distDir, 'llms-full.txt'), out, 'utf8');
+  // Link-only list lines (related guides, explore-more blocks) repeat on every page; drop them
+  const lean = out.split('\n').filter((l) => !/^- \[[^\]]*\]\([^)]*\)\s*$/.test(l)).join('\n').replace(/\n{3,}/g, '\n\n');
+  fs.writeFileSync(path.join(distDir, 'llms-full.txt'), lean, 'utf8');
 }
 
 // Vite manifest: route -> page module -> chunk files to modulepreload
@@ -675,7 +712,7 @@ function renderRoute(route) {
       ${sec.list ? `<ul>${sec.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}
       ${sec.table ? `<table><thead><tr>${sec.table.headers.map((h) => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead><tbody>${sec.table.rows.map((row) => `<tr>${row.map((c) => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>` : ''}
       ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${String(sub.content || '').split(/\n\s*\n/).filter((x) => x.trim()).map((x) => `<p>${linkHtml(x.trim(), ls)}</p>`).join('')}${sub.list ? `<ul>${sub.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}`).join('')}
-      ${(sec.links || []).length ? `<ul>${sec.links.map((l) => `<li><a href="${l.href}">${escapeHtml(l.text)}</a></li>`).join('')}</ul>` : ''}
+      ${(sec.links || []).length ? `<ul>${sec.links.map((l) => `<li><a href="${l.href}"${/^https?:/.test(l.href) ? ' rel="nofollow noopener"' : ''}>${escapeHtml(l.text)}</a></li>`).join('')}</ul>` : ''}
     `).join('');
     if ((data.faqs || []).length) r.content += `<h2>More questions</h2>${data.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}`;
   }
@@ -706,6 +743,7 @@ function renderRoute(route) {
       h1: escapeHtml(pg.h1),
       content: `
         <p><a href="/">Home</a>${hub ? ` / <a href="${hub.path}">${escapeHtml(hub.name)}</a>` : ''} / ${escapeHtml(pg.term ? pg.term.name : pg.eyebrow || pg.h1)}</p>
+        ${['comparison', 'benchmark', 'tool', 'glossary'].includes(pg.kind) && pg.updated ? `<p class="byline">By <a href="/about">Gaurav Kapoor</a>, Founder, Brand Scaling · Updated <time datetime="${pg.updated}">${pg.updated}</time></p>` : ''}
         ${paraHtml(pg.intro, ls)}
         ${pg.quickAnswer ? `<h2>${escapeHtml(pg.quickAnswer.question)}</h2><p class="quick-answer">${escapeHtml(pg.quickAnswer.answer)}</p>` : ''}
         ${pg.term ? `<dl><dt>${escapeHtml(pg.term.name)}${pg.term.alternateName && pg.term.alternateName !== pg.term.name ? ` (${escapeHtml(pg.term.alternateName)})` : ''}</dt><dd>${escapeHtml(pg.term.shortDefinition)}</dd></dl>${pg.term.formula ? `<p><strong>Formula:</strong> ${escapeHtml(pg.term.formula)}</p>` : ''}` : ''}

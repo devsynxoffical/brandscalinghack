@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BRAND } from '../data/brandFacts';
 import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
 import BrandLogo from './BrandLogo';
 
@@ -29,12 +30,12 @@ export default function Footer({ onNavigate, onOpenBooking }) {
                 <BrandLogo size="default" showSubtext={true} />
               </div>
               <p className="st-footer-heading">
-                © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved.
+                © {new Date().getFullYear()} {BRAND.legalName}. All rights reserved.
               </p>
               <p className="st-footer-address">
-                27 W 24 Street<br />
-                Suite 702<br />
-                New York, NY 10010
+                {BRAND.address.streetLine1}<br />
+                {BRAND.address.streetLine2}<br />
+                {BRAND.address.locality}, {BRAND.address.region} {BRAND.address.postalCode}
               </p>
             </div>
 
@@ -139,7 +140,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
               Terms of Service
             </a>
             <p className="st-footer-copyright">
-              © {new Date().getFullYear()} Brand Scaling Hacks LLC. All rights reserved.
+              © {new Date().getFullYear()} {BRAND.legalName}. All rights reserved.
             </p>
           </div>
         </div>

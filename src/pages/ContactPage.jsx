@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { BRAND } from '../data/brandFacts';
 import { MapPin, CalendarCheck, Users, ArrowRight, MessageCircle } from 'lucide-react';
 import { WHATSAPP_DISPLAY, whatsappUrl } from '../data/contact';
 import { InstagramIcon as Instagram, YoutubeIcon as Youtube, LinkedinIcon as Linkedin } from '../components/Icons';
@@ -71,10 +72,10 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
             <MapPin size={24} color="#ff5722" />
             <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '14px 0 8px' }}>Office</h2>
             <address style={{ fontStyle: 'normal', color: '#cbd5e1', fontSize: '15px', lineHeight: 1.7 }}>
-              Brand Scaling Hacks LLC<br />
-              27 W 24th Street, Suite 702<br />
-              New York, NY 10010<br />
-              United States
+              {BRAND.legalName}<br />
+              {BRAND.address.street}<br />
+              {BRAND.address.locality}, {BRAND.address.region} {BRAND.address.postalCode}<br />
+              {BRAND.address.country}
             </address>
             <p style={{ color: '#94a3b8', fontSize: '13px', margin: '10px 0 0' }}>Calls by appointment. We work remotely with brands worldwide: see <a href="/locations/new-york" onClick={go('locations/new-york')} style={{ color: '#ff7043' }}>our New York office</a> and <a href="/locations" onClick={go('locations')} style={{ color: '#ff7043' }}>all locations we serve</a>.</p>
           </div>

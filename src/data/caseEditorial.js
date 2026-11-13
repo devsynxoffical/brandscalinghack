@@ -70,6 +70,9 @@ export const CASE_EDITORIAL = {
 
 // Write-ups added 5 Nov 2026 (challenge / approach fields; whatWeDid may be null when the post has no detail)
 export const editorialFor = (cs) => {
-  const e = CASE_EDITORIAL[cs.slug] || CASE_EDITORIAL[cs.id] || CASE_EDITORIAL_EXTRA[cs.slug] || CASE_EDITORIAL_EXTRA[cs.id] || CASE_EDITORIAL_EXTRA_2[cs.slug] || CASE_EDITORIAL_EXTRA_2[cs.id] || CASE_EDITORIAL_EXTRA_3[cs.slug] || CASE_EDITORIAL_EXTRA_3[cs.id] || null;
-  return e ? { ...e, whatWeDid: e.whatWeDid || [] } : null;
+  const key = (m) => m[cs.slug] || m[cs.id];
+  // updated = the day the write-up was published (shown in the byline and used as sitemap lastmod)
+  const found = (key(CASE_EDITORIAL) && [key(CASE_EDITORIAL), '2026-11-03']) || (key(CASE_EDITORIAL_EXTRA) && [key(CASE_EDITORIAL_EXTRA), '2026-11-03'])
+    || (key(CASE_EDITORIAL_EXTRA_2) && [key(CASE_EDITORIAL_EXTRA_2), '2026-11-10']) || (key(CASE_EDITORIAL_EXTRA_3) && [key(CASE_EDITORIAL_EXTRA_3), '2026-11-11']) || null;
+  return found ? { ...found[0], whatWeDid: found[0].whatWeDid || [], updated: found[1] } : null;
 };

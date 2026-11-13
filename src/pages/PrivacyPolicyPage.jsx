@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { BRAND } from '../data/brandFacts';
 import { Shield, Lock, FileText, ArrowLeft } from 'lucide-react';
 
 export default function PrivacyPolicyPage({ onNavigate, onOpenBooking }) {
@@ -81,10 +82,10 @@ export default function PrivacyPolicyPage({ onNavigate, onOpenBooking }) {
               If you have any questions or requests regarding this Privacy Policy, please contact:
             </p>
             <div style={{ background: '#111116', border: '1px solid #22222b', borderRadius: '12px', padding: '20px', marginTop: '12px' }}>
-              <p style={{ margin: 0, fontWeight: 600, color: '#ffffff' }}>Brand Scaling Hacks LLC</p>
-              <p style={{ margin: '4px 0', color: '#94a3b8' }}>27 W 24 Street, Suite 702</p>
-              <p style={{ margin: '4px 0', color: '#94a3b8' }}>New York, NY 10010, United States</p>
-              <p style={{ margin: '8px 0 0', color: '#ff5722' }}>team@brandscalinghacks.com</p>
+              <p style={{ margin: 0, fontWeight: 600, color: '#ffffff' }}>{BRAND.legalName}</p>
+              <p style={{ margin: '4px 0', color: '#94a3b8' }}>{BRAND.address.street}</p>
+              <p style={{ margin: '4px 0', color: '#94a3b8' }}>{BRAND.address.locality}, {BRAND.address.region} {BRAND.address.postalCode}, {BRAND.address.country}</p>
+              <p style={{ margin: '8px 0 0', color: '#ff5722' }}>{BRAND.email}</p>
             </div>
           </section>
         </div>

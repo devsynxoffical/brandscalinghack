@@ -6,6 +6,8 @@
 //
 // Rules are ordered: more specific phrases first. Each target is linked at most once per page.
 
+// Sister sites (SevenFigureStudio, FunnelsThatPrint) are not auto-linked: repeated links between
+// sites owned by one operator look like a link network. One nofollow link remains on /viral-creatives.
 export const LINK_RULES = [
   { re: /\b(Meta|Facebook) Ads? Library\b/i, href: '/blog/meta-ads-library', title: 'Meta Ads Library: $376K Case Study' },
   { re: /\bMeta Andromeda\b/i, href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained' },
@@ -65,8 +67,7 @@ export const LINK_RULES = [
   { re: /\bdropshipping (store|brand|client)\b/i, href: '/case-studies/dropshipping-dtc', title: 'Dropshipping & DTC Store Case Studies' },
   { re: /\b(case studies|case study library)\b/i, href: '/case-studies', title: '150+ Verified Case Studies' },
   // Sister sites (external): the UGC studio and the funnel builder
-  { re: /\bSevenFigureStudio\b/, href: 'https://sevenfigurestudio.us/ugc-video-ads', title: 'SevenFigureStudio UGC Video Ads' },
-  { re: /(https?:\/\/)?(www\.)?funnelsthatprint\.com\b|\bFunnelsThatPrint\b/i, href: 'https://www.funnelsthatprint.com', title: 'FunnelsThatPrint' }
+
 ];
 
 /** App page id for an internal href (the SPA navigates by page id). */

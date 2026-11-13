@@ -63,7 +63,7 @@ export default function ServiceUpgrade({ page, onNavigate }) {
             {(s.links || []).length > 0 && (
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '6px' }}>
                 {s.links.map((l) => (
-                  <a key={l.href} href={l.href} onClick={go(l.href)} {...(/^https?:/.test(l.href) ? { target: '_blank', rel: 'noopener' } : {})} style={{ ...card, padding: '10px 14px', color: '#ff7043', fontWeight: 750, fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                  <a key={l.href} href={l.href} onClick={go(l.href)} {...(/^https?:/.test(l.href) ? { target: '_blank', rel: 'noopener nofollow' } : {})} style={{ ...card, padding: '10px 14px', color: '#ff7043', fontWeight: 750, fontSize: '14px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
                     {l.text} <ArrowRight size={14} />
                   </a>
                 ))}

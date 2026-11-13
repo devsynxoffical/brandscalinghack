@@ -72,7 +72,7 @@ export default function TermsPage({ onNavigate, onOpenBooking }) {
             <h2 style={{ fontSize: '22px', fontWeight: 700, color: '#ffffff', marginBottom: '12px' }}>6. Contact Information</h2>
             <div style={{ background: '#111116', border: '1px solid #22222b', borderRadius: '12px', padding: '20px', marginTop: '12px' }}>
               <p style={{ margin: 0, fontWeight: 600, color: '#ffffff' }}>Brand Scaling Hacks LLC</p>
-              <p style={{ margin: '4px 0', color: '#94a3b8' }}>27 W 24 Street, Suite 702</p>
+              <p style={{ margin: '4px 0', color: '#94a3b8' }}>27 W 24th Street, Suite 702</p>
               <p style={{ margin: '4px 0', color: '#94a3b8' }}>New York, NY 10010, United States</p>
               <p style={{ margin: '8px 0 0', color: '#ff5722' }}>legal@brandscalinghacks.com</p>
             </div>
