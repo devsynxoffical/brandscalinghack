@@ -800,8 +800,9 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
   {
     slug: 'meta-ads-library',
     title: 'Meta Ads Library: How We Find Winning Ads and Scaled a DTC Brand to $376K in 25 Days',
-    titleTag: 'Meta Ads Library: How We Find Winning Ads ($376K Case Study)',
-    metaDescription: 'How we use the free Meta Ads Library to find winning ads, test them and scale a DTC skincare brand to $376K in 25 days. Full video breakdown inside.',
+    // 13 Nov: position 4.4 with no clicks; the title now matches the how-to intent of the search
+    titleTag: 'Meta Ads Library: How to Use It to Find Winning Ads',
+    metaDescription: 'How to use the free Meta Ads Library: search competitor ads, filter for long-running winners and turn them into tests, plus how one brand hit $376K in 25 days.',
     primaryKeyword: 'meta ads library',
     secondaryKeywords: ['facebook ads library', 'how to find winning ads', 'meta ads case study', 'scale meta ads', 'cbo campaign', 'how to use meta ads library', 'is meta ads library free', 'meta ad library search by id'],
     publishDate: '2026-10-30',

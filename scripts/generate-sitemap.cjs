@@ -11,9 +11,9 @@ const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
 // a page is rewritten; do not bump every build (Google ignores fake freshness).
 const staticRoutes = [
   { loc: '/', lastmod: '2026-11-06', changefreq: 'weekly', priority: '1.0' },
-  { loc: '/meta-ads-agency', lastmod: '2026-11-05', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/tiktok-ads-agency', lastmod: '2026-11-03', changefreq: 'weekly', priority: '0.9' },
-  { loc: '/services', lastmod: '2026-11-02', changefreq: 'monthly', priority: '0.8' },
+  { loc: '/meta-ads-agency', lastmod: '2026-11-12', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/tiktok-ads-agency', lastmod: '2026-11-12', changefreq: 'weekly', priority: '0.9' },
+  { loc: '/services', lastmod: '2026-11-12', changefreq: 'monthly', priority: '0.8' },
   { loc: '/book', lastmod: '2026-11-06', changefreq: 'monthly', priority: '0.9' },
   { loc: '/contact', lastmod: '2026-11-06', changefreq: 'yearly', priority: '0.6' },
   { loc: '/growth', lastmod: '2026-11-10', changefreq: 'monthly', priority: '0.9' },
@@ -44,6 +44,13 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   const { allCaseStudies } = await import('../src/data/allCaseStudies.js');
   const { isIndexableCase } = await import('../src/data/caseIndexing.js');
   const { CASE_NICHES } = await import('../src/data/caseNiches.js');
+  // Cases promoted with a full write-up: lastmod is the day the write-up was published
+  const { CASE_EDITORIAL_EXTRA_2 } = await import('../src/data/caseEditorialExtra2.js');
+  const { CASE_EDITORIAL_EXTRA_3 } = await import('../src/data/caseEditorialExtra3.js');
+  const CASE_WRITEUP_DATE = {
+    ...Object.fromEntries(Object.keys(CASE_EDITORIAL_EXTRA_2).map((k) => [k, '2026-11-10'])),
+    ...Object.fromEntries(Object.keys(CASE_EDITORIAL_EXTRA_3).map((k) => [k, '2026-11-11']))
+  };
   const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.8' }));
 
   const { CONTENT_PAGES } = await import('../src/data/pageRegistry.js');
@@ -63,8 +70,12 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
     const id = cs.slug || cs.id || cs.shortcode;
     if (!id || seen.has(id) || !isIndexableCase(cs)) continue;
     seen.add(id);
-    caseRoutes.push({ loc: `/cases/${id}`, lastmod: CASE_LASTMOD, changefreq: 'monthly', priority: '0.6' });
+    caseRoutes.push({ loc: `/cases/${id}`, lastmod: CASE_WRITEUP_DATE[id] || CASE_LASTMOD, changefreq: 'monthly', priority: '0.6' });
   }
+
+  // The home page and /blog list the newest guides, so they change whenever a post is published
+  const latestPost = blogRoutes.reduce((m, r) => (r.lastmod > m ? r.lastmod : m), '');
+  for (const r of staticRoutes) if ((r.loc === '/' || r.loc === '/blog') && latestPost > r.lastmod) r.lastmod = latestPost;
 
   const all = [...staticRoutes, ...nicheRoutes, ...contentRoutes, ...blogRoutes, ...caseRoutes];
 

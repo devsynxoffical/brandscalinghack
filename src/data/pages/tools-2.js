@@ -7,6 +7,7 @@ export default [
     kind: 'tool',
     tool: 'discount-break-even',
     primaryKeyword: 'discount break even calculator',
+    updated: '2026-11-13',
     titleTag: 'Discount Break Even Calculator for Sales | Brand Scaling',
     metaDescription: `Free discount break even calculator for ecommerce sales. See your margin after a discount, the new break-even ROAS and how many more orders you need.`,
     h1: 'Discount Break Even Calculator',
@@ -56,6 +57,23 @@ Example (illustrative numbers, not client data): an $80 order with $24 COGS, $9 
             ['40%', '$48.00', '$13.56', '3.54x', '3.29'],
           ],
         },
+      },
+      {
+        id: 'discount-depth-table',
+        h2: 'How many extra orders each discount needs',
+        content: `The deeper the discount, the faster the orders you need climb, because every point of discount comes straight out of margin. This table uses the calculator's default store: an $80 order with $24 product cost, $9 shipping and a 3% payment fee, which leaves $44.60 of margin at full price and a 1.79x break-even ROAS. Run your own numbers above before you set a Black Friday or Cyber Monday offer.`,
+        table: {
+          headers: ['Discount', 'Margin per order', 'Orders needed for the same profit', 'Break-even ROAS'],
+          rows: [
+            ['None', '$44.60', '1.00x', '1.79x'],
+            ['10%', '$36.84', '1.21x', '1.95x'],
+            ['15%', '$32.96', '1.35x', '2.06x'],
+            ['20%', '$29.08', '1.53x', '2.20x'],
+            ['25%', '$25.20', '1.77x', '2.38x'],
+            ['30%', '$21.32', '2.09x', '2.63x'],
+            ['40%', '$13.56', '3.29x', '3.54x']
+          ]
+        }
       },
       {
         id: 'reading-the-result',

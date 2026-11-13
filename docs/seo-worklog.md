@@ -18,6 +18,13 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 13 Nov 2026
+Data: Google 6 to 12 Nov vs 30 Oct to 5 Nov: impressions 237 vs 157, clicks 1 vs 2, avg position 57.6 vs 65.1, queries 82 vs 45, pages 24 vs 9. New: /meta-ads-agency ranks #2 for "meta ads agency for ecommerce brands" (first time); /blog/meta-ads-library avg position 4.4 with 7 impressions and 0 clicks; /tools/discount-break-even-calculator at 15.3; home page average position 21.8. Bing: 92 pages indexed, 0 crawl issues, 0 impressions.
+Done:
+- /blog/meta-ads-library: title "Meta Ads Library: How to Use It to Find Winning Ads" and a how-to meta description (the old title led with the case study; searchers want how to use the tool). CTR fix for a position-4 page with no clicks.
+- /tools/discount-break-even-calculator: new answer-first table "How many extra orders each discount needs" (10% to 40%, computed from the calculator defaults) for BFCM-season searches; page 2 to page 1 push.
+- Sitemap dates: /meta-ads-agency, /tiktok-ads-agency, /services set to 12 Nov (guide blocks changed); / and /blog now follow the newest post date automatically; cases promoted 10 and 11 Nov carry those dates (were 3 Nov); a hard-coded override that pinned two tools to 9 Nov now respects later updates.
+
 ### 12 Nov 2026 (session 2: growth strategy run)
 Done:
 - New guide /blog/tiktok-gmv-max (Product vs LIVE GMV Max, Target ROI vs Max delivery vs Growth autopilot, ROI from unit economics, under-spending, attribution); facts from TikTok help-center articles (summaries via search; host blocked here). Link rule "GMV Max", linked from /tiktok-ads-agency guides and /blog/tiktok-shop-strategy.
