@@ -18,6 +18,9 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 13 Nov 2026 (session 2: master SEO/AEO/GEO prompt)
+Full write-up: SEO_FIX_REPORT.md. Done: audit script with per-bot checks (13 agents x 20 URLs, all 200 and identical), brandFacts.js single source (3 mismatches to 0), home crawler content 1,003 to 1,443 words from visible sections, llms-full.txt 1.45 MB to 497 KB (51 key pages), sister-site links 9 pages to 1 nofollow, 132 redirects 308 to 301, IndexNow script, bylines and updated dates on comparison/benchmark/tool/glossary/case pages, speakable on 5 more service pages, GA4 events (click_whatsapp, click_email, click_phone, book_click, scroll_75, tool_used), content-visibility on home sections (style/layout 2.8 s to 1.8 s), geo_prompts.md, programmatic_decisions.csv. Lighthouse mobile: /meta-ads-agency 81, blog 79, case 76, home 42 to 44 (blocker: 7 font families, video wall).
+
 ### 13 Nov 2026
 Data: Google 6 to 12 Nov vs 30 Oct to 5 Nov: impressions 237 vs 157, clicks 1 vs 2, avg position 57.6 vs 65.1, queries 82 vs 45, pages 24 vs 9. New: /meta-ads-agency ranks #2 for "meta ads agency for ecommerce brands" (first time); /blog/meta-ads-library avg position 4.4 with 7 impressions and 0 clicks; /tools/discount-break-even-calculator at 15.3; home page average position 21.8. Bing: 92 pages indexed, 0 crawl issues, 0 impressions.
 Done:
