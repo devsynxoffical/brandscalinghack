@@ -10,7 +10,8 @@ export const MOST_SEARCHED_GROUPS = [
       { href: '/cro-agency', label: 'Ecommerce CRO agency' },
       { href: '/klaviyo-email-sms-agency', label: 'Klaviyo email and SMS' },
       { href: '/google-shopping-ads-agency', label: 'Google Shopping ads' },
-      { href: '/meta-ads-audit', label: 'Meta ads audit' }
+      { href: '/meta-ads-audit', label: 'Meta ads audit' },
+      { href: '/dtc-affiliate-program-management', label: 'DTC affiliate program management' }
     ]
   },
   {

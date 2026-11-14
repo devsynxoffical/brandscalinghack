@@ -21,8 +21,8 @@ const corePosts = [
     primaryKeyword: 'bfcm',
     secondaryKeywords: ['bfcm ad strategy', 'bfcm ads', 'black friday ads', 'what is bfcm in marketing', 'bfcm dates 2026', 'best bfcm ads'],
     publishDate: '2026-10-22',
-    updatedDate: '2026-11-07',
-    readTime: "15 min read",
+    updatedDate: '2026-11-14',
+    readTime: "16 min read",
     relatedLinks: [
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Get the BFCM creative bank and campaign structure built for you.' },
       { href: '/case-studies/apparel-fashion', title: 'Apparel & Fashion Case Studies', text: 'The 4-day BFCM peak result: $59,241 from $16,630 at 3.56x ROAS.' },
@@ -49,6 +49,7 @@ const corePosts = [
       { id: 'what-is-bfcm', text: 'What is BFCM in marketing?' },
       { id: 'bfcm-timeline', text: 'BFCM 2026 dates and the Meta ads timeline' },
       { id: 'bfcm-countdown', text: 'Three weeks out: the BFCM countdown checklist' },
+      { id: 'bfcm-last-two-weeks', text: 'BFCM ads in the last two weeks (14 to 26 Nov)' },
       { id: 'phase-1-creative', text: 'Phase 1 (3 to 13 Nov): Build the creative bank' },
       { id: 'phase-2-early-access', text: 'Phase 2 (16 to 25 Nov): Early access & warm audiences' },
       { id: 'phase-3-scale', text: 'Phase 3 (26 to 30 Nov): Scale without burning margin' },
@@ -102,6 +103,20 @@ Work through this list in order this week. Each item is something we check on pa
           'Build the early access list now: email and SMS sign-ups collected in November are the cheapest buyers you will reach on Black Friday.',
           'Check the store on a phone: page speed, the offer above the fold, and a checkout that works with the discount applied. Paid traffic exposes every friction point.',
           'Agree the budget steps in advance: how much you raise spend each day and the CPA level at which you pull back, so decisions on the day are rules, not panic.'
+        ]
+      },
+      {
+        id: 'bfcm-last-two-weeks',
+        h2: 'BFCM ads in the last two weeks (14 to 26 Nov)',
+        content: `In the last two weeks before Black Friday, stop building and start loading: the job is to have every BFCM ad approved, every audience ready and every budget rule written down before Thanksgiving week, because changes made during the peak reset learning when it costs the most.
+
+Use this order, with the dates for 2026.`,
+        list: [
+          '14 to 18 Nov: pick the winners. Keep the offer ads and hooks that already hold CPA in testing, pause the rest, and duplicate the winners into the campaigns you will scale so they collect delivery history now.',
+          '18 to 22 Nov: submit everything for review. Upload every BFCM ad, including Cyber Monday and last-chance versions, so Meta reviews them before the rush; ad review can take longer as Black Friday gets closer.',
+          '20 to 24 Nov: warm the early access list. Run the early access offer to past buyers, email and SMS lists and engaged audiences, and send the cold traffic campaigns to the sign-up page rather than straight to a discount.',
+          '24 to 26 Nov: set the guardrails. Confirm the daily budget steps, the CPA or ROAS level that triggers a pull-back and who checks the account each morning, then leave the structure alone.',
+          'Every day: watch blended MER from Shopify alongside Meta ROAS, because attribution gets noisier when every channel is pushing the same offer at once.'
         ]
       },
       {

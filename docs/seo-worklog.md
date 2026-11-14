@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 14 Nov 2026
+Data: Google 7 to 13 Nov vs 31 Oct to 6 Nov: impressions 271 vs 170, clicks 1 vs 2, avg position 55.6 vs 67.2, queries 93 vs 53, pages 26 vs 12. Movers: "bfcm ads" 40 to 20; a case ranks 18.5 for "dropshipping case study review"; home 18 for "dtc affiliate program scaling"; /shopify-agency most-shown page (44 impressions, "dtc shopify agency" 69.8, "shopify agency for scaling brands" 61.6). Bing: 92 indexed, 5 crawl errors on 9 Nov (no issue detail in API), 0 impressions.
+Done:
+- /blog/bfcm-meta-ads-playbook: new dated section "BFCM ads in the last two weeks (14 to 26 Nov)"; updated 14 Nov.
+- Home Most Searched (React and crawler HTML) now links /dtc-affiliate-program-management, the page that should rank instead of the home page.
+
 ### 13 Nov 2026 (session 2: master SEO/AEO/GEO prompt)
 Full write-up: SEO_FIX_REPORT.md. Done: audit script with per-bot checks (13 agents x 20 URLs, all 200 and identical), brandFacts.js single source (3 mismatches to 0), home crawler content 1,003 to 1,443 words from visible sections, llms-full.txt 1.45 MB to 497 KB (51 key pages), sister-site links 9 pages to 1 nofollow, 132 redirects 308 to 301, IndexNow script, bylines and updated dates on comparison/benchmark/tool/glossary/case pages, speakable on 5 more service pages, GA4 events (click_whatsapp, click_email, click_phone, book_click, scroll_75, tool_used), content-visibility on home sections (style/layout 2.8 s to 1.8 s), geo_prompts.md, programmatic_decisions.csv. Lighthouse mobile: /meta-ads-agency 81, blog 79, case 76, home 42 to 44 (blocker: 7 font families, video wall).
 
