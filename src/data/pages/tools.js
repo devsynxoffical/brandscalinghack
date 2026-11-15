@@ -126,7 +126,8 @@ The break-even CPA is often more useful day to day than the ROAS figure, because
     tool: 'mer',
     primaryKeyword: 'mer calculator',
     titleTag: 'MER Calculator: Marketing Efficiency Ratio | Brand Scaling',
-    metaDescription: `Free MER calculator for ecommerce brands. Divide total revenue by total marketing spend to get MER, and add new-customer revenue to see your aMER.`,
+    updated: '2026-11-15',
+    metaDescription: `Free MER calculator for ecommerce brands: total revenue divided by total marketing spend, plus aMER and your advertising-to-sales ratio (MER's inverse).`,
     h1: 'MER Calculator for Ecommerce Brands',
     eyebrow: 'Free Ecommerce Tool',
     quickAnswer: {
@@ -176,6 +177,13 @@ The gap between the two tells a story. Returning customers produced $100,000 tha
 Watch the trend more than the single reading. If you raise spend by 25% and MER drops only slightly, the extra budget is finding real buyers. If MER falls sharply, the new spend is mostly buying sales you would have made anyway. Our glossary entry on MER at /glossary/mer explains how it relates to blended ROAS.`,
       },
       {
+        id: 'advertising-to-sales-ratio',
+        h2: 'MER and the advertising-to-sales ratio',
+        content: `The advertising-to-sales ratio is marketing spend divided by revenue, written as a percentage, which makes it the inverse of MER. A store with $250,000 of revenue and $50,000 of marketing spend has a 5x MER and a 20% advertising-to-sales ratio (50,000 / 250,000). The calculator above shows both, so you can use whichever figure your finance team or investors report.
+
+The two answer the same question from opposite sides: MER says how much revenue each marketing dollar brings in, the ratio says how much of each sales dollar goes back into marketing. To compare it with your margins, the ratio has to stay below your contribution margin before marketing, or every sale loses money once ads are paid.`
+      },
+      {
         id: 'what-to-do-next',
         h2: 'What to do next',
         list: [
@@ -202,6 +210,10 @@ Watch the trend more than the single reading. If you raise spend by 25% and MER 
       { value: '30+', label: 'Niches managed', note: 'Across our client accounts over 12+ years in ecommerce' },
     ],
     faqs: [
+      {
+        question: 'What is the advertising to sales ratio?',
+        answer: 'The advertising to sales ratio is total marketing spend divided by total revenue, shown as a percentage. It is the inverse of MER: a 5x MER equals a 20% advertising to sales ratio. Keep it below your contribution margin before marketing, otherwise each sale loses money after ad spend.'
+      },
       {
         question: 'How do you calculate MER?',
         answer: `Divide total revenue from all sales channels by total marketing spend from all channels over the same period. If your store made $250,000 and you spent $50,000 on Meta, TikTok, Google and other paid marketing, your MER is 5.0. Keep the dates identical for both figures so the ratio is accurate.`,

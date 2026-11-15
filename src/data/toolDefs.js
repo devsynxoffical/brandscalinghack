@@ -84,7 +84,7 @@ export const TOOL_DEFS = {
     compute: ({ revenue, spend, newRevenue }) => [
       { label: 'MER', value: x(div(revenue, spend)), primary: true, note: 'Total revenue / total marketing spend.' },
       { label: 'New-customer MER (aMER)', value: newRevenue ? x(div(newRevenue, spend)) : 'Add new-customer revenue', note: 'New-customer revenue / total marketing spend.' },
-      { label: 'Marketing spend as % of revenue', value: pct(div(spend, revenue)) }
+      { label: 'Advertising-to-sales ratio', value: pct(div(spend, revenue)), note: 'Marketing spend / revenue: the inverse of MER.' }
     ]
   },
   cac: {

@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 15 Nov 2026
+Data: Google 8 to 14 Nov vs 1 to 7 Nov: impressions 286 vs 189, clicks 1 vs 2, avg position 54.7 vs 66.1, queries 92 vs 64, pages 24 vs 15. New top positions: "what makes a top performance marketing and media agency for scaling?" #2 (/blog/performance-marketing-agency), "meta ads agency for ecommerce brands" #2, "advertising to sales ratio calculator" #8 (/tools). Indexing re-check (88 of 101 non-indexed URLs): 0 newly indexed, discovered 21 to 39, unknown 80 to 49. Bing: 88 indexed (11 Nov), 2 crawl errors, 0 impressions.
+Done:
+- /tools/mer-calculator: output renamed "Advertising-to-sales ratio", new answer-first section "MER and the advertising-to-sales ratio" with worked example, FAQ (FAQPage schema), meta description mentions the ratio.
+- Commits now authored as DEVSYNX, no Claude attribution (owner's request 14 Nov).
+
 ### 14 Nov 2026
 Data: Google 7 to 13 Nov vs 31 Oct to 6 Nov: impressions 271 vs 170, clicks 1 vs 2, avg position 55.6 vs 67.2, queries 93 vs 53, pages 26 vs 12. Movers: "bfcm ads" 40 to 20; a case ranks 18.5 for "dropshipping case study review"; home 18 for "dtc affiliate program scaling"; /shopify-agency most-shown page (44 impressions, "dtc shopify agency" 69.8, "shopify agency for scaling brands" 61.6). Bing: 92 indexed, 5 crawl errors on 9 Nov (no issue detail in API), 0 impressions.
 Done:

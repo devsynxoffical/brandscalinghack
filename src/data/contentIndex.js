@@ -372,7 +372,7 @@ export const CONTENT_INDEX = [
     "path": "/tools/mer-calculator",
     "kind": "tool",
     "titleTag": "MER Calculator: Marketing Efficiency Ratio | Brand Scaling",
-    "metaDescription": "Free MER calculator for ecommerce brands. Divide total revenue by total marketing spend to get MER, and add new-customer revenue to see your aMER.",
+    "metaDescription": "Free MER calculator for ecommerce brands: total revenue divided by total marketing spend, plus aMER and your advertising-to-sales ratio (MER's inverse).",
     "h1": "MER Calculator for Ecommerce Brands",
     "eyebrow": "Free Ecommerce Tool"
   },
