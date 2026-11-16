@@ -18,6 +18,9 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 16 Nov 2026 (scheduled run, after the diagnosis)
+No site change: the diagnosis earlier today already ran the Monday inspection (53 of 153 crawled, 53 indexed) and set the KPI baseline; Search Console has no newer data yet. Bing (13 Nov): 89 indexed, 0 crawl errors, first impression (1), 0 inbound links.
+
 ### 16 Nov 2026 (deep diagnosis)
 Report: docs/seo-diagnosis-2026-11-16.md. Verified: GSC data starts 19 Oct 2026 (no previous-quarter data); Google crawled 53 of 153 sitemap URLs (all indexed, 0 crawled-not-indexed); 88% of query impressions at positions 51 to 100; Bing shows 0 inbound links; Indexing API did not get pages crawled (48 of 52 URLs submitted 3+ times uncrawled). Ruled out: metadata, duplicates, rendering, canonicals, internal links, crawl waste. Added scripts/seo-kpis.py and audit/kpi-baseline-2026-11-16.json; daily session switched to the recovery plan (no new pages until 100 URLs crawled, manual Request Indexing list, weekly KPI snapshot).
 
