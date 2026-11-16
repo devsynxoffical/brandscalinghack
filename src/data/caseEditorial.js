@@ -1,6 +1,7 @@
 import { CASE_EDITORIAL_EXTRA } from './caseEditorialExtra.js';
 import { CASE_EDITORIAL_EXTRA_2 } from './caseEditorialExtra2.js';
 import { CASE_EDITORIAL_EXTRA_3 } from './caseEditorialExtra3.js';
+import { CASE_EDITORIAL_EXTRA_4 } from './caseEditorialExtra4.js';
 
 // Hand-written editorial breakdowns for the highest-value case studies. Rendered at the
 // top of the case page (visible to visitors), prerendered for crawlers, and used as the
@@ -73,6 +74,7 @@ export const editorialFor = (cs) => {
   const key = (m) => m[cs.slug] || m[cs.id];
   // updated = the day the write-up was published (shown in the byline and used as sitemap lastmod)
   const found = (key(CASE_EDITORIAL) && [key(CASE_EDITORIAL), '2026-11-03']) || (key(CASE_EDITORIAL_EXTRA) && [key(CASE_EDITORIAL_EXTRA), '2026-11-03'])
-    || (key(CASE_EDITORIAL_EXTRA_2) && [key(CASE_EDITORIAL_EXTRA_2), '2026-11-10']) || (key(CASE_EDITORIAL_EXTRA_3) && [key(CASE_EDITORIAL_EXTRA_3), '2026-11-11']) || null;
+    || (key(CASE_EDITORIAL_EXTRA_2) && [key(CASE_EDITORIAL_EXTRA_2), '2026-11-10']) || (key(CASE_EDITORIAL_EXTRA_3) && [key(CASE_EDITORIAL_EXTRA_3), '2026-11-11'])
+    || (key(CASE_EDITORIAL_EXTRA_4) && [key(CASE_EDITORIAL_EXTRA_4), '2026-11-16']) || null;
   return found ? { ...found[0], whatWeDid: found[0].whatWeDid || [], updated: found[1] } : null;
 };

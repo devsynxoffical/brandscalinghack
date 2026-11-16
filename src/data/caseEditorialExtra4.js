@@ -23,7 +23,7 @@ export const CASE_EDITORIAL_EXTRA_4 = {
     approach: 'Test many products quickly, keep only the ones that prove themselves, and rely on landing page structure to convert buyers of a high-ticket product.',
     whatWeDid: [
       'Tested almost 23 products within the 23 days.',
-      'Kept the 7 products that proved to be winners and scaled them.',
+      'Kept the 7 products that proved to be winners.',
       'Structured the landing pages, which the post names as the main reason for the result.'
     ],
     result: '$100,000+ in sales in 23 days with a high-ticket product, from 7 winners out of almost 23 products tested.'

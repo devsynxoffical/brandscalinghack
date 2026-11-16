@@ -57,7 +57,13 @@ export const BEST_CASE_SLUGS = new Set([
   'happy-monday-everyone-let-kick-off-week-some-serious-momentum',
   'ecom-world-split-into-two-groups',
   'massive-success-once-again-didn-expected-dfy-program',
-  '1st-day-november-seems-very-great-42k-day'
+  '1st-day-november-seems-very-great-42k-day',
+  '21k-day-4month-old-dropshipping-store-here-did-it',
+  'hit-100k-month',
+  'winning-product-can-change-everything-here-made-product-5-figure',
+  'if-you-re-ecom-brand-owner-read-carefully-16k-single-day-2-06',
+  'massive-alert-guys-it-9-11-pm-ve-already-crossed-53387-33',
+  'after-8-months-optimizing-testing-refining-strategies-helped'
 ]);
 
 const reasons = new Map();

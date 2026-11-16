@@ -235,6 +235,22 @@ const FACT_OVERRIDES = {
   'happy-monday-everyone-let-kick-off-week-some-serious-momentum': {
     facts: { spend: { value: 10077, text: '$10,077' } },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
+  },
+  // "$100K+ This Month" was reached "in just 23Days"; the store sells a high-ticket product
+  'hit-100k-month': {
+    facts: { timeframe: '23 days' }
+  },
+  // "$53,387.33 in sales on $12,943.33 in ad spend" by 9:11 PM of one day; the niche came only
+  // from a hashtag (#dropshipping)
+  'massive-alert-guys-it-9-11-pm-ve-already-crossed-53387-33': {
+    facts: { timeframe: 'one day' },
+    niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
+  },
+  // "$68,510 in a single day with just $17,764 in ad spend"; the extractor missed the revenue.
+  // Dropshipping appears only in the call to action and hashtags, not as the client's niche.
+  'after-8-months-optimizing-testing-refining-strategies-helped': {
+    facts: { revenue: { value: 68510, text: '$68,510' }, spend: { value: 17764, text: '$17,764' }, timeframe: 'one day' },
+    niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   }
 };
 
@@ -338,7 +354,11 @@ export function caseSeo(cs) {
       if (inside && meta.length + inside.length + 1 <= 158) meta = `${meta} ${inside}`;
     }
     if (meta.length < 120) {
-      const cta = [CASE_CTA[pad % CASE_CTA.length], ...CASE_CTA, 'Full breakdown inside.'].find((c) => meta.length + c.length + 1 <= 158);
+      // never repeat what the "Covers ..." line already says
+      const covered = /Covers /.test(meta);
+      const cta = [CASE_CTA[pad % CASE_CTA.length], ...CASE_CTA, 'Full breakdown inside.']
+        .filter((c) => !(covered && /changed|steps behind/.test(c)))
+        .find((c) => meta.length + c.length + 1 <= 158);
       if (cta) meta = `${meta} ${cta}`;
     }
   } else {

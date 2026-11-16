@@ -47,9 +47,11 @@ const urlBlock = ({ loc, lastmod, changefreq, priority }) => `  <url>
   // Cases promoted with a full write-up: lastmod is the day the write-up was published
   const { CASE_EDITORIAL_EXTRA_2 } = await import('../src/data/caseEditorialExtra2.js');
   const { CASE_EDITORIAL_EXTRA_3 } = await import('../src/data/caseEditorialExtra3.js');
+  const { CASE_EDITORIAL_EXTRA_4 } = await import('../src/data/caseEditorialExtra4.js');
   const CASE_WRITEUP_DATE = {
     ...Object.fromEntries(Object.keys(CASE_EDITORIAL_EXTRA_2).map((k) => [k, '2026-11-10'])),
-    ...Object.fromEntries(Object.keys(CASE_EDITORIAL_EXTRA_3).map((k) => [k, '2026-11-11']))
+    ...Object.fromEntries(Object.keys(CASE_EDITORIAL_EXTRA_3).map((k) => [k, '2026-11-11'])),
+    ...Object.fromEntries(Object.keys(CASE_EDITORIAL_EXTRA_4).map((k) => [k, '2026-11-16']))
   };
   const nicheRoutes = CASE_NICHES.map((n) => ({ loc: `/case-studies/${n.slug}`, lastmod: '2026-11-02', changefreq: 'weekly', priority: '0.8' }));
 
