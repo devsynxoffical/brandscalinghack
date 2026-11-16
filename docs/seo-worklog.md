@@ -18,6 +18,10 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 16 Nov 2026 (growth strategy run + metadata audit)
+Full report: docs/seo-report-2026-11-16.md. Google 9 to 15 Nov: 296 impressions (208), avg position 50.8 (65.1), 0 clicks. Indexing (all 153): 53 indexed, 39 discovered, 61 unknown, 0 errors.
+Done: metadata audit of every indexable page; 39 truncated case descriptions rebuilt from whole sentences (no ellipsis, 119 to 157 chars, unique); privacy and terms descriptions unified; React vs crawler metadata identical on 28 pages; new guide /blog/tiktok-shop-affiliate-commission; 6 more cases indexable (43); booking buttons earlier on template landing pages (iPhone 13 CTA 922 px to 626 px).
+
 ### 15 Nov 2026
 Data: Google 8 to 14 Nov vs 1 to 7 Nov: impressions 286 vs 189, clicks 1 vs 2, avg position 54.7 vs 66.1, queries 92 vs 64, pages 24 vs 15. New top positions: "what makes a top performance marketing and media agency for scaling?" #2 (/blog/performance-marketing-agency), "meta ads agency for ecommerce brands" #2, "advertising to sales ratio calculator" #8 (/tools). Indexing re-check (88 of 101 non-indexed URLs): 0 newly indexed, discovered 21 to 39, unknown 80 to 49. Bing: 88 indexed (11 Nov), 2 crawl errors, 0 impressions.
 Done:
