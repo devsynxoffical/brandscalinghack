@@ -160,6 +160,13 @@ const PAD = [
   'Real ad account proof from a {n} scaled by Brand Scaling on Facebook and Instagram.'
 ];
 let pad = 0;
+// Short, varied endings for case descriptions that come out under 120 characters
+const CASE_CTA = [
+  'See the numbers and what drove them.',
+  'Read what the team changed and why it worked.',
+  'See the proof and the steps behind the result.',
+  'Read the full breakdown of the account.'
+];
 
 // Hand-written titles for lesson posts whose headline does not compress into 44 characters.
 // Each states only what the post teaches.
@@ -310,7 +317,30 @@ export function caseSeo(cs) {
   let meta;
   pad = (key || '').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
   if (editorial) {
-    meta = cleanSeoText(editorial.summary, 155);
+    // Whole sentences only: a snippet cut off mid-sentence with an ellipsis earns fewer clicks
+    const sentences = cleanSeoText(editorial.summary, 2000).split(/(?<=[.!?])\s+(?=[A-Z$€£0-9])/);
+    meta = '';
+    for (const sn of sentences) {
+      const next = meta ? `${meta} ${sn}` : sn;
+      if (next.length > 158) break;
+      meta = next;
+    }
+    if (!meta) {
+      // first sentence too long: lead with the verified figures instead
+      meta = facts.revenue
+        ? `${niche.label} case study: ${facts.revenue.text}${facts.timeframe ? ` in ${facts.timeframe}` : ''}${facts.roas ? ` at ${facts.roas} ROAS` : ''}${facts.spend ? ` on ${facts.spend.text} ad spend` : ''}.`
+        : `${niche.label} case study from Brand Scaling, with the original dashboard proof.`;
+    }
+    if (meta.length < 120) {
+      // say what the write-up actually covers (only sections this case has)
+      const has = [editorial.challenge && 'the starting point', editorial.approach && 'the approach', editorial.whatWeDid && editorial.whatWeDid.length && 'what the team changed'].filter(Boolean);
+      const inside = has.length ? `Covers ${has.length > 1 ? `${has.slice(0, -1).join(', ')} and ${has.at(-1)}` : has[0]}.` : '';
+      if (inside && meta.length + inside.length + 1 <= 158) meta = `${meta} ${inside}`;
+    }
+    if (meta.length < 120) {
+      const cta = [CASE_CTA[pad % CASE_CTA.length], ...CASE_CTA, 'Full breakdown inside.'].find((c) => meta.length + c.length + 1 <= 158);
+      if (cta) meta = `${meta} ${cta}`;
+    }
   } else {
     const lead = facts.revenue
       ? `${niche.label} case study: ${facts.revenue.text}${facts.timeframe ? ` in ${facts.timeframe}` : ''}${facts.roas ? ` at ${facts.roas} ROAS` : ''}${facts.spend ? ` on ${facts.spend.text} ad spend` : ''}.`

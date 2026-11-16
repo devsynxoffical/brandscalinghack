@@ -204,12 +204,12 @@ const staticSchemas = {
   ],
 
   '/privacy-policy': () => [
-    webPage({ path: '/privacy-policy', name: 'Privacy Policy | Brand Scaling', description: 'Privacy policy and data protection disclosures for Brand Scaling Hacks LLC.' }),
+    webPage({ path: '/privacy-policy', name: 'Privacy Policy | Brand Scaling', description: 'How Brand Scaling Hacks LLC collects, uses, shares and protects personal data on brandscalinghacks.com, including analytics cookies, retention and contact.' }),
     breadcrumb([['Home', '/'], ['Privacy Policy', '/privacy-policy']])
   ],
 
   '/terms': () => [
-    webPage({ path: '/terms', name: 'Terms of Service | Brand Scaling', description: 'Terms of service and engagement details for Brand Scaling Hacks LLC performance marketing.' }),
+    webPage({ path: '/terms', name: 'Terms of Service | Brand Scaling', description: 'Terms of service for brandscalinghacks.com and Brand Scaling Hacks LLC engagements: services, intellectual property, earnings disclaimer and governing law.' }),
     breadcrumb([['Home', '/'], ['Terms of Service', '/terms']])
   ],
 

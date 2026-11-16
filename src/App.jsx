@@ -249,12 +249,12 @@ function App() {
           break;
         case 'privacy-policy':
           title = 'Privacy Policy | Brand Scaling';
-          description = 'Privacy policy and data protection disclosures for Brand Scaling Hacks LLC.';
+          description = 'How Brand Scaling Hacks LLC collects, uses, shares and protects personal data on brandscalinghacks.com, including analytics cookies, retention and contact.';
           pagePath = '/privacy-policy';
           break;
         case 'terms':
           title = 'Terms of Service | Brand Scaling';
-          description = 'Terms of service and engagement details for Brand Scaling Hacks LLC performance marketing.';
+          description = 'Terms of service for brandscalinghacks.com and Brand Scaling Hacks LLC engagements: services, intellectual property, earnings disclaimer and governing law.';
           pagePath = '/terms';
           break;
         case '404':

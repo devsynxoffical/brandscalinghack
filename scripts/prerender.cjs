@@ -238,7 +238,7 @@ const routes = [
     path: '/privacy-policy',
     outPath: 'privacy-policy/index.html',
     title: 'Privacy Policy | Brand Scaling',
-    description: 'Privacy policy and personal data protection terms for Brand Scaling Hacks LLC.',
+    description: 'How Brand Scaling Hacks LLC collects, uses, shares and protects personal data on brandscalinghacks.com, including analytics cookies, retention and contact.',
     h1: 'Privacy Policy — Brand Scaling Hacks LLC',
     content: `
       <p>Last Updated: October 22, 2026. Brand Scaling Hacks LLC respects your privacy and protects your personal data.</p>
@@ -250,7 +250,7 @@ const routes = [
     path: '/terms',
     outPath: 'terms/index.html',
     title: 'Terms of Service | Brand Scaling',
-    description: 'Terms of service and performance engagement conditions for Brand Scaling Hacks LLC.',
+    description: 'Terms of service for brandscalinghacks.com and Brand Scaling Hacks LLC engagements: services, intellectual property, earnings disclaimer and governing law.',
     h1: 'Terms of Service — Brand Scaling Hacks LLC',
     content: `
       <p>Effective Date: October 22, 2026. By accessing brandscalinghacks.com or engaging our consulting services, you agree to these Terms of Service.</p>
