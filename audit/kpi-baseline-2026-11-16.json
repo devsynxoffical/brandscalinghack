@@ -1,0 +1,34 @@
+{
+ "window": [
+  "2026-11-09",
+  "2026-11-15"
+ ],
+ "impressions": 303,
+ "clicks": 0,
+ "avg_position": 50.5,
+ "queries": 90,
+ "queries_top10": 6,
+ "share_query_impressions_top20": 0.057,
+ "pages_with_impressions": 33,
+ "nonbrand_clicks_target_countries": 0,
+ "sitemap_urls": 153,
+ "urls_crawled": 53,
+ "urls_indexed": 53,
+ "external_linking_domains_bing": 0,
+ "sources": {
+  "search_console": "searchAnalytics.query, www property, window 9 to 15 Nov 2026",
+  "url_inspection": "all 153 sitemap URLs inspected 16 Nov 2026",
+  "bing": "Bing Webmaster GetLinkCounts 16 Nov 2026"
+ },
+ "context_28_days": {
+  "window": [
+   "2026-10-19",
+   "2026-11-15"
+  ],
+  "impressions": 690,
+  "clicks": 8,
+  "queries": 150,
+  "queries_top10": 10,
+  "share_query_impressions_positions_51_100": 0.88
+ }
+}

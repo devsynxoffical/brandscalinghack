@@ -18,6 +18,9 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 16 Nov 2026 (deep diagnosis)
+Report: docs/seo-diagnosis-2026-11-16.md. Verified: GSC data starts 19 Oct 2026 (no previous-quarter data); Google crawled 53 of 153 sitemap URLs (all indexed, 0 crawled-not-indexed); 88% of query impressions at positions 51 to 100; Bing shows 0 inbound links; Indexing API did not get pages crawled (48 of 52 URLs submitted 3+ times uncrawled). Ruled out: metadata, duplicates, rendering, canonicals, internal links, crawl waste. Added scripts/seo-kpis.py and audit/kpi-baseline-2026-11-16.json; daily session switched to the recovery plan (no new pages until 100 URLs crawled, manual Request Indexing list, weekly KPI snapshot).
+
 ### 16 Nov 2026 (growth strategy run + metadata audit)
 Full report: docs/seo-report-2026-11-16.md. Google 9 to 15 Nov: 296 impressions (208), avg position 50.8 (65.1), 0 clicks. Indexing (all 153): 53 indexed, 39 discovered, 61 unknown, 0 errors.
 Done: metadata audit of every indexable page; 39 truncated case descriptions rebuilt from whole sentences (no ellipsis, 119 to 157 chars, unique); privacy and terms descriptions unified; React vs crawler metadata identical on 28 pages; new guide /blog/tiktok-shop-affiliate-commission; 6 more cases indexable (43); booking buttons earlier on template landing pages (iPhone 13 CTA 922 px to 626 px).
