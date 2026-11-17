@@ -98,6 +98,12 @@ Caveats:
 - **Build checks:** `seo:audit` 0 problems, structured data 0 errors, oxlint clean.
 - **Browser check (Playwright):** /, /growth, /viral-creatives and /blog/tiktok-gmv-max, on desktop and iPhone 13: 1 H1, the new sections render, no JavaScript errors, no horizontal scroll.
 
+### Deployment
+
+- Pushed to main (commit 044326b), which Vercel deploys.
+- The 6 changed URLs were submitted to IndexNow (HTTP 200) and the Bing URL submission API (HTTP 200).
+- The live pages were **not** re-checked after the deploy, because this environment cannot reach the live host today.
+
 ### Deliberately not changed
 
 - **Metadata:** the 16 Nov audit found 0 duplicate titles or descriptions and 0 truncations. No new evidence today.
