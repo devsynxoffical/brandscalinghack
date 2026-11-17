@@ -112,7 +112,7 @@ See docs/seo-report-2026-11-10.md: 2 new guides, 8 indexable cases, /cro-agency 
 ## Outstanding
 
 Needs the owner (no access from here):
-- GA4: tag is live. Owner still to (1) link Search Console in GA4, (2) mark generate_lead as a key event, (3) give read access (OpenSEO Integrations, or Viewer for the service account).
+- GA4: read access done 17 Nov (OpenSEO bound to property 563592875, stream G-4NHL9F0B3C verified). Owner still to mark generate_lead as a key event (only close_convert_lead, qualify_lead and purchase are key events) and link Search Console in GA4.
 - Approve AI visibility tracking (OpenSEO, about $1.16/month weekly for 5 prompts on 4 engines), or decline.
 - Backlinks and profiles that need your identity: Clutch, Google Business Profile, Shopify Partner Directory, DesignRush, GoodFirms, Sortlist, UpCity, podcast pitches, Qwoted.
 
