@@ -18,6 +18,11 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 17 Nov 2026 (scheduled run)
+- No site changes: today's evidence-led changes were already made in the earlier session (see the entry below); nothing new met the bar.
+- Bing (verified): 91 pages indexed (89 on 15 Nov), 0 crawl issues, 0 inbound links, 1 impression in the last 3 days.
+- GA4 now readable through OpenSEO (10 to 15 Nov: 15 sessions, 1 from organic search, 0 key events).
+
 ### 17 Nov 2026 (advanced SEO/AEO/GEO run)
 See docs/seo-report-2026-11-17.md.
 - AEO: direct-answer FAQs (with FAQPage schema) for AI-style queries the site already ranks for: home "how do I scale Meta ads for an 8-figure DTC brand" (#13), /growth "which agency creates Instagram Reels and TikTok videos for brands, pricing" (#1), /viral-creatives "video ad creative scaling" (18.8; 3 FAQs).
