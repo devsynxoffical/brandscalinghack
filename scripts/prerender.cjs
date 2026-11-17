@@ -504,6 +504,7 @@ function renderRoute(route) {
 
 (async () => {
   const { getRouteSchema, toJsonLd, ogImageFor } = await import('../src/data/pageSchemas.js');
+  const { BLOG_SOURCES } = await import('../src/data/blogSources.js');
   const caseRoutes = await buildCaseRoutes();
   const { blogPosts } = await import('../src/data/blogPosts.js');
   const { linkifySegments, newLinkState, relatedGuidesFor, SERVICE_GUIDES, SERVICE_PATHS } = await import('../src/data/internalLinks.js');
@@ -528,6 +529,7 @@ function renderRoute(route) {
         ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${String(sub.content || '').split(/\n\s*\n/).filter(Boolean).map((para) => `<p>${linkHtml(para.trim(), ls)}</p>`).join('')}${sub.list ? `<ul>${sub.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}`).join('')}
       `).join('')}
       ${(p.faqs || []).length ? `<h2>Frequently Asked Questions</h2>${p.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join('')}` : ''}
+      ${BLOG_SOURCES[p.slug] ? `<h2>Sources</h2><ul>${BLOG_SOURCES[p.slug].map((c) => `<li><a href="${escapeHtml(c.url)}" rel="noopener nofollow">${escapeHtml(c.title)}</a> (${escapeHtml(c.publisher)})</li>`).join('')}</ul>` : ''}
       ${(p.relatedLinks || []).length ? `<h2>Go deeper</h2><ul>${p.relatedLinks.map((l) => `<li><a href="${l.href}">${escapeHtml(l.title)}</a>: ${escapeHtml(l.text)}</li>`).join('')}</ul>` : ''}
       <p><a href="/blog">Browse all ecommerce playbooks</a> | <a href="/meta-ads-agency">Meta ads agency</a> | <a href="/case-studies">Explore 150+ verified case studies</a> | <a href="/roas-calculator">Free ROAS calculator</a></p>
     `

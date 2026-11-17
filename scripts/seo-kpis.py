@@ -25,7 +25,7 @@ def token():
     a = jwt.encode({'iss': KEY['client_email'], 'scope': 'https://www.googleapis.com/auth/webmasters.readonly',
                     'aud': KEY['token_uri'], 'iat': now, 'exp': now + 3600}, KEY['private_key'], algorithm='RS256')
     body = urllib.parse.urlencode({'grant_type': 'urn:ietf:params:oauth:grant-type:jwt-bearer', 'assertion': a}).encode()
-    return json.load(urllib.request.urlopen(urllib.request.Request(KEY['token_uri'], data=body)))['access_token']
+    return json.load(urllib.request.urlopen(urllib.request.Request(KEY['token_uri'], data=body), timeout=60))['access_token']
 
 
 def call(tok, url, payload):
@@ -77,15 +77,17 @@ def main():
         'nonbrand_clicks_target_countries': sum(r['clicks'] for r in by_cq if r['keys'][0] in TARGET_COUNTRIES and not BRAND.search(r['keys'][1])),
     }
     if '--inspect' in sys.argv:
-        crawled = indexed = 0
+        from concurrent.futures import ThreadPoolExecutor
         urls = sitemap_urls()
-        for u in urls:
+
+        def inspect(u):
             res = call(tok, 'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect', {'inspectionUrl': u, 'siteUrl': SITE})
-            r = (res.get('inspectionResult') or {}).get('indexStatusResult', {})
-            crawled += bool(r.get('lastCrawlTime'))
-            indexed += r.get('coverageState') == 'Submitted and indexed'
-            time.sleep(0.3)
-        kpi.update({'sitemap_urls': len(urls), 'urls_crawled': crawled, 'urls_indexed': indexed})
+            return (res.get('inspectionResult') or {}).get('indexStatusResult', {})
+        with ThreadPoolExecutor(8) as ex:
+            results = list(ex.map(inspect, urls))
+        kpi.update({'sitemap_urls': len(urls),
+                    'urls_crawled': sum(bool(r.get('lastCrawlTime')) for r in results),
+                    'urls_indexed': sum(r.get('coverageState') == 'Submitted and indexed' for r in results)})
     out = os.path.join(ROOT, 'audit', f'kpi-{e}.json')
     json.dump(kpi, open(out, 'w'), indent=1)
     base_path = os.path.join(ROOT, 'audit', 'kpi-baseline-2026-11-16.json')

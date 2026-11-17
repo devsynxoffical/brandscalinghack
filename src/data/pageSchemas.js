@@ -69,6 +69,7 @@ export const webPage = ({ path, type = 'WebPage', name, description, speakable, 
 /* -------------------------------------------------------------------------- */
 
 export { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs } from './faqData.js';
+import { sourcesFor } from './blogSources.js';
 import { homeFaqs, metaAdsFaqs, shopifyFaqs, tiktokFaqs, SERVICES, growthFaqs, roasFaqs, bookFaqs, aboutFaqs } from './faqData.js';
 
 const staticSchemas = {
@@ -434,7 +435,8 @@ export function blogPostSchema(post) {
       publisher: { '@type': 'Organization', '@id': ORG_ID, name: 'Brand Scaling', url: `${BASE_URL}/`, logo: LOGO },
       isPartOf: { '@id': WEBSITE_ID },
       mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-      speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.blog-direct-answer'] }
+      speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.blog-direct-answer'] },
+      ...(sourcesFor(post.slug).length ? { citation: sourcesFor(post.slug).map((c) => ({ '@type': 'CreativeWork', name: c.title, url: c.url, publisher: { '@type': 'Organization', name: c.publisher } })) } : {})
     },
     breadcrumb([['Home', '/'], ['Blog', '/blog'], [post.title, `/blog/${post.slug}`]])
   ];

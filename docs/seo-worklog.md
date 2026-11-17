@@ -18,6 +18,13 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 17 Nov 2026 (advanced SEO/AEO/GEO run)
+See docs/seo-report-2026-11-17.md.
+- AEO: direct-answer FAQs (with FAQPage schema) for AI-style queries the site already ranks for: home "how do I scale Meta ads for an 8-figure DTC brand" (#13), /growth "which agency creates Instagram Reels and TikTok videos for brands, pricing" (#1), /viral-creatives "video ad creative scaling" (18.8; 3 FAQs).
+- GEO: visible "Sources" lists plus schema `citation` on /blog/tiktok-gmv-max (6 TikTok help articles), /blog/tiktok-shop-affiliate-commission (4) and /blog/meta-andromeda (Engineering at Meta, Dec 2024).
+- scripts/seo-kpis.py: inspection now threaded (2.5 min, was hanging). Week 10 to 16 Nov: 360 impressions, 1 click, position 44.9, 8 queries in top 10, 56 of 160 sitemap URLs crawled, 54 indexed.
+- Found: 2 newly indexable cases still "Excluded by noindex" from an 11 Nov crawl; added to the owner's manual request list.
+
 ### 16 Nov 2026 (scheduled run, after the diagnosis)
 No site change: the diagnosis earlier today already ran the Monday inspection (53 of 153 crawled, 53 indexed) and set the KPI baseline; Search Console has no newer data yet. Bing (13 Nov): 89 indexed, 0 crawl errors, first impression (1), 0 inbound links.
 

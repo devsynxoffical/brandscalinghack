@@ -1,0 +1,17 @@
+{
+ "window": [
+  "2026-11-10",
+  "2026-11-16"
+ ],
+ "impressions": 360,
+ "clicks": 1,
+ "avg_position": 44.9,
+ "queries": 105,
+ "queries_top10": 8,
+ "share_query_impressions_top20": 0.093,
+ "pages_with_impressions": 37,
+ "nonbrand_clicks_target_countries": 0,
+ "sitemap_urls": 160,
+ "urls_crawled": 56,
+ "urls_indexed": 54
+}

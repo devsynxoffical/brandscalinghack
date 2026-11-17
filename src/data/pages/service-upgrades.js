@@ -373,6 +373,18 @@ Every week the numbers decide what happens next. Ads that hold attention but do 
       {
         question: 'Do direct response video ads need real creators or customers?',
         answer: 'Not always, but people on camera usually help on Meta and TikTok because the ad looks like content rather than an advert. We use paid UGC creators, founders and real customer footage where available, alongside demos and motion graphics. The format is chosen by testing, not by preference, and the matrix includes more than one format for each angle.'
+      },
+      {
+        question: 'How do you scale video ad creative without fatigue?',
+        answer: 'Treat creative as a testing pipeline, not single ads. Each week we launch new hooks on proven angles, keep the body and offer that already convert, read hook rate and hold rate in the first days, then move winners into the scaling campaign and retire ads whose CPA rises as frequency climbs. Volume of new angles, not budget, is what lets an account spend more at the same CPA.'
+      },
+      {
+        question: 'Who makes the UGC and video ads, and how is creative priced?',
+        answer: 'Brand Scaling writes the scripts, briefs and sources creators, edits the videos and launches them in the ad accounts it runs. Creative is priced as part of the growth engagement and quoted after the Brand Growth Audit; partners typically spend at least $10,000 to $20,000 a month on ads.'
+      },
+      {
+        question: 'Which metrics show a video creative is ready to scale?',
+        answer: 'Look at hook rate (3-second views divided by impressions), hold rate, click-through rate and, above all, cost per purchase against your break-even ROAS. An ad with a strong hook but a CPA above target needs a new body or offer; an ad at target CPA after a few days of spend is a candidate for the scaling campaign.'
       }
     ]
   },

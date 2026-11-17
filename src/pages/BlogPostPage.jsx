@@ -23,6 +23,7 @@ import {
   Bookmark
 } from 'lucide-react';
 import { linkifySegments, newLinkState, pageIdFromHref } from '../data/internalLinks';
+import { sourcesFor } from '../data/blogSources';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
 function cleanBlogText(text) {
@@ -532,6 +533,18 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
                   </div>
                 ))}
               </div>
+            </section>
+          )}
+
+          {/* Primary sources for platform facts */}
+          {sourcesFor(post.slug).length > 0 && (
+            <section aria-label="Sources" style={{ marginTop: '44px' }}>
+              <h2 style={{ fontSize: '22px', fontWeight: 900, color: '#0f172a', margin: '0 0 12px' }}>Sources</h2>
+              <ul style={{ margin: 0, paddingLeft: '20px', color: '#475569', fontSize: '15px', lineHeight: 1.7 }}>
+                {sourcesFor(post.slug).map((c) => (
+                  <li key={c.url}><a href={c.url} target="_blank" rel="noopener nofollow" style={{ color: '#ea580c' }}>{c.title}</a> ({c.publisher})</li>
+                ))}
+              </ul>
             </section>
           )}
 

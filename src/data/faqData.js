@@ -43,6 +43,10 @@ export const homeFaqs = [
     answer: 'Post-iOS 14, small micro-targeted retargeting ad sets cause audience frequency fatigue and high CPMs. We scale brands using dynamic catalog ads, broad Advantage+ audience consolidation, custom 180-day video-engagement custom audiences, and high-converting 1-click email/SMS flows that capture abandoned carts profitably.'
   },
   {
+    question: 'How do you scale Meta ads for an 8-figure DTC brand?',
+    answer: 'At that size the limits are creative volume and margin, not targeting. We consolidate into a few broad or Advantage+ campaigns, raise budgets in steps of about 20% while blended MER and new-customer CAC hold, feed the account new hooks and angles every week, and use a break-even ROAS from contribution margin as the floor. Scaling stops when MER falls below target, not when platform ROAS dips for a day.'
+  },
+  {
     question: 'Do you offer TikTok Shop and Google Ads scaling alongside Meta Ads?',
     answer: 'Yes. While Meta Ads serve as the core customer acquisition engine for visual discovery, we scale brands holistically with TikTok Shop affiliate networks, native TikTok UGC ads, and Google Search & Performance Max (PMax) campaigns to capture high-intent brand and competitor search volume.'
   }
@@ -170,6 +174,10 @@ export const growthFaqs = [
   {
     question: 'How is a growth agency different from a performance marketing agency?',
     answer: 'A performance marketing agency focuses on paid media results. A growth agency owns the full loop around the media: creative volume, store conversion rate, average order value and retention. Brand Scaling does both, which is why the engagement starts with a Brand Growth Audit rather than an ad account handover.'
+  },
+  {
+    question: 'Which agency creates Instagram Reels and TikTok videos for brands, and what does it cost?',
+    answer: 'Brand Scaling scripts, sources creators for and edits short vertical videos (UGC, founder-led and product demos) for Instagram Reels, TikTok and Meta ads, and runs them in the ad accounts it manages, so each video is judged on CPA and ROAS rather than views. Creative is priced as part of the growth engagement and quoted after the Brand Growth Audit; partners typically spend at least $10,000 to $20,000 a month on ads.'
   },
   {
     question: 'What results should a $50K-a-month brand expect in 90 days?',
