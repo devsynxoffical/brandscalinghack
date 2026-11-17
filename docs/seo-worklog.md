@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 17 Nov 2026 (case study speed fix, owner report)
+- Owner reported slow case pages with a black screen first. Measured (iPhone 13, slow 4G, 4x CPU): spinner, then a blank black placeholder while the case page code loaded.
+- The loading placeholder is now the branded spinner (no blank screen). Home, the hub and niche hubs preload the case page code when idle; case pages preload the hub. Hub → case click: 983 ms before, 445 ms after.
+- /case-studies had no H1 after React rendered (hero title was an h2); it is now the H1.
+- Not done yet: allCaseStudies.js (361 KB, 85 KB gzipped) loads on every case page; splitting it per case would cut the first load further.
+
 ### 17 Nov 2026 (scheduled run)
 - No site changes: today's evidence-led changes were already made in the earlier session (see the entry below); nothing new met the bar.
 - Bing (verified): 91 pages indexed (89 on 15 Nov), 0 crawl issues, 0 inbound links, 1 impression in the last 3 days.

@@ -118,6 +118,8 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
 }
 
 export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStudiesPage = false, nicheLinks = null, onOpenBooking, onNavigate, onOpenInstagramModal }) {
+  // The case studies hub has no other visible heading, so its hero title is the page's H1
+  const HeadingTag = isCaseStudiesPage ? 'h1' : 'h2';
   const [visibleCount, setVisibleCount] = useState(isHomePage ? 8 : 16);
   const sentinelRef = useRef(null);
 
@@ -156,12 +158,12 @@ export default function ClientCaseStudiesSection({ isHomePage = false, isCaseStu
         </div>
 
         {/* Headline with Creative Tilted Badge */}
-        <h2 className="case-studies-serif-heading" style={{ textTransform: 'uppercase', letterSpacing: '-0.025em', marginBottom: '18px' }}>
+        <HeadingTag className="case-studies-serif-heading" style={{ textTransform: 'uppercase', letterSpacing: '-0.025em', marginBottom: '18px' }}>
           WE SHOW YOU{' '}
           <span className="hero-home-pill-badge vt-title-creative-badge">
             THE NUMBERS.
           </span>
-        </h2>
+        </HeadingTag>
 
         {/* Subtitle */}
         <p className="case-studies-sub-copy" style={{ maxWidth: '820px', margin: '0 auto 16px auto', fontSize: '1.08rem', lineHeight: 1.62, color: 'rgba(255, 255, 255, 0.92)' }}>

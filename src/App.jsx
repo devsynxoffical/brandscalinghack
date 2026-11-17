@@ -10,8 +10,10 @@ import RelatedLinksBlock from './components/RelatedLinksBlock';
 // Every page loads on demand, so a visitor only downloads the code and data for the page
 // they open (the home page's 3D, animation and video sections stay off blog and service pages).
 const HomePage = lazy(() => import('./pages/HomePage'));
-const CaseStudiesPage = lazy(() => import('./pages/CaseStudiesPage'));
-const CaseStudyDetailPage = lazy(() => import('./pages/CaseStudyDetailPage'));
+const loadCaseStudiesPage = () => import('./pages/CaseStudiesPage');
+const loadCaseStudyDetailPage = () => import('./pages/CaseStudyDetailPage');
+const CaseStudiesPage = lazy(loadCaseStudiesPage);
+const CaseStudyDetailPage = lazy(loadCaseStudyDetailPage);
 const ViralCreativesPage = lazy(() => import('./pages/ViralCreativesPage'));
 const GrowthPage = lazy(() => import('./pages/GrowthPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -41,7 +43,16 @@ import { SERVICE_GUIDES } from './data/internalLinks';
 // Original service pages that carry the extra quick answer / sections / FAQs block
 const UPGRADED_PAGES = new Set(['services', 'meta-ads-agency', 'tiktok-ads-agency', 'shopify-agency', 'growth', 'viral-creatives', 'roas-calculator']);
 
-const PageFallback = () => <div style={{ minHeight: '100vh', background: '#070709' }} />;
+// Shown while a page's code loads: the same branded spinner as the first-load screen, never a blank page
+const PageFallback = () => (
+  <div style={{ minHeight: '100vh', background: '#07090e', display: 'flex', alignItems: 'center', justifyContent: 'center' }} role="status" aria-label="Loading">
+    <div style={{ position: 'relative', width: '56px', height: '56px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ position: 'absolute', inset: 0, border: '2.5px solid rgba(255, 87, 34, 0.15)', borderTopColor: '#ff5722', borderRadius: '50%', animation: 'bshSpin 0.85s linear infinite' }} />
+      <img src="/brandscaling-logo.svg" alt="" width="30" height="30" style={{ objectFit: 'contain' }} />
+      <style>{'@keyframes bshSpin { to { transform: rotate(360deg); } }'}</style>
+    </div>
+  </div>
+);
 
 /** App page id for a URL path (used for the first render and for back/forward navigation). */
 function pageFromPath(pathname) {
@@ -119,6 +130,21 @@ function App() {
     window.addEventListener('popstate', handleLocationChange);
     return () => window.removeEventListener('popstate', handleLocationChange);
   }, []);
+
+  // Pages that link to case studies download the case page code in the background once the browser
+  // is idle, so opening a case does not wait on a fresh download (and a case page preloads the hub).
+  useEffect(() => {
+    const linksToCases = activePage === 'home' || activePage === 'case-studies' || activePage.startsWith('case-niche-');
+    const isCase = activePage.startsWith('case-') && !linksToCases;
+    if (!linksToCases && !isCase) return undefined;
+    const load = () => (isCase ? loadCaseStudiesPage() : loadCaseStudyDetailPage()).catch(() => {});
+    const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 2500));
+    const cancel = window.cancelIdleCallback || clearTimeout;
+    let id;
+    const start = () => { id = idle(load, { timeout: 4000 }); };
+    if (document.readyState === 'complete') start(); else window.addEventListener('load', start, { once: true });
+    return () => { window.removeEventListener('load', start); if (id) cancel(id); };
+  }, [activePage]);
 
   // Dynamic SEO metadata & title updater for client-side navigation
   useEffect(() => {
