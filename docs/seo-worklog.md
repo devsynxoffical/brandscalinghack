@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 18 Nov 2026 (owner: monitor every 12 hours)
+- New scripts/seo-track.py: every run saves audit/tracking/<time>.json and rewrites docs/seo-tracking.md (pages, keywords, top 10, positions 4 to 20, no-click keywords, movers vs previous snapshot).
+- Routine changed to every 12 hours (08:37 and 20:37 UTC); URL Inspection once a day.
+- First snapshot (11 to 17 Nov vs 4 to 10 Nov): 401 vs 246 impressions, 12 vs 2 keywords in the top 10, 1 vs 3 clicks.
+- /cases/DBTXySHSrJa (position 5.9) is an old ID URL that already 301-redirects to its slug page; Google has not consolidated it yet. No action.
+
 ### 18 Nov 2026 (scheduled run)
 - No site changes: today's evidence-led changes were made in the earlier sessions (entries below). Bing re-checked.
 
