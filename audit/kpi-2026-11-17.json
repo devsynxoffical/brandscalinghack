@@ -1,0 +1,18 @@
+{
+ "window": [
+  "2026-11-11",
+  "2026-11-17"
+ ],
+ "impressions": 398,
+ "clicks": 1,
+ "avg_position": 44.0,
+ "queries": 117,
+ "queries_top10": 12,
+ "share_query_impressions_top20": 0.096,
+ "pages_with_impressions": 33,
+ "nonbrand_clicks_target_countries": 0,
+ "sitemap_urls": 160,
+ "urls_crawled": 56,
+ "urls_indexed": 54,
+ "inspection_note": "URL Inspection 18 Nov (threaded inspect_fast)"
+}

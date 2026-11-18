@@ -18,6 +18,14 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 18 Nov 2026 (advanced SEO/AEO/GEO run)
+See docs/seo-report-2026-11-18.md.
+- Case cards: title and "View Breakdown" are now real links (rendered /case-studies: 38 to 54 internal links).
+- /tools: "Which calculator answers your question?" table for queries ranking 7 to 16 on the hub (advertising to sales ratio, ecommerce and Facebook ROAS calculators).
+- Meta Help Center sources on the learning phase (3) and restricted account (4) guides; Account Quality / Business Support Home naming corrected.
+- Full build audit: 0 metadata, H1, alt, OG, schema or sitemap problems; 13 bots get identical HTML.
+- KPIs 11 to 17 Nov: 398 impressions, 1 click, position 44.0, 12 queries in top 10. Inspection: 56 crawled, 54 indexed, none crawled since 16 Nov. Bing: 0 linking domains.
+
 ### 17 Nov 2026 (case study speed fix, owner report)
 - Owner reported slow case pages with a black screen first. Measured (iPhone 13, slow 4G, 4x CPU): spinner, then a blank black placeholder while the case page code loaded.
 - The loading placeholder is now the branded spinner (no blank screen). Home, the hub and niche hubs preload the case page code when idle; case pages preload the hub. Hub → case click: 983 ms before, 445 ms after.
