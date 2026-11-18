@@ -1,6 +1,7 @@
 // Primary sources behind the platform facts in specific guides. Rendered as a visible "Sources" list,
 // in the crawler HTML and as schema.org `citation` on the BlogPosting. Only official platform documentation.
 const TT = 'TikTok for Business Help Center';
+const MH = 'Meta Business Help Center';
 export const BLOG_SOURCES = {
   'tiktok-gmv-max': [
     { title: 'About Product GMV Max', url: 'https://ads.tiktok.com/help/article/about-product-gmv-max', publisher: TT },
@@ -15,6 +16,17 @@ export const BLOG_SOURCES = {
     { title: 'About target collaborations in Seller Center', url: 'https://ads.tiktok.com/help/article/about-target-collaborations-in-seller-center', publisher: TT },
     { title: 'How to turn on Shop Ads commission rates for products in Seller Center', url: 'https://ads.tiktok.com/resources/help/article/how-to-turn-on-shop-ads-commission-rates-for-products-in-seller-center?lang=en', publisher: TT },
     { title: 'TikTok Shop referral fees by category', url: 'https://seller-us.tiktok.com/university/essay?knowledge_id=5988482086864682&lang=en', publisher: 'TikTok Shop Seller University' }
+  ],
+  'meta-ads-learning-phase': [
+    { title: 'About the learning phase', url: 'https://www.facebook.com/business/help/112167992830700', publisher: MH },
+    { title: 'Last significant edit', url: 'https://www.facebook.com/business/help/942374239243867', publisher: MH },
+    { title: 'View campaign, ad set or ad delivery status in Meta Ads Manager', url: 'https://www.facebook.com/business/help/650774041651557', publisher: MH }
+  ],
+  'meta-ad-account-restricted': [
+    { title: 'Request a review if you are restricted from advertising on Meta platforms', url: 'https://www.facebook.com/business/help/530209463124901', publisher: MH },
+    { title: 'Troubleshoot a disabled ad account', url: 'https://www.facebook.com/business/help/968402779873601', publisher: MH },
+    { title: 'About the enforcement of advertising policies', url: 'https://www.facebook.com/business/help/505720160452817', publisher: MH },
+    { title: 'Ads review policy', url: 'https://www.facebook.com/business/ads/review-policy-guidelines', publisher: 'Meta for Business' }
   ],
   'meta-andromeda': [
     { title: 'Meta Andromeda: Supercharging Advantage+ automation with the next-gen personalized ads retrieval engine (2 Dec 2024)', url: 'https://engineering.fb.com/2024/12/02/production-engineering/meta-andromeda-advantage-automation-next-gen-personalized-ads-retrieval-engine/', publisher: 'Engineering at Meta' }

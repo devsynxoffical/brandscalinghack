@@ -230,7 +230,7 @@ Red flags: rebuilding the whole account on day one with no review, no questions 
     primaryKeyword: 'meta ad account restricted',
     secondaryKeywords: ['facebook ad account disabled', 'how to get facebook ad account back', 'advertising access restricted', 'business portfolio restricted', 'meta account quality', 'facebook ad account request review'],
     publishDate: '2026-11-11',
-    updatedDate: '2026-11-11',
+    updatedDate: '2026-11-18',
     readTime: '8 min read',
     category: 'Meta Ads',
     relatedLinks: [
@@ -279,7 +279,7 @@ Red flags: rebuilding the whole account on day one with no review, no questions 
       {
         id: 'where-to-check',
         h2: 'Where to check your status',
-        content: `Check your status in Account Quality, Meta's page for the restrictions on your profile, ad accounts, Pages and business portfolio. Meta has previously called this area Business Support Home, and you may still see that name in older guides.
+        content: `Check your status in Account Quality, Meta's page for the restrictions on your profile, ad accounts, Pages and business portfolio. Meta's current help pages use two names for it: some send you to Account Quality, and the ads review policy page sends you to Business Support Home. Use whichever your account shows; both list the restriction, its reason and the request review option.
 
 You can usually reach Account Quality from Meta Business Suite, from the menu in Ads Manager, or from the notice Meta shows when an asset is restricted. It lists each restricted asset, the reason Meta gives, and whether you can request a review. Meta also sends notices by email and in the Business Suite notifications, so check those too.
 

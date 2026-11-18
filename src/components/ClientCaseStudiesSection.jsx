@@ -4,9 +4,18 @@ import { displayFigures, caseSeo } from '../data/caseFacts';
 import { ArrowRight, ExternalLink, Play, ShieldCheck, Sparkles } from 'lucide-react';
 import { InstagramIcon } from './Icons';
 import LazyVideo from './LazyVideo';
+import { canonicalCasePath } from '../data/caseIndexing';
 
 function CaseStudyCard({ study, onOpenModal, onNavigate }) {
   const figures = displayFigures(study);
+  // Real links (crawlable after render, open-in-new-tab works); a plain click still navigates in the app
+  const href = canonicalCasePath(study);
+  const open = (e) => {
+    e.stopPropagation();
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+    e.preventDefault();
+    if (onNavigate) onNavigate(`case-${study.slug || study.id}`);
+  };
   return (
     <div
       className="showcase-study-card"
@@ -54,18 +63,19 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
       <div className="showcase-card-body" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '18px 20px' }}>
         <div>
           <div className="showcase-card-metric" style={{ marginBottom: '14px', minHeight: 'auto', fontSize: '1rem', fontWeight: 800, lineHeight: 1.35, color: '#ffffff' }}>
-            {study.title}
+            {onNavigate ? (
+              <a href={href} onClick={open} style={{ color: 'inherit', textDecoration: 'none' }}>{study.title}</a>
+            ) : study.title}
           </div>
         </div>
         
         {/* Card Action Links */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '8px', paddingTop: '12px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              if (onNavigate) onNavigate(`case-${study.slug || study.id}`);
-            }}
+          <a
+            href={href}
+            onClick={open}
             style={{
+              textDecoration: 'none',
               background: 'rgba(255, 87, 34, 0.12)',
               border: '1px solid rgba(255, 87, 34, 0.35)',
               color: '#ff7043',
@@ -82,7 +92,7 @@ function CaseStudyCard({ study, onOpenModal, onNavigate }) {
           >
             <span>View Breakdown</span>
             <ArrowRight size={12} />
-          </button>
+          </a>
 
           <div
             onClick={(e) => {

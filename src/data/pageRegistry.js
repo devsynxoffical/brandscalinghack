@@ -78,7 +78,26 @@ const HUBS = [
       answer: 'Start with break-even ROAS, because it tells you the lowest return your ads can run at without losing money on each order. Then track MER for the whole business, CAC against first-order profit, and LTV to see how much a customer is worth over time. These free ecommerce calculators do each of these in seconds.'
     },
     intro: `These free ecommerce calculators are the same numbers we check in every Brand Growth Audit before we scale a single ad account. Each one runs in your browser, needs no signup and explains the formula, a worked example and what to do with the result.\n\nFor a full profit model with price, product cost, fees and CAC together, use the original ROAS calculator; the tools below each answer one specific question.`,
-    sections: [],
+    sections: [
+      {
+        id: 'which-calculator',
+        h2: 'Which calculator answers your question?',
+        content: `Many searches name a calculation by a different name than the tool that does it. Use this table to find the right one; the full list with links follows below.`,
+        table: {
+          headers: ['If you want to work out', 'Use', 'What you get'],
+          rows: [
+            ['Ecommerce ROAS, or Facebook and Meta ROAS, with real profit', 'ROAS calculator (with profit model)', 'Break-even ROAS, profit per order and monthly profit from price, product cost, fees and CAC'],
+            ['The lowest ROAS your ads can run at', 'Break-even ROAS calculator', 'Break-even ROAS from your margin, with the formula and a worked example'],
+            ['Break-even ROAS for TikTok Shop orders', 'TikTok Shop break-even ROAS calculator', 'Break-even ROAS after the referral fee and affiliate commission'],
+            ['Advertising to sales ratio (A/S ratio)', 'MER calculator', 'MER (revenue divided by marketing spend) and its inverse, the share of sales spent on ads'],
+            ['Cost to win a new customer', 'CAC calculator', 'Customer acquisition cost to compare with first-order profit and LTV'],
+            ['Daily ad budget for a revenue goal', 'Meta ads budget calculator', 'Daily spend, target CPA and weekly purchases needed'],
+            ['Store conversion rate', 'Conversion rate calculator', 'Conversion rate from sessions and orders'],
+            ['Whether a discount still makes money', 'Discount break-even calculator', 'Extra orders needed to make the same profit at a given discount']
+          ]
+        }
+      }
+    ],
     extraLinksFirst: true,
     extraLinks: [{ href: '/roas-calculator', title: 'ROAS calculator for ecommerce (with profit model)', text: 'For Meta, Facebook, TikTok and dropshipping stores: price, product cost, fees and CAC in one model, giving break-even ROAS, profit per order and monthly profit.' }],
     faqs: [
