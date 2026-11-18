@@ -18,6 +18,10 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 18 Nov 2026 (20:37 UTC tracking run)
+- Google data unchanged (latest day 17 Nov); late data raised 11 to 17 Nov impressions to 420 (from 401). Bing: 92 indexed, 0 crawl issues, 0 links.
+- Striking-distance keywords were already handled today (home 8-figure FAQ, /tools table, Andromeda sources). New ones ("dropshipping roas calculator" /tools 20, "dtc affiliate program scaling" / 18) have 1 to 2 impressions; no change.
+
 ### 18 Nov 2026 (owner: monitor every 12 hours)
 - New scripts/seo-track.py: every run saves audit/tracking/<time>.json and rewrites docs/seo-tracking.md (pages, keywords, top 10, positions 4 to 20, no-click keywords, movers vs previous snapshot).
 - Routine changed to every 12 hours (08:37 and 20:37 UTC); URL Inspection once a day.
