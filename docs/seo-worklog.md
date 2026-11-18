@@ -18,6 +18,9 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 18 Nov 2026 (scheduled run)
+- No site changes: today's evidence-led changes were made in the earlier sessions (entries below). Bing re-checked.
+
 ### 18 Nov 2026 (owner: "site is stuck, make it workable")
 - Checked: Search Console daily impressions rose from about 22 (4 Nov) to 50 to 101 (13 to 17 Nov); sitemaps read with 0 errors. Not stuck, but clicks stay near 0 because rankings are 40 to 90 (no links, low crawl).
 - Home page mobile speed (Lighthouse, local build, simulated slow 4G): 25 before, median 54 after (3 runs: 53, 54, 57). Main-thread blocking 3,800 ms to 470-670 ms; page weight 5.2 MB to 3.5 MB.
