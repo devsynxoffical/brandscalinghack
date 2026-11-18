@@ -155,7 +155,12 @@ None of these can be done from here. Each needs the owner's identity or accounts
 
 ## 7. Live verification
 
-See the addendum below.
+This environment's network blocks the live host, so the live site was checked with the OpenSEO crawler. The crawler is plain HTTP and does not run JavaScript.
+
+- **Crawl coverage:** 50 live pages: home, core and service pages, the blog, /tools and all calculators.
+- **Results:** every page returned 200, had 1 H1, a title and a description matching the build, no images missing alt text, was indexable and was listed in the sitemap. Response times were 14 to 225 ms.
+- **New content is live:** live /tools counts 1,392 words, against 1,414 in the new build. Unchanged pages read 12 to 45 words lower live than locally (for example /book: 959 live, 971 local) because the two tools count words differently. The new table adds 212 words, so without it /tools would read about 1,190 live. This confirms deployment indirectly; the table text itself could not be fetched.
+- **Not checked live:** the JavaScript behaviour (case card links). It was checked in the production build with Playwright on desktop and iPhone 13.
 
 ## 8. Next priorities
 
