@@ -9,17 +9,14 @@ const CategoryIcon = ({ category, size }) => {
   const Icon = CATEGORY_ICONS[category] || BookOpen;
   return <Icon size={size} />;
 };
-import { blogPosts } from '../data/blogPosts';
+import { BLOG_TEASER } from '../data/blogTeaser';
 import { BLOG_THUMBS } from '../data/blogThumbs';
 
 export default function BlogTeaserSection({ onNavigate, onOpenBooking }) {
   // Newest or most recently updated posts first, so the home page (Google's most-crawled
   // URL) always links to fresh content.
   const BADGES = { 'Creative Research': '#38bdf8', 'Creative Production': '#a78bfa', 'Meta Ads': '#ff5722', 'Strategy & Scaling': '#ef4444', 'Metrics & Unit Economics': '#fbbf24', 'Growth Channels': '#22c55e', 'Agency Blueprint': '#ff5722', 'Shopify & CRO': '#34d399', Retention: '#f472b6' };
-  const articles = [...blogPosts]
-    .sort((x, y) => (y.updatedDate || y.publishDate).localeCompare(x.updatedDate || x.publishDate) || (y.publishDate || '').localeCompare(x.publishDate || ''))
-    .slice(0, 4)
-    .map((p) => ({
+  const articles = BLOG_TEASER.map((p) => ({
       slug: p.slug,
       badge: p.updatedDate && p.updatedDate !== p.publishDate ? 'Updated' : 'New',
       badgeColor: BADGES[p.category] || '#ff5722',

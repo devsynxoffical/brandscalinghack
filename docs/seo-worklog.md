@@ -18,6 +18,15 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 18 Nov 2026 (owner: "site is stuck, make it workable")
+- Checked: Search Console daily impressions rose from about 22 (4 Nov) to 50 to 101 (13 to 17 Nov); sitemaps read with 0 errors. Not stuck, but clicks stay near 0 because rankings are 40 to 90 (no links, low crawl).
+- Home page mobile speed (Lighthouse, local build, simulated slow 4G): 25 before, median 54 after (3 runs: 53, 54, 57). Main-thread blocking 3,800 ms to 470-670 ms; page weight 5.2 MB to 3.5 MB.
+  - Portrait phones get a 576x720 centre crop of the hero video (2.6 MB, was 8.5 MB); same visible area. Landscape and desktop unchanged. Data saver or 2G/3G: poster only.
+  - Home blog teaser reads a generated 4-post file (src/data/blogTeaser.js) instead of all 30 posts.
+  - 32 px host avatar: 1.5 KB image instead of the 111 KB 2048 px photo.
+- Tried and reverted: hero image in the first-load screen (did not count as LCP in Chrome).
+- Remaining: LCP about 5.8 s is render delay (React must load before the hero paints); CLS 0.109 from fonts swapping in the hero.
+
 ### 18 Nov 2026 (owner request: new YouTube video on home)
 - Added "How We Scaled a DTC Brand to $376K in 25 Days With Meta Ads (Live Breakdown)" (youtube.com/watch?v=UjUTcbDwe24, @brandscalinghacks, published 30 Oct 2026, 31:35) as the featured first video in the home page "Live Sessions & Breakdowns" section, with its YouTube thumbnail (WebP).
 - /blog/meta-ads-library already embedded this video but its uploadDate was empty, so no VideoObject was output; set to 2026-10-30, so VideoObject with 22 chapter clips is now in the page.

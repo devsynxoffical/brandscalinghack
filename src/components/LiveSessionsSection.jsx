@@ -182,7 +182,7 @@ export default function LiveSessionsSection({ onOpenVideo }) {
               <div className="main-player-host-line">
                 <div className="host-icon-badge">
                   <img
-                    src="/team/gaurav.webp"
+                    src="/team/gaurav-avatar.webp"
                     alt="Host"
                     onError={(e) => { e.target.src = '/assets/gaurav_portrait.webp'; }}
                   />

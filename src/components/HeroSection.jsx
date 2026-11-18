@@ -55,6 +55,9 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
 
   useEffect(() => {
     let t;
+    // Visitors on data saver or a 2G/3G connection keep the poster image: the clip is decoration
+    const conn = navigator.connection;
+    if (conn && (conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || ''))) return undefined;
     const start = () => { t = setTimeout(() => setVideoOn(true), 600); };
     if (document.readyState === 'complete') start();
     else window.addEventListener('load', start, { once: true });
@@ -137,6 +140,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
             className="bsh-hero-bg-video-element"
           >
             {/* 720p (8.5MB) for phones and small tablets, 1080p for larger screens */}
+            {/* Portrait phones only show a narrow centre strip, so they get a 576x720 centre crop (2.6 MB vs 8.5 MB) */}
+            {videoOn && <source src="/brand-scaling-video-mobile.mp4" type="video/mp4" media="(max-width: 900px) and (orientation: portrait)" />}
             {videoOn && <source src="/brand-scaling-video-720.mp4" type="video/mp4" media="(max-width: 900px)" />}
             {videoOn && <source src="/brand-scaling-video.mp4" type="video/mp4" />}
           </video>
