@@ -213,6 +213,27 @@ export const caseStudies = [
 
 export const liveSessionsData = [
   {
+    id: 'yt-session-376k',
+    title: 'How We Scaled a DTC Brand to $376K in 25 Days With Meta Ads (Live Breakdown)',
+    category: 'Live Breakdown',
+    duration: '31:35',
+    instructor: 'BRAND SCALING HACKS',
+    host: 'BRAND SCALING HACKS • Live Breakdown',
+    date: 'Oct 30, 2026',
+    uploadDate: '2026-10-30',
+    videoType: 'youtube',
+    videoUrl: 'https://www.youtube.com/watch?v=UjUTcbDwe24',
+    embedUrl: 'https://www.youtube-nocookie.com/embed/UjUTcbDwe24',
+    thumbnail: '/assets/live_thumbs/thumb_session_376k.webp',
+    thumbnailSmall: '/assets/live_thumbs/thumb_session_376k_sm.webp',
+    description: 'We scaled a DTC skincare brand to $376,000 in 25 days with Meta ads. The full breakdown: finding winning ads in the Meta Ads Library, why they work, how we test audiences and creatives, and how we scale the winners into a CBO without killing ROAS.',
+    keyTakeaways: [
+      'Using the Meta Ads Library to find competitor ads that are already winning',
+      'The 8 audience types we test and the KPIs that decide when to kill an ad set',
+      'Moving winners into a CBO campaign and scaling without killing ROAS'
+    ]
+  },
+  {
     id: 'yt-session-1',
     title: '$100K Brand Scaling LIVE Event : Advanced Facebook Ads',
     category: 'Live Masterclass',

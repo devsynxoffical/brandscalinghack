@@ -30,6 +30,7 @@ export const BRAND = {
     ]
   },
   sameAs: [
+    'https://www.youtube.com/@brandscalinghacks',
     'https://www.youtube.com/@gauravecom',
     'https://www.instagram.com/gauravecomm/',
     'https://www.facebook.com/groups/brandscalinghacks',

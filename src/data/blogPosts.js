@@ -843,13 +843,13 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
     directAnswer: 'The Meta Ads Library is Meta\'s free, public database of every active ad on Facebook and Instagram. We use it to find competitor ads that have run for 2 weeks or more, because brands only keep paying for ads that make money. We study why those ads work, test our own versions at $20 per ad set, and move the winners into a CBO campaign. That process took a DTC skincare brand to $376,000 in revenue in 25 days.',
     video: {
       youtubeId: 'UjUTcbDwe24',
-      title: 'How We Find Winning Ads in the Meta Ads Library and Scaled to $376K',
+      title: 'How We Scaled a DTC Brand to $376K in 25 Days With Meta Ads (Live Breakdown)',
       description: 'Live breakdown: finding winning ads in the Meta Ads Library, testing audiences and creatives at $20 per ad set, and scaling winners into a CBO campaign for a DTC skincare brand.',
       duration: 'PT31M35S',
       durationSeconds: 1895,
-      // Set to the date the video went live on YouTube (YYYY-MM-DD). VideoObject schema
-      // (and Google's video "key moments") is only emitted once this is filled in.
-      uploadDate: null,
+      // Date the video went live on YouTube (checked on the watch page). VideoObject schema
+      // (and Google's video "key moments") is only emitted when this is set.
+      uploadDate: '2026-10-30',
       chapters: [
         { t: 0, label: '$376K in 25 days for a DTC skincare brand' },
         { t: 65, label: 'Finding winning ads in the Meta Ads Library' },

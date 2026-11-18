@@ -2455,8 +2455,30 @@ button {
 
 @media (max-width: 900px) {
   .videos-layout-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
+  }
+  /* Long video titles must wrap or truncate inside the card, not widen the column */
+  .video-sidebar-playlist,
+  .main-player-wrapper,
+  .video-item-meta {
+    min-width: 0;
+  }
+  .main-player-host-line {
+    flex-wrap: wrap;
+    row-gap: 2px;
+  }
+  /* Avatar and host name share a line; the date sits under the name */
+  .main-player-host-line > span:first-of-type {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  .main-player-host-line > span:nth-of-type(2) {
+    display: none;
+  }
+  .main-player-host-line > span:nth-of-type(3) {
+    flex-basis: 100%;
+    padding-left: 44px;
   }
   .main-player-screen {
     min-height: 220px;

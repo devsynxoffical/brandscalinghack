@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 18 Nov 2026 (owner request: new YouTube video on home)
+- Added "How We Scaled a DTC Brand to $376K in 25 Days With Meta Ads (Live Breakdown)" (youtube.com/watch?v=UjUTcbDwe24, @brandscalinghacks, published 30 Oct 2026, 31:35) as the featured first video in the home page "Live Sessions & Breakdowns" section, with its YouTube thumbnail (WebP).
+- /blog/meta-ads-library already embedded this video but its uploadDate was empty, so no VideoObject was output; set to 2026-10-30, so VideoObject with 22 chapter clips is now in the page.
+- Organization sameAs: added the @brandscalinghacks YouTube channel.
+- Mobile fix (existing bug): playlist cards in that section overflowed the column on phones (grid 342px, cards 417px); the column now fits and the host/date line wraps cleanly.
+
 ### 18 Nov 2026 (advanced SEO/AEO/GEO run)
 See docs/seo-report-2026-11-18.md.
 - Case cards: title and "View Breakdown" are now real links (rendered /case-studies: 38 to 54 internal links).
