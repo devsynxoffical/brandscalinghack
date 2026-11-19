@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 19 Nov 2026 (owner: 30 top services, rank for them)
+- src/data/serviceCatalog.js: 30 services the site offers, grouped by channel, each mapped to its target page and a Search Console query pattern.
+- /services: "All 30 ecommerce marketing services" directory (React and prerendered HTML).
+- scripts/seo-track.py: per-service ranking table each run (impressions, best position, target page position).
+- Baseline (12 to 18 Nov): 15 of 30 services with any impressions; only 8 target pages rank for their own service.
+
 ### 19 Nov 2026 (08:37 UTC tracking run)
 - Google data to 18 Nov: 12 to 18 Nov 462 impressions (256 the week before), 1 click, 13 keywords in the top 10. "dtc performance marketing agency" 21 to 12.7.
 - URL Inspection (161 URLs): crawled 56 to 64, indexed 54 to 62. Google crawled 8 case pages on 18 Nov at 10:40, about 4 hours after the case cards became real links (timing consistent; Assumption that it caused it). Home recrawled 18 Nov 12:47. All 13 priority money pages still uncrawled.

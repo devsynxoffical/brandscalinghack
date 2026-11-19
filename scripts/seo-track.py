@@ -15,6 +15,8 @@ import glob
 import importlib.util
 import json
 import os
+import re
+import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -73,6 +75,28 @@ def movers(cur, prev, min_impr=2, min_move=3):
     new.sort(key=lambda x: -x[1]['impressions'])
     lost.sort(key=lambda x: -x[1]['impressions'])
     return up, down, new, lost
+
+
+def service_catalog():
+    """The 30 services from src/data/serviceCatalog.js (read through node, the single source)."""
+    code = "import('./src/data/serviceCatalog.js').then((m) => console.log(JSON.stringify(m.SERVICE_CATALOG)))"
+    out = subprocess.run(['node', '--input-type=module', '-e', code], cwd=ROOT, capture_output=True, text=True, timeout=60)
+    return json.loads(out.stdout) if out.returncode == 0 else []
+
+
+def service_rows(query_page):
+    rows = []
+    for g in service_catalog():
+        for it in g['items']:
+            rx = re.compile(it['match'])
+            hits = [(k.split(' || ')[0], k.split(' || ')[1], v) for k, v in query_page.items() if rx.search(k.split(' || ')[0])]
+            impr = sum(v['impressions'] for _, _, v in hits)
+            best = min(hits, key=lambda h: h[2]['position']) if hits else None
+            own = [h for h in hits if h[1] == it['href']]
+            own_best = min(own, key=lambda h: h[2]['position']) if own else None
+            rows.append([it['name'], it['href'], impr, best[2]['position'] if best else '-', f"{best[0][:60]} ({best[1]})" if best else '-',
+                         own_best[2]['position'] if own_best else 'not ranking'])
+    return rows
 
 
 def table(headers, rows):
@@ -144,6 +168,10 @@ def main():
         '## High impressions, no clicks (8+ impressions)',
         '',
         table(['Keyword', 'Position', 'Impressions'], [[q, v['position'], v['impressions']] for q, v in low_ctr[:20]]) if low_ctr else 'None this week.',
+        '',
+        '## The 30 services: where each one ranks (last 7 days)',
+        '',
+        table(['Service', 'Target page', 'Impressions', 'Best position', 'Best query (page)', 'Target page position'], service_rows(cur['query_page'])),
         '',
         '## Keyword movers (3+ positions, 2+ impressions)',
         '',

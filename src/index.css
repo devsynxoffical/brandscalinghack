@@ -12633,3 +12633,14 @@ a.mobile-drawer-cta { display: flex; width: 100%; }
 .seo-btn-wa:hover { background: #2fd96c; }
 .seo-btn-ghost { background: #16161e; color: #fff; border-color: #2e2e3b; }
 .seo-btn-ghost:hover { border-color: #ff5722; }
+
+/* /services: directory of all services grouped by channel */
+.svc-dir-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.svc-dir-group { background: #0f0f14; border: 1px solid #20202a; border-radius: 18px; padding: 20px; }
+.svc-dir-title { font-size: 13px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; color: #ff7043; margin: 0 0 12px; }
+.svc-dir-group ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.svc-dir-item { display: block; padding: 11px 13px; border-radius: 12px; background: #15151c; border: 1px solid transparent; text-decoration: none; transition: border-color .2s, background .2s; }
+.svc-dir-item:hover { border-color: rgba(255,87,34,0.45); background: #191921; }
+.svc-dir-name { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #fff; font-weight: 800; font-size: 15px; }
+.svc-dir-name svg { color: #ff7043; flex-shrink: 0; }
+.svc-dir-text { display: block; color: #94a3b8; font-size: 13.5px; line-height: 1.5; margin-top: 3px; }

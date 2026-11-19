@@ -543,6 +543,7 @@ function renderRoute(route) {
   const aboutRoute = routes.find((r) => r.path === '/about');
   aboutRoute.content = aboutRoute.content.replace('<!--ABOUT_FAQS-->', aboutFaqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${escapeHtml(f.answer)}</p>`).join(''));
   const { CONTENT_PAGES: CONTENT_PAGES_ALL } = await import('../src/data/pageRegistry.js');
+  const { SERVICE_CATALOG, SERVICE_COUNT } = await import('../src/data/serviceCatalog.js');
   routes.push(
     {
       path: '/tiktok-ads-agency',
@@ -581,6 +582,8 @@ function renderRoute(route) {
       content: `
         <p>Brand Scaling runs paid acquisition, creative, the Shopify store and retention as one growth system: $50M+ in ad spend managed across 30+ niches.</p>
         ${SERVICES.map((svc) => `<h2><a href="${svc.path}">${escapeHtml(svc.name)}</a></h2><p>${escapeHtml(svc.description)}</p><ul>${svc.includes.map((i) => `<li>${escapeHtml(i)}</li>`).join('')}</ul>`).join('')}
+        <h2>All ${SERVICE_COUNT} ecommerce marketing services</h2>
+        ${SERVICE_CATALOG.map((g) => `<h3>${escapeHtml(g.group)}</h3><ul>${g.items.map((it) => `<li><a href="${it.href}">${escapeHtml(it.name)}</a>: ${escapeHtml(it.text)}</li>`).join('')}</ul>`).join('')}
         <h2>Specialist services</h2>
         <ul>${CONTENT_PAGES_ALL.filter((c) => c.kind === 'service').map((c) => `<li><a href="${c.path}">${escapeHtml(c.eyebrow || c.h1)}</a>: ${escapeHtml(c.metaDescription)}</li>`).join('')}</ul>
         <h2>Services by industry</h2>

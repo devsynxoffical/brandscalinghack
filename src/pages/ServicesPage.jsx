@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { ArrowRight, Megaphone, Music2, ShoppingBag, Rocket, Clapperboard, Calculator } from 'lucide-react';
 import { SERVICES } from '../data/faqData';
+import { SERVICE_CATALOG, SERVICE_COUNT } from '../data/serviceCatalog';
 import { contentIndexOfKind as contentPagesOfKind } from '../data/contentIndex';
 import { pageIdFromHref } from '../data/internalLinks';
 
@@ -66,6 +67,29 @@ export default function ServicesPage({ onNavigate, onOpenBooking }) {
             );
           })}
         </div>
+
+        {/* Directory of every service, grouped by channel, each linking to the page that covers it */}
+        <section id="all-services" aria-label="All services" style={{ marginBottom: '50px' }}>
+          <h2 style={{ fontSize: '26px', fontWeight: 850, color: '#ffffff', margin: '0 0 8px' }}>All {SERVICE_COUNT} ecommerce marketing services</h2>
+          <p style={{ color: '#94a3b8', fontSize: '15px', lineHeight: 1.6, margin: '0 0 22px', maxWidth: '760px' }}>Every service we run for DTC brands, grouped by channel. Each one links to the page that explains how we do it.</p>
+          <div className="svc-dir-grid">
+            {SERVICE_CATALOG.map((g) => (
+              <div key={g.group} className="svc-dir-group">
+                <h3 className="svc-dir-title">{g.group}</h3>
+                <ul>
+                  {g.items.map((it) => (
+                    <li key={it.name}>
+                      <a href={it.href} onClick={go(pageIdFromHref(it.href))} className="svc-dir-item">
+                        <span className="svc-dir-name">{it.name} <ArrowRight size={13} /></span>
+                        <span className="svc-dir-text">{it.text}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <h2 style={{ fontSize: '26px', fontWeight: 850, color: '#ffffff', margin: '0 0 18px' }}>Specialist services</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '14px', marginBottom: '44px' }}>
