@@ -18,6 +18,9 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 19 Nov 2026 (20:37 UTC tracking run)
+- Google data unchanged (latest day 18 Nov); late data raised 12 to 18 Nov to 484 impressions. Bing: 95 indexed (92 this morning), 0 crawl issues, 0 links. No Indexing API requests (owner rule: none before 22 Nov). No site changes.
+
 ### 19 Nov 2026 (owner: Indexing API limit)
 - Owner rule: no Indexing API requests before 22 Nov; from then at most 20 URLs per 24 hours, only uncrawled money pages. The 20 Nov retry of 99 URLs was cancelled; the 12-hour routine now sends at most 20 a day, in the 08:37 run only.
 - Check 19 Nov 10:20 UTC: /book and /bfcm-ads-management (both submitted today) still "unknown to Google". Pages indexed through the API today: 0 verified.

@@ -1,6 +1,6 @@
 # SEO tracking: keywords and pages
 
-Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (latest day with data: 2026-11-18). Compared with the previous snapshot (2026-11-19 08:38 UTC).
+Snapshot 2026-11-19 20:38 UTC. Search Console window 2026-11-12 to 2026-11-18 (latest day with data: 2026-11-18). Compared with the previous snapshot (2026-11-19 10:09 UTC).
 
 > Search Console updates about once a day with a 2-day lag. **The data has not changed since the previous snapshot**, so movers below are empty or carried over.
 
@@ -8,9 +8,9 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 
 | Metric | Last 7 days | 7 days before |
 |---|---|---|
-| Impressions | 468 | 256 |
+| Impressions | 484 | 256 |
 | Clicks | 1 | 2 |
-| Queries | 129 | 87 |
+| Queries | 130 | 87 |
 | Queries in top 10 | 13 | 3 |
 | Pages with impressions | 36 | 43 |
 
@@ -18,14 +18,14 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 
 | Page | Impressions | Clicks | Avg position | Position before | Change |
 |---|---|---|---|---|---|
-| /shopify-agency | 67 | 0 | 59.8 | 75.8 | +16.0 |
-| /blog/performance-marketing-agency | 65 | 1 | 32.9 | 58.3 | +25.4 |
-| / | 57 | 0 | 35.6 | 33.4 | -2.2 |
-| /tools | 38 | 0 | 24.3 | 31.6 | +7.3 |
+| /blog/performance-marketing-agency | 71 | 1 | 31.4 | 58.3 | +26.9 |
+| /shopify-agency | 69 | 0 | 59.0 | 75.8 | +16.8 |
+| / | 60 | 0 | 35.5 | 33.4 | -2.1 |
+| /tools | 41 | 0 | 25.0 | 31.6 | +6.6 |
+| /blog/what-is-roas | 35 | 0 | 75.4 | 82.5 | +7.1 |
 | /blog/meta-andromeda | 34 | 0 | 73 | 85 | +12 |
-| /blog/what-is-roas | 34 | 0 | 75.1 | 82.5 | +7.4 |
 | /blog | 33 | 0 | 31.4 | 57.9 | +26.5 |
-| /cases/DBTXySHSrJa | 24 | 0 | 5.8 | new | new |
+| /cases/DBTXySHSrJa | 25 | 0 | 6 | new | new |
 | /blog/meta-ads-library | 20 | 0 | 17.8 | 4.4 | -13.4 |
 | /meta-ads-agency | 20 | 0 | 38.1 | 5 | -33.1 |
 | /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve | 17 | 0 | 27.6 | 63 | +35.4 |
@@ -62,7 +62,7 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 | dotmappers it pvt ltd official website | 6 | 1 | 0 |
 | how do i calculate the total cost of ownership when comparing email marketing services? | 6 | 1 | 0 |
 | which agencies have proven experience scaling e-bike or other niche product e-commerce brands? | 7 | 1 | 0 |
-| dtc performance circle | 9 | 1 | 0 |
+| dtc performance circle | 8 | 2 | 0 |
 | scale content marketing faster pricing | 9 | 1 | 0 |
 | dtc performance marketing | 10 | 1 | 0 |
 | we're a mid-market e-commerce brand scaling ads across tiktok, instagram, and google. manual creative testing is slowing us down. what platforms integrate with our ad accounts and automatically optimize creative performance? | 10 | 1 | 0 |
@@ -77,13 +77,13 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 | andromeda ad experts in the united states || /blog/meta-andromeda | 6 | 2 |
 | bands off ads roas calculator || /tools | 11 | 2 |
 | dropshipping case study review || /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve | 18.5 | 2 |
+| dtc performance circle || /blog/performance-marketing-agency | 8 | 2 |
 | best ad spend cashback option for scaling dtc || / | 20 | 1 |
 | best video commerce for scaling brands || / | 11 | 1 |
 | brand scaling agency || /locations/toronto | 4 | 1 |
 | dotmappers it pvt ltd official website || / | 6 | 1 |
 | dropshipping roas calculator || /tools | 20 | 1 |
 | dtc affiliate program scaling || / | 18 | 1 |
-| dtc performance circle || /blog/performance-marketing-agency | 9 | 1 |
 | dtc performance marketing || /blog/performance-marketing-agency | 10 | 1 |
 | facebook roas calculator || /tools | 16 | 1 |
 | growth agency to scale my dtc brand || /shopify-agency | 11 | 1 |
@@ -96,10 +96,10 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 
 | Keyword | Position | Impressions |
 |---|---|---|
+| dtc marketing agency | 49.7 | 15 |
 | meta andromeda | 92.3 | 14 |
-| dtc marketing agency | 57.5 | 12 |
+| tiktok shop break even roas calculator | 45.6 | 9 |
 | dtc shopify agency | 66.9 | 8 |
-| tiktok shop break even roas calculator | 47.2 | 8 |
 
 ## The 30 services: where each one ranks (last 7 days)
 
@@ -114,7 +114,7 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 | ROAS improvement | /roas-improvement-agency | 8 | 67.5 | ecommerce roas improvement agency (/blog/performance-marketing-agency) | not ranking |
 | TikTok ads management | /tiktok-ads-agency | 0 | - | - | not ranking |
 | TikTok Spark Ads | /tiktok-ads-agency | 0 | - | - | not ranking |
-| TikTok Shop management | /tiktok-shop-agency | 9 | 60.4 | tiktok shop scaling services (/growth) | not ranking |
+| TikTok Shop management | /tiktok-shop-agency | 10 | 60.4 | tiktok shop scaling services (/growth) | not ranking |
 | TikTok Shop affiliate creators | /tiktok-shop-agency | 0 | - | - | not ranking |
 | GMV Max campaigns | /tiktok-shop-agency | 0 | - | - | not ranking |
 | TikTok LIVE selling | /tiktok-shop-agency | 0 | - | - | not ranking |
@@ -122,7 +122,7 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 | Performance Max campaigns | /google-shopping-ads-agency | 0 | - | - | not ranking |
 | Google Ads for ecommerce | /google-shopping-ads-agency | 0 | - | - | not ranking |
 | Shopify store build and redesign | /shopify-agency | 19 | 45 | best shopify agency for dtc (/shopify-agency) | 45 |
-| Ecommerce CRO | /cro-agency | 26 | 40 | shopify cro agency (/shopify-agency) | 91 |
+| Ecommerce CRO | /cro-agency | 28 | 36.2 | shopify cro agency (/shopify-agency) | 91 |
 | Landing and product page optimisation | /cro-agency | 0 | - | - | not ranking |
 | Bundles, AOV and post-purchase upsells | /cro-agency | 0 | - | - | not ranking |
 | Direct-response video ads | /viral-creatives | 6 | 2 | about me:fast-growing dtc brand founderfounder of a fast-gro (/blog/performance-marketing-agency) | 21 |
@@ -134,13 +134,13 @@ Snapshot 2026-11-19 10:09 UTC. Search Console window 2026-11-12 to 2026-11-18 (l
 | SMS marketing | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | Retention marketing | /retention-marketing-agency | 0 | - | - | not ranking |
 | BFCM ads management | /bfcm-ads-management | 5 | 20.3 | bfcm ads (/blog/bfcm-meta-ads-playbook) | not ranking |
-| Full-funnel ecommerce growth | /growth | 25 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | 61 |
+| Full-funnel ecommerce growth | /growth | 27 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | 61 |
 
 ## Keyword movers (3+ positions, 2+ impressions)
 
-**Up:** none
+**Up:** scaling dtc brands with retargeting 71 to 40; ecommerce roas tracking tool 78.5 to 69.3; dtc marketing agency 57.5 to 49.7; shopify cro agency 40 to 36.2; real roas calculator ecommerce 33.7 to 30
 
-**Down:** none
+**Down:** tiktok shop scaling services 59.2 to 63.1
 
 **New:** none
 
