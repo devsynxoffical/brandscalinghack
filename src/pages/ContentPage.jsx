@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { BYLINE_KINDS, AUTHOR, humanDate } from '../data/byline';
-import { ArrowRight, ChevronDown, ChevronUp, CheckCircle2, BookOpen, Calculator, Sparkles } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp, CheckCircle2, BookOpen, Calculator, Sparkles, BadgeCheck, MapPin, Gift, Layers } from 'lucide-react';
 import { contentPageByPath, KIND_HUB } from '../data/pageRegistry';
 import { newLinkState, pageIdFromHref } from '../data/internalLinks';
 import { linkTitle } from '../data/linkTitles';
 import LinkedText from '../components/LinkedText';
 import ToolCalculator from '../components/ToolCalculator';
+import CaseResultCards, { casesForPage } from '../components/seo/CaseResultCards';
+import ProcessSteps from '../components/seo/ProcessSteps';
+import GrowthPlanQuiz from '../components/seo/GrowthPlanQuiz';
+import { CASE_HIGHLIGHTS } from '../data/caseHighlights';
+
+// Page kinds that get the visual layout: hero with a verified result, case cards and the process
+const VISUAL_KINDS = new Set(['service', 'industry', 'location', 'comparison', 'benchmark']);
 
 const paras = (text) => String(text || '').split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
 
@@ -52,10 +59,14 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
   const pStyle = { fontSize: '16.5px', lineHeight: 1.75, color: '#cbd5e1', margin: '0 0 16px' };
   const card = { background: '#111116', border: '1px solid #20202a', borderRadius: '16px' };
   const relatedHrefs = (page.related || []).filter((h) => h !== path && linkTitle(h));
+  const visual = VISUAL_KINDS.has(page.kind);
+  const picks = visual ? casesForPage(page, 4) : [];
+  const heroCase = picks[0];
+  const proseP = { ...pStyle, maxWidth: '820px' };
 
   return (
     <div className="content-page" style={{ minHeight: '100vh', backgroundColor: '#070709', color: '#e2e8f0', paddingTop: '112px', paddingBottom: '80px' }}>
-      <div style={{ maxWidth: '920px', margin: '0 auto', padding: '0 20px' }}>
+      <div className="seo-wrap">
 
         {/* Breadcrumbs */}
         <nav aria-label="Breadcrumb" style={{ fontSize: '13px', color: '#94a3b8', marginBottom: '26px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
@@ -65,8 +76,9 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
           <span style={{ color: '#e2e8f0' }}>{page.term ? page.term.name : page.eyebrow || page.h1}</span>
         </nav>
 
-        {/* Hero */}
-        <header style={{ marginBottom: '30px' }}>
+        {/* Hero: copy on the left, a verified client result on the right */}
+        <div className={`seo-hero${visual && heroCase ? ' has-visual' : ''}`}>
+        <header style={visual && heroCase ? undefined : { maxWidth: '880px' }}>
           {page.eyebrow && (
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 87, 34, 0.1)', border: '1px solid rgba(255, 87, 34, 0.25)', padding: '6px 14px', borderRadius: '999px', color: '#ff5722', fontSize: '12.5px', fontWeight: 750, marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               {page.kind === 'tool' ? <Calculator size={14} /> : page.kind === 'glossary' ? <BookOpen size={14} /> : <Sparkles size={14} />} {page.eyebrow}
@@ -89,11 +101,30 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
             </div>
           )}
           {paras(page.intro).slice(1).map((p, i) => <p key={i} style={{ ...pStyle, fontSize: '17.5px', color: '#b6c2d3' }}>{linked(p)}</p>)}
+          {visual && (
+            <ul className="seo-trust" aria-label="Why brands work with us">
+              <li><Gift size={15} /> Free Brand Growth Audit</li>
+              <li><BadgeCheck size={15} /> {CASE_HIGHLIGHTS.length} case studies with verified figures</li>
+              <li><Layers size={15} /> Meta, TikTok, Google and Shopify</li>
+              <li><MapPin size={15} /> New York, NY</li>
+            </ul>
+          )}
         </header>
+        {visual && heroCase && (
+          <a href={heroCase.path} onClick={go(heroCase.path)} className="seo-hero-visual" aria-label={`Case study: ${heroCase.title}`}>
+            <img src={heroCase.image} alt={`${heroCase.title}: results dashboard screenshot`} decoding="async" />
+            <span className="seo-hero-badge">
+              <span className="seo-hero-badge-k"><BadgeCheck size={13} /> Verified client result</span>
+              <span className="seo-hero-badge-v">{[heroCase.revenue, heroCase.roas].filter(Boolean).join(' · ')}</span>
+              <span className="seo-hero-badge-t">{heroCase.title}</span>
+            </span>
+          </a>
+        )}
+        </div>
 
         {/* Quick answer */}
         {page.quickAnswer && (
-          <section className="quick-answer" aria-label="Quick answer" style={{ ...card, borderLeft: '4px solid #ff5722', padding: '22px 24px', margin: '0 0 40px' }}>
+          <section className="quick-answer" aria-label="Quick answer" style={{ ...card, borderLeft: '4px solid #ff5722', padding: '22px 24px', margin: '0 0 40px', maxWidth: '880px' }}>
             <h2 style={{ fontSize: '18px', fontWeight: 850, color: '#ffffff', margin: '0 0 10px' }}>{page.quickAnswer.question}</h2>
             <p className="quick-answer" style={{ ...pStyle, margin: 0, color: '#e2e8f0' }}>{page.quickAnswer.answer}</p>
           </section>
@@ -117,8 +148,13 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
         {(page.sections || []).map((s) => (
           <section key={s.id} id={s.id} style={{ margin: '0 0 44px', scrollMarginTop: '100px' }}>
             <h2 style={h2Style}>{s.h2}</h2>
-            {paras(s.content).map((p, i) => <p key={i} style={pStyle}>{linked(p)}</p>)}
-            {s.list && (
+            {paras(s.content).map((p, i) => <p key={i} style={proseP}>{linked(p)}</p>)}
+            {s.list && visual && s.list.length >= 4 && (
+              <ul className="seo-check-grid">
+                {s.list.map((item, i) => <li key={i}><CheckCircle2 size={18} /><span>{linked(item)}</span></li>)}
+              </ul>
+            )}
+            {s.list && !(visual && s.list.length >= 4) && (
               <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', display: 'grid', gap: '10px' }}>
                 {s.list.map((item, i) => (
                   <li key={i} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', fontSize: '16px', lineHeight: 1.65, color: '#cbd5e1' }}>
@@ -135,8 +171,20 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
                 </table>
               </div>
             )}
-            {(s.subsections || []).map((sub, i) => (
-              <div key={i} style={{ margin: '20px 0 0' }}>
+            {(s.subsections || []).length >= 3 && (
+              <div className="seo-feature-grid">
+                {s.subsections.map((sub, i) => (
+                  <div key={i} className="seo-feature">
+                    <span className="seo-feature-icon" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                    <h3>{sub.h3}</h3>
+                    {paras(sub.content).map((p, k) => <p key={k}>{linked(p)}</p>)}
+                    {sub.list && <ul>{sub.list.map((li, k) => <li key={k}>{linked(li)}</li>)}</ul>}
+                  </div>
+                ))}
+              </div>
+            )}
+            {(s.subsections || []).length < 3 && (s.subsections || []).map((sub, i) => (
+              <div key={i} style={{ margin: '20px 0 0', maxWidth: '820px' }}>
                 <h3 style={{ fontSize: '19px', fontWeight: 800, color: '#ffffff', margin: '0 0 10px' }}>{sub.h3}</h3>
                 {paras(sub.content).map((p, k) => <p key={k} style={pStyle}>{linked(p)}</p>)}
                 {sub.list && <ul style={{ margin: '0 0 12px', paddingLeft: '20px', color: '#cbd5e1', lineHeight: 1.7 }}>{sub.list.map((li, k) => <li key={k}>{linked(li)}</li>)}</ul>}
@@ -179,11 +227,16 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
           </section>
         )}
 
+        {/* Real results, how we work, and the growth plan form */}
+        {visual && <CaseResultCards cases={picks.slice(1, 4)} onNavigate={onNavigate} />}
+        {visual && <ProcessSteps />}
+        {page.kind !== 'glossary' && <GrowthPlanQuiz onNavigate={onNavigate} onOpenBooking={onOpenBooking} source={page.kind} />}
+
         {/* FAQs */}
         {(page.faqs || []).length > 0 && (
           <section id="faq" aria-label="Frequently asked questions" style={{ margin: '0 0 48px' }}>
             <h2 style={h2Style}>Frequently asked questions</h2>
-            <div style={{ display: 'grid', gap: '10px' }}>
+            <div style={{ display: 'grid', gap: '10px', maxWidth: '880px' }}>
               {page.faqs.map((f, i) => {
                 const open = openFaq === i;
                 return (

@@ -80,6 +80,7 @@ export default function Footer({ onNavigate, onOpenBooking }) {
                 ['/benchmarks', 'benchmarks', 'ROAS Benchmarks'],
                 ['/locations', 'locations', 'Locations We Serve'],
                 ['/meta-ads-audit', 'meta-ads-audit', 'Meta Ads Audit'],
+                ['/roas-improvement-agency', 'roas-improvement-agency', 'ROAS Improvement'],
                 ['/tiktok-shop-agency', 'tiktok-shop-agency', 'TikTok Shop Agency'],
                 ['/cro-agency', 'cro-agency', 'Ecommerce CRO Agency'],
                 ['/klaviyo-email-sms-agency', 'klaviyo-email-sms-agency', 'Klaviyo Email & SMS'],

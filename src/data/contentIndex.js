@@ -81,6 +81,14 @@ export const CONTENT_INDEX = [
     "eyebrow": "BFCM Ads Management"
   },
   {
+    "path": "/roas-improvement-agency",
+    "kind": "service",
+    "titleTag": "Ecommerce ROAS Improvement Agency | Brand Scaling",
+    "metaDescription": "Ecommerce ROAS improvement agency for DTC brands: we find why ROAS is falling, set a break-even target from your margin, then fix tracking, creative and offer.",
+    "h1": "Ecommerce ROAS Improvement Agency for DTC Brands",
+    "eyebrow": "ROAS Improvement"
+  },
+  {
     "path": "/for/skincare-beauty",
     "kind": "industry",
     "titleTag": "Skincare Brand Marketing Agency | Brand Scaling",

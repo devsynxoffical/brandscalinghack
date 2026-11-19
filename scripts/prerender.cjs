@@ -505,6 +505,9 @@ function renderRoute(route) {
 (async () => {
   const { getRouteSchema, toJsonLd, ogImageFor } = await import('../src/data/pageSchemas.js');
   const { BLOG_SOURCES } = await import('../src/data/blogSources.js');
+  const { casesForPage } = await import('../src/data/casePicks.js');
+  const { PROCESS_STEPS } = await import('../src/data/processSteps.js');
+  const SEO_VISUAL_KINDS = new Set(['service', 'industry', 'location', 'comparison', 'benchmark']);
   const caseRoutes = await buildCaseRoutes();
   const { blogPosts } = await import('../src/data/blogPosts.js');
   const { linkifySegments, newLinkState, relatedGuidesFor, SERVICE_GUIDES, SERVICE_PATHS } = await import('../src/data/internalLinks.js');
@@ -758,6 +761,7 @@ function renderRoute(route) {
           ${(sec.subsections || []).map((sub) => `<h3>${escapeHtml(sub.h3)}</h3>${paraHtml(sub.content, ls)}${sub.list ? `<ul>${sub.list.map((i) => `<li>${linkHtml(i, ls)}</li>`).join('')}</ul>` : ''}`).join('')}
           ${sec.cards ? `<ul>${sec.cards.map((c) => `<li><a href="${c.href}">${escapeHtml(c.title)}</a>: ${escapeHtml(c.text)}</li>`).join('')}</ul>` : ''}
         `).join('')}
+        ${SEO_VISUAL_KINDS.has(pg.kind) ? `<h2>Real results from client accounts</h2><ul>${casesForPage(pg, 4).map((c) => `<li><a href="${c.path}">${escapeHtml(c.title)}</a>${[c.revenue, c.roas].filter(Boolean).length ? `: ${escapeHtml([c.revenue, c.roas].filter(Boolean).join(', '))}` : ''}</li>`).join('')}</ul><h2>From first call to scaling, step by step</h2><ol>${PROCESS_STEPS.map((st) => `<li><strong>${escapeHtml(st.title)}</strong> (${escapeHtml(st.when)}): ${escapeHtml(st.text)}</li>`).join('')}</ol>` : ''}
         ${(pg.proof || []).length ? `<h2>Proof from real accounts</h2><ul>${pg.proof.map((x) => `<li><strong>${escapeHtml(x.value)}</strong> ${escapeHtml(x.label)}${x.note ? `: ${escapeHtml(x.note)}` : ''}${x.href ? ` (<a href="${x.href}">see the proof</a>)` : ''}</li>`).join('')}</ul>` : ''}
         ${(pg.faqs || []).length ? `<h2>Frequently asked questions</h2>${pg.faqs.map((f) => `<h3>${escapeHtml(f.question)}</h3><p>${linkHtml(f.answer, ls)}</p>`).join('')}` : ''}
         ${related.length ? `<h2>Related</h2><ul>${related.map((h) => `<li><a href="${h}">${escapeHtml(linkTitle(h))}</a></li>`).join('')}</ul>` : ''}

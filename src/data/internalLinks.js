@@ -30,6 +30,7 @@ export const LINK_RULES = [
   { re: /\bretargeting( ads| campaigns| strategy)?\b|\bremarketing\b/i, href: '/blog/retargeting-for-dtc-brands', title: 'Retargeting for DTC Brands' },
   { re: /\bscal(e|ing) (a|your) DTC brand\b|\bDTC brand accelerator\b/i, href: '/blog/how-to-scale-a-dtc-brand', title: 'How to Scale a DTC Brand' },
   { re: /\bperformance marketing agenc(y|ies)\b/i, href: '/blog/performance-marketing-agency', title: 'What Is a Performance Marketing Agency?' },
+  { re: /\bimprov(e|ing) (your |ecommerce )?ROAS\b|\bROAS (improvement|optimi[sz]ation)( agency)?\b|\bincrease (your )?ROAS\b/i, href: '/roas-improvement-agency', title: 'Ecommerce ROAS Improvement Agency' },
   { re: /\b(Meta|Facebook) ads? (account )?audit\b|\bad account audit\b/i, href: '/meta-ads-audit', title: 'Meta Ads Audit' },
   { re: /\bMeta ads agency\b/i, href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce' },
   { re: /\b(Product |LIVE )?GMV Max\b/i, href: '/blog/tiktok-gmv-max', title: 'TikTok GMV Max Guide' },

@@ -12,6 +12,7 @@ import FaqSection from '../components/FaqSection';
 import MostSearchedSection from '../components/MostSearchedSection';
 import KnockoutAuthorityBannerSection from '../components/KnockoutAuthorityBannerSection';
 import EveryPieceWorksTogetherSection from '../components/EveryPieceWorksTogetherSection';
+import GrowthPlanQuiz from '../components/seo/GrowthPlanQuiz';
 
 export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpenInstagramModal }) {
   return (
@@ -68,6 +69,13 @@ export default function HomePage({ onOpenBooking, onNavigate, onOpenVideo, onOpe
           onOpenInstagramModal={onOpenInstagramModal}
         />
       </div>
+
+      {/* GROWTH PLAN FORM: 4 questions, honest fit check, WhatsApp or booking (lead capture) */}
+      <section style={{ background: '#070709', padding: '72px 0 24px' }}>
+        <div className="seo-wrap">
+          <GrowthPlanQuiz onNavigate={onNavigate} onOpenBooking={onOpenBooking} source="home" />
+        </div>
+      </section>
 
       {/* 08 — EXPERIENCE + FINAL CTA (Light Theme with 3D Flip Cards & Final CTA) */}
       <div className="cv-auto">

@@ -395,7 +395,7 @@ We do not publish a price for the audit or for ongoing management. The scope dep
         answer: `No. The 90-day plan is written so your team or another agency can run it. Many brands do hire us afterwards because the audit shows exactly what the work involves, but the audit is meant to be useful on its own, including a clear break-even ROAS to judge any future media buyer against.`
       }
     ],
-    related: ['/contact', '/meta-ads-agency', '/tools/break-even-roas-calculator', '/glossary/conversions-api', '/blog/how-to-scale-facebook-ads', '/services'],
+    related: ['/contact', '/meta-ads-agency', '/roas-improvement-agency', '/tools/break-even-roas-calculator', '/glossary/conversions-api', '/blog/how-to-scale-facebook-ads', '/services'],
     cta: {
       heading: 'Book your Meta ads audit',
       text: 'Start with a call. Gaurav will review your ad account, creative, store and unit economics, then walk you through a 90-day plan, scoped after the review.'
@@ -654,5 +654,102 @@ Agencies usually price seasonal management as a monthly retainer, a percentage o
       text: 'Book a Brand Growth Audit and we will review your margin, creative and account, then map the offer, creative bank and budget plan for Q4.'
     },
     serviceType: 'Black Friday Cyber Monday and Q4 paid ads management for ecommerce'
+  },
+  {
+    path: '/roas-improvement-agency',
+    kind: 'service',
+    updated: '2026-11-19',
+    primaryKeyword: 'ecommerce roas improvement agency',
+    secondaryKeywords: ['improve roas', 'increase roas ecommerce', 'roas optimization agency', 'why is my roas dropping'],
+    titleTag: 'Ecommerce ROAS Improvement Agency | Brand Scaling',
+    metaDescription: 'Ecommerce ROAS improvement agency for DTC brands: we find why ROAS is falling, set a break-even target from your margin, then fix tracking, creative and offer.',
+    h1: 'Ecommerce ROAS Improvement Agency for DTC Brands',
+    eyebrow: 'ROAS Improvement',
+    quickAnswer: {
+      question: 'What does an ecommerce ROAS improvement agency do?',
+      answer: `It finds out why your return on ad spend is low or falling, sets a target ROAS from your real margins, and then fixes the causes in order: tracking, creative, offer and landing page, and account structure. The goal is more profit from the same spend, not a higher number in Ads Manager.`
+    },
+    intro: `When ROAS drops, most brands cut budget or change bids. That rarely fixes it, because the cause is usually somewhere else: purchases Meta is not seeing, ads that have run too long, an offer that does not lift order value, or a product page that loses mobile visitors. We start with a Brand Growth Audit to find which of these is costing you the most, then fix it with you.
+
+Every target we set starts from your break-even ROAS, the return at which an order stops losing money after product cost, shipping, fees and returns. Without that number, "good ROAS" is guesswork.`,
+    sections: [
+      {
+        id: 'why-roas-drops',
+        h2: 'Why ecommerce ROAS drops',
+        content: `In the accounts we review, a falling ROAS almost always traces back to one or more of these six causes. The fix depends on which one it is, which is why the audit comes first.`,
+        subsections: [
+          { h3: 'Tracking gaps', content: `If the pixel and Conversions API are not both sending deduplicated purchase events, Meta under-counts sales and optimises on bad data. ROAS looks worse than it is, and delivery gets worse because the algorithm learns from fewer purchases.` },
+          { h3: 'Creative fatigue', content: `Winning ads wear out as frequency rises. Without a steady supply of new hooks and angles, cost per purchase climbs and ROAS falls even when nothing else changes.` },
+          { h3: 'Offer and order value', content: `A low average order value caps how much you can pay for a customer. Bundles, quantity breaks and post-purchase upsells raise revenue per order, which lifts ROAS without touching the ads.` },
+          { h3: 'Landing page conversion', content: `Paid traffic cannot convert better than the page it lands on. Slow mobile pages, unclear product pages and an offer that does not match the ad all lower conversion rate, and ROAS falls with it.` },
+          { h3: 'Account structure and bidding', content: `Too many campaigns and ad sets split the budget so none exits the learning phase, and audiences overlap and bid against each other. Consolidating usually lowers costs.` },
+          { h3: 'The wrong target', content: `Many brands chase a ROAS number copied from someone else. A brand with 60% margins can profit at 1.7x; a brand with 25% margins loses money below 4x. The target has to come from your own unit economics.` }
+        ]
+      },
+      {
+        id: 'break-even-roas',
+        h2: 'Set the right target: break-even ROAS by margin',
+        content: `Break-even ROAS is 1 divided by your contribution margin after product cost, shipping, payment fees and returns. Below it, every order loses money; above it, ads are profitable. The table shows how much the right target moves with margin.
+
+Use the break-even ROAS calculator to work out your own number before judging any campaign.`,
+        table: {
+          headers: ['Contribution margin per order', 'Break-even ROAS', 'What it means'],
+          rows: [
+            ['25%', '4.0x', 'Every $1 of ads must bring $4 of revenue just to break even'],
+            ['33%', '3.0x', 'A common range for apparel and accessories after shipping and fees'],
+            ['40%', '2.5x', 'Room to scale prospecting at moderate ROAS'],
+            ['50%', '2.0x', 'Profitable well below what many brands target'],
+            ['60%', '1.67x', 'High-margin products can scale aggressively at low ROAS']
+          ]
+        }
+      },
+      {
+        id: 'what-we-fix-first',
+        h2: 'What we fix first',
+        content: `The order matters. Fixing creative before tracking means judging new ads on bad data; scaling before the offer is right means paying more for the same thin margin.`,
+        list: [
+          'Tracking: pixel and Conversions API both sending deduplicated purchases, with Meta purchases checked against Shopify orders.',
+          'Target: a break-even ROAS and break-even CAC from your real margins, so every decision has a profit line.',
+          'Creative: weekly batches of new hooks and angles on a testing matrix, so winners are replaced before they fatigue.',
+          'Offer: bundles, quantity breaks and post-purchase upsells that raise average order value.',
+          'Landing page: mobile speed, product page clarity and an offer that matches the ad.',
+          'Structure: fewer, larger campaigns and ad sets that exit learning and stop competing with each other.'
+        ]
+      },
+      {
+        id: 'realistic-results',
+        h2: 'What a realistic ROAS improvement looks like',
+        content: `Across the 25 Brand Scaling case studies that publish a ROAS, the median is 3.97x and the middle half sits between 3.61x and 4.39x. Those are results from accounts that were already working, not a promise for every brand.
+
+The first 7 to 14 days cover the audit, tracking, offer and product page fixes. Most brands see measurable change in CPA, AOV and ROAS within 2 to 4 weeks of the first creative wave. Anyone who guarantees a ROAS figure before seeing your account and margins is guessing.`
+      },
+      {
+        id: 'when-roas-is-wrong-goal',
+        h2: 'When a higher ROAS is the wrong goal',
+        content: `ROAS usually falls as spend rises, because each extra dollar reaches people less likely to buy. A brand at 6x on a small budget may make more total profit at 3x on three times the spend. That is why we judge growth on contribution margin and MER (total revenue divided by total marketing spend), and use platform ROAS to manage campaigns, not to judge the business.
+
+If your ROAS is high but revenue is flat, the problem is usually scale, not efficiency, and the plan looks different: more creative volume, broader targeting and new channels.`
+      }
+    ],
+    proof: [
+      { value: '11.6x', label: 'ROAS on $2.3M in sales', note: 'Dropshipping brand, one year', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 in 20 days, skincare brand', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
+      { value: '3.89x', label: 'ROAS in one month', note: '$137,620, supplement brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
+    ],
+    faqs: [
+      { question: 'What is a good ROAS for ecommerce?', answer: `A good ROAS is any figure comfortably above your break-even ROAS, which is 1 divided by your contribution margin. Across our 25 published case studies the median is 3.97x, but a brand with 60% margins can be profitable at 2x while a brand with 25% margins needs more than 4x.` },
+      { question: 'Why did my ROAS drop suddenly?', answer: `The most common causes are a tracking change that hides purchases, winning ads fatiguing as frequency rises, a significant edit that reset the learning phase, a price or offer change, or a slower landing page. Compare Meta purchases with Shopify orders first: if Shopify revenue held up, it is a tracking problem, not a sales problem.` },
+      { question: 'How fast can an agency improve ROAS?', answer: `Tracking and offer fixes happen in the first 7 to 14 days. Most brands see measurable change in CPA, AOV and ROAS within 2 to 4 weeks of the first creative wave. Bigger structural changes, such as new creative angles and a rebuilt product page, take one to three months to show their full effect.` },
+      { question: 'Does a higher ROAS always mean more profit?', answer: `No. ROAS ignores product cost and usually falls as you scale. More total profit often comes from a lower ROAS on a bigger budget, as long as it stays above break-even. We judge results on contribution margin and MER, not platform ROAS alone.` },
+      { question: 'How much does ROAS improvement cost?', answer: `The Brand Growth Audit is free. If you want us to run the work, we quote after the audit, because the scope depends on your spend, channels and creative needs. Partner brands typically spend at least $10,000 to $20,000 a month on ads.` },
+      { question: 'What do you need from us to start?', answer: `View access to your ad accounts and Shopify analytics, your product costs, shipping and fees so we can calculate break-even ROAS, and the last 90 days of spend and revenue. The audit call then walks through what is costing you the most.` }
+    ],
+    related: ['/meta-ads-audit', '/tools/break-even-roas-calculator', '/roas-calculator', '/benchmarks/ecommerce-roas', '/cro-agency', '/blog/good-roas-for-ecommerce'],
+    cta: {
+      heading: 'Find out why your ROAS is low',
+      text: 'Book a free Brand Growth Audit. We will calculate your break-even ROAS, review tracking, creative, offer and store, and show you what to fix first.'
+    },
+    serviceType: 'Ecommerce ROAS improvement and paid media optimisation'
   }
 ];

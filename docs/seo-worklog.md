@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 19 Nov 2026 (owner: new pages, proper UI/UX, leads)
+- Template redesign for 67 SEO pages (hero with verified result image, feature cards, case cards, process steps, growth plan form). See change log rows 4 to 6.
+- New page /roas-improvement-agency for "ecommerce roas improvement agency" (19 impressions, no dedicated page).
+- Growth plan form on home and content pages; WhatsApp message carries the answers; GA4 quiz events.
+- Case highlights (43 verified cases) generated at build into src/data/caseHighlights.js; case links and steps also in the prerendered HTML.
+
 ### 19 Nov 2026 (owner: honest investigation before changes)
 See docs/seo-investigation-2026-11-19.md and docs/seo-change-log.md.
 - No 28-day or 3-month comparison is possible: Google data starts 19 Oct (previous 28 days: 2 impressions).
