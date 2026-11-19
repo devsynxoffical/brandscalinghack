@@ -89,8 +89,8 @@ export const metaAdsFaqs = [
 
 export const shopifyFaqs = [
   {
-    question: 'Do you work as a DTC ecommerce CRO agency?',
-    answer: 'Yes. Conversion rate optimization is the core of our Shopify work: we audit mobile speed, product pages, offers and checkout, run A/B tests, and build bundles and post-purchase upsells that lift average order value, all matched to the Meta and TikTok ads sending the traffic.'
+    question: 'Is conversion work part of your Shopify service?',
+    answer: 'Yes. On every Shopify build we audit mobile speed, product pages, offers and checkout, and add bundles and post-purchase upsells that lift average order value, matched to the Meta and TikTok ads sending the traffic. Ongoing A/B testing and the full research process are covered on our DTC ecommerce CRO agency page.'
   },
   {
     question: 'Can you help a marketplace-dependent brand grow its own DTC channel?',
@@ -124,8 +124,8 @@ export const tiktokFaqs = [
     answer: 'A TikTok ads agency produces native creator videos, runs in-feed and Spark Ads campaigns, and manages TikTok Shop and affiliate creators where the product fits. Brand Scaling runs TikTok alongside Meta from one creative engine, so winning hooks are recut for both platforms and measured on blended MER.'
   },
   {
-    question: 'Do you offer TikTok Shop scaling services?',
-    answer: 'Yes. We set up or audit the TikTok Shop listing, recruit and brief affiliate creators, structure commissions and sample seeding, and run GMV Max and Spark Ads on the best affiliate videos, all tied to the same offer and margin model as your Shopify store.'
+    question: 'Do you also run TikTok Shop?',
+    answer: 'Yes, as a separate service from TikTok ads. We set up or audit the shop listing, recruit and brief affiliate creators, structure commissions and sample seeding, and run GMV Max and Spark Ads on the best affiliate videos, all tied to the same offer and margin model as your Shopify store. The details are on our TikTok Shop scaling services page.'
   },
   {
     question: 'Are TikTok ads better than Meta ads for ecommerce?',
@@ -160,8 +160,8 @@ export const growthFaqs = [
     answer: 'An ecommerce growth agency runs paid acquisition, creative, the store and retention as one system and is measured on revenue, new-customer CAC and contribution margin. Brand Scaling combines Meta, TikTok and Google media buying with direct-response creative production and Shopify CRO, so a fix in one area is not lost in another.'
   },
   {
-    question: 'Do you offer TikTok Shop scaling services?',
-    answer: 'Yes. TikTok Shop and creator affiliate scaling is one of the six levers in the growth engine: we recruit and brief affiliates, run Spark Ads on the best creator videos and connect the TikTok Shop catalog to the same offer and margin model used on Meta.'
+    question: 'Is TikTok Shop part of the growth engine?',
+    answer: 'Yes. Creator affiliate selling is one of the six levers in the growth engine: we recruit and brief affiliates, run Spark Ads on the best creator videos and connect the shop catalog to the same offer and margin model used on Meta. How we run it is on our TikTok Shop scaling services page.'
   },
   {
     question: 'Are you an ecommerce marketing agency based in the USA?',

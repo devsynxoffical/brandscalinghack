@@ -357,7 +357,16 @@ function App() {
   };
 
   // Every "Book Audit" / "Book a call" button goes to the standalone booking page
-  const openBooking = () => handleNavigate('book');
+  // Booking buttons (not links) open /book in the app; record them like a click on a /book link,
+  // so GA4 counts every booking intent, not only the ones made through <a href="/book">
+  const openBooking = () => {
+    if (typeof window.gtag === 'function') {
+      const params = { method: 'book_call', link_url: 'button', page_path: window.location.pathname };
+      window.gtag('event', 'book_click', params);
+      window.gtag('event', 'generate_lead', params);
+    }
+    handleNavigate('book');
+  };
 
   const renderActivePage = () => {
     if (contentPageByPath(`/${activePage}`)) {

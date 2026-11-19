@@ -173,6 +173,8 @@
     gtag('js', new Date());
     gtag('config', 'G-4NHL9F0B3C');
     (function () {
+      // Only the live site reports to GA4, so local and preview builds do not pollute the data
+      if (location.hostname !== 'www.brandscalinghacks.com') return;
       var load = function () {
         var s = document.createElement('script');
         s.async = true;

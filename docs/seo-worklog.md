@@ -18,6 +18,13 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 19 Nov 2026 (owner: honest investigation before changes)
+See docs/seo-investigation-2026-11-19.md and docs/seo-change-log.md.
+- No 28-day or 3-month comparison is possible: Google data starts 19 Oct (previous 28 days: 2 impressions).
+- Findings: no authority or third-party proof (0 links); informational keywords were the wrong first target (328 impressions at position 76, 0 clicks); 111 pages in 4 weeks, about 25 crawled, glossary 0 impressions; 9 money pages never crawled; lead tracking broken; own FAQs cannibalised the TikTok Shop and CRO pages.
+- Changes (3): booking buttons now tracked; GA4 only on the live domain; 3 competing FAQ questions reworded.
+- Strategy change: no new informational, glossary, industry or location pages; work only on commercial pages ranking 20 to 70, plus off-site proof.
+
 ### 18 Nov 2026 (20:37 UTC tracking run)
 - Google data unchanged (latest day 17 Nov); late data raised 11 to 17 Nov impressions to 420 (from 401). Bing: 92 indexed, 0 crawl issues, 0 links.
 - Striking-distance keywords were already handled today (home 8-figure FAQ, /tools table, Andromeda sources). New ones ("dropshipping roas calculator" /tools 20, "dtc affiliate program scaling" / 18) have 1 to 2 impressions; no change.
