@@ -18,6 +18,11 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 19 Nov 2026 (owner: index all pages with the service-account key)
+- Owner confirmed the service account (google-indexer@contractorleads-502510) is an owner in Search Console. Submitted all 161 sitemap URLs to the Indexing API: 93 accepted, the rest hit the project quota of 200 requests a day (shared with other sites on the same Google Cloud project).
+- Retry of the remaining 99 URLs (money pages first) scheduled for 20 Nov 08:10 UTC, after the quota reset.
+- "Accepted" means received, not crawled (16 Nov: 48 of 52 URLs submitted 3+ times stayed uncrawled). Real check: URL Inspection on 22 and 26 Nov vs 19 Nov (64 crawled, 62 indexed).
+
 ### 19 Nov 2026 (owner: 30 top services, rank for them)
 - src/data/serviceCatalog.js: 30 services the site offers, grouped by channel, each mapped to its target page and a Search Console query pattern.
 - /services: "All 30 ecommerce marketing services" directory (React and prerendered HTML).
