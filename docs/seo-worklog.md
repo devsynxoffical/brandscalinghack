@@ -18,6 +18,12 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 19 Nov 2026 (08:37 UTC tracking run)
+- Google data to 18 Nov: 12 to 18 Nov 462 impressions (256 the week before), 1 click, 13 keywords in the top 10. "dtc performance marketing agency" 21 to 12.7.
+- URL Inspection (161 URLs): crawled 56 to 64, indexed 54 to 62. Google crawled 8 case pages on 18 Nov at 10:40, about 4 hours after the case cards became real links (timing consistent; Assumption that it caused it). Home recrawled 18 Nov 12:47. All 13 priority money pages still uncrawled.
+- GA4 12 to 18 Nov: 43 sessions (36 direct, 5 organic social, 1 organic search); no key events (generate_lead not marked as key event by owner). Bing: 92 indexed, 0 issues, 0 links.
+- No change: 6 changes went live earlier today; change-log checks are due 26 Nov and 3 Dec.
+
 ### 19 Nov 2026 (owner: new pages, proper UI/UX, leads)
 - Template redesign for 67 SEO pages (hero with verified result image, feature cards, case cards, process steps, growth plan form). See change log rows 4 to 6.
 - New page /roas-improvement-agency for "ecommerce roas improvement agency" (19 impressions, no dedicated page).
