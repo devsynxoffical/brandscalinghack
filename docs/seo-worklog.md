@@ -219,3 +219,13 @@ Queue (next sessions, highest impact first):
 - Competitor SERP check for "meta ads agency for ecommerce", "tiktok shop agency", "ecommerce growth agency" and close content gaps.
 - CTR work on any page that reaches positions 1 to 15 with 0 clicks (currently /about at 5.4).
 - Next content if supported by data: Meta ads cost per purchase by niche (case data).
+
+## 20 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): data to 19 Nov, same as the previous snapshot. 7 days to 19 Nov: 526 impressions (previous 7 days 264), 1 click, 15 keywords in the top 10.
+- URL Inspection of all 168 sitemap URLs (Verified): 65 crawled, 63 indexed (19 Nov: 64 and 62 of 161). New: /roas-improvement-agency, crawled 19 Nov and indexed. The 5 pages added 20 Nov and 14 other priority pages are still "URL is unknown to Google".
+- Bing (Verified): 95 in index, 0 inbound links, 0 crawl issues.
+- GA4, 13 to 19 Nov (Verified): 37 sessions (Direct 31, Organic Social 5, Organic Search 1), 0 key events. Booking and quiz events are not key events yet, so they are not counted here.
+- Indexing API: no requests sent (owner rule: none before 22 Nov).
+- Change-log checks: none due yet (first due 26 Nov).
+- Changes: none from tracking, because the Google data is unchanged and there is no new evidence. Separate owner request, the same day: 2 new case studies (change-log row 12).

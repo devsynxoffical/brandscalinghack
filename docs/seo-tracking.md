@@ -1,16 +1,16 @@
 # SEO tracking: keywords and pages
 
-Snapshot 2026-11-20 07:29 UTC. Search Console window 2026-11-13 to 2026-11-19 (latest day with data: 2026-11-19). Compared with the previous snapshot (2026-11-19 20:38 UTC).
+Snapshot 2026-11-20 08:42 UTC. Search Console window 2026-11-13 to 2026-11-19 (latest day with data: 2026-11-19). Compared with the previous snapshot (2026-11-20 07:29 UTC).
 
-> Search Console updates about once a day with a 2-day lag.
+> Search Console updates about once a day with a 2-day lag. **The data has not changed since the previous snapshot**, so movers below are empty or carried over.
 
 ## Totals (last 7 days vs the 7 days before)
 
 | Metric | Last 7 days | 7 days before |
 |---|---|---|
-| Impressions | 517 | 264 |
+| Impressions | 526 | 264 |
 | Clicks | 1 | 1 |
-| Queries | 131 | 88 |
+| Queries | 133 | 88 |
 | Queries in top 10 | 15 | 3 |
 | Pages with impressions | 39 | 43 |
 
@@ -19,11 +19,11 @@ Snapshot 2026-11-20 07:29 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 | Page | Impressions | Clicks | Avg position | Position before | Change |
 |---|---|---|---|---|---|
 | /blog/performance-marketing-agency | 85 | 1 | 31.4 | 58.8 | +27.4 |
-| /shopify-agency | 71 | 0 | 54.2 | 77.2 | +23.0 |
-| / | 65 | 0 | 33.3 | 30.4 | -2.9 |
+| /shopify-agency | 76 | 0 | 54.9 | 77.2 | +22.3 |
+| / | 66 | 0 | 33.1 | 30.4 | -2.7 |
+| /blog/meta-andromeda | 39 | 0 | 70.1 | 63.7 | -6.4 |
 | /tools | 39 | 0 | 24.3 | 30.8 | +6.5 |
-| /blog/meta-andromeda | 38 | 0 | 69.6 | 63.7 | -5.9 |
-| /blog/what-is-roas | 36 | 0 | 75.3 | 80.4 | +5.1 |
+| /blog/what-is-roas | 37 | 0 | 74.8 | 80.4 | +5.6 |
 | /blog | 30 | 0 | 26.1 | 57.8 | +31.7 |
 | /cases/DBTXySHSrJa | 28 | 0 | 7.6 | new | new |
 | /meta-ads-agency | 26 | 0 | 37.2 | 5 | -32.2 |
@@ -40,8 +40,8 @@ Snapshot 2026-11-20 07:29 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 | /cases/ecom-world-split-into-two-groups | 5 | 0 | 63.6 | new | new |
 | /cases/meet-com-clients-sasha-whom-have-been-helping-four | 5 | 0 | 5.2 | new | new |
 | /locations/toronto | 5 | 0 | 74 | 42 | -32 |
+| /case-studies | 4 | 0 | 6.8 | 7 | +0.2 |
 | /compare/agency-vs-in-house-media-buyer | 4 | 0 | 49.5 | 68.5 | +19.0 |
-| /case-studies | 3 | 0 | 5.3 | 7 | +1.7 |
 | /case-studies/dropshipping-dtc | 3 | 0 | 33.7 | new | new |
 | /compare/meta-ads-vs-tiktok-ads | 3 | 0 | 70.7 | 62.5 | -8.2 |
 | /privacy-policy | 3 | 0 | 31.3 | new | new |
@@ -100,6 +100,7 @@ Snapshot 2026-11-20 07:29 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 |---|---|---|
 | dtc marketing agency | 51.3 | 20 |
 | meta andromeda | 90.5 | 14 |
+| checkout conversion rate calculator | 67 | 9 |
 | dtc shopify agency | 55.8 | 8 |
 
 ## Keyword plan (20 Nov 2026): where each planned keyword ranks (last 7 days)
@@ -145,7 +146,7 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 | TikTok LIVE selling | /tiktok-shop-agency | 0 | - | - | not ranking |
 | Google Shopping ads | /google-shopping-ads-agency | 0 | - | - | not ranking |
 | Performance Max campaigns | /google-shopping-ads-agency | 0 | - | - | not ranking |
-| Ecommerce advertising and PPC | /ecommerce-advertising | 0 | - | - | not ranking |
+| Ecommerce advertising and PPC | /ecommerce-advertising | 1 | 50 | shopify and dtc google ads agency (/shopify-agency) | not ranking |
 | Shopify marketing | /shopify-marketing-agency | 0 | - | - | not ranking |
 | Shopify store build and redesign | /shopify-agency | 18 | 45 | best shopify agency for dtc (/shopify-agency) | 45 |
 | Ecommerce CRO | /cro-agency | 32 | 36.2 | shopify cro agency (/shopify-agency) | 91 |
@@ -155,7 +156,7 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 | UGC ads and production | /viral-creatives | 1 | 23 | how can dtc brands scale ugc production (/) | not ranking |
 | Creative strategy and testing | /creative-strategy-agency | 1 | 10 | we're a mid-market e-commerce brand scaling ads across tikto (/) | not ranking |
 | Influencer marketing and whitelisting | /influencer-marketing-agency | 0 | - | - | not ranking |
-| Affiliate program management | /dtc-affiliate-program-management | 8 | 18 | dtc affiliate program scaling (/) | not ranking |
+| Affiliate program management | /dtc-affiliate-program-management | 10 | 18 | dtc affiliate program scaling (/) | not ranking |
 | Ecommerce email marketing | /ecommerce-email-marketing | 1 | 6 | how do i calculate the total cost of ownership when comparin (/tools) | not ranking |
 | Klaviyo agency | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | SMS marketing | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
@@ -166,18 +167,18 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 
 ## Keyword movers (3+ positions, 2+ impressions)
 
-**Up:** dtc shopify ecommerce agency 89.8 to 76; dtc shopify website design agency 79 to 65.3; dtc shopify agency 66.9 to 55.8; ecommerce meta ads agency 90.3 to 79.2; dtc shopify cro 79.7 to 68.8; dtc ecommerce cro agency 65.4 to 56.7; scaling dtc brands with retargeting 40 to 32.3; ecommerce roas tracking tool 69.3 to 62; benchmark roas 85 to 78; dtc shopify migration agency 69.5 to 64.6; tools to scale direct to consumer brands 71 to 66.3
+**Up:** dtc shopify seo 96.7 to 84.8; dtc brand accelerator 39 to 30; dtc ecommerce development agency 75 to 68; roas 73.3 to 68.8; meta andromeda algorithm 94 to 91
 
-**Down:** dtc growth agency 30.8 to 40.7; what is roas 87.5 to 96.3; dtc woocommerce agency 57 to 60.5; dropshipping product tracking proxy case study 68.7 to 72; dtc agency 49 to 52
+**Down:** scale affiliate program dtc 59 to 75
 
-**New:** best meta andromeda targeting for premium furniture ecommerce (3.5)
+**New:** checkout conversion rate calculator (67)
 
-**Lost:** how to scale a dtc brand
+**Lost:** none
 
 ## Page movers (3+ positions, 3+ impressions)
 
-**Up:** /blog 31.4 to 26.1; /shopify-agency 59.0 to 54.2; /roas-calculator 31.4 to 26.8; /blog/meta-andromeda 73 to 69.6
+**Up:** none
 
-**Down:** /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve 27.6 to 31.5
+**Down:** none
 
-**New:** /cases/meet-com-clients-sasha-whom-have-been-helping-four (5.2)
+**New:** none
