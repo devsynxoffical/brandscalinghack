@@ -108,7 +108,7 @@ export default function CaseStudyDetailPage({ caseStudyId, onNavigate, onOpenBoo
           </button>
 
           <span style={{ fontFamily: 'ui-monospace, monospace', fontSize: '0.8rem', color: '#ff8a65', fontWeight: 800 }}>
-            {caseStudy.index} / {allCaseStudies.length}
+            {activeIdx + 1} / {allCaseStudies.length}
           </span>
 
           <button

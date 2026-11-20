@@ -1,7 +1,101 @@
-// Unified Collection of 126 Real Verified Instagram Case Studies & Video Proofs
+// Unified Collection of 128 Real Verified Instagram Case Studies & Video Proofs
 // Mixed and sorted with HUGE numbers from start, alternating between video reels and image breakdowns
 
 export const allCaseStudies = [
+  {
+    "id": "De-Ky4BJwCb",
+    "slug": "376000-25-days-dtc-client-meta-ads",
+    "shortcode": "De-Ky4BJwCb",
+    "type": "video",
+    "title": "$376,000 in just 25 days for one of our DTC clients using Meta Ads",
+    "headline": "$376,000 in just 25 days for one of our DTC clients using Meta Ads",
+    "brand": "DTC Ecommerce Brand",
+    "niche": "DTC Ecommerce",
+    "category": "Direct-Response DTC",
+    "videoType": "mp4",
+    "videoUrl": "/assets/insta-video/De-Ky4BJwCb.mp4",
+    "image": "/assets/insta-video/De-Ky4BJwCb.jpg",
+    "revenue": "$376,256 in 25 Days",
+    "numeric_rev": 376256,
+    "roas": "",
+    "timeframe": "25 days (1 to 25 Oct 2026)",
+    "system": "Meta Ads Creative Testing & Scaling",
+    "badge": "VIDEO BREAKDOWN",
+    "badgeColor": "#ff9100",
+    "summary": "Q4 is in full swing: $376,000 in just 25 days for one of our DTC clients using Meta Ads. The Ads Manager screen in the video shows $376,256.68 in purchase conversion value from 2,508 purchases.",
+    "fullCaption": "🚨 Q4 IS IN FULL SWING, AND WE’RE SCALING HARD! 🔥$376,000 in just 25 days for one of our DTC Client using Meta Ads! 💰\n\nI’m dropping a full YouTube breakdown on how we found winning creatives, tested them, and scaled the winners.\n\nWhat niche are you scaling this Q4? Comment below! 👇 Who wants the full breakdown? 🚀\n\nMeta Ads, Facebook Ads Strategy, DTC Brand Scaling, Shopify Store Growth, Ecommerce Scaling, Skincare Brand Marketing, Q4 Ecommerce Strategy, Winning Ad Creatives, Meta Ads Case Study",
+    "metrics": [
+      {
+        "label": "Purchase Value (Meta)",
+        "value": "$376,256.68"
+      },
+      {
+        "label": "Purchases",
+        "value": "2,508"
+      },
+      {
+        "label": "Timeframe",
+        "value": "1 to 25 Oct 2026"
+      },
+      {
+        "label": "Channel",
+        "value": "Meta Ads"
+      }
+    ],
+    "growthPoints": [
+      "Found winning creatives, tested them, then scaled the winners.",
+      "Full walkthrough published on YouTube as a live breakdown."
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/De-Ky4BJwCb/",
+    "index": 127
+  },
+  {
+    "id": "DecOWXJvonp",
+    "slug": "307950-revenue-fitness-brand-2053-units-30-days",
+    "shortcode": "DecOWXJvonp",
+    "type": "video",
+    "title": "$307,950 in revenue for this fitness brand: 2,053 units sold in the last 30 days",
+    "headline": "$307,950 in revenue for this fitness brand: 2,053 units sold in the last 30 days",
+    "brand": "Fitness Brand",
+    "niche": "Fitness",
+    "category": "Direct-Response DTC",
+    "videoType": "mp4",
+    "videoUrl": "/assets/insta-video/DecOWXJvonp.mp4",
+    "image": "/assets/insta-video/DecOWXJvonp.jpg",
+    "revenue": "$307,950 in 30 Days",
+    "numeric_rev": 307950,
+    "roas": "",
+    "timeframe": "Last 30 days",
+    "system": "Meta Ads Creative Testing & Scaling",
+    "badge": "VIDEO BREAKDOWN",
+    "badgeColor": "#ff9100",
+    "summary": "Q4 is where DTC brands make their move: $307,950 in revenue for this fitness brand, with 2,053 units sold in the last 30 days, shown in the Meta Ads Manager screen in the video.",
+    "fullCaption": "Q4 is where DTC brands make their move. 🔥 $307,950 in Revenue for this fitness brand. 2,053 Units Sold. Last 30 Days. Is your brand ready to capitalize on Q4?\n\n#DTCBrands #EcommerceGrowth #Q4Scaling #BlackFriday #MetaAds #FitnessBrand #EcommerceMarketing #DTCGrowth #ShopifyGrowth #PaidMedia #RevenueScaling #Q4Marketing #BrandScaling #PerformanceMarketing #ScaleWithAds",
+    "metrics": [
+      {
+        "label": "Purchase Value (Meta)",
+        "value": "$307,950"
+      },
+      {
+        "label": "Units Sold",
+        "value": "2,053"
+      },
+      {
+        "label": "Timeframe",
+        "value": "Last 30 days"
+      },
+      {
+        "label": "Channel",
+        "value": "Meta Ads"
+      }
+    ],
+    "growthPoints": [
+      "Average order value of about $150 ($307,950 / 2,053 purchases).",
+      "Top ad set alone: 1,198 purchases and $179,700 in purchase value."
+    ],
+    "instagramUrl": "https://www.instagram.com/reel/DecOWXJvonp/",
+    "index": 128
+  },
   {
     "id": "Cft79TLpxyk",
     "slug": "finally-scale-client-almost-1m-sales-6-months",

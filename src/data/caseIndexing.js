@@ -63,7 +63,10 @@ export const BEST_CASE_SLUGS = new Set([
   'winning-product-can-change-everything-here-made-product-5-figure',
   'if-you-re-ecom-brand-owner-read-carefully-16k-single-day-2-06',
   'massive-alert-guys-it-9-11-pm-ve-already-crossed-53387-33',
-  'after-8-months-optimizing-testing-refining-strategies-helped'
+  'after-8-months-optimizing-testing-refining-strategies-helped',
+  // added 20 Nov 2026: new Instagram posts, figures read from the Ads Manager screen in each video
+  '376000-25-days-dtc-client-meta-ads',
+  '307950-revenue-fitness-brand-2053-units-30-days'
 ]);
 
 const reasons = new Map();

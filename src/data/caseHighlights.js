@@ -51,6 +51,16 @@ export const CASE_HIGHLIGHTS = [
   "nicheLabel": "Dropshipping"
  },
  {
+  "path": "/cases/376000-25-days-dtc-client-meta-ads",
+  "title": "DTC Ecommerce Case Study: $376,000 in 25 Days",
+  "image": "/assets/insta-video/De-Ky4BJwCb.jpg",
+  "revenue": "$376,000 in 25 days",
+  "roas": null,
+  "revenueValue": 376000,
+  "niche": "dropshipping-dtc",
+  "nicheLabel": "DTC Ecommerce"
+ },
+ {
   "path": "/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103",
   "title": "DTC Ecommerce Case Study: $374,103 in 16 Days at 2.82x ROAS on $132,832 Ad Spend",
   "image": "/instagram_case_studies/DMLC9R1Bn-m.jpg",
@@ -59,6 +69,16 @@ export const CASE_HIGHLIGHTS = [
   "revenueValue": 374103,
   "niche": "dropshipping-dtc",
   "nicheLabel": "DTC Ecommerce"
+ },
+ {
+  "path": "/cases/307950-revenue-fitness-brand-2053-units-30-days",
+  "title": "Fitness Case Study: $307,950 in 30 Days",
+  "image": "/assets/insta-video/DecOWXJvonp.jpg",
+  "revenue": "$307,950 in 30 days",
+  "roas": null,
+  "revenueValue": 307950,
+  "niche": "fitness-health",
+  "nicheLabel": "Fitness"
  },
  {
   "path": "/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond",

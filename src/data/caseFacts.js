@@ -248,6 +248,12 @@ const FACT_OVERRIDES = {
   },
   // "$68,510 in a single day with just $17,764 in ad spend"; the extractor missed the revenue.
   // Dropshipping appears only in the call to action and hashtags, not as the client's niche.
+  // "$376,000 in just 25 days for one of our DTC Client"; skincare appears only in the tag list,
+  // not as the client's niche. Orders read from the Ads Manager total (2,508 purchases).
+  '376000-25-days-dtc-client-meta-ads': {
+    facts: { orders: '2,508' },
+    niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
+  },
   'after-8-months-optimizing-testing-refining-strategies-helped': {
     facts: { revenue: { value: 68510, text: '$68,510' }, spend: { value: 17764, text: '$17,764' }, timeframe: 'one day' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }

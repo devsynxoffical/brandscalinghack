@@ -4,6 +4,27 @@
 // enough detail). Every number and claim comes from the original caption or is arithmetic
 // directly implied by it; card template figures that the caption does not support are not used.
 export const CASE_EDITORIAL_EXTRA_4 = {
+  '376000-25-days-dtc-client-meta-ads': {
+    summary: 'A DTC client made $376,000 in 25 days from Meta Ads during Q4. The Ads Manager view in the video covers 1 to 25 October 2026 and totals $376,256.68 in purchase conversion value from 2,508 purchases, an average of about $150 per purchase and roughly $15,000 a day. The top ad set alone brought 661 purchases worth $99,206.68, and the next one 553 purchases worth $82,950. The post does not give ad spend or ROAS. The method, finding winning creatives, testing them and scaling the winners, is covered in a full live breakdown on YouTube.',
+    challenge: null,
+    approach: 'Find winning creatives, test them against each other, then move budget into the winners and scale them through Q4.',
+    whatWeDid: [
+      'Searched for winning creative angles before spending at scale.',
+      'Tested the creatives and kept only the ones that proved themselves.',
+      'Scaled the winning ad sets: the top two brought 1,214 of the 2,508 purchases.',
+      'Recorded the full process as a live breakdown on YouTube.'
+    ],
+    result: '$376,256.68 in Meta purchase value from 2,508 purchases between 1 and 25 October 2026 (ad spend and ROAS not stated).'
+  },
+
+  '307950-revenue-fitness-brand-2053-units-30-days': {
+    summary: 'A DTC fitness brand made $307,950 in revenue from 2,053 units sold over the last 30 days, shown in the Meta Ads Manager view in the video. That is an average of exactly $150 per purchase ($307,950 divided by 2,053) and about $10,265 a day. One ad set carried most of the volume: 1,198 purchases worth $179,700, about 58% of the total. The post frames the result as Q4 preparation for fitness brands. It does not give ad spend or ROAS.',
+    challenge: null,
+    approach: 'Put most of the budget behind the ad set that proves itself, while smaller ad sets keep testing, ahead of Q4.',
+    whatWeDid: null,
+    result: '$307,950 in revenue and 2,053 units sold in 30 days for a DTC fitness brand on Meta Ads (ad spend and ROAS not stated).'
+  },
+
   '21k-day-4month-old-dropshipping-store-here-did-it': {
     summary: 'A four-month-old dropshipping store run for a done-for-you client made $21,000 in a single day. The post says the store had already brought in multiple six figures over the previous month. Scaling ran on high-budget manual bids, CBO campaigns and a slow-cooked "Micro Scaler" campaign, with profit margins averaging 30% and moving between 25% and 40% from day to day. At the 30% average, a $21,000 day leaves roughly $6,300 in profit. The next steps were better customer support, stronger product pages and deeper retargeting videos for hesitant buyers.',
     challenge: null,
