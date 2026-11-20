@@ -1,0 +1,1 @@
+var e=[`January`,`February`,`March`,`April`,`May`,`June`,`July`,`August`,`September`,`October`,`November`,`December`],t=t=>{let[n,r,i]=String(t).slice(0,10).split(`-`).map(Number);return`${e[r-1]} ${i}, ${n}`},n=new Set([`comparison`,`benchmark`,`tool`,`glossary`]),r={name:`Gaurav Kapoor`,role:`Founder, Brand Scaling`,url:`/about`};export{n,t as r,r as t};

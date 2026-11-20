@@ -1,0 +1,45 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bsLogoGrad1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d84315" />
+      <stop offset="50%" stop-color="#ff5722" />
+      <stop offset="100%" stop-color="#ff8a65" />
+    </linearGradient>
+    <linearGradient id="bsLogoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#ffab91" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="bsTextGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7a50" />
+      <stop offset="55%" stop-color="#ff5722" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Emblem Icon -->
+  <g transform="translate(4, 2)">
+    <!-- Hexagon Outer Shape -->
+    <path d="M22 2L39 12V32L22 42L5 32V12L22 2Z" fill="#ff5722" fill-opacity="0.12" stroke="url(#bsLogoGrad1)" stroke-width="2.2" stroke-linejoin="round" />
+    
+    <!-- Geometric 'B' Shape -->
+    <path d="M13 30V14H22C24.5 14 26.5 15.5 26.5 18C26.5 19.8 25.2 21.2 23.5 21.7C25.8 22.2 27.5 24 27.5 26.5C27.5 29 25.2 30 22.5 30H13Z" fill="url(#bsLogoGrad1)" />
+    
+    <!-- Cutouts -->
+    <path d="M17 17.5H21.5C22.6 17.5 23.2 18.1 23.2 19C23.2 19.9 22.6 20.5 21.5 20.5H17V17.5Z" fill="#020408" />
+    <path d="M17 23.5H22C23.2 23.5 24 24.2 24 25.2C24 26.2 23.2 27 22 27H17V23.5Z" fill="#020408" />
+    
+    <!-- Rising Lighting Bolt / Scale Beam -->
+    <path d="M28 12L35 6L33 16L38 15L28 29L30 19L24 21L28 12Z" fill="url(#bsLogoGrad2)" filter="url(#glow)" />
+  </g>
+
+  <!-- Typography: BRAND SCALING -->
+  <text x="56" y="27" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" letter-spacing="-0.03em" fill="#ffffff">BRAND</text>
+  <text x="127" y="27" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" letter-spacing="-0.03em" fill="url(#bsTextGrad)">SCALING</text>
+  
+  <!-- Subtitle -->
+  <text x="57" y="39" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="800" letter-spacing="0.24em" fill="#94a3b8" fill-opacity="0.85">DTC GROWTH ENGINE</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" fill="none">
+  <circle cx="24" cy="25" r="14" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+  <circle cx="24" cy="25" r="5" fill="#ffffff"/>
+  <text x="48" y="33" fill="#ffffff" font-family="'Poppins', 'Inter', sans-serif" font-size="23" font-weight="700" letter-spacing="0.5">ion<tspan font-weight="300">Bottles</tspan></text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" fill="none">
+  <path d="M25 35 C18 35 12 29 12 22 C12 15 25 10 25 10 C25 10 38 15 38 22 C38 29 32 35 25 35 Z" stroke="#ffffff" stroke-width="2" fill="none"/>
+  <circle cx="25" cy="23" r="4" fill="#ffffff"/>
+  <text x="52" y="33" fill="#ffffff" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="600" letter-spacing="4">AYURDA</text>
+  <text x="212" y="24" fill="rgba(255,255,255,0.8)" font-family="'Playfair Display', serif" font-size="14" font-style="italic">30</text>
+  <text x="212" y="36" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="8" letter-spacing="1">YEARS</text>
+</svg>

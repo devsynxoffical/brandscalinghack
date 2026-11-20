@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" fill="none">
+  <path d="M120 8 C115 15 112 21 120 25 C128 21 125 15 120 8 Z" fill="#ffffff"/>
+  <path d="M112 14 C106 18 103 23 110 25 C115 24 115 19 112 14 Z" fill="rgba(255,255,255,0.8)"/>
+  <path d="M128 14 C134 18 137 23 130 25 C125 24 125 19 128 14 Z" fill="rgba(255,255,255,0.8)"/>
+  <text x="120" y="43" text-anchor="middle" fill="#ffffff" font-family="'Playfair Display', serif" font-size="16" font-weight="600" letter-spacing="4">ZENSΛTION</text>
+</svg>

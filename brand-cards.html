@@ -1,0 +1,125 @@
+<!-- Inspired by Gaurav: "Brands We've Scaled" cards. Drop this block into the page; put the brands/ folder in /public (or adjust the img src). -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
+<style>
+.ibg-brands{--o1:#ff6a2b;--o2:#ffb43a;--bg:#0b0a0a;--line:rgba(255,255,255,.08);--muted:rgba(255,255,255,.55);
+  background:var(--bg);color:#fff;padding:96px 0 110px;font-family:'Inter',sans-serif;position:relative;overflow:hidden}
+.ibg-brands::before{content:"";position:absolute;left:50%;top:-200px;width:900px;height:500px;transform:translateX(-50%);
+  background:radial-gradient(closest-side,rgba(255,106,43,.16),transparent 70%);pointer-events:none}
+.ibg-wrap{max-width:1560px;margin:0 auto;padding:0 40px;position:relative}
+.ibg-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:52px;flex-wrap:wrap}
+.ibg-kicker{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--o1);display:flex;align-items:center;gap:10px;margin:0 0 18px}
+.ibg-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--o1),var(--o2))}
+.ibg-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(34px,4vw,58px);line-height:1.02;letter-spacing:-.03em;margin:0}
+.ibg-title em{font-style:normal;background:linear-gradient(90deg,var(--o1),var(--o2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ibg-sub{max-width:420px;color:var(--muted);font-size:15px;line-height:1.6;margin:0}
+.ibg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.ibg-card{position:relative;display:block;text-decoration:none;color:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 26px 26px;
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));backdrop-filter:blur(8px);
+  transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .3s}
+.ibg-card::after{content:"";position:absolute;inset:0;border-radius:22px;padding:1px;
+  background:linear-gradient(135deg,rgba(255,106,43,.7),rgba(255,180,58,.25) 45%,transparent 70%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s}
+.ibg-card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -20px rgba(255,106,43,.35);border-color:transparent}
+.ibg-card:hover::after{opacity:1}
+.ibg-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.ibg-idx{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.08em;color:var(--muted);transition:color .3s}
+.ibg-card:hover .ibg-idx{color:var(--o1)}
+.ibg-arrow{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);transition:.3s}
+.ibg-card:hover .ibg-arrow{background:linear-gradient(135deg,var(--o1),var(--o2));color:#111;border-color:transparent;transform:rotate(45deg)}
+.ibg-avatar{width:96px;height:96px;border-radius:50%;padding:3px;background:linear-gradient(135deg,var(--o1),var(--o2));margin-bottom:22px}
+.ibg-avatar img{display:block;width:100%;height:100%;box-sizing:border-box;border-radius:50%;object-fit:cover;background:#fff;border:3px solid var(--bg)}
+.ibg-name{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:22px;letter-spacing:-.02em;line-height:1.15;margin:0 0 6px}
+.ibg-cat{color:var(--muted);font-size:14px;margin:0 0 22px;font-weight:400;min-height:20px}
+.ibg-stat{display:flex;align-items:baseline;gap:8px;border-top:1px solid var(--line);padding-top:18px}
+.ibg-stat b{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:30px;letter-spacing:-.03em;background:linear-gradient(90deg,#fff,rgba(255,255,255,.75));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ibg-stat span{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:600px){.ibg-wrap{padding:0 20px}.ibg-brands{padding:64px 0 72px}.ibg-card{padding:22px 20px}}
+</style>
+
+<section class="ibg-brands" id="brands">
+  <div class="ibg-wrap">
+    <div class="ibg-head">
+      <div>
+        <p class="ibg-kicker">Brands We've Scaled</p>
+        <h2 class="ibg-title">Trusted By Brands<br><em>With Real Audiences</em></h2>
+      </div>
+      <p class="ibg-sub">Beauty, wellness, apparel and DTC brands we have driven paid media, creative and conversion growth for.</p>
+    </div>
+
+    <div class="ibg-grid">
+
+      <a class="ibg-card" href="https://www.instagram.com/juicebeauty/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@juicebeauty</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/juicebeauty.png" alt="Juice Beauty"></div>
+        <h3 class="ibg-name">Juice Beauty</h3>
+        <p class="ibg-cat">Organic Skincare &amp; Makeup</p>
+        <div class="ibg-stat"><b>357K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/vedgenutrition/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@vedgenutrition</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/vedge.png" alt="Vedge Nutrition"></div>
+        <h3 class="ibg-name">Vedge Nutrition</h3>
+        <p class="ibg-cat">Plant-Based Supplements</p>
+        <div class="ibg-stat"><b>88.7K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/drnaomiskin/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@drnaomiskin</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/drnaomi.png" alt="Dr Naomi Skin"></div>
+        <h3 class="ibg-name">Dr Naomi Skin</h3>
+        <p class="ibg-cat">Clinical Skincare &amp; Devices</p>
+        <div class="ibg-stat"><b>85K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/waterwatch.co" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@waterwatch.co</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/waterjewelers.png" alt="Water Jewelers"></div>
+        <h3 class="ibg-name">Water Jewelers</h3>
+        <p class="ibg-cat">Premium Jewelry</p>
+        <div class="ibg-stat"><b>81.1K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/littleandlively/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@littleandlively</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/littleandlively.png" alt="Little &amp; Lively"></div>
+        <h3 class="ibg-name">Little &amp; Lively</h3>
+        <p class="ibg-cat">Canadian-Made Baby &amp; Kids Clothing</p>
+        <div class="ibg-stat"><b>80K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/veilcosmetics/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@veilcosmetics</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/veil.png" alt="Veil Cosmetics"></div>
+        <h3 class="ibg-name">Veil Cosmetics</h3>
+        <p class="ibg-cat">Vegan Cosmetics</p>
+        <div class="ibg-stat"><b>52.1K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/ionbottles" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@ionbottles</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/ionbottles.png" alt="ionBottles"></div>
+        <h3 class="ibg-name">ionBottles</h3>
+        <p class="ibg-cat">Hydrogen Water Bottles</p>
+        <div class="ibg-stat"><b>23.3K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.instagram.com/ghostdemocracy/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">@ghostdemocracy</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/ghostdemocracy.png" alt="Ghost Democracy"></div>
+        <h3 class="ibg-name">Ghost Democracy</h3>
+        <p class="ibg-cat">Clean Skincare</p>
+        <div class="ibg-stat"><b>17.5K</b><span>Followers</span></div>
+      </a>
+
+      <a class="ibg-card" href="https://www.facebook.com/kristalizejewelry/" target="_blank" rel="noopener">
+        <div class="ibg-top"><span class="ibg-idx">Facebook</span><span class="ibg-arrow">&#8599;</span></div>
+        <div class="ibg-avatar"><img src="brands/swampkitten.png" alt="Swamp Kitten Jewelry"></div>
+        <h3 class="ibg-name">Swamp Kitten Jewelry</h3>
+        <p class="ibg-cat">Jewelry &amp; Watches</p>
+        <div class="ibg-stat"><b>11K</b><span>Followers</span></div>
+      </a>
+
+    </div>
+  </div>
+</section>
