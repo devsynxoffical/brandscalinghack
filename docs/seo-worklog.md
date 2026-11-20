@@ -18,6 +18,15 @@ Every "done" item was deployed to main and checked (build, seo:audit, lint, brow
 
 ## Daily sessions
 
+### 20 Nov 2026 (owner: implement the SEO Recovery Plan keyword strategy)
+Source: Gaurav_Sir_SEO_Recovery_Plan_20-Nov-2026.pdf and Gaurav_Sir_Keyword_Map_20-Nov-2026.csv (section 5, brandscalinghacks.com). Change log rows 8 to 11.
+- Saved the 17 brandscalinghacks keywords to docs/keyword-plan-2026-11-20.csv; the 12-hour tracker now reports each one.
+- Home retargeted (dtc marketing agency, ecommerce growth agency, ecommerce marketing agency); /growth moved to "growth engine" to avoid cannibalisation; "performance marketing" dropped from home title.
+- New pages: /shopify-marketing-agency, /ecommerce-advertising, /ecommerce-email-marketing. New guides: /blog/facebook-ads-for-dropshipping, /blog/how-to-find-winning-products.
+- Retitles: Facebook Ad Library guide, ad creative testing guide, ROAS calculator (plus WhatsApp results capture), /viral-creatives away from UGC.
+- Verified: homepage raw HTML carries the title, H1 and about 4,100 words of text without JavaScript.
+- Not done here (other sites or owner accounts): disavow spam links (Semrush plus Search Console disavow tool), Google Business Profile changes, removing case studies duplicated on sister sites, directory and community links. UGC guides kept live (plan says stop targeting, not remove); noindexing them is an owner decision.
+
 ### 19 Nov 2026 (20:37 UTC tracking run)
 - Google data unchanged (latest day 18 Nov); late data raised 12 to 18 Nov to 484 impressions. Bing: 95 indexed (92 this morning), 0 crawl issues, 0 links. No Indexing API requests (owner rule: none before 22 Nov). No site changes.
 

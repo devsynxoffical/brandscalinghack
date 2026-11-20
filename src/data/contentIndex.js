@@ -89,6 +89,30 @@ export const CONTENT_INDEX = [
     "eyebrow": "ROAS Improvement"
   },
   {
+    "path": "/shopify-marketing-agency",
+    "kind": "service",
+    "titleTag": "Shopify Marketing Agency for DTC Brands | Brand Scaling",
+    "metaDescription": "Shopify marketing agency for DTC brands: Meta, TikTok and Google ads, creative testing, Klaviyo email and conversion work, measured on profit, not clicks.",
+    "h1": "Shopify Marketing Agency for DTC Brands",
+    "eyebrow": "Shopify Marketing"
+  },
+  {
+    "path": "/ecommerce-advertising",
+    "kind": "service",
+    "titleTag": "Ecommerce Advertising Agency for DTC Brands | Brand Scaling",
+    "metaDescription": "Ecommerce advertising for DTC brands: Meta, TikTok and Google Shopping ads run by one ecommerce ads agency, with budgets set from your break-even ROAS.",
+    "h1": "Ecommerce Advertising Agency for DTC Brands",
+    "eyebrow": "Ecommerce Advertising"
+  },
+  {
+    "path": "/ecommerce-email-marketing",
+    "kind": "service",
+    "titleTag": "Ecommerce Email Marketing for DTC Brands | Brand Scaling",
+    "metaDescription": "Ecommerce email marketing for DTC brands: the Klaviyo flows that matter, campaigns, list growth, segmentation and deliverability, tied to your ad spend.",
+    "h1": "Ecommerce Email Marketing for DTC Brands",
+    "eyebrow": "Email Marketing"
+  },
+  {
     "path": "/for/skincare-beauty",
     "kind": "industry",
     "titleTag": "Skincare Brand Marketing Agency | Brand Scaling",

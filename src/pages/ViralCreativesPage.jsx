@@ -254,7 +254,7 @@ export default function ViralCreativesPage({ onOpenBooking, onNavigate }) {
               marginBottom: '16px'
             }}
           >
-            High-Performance <span style={{ color: '#dc2626' }}>Video Creatives</span>
+            Ecommerce Ad Creative <span style={{ color: '#dc2626' }}>&amp; Creative Testing</span>
           </h1>
 
           <p 

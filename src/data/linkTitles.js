@@ -6,7 +6,7 @@ import { BLOG_META, CASE_META, NICHE_META } from './routeMeta.js';
 const strip = (t) => String(t || '').replace(/\s*\|\s*Brand Scaling\s*$/, '');
 
 const STATIC_TITLES = {
-  '/': 'Brand Scaling home',
+  '/': 'DTC marketing and ecommerce growth agency',
   '/services': 'All ecommerce marketing services',
   '/meta-ads-agency': 'Meta ads agency for ecommerce',
   '/tiktok-ads-agency': 'TikTok ads agency',

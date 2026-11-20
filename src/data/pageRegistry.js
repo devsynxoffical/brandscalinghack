@@ -3,6 +3,7 @@
 // (src/pages/ContentPage.jsx), the prerendered HTML, the JSON-LD and the sitemap.
 import services1 from './pages/services-1.js';
 import services2 from './pages/services-2.js';
+import services3 from './pages/services-3.js';
 import industry1 from './pages/industry-1.js';
 import industry2 from './pages/industry-2.js';
 import glossary from './pages/glossary.js';
@@ -26,7 +27,7 @@ export const KIND_HUB = {
   location: { path: '/locations', name: 'Locations' }
 };
 
-const LEAF_PAGES = [...services1, ...services2, ...industry1, ...industry2, ...glossary, ...compareBenchmarks, ...tools, ...tools2]
+const LEAF_PAGES = [...services1, ...services2, ...services3, ...industry1, ...industry2, ...glossary, ...compareBenchmarks, ...tools, ...tools2]
   .map((p) => ({ ...p, published: p.published || CONTENT_PUBLISHED, updated: p.updated || CONTENT_PUBLISHED }))
   .map((p) => (p.path === '/tools/discount-break-even-calculator' || p.path === '/tools/profit-margin-calculator' ? { ...p, published: '2026-11-09', updated: p.updated > '2026-11-09' ? p.updated : '2026-11-09' } : p))
   .map((p) => (p.path === '/tools/tiktok-shop-break-even-roas-calculator' ? { ...p, published: '2026-11-12', updated: p.updated > '2026-11-12' ? p.updated : '2026-11-12' } : p))

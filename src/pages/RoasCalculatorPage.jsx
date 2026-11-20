@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { whatsappUrl } from '../data/contact';
 import { Sparkles, ArrowRight, ClipboardCheck } from 'lucide-react';
 import LiveSessionsSection from '../components/LiveSessionsSection';
 import ExperienceCtaSection from '../components/ExperienceCtaSection';
@@ -238,6 +239,21 @@ export default function RoasCalculatorPage({ onOpenBooking, onNavigate, onOpenVi
                     <ArrowRight size={15} />
                   </button>
                 </div>
+                {/* Results capture: the visitor's numbers go to the team on WhatsApp for a free review */}
+                <a
+                  href={whatsappUrl([
+                    'Hi Brand Scaling, I used the ROAS calculator on your website. Can you review my numbers?',
+                    `Price: ${money2(retailPrice)}, product cost: ${money2(cogs)}, cost per purchase: ${money2(cpa)}, orders per day: ${dailyOrders}`,
+                    `Required ROAS: ${requiredRoas.toFixed(2)}x, net profit per order: ${money2(netProfitPerOrder)}, monthly net profit: ${money(monthlyNetProfit)}`
+                  ].join('\n'))}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={() => { if (typeof window.gtag === 'function') window.gtag('event', 'roas_results_whatsapp', { page_path: window.location.pathname, required_roas: Number(requiredRoas.toFixed(2)) }); }}
+                  style={{ marginTop: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: '#22c55e', color: '#052e14', borderRadius: '12px', padding: '13px 16px', fontWeight: 800, fontSize: '14.5px', textDecoration: 'none' }}
+                >
+                  Send my numbers for a free review
+                </a>
+                <p style={{ margin: '10px 0 0', fontSize: '12.5px', color: '#94a3b8', textAlign: 'center' }}>Opens WhatsApp with your results filled in. Free, no obligation.</p>
 
               </div>
             </div>

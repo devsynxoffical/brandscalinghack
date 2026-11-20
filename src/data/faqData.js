@@ -3,11 +3,11 @@
 
 export const homeFaqs = [
   {
-    question: 'What is a performance marketing agency?',
-    answer: 'A performance marketing agency plans and runs paid campaigns that are measured on business outcomes such as revenue, cost per acquisition and ROAS. Brand Scaling does this for DTC ecommerce brands across Meta, TikTok and Google, together with the creative and the Shopify store.'
+    question: 'What does a DTC marketing agency do?',
+    answer: 'A DTC marketing agency grows brands that sell direct to consumers online. It plans and runs paid campaigns measured on revenue, new-customer cost and ROAS, and usually also owns the ad creative, the store experience and email. Brand Scaling does this for Shopify brands across Meta, TikTok and Google as one ecommerce growth system.'
   },
   {
-    question: 'How much does a performance marketing agency cost?',
+    question: 'How much does an ecommerce growth agency cost?',
     answer: 'Most agencies charge a monthly retainer, a percentage of ad spend, a performance fee or a mix. Brand Scaling quotes after the Brand Growth Audit, and partners typically spend at least $10,000 to $20,000 a month on ads.'
   },
   {

@@ -171,8 +171,8 @@ function App() {
     };
 
     const baseUrl = 'https://www.brandscalinghacks.com';
-    let title = 'Performance Marketing Agency for Ecommerce | Brand Scaling';
-    let description = 'Performance marketing agency for DTC ecommerce brands: Meta and TikTok ads, Shopify CRO and creative. $50M+ ad spend managed. Book a growth audit.';
+    let title = 'DTC Marketing & Ecommerce Growth Agency | Brand Scaling';
+    let description = 'DTC marketing agency and ecommerce growth agency for Shopify brands: Meta and TikTok ads, creative testing, email and CRO in one system. Book a free audit.';
     let pagePath = '/';
 
     let noindex = activePage === '404';
@@ -219,13 +219,13 @@ function App() {
           pagePath = '/case-studies';
           break;
         case 'viral-creatives':
-          title = 'Direct-Response Video Creatives & UGC Ads | Brand Scaling';
-          description = 'Plug-and-play creative systems designed to lower CPA and unlock $10k-$50k/day spend. Direct-response UGC, 3D motion, founder hooks, and iterative testing.';
+          title = 'Ecommerce Ad Creative & Creative Testing | Brand Scaling';
+          description = 'Ecommerce ad creative for DTC brands: hooks and angles on a testing matrix, and weekly creative testing that lowers CPA as Meta and TikTok spend grows.';
           pagePath = '/viral-creatives';
           break;
         case 'growth':
-          title = 'Ecommerce Growth Agency: Meta, TikTok, CRO | Brand Scaling';
-          description = 'Ecommerce growth agency for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention in one system. Book a Brand Growth Audit.';
+          title = 'Ecommerce Growth Engine: Meta, TikTok, CRO | Brand Scaling';
+          description = 'The Brand Scaling growth engine for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention run as one system. See how it works.';
           pagePath = '/growth';
           break;
         case 'shopify-agency':
@@ -259,7 +259,7 @@ function App() {
           pagePath = '/contact';
           break;
         case 'roas-calculator':
-          title = 'Real ROAS Calculator for Ecommerce: Break-Even & Profit';
+          title = 'ROAS Calculator: Break-Even ROAS & Profit for Ecommerce';
           description = 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.';
           pagePath = '/roas-calculator';
           break;
@@ -289,8 +289,8 @@ function App() {
           pagePath = '/404';
           break;
         default:
-          title = 'Performance Marketing Agency for Ecommerce | Brand Scaling';
-          description = 'Performance marketing agency for DTC ecommerce brands: Meta and TikTok ads, Shopify CRO and creative. $50M+ ad spend managed. Book a growth audit.';
+          title = 'DTC Marketing & Ecommerce Growth Agency | Brand Scaling';
+          description = 'DTC marketing agency and ecommerce growth agency for Shopify brands: Meta and TikTok ads, creative testing, email and CRO in one system. Book a free audit.';
           pagePath = '/';
           break;
       }

@@ -15,9 +15,9 @@ const routes = [
   {
     path: '/',
     outPath: 'index.html',
-    title: 'Performance Marketing Agency for Ecommerce | Brand Scaling',
-    description: 'Performance marketing agency for DTC ecommerce brands: Meta and TikTok ads, Shopify CRO and creative. $50M+ ad spend managed. Book a growth audit.',
-    h1: 'The Performance Marketing Agency for DTC Ecommerce Brands Ready to Scale',
+    title: 'DTC Marketing & Ecommerce Growth Agency | Brand Scaling',
+    description: 'DTC marketing agency and ecommerce growth agency for Shopify brands: Meta and TikTok ads, creative testing, email and CRO in one system. Book a free audit.',
+    h1: 'The DTC Marketing and Ecommerce Growth Agency for Brands Ready to Scale',
     content: `
       <p>We build the creative, run the ads, fix the tracking, and give you a growth system you can trust.</p>
       <p>12+ years in ecommerce. $50M+ in Meta ad spend managed. 30+ niches. 150+ verified case studies.</p>
@@ -69,9 +69,9 @@ const routes = [
   {
     path: '/growth',
     outPath: 'growth/index.html',
-    title: 'Ecommerce Growth Agency: Meta, TikTok, CRO | Brand Scaling',
-    description: 'Ecommerce growth agency for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention in one system. Book a Brand Growth Audit.',
-    h1: 'Ecommerce Growth Agency: Meta, TikTok, Google and Shopify CRO in One Engine',
+    title: 'Ecommerce Growth Engine: Meta, TikTok, CRO | Brand Scaling',
+    description: 'The Brand Scaling growth engine for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention run as one system. See how it works.',
+    h1: 'The Ecommerce Growth Engine: Meta, TikTok, Google and Shopify CRO in One System',
     content: `
       <p>Brand Scaling is an ecommerce growth agency that runs paid acquisition, creative, the store and retention together, so the fixes in one area do not get lost in another. Over $50M+ in ad spend managed across 150+ verified case studies.</p>
       <h2>What an Ecommerce Growth Agency Does</h2>
@@ -156,9 +156,9 @@ const routes = [
   {
     path: '/viral-creatives',
     outPath: 'viral-creatives/index.html',
-    title: 'Direct-Response Video Creatives & UGC Ads | Brand Scaling',
-    description: 'Plug-and-play creative systems designed to lower CPA and unlock $10k-$50k/day spend. Direct-response UGC, 3D motion, founder hooks, and iterative testing.',
-    h1: 'Direct-Response Video Creatives and High-Converting UGC',
+    title: 'Ecommerce Ad Creative & Creative Testing | Brand Scaling',
+    description: 'Ecommerce ad creative for DTC brands: hooks and angles on a testing matrix, and weekly creative testing that lowers CPA as Meta and TikTok spend grows.',
+    h1: 'Ecommerce Ad Creative and Creative Testing for DTC Brands',
     content: `
       <p>Creative is the #1 targeting lever in modern Meta and TikTok advertising. We write, produce, and iterate 30 to 50+ fresh direct-response video angles every month to eliminate ad fatigue.</p>
       <h2>Our Creative Testing Matrix</h2>
@@ -168,7 +168,7 @@ const routes = [
   {
     path: '/roas-calculator',
     outPath: 'roas-calculator/index.html',
-    title: 'Real ROAS Calculator for Ecommerce: Break-Even & Profit',
+    title: 'ROAS Calculator: Break-Even ROAS & Profit for Ecommerce',
     description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.',
     h1: 'Real ROAS Calculator for Ecommerce',
     content: `

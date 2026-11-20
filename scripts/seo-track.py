@@ -99,6 +99,25 @@ def service_rows(query_page):
     return rows
 
 
+def plan_rows(query_page):
+    """The keyword plan (docs/keyword-plan-2026-11-20.csv): impressions and position for each planned keyword."""
+    import csv
+    path = os.path.join(ROOT, 'docs', 'keyword-plan-2026-11-20.csv')
+    if not os.path.exists(path):
+        return []
+    out = []
+    for r in csv.DictReader(open(path)):
+        kw = r['keyword'].lower()
+        hits = [(k.split(' || ')[0], k.split(' || ')[1], v) for k, v in query_page.items() if kw in k.split(' || ')[0]]
+        impr = sum(v['impressions'] for _, _, v in hits)
+        best = min(hits, key=lambda h: h[2]['position']) if hits else None
+        own = [h for h in hits if h[1] == r['site_page']]
+        own_best = min(own, key=lambda h: h[2]['position']) if own else None
+        out.append([r['keyword'], r['us_monthly_volume'], r['keyword_difficulty'], r['priority'], r['site_page'], impr,
+                    f"{best[2]['position']} ({best[1]})" if best else '-', own_best[2]['position'] if own_best else 'not ranking'])
+    return out
+
+
 def table(headers, rows):
     out = ['| ' + ' | '.join(headers) + ' |', '|' + '---|' * len(headers)]
     out += ['| ' + ' | '.join(str(c) for c in r) + ' |' for r in rows]
@@ -169,7 +188,13 @@ def main():
         '',
         table(['Keyword', 'Position', 'Impressions'], [[q, v['position'], v['impressions']] for q, v in low_ctr[:20]]) if low_ctr else 'None this week.',
         '',
-        '## The 30 services: where each one ranks (last 7 days)',
+        '## Keyword plan (20 Nov 2026): where each planned keyword ranks (last 7 days)',
+        '',
+        'Volume and difficulty: Semrush US, from the owner\'s keyword map. Matches any search containing the keyword.',
+        '',
+        table(['Keyword', 'Volume', 'KD', 'Priority', 'Target page', 'Impressions', 'Best position (page)', 'Target page position'], plan_rows(cur['query_page'])),
+        '',
+        '## The services: where each one ranks (last 7 days)',
         '',
         table(['Service', 'Target page', 'Impressions', 'Best position', 'Best query (page)', 'Target page position'], service_rows(cur['query_page'])),
         '',

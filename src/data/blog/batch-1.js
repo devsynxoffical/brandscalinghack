@@ -694,11 +694,11 @@ Example arithmetic only: a brand with a $75 AOV keeps $33.75 per order after pro
   // 5. Meta ads creative testing
   {
     slug: 'meta-ads-creative-testing',
-    title: 'Meta Ads Creative Testing: A Framework That Finds Winners',
-    titleTag: 'Meta Ads Creative Testing Framework | Brand Scaling',
-    metaDescription: 'A Meta ads creative testing framework: concept vs iteration tests, one testing campaign, budget per test, kill rules and how to graduate winners to scale.',
-    primaryKeyword: 'meta ads creative testing',
-    secondaryKeywords: ['facebook ad creative testing', 'creative testing framework', 'how to test ad creatives', 'ad creative kill rules'],
+    title: 'Ad Creative Testing for Meta Ads: A Framework That Finds Winners',
+    titleTag: 'Ad Creative Testing Framework for Meta Ads | Brand Scaling',
+    metaDescription: 'An ad creative testing framework for Meta ads: concept vs iteration tests, one testing campaign, budget per test, kill rules and scaling winners.',
+    primaryKeyword: 'ad creative testing',
+    secondaryKeywords: ['meta ads creative testing', 'facebook ad creative testing', 'creative testing framework', 'how to test ad creatives', 'ad creative kill rules'],
     publishDate: '2026-11-05',
     updatedDate: '2026-11-05',
     readTime: '8 min read',

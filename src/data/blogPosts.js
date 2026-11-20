@@ -9,6 +9,7 @@ import blogBatch5 from './blog/batch-5.js';
 import blogBatch6 from './blog/batch-6.js';
 import blogBatch7 from './blog/batch-7.js';
 import blogBatch8 from './blog/batch-8.js';
+import blogBatch9 from './blog/batch-9.js';
 import whatIsRoasUpdate from './blog/what-is-roas-update.js';
 import performanceMarketingUpdate from './blog/performance-marketing-update.js';
 import affiliateProgramUpdate from './blog/affiliate-program-update.js';
@@ -608,9 +609,9 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
     updatedDate: '2026-11-07',
     readTime: "14 min read",
     relatedLinks: [
-      { href: '/', title: 'Performance Marketing Agency for Ecommerce', text: 'What the Brand Scaling engagement includes and who it is for.' },
+      { href: '/', title: 'DTC Marketing and Ecommerce Growth Agency', text: 'What the Brand Scaling engagement includes and who it is for.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency', text: 'The Facebook and Instagram arm of the engine.' },
-      { href: '/growth', title: 'Ecommerce Growth Agency', text: 'Media buying, creative, CRO and retention in one system.' },
+      { href: '/growth', title: 'Ecommerce Growth Engine', text: 'Media buying, creative, CRO and retention in one system.' },
       { href: '/case-studies', title: '150+ Verified Case Studies', text: 'Proof from real ad accounts across 30+ niches.' }
     ],
     category: 'Strategy & Scaling',
@@ -815,12 +816,12 @@ First Time vs. Returning Customer Split: Ensuring that paid acquisition fuels su
   },
   {
     slug: 'meta-ads-library',
-    title: 'Meta Ads Library: How We Find Winning Ads and Scaled a DTC Brand to $376K in 25 Days',
+    title: 'Facebook Ad Library (Meta Ads Library): How We Find Winning Ads and Scaled a DTC Brand to $376K in 25 Days',
     // 13 Nov: position 4.4 with no clicks; the title now matches the how-to intent of the search
-    titleTag: 'Meta Ads Library: How to Use It to Find Winning Ads',
-    metaDescription: 'How to use the free Meta Ads Library: search competitor ads, filter for long-running winners and turn them into tests, plus how one brand hit $376K in 25 days.',
-    primaryKeyword: 'meta ads library',
-    secondaryKeywords: ['facebook ads library', 'how to find winning ads', 'meta ads case study', 'scale meta ads', 'cbo campaign', 'how to use meta ads library', 'is meta ads library free', 'meta ad library search by id'],
+    titleTag: 'Facebook Ad Library (Meta Ads Library): Find Winning Ads',
+    metaDescription: 'How to use the free Facebook Ad Library (Meta Ads Library): find long-running competitor ads, turn them into tests, and how one brand hit $376K in 25 days.',
+    primaryKeyword: 'facebook ad library',
+    secondaryKeywords: ['meta ads library', 'facebook ads library', 'how to find winning ads', 'meta ads case study', 'scale meta ads', 'cbo campaign', 'how to use meta ads library', 'is meta ads library free', 'meta ad library search by id'],
     publishDate: '2026-10-30',
     updatedDate: '2026-10-31',
     readTime: '16 min read',
@@ -1902,4 +1903,4 @@ Always agree usage rights in writing before the shoot: how long you can run the 
 // Posts added 5 Nov 2026 (SEO page plan), kept in their own modules
 // Rewrites of indexed posts are kept in their own modules and applied over the original entries
 const UPDATES = { 'what-is-roas': whatIsRoasUpdate, 'performance-marketing-agency': performanceMarketingUpdate, 'dtc-affiliate-program': affiliateProgramUpdate };
-export const blogPosts = [...corePosts.map((p) => { const u = UPDATES[p.slug]; return u ? { ...p, ...(typeof u === 'function' ? u(p) : u) } : p; }), ...blogBatch1, ...blogBatch2, ...blogBatch3, ...blogBatch4, ...blogBatch5, ...blogBatch6, ...blogBatch7, ...blogBatch8];
+export const blogPosts = [...corePosts.map((p) => { const u = UPDATES[p.slug]; return u ? { ...p, ...(typeof u === 'function' ? u(p) : u) } : p; }), ...blogBatch1, ...blogBatch2, ...blogBatch3, ...blogBatch4, ...blogBatch5, ...blogBatch6, ...blogBatch7, ...blogBatch8, ...blogBatch9];

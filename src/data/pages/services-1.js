@@ -240,7 +240,7 @@ We have not published Google Shopping case studies, so we will not promise you a
         answer: 'Start from break-even: 1 divided by your contribution margin percentage. A product with 40% margin breaks even at 2.5x. Set your target above break-even for the profit you want, and use different targets per margin tier. Avoid one account-wide target, which over-bids on low-margin products and under-bids on high-margin ones.'
       }
     ],
-    related: ['/meta-ads-agency', '/compare/meta-ads-vs-google-ads', '/tools/break-even-roas-calculator', '/blog/what-is-roas', '/glossary/blended-roas', '/services'],
+    related: ['/ecommerce-advertising', '/meta-ads-agency', '/compare/meta-ads-vs-google-ads', '/tools/break-even-roas-calculator', '/glossary/blended-roas', '/services'],
     cta: {
       heading: 'See where your Google Shopping budget really goes',
       text: 'Book a Brand Growth Audit. We will review your feed, split your branded and non-branded spend and set a target ROAS from your actual margins.'
@@ -358,7 +358,7 @@ CRO agencies usually charge a monthly retainer, a fixed project fee for an audit
         answer: 'Yes. Most CRO work happens on the existing theme: speed clean-up, product page changes, offers, cart and checkout improvements and testing. A rebuild only makes sense when the theme is so slow or rigid that it blocks the changes. We tell you which applies after the audit.'
       }
     ],
-    related: ['/shopify-agency', '/tools/conversion-rate-calculator', '/blog/shopify-conversion-rate-optimization', '/tools/aov-calculator', '/glossary/conversion-rate', '/services'],
+    related: ['/shopify-agency', '/shopify-marketing-agency', '/tools/conversion-rate-calculator', '/blog/shopify-conversion-rate-optimization', '/tools/aov-calculator', '/services'],
     cta: {
       heading: 'Find out what your store is leaking',
       text: 'Book a Brand Growth Audit. Gaurav will review your product pages, offer, speed and funnel data and show you the fixes ranked by revenue impact.'
@@ -471,7 +471,7 @@ This service fits brands with a product people buy more than once, or a range wi
         answer: 'There is no single right number. Many DTC brands send several campaigns a week to engaged subscribers and less often to the wider list. The rule we use is to send as often as you have something useful to say, segment by engagement, and watch unsubscribes and spam complaints as the limit.'
       }
     ],
-    related: ['/retention-marketing-agency', '/blog/ecommerce-email-flows', '/tools/ltv-calculator', '/glossary/ltv', '/growth', '/services'],
+    related: ['/ecommerce-email-marketing', '/retention-marketing-agency', '/blog/ecommerce-email-flows', '/tools/ltv-calculator', '/glossary/ltv', '/services'],
     cta: {
       heading: 'See what your Klaviyo account is missing',
       text: 'Book a Brand Growth Audit. We will review your flows, segments and deliverability and show you how retention changes the CAC your ads can afford.'

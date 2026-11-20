@@ -156,8 +156,8 @@ export default function HeroSection({ onOpenBooking, onNavigate }) {
         <div className="bsh-hero-content-wrap">
           {/* Targeted SEO & AEO H1 */}
           <h1 className="bsh-hero-header-eyebrow" style={{ maxWidth: '960px', margin: '0 auto 12px' }}>
-            <span className="bsh-serif-italic">The Performance Marketing Agency for</span>{' '}
-            <span className="bsh-bold-flame">DTC Ecommerce Brands Ready to Scale.</span>
+            <span className="bsh-serif-italic">The DTC Marketing &amp; Ecommerce Growth Agency for</span>{' '}
+            <span className="bsh-bold-flame">Brands Ready to Scale.</span>
           </h1>
         </div>
 
