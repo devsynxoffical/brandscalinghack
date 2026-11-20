@@ -229,3 +229,11 @@ Queue (next sessions, highest impact first):
 - Indexing API: no requests sent (owner rule: none before 22 Nov).
 - Change-log checks: none due yet (first due 26 Nov).
 - Changes: none from tracking, because the Google data is unchanged and there is no new evidence. Separate owner request, the same day: 2 new case studies (change-log row 12).
+
+## 20 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data; the tracker reports SAME DATA, still to 19 Nov. Google revised the counts slightly: 7 days to 19 Nov, 545 impressions, 1 click, 15 keywords in the top 10.
+- Bing (Verified): 95 in index, 0 inbound links, 0 crawl issues.
+- Indexing API: no requests (owner rule: none before 22 Nov, and never in the 20:37 run).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none, because there is no new evidence. The hostinger branch needs no refresh: the site did not change this run.

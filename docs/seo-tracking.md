@@ -1,6 +1,6 @@
 # SEO tracking: keywords and pages
 
-Snapshot 2026-11-20 08:42 UTC. Search Console window 2026-11-13 to 2026-11-19 (latest day with data: 2026-11-19). Compared with the previous snapshot (2026-11-20 07:29 UTC).
+Snapshot 2026-11-20 20:37 UTC. Search Console window 2026-11-13 to 2026-11-19 (latest day with data: 2026-11-19). Compared with the previous snapshot (2026-11-20 08:42 UTC).
 
 > Search Console updates about once a day with a 2-day lag. **The data has not changed since the previous snapshot**, so movers below are empty or carried over.
 
@@ -8,9 +8,9 @@ Snapshot 2026-11-20 08:42 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 
 | Metric | Last 7 days | 7 days before |
 |---|---|---|
-| Impressions | 526 | 264 |
+| Impressions | 545 | 264 |
 | Clicks | 1 | 1 |
-| Queries | 133 | 88 |
+| Queries | 135 | 88 |
 | Queries in top 10 | 15 | 3 |
 | Pages with impressions | 39 | 43 |
 
@@ -18,22 +18,22 @@ Snapshot 2026-11-20 08:42 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 
 | Page | Impressions | Clicks | Avg position | Position before | Change |
 |---|---|---|---|---|---|
-| /blog/performance-marketing-agency | 85 | 1 | 31.4 | 58.8 | +27.4 |
-| /shopify-agency | 76 | 0 | 54.9 | 77.2 | +22.3 |
-| / | 66 | 0 | 33.1 | 30.4 | -2.7 |
-| /blog/meta-andromeda | 39 | 0 | 70.1 | 63.7 | -6.4 |
-| /tools | 39 | 0 | 24.3 | 30.8 | +6.5 |
+| /blog/performance-marketing-agency | 86 | 1 | 31.7 | 58.8 | +27.1 |
+| /shopify-agency | 82 | 0 | 56.6 | 77.2 | +20.6 |
+| / | 68 | 0 | 32.8 | 30.4 | -2.4 |
+| /blog/meta-andromeda | 42 | 0 | 69 | 63.7 | -5.3 |
+| /tools | 41 | 0 | 25.7 | 30.8 | +5.1 |
 | /blog/what-is-roas | 37 | 0 | 74.8 | 80.4 | +5.6 |
 | /blog | 30 | 0 | 26.1 | 57.8 | +31.7 |
-| /cases/DBTXySHSrJa | 28 | 0 | 7.6 | new | new |
-| /meta-ads-agency | 26 | 0 | 37.2 | 5 | -32.2 |
+| /cases/DBTXySHSrJa | 29 | 0 | 7.7 | new | new |
+| /meta-ads-agency | 27 | 0 | 36.2 | 5 | -31.2 |
 | /blog/meta-ads-library | 21 | 0 | 17.3 | 4.4 | -12.9 |
 | /blog/bfcm-meta-ads-playbook | 15 | 0 | 16.7 | 42.2 | +25.5 |
+| /about | 14 | 0 | 7.8 | 2.3 | -5.5 |
 | /growth | 14 | 0 | 34.4 | 40.6 | +6.2 |
-| /about | 13 | 0 | 8.1 | 2.3 | -5.8 |
 | /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve | 13 | 0 | 31.5 | 24.6 | -6.9 |
 | /viral-creatives | 13 | 0 | 15 | 7 | -8 |
-| /roas-calculator | 11 | 0 | 26.8 | 43.4 | +16.6 |
+| /roas-calculator | 12 | 0 | 28.8 | 43.4 | +14.6 |
 | /tools/conversion-rate-calculator | 9 | 0 | 67 | 71.8 | +4.8 |
 | /blog/tiktok-gmv-max | 6 | 0 | 8.2 | new | new |
 | /terms | 6 | 0 | 6.7 | 3 | -3.7 |
@@ -42,10 +42,10 @@ Snapshot 2026-11-20 08:42 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 | /locations/toronto | 5 | 0 | 74 | 42 | -32 |
 | /case-studies | 4 | 0 | 6.8 | 7 | +0.2 |
 | /compare/agency-vs-in-house-media-buyer | 4 | 0 | 49.5 | 68.5 | +19.0 |
+| /services | 4 | 0 | 16 | 4 | -12 |
 | /case-studies/dropshipping-dtc | 3 | 0 | 33.7 | new | new |
 | /compare/meta-ads-vs-tiktok-ads | 3 | 0 | 70.7 | 62.5 | -8.2 |
 | /privacy-policy | 3 | 0 | 31.3 | new | new |
-| /services | 3 | 0 | 10 | 4 | -6 |
 | /case-studies/apparel-fashion | 1 | 0 | 3 | 39 | +36 |
 | /cases/449221-last-49-days-newer-client-dropshipping-brands-starting | 1 | 0 | 57 | new | new |
 
@@ -99,8 +99,9 @@ Snapshot 2026-11-20 08:42 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 | Keyword | Position | Impressions |
 |---|---|---|
 | dtc marketing agency | 51.3 | 20 |
-| meta andromeda | 90.5 | 14 |
+| meta andromeda | 89.6 | 15 |
 | checkout conversion rate calculator | 67 | 9 |
+| scale affiliate program dtc | 73.6 | 9 |
 | dtc shopify agency | 55.8 | 8 |
 
 ## Keyword plan (20 Nov 2026): where each planned keyword ranks (last 7 days)
@@ -114,7 +115,7 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 | facebook ads for dropshipping | 140 | 12 | P1 | /blog/facebook-ads-for-dropshipping | 0 | - | not ranking |
 | shopify marketing agency | 590 | 13 | P1 | /shopify-marketing-agency | 0 | - | not ranking |
 | ecommerce growth agency | 320 | 17 | P1 | / | 1 | 51 (/shopify-agency) | not ranking |
-| roas calculator | 1600 | 20 | P1 | /roas-calculator | 19 | 11 (/tools) | 38 |
+| roas calculator | 1600 | 20 | P1 | /roas-calculator | 22 | 11 (/tools) | 38 |
 | tiktok shop agency | 480 | 21 | P2 | /tiktok-shop-agency | 1 | 89 (/shopify-agency) | not ranking |
 | how to scale facebook ads | 390 | 21 | P2 | /blog/how-to-scale-facebook-ads | 0 | - | not ranking |
 | ecommerce advertising | 880 | 23 | P2 | /ecommerce-advertising | 0 | - | not ranking |
@@ -156,22 +157,22 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 | UGC ads and production | /viral-creatives | 1 | 23 | how can dtc brands scale ugc production (/) | not ranking |
 | Creative strategy and testing | /creative-strategy-agency | 1 | 10 | we're a mid-market e-commerce brand scaling ads across tikto (/) | not ranking |
 | Influencer marketing and whitelisting | /influencer-marketing-agency | 0 | - | - | not ranking |
-| Affiliate program management | /dtc-affiliate-program-management | 10 | 18 | dtc affiliate program scaling (/) | not ranking |
+| Affiliate program management | /dtc-affiliate-program-management | 16 | 18 | dtc affiliate program scaling (/) | not ranking |
 | Ecommerce email marketing | /ecommerce-email-marketing | 1 | 6 | how do i calculate the total cost of ownership when comparin (/tools) | not ranking |
 | Klaviyo agency | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | SMS marketing | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | Retention marketing | /retention-marketing-agency | 0 | - | - | not ranking |
 | BFCM ads management | /bfcm-ads-management | 5 | 20.3 | bfcm ads (/blog/bfcm-meta-ads-playbook) | not ranking |
-| DTC marketing and ecommerce growth agency | / | 47 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | not ranking |
+| DTC marketing and ecommerce growth agency | / | 48 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | not ranking |
 | Ecommerce growth engine | /growth | 0 | - | - | not ranking |
 
 ## Keyword movers (3+ positions, 2+ impressions)
 
-**Up:** dtc shopify seo 96.7 to 84.8; dtc brand accelerator 39 to 30; dtc ecommerce development agency 75 to 68; roas 73.3 to 68.8; meta andromeda algorithm 94 to 91
+**Up:** none
 
-**Down:** scale affiliate program dtc 59 to 75
+**Down:** dtc ecommerce agency 59.5 to 72.7; real roas calculator ecommerce 31.3 to 43.2
 
-**New:** checkout conversion rate calculator (67)
+**New:** none
 
 **Lost:** none
 
@@ -179,6 +180,6 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 
 **Up:** none
 
-**Down:** none
+**Down:** /services 10 to 16
 
 **New:** none
