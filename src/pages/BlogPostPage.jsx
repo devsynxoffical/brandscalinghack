@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { linkifySegments, newLinkState, pageIdFromHref } from '../data/internalLinks';
 import { sourcesFor } from '../data/blogSources';
+import PreferredSourceButton from '../components/PreferredSourceButton';
 
 // Clean any markdown formatting like ** or hyphen bullet points from rendered text
 function cleanBlogText(text) {
@@ -535,6 +536,12 @@ export default function BlogPostPage({ slug, onNavigate, onOpenBooking }) {
               </div>
             </section>
           )}
+
+          {/* Google preferred source */}
+          <aside aria-label="Follow us on Google" style={{ marginTop: '44px', padding: '22px 24px', border: '1px solid #e2e8f0', borderRadius: '16px', background: '#f8fafc', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '14px' }}>
+            <p style={{ margin: 0, color: '#334155', fontSize: '16px', fontWeight: 600 }}>Found this useful? Add Brand Scaling as a preferred source on Google to see more of our guides in Top Stories.</p>
+            <PreferredSourceButton placement="blog_post" label="Add as preferred source on Google" />
+          </aside>
 
           {/* Primary sources for platform facts */}
           {sourcesFor(post.slug).length > 0 && (

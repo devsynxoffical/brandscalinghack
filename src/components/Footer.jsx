@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BRAND } from '../data/brandFacts';
 import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
 import BrandLogo from './BrandLogo';
+import PreferredSourceButton from './PreferredSourceButton';
 
 export default function Footer({ onNavigate, onOpenBooking }) {
   const [email, setEmail] = useState('');
@@ -37,6 +38,9 @@ export default function Footer({ onNavigate, onOpenBooking }) {
                 {BRAND.address.streetLine2}<br />
                 {BRAND.address.locality}, {BRAND.address.region} {BRAND.address.postalCode}
               </p>
+              <div style={{ marginTop: '16px' }}>
+                <PreferredSourceButton placement="footer" />
+              </div>
             </div>
 
             {/* Site */}
