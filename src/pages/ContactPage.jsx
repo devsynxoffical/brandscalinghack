@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BRAND } from '../data/brandFacts';
-import { MapPin, CalendarCheck, Users, ArrowRight, MessageCircle } from 'lucide-react';
+import { MapPin, CalendarCheck, Users, ArrowRight, MessageCircle, Mail } from 'lucide-react';
+import { LeadForm } from '../components/LeadForm';
 import { WHATSAPP_DISPLAY, whatsappUrl } from '../data/contact';
 import { InstagramIcon as Instagram, YoutubeIcon as Youtube, LinkedinIcon as Linkedin } from '../components/Icons';
 
@@ -66,6 +67,15 @@ export default function ContactPage({ onNavigate, onOpenBooking }) {
             >
               Chat {WHATSAPP_DISPLAY} <ArrowRight size={16} />
             </a>
+          </div>
+
+          <div style={{ ...cardStyle, gridColumn: '1 / -1' }} id="lead-form">
+            <Mail size={24} color="#ff5722" />
+            <h2 style={{ fontSize: '20px', fontWeight: 800, color: '#ffffff', margin: '14px 0 8px' }}>Send us your details</h2>
+            <p style={{ color: '#cbd5e1', fontSize: '14.5px', lineHeight: 1.6, margin: '0 0 18px' }}>
+              Prefer email? Fill in the form and it goes straight to <a href={`mailto:${BRAND.email}`} style={{ color: '#ff7043' }}>{BRAND.email}</a>. We reply within one business day.
+            </p>
+            <LeadForm placement="contact" />
           </div>
 
           <div style={cardStyle}>

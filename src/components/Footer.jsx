@@ -3,6 +3,7 @@ import { BRAND } from '../data/brandFacts';
 import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
 import BrandLogo from './BrandLogo';
 import PreferredSourceButton from './PreferredSourceButton';
+import { openLeadForm } from './LeadForm';
 
 export default function Footer({ onNavigate, onOpenBooking }) {
   const [email, setEmail] = useState('');
@@ -38,6 +39,10 @@ export default function Footer({ onNavigate, onOpenBooking }) {
                 {BRAND.address.streetLine2}<br />
                 {BRAND.address.locality}, {BRAND.address.region} {BRAND.address.postalCode}
               </p>
+              <p className="st-footer-address" style={{ marginTop: '10px' }}>
+                <a href={`mailto:${BRAND.email}`} style={{ color: 'inherit' }}>{BRAND.email}</a>
+              </p>
+              <button type="button" className="lf-btn lf-btn-primary" style={{ marginTop: '14px' }} onClick={() => openLeadForm('footer')}>Send us your details</button>
               <div style={{ marginTop: '16px' }}>
                 <PreferredSourceButton placement="footer" />
               </div>

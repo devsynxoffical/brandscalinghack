@@ -204,7 +204,7 @@ const routes = [
         <tr><th>Core services</th><td>Paid acquisition (Meta, TikTok, Google), direct-response UGC and video creative, Shopify CRO and offer design, retention marketing (Klaviyo email and SMS)</td></tr>
         <tr><th>Markets served</th><td>United States, United Kingdom, Canada, Australia</td></tr>
         <tr><th>Typical clients</th><td>DTC ecommerce brands doing about $20K to $2M+ a month, spending at least $10K to $20K a month on ads</td></tr>
-        <tr><th>Contact</th><td>team@brandscalinghacks.com, <a href="/book">book a Brand Growth Audit</a></td></tr>
+        <tr><th>Contact</th><td>info@brandscalinghacks.com, <a href="/book">book a Brand Growth Audit</a></td></tr>
       </tbody></table>
       <h2>The four engines we build</h2>
       <ul>

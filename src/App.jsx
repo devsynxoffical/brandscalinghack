@@ -5,6 +5,7 @@ import { ogImageFor } from './data/ogImages';
 import { contentIndexByPath as contentPageByPath } from './data/contentIndex';
 import { BLOG_META, CASE_META, NICHE_META } from './data/routeMeta';
 import WhatsAppButton from './components/WhatsAppButton';
+import LeadFormModal, { LeadFormFloat } from './components/LeadForm';
 import RelatedLinksBlock from './components/RelatedLinksBlock';
 
 // Every page loads on demand, so a visitor only downloads the code and data for the page
@@ -546,6 +547,9 @@ function App() {
 
       {/* Floating WhatsApp chat (opening message depends on the current page) */}
       <WhatsAppButton page={activePage} />
+      {/* Lead form: floating button and modal (emails info@) */}
+      <LeadFormFloat page={activePage} />
+      <LeadFormModal />
 
 
       {/* Masterclass Video Player Modal */}

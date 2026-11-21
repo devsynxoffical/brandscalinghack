@@ -6,7 +6,7 @@ export const BRAND = {
   name: 'Brand Scaling',
   legalName: 'Brand Scaling Hacks LLC',
   url: 'https://www.brandscalinghacks.com',
-  email: 'team@brandscalinghacks.com',
+  email: 'info@brandscalinghacks.com',
   address: {
     street: '27 W 24th Street, Suite 702',
     streetLine1: '27 W 24th Street',
