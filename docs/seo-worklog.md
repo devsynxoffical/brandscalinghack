@@ -247,3 +247,11 @@ Queue (next sessions, highest impact first):
 - Indexing API: no requests (owner rule: none before 22 Nov).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none. Every candidate is waiting for Google to see a change already made. "dtc marketing agency" (36 impressions) still ranks /blog/performance-marketing-agency at 56.1, but Google last crawled the home page on 19 Nov 19:44, before the 20 Nov retarget (change-log row 8). "roas calculator" ranks /tools at 11 while /roas-calculator sits at 38, but /roas-calculator was last crawled on 9 Nov, before the 20 Nov retitle (row 11). Changing these again before Google recrawls would make the results impossible to measure.
+
+## 21 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data (SAME DATA, still to 20 Nov). Google revised the 7-day totals slightly: 627 impressions, 1 click, 14 keywords in the top 10.
+- Bing (Verified): 98 in index, 0 inbound links, 0 crawl issues.
+- Indexing API: no requests (none before 22 Nov, and never in the 20:37 run).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none from tracking, because there is no new data. Earlier today, on the owner's request: the preferred source button (row 13) and the lead form to info@ (row 14).
