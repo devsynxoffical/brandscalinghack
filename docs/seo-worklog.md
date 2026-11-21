@@ -237,3 +237,13 @@ Queue (next sessions, highest impact first):
 - Indexing API: no requests (owner rule: none before 22 Nov, and never in the 20:37 run).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none, because there is no new evidence. The hostinger branch needs no refresh: the site did not change this run.
+
+## 21 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): new data to 20 Nov. 7 days: 610 impressions (previous 7 days 276), 1 click, 13 keywords in the top 10. Up: dtc performance agency 37.5 to 28.2, meta ads agency for ecommerce 74.5 to 65.9, ecommerce meta ads agency 79.2 to 71.2, dtc ecommerce cro agency 56.7 to 50. Down: dtc performance marketing 10 to 21, dtc marketing agency 51.3 to 56.1, dtc growth agency 38.6 to 42.3.
+- URL Inspection, 168 sitemap URLs (Verified): 72 crawled and 69 indexed (20 Nov: 65 and 63; 19 Nov: 64 and 62). Newly crawled and indexed on 20 Nov: /shopify-marketing-agency, /ecommerce-advertising, /ecommerce-email-marketing, /blog/facebook-ads-for-dropshipping, /blog/how-to-find-winning-products and the 2 new case pages. Dropped from the index: /cases/pov-curious-pulled-off-40669-sales-7-days-134-high-ticket, now "Crawled - currently not indexed", last crawled 12 Nov (a consolidated case page). Still unknown to Google: /meta-ads-audit, /google-shopping-ads-agency, /contact, /book and others.
+- Bing (Verified): 98 in index (was 95), 0 inbound links, 0 crawl issues.
+- GA4, 14 to 20 Nov (Verified): 42 sessions (Direct 37, Organic Social 3, Organic Search 1, Unassigned 1), 0 key events.
+- Indexing API: no requests (owner rule: none before 22 Nov).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none. Every candidate is waiting for Google to see a change already made. "dtc marketing agency" (36 impressions) still ranks /blog/performance-marketing-agency at 56.1, but Google last crawled the home page on 19 Nov 19:44, before the 20 Nov retarget (change-log row 8). "roas calculator" ranks /tools at 11 while /roas-calculator sits at 38, but /roas-calculator was last crawled on 9 Nov, before the 20 Nov retitle (row 11). Changing these again before Google recrawls would make the results impossible to measure.

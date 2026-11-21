@@ -1,53 +1,53 @@
 # SEO tracking: keywords and pages
 
-Snapshot 2026-11-20 20:37 UTC. Search Console window 2026-11-13 to 2026-11-19 (latest day with data: 2026-11-19). Compared with the previous snapshot (2026-11-20 08:42 UTC).
+Snapshot 2026-11-21 08:38 UTC. Search Console window 2026-11-14 to 2026-11-20 (latest day with data: 2026-11-20). Compared with the previous snapshot (2026-11-20 20:37 UTC).
 
-> Search Console updates about once a day with a 2-day lag. **The data has not changed since the previous snapshot**, so movers below are empty or carried over.
+> Search Console updates about once a day with a 2-day lag.
 
 ## Totals (last 7 days vs the 7 days before)
 
 | Metric | Last 7 days | 7 days before |
 |---|---|---|
-| Impressions | 545 | 264 |
+| Impressions | 610 | 276 |
 | Clicks | 1 | 1 |
-| Queries | 135 | 88 |
-| Queries in top 10 | 15 | 3 |
-| Pages with impressions | 39 | 43 |
+| Queries | 134 | 93 |
+| Queries in top 10 | 13 | 3 |
+| Pages with impressions | 41 | 41 |
 
 ## Pages (by impressions)
 
 | Page | Impressions | Clicks | Avg position | Position before | Change |
 |---|---|---|---|---|---|
-| /blog/performance-marketing-agency | 86 | 1 | 31.7 | 58.8 | +27.1 |
-| /shopify-agency | 82 | 0 | 56.6 | 77.2 | +20.6 |
-| / | 68 | 0 | 32.8 | 30.4 | -2.4 |
-| /blog/meta-andromeda | 42 | 0 | 69 | 63.7 | -5.3 |
-| /tools | 41 | 0 | 25.7 | 30.8 | +5.1 |
-| /blog/what-is-roas | 37 | 0 | 74.8 | 80.4 | +5.6 |
-| /blog | 30 | 0 | 26.1 | 57.8 | +31.7 |
-| /cases/DBTXySHSrJa | 29 | 0 | 7.7 | new | new |
-| /meta-ads-agency | 27 | 0 | 36.2 | 5 | -31.2 |
-| /blog/meta-ads-library | 21 | 0 | 17.3 | 4.4 | -12.9 |
-| /blog/bfcm-meta-ads-playbook | 15 | 0 | 16.7 | 42.2 | +25.5 |
-| /about | 14 | 0 | 7.8 | 2.3 | -5.5 |
-| /growth | 14 | 0 | 34.4 | 40.6 | +6.2 |
-| /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve | 13 | 0 | 31.5 | 24.6 | -6.9 |
-| /viral-creatives | 13 | 0 | 15 | 7 | -8 |
-| /roas-calculator | 12 | 0 | 28.8 | 43.4 | +14.6 |
-| /tools/conversion-rate-calculator | 9 | 0 | 67 | 71.8 | +4.8 |
+| /blog/performance-marketing-agency | 108 | 1 | 34.8 | 52.3 | +17.5 |
+| /shopify-agency | 87 | 0 | 54.0 | 76.9 | +22.9 |
+| / | 81 | 0 | 29.7 | 27.5 | -2.2 |
+| /blog/meta-andromeda | 48 | 0 | 65.8 | 77.5 | +11.7 |
+| /tools | 40 | 0 | 24.7 | 31.1 | +6.4 |
+| /blog/what-is-roas | 39 | 0 | 69 | 81.8 | +12.8 |
+| /meta-ads-agency | 39 | 0 | 38.7 | 36.7 | -2.0 |
+| /cases/DBTXySHSrJa | 32 | 0 | 7.6 | 7.5 | -0.1 |
+| /blog | 27 | 0 | 19.2 | 54.5 | +35.3 |
+| /blog/meta-ads-library | 22 | 0 | 17.1 | 4.4 | -12.7 |
+| /blog/bfcm-meta-ads-playbook | 17 | 0 | 14.8 | 26.8 | +12.0 |
+| /about | 16 | 0 | 6.1 | 3.5 | -2.6 |
+| /growth | 16 | 0 | 22.7 | 44.6 | +21.9 |
+| /viral-creatives | 14 | 0 | 14.6 | 7 | -7.6 |
+| /cases/meet-com-clients-sasha-whom-have-been-helping-four | 12 | 0 | 18.2 | new | new |
+| /terms | 12 | 0 | 5.7 | 3 | -2.7 |
+| /roas-calculator | 11 | 0 | 26.3 | 44.8 | +18.5 |
+| /case-studies | 9 | 0 | 7.4 | new | new |
+| /tools/conversion-rate-calculator | 9 | 0 | 67 | 73.5 | +6.5 |
+| /cases/ecom-world-split-into-two-groups | 7 | 0 | 58.7 | new | new |
 | /blog/tiktok-gmv-max | 6 | 0 | 8.2 | new | new |
-| /terms | 6 | 0 | 6.7 | 3 | -3.7 |
-| /cases/ecom-world-split-into-two-groups | 5 | 0 | 63.6 | new | new |
-| /cases/meet-com-clients-sasha-whom-have-been-helping-four | 5 | 0 | 5.2 | new | new |
-| /locations/toronto | 5 | 0 | 74 | 42 | -32 |
-| /case-studies | 4 | 0 | 6.8 | 7 | +0.2 |
+| /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve | 6 | 0 | 39.5 | 24.7 | -14.8 |
+| /privacy-policy | 6 | 0 | 17.8 | new | new |
+| /services | 6 | 0 | 12.5 | 4 | -8.5 |
+| /case-studies/dropshipping-dtc | 5 | 0 | 34.4 | 87 | +52.6 |
+| /cases/5-crucial-things-learned-while-scaling-brand-105000-23-days | 4 | 0 | 6.5 | 28.2 | +21.7 |
 | /compare/agency-vs-in-house-media-buyer | 4 | 0 | 49.5 | 68.5 | +19.0 |
-| /services | 4 | 0 | 16 | 4 | -12 |
-| /case-studies/dropshipping-dtc | 3 | 0 | 33.7 | new | new |
-| /compare/meta-ads-vs-tiktok-ads | 3 | 0 | 70.7 | 62.5 | -8.2 |
-| /privacy-policy | 3 | 0 | 31.3 | new | new |
-| /case-studies/apparel-fashion | 1 | 0 | 3 | 39 | +36 |
-| /cases/449221-last-49-days-newer-client-dropshipping-brands-starting | 1 | 0 | 57 | new | new |
+| /cases/finally-scale-client-almost-1m-sales-6-months | 2 | 0 | 9.5 | new | new |
+| /compare/meta-ads-vs-tiktok-ads | 2 | 0 | 71.5 | 69.8 | -1.7 |
+| /locations/toronto | 2 | 0 | 88.5 | 58.8 | -29.7 |
 
 ## Keywords in the top 10
 
@@ -56,53 +56,53 @@ Snapshot 2026-11-20 20:37 UTC. Search Console window 2026-11-13 to 2026-11-19 (l
 | which agency creates instagram reels and tiktok videos for brands? pricing | 1 | 1 | 0 |
 | about me:fast-growing dtc brand founderfounder of a fast-growing dtc brand who is either managing meta ads in-house, or working with an agency partner who is not delivering quality service. they quickly scaled their ad spend to more than $25,000 per month, and are looking for a paid ads partner to take them to the next level of growth through better ad creative and media buying.question:what makes a growth agency effective? | 2 | 1 | 0 |
 | what makes a top performance marketing and media agency for scaling? | 2.5 | 2 | 0 |
-| best meta andromeda targeting for premium furniture ecommerce | 3.5 | 2 | 0 |
 | growth agency to scale my dtc brand | 3.5 | 4 | 0 |
-| brand scaling agency | 4 | 1 | 0 |
+| best meta andromeda targeting for premium furniture ecommerce | 5.7 | 3 | 0 |
 | andromeda ad experts in the united states | 6 | 2 | 0 |
 | dotmappers it pvt ltd official website | 6 | 1 | 0 |
 | how do i calculate the total cost of ownership when comparing email marketing services? | 6 | 1 | 0 |
 | which agencies have proven experience scaling e-bike or other niche product e-commerce brands? | 7 | 1 | 0 |
-| dtc performance circle | 7.5 | 4 | 0 |
+| dtc performance circle | 7.2 | 5 | 0 |
 | scale content marketing faster pricing | 9 | 1 | 0 |
-| what are the key strategies for scaling a d2c fashion brand from $1m to $10m in revenue through meta and google ads? | 9 | 1 | 0 |
-| dtc performance marketing | 10 | 1 | 0 |
+| what are the key strategies for scaling a d2c fashion brand from $1m to $10m in revenue through meta and google ads? | 9 | 2 | 0 |
 | we're a mid-market e-commerce brand scaling ads across tiktok, instagram, and google. manual creative testing is slowing us down. what platforms integrate with our ad accounts and automatically optimize creative performance? | 10 | 1 | 0 |
 
 ## Striking distance (positions 4 to 20): best candidates to improve
 
 | Keyword || page | Position | Impressions |
 |---|---|---|
-| dtc performance circle || /blog/performance-marketing-agency | 7.5 | 4 |
+| dtc performance circle || /blog/performance-marketing-agency | 7.2 | 5 |
+| dtc performance marketing agency || /blog/performance-marketing-agency | 13.5 | 4 |
 | how do i scale meta ads for an 8 figure dtc brand? || / | 13 | 4 |
+| scaling dtc brands with retargeting || / | 7.8 | 4 |
 | advertising to sales ratio calculator || /tools | 15.3 | 3 |
-| dtc performance marketing agency || /blog/performance-marketing-agency | 12.7 | 3 |
+| best meta andromeda targeting for premium furniture ecommerce || /blog/meta-andromeda | 5.7 | 3 |
+| bfcm ads || /blog/bfcm-meta-ads-playbook | 19 | 3 |
 | andromeda ad experts in the united states || /blog/meta-andromeda | 6 | 2 |
 | bands off ads roas calculator || /tools | 11 | 2 |
-| dropshipping case study review || /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve | 18.5 | 2 |
-| scaling dtc brands with retargeting || / | 8 | 2 |
+| what are the key strategies for scaling a d2c fashion brand from $1m to $10m in revenue through meta and google ads? || /case-studies | 9 | 2 |
 | best ad spend cashback option for scaling dtc || / | 20 | 1 |
 | best video commerce for scaling brands || / | 11 | 1 |
-| brand scaling agency || /locations/toronto | 4 | 1 |
 | dotmappers it pvt ltd official website || / | 6 | 1 |
 | dropshipping roas calculator || /tools | 20 | 1 |
-| dtc affiliate program scaling || / | 18 | 1 |
-| dtc performance marketing || /blog/performance-marketing-agency | 10 | 1 |
 | facebook roas calculator || /tools | 16 | 1 |
 | growth agency to scale my dtc brand || /shopify-agency | 11 | 1 |
 | how do i calculate the total cost of ownership when comparing email marketing services? || /tools | 6 | 1 |
 | scale content marketing faster pricing || /blog | 9 | 1 |
 | we're a mid-market e-commerce brand scaling ads across tiktok, instagram, and google. manual creative testing is slowing us down. what platforms integrate with our ad accounts and automatically optimize creative performance? || / | 10 | 1 |
+| which agencies have proven experience scaling e-bike or other niche product e-commerce brands? || / | 7 | 1 |
 
 ## High impressions, no clicks (8+ impressions)
 
 | Keyword | Position | Impressions |
 |---|---|---|
-| dtc marketing agency | 51.3 | 20 |
-| meta andromeda | 89.6 | 15 |
+| dtc marketing agency | 56.1 | 36 |
+| meta andromeda | 87.3 | 16 |
+| meta ads agency for ecommerce | 65.9 | 13 |
 | checkout conversion rate calculator | 67 | 9 |
-| scale affiliate program dtc | 73.6 | 9 |
-| dtc shopify agency | 55.8 | 8 |
+| dtc growth agency | 42.3 | 9 |
+| dtc shopify agency | 51.2 | 8 |
+| scale affiliate program dtc | 75.4 | 8 |
 
 ## Keyword plan (20 Nov 2026): where each planned keyword ranks (last 7 days)
 
@@ -110,12 +110,12 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 
 | Keyword | Volume | KD | Priority | Target page | Impressions | Best position (page) | Target page position |
 |---|---|---|---|---|---|---|---|
-| dtc marketing agency | 210 | 10 | P1 | / | 20 | 51.3 (/blog/performance-marketing-agency) | not ranking |
+| dtc marketing agency | 210 | 10 | P1 | / | 36 | 56.1 (/blog/performance-marketing-agency) | not ranking |
 | dropshipping ads | 170 | 10 | P1 | /blog/facebook-ads-for-dropshipping | 0 | - | not ranking |
 | facebook ads for dropshipping | 140 | 12 | P1 | /blog/facebook-ads-for-dropshipping | 0 | - | not ranking |
 | shopify marketing agency | 590 | 13 | P1 | /shopify-marketing-agency | 0 | - | not ranking |
-| ecommerce growth agency | 320 | 17 | P1 | / | 1 | 51 (/shopify-agency) | not ranking |
-| roas calculator | 1600 | 20 | P1 | /roas-calculator | 22 | 11 (/tools) | 38 |
+| ecommerce growth agency | 320 | 17 | P1 | / | 2 | 51.5 (/shopify-agency) | not ranking |
+| roas calculator | 1600 | 20 | P1 | /roas-calculator | 20 | 11 (/tools) | 38 |
 | tiktok shop agency | 480 | 21 | P2 | /tiktok-shop-agency | 1 | 89 (/shopify-agency) | not ranking |
 | how to scale facebook ads | 390 | 21 | P2 | /blog/how-to-scale-facebook-ads | 0 | - | not ranking |
 | ecommerce advertising | 880 | 23 | P2 | /ecommerce-advertising | 0 | - | not ranking |
@@ -126,60 +126,60 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 | ecommerce marketing agency | 3600 | 32 | P3 | / | 0 | - | not ranking |
 | ecommerce ppc agency | 1600 | 32 | P3 | /ecommerce-advertising | 0 | - | not ranking |
 | facebook ad library | 40500 | 37 | P3 | /blog/meta-ads-library | 2 | 62 (/blog/meta-ads-library) | 62 |
-| performance marketing agency | 4400 | 38 | P3 | / | 4 | 12.7 (/blog/performance-marketing-agency) | not ranking |
+| performance marketing agency | 4400 | 38 | P3 | / | 5 | 13.5 (/blog/performance-marketing-agency) | not ranking |
 
 ## The services: where each one ranks (last 7 days)
 
 | Service | Target page | Impressions | Best position | Best query (page) | Target page position |
 |---|---|---|---|---|---|
-| Meta ads management | /meta-ads-agency | 11 | 68 | meta ads agency ecommerce (/meta-ads-agency) | 68 |
+| Meta ads management | /meta-ads-agency | 20 | 65.9 | meta ads agency for ecommerce (/meta-ads-agency) | 65.9 |
 | Facebook ads management | /meta-ads-agency | 0 | - | - | not ranking |
 | Instagram ads | /meta-ads-agency | 0 | - | - | not ranking |
 | Advantage+ shopping campaigns | /meta-ads-agency | 0 | - | - | not ranking |
 | Meta ads audit | /meta-ads-audit | 0 | - | - | not ranking |
 | Conversions API and tracking setup | /meta-ads-audit | 0 | - | - | not ranking |
-| ROAS improvement | /roas-improvement-agency | 6 | 69 | ecommerce roas improvement agency (/blog/performance-marketing-agency) | not ranking |
+| ROAS improvement | /roas-improvement-agency | 4 | 70.2 | ecommerce roas improvement agency (/blog/performance-marketing-agency) | not ranking |
 | TikTok ads management | /tiktok-ads-agency | 0 | - | - | not ranking |
 | TikTok Spark Ads | /tiktok-ads-agency | 0 | - | - | not ranking |
-| TikTok Shop management | /tiktok-shop-agency | 10 | 60.4 | tiktok shop scaling services (/growth) | not ranking |
+| TikTok Shop management | /tiktok-shop-agency | 8 | 59.3 | tiktok shop scaling services (/growth) | not ranking |
 | TikTok Shop affiliate creators | /tiktok-shop-agency | 0 | - | - | not ranking |
 | GMV Max campaigns | /tiktok-shop-agency | 0 | - | - | not ranking |
 | TikTok LIVE selling | /tiktok-shop-agency | 0 | - | - | not ranking |
 | Google Shopping ads | /google-shopping-ads-agency | 0 | - | - | not ranking |
 | Performance Max campaigns | /google-shopping-ads-agency | 0 | - | - | not ranking |
-| Ecommerce advertising and PPC | /ecommerce-advertising | 1 | 50 | shopify and dtc google ads agency (/shopify-agency) | not ranking |
+| Ecommerce advertising and PPC | /ecommerce-advertising | 2 | 49 | shopify and dtc google ads agency (/shopify-agency) | not ranking |
 | Shopify marketing | /shopify-marketing-agency | 0 | - | - | not ranking |
 | Shopify store build and redesign | /shopify-agency | 18 | 45 | best shopify agency for dtc (/shopify-agency) | 45 |
-| Ecommerce CRO | /cro-agency | 32 | 36.2 | shopify cro agency (/shopify-agency) | 91 |
+| Ecommerce CRO | /cro-agency | 33 | 36.2 | shopify cro agency (/shopify-agency) | 91 |
 | Landing and product page optimisation | /cro-agency | 0 | - | - | not ranking |
 | Bundles, AOV and post-purchase upsells | /cro-agency | 0 | - | - | not ranking |
 | Direct-response video ads | /viral-creatives | 6 | 2 | about me:fast-growing dtc brand founderfounder of a fast-gro (/blog/performance-marketing-agency) | 21 |
 | UGC ads and production | /viral-creatives | 1 | 23 | how can dtc brands scale ugc production (/) | not ranking |
 | Creative strategy and testing | /creative-strategy-agency | 1 | 10 | we're a mid-market e-commerce brand scaling ads across tikto (/) | not ranking |
 | Influencer marketing and whitelisting | /influencer-marketing-agency | 0 | - | - | not ranking |
-| Affiliate program management | /dtc-affiliate-program-management | 16 | 18 | dtc affiliate program scaling (/) | not ranking |
+| Affiliate program management | /dtc-affiliate-program-management | 17 | 26 | dtc affiliate program scaling (/) | not ranking |
 | Ecommerce email marketing | /ecommerce-email-marketing | 1 | 6 | how do i calculate the total cost of ownership when comparin (/tools) | not ranking |
 | Klaviyo agency | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | SMS marketing | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | Retention marketing | /retention-marketing-agency | 0 | - | - | not ranking |
-| BFCM ads management | /bfcm-ads-management | 5 | 20.3 | bfcm ads (/blog/bfcm-meta-ads-playbook) | not ranking |
-| DTC marketing and ecommerce growth agency | / | 48 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | not ranking |
+| BFCM ads management | /bfcm-ads-management | 5 | 19 | bfcm ads (/blog/bfcm-meta-ads-playbook) | not ranking |
+| DTC marketing and ecommerce growth agency | / | 72 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | not ranking |
 | Ecommerce growth engine | /growth | 0 | - | - | not ranking |
 
 ## Keyword movers (3+ positions, 2+ impressions)
 
-**Up:** none
+**Up:** dtc shopify ecommerce agency 76 to 61.5; dtc shopify seo 84.8 to 72.2; dtc performance agency 37.5 to 28.2; meta ads agency for ecommerce 74.5 to 65.9; ecommerce meta ads agency 79.2 to 71.2; dtc ecommerce cro agency 56.7 to 50; dtc shopify cro 68.8 to 62.2; dtc shopify website design agency 65.3 to 59.2; formula roas 77.6 to 72.8; dtc shopify agency 55.8 to 51.2; real roas calculator ecommerce 43.2 to 40; ecommerce marketing toronto 91.5 to 88.5
 
-**Down:** dtc ecommerce agency 59.5 to 72.7; real roas calculator ecommerce 31.3 to 43.2
+**Down:** dtc performance marketing 10 to 21; dtc marketing agency 51.3 to 56.1; dtc growth agency 38.6 to 42.3; dropshipping product tracking proxy case study 72 to 75.5
 
-**New:** none
+**New:** full service dtc digital marketing for shopify e-commerce agency (70); roas meaning (50.5)
 
-**Lost:** none
+**Lost:** audio completion rate benchmark; dropshipping case study review
 
 ## Page movers (3+ positions, 3+ impressions)
 
-**Up:** none
+**Up:** /privacy-policy 31.3 to 17.8; /growth 34.4 to 22.7; /blog 26.1 to 19.2; /blog/what-is-roas 74.8 to 69; /cases/ecom-world-split-into-two-groups 63.6 to 58.7; /services 16 to 12.5; /blog/meta-andromeda 69 to 65.8; / 32.8 to 29.7
 
-**Down:** /services 10 to 16
+**Down:** /cases/meet-com-clients-sasha-whom-have-been-helping-four 5.2 to 18.2; /cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve 31.5 to 39.5; /blog/performance-marketing-agency 31.7 to 34.8
 
 **New:** none
