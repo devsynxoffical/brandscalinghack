@@ -171,8 +171,8 @@ The two can run together, but the decision is separate. TikTok ads suit brands t
 
   '/shopify-agency': {
     quickAnswer: {
-      question: 'When does a DTC brand need a Shopify growth agency?',
-      answer: 'A DTC brand needs a Shopify growth agency when paid traffic is growing but revenue per visitor is not. A Shopify growth agency rebuilds the store around the ads sending traffic: offer, product page, bundles, upsells and speed, so each visitor is worth more and the ad account can afford to scale.'
+      question: 'When does a DTC brand need a Shopify agency?',
+      answer: 'A DTC brand needs a Shopify agency when paid traffic is growing but revenue per visitor is not. A Shopify agency built for paid traffic rebuilds the store around the ads sending traffic: offer, product page, bundles, upsells and speed, so each visitor is worth more and the ad account can afford to scale.'
     },
     sections: [
       {
@@ -189,6 +189,21 @@ Our Shopify work covers three areas, all tied to the ads that send the traffic.`
         links: [
           { href: '/cro-agency', text: 'DTC ecommerce CRO agency' },
           { href: '/blog/shopify-conversion-rate-optimization', text: 'Shopify conversion rate optimization guide' }
+        ]
+      },
+      {
+        id: 'which-service',
+        h2: 'Shopify agency, CRO agency or growth agency: which one do you need?',
+        content: `This page covers work on the Shopify store itself. If what you need is wider or narrower than that, one of these pages fits better.`,
+        list: [
+          'You want ads, creative, the store and retention run as one system: that is our DTC marketing and ecommerce growth agency service.',
+          'You only want conversion rate testing, on Shopify or another platform: that is our ecommerce CRO agency service.',
+          'You want more traffic and sales for a Shopify store from ads and email, not store development: that is our Shopify marketing agency service.'
+        ],
+        links: [
+          { href: '/', text: 'DTC marketing & ecommerce growth agency' },
+          { href: '/cro-agency', text: 'Ecommerce CRO agency' },
+          { href: '/shopify-marketing-agency', text: 'Shopify marketing agency' }
         ]
       },
       {

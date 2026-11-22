@@ -18,14 +18,15 @@ const corePosts = [
   {
     slug: 'bfcm-meta-ads-playbook',
     title: 'BFCM 2026: The Meta Ads Playbook for Shopify Brands',
-    titleTag: 'BFCM 2026 Ad Strategy: Meta Ads Playbook | Brand Scaling',
-    metaDescription: 'BFCM 2026 runs 26 to 30 Nov. Our Meta ads playbook for Shopify brands: dates, budget plan, offers and creative that hit 3.98x ROAS. Read it now.',
+    titleTag: 'BFCM Ads 2026: Black Friday Meta Playbook | Brand Scaling',
+    metaDescription: 'BFCM ads for 26 to 30 Nov 2026: a last-minute Meta checklist, Black Friday and Cyber Monday budget plan, offers and creative from real client accounts.',
     primaryKeyword: 'bfcm',
     secondaryKeywords: ['bfcm ad strategy', 'bfcm ads', 'black friday ads', 'what is bfcm in marketing', 'bfcm dates 2026', 'best bfcm ads'],
     publishDate: '2026-10-22',
-    updatedDate: '2026-11-14',
+    updatedDate: '2026-11-22',
     readTime: "16 min read",
     relatedLinks: [
+      { href: '/bfcm-ads-management', title: 'BFCM Ads Management', text: 'Hand the Black Friday and Cyber Monday account to us: structure, creative and daily budget checks.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Get the BFCM creative bank and campaign structure built for you.' },
       { href: '/case-studies/apparel-fashion', title: 'Apparel & Fashion Case Studies', text: 'The 4-day BFCM peak result: $59,241 from $16,630 at 3.56x ROAS.' },
       { href: '/roas-calculator', title: 'Free ROAS Calculator', text: 'Set your break-even ROAS before the peak weekend.' },
@@ -52,6 +53,8 @@ const corePosts = [
       { id: 'bfcm-timeline', text: 'BFCM 2026 dates and the Meta ads timeline' },
       { id: 'bfcm-countdown', text: 'Three weeks out: the BFCM countdown checklist' },
       { id: 'bfcm-last-two-weeks', text: 'BFCM ads in the last two weeks (14 to 26 Nov)' },
+      { id: 'bfcm-last-minute', text: 'Last-minute BFCM ads checklist (22 to 26 Nov)' },
+      { id: 'cyber-monday-ads', text: 'Cyber Monday ads (30 Nov): the final push' },
       { id: 'phase-1-creative', text: 'Phase 1 (3 to 13 Nov): Build the creative bank' },
       { id: 'phase-2-early-access', text: 'Phase 2 (16 to 25 Nov): Early access & warm audiences' },
       { id: 'phase-3-scale', text: 'Phase 3 (26 to 30 Nov): Scale without burning margin' },
@@ -120,6 +123,30 @@ Use this order, with the dates for 2026.`,
           '24 to 26 Nov: set the guardrails. Confirm the daily budget steps, the CPA or ROAS level that triggers a pull-back and who checks the account each morning, then leave the structure alone.',
           'Every day: watch blended MER from Shopify alongside Meta ROAS, because attribution gets noisier when every channel is pushing the same offer at once.'
         ]
+      },
+      {
+        id: 'bfcm-last-minute',
+        h2: 'Last-minute BFCM ads checklist (22 to 26 Nov)',
+        content: `If Black Friday is less than a week away and the account is not ready, do not try to build everything. With days left, the only changes worth making are the ones that protect margin and keep proven ads delivering. Anything new you launch now enters learning when the auction is most expensive.
+
+Do these in order, and stop when you run out of time.`,
+        list: [
+          'Check purchase tracking today: place a test order and confirm the purchase shows in Events Manager from both the pixel and the Conversions API. If tracking is broken, fix that before touching anything else.',
+          'Recalculate break-even ROAS at the BFCM price. Put your discounted price, product cost, shipping and fees into a break-even ROAS calculator and write down the ROAS and CPA you must not go below.',
+          'Use the ads you already have. Add the offer as a text overlay or first frame on your 3 to 5 best evergreen ads instead of filming new ones; proven hooks with a clear offer beat untested BFCM creative.',
+          'Upload every BFCM, Cyber Monday and last-chance ad now, so it clears review before the weekend.',
+          'Put the new ads into your existing best campaign or a duplicate of it, not into brand-new campaigns, so they inherit delivery history.',
+          'Add one cost-capped campaign at your break-even CPA as a safety valve for the days when CPMs spike.',
+          'Send the offer to email and SMS before ads on Thanksgiving and Black Friday morning: your own list is the cheapest revenue of the weekend.',
+          'Write the budget rules down: raise budgets about 20% to 30% at a time, and pull back when CPA passes the limit for half a day.'
+        ]
+      },
+      {
+        id: 'cyber-monday-ads',
+        h2: 'Cyber Monday ads (30 Nov): the final push',
+        content: `Cyber Monday is a separate buying day, not a quieter Black Friday. Many shoppers who browsed on Friday come back to buy, so the people who visited, added to cart or opened your emails over the weekend are the most valuable audience of the day.
+
+Swap every ad to a Cyber Monday or "ends tonight" version on Sunday evening so nothing still says Black Friday. Lead with the deadline and the exact saving, keep the bundle or quantity offer that held AOV over the weekend, and keep the budget rules unchanged. If you extend the sale, say so clearly from Tuesday 1 December with a "last chance" message, then move to gifting creative with shipping deadlines.`
       },
       {
         id: 'phase-1-creative',
@@ -323,6 +350,14 @@ Single unambiguous CTA: Direct users to Shop the Black Friday Sale with no confu
       }
     ],
     faqs: [
+      {
+        question: 'Is it too late to run Black Friday ads?',
+        answer: 'Not if you use what already works. In the last week, add the BFCM offer to your best existing ads, upload Black Friday and Cyber Monday versions so they clear review, add a cost-capped campaign at your break-even CPA, and send the offer to email and SMS first. Avoid launching brand-new campaigns on Thanksgiving.'
+      },
+      {
+        question: 'What should Cyber Monday ads say?',
+        answer: 'Lead with the deadline and the exact saving, for example "ends tonight" and the discount or bundle price, and focus on people who visited or added to cart over the weekend. Swap all Black Friday wording to Cyber Monday on Sunday evening.'
+      },
       {
         question: 'When is BFCM 2026?',
         answer: 'Black Friday is Friday 27 November 2026 and Cyber Monday is Monday 30 November 2026. Most high performing Shopify brands run offers across the whole Cyber Week beginning Thursday 26 November (Thanksgiving).'
@@ -612,7 +647,11 @@ If platform ROAS drops slightly on Meta because customers view the ad and later 
       { href: '/', title: 'DTC Marketing and Ecommerce Growth Agency', text: 'What the Brand Scaling engagement includes and who it is for.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency', text: 'The Facebook and Instagram arm of the engine.' },
       { href: '/growth', title: 'Ecommerce Growth Engine', text: 'Media buying, creative, CRO and retention in one system.' },
-      { href: '/case-studies', title: '150+ Verified Case Studies', text: 'Proof from real ad accounts across 30+ niches.' }
+      { href: '/case-studies', title: '150+ Verified Case Studies', text: 'Proof from real ad accounts across 30+ niches.' },
+      { href: '/meta-ads-audit', title: 'Meta Ads Audit', text: 'Find out why ROAS is slipping before you hire anyone.' },
+      { href: '/cro-agency', title: 'Ecommerce CRO Agency', text: 'Raise revenue per visitor so paid traffic pays back faster.' },
+      { href: '/tiktok-shop-agency', title: 'TikTok Shop Agency', text: 'Affiliates, GMV Max and Shop ads for DTC brands.' },
+      { href: '/google-shopping-ads-agency', title: 'Google Shopping Ads Agency', text: 'Capture the search demand your Meta ads create.' }
     ],
     category: 'Strategy & Scaling',
     author: {

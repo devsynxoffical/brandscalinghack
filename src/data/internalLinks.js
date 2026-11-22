@@ -41,7 +41,7 @@ export const LINK_RULES = [
   { re: /\bShopify marketing( agency)?\b/i, href: '/shopify-marketing-agency', title: 'Shopify Marketing Agency' },
   { re: /\becommerce (advertising|ads agency|PPC( agency)?)\b/i, href: '/ecommerce-advertising', title: 'Ecommerce Advertising Agency' },
   { re: /\becommerce email marketing\b|\bemail marketing for ecommerce\b/i, href: '/ecommerce-email-marketing', title: 'Ecommerce Email Marketing' },
-  { re: /\bShopify (growth )?agency\b/i, href: '/shopify-agency', title: 'Shopify Growth Agency' },
+  { re: /\bShopify (growth )?agency\b/i, href: '/shopify-agency', title: 'DTC Shopify Agency' },
   { re: /\bKlaviyo( email| flows)?\b|\bemail and SMS( marketing| flows)?\b/i, href: '/klaviyo-email-sms-agency', title: 'Klaviyo Email & SMS Agency' },
   { re: /\bretention marketing\b/i, href: '/retention-marketing-agency', title: 'Retention Marketing Agency' },
   { re: /\binfluencer marketing\b/i, href: '/influencer-marketing-agency', title: 'Influencer Marketing Agency' },

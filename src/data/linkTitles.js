@@ -10,7 +10,7 @@ const STATIC_TITLES = {
   '/services': 'All ecommerce marketing services',
   '/meta-ads-agency': 'Meta ads agency for ecommerce',
   '/tiktok-ads-agency': 'TikTok ads agency',
-  '/shopify-agency': 'Shopify growth agency',
+  '/shopify-agency': 'DTC Shopify agency',
   '/growth': 'Ecommerce growth engine',
   '/viral-creatives': 'Direct-response creatives and UGC',
   '/roas-calculator': 'Free ROAS calculator',

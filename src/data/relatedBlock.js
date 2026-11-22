@@ -11,7 +11,7 @@ const strip = (t) => String(t || '').replace(/\s*\|\s*Brand Scaling\s*$/, '').tr
 const ORIGINAL_SERVICES = [
   { href: '/meta-ads-agency', label: 'Meta ads agency for ecommerce' },
   { href: '/tiktok-ads-agency', label: 'TikTok ads agency' },
-  { href: '/shopify-agency', label: 'Shopify growth agency' },
+  { href: '/shopify-agency', label: 'DTC Shopify agency' },
   { href: '/growth', label: 'Ecommerce growth engine' },
   { href: '/viral-creatives', label: 'Direct-response creatives and UGC' }
 ];
@@ -45,10 +45,27 @@ function pick(list, seed, n, self) {
   return out;
 }
 
+// Money pages Google had not crawled yet (URL Inspection, 21 to 22 Nov 2026) plus the newest
+// service pages: linked from the blog, the calculators and the hubs Google already crawls
+const PRIORITY_SERVICES = [
+  { href: '/meta-ads-audit', label: 'Meta ads audit' },
+  { href: '/cro-agency', label: 'Ecommerce CRO agency' },
+  { href: '/tiktok-shop-agency', label: 'TikTok Shop agency' },
+  { href: '/google-shopping-ads-agency', label: 'Google Shopping ads agency' },
+  { href: '/roas-improvement-agency', label: 'ROAS improvement agency' },
+  { href: '/shopify-marketing-agency', label: 'Shopify marketing agency' },
+  { href: '/ecommerce-advertising', label: 'Ecommerce advertising agency' },
+  { href: '/ecommerce-email-marketing', label: 'Ecommerce email marketing' },
+  { href: '/klaviyo-email-sms-agency', label: 'Klaviyo email and SMS agency' },
+  { href: '/bfcm-ads-management', label: 'BFCM ads management' }
+];
+const HUBS_WITH_SERVICES = ['/tools', '/blog', '/case-studies'];
+
 const indexIn = (list, href) => Math.max(0, list.findIndex((x) => x.href === href));
 
 /** Groups of related links for a page path, or null when the page type has no block. */
 export function relatedBlockFor(path) {
+  if (HUBS_WITH_SERVICES.includes(path)) return [{ title: 'Services brands ask us for', links: PRIORITY_SERVICES }];
   const page = CONTENT_INDEX.find((p) => p.path === path);
   const kind = page ? page.kind : path === '/roas-calculator' ? 'tool' : SERVICES.some((s) => s.href === path) ? 'service' : path.startsWith('/blog/') ? 'blog' : null;
   if (!kind || kind === 'hub') return null;
@@ -72,7 +89,7 @@ export function relatedBlockFor(path) {
       break;
     }
     case 'tool':
-      groups = [g('More free calculators', TOOLS.filter((t) => t.href !== path)), g('Services', pick(SERVICES, seed(TOOLS) * 2, 2)), g('Guides', pick(GUIDES, seed(TOOLS) * 3, 2))];
+      groups = [g('More free calculators', TOOLS.filter((t) => t.href !== path)), g('Services', pick(PRIORITY_SERVICES, seed(TOOLS) * 2, 2)), g('Guides', pick(GUIDES, seed(TOOLS) * 3, 2))];
       break;
     case 'glossary': {
       const i = indexIn(GLOSSARY, path);
@@ -81,7 +98,7 @@ export function relatedBlockFor(path) {
     }
     case 'blog': {
       const i = indexIn(GUIDES, path);
-      groups = [g('More playbooks', pick(GUIDES, i + 1, 3, path)), g('Services', pick(SERVICES, i * 2, 3)), g('Industries', pick(INDUSTRIES, i, 2)), g('Compare and research', pick(RESEARCH, i, 1))];
+      groups = [g('More playbooks', pick(GUIDES, i + 1, 3, path)), g('Services', pick(PRIORITY_SERVICES, i * 2, 3)), g('Industries', pick(INDUSTRIES, i, 2)), g('Compare and research', pick(RESEARCH, i, 1))];
       break;
     }
     default: // comparison, benchmark
@@ -94,6 +111,8 @@ export function relatedBlockFor(path) {
 export function relatedBlockForPage(pageId) {
   if (!pageId || pageId === 'home') return null;
   if (pageId.startsWith('blog-')) return relatedBlockFor(`/blog/${pageId.slice(5)}`);
+  if (pageId === 'case-studies') return relatedBlockFor('/case-studies');
+  if (pageId === 'blog' || pageId === 'tools') return relatedBlockFor(`/${pageId}`);
   if (pageId.startsWith('case')) return null;
   return relatedBlockFor(`/${pageId}`);
 }

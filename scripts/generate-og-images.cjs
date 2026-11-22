@@ -16,7 +16,7 @@ const cards = [
   { file: 'book', eyebrow: 'Free 1-on-1 Audit', title: 'Book a Brand Growth Audit with Gaurav Kapoor', stats: [['Free', 'no obligation'], ['90-day', 'growth plan'], ['$50M+', 'ad spend managed']] },
   { file: 'contact', eyebrow: 'Contact', title: 'Book a Brand Growth Audit with Gaurav Kapoor', stats: [['NYC', 'headquarters'], ['US/UK', 'CA and AU'], ['1-on-1', 'audit call']] },
   { file: 'growth', eyebrow: 'Ecommerce Growth Agency', title: 'Meta, TikTok, Google and Shopify CRO in One Growth Engine', stats: [['4', 'phase system'], ['$50M+', 'ad spend'], ['150+', 'case studies']] },
-  { file: 'shopify-agency', eyebrow: 'Shopify Agency', title: 'Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor', stats: [['5.25%', 'conversion rate'], ['862', 'orders in 24h'], ['<1s', 'mobile load']] },
+  { file: 'shopify-agency', eyebrow: 'Shopify Agency', title: 'Shopify Agency for DTC Brands That Want More Revenue Per Visitor', stats: [['5.25%', 'conversion rate'], ['862', 'orders in 24h'], ['<1s', 'mobile load']] },
   { file: 'viral-creatives', eyebrow: 'Direct-Response Creatives', title: 'Direct-Response Video Creatives and High-Converting UGC Ads', stats: [['58+', 'live hooks'], ['13', 'verticals'], ['45+', 'angle matrix']] },
   { file: 'case-studies', eyebrow: 'Verified Case Studies', title: '150+ Verified Ecommerce Case Studies and Ad Account Proofs', stats: [['$2.3M', 'at 11.6x ROAS'], ['$1.6M', 'at 11.98x ROAS'], ['€118K', 'first month']] },
   { file: 'roas-calculator', eyebrow: 'Free Tool', title: 'Free ROAS Calculator: Break-Even ROAS and Profit Per Order', stats: [['2.0x', 'at 50% margin'], ['1.67x', 'at 60% margin'], ['1.43x', 'at 70% margin']] },

@@ -230,8 +230,8 @@ function App() {
           pagePath = '/growth';
           break;
         case 'shopify-agency':
-          title = 'DTC Shopify Growth Agency: Stores & CRO | Brand Scaling';
-          description = 'DTC Shopify agency for growth: store builds, redesigns and CRO for paid traffic, sub-1s mobile pages, bundles and upsells. Book a store audit.';
+          title = 'DTC Shopify Agency: Builds, Redesigns & CRO | Brand Scaling';
+          description = 'DTC Shopify agency: store builds, redesigns and Shopify CRO for paid traffic, sub-1s mobile pages, bundles and upsells. Book a store audit.';
           pagePath = '/shopify-agency';
           break;
         case 'meta-ads-agency':

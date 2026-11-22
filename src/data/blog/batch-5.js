@@ -223,7 +223,7 @@ If you want a second pair of eyes on an account that never seems to leave learni
     relatedLinks: [
       { href: '/blog/tiktok-shop-strategy', title: 'TikTok Shop Strategy for DTC Brands', text: 'Listings, pricing, affiliate creators, LIVE and GMV Max once you decide to sell there.' },
       { href: '/tiktok-shop-agency', title: 'TikTok Shop Agency', text: 'Have your shop setup, creators and ads run on your real margins.' },
-      { href: '/shopify-agency', title: 'Shopify Growth Agency', text: 'Keep your Shopify store converting as the hub for every channel.' },
+      { href: '/shopify-agency', title: 'Shopify Agency', text: 'Keep your Shopify store converting as the hub for every channel.' },
       { href: '/tools/break-even-roas-calculator', title: 'Break-Even ROAS Calculator', text: 'Check what each channel can afford to spend per order.' }
     ],
     author,

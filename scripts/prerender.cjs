@@ -88,12 +88,12 @@ const routes = [
   {
     path: '/shopify-agency',
     outPath: 'shopify-agency/index.html',
-    title: 'DTC Shopify Growth Agency: Stores & CRO | Brand Scaling',
-    description: 'DTC Shopify agency for growth: store builds, redesigns and CRO for paid traffic, sub-1s mobile pages, bundles and upsells. Book a store audit.',
-    h1: 'Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor',
+    title: 'DTC Shopify Agency: Builds, Redesigns & CRO | Brand Scaling',
+    description: 'DTC Shopify agency: store builds, redesigns and Shopify CRO for paid traffic, sub-1s mobile pages, bundles and upsells. Book a store audit.',
+    h1: 'Shopify Agency for DTC Brands That Want More Revenue Per Visitor',
     content: `
       <p>A Shopify agency that builds and optimizes stores for paid traffic: every page is built for the ads that send visitors to it. Proven by verified 5.25% store conversion rate results.</p>
-      <h2>What a Shopify Growth Agency Does</h2>
+      <h2>What a DTC Shopify Agency Does</h2>
       <p>Unlike design shops that simply install aesthetic themes, a growth-focused Shopify agency ties store architecture directly to your Meta and TikTok media buying. We eliminate checkout friction, engineer quantity breaks, optimize mobile speed under 1 second, and lift Average Order Value (AOV) so paid campaigns scale profitably.</p>
       <h2>Verified Store Conversion Proofs</h2>
       <ul>

@@ -41,7 +41,7 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
           </div>
           
           <h1 style={{ fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.03em', lineHeight: 1.15, marginBottom: '20px' }}>
-            Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor
+            Shopify Agency for DTC Brands That Want More Revenue Per Visitor
           </h1>
           
           <p style={{ fontSize: '18px', color: '#94a3b8', maxWidth: '780px', margin: '0 auto 30px', lineHeight: 1.6 }}>
@@ -68,7 +68,7 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
         {/* AEO Definition Box */}
         <div style={{ background: 'rgba(255, 87, 34, 0.06)', borderLeft: '4px solid #ff5722', borderTop: '1px solid rgba(255,87,34,0.2)', borderRight: '1px solid rgba(255,87,34,0.2)', borderBottom: '1px solid rgba(255,87,34,0.2)', borderRadius: '0 12px 12px 0', padding: '24px 28px', margin: '50px 0' }}>
           <h2 style={{ fontSize: '18px', fontWeight: 800, color: '#ffffff', margin: '0 0 8px' }}>
-            What a Shopify Growth Agency Does
+            What a DTC Shopify Agency Does
           </h2>
           <p style={{ margin: 0, fontSize: '15px', color: '#cbd5e1', lineHeight: 1.65 }}>
             Unlike design shops that simply install aesthetic themes, a growth-focused Shopify agency ties store architecture directly to your Meta and TikTok media buying. We eliminate checkout friction, engineer quantity breaks, optimize mobile speed under 1 second, and lift Average Order Value (AOV) so paid campaigns scale profitably.
@@ -141,7 +141,7 @@ export default function ShopifyAgencyPage({ onNavigate, onOpenBooking }) {
         {/* Agency Comparison Table */}
         <div style={{ margin: '70px 0' }}>
           <h2 style={{ fontSize: '26px', fontWeight: 800, color: '#ffffff', marginBottom: '20px', textAlign: 'center' }}>
-            Shopify Growth Agency vs. Freelancer vs. Design Shop
+            Shopify Agency vs. Freelancer vs. Design Shop
           </h2>
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', background: '#0e0e13', border: '1px solid #22222d', borderRadius: '8px' }}>
