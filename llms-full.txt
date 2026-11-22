@@ -2,7 +2,7 @@
 
 Brand Scaling (Brand Scaling Hacks LLC) is a DTC ecommerce performance marketing agency founded by Gaurav Kapoor: Meta and TikTok ads, direct-response creative, Shopify CRO. $50M+ in Meta ad spend managed, 150+ verified case studies, 30+ niches. New York, NY. Serves US, UK, Canada and Australia.
 Short index of every page: https://www.brandscalinghacks.com/llms.txt (industries, locations, glossary and all guides are listed there).
-Last generated: 2026-11-21
+Last generated: 2026-11-22
 
 ---
 
@@ -101,11 +101,11 @@ We build the creative, run the ads, fix the tracking, and give you a growth syst
 ## Most searched
 
 ## Latest Ecommerce Scaling Playbooks
+- [BFCM 2026: The Meta Ads Playbook for Shopify Brands](https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook): BFCM ads for 26 to 30 Nov 2026: a last-minute Meta checklist, Black Friday and Cyber Monday budget plan, offers and creative from real client accounts.
 - [Facebook Ads for Dropshipping: How to Run Dropshipping Ads That Scale](https://www.brandscalinghacks.com/blog/facebook-ads-for-dropshipping): How to run Facebook ads for dropshipping: break-even ROAS, account setup, creative, testing budgets, kill rules and scaling, with real store results.
 - [How to Find Winning Products: The Research and Testing Process Behind Real Stores](https://www.brandscalinghacks.com/blog/how-to-find-winning-products): How to find winning products for dropshipping and DTC: what makes a winner, where to research, how to test with ads, and what real stores found.
 - [Meta Ad Account Restricted or Disabled: What It Means and How to Get It Back](https://www.brandscalinghacks.com/blog/meta-ad-account-restricted): Meta ad account restricted or disabled? Learn the four types of restriction, where to check status, how to request a review and how DTC brands prevent it.
 - [TikTok Shop Affiliate Commission: How to Set Your Rate From Your Margins](https://www.brandscalinghacks.com/blog/tiktok-shop-affiliate-commission): What commission to offer TikTok Shop affiliates: open vs targeted plans, Shop Ads rates, samples, and a method to set your rate from your real margins.
-- [BFCM 2026: The Meta Ads Playbook for Shopify Brands](https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook): BFCM 2026 runs 26 to 30 Nov. Our Meta ads playbook for Shopify brands: dates, budget plan, offers and creative that hit 3.98x ROAS. Read it now.
 
 ## Frequently Asked Questions
 
@@ -247,17 +247,17 @@ In the first 14 days we fix tracking, offer and the product page; by day 45 most
 
 ---
 
-# Shopify Growth Agency for DTC Brands That Want More Revenue Per Visitor
+# Shopify Agency for DTC Brands That Want More Revenue Per Visitor
 URL: https://www.brandscalinghacks.com/shopify-agency
-Summary: DTC Shopify agency for growth: store builds, redesigns and CRO for paid traffic, sub-1s mobile pages, bundles and upsells. Book a store audit.
+Summary: DTC Shopify agency: store builds, redesigns and Shopify CRO for paid traffic, sub-1s mobile pages, bundles and upsells. Book a store audit.
 
 A Shopify agency that builds and optimizes stores for paid traffic: every page is built for the ads that send visitors to it. Proven by verified 5.25% store conversion rate results.
 
-## When does a DTC brand need a Shopify growth agency?
-A DTC brand needs a Shopify growth agency when paid traffic is growing but revenue per visitor is not. A Shopify growth agency rebuilds the store around the ads sending traffic: offer, product page, bundles, upsells and speed, so each visitor is worth more and the ad account can afford to scale.
+## When does a DTC brand need a Shopify agency?
+A DTC brand needs a Shopify agency when paid traffic is growing but revenue per visitor is not. A Shopify agency built for paid traffic rebuilds the store around the ads sending traffic: offer, product page, bundles, upsells and speed, so each visitor is worth more and the ad account can afford to scale.
 
       
-## What a Shopify Growth Agency Does
+## What a DTC Shopify Agency Does
 
       Unlike design shops that simply install aesthetic themes, a growth-focused Shopify agency ties store architecture directly to your Meta and TikTok media buying. We eliminate checkout friction, engineer quantity breaks, optimize mobile speed under 1 second, and lift Average Order Value (AOV) so paid campaigns scale profitably.
 
@@ -309,6 +309,20 @@ Our Shopify work covers three areas, all tied to the ads that send the traffic.
       
       
       - [DTC ecommerce CRO agency](https://www.brandscalinghacks.com/cro-agency)
+
+    
+      
+## Shopify agency, CRO agency or growth agency: which one do you need?
+
+      This page covers work on the Shopify store itself. If what you need is wider or narrower than that, one of these pages fits better.
+
+      - You want ads, creative, the store and retention run as one system: that is our DTC marketing and [ecommerce growth agency](https://www.brandscalinghacks.com/) service.
+- You only want conversion rate testing, on Shopify or another platform: that is our ecommerce CRO agency service.
+- You want more traffic and sales for a Shopify store from ads and email, not store development: that is our [Shopify marketing agency](https://www.brandscalinghacks.com/shopify-marketing-agency) service.
+
+      
+      
+      - [DTC marketing & ecommerce growth agency](https://www.brandscalinghacks.com/)
 
     
       
@@ -548,6 +562,10 @@ Explore real ad accounts, unedited screen recordings, and verified Shopify reven
 - [Dropshipping Ecommerce Lesson: Last Chance! [must-read]⁣](https://www.brandscalinghacks.com/cases/last-chance-must-read)
 
 ## Guides from the Brand Scaling playbook
+
+## Explore more
+
+### Services brands ask us for
 
 ---
 
@@ -4660,6 +4678,11 @@ The maths is exact, but the result is only as good as the inputs. Use real numbe
 ## Want us to check your numbers?
 Book a Brand Growth Audit and we will build your break-even ROAS, CAC and budget plan from your real ad account and Shopify data. [Book a Brand Growth Audit](https://www.brandscalinghacks.com/book).
 
+      
+## Explore more
+
+### Services brands ask us for
+
 ---
 
 # Ecommerce Benchmarks from Real Ad Accounts
@@ -5105,6 +5128,10 @@ It plans around orders and margin instead of leads: creative testing every week,
 - [Meta Ads Agency](https://www.brandscalinghacks.com/meta-ads-agency): The Facebook and Instagram arm of the engine.
 - [Ecommerce Growth Engine](https://www.brandscalinghacks.com/growth): Media buying, creative, CRO and retention in one system.
 - [150+ Verified Case Studies](https://www.brandscalinghacks.com/case-studies): Proof from real ad accounts across 30+ niches.
+- [Meta Ads Audit](https://www.brandscalinghacks.com/meta-ads-audit): Find out why ROAS is slipping before you hire anyone.
+- [Ecommerce CRO Agency](https://www.brandscalinghacks.com/cro-agency): Raise revenue per visitor so paid traffic pays back faster.
+- [TikTok Shop Agency](https://www.brandscalinghacks.com/tiktok-shop-agency): Affiliates, GMV Max and Shop ads for DTC brands.
+- [Google Shopping Ads Agency](https://www.brandscalinghacks.com/google-shopping-ads-agency): Capture the search demand your Meta ads create.
 
       [Browse all ecommerce playbooks](https://www.brandscalinghacks.com/blog) | [Meta ads agency](https://www.brandscalinghacks.com/meta-ads-agency) | [Explore 150+ verified case studies](https://www.brandscalinghacks.com/case-studies) | [Free ROAS calculator](https://www.brandscalinghacks.com/roas-calculator)
 
@@ -6796,7 +6823,7 @@ It depends on what you count. Shopify charges a plan fee and processing but you 
 ## Go deeper
 - [TikTok Shop Strategy for DTC Brands](https://www.brandscalinghacks.com/blog/tiktok-shop-strategy): Listings, pricing, affiliate creators, LIVE and GMV Max once you decide to sell there.
 - [TikTok Shop Agency](https://www.brandscalinghacks.com/tiktok-shop-agency): Have your shop setup, creators and ads run on your real margins.
-- [Shopify Growth Agency](https://www.brandscalinghacks.com/shopify-agency): Keep your Shopify store converting as the hub for every channel.
+- [Shopify Agency](https://www.brandscalinghacks.com/shopify-agency): Keep your Shopify store converting as the hub for every channel.
 - [Break-Even ROAS Calculator](https://www.brandscalinghacks.com/tools/break-even-roas-calculator): Check what each channel can afford to spend per order.
 
       [Browse all ecommerce playbooks](https://www.brandscalinghacks.com/blog) | [Meta ads agency](https://www.brandscalinghacks.com/meta-ads-agency) | [Explore 150+ verified case studies](https://www.brandscalinghacks.com/case-studies) | [Free ROAS calculator](https://www.brandscalinghacks.com/roas-calculator)
