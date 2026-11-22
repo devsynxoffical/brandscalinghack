@@ -265,3 +265,11 @@ Queue (next sessions, highest impact first):
 - GA4, 15 to 21 Nov (Verified): 48 sessions (Direct 41, Organic Social 3, Referral 3, Organic Search 1), 0 key events.
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none in this run. The week-1 page changes in docs/seo-growth-plan-2026-11-22.md (BFCM refresh, internal links, /shopify-agency fix) wait for the owner's go-ahead.
+
+## 22 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data (SAME DATA, still to 21 Nov). 7 days: 640 impressions, 1 click, 12 keywords in the top 10.
+- Bing (Verified): 100 in index, 0 inbound links, 0 crawl issues.
+- Indexing API: none in this run (20:37 run). Today's 08:37 run submitted 16 URLs.
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none in this run. Week-1 plan changes (rows 15 to 17) were deployed earlier today and are waiting for Google to recrawl.

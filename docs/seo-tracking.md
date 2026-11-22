@@ -1,8 +1,8 @@
 # SEO tracking: keywords and pages
 
-Snapshot 2026-11-22 08:38 UTC. Search Console window 2026-11-15 to 2026-11-21 (latest day with data: 2026-11-21). Compared with the previous snapshot (2026-11-21 20:38 UTC).
+Snapshot 2026-11-22 20:38 UTC. Search Console window 2026-11-15 to 2026-11-21 (latest day with data: 2026-11-21). Compared with the previous snapshot (2026-11-22 08:38 UTC).
 
-> Search Console updates about once a day with a 2-day lag.
+> Search Console updates about once a day with a 2-day lag. **The data has not changed since the previous snapshot**, so movers below are empty or carried over.
 
 ## Totals (last 7 days vs the 7 days before)
 
@@ -168,18 +168,18 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 
 ## Keyword movers (3+ positions, 2+ impressions)
 
-**Up:** best shopify agencies for scaling dtc brands 55 to 38; roas to acos calculator 35.3 to 24.8; dtc shopify cro 62.2 to 53.2; ecommerce roas improvement agency 70.2 to 63; dtc shopify ecommerce agency 61.5 to 54.7; dtc shopify seo 72.2 to 67.4; dtc shopify agency 51.2 to 46.6; dtc shopify website design agency 59.2 to 55.3; meta andromeda 87.4 to 84.3
+**Up:** none
 
-**Down:** retargeting solution for dtc brands 63 to 67.7
+**Down:** none
 
 **New:** none
 
-**Lost:** bfcm ad strategy; ecommerce marketing toronto
+**Lost:** none
 
 ## Page movers (3+ positions, 3+ impressions)
 
-**Up:** /privacy-policy 16.7 to 5.8; /growth 21.4 to 14.3; /blog/what-is-roas 69 to 65.4
+**Up:** none
 
-**Down:** /cases/ecom-world-split-into-two-groups 58.7 to 62.4
+**Down:** none
 
 **New:** none
