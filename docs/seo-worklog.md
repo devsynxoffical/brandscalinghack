@@ -255,3 +255,13 @@ Queue (next sessions, highest impact first):
 - Indexing API: no requests (none before 22 Nov, and never in the 20:37 run).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none from tracking, because there is no new data. Earlier today, on the owner's request: the preferred source button (row 13) and the lead form to info@ (row 14).
+
+## 22 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): new data to 21 Nov. 7 days: 640 impressions (previous 7 days 294), 1 click, 12 keywords in the top 10. Up: dtc shopify agency 51.2 to 46.6, dtc shopify cro 62.2 to 53.2, best shopify agencies for scaling dtc brands 55 to 38, roas to acos calculator 35.3 to 24.8, ecommerce roas improvement agency 70.2 to 63. Down: retargeting solution for dtc brands 63 to 67.7.
+- URL Inspection, 168 sitemap URLs (Verified): 72 crawled and 70 indexed (21 Nov: 72 and 69). No newly crawled pages.
+- Indexing API: 16 URLs submitted, all 16 accepted (HTTP 200). These are all the never-crawled pages on the priority list plus the uncrawled tool and benchmark pages: /meta-ads-audit, /google-shopping-ads-agency, /dtc-affiliate-program-management, /klaviyo-email-sms-agency, /creative-strategy-agency, /influencer-marketing-agency, /contact, /tools/break-even-roas-calculator, /book, /bfcm-ads-management, /tools/cac-calculator, /tools/ltv-calculator, /tools/mer-calculator, /tools/meta-ads-budget-calculator, /tools/tiktok-shop-break-even-roas-calculator, /benchmarks/ecommerce-roas. Accepted means Google received the request, not that the page is crawled.
+- Bing (Verified): 100 in index (was 98), 0 inbound links, 0 crawl issues.
+- GA4, 15 to 21 Nov (Verified): 48 sessions (Direct 41, Organic Social 3, Referral 3, Organic Search 1), 0 key events.
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none in this run. The week-1 page changes in docs/seo-growth-plan-2026-11-22.md (BFCM refresh, internal links, /shopify-agency fix) wait for the owner's go-ahead.
