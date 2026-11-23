@@ -3,14 +3,14 @@ export default [
     path: '/tiktok-shop-agency',
     kind: 'service',
     primaryKeyword: 'tiktok shop agency',
-    titleTag: 'TikTok Shop Agency & Scaling Services | Brand Scaling',
+    titleTag: 'TikTok Shop Agency and Scaling Services | Brand Scaling',
     updated: '2026-11-09',
-    metaDescription: 'TikTok Shop agency and scaling services for DTC brands: shop setup, listings, affiliate creators, LIVE, GMV Max and Spark Ads, run on your real margins.',
-    h1: 'TikTok Shop Agency for DTC Brands That Want In-App Sales to Pay',
+    metaDescription: 'TikTok Shop agency for DTC brands in the USA. Creator outreach, 30 to 50+ new creatives a month, GMV Max and Spark Ads managed for profit.',
+    h1: 'TikTok Shop Agency for DTC Brands That Want In-App Sales',
     eyebrow: 'TikTok Shop Agency',
     quickAnswer: {
       question: 'What does a TikTok Shop agency do?',
-      answer: 'A TikTok Shop agency sets up and runs your in-app store: product listings, affiliate creator recruitment and free samples, LIVE shopping sessions, and paid amplification through GMV Max and Spark Ads. The job is to turn creator videos into orders at a commission and ad cost your margin can carry, then scale what sells.'
+      answer: 'A TikTok Shop agency sets up and grows your shop: product listings, affiliate creator outreach, sample batches, shoppable videos, GMV Max and Spark Ads. The goal is steady in-app sales, not just views.'
     },
     intro: `Brand Scaling works as a TikTok Shop agency for DTC brands that already sell on Shopify and want a second checkout inside the TikTok app. That means building the shop, writing listings that convert from a short video, recruiting affiliate creators who post about your product, running LIVE sessions, and putting ad budget behind the videos that already sell.
 
@@ -19,7 +19,7 @@ This page covers the shop itself. If you want TikTok in-feed ads that send traff
       {
         id: 'shop-vs-ads',
         h2: 'TikTok Shop vs TikTok ads: which one you actually need',
-        content: `TikTok ads that link to Shopify are judged like any paid social channel: cost per purchase, new-customer CAC and blended MER. TikTok Shop works differently. The customer never leaves the app, a large share of sales can come from affiliate creators you pay on commission, and the platform's own campaigns optimise toward gross merchandise value (GMV) inside the shop.
+        content: `TikTok ads send people to your website. TikTok Shop lets them buy inside the app. Products under about $60 with a clear visual demo usually do better in Shop. Higher-ticket products often still need ads to your site.
 
 That changes the economics. On TikTok Shop you are paying a platform referral fee, an affiliate commission on many orders, the cost of free samples, and sometimes ad spend on top. A product with thin margin can look busy and still lose money. Before we build anything, we model what each order costs you through each route so the shop is set up to make a profit, not just to post a big GMV number.`,
         table: {
@@ -39,19 +39,19 @@ That changes the economics. On TikTok Shop you are paying a platform referral fe
         content: `We run the shop as an operating channel, not a one-off setup. Each part below feeds the next: listings make creator videos convert, creator videos give us ad material, and ad spend gives the best videos the reach they need.`,
         subsections: [
           {
-            h3: 'Shop setup and product listings',
+            h3: 'Shop setup and listing optimization',
             content: `We connect the shop to your catalogue, set shipping and fulfilment rules, and write listings for a buyer who arrived from a 20 second video. That means a clear first image, a title that says what the product does, variant and bundle options that lift order value, and a price that leaves room for commission.`
           },
           {
-            h3: 'Affiliate creators and free samples',
+            h3: 'Creator outreach and sample management',
             content: `Affiliates are the engine of most TikTok Shops. We set an open commission for anyone who joins and higher targeted commissions for creators we invite, decide which creators get free samples, and send a short brief with the hooks and demos that already work in your ads. Samples go to creators whose audience and past videos match the product, and we track which ones post.`
           },
           {
-            h3: 'LIVE shopping',
-            content: `LIVE sessions work best for products that need a demo or that suit limited-time offers. We plan the run of show, the offer ladder during the stream, and who hosts it, whether that is the founder, a team member or a paid creator.`
+            h3: 'Hooks and demos from our 45+ cell matrix',
+            content: `Creator and ad videos are briefed from our 45+ cell hook and angle matrix: each product gets several angles, hook styles and formats, so every batch of samples and every ad round tests something genuinely different instead of near duplicates.`
           },
           {
-            h3: 'GMV Max and Spark Ads',
+            h3: 'GMV Max, Spark Ads and 30 to 50+ new creatives a month',
             content: `Once affiliate videos are posting, we amplify the ones with real orders. GMV Max campaigns push shop sales using your catalogue and the creative TikTok can access, and Spark Ads put paid reach behind a specific organic post with the creator's permission. Budget follows proven videos, not guesses.`
           }
         ]
@@ -79,7 +79,7 @@ Our typical partners already do about $20K to $2M+ a month in revenue with produ
       {
         id: 'pricing',
         h2: 'How TikTok Shop agency pricing works',
-        content: `TikTok Shop agencies usually charge a monthly retainer, a percentage of shop GMV or ad spend, a performance fee, or a mix. Some also charge a setup fee for the first build. Sample costs and affiliate commissions are paid by the brand on top, so make sure any quote you compare includes them.
+        content: `Pricing is a monthly fee quoted after a free audit, plus your ad spend and creator commissions. Typical partners already do about $20K to $2M+ a month in revenue. Creator programs outside the Shop run through our influencer marketing team, and brands that want ads, creative and CRO together work with us as a DTC marketing agency.
 
 We quote after a Brand Growth Audit, a 1-on-1 review with Gaurav of your margins, creative, current channels and store. You see the plan and the expected cost structure before any fee is agreed. We have not published TikTok Shop case studies yet, so we will not quote you shop-specific results. What we can show you is how the same creative system performs across our paid social accounts in our case studies.`
       }
@@ -91,35 +91,11 @@ We quote after a Brand Growth Audit, a 1-on-1 review with Gaurav of your margins
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
-      { question: 'What are TikTok Shop scaling services?', answer: 'TikTok Shop scaling services grow sales inside the TikTok app: affiliate creator programs, Shop ads and GMV Max campaigns, product listings and the content that feeds them. A TikTok Shop agency runs these together and measures them on GMV and profit after commissions and fees.' },
-      {
-        question: 'What do TikTok Shop scaling services include?',
-        answer: 'TikTok Shop scaling services cover the whole shop, not only ads: setting up the shop and product listings, recruiting and briefing affiliate creators, managing free samples and commissions, running LIVE sessions, and putting GMV Max and Spark Ads budget behind the videos that already sell. Budgets rise in steps only while margin after fees, commissions and ads stays positive.'
-      },
-      {
-        question: 'How is a TikTok Shop agency different from a TikTok ads agency?',
-        answer: 'A TikTok ads agency runs paid campaigns that usually send people to your own website. A TikTok Shop agency runs the in-app store: listings, affiliate creators, samples, LIVE sessions and GMV Max. The two overlap on creative and Spark Ads, so we often run them together, but the costs and metrics differ.'
-      },
-      {
-        question: 'How much commission should I offer TikTok Shop affiliates?',
-        answer: 'Set it from your margin, not from what competitors advertise. Work out the profit per order after product cost, shipping and platform fees, then decide how much of that you can share. We usually run a lower open commission for anyone and higher targeted rates for creators whose content and audience fit the product.'
-      },
-      {
-        question: 'Should I send free samples to every creator who asks?',
-        answer: 'No. Free samples cost product and shipping, and many requests come from accounts that never post. We screen requests by audience fit, past video quality and whether the creator has sold similar products, then track who posts. Creators who post and sell get the next sample and a better commission.'
-      },
-      {
-        question: 'What is GMV Max on TikTok Shop?',
-        answer: 'GMV Max is a TikTok Shop campaign type that optimises toward shop sales using your product catalogue and eligible videos, including affiliate content. You set a budget and a return target and the system chooses placements and creative. It works best once you already have several videos that have produced orders.'
-      },
-      {
-        question: 'Will TikTok Shop take sales away from my Shopify store?',
-        answer: 'Some customers who would have bought on your site will buy in the app instead, and some shop buyers will later find your site. The real question is whether total contribution margin rises. We track shop orders, site orders and blended MER together so you can see if the shop is adding profit or just moving it.'
-      },
-      {
-        question: 'Do you run TikTok Shop outside the US?',
-        answer: 'We work with brands selling into the US, UK, Canada and Australia. TikTok Shop availability and rules vary by country and change over time, so in the audit we confirm whether the shop is open in your markets and what fulfilment you need before building anything.'
-      }
+      { question: 'How much does a TikTok Shop agency cost?', answer: 'Most charge a monthly management fee, and some add a share of GMV. You also pay ad spend and affiliate creator commissions. We quote after a free audit.' },
+      { question: 'What is a TikTok Shop agency partner?', answer: 'It is an agency approved by TikTok to manage shops for brands. Ask any agency to show its partner status and real shop results before you sign.' },
+      { question: 'Is TikTok Shop worth it for my brand?', answer: 'It works best for visual, demo-friendly products under about $60. If your product needs a long explanation, start with TikTok ads to your site.' },
+      { question: 'How do you find creators for TikTok Shop?', answer: 'We run outreach and sample batches to affiliate creators who already sell in your category, then brief them with tested hooks.' },
+      { question: 'Do you work with US TikTok Shops?', answer: 'Yes. Most of our TikTok Shop work is for US brands.' }
     ],
     related: ['/tiktok-ads-agency', '/blog/tiktok-shop-strategy', '/tools/tiktok-shop-break-even-roas-calculator', '/dtc-affiliate-program-management', '/compare/meta-ads-vs-tiktok-ads', '/viral-creatives', '/services'],
     cta: {
@@ -253,14 +229,14 @@ We have not published Google Shopping case studies, so we will not promise you a
     path: '/cro-agency',
     kind: 'service',
     primaryKeyword: 'ecommerce cro agency',
-    titleTag: 'DTC Ecommerce CRO Agency for Shopify Brands | Brand Scaling',
+    titleTag: 'Ecommerce CRO Agency for Shopify Brands | Brand Scaling',
     updated: '2026-11-10',
-    metaDescription: 'DTC ecommerce CRO agency for Shopify brands: research, speed, product pages, bundles, checkout, A/B tests and post-purchase upsells built for paid traffic.',
-    h1: 'DTC Ecommerce CRO Agency for Shopify Stores Running Paid Traffic',
+    metaDescription: 'Ecommerce CRO agency for Shopify brands: research-led tests on product pages, offers and checkout. One clinical skincare store reached 5.25% conversion.',
+    h1: 'Ecommerce CRO Agency for Shopify Stores Running Paid Ads',
     eyebrow: 'Ecommerce CRO Agency',
     quickAnswer: {
       question: 'What does an ecommerce CRO agency do?',
-      answer: 'An ecommerce CRO agency finds why visitors leave without buying and fixes it. That means research into customer behaviour, faster mobile pages, clearer product pages, stronger offers and bundles, a smoother checkout, structured A/B tests and post-purchase upsells. The result you want is more revenue per visitor, so every ad dollar goes further.'
+      answer: 'An ecommerce CRO agency finds why visitors leave without buying and tests fixes. We study analytics, heatmaps and customer questions, then improve speed, product pages, offers, landing pages and checkout one test at a time.'
     },
     intro: `Brand Scaling is an ecommerce CRO agency for Shopify brands whose traffic mostly comes from paid social. When you pay for every click, conversion rate and order value decide how much you can afford to spend on ads. A store that converts at 3% instead of 2% can pay half as much again per click and keep the same margin.
 
@@ -269,7 +245,7 @@ Our CRO work is built around the ads. We look at which angle a visitor saw on Me
       {
         id: 'research',
         h2: 'Research before redesign',
-        content: `Most CRO goes wrong because it starts with opinions. We start with evidence. In the first two weeks we collect what is really happening on the store, then rank problems by how much revenue they are likely to cost.`,
+        content: `We never start with a redesign. We start with data: where visitors drop off, what they ask before buying and what stops mobile shoppers at checkout.`,
         list: [
           'Funnel data from Shopify and analytics: product view to add to cart, cart to checkout, checkout to purchase, split by device and traffic source.',
           'Session recordings and heatmaps on the top landing pages from paid ads.',
@@ -288,14 +264,14 @@ On the product page, we focus on the first screen. The visitor should see the pr
       {
         id: 'offers-and-aov',
         h2: 'Offers, bundles and order value',
-        content: `Conversion rate is only half of revenue per visitor. The other half is average order value. We test quantity breaks, bundles of complementary products, free shipping thresholds set just above your current AOV, and gift-with-purchase offers. Each offer is checked against contribution margin first so a higher AOV does not come from giving profit away.
+        content: `A store that converts at 3% instead of 2% can afford to pay much more per click and keep the same margin. Bundles, thresholds and post-purchase offers raise AOV so every ad dollar works harder.
 
 Post-purchase upsells shown after payment and before the thank-you page are one of the most reliable AOV gains on Shopify, because they add revenue without adding friction to the first purchase. We set them up with products that pair naturally with what was just bought.`
       },
       {
         id: 'ad-matched-pages',
         h2: 'Landing pages matched to the ad angle',
-        content: `A visitor who clicked an ad about sensitive skin should not land on a generic product page that opens with a lifestyle photo and a paragraph about the brand. The page should pick up the exact promise the ad made. This message match is where paid traffic CRO differs most from general store design.
+        content: `When an ad promises one benefit and lands on a generic product page, people bounce. We build landing pages that continue the exact hook of the ad.
 
 We map each winning ad angle to a landing experience. Sometimes that is the product page with a different first screen, sometimes a dedicated landing page or advertorial for colder audiences, and sometimes a bundle page for an offer-led ad. Because our creative team ships new angles every week, landing pages are updated on the same rhythm, not once a year.
 
@@ -322,7 +298,7 @@ For testing, we run one clear hypothesis at a time on high-traffic pages, with a
       {
         id: 'pricing',
         h2: 'Who it is for and how pricing works',
-        content: `CRO pays back fastest for brands with steady traffic, typically doing about $20K to $2M+ a month and spending at least $10K to $20K a month on ads. Below that, there is not enough traffic to read tests and the money is better spent on offer and creative.
+        content: `CRO pays back fastest for brands with steady traffic, typically $20K to $2M+ a month in revenue and at least $10K to $20K a month in ad spend. Pricing is quoted after a CRO audit. Most partners run CRO alongside our Shopify marketing and Meta ads agency work, as one growth engine.
 
 CRO agencies usually charge a monthly retainer, a fixed project fee for an audit and rebuild, a performance fee tied to conversion or revenue lift, or a mix. We quote after a Brand Growth Audit, where Gaurav reviews your store, ads and unit economics with you. You can check your current numbers with our conversion rate calculator at /tools/conversion-rate-calculator before the call.`
       }
@@ -334,31 +310,11 @@ CRO agencies usually charge a monthly retainer, a fixed project fee for an audit
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
-      { question: 'What is a DTC ecommerce CRO agency?', answer: 'A DTC ecommerce CRO agency improves conversion rate and order value for brands that sell direct to consumers, usually on Shopify with paid social traffic. It tests product pages, offers, bundles and checkout against the ads that send visitors, and measures results on revenue per session.' },
-      {
-        question: 'What is a good conversion rate for a Shopify store?',
-        answer: 'It depends on traffic source, price point and category, so compare against your own past numbers first. Paid social traffic usually converts lower than email or branded search. One clinical skincare store we work with reached a 5.25% conversion rate in a $61,000 month, but a high-ticket store can be healthy well below that.'
-      },
-      {
-        question: 'How long does CRO take to show results?',
-        answer: 'Speed fixes and clear product page changes can show up within the first few weeks. A/B tests take longer because each one needs enough visitors and orders to read. Most stores should expect a steady programme over several months, with gains compounding as test learnings stack up.'
-      },
-      {
-        question: 'Do I need a lot of traffic to run A/B tests?',
-        answer: 'You need enough orders per variant to trust the result. Lower-traffic stores should test bigger changes, like a new offer or a rebuilt first screen, instead of button colours. If traffic is too low for testing, research-led fixes and before-and-after comparisons are still useful while ad volume grows.'
-      },
-      {
-        question: 'Is CRO more important than running more ads?',
-        answer: 'They work together. CRO raises revenue per visitor, which lets you pay more per click and still profit, so ads can scale further. More ads with a weak store just buys more visitors who leave. We usually fix the biggest store leaks first, then increase spend once the page can hold it.'
-      },
-      {
-        question: 'What are post-purchase upsells?',
-        answer: 'A post-purchase upsell is an offer shown after the customer has paid but before the thank-you page, which they can add with one click without re-entering payment details. Because the first order is already complete, it adds order value without risking the original sale. It works best with products that pair with the first purchase.'
-      },
-      {
-        question: 'Can you do CRO without rebuilding my store?',
-        answer: 'Yes. Most CRO work happens on the existing theme: speed clean-up, product page changes, offers, cart and checkout improvements and testing. A rebuild only makes sense when the theme is so slow or rigid that it blocks the changes. We tell you which applies after the audit.'
-      }
+      { question: 'What is a good ecommerce conversion rate?', answer: 'It depends on price point and traffic source. One clinical skincare store we work with reached 5.25% in a $61,000 month, but high-ticket stores convert lower and can still be very profitable.' },
+      { question: 'What is included in an ecommerce CRO audit?', answer: 'Analytics review, funnel drop-off analysis, speed checks, product page and checkout review, and a ranked list of tests by expected impact.' },
+      { question: 'How long does CRO take to show results?', answer: 'Quick fixes like speed and checkout friction can show within weeks. A/B tests need enough traffic to reach a clear result, usually two to four weeks each.' },
+      { question: 'Do I need a CRO agency if I run ads?', answer: 'If you spend heavily on ads, yes. Every lift in conversion rate lowers your cost per purchase on all traffic at once.' },
+      { question: 'Do you do CRO for Shopify stores?', answer: 'Yes. Most of our CRO work is on Shopify and Shopify Plus.' }
     ],
     related: ['/shopify-agency', '/shopify-marketing-agency', '/tools/conversion-rate-calculator', '/blog/shopify-conversion-rate-optimization', '/tools/aov-calculator', '/services'],
     cta: {

@@ -10,7 +10,7 @@ export default [
     primaryKeyword: 'shopify marketing agency',
     secondaryKeywords: ['shopify marketing', 'shopify ads agency', 'marketing agency for shopify stores', 'shopify store marketing'],
     titleTag: 'Shopify Marketing Agency for DTC Brands | Brand Scaling',
-    metaDescription: 'Shopify marketing agency for DTC brands: Meta, TikTok and Google ads, creative testing, Klaviyo email and conversion work, measured on profit, not clicks.',
+    metaDescription: 'Shopify marketing agency for stores doing $20K to $2M+ a month. Ads, creative, CRO and email, with published results like $146,184 in 27 days.',
     h1: 'Shopify Marketing Agency for DTC Brands',
     eyebrow: 'Shopify Marketing',
     quickAnswer: {
@@ -87,11 +87,11 @@ We run Shopify marketing as one system. The same team plans the offer, writes th
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
     ],
     faqs: [
-      { question: 'How much does a Shopify marketing agency cost?', answer: `Agencies charge a monthly retainer, a percentage of ad spend, a performance fee or a mix. Brand Scaling quotes after the free Brand Growth Audit, because the scope depends on your channels, spend and creative needs. Partner brands typically spend at least $10,000 to $20,000 a month on ads.` },
-      { question: 'What is the best marketing for a Shopify store?', answer: `For most Shopify brands with a proven product, paid social on Meta brings the most new customers, supported by Google Shopping for people already searching and email for repeat purchases. The right mix depends on your product, price and margin, which is why we start from break-even ROAS rather than a fixed channel plan.` },
-      { question: 'Do you build Shopify stores too?', answer: `Yes. Store builds, redesigns and conversion work for paid traffic are covered on our Shopify growth agency page. Most marketing clients keep their existing store and we change the product pages, offers and checkout as part of the work.` },
-      { question: 'How long until Shopify marketing shows results?', answer: `The first 7 to 14 days cover the audit, tracking and offer fixes. Most brands see measurable change in CPA, AOV and ROAS within 2 to 4 weeks of the first creative wave, and a stable scaling budget is the goal by day 90.` },
-      { question: 'Do you only work with Shopify stores?', answer: `Most of our partners use Shopify, and our tracking, email and store work are built around it. We can run ads for other platforms, but the conversion and Klaviyo work fit Shopify best.` }
+      { question: 'How much does a Shopify marketing agency cost?', answer: 'Expect a monthly retainer plus ad spend. Our fee is set after a Brand Growth Audit, and our partners usually spend $10,000 to $20,000 a month or more on ads.' },
+      { question: 'Is it worth hiring a Shopify marketing agency?', answer: 'It is worth it once you have a product people already buy and want to scale beyond what you can run yourself. Below about $20K a month in revenue, a focused freelancer may be enough.' },
+      { question: 'Do you build Shopify stores?', answer: 'We improve product pages, landing pages and offers for conversion, but we are not a theme development agency.' },
+      { question: 'Which ad channels do you run for Shopify stores?', answer: 'Meta, TikTok and Google Shopping, plus Klaviyo email and SMS for retention.' },
+      { question: 'Do you work with Shopify stores across the USA?', answer: 'Yes. We work with Shopify brands across the US, UK and other markets fully remotely.' }
     ],
     related: ['/shopify-agency', '/ecommerce-advertising', '/ecommerce-email-marketing', '/meta-ads-agency', '/tools/break-even-roas-calculator', '/roas-improvement-agency'],
     cta: { heading: 'Get a Shopify marketing plan for your store', text: 'Book a free Brand Growth Audit. We review your ads, creative, store and margins, then show you the channels and changes that will grow profit first.' },

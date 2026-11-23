@@ -76,8 +76,8 @@ const staticSchemas = {
   '/': () => [
     webPage({
       path: '/',
-      name: 'DTC Marketing & Ecommerce Growth Agency | Brand Scaling',
-      description: 'DTC marketing agency and ecommerce growth agency for Shopify brands: Meta and TikTok ads, creative testing, email and CRO in one system. Book a free audit.',
+      name: 'DTC Marketing and Ecommerce Growth Agency | Brand Scaling',
+      description: 'DTC marketing agency for brands doing $20K to $2M+ a month. $50M+ in Meta spend managed, 150+ verified case studies, ads, creative and CRO in one team.',
       speakable: ['h1', '.prerendered-route-view p:first-of-type']
     }),
     faqPage('/#faq', homeFaqs)
@@ -217,8 +217,8 @@ const staticSchemas = {
   '/growth': () => [
     webPage({
       path: '/growth',
-      name: 'Ecommerce Growth Engine: Meta, TikTok, CRO | Brand Scaling',
-      description: 'The Brand Scaling growth engine for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention run as one system. See how it works.',
+      name: 'Ecommerce Growth Agency: Meta, TikTok & CRO | Brand Scaling',
+      description: 'Ecommerce growth agency with $50M+ in ad spend managed across 150+ verified case studies. One engine for ads, creative, CRO and scale.',
       speakable: ['h1', '.quick-answer'],
     }),
     {

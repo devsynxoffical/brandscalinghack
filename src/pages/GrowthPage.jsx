@@ -406,7 +406,7 @@ export default function GrowthPage({ onOpenBooking, onNavigate }) {
           <h1 style={{ fontSize: 'clamp(2.3rem, 4.6vw, 3.8rem)', fontWeight: 950, color: '#0f172a', lineHeight: 1.18, letterSpacing: '-0.025em', textTransform: 'uppercase', maxWidth: '1080px', margin: '0 auto 20px auto' }}>
             The Ecommerce Growth Engine: <br />
             <span style={{ background: 'linear-gradient(135deg, #ea580c 0%, #dc2626 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'inline-block' }}>
-              Meta, TikTok, Google and Shopify CRO in One System
+              Meta, TikTok, Google and CRO
             </span>
           </h1>
 

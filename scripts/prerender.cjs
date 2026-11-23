@@ -15,8 +15,8 @@ const routes = [
   {
     path: '/',
     outPath: 'index.html',
-    title: 'DTC Marketing & Ecommerce Growth Agency | Brand Scaling',
-    description: 'DTC marketing agency and ecommerce growth agency for Shopify brands: Meta and TikTok ads, creative testing, email and CRO in one system. Book a free audit.',
+    title: 'DTC Marketing and Ecommerce Growth Agency | Brand Scaling',
+    description: 'DTC marketing agency for brands doing $20K to $2M+ a month. $50M+ in Meta spend managed, 150+ verified case studies, ads, creative and CRO in one team.',
     h1: 'The DTC Marketing and Ecommerce Growth Agency for Brands Ready to Scale',
     content: `
       <p>We build the creative, run the ads, fix the tracking, and give you a growth system you can trust.</p>
@@ -69,9 +69,9 @@ const routes = [
   {
     path: '/growth',
     outPath: 'growth/index.html',
-    title: 'Ecommerce Growth Engine: Meta, TikTok, CRO | Brand Scaling',
-    description: 'The Brand Scaling growth engine for DTC brands: Meta and TikTok media buying, creative, Shopify CRO and retention run as one system. See how it works.',
-    h1: 'The Ecommerce Growth Engine: Meta, TikTok, Google and Shopify CRO in One System',
+    title: 'Ecommerce Growth Agency: Meta, TikTok & CRO | Brand Scaling',
+    description: 'Ecommerce growth agency with $50M+ in ad spend managed across 150+ verified case studies. One engine for ads, creative, CRO and scale.',
+    h1: 'The Ecommerce Growth Engine: Meta, TikTok, Google and CRO',
     content: `
       <p>Brand Scaling is an ecommerce growth agency that runs paid acquisition, creative, the store and retention together, so the fixes in one area do not get lost in another. Over $50M+ in ad spend managed across 150+ verified case studies.</p>
       <h2>What an Ecommerce Growth Agency Does</h2>

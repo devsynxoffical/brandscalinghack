@@ -3,9 +3,9 @@ export const CONTENT_INDEX = [
   {
     "path": "/tiktok-shop-agency",
     "kind": "service",
-    "titleTag": "TikTok Shop Agency & Scaling Services | Brand Scaling",
-    "metaDescription": "TikTok Shop agency and scaling services for DTC brands: shop setup, listings, affiliate creators, LIVE, GMV Max and Spark Ads, run on your real margins.",
-    "h1": "TikTok Shop Agency for DTC Brands That Want In-App Sales to Pay",
+    "titleTag": "TikTok Shop Agency and Scaling Services | Brand Scaling",
+    "metaDescription": "TikTok Shop agency for DTC brands in the USA. Creator outreach, 30 to 50+ new creatives a month, GMV Max and Spark Ads managed for profit.",
+    "h1": "TikTok Shop Agency for DTC Brands That Want In-App Sales",
     "eyebrow": "TikTok Shop Agency"
   },
   {
@@ -19,9 +19,9 @@ export const CONTENT_INDEX = [
   {
     "path": "/cro-agency",
     "kind": "service",
-    "titleTag": "DTC Ecommerce CRO Agency for Shopify Brands | Brand Scaling",
-    "metaDescription": "DTC ecommerce CRO agency for Shopify brands: research, speed, product pages, bundles, checkout, A/B tests and post-purchase upsells built for paid traffic.",
-    "h1": "DTC Ecommerce CRO Agency for Shopify Stores Running Paid Traffic",
+    "titleTag": "Ecommerce CRO Agency for Shopify Brands | Brand Scaling",
+    "metaDescription": "Ecommerce CRO agency for Shopify brands: research-led tests on product pages, offers and checkout. One clinical skincare store reached 5.25% conversion.",
+    "h1": "Ecommerce CRO Agency for Shopify Stores Running Paid Ads",
     "eyebrow": "Ecommerce CRO Agency"
   },
   {
@@ -92,7 +92,7 @@ export const CONTENT_INDEX = [
     "path": "/shopify-marketing-agency",
     "kind": "service",
     "titleTag": "Shopify Marketing Agency for DTC Brands | Brand Scaling",
-    "metaDescription": "Shopify marketing agency for DTC brands: Meta, TikTok and Google ads, creative testing, Klaviyo email and conversion work, measured on profit, not clicks.",
+    "metaDescription": "Shopify marketing agency for stores doing $20K to $2M+ a month. Ads, creative, CRO and email, with published results like $146,184 in 27 days.",
     "h1": "Shopify Marketing Agency for DTC Brands",
     "eyebrow": "Shopify Marketing"
   },

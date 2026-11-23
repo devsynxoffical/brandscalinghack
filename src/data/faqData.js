@@ -3,56 +3,28 @@
 
 export const homeFaqs = [
   {
-    question: 'What does an ecommerce marketing agency do?',
-    answer: 'An ecommerce marketing agency grows online sales for brands that sell their own products. Brand Scaling runs Meta, TikTok and Google ads together with direct-response creative, Shopify conversion work and email, and measures everything on revenue and contribution margin.'
-  },
-  {
     question: 'What does a DTC marketing agency do?',
-    answer: 'A DTC marketing agency grows brands that sell direct to consumers online. It plans and runs paid campaigns measured on revenue, new-customer cost and ROAS, and usually also owns the ad creative, the store experience and email. Brand Scaling does this for Shopify brands across Meta, TikTok and Google as one ecommerce growth system.'
+    answer: 'It plans and runs the paid ads, creative, landing pages and retention that grow a direct-to-consumer brand. A good DTC agency reports on profit metrics like MER and new-customer CAC, not just ROAS.'
   },
   {
-    question: 'How much does an ecommerce growth agency cost?',
-    answer: 'Most agencies charge a monthly retainer, a percentage of ad spend, a performance fee or a mix. Brand Scaling quotes after the Brand Growth Audit, and partners typically spend at least $10,000 to $20,000 a month on ads.'
+    question: 'How much does a DTC marketing agency cost?',
+    answer: 'Most charge a monthly retainer, sometimes plus a share of ad spend or revenue. Our fee is quoted after a Brand Growth Audit, and partners typically spend at least $10,000 to $20,000 a month on ads.'
   },
   {
-    question: 'What types and sizes of ecommerce brands do you work with?',
-    answer: 'DTC and ecommerce brands doing roughly $20K to $2M+ a month with proven product-market fit, in apparel, skincare and beauty, wellness, supplements, home goods, electronics and luxury goods.'
+    question: 'What is the difference between a DTC agency and an ecommerce growth agency?',
+    answer: 'They overlap. A DTC agency focuses on brands selling direct to customers. An ecommerce growth agency also covers marketplaces and TikTok Shop. We do both.'
   },
   {
-    question: 'How quickly will we see results?',
-    answer: 'The first 7 to 14 days cover the diagnostic audit, account restructure, product page and offer rebuild and tracking setup. Most brands see measurable improvement in CPA, AOV and ROAS within 2 to 4 weeks of the first creative wave.'
+    question: 'Which brands do you work with?',
+    answer: 'DTC and ecommerce brands doing about $20K to $2M+ a month with proven demand, in apparel, beauty, skincare, supplements, home and more.'
   },
   {
-    question: 'How do you measure marketing performance?',
-    answer: 'We report on blended numbers first (MER, new customer CAC, contribution margin) and on platform ROAS second, because platform ROAS alone over-credits ads.'
+    question: 'How fast will we see results?',
+    answer: 'The first 14 days fix tracking, offers and landing pages. New creative tests start in the first month, and scaling begins once winners hold their CAC.'
   },
   {
-    question: 'Do you handle creative scripting, UGC production, and video editing?',
-    answer: 'Yes, 100%. Direct-response creative is the #1 lever for Meta and TikTok ad performance today. We write data-backed scripts, source creators, produce UGC and motion design assets, and deploy 30–50+ angle iterations each month so your ad accounts never hit fatigue.'
-  },
-  {
-    question: 'Which agencies are best for scaling DTC ecommerce brands?',
-    answer: 'The best agencies for scaling DTC brands combine algorithmic media buying (Meta Advantage+, TikTok Shop, Google PMax) with in-house direct-response video production and Shopify conversion rate optimization (CRO). Unlike traditional marketing agencies that charge for impressions, Brand Scaling aligns media spend directly to contribution margin and blended MER.'
-  },
-  {
-    question: 'How does Brand Scaling compare to agencies like KlientBoost or traditional media buyers?',
-    answer: 'Traditional PPC agencies like KlientBoost often manage ad traffic in isolation, leaving you to solve video creative and website conversion on your own. Brand Scaling operates as a full-stack growth partner: our team scripts and shoots 15-30+ vertical video creatives every month, rebuilds high-converting Shopify product pages, and optimizes unit economics.'
-  },
-  {
-    question: 'What makes Brand Scaling a true DTC brand accelerator?',
-    answer: 'As a DTC brand accelerator founded by Gaurav Kapoor ($50M+ ad spend managed, 150+ case studies), we install proven 8-figure scaling infrastructure into your business: validated direct-response video frameworks, broad Advantage+ campaign architectures, 1-click post-purchase upsells, and lifecycle Klaviyo automations.'
-  },
-  {
-    question: 'How do you scale DTC brands using retargeting without burning budget?',
-    answer: 'Post-iOS 14, small micro-targeted retargeting ad sets cause audience frequency fatigue and high CPMs. We scale brands using dynamic catalog ads, broad Advantage+ audience consolidation, custom 180-day video-engagement custom audiences, and high-converting 1-click email/SMS flows that capture abandoned carts profitably.'
-  },
-  {
-    question: 'How do you scale Meta ads for an 8-figure DTC brand?',
-    answer: 'At that size the limits are creative volume and margin, not targeting. We consolidate into a few broad or Advantage+ campaigns, raise budgets in steps of about 20% while blended MER and new-customer CAC hold, feed the account new hooks and angles every week, and use a break-even ROAS from contribution margin as the floor. Scaling stops when MER falls below target, not when platform ROAS dips for a day.'
-  },
-  {
-    question: 'Do you offer TikTok Shop and Google Ads scaling alongside Meta Ads?',
-    answer: 'Yes. While Meta Ads serve as the core customer acquisition engine for visual discovery, we scale brands holistically with TikTok Shop affiliate networks, native TikTok UGC ads, and Google Search & Performance Max (PMax) campaigns to capture high-intent brand and competitor search volume.'
+    question: 'Do you work with brands outside the US?',
+    answer: 'Yes. Published results include a UK skincare brand that did €118,000 in its first month.'
   }
 ];
 
@@ -161,31 +133,19 @@ export const SERVICES = [
 export const growthFaqs = [
   {
     question: 'What does an ecommerce growth agency do?',
-    answer: 'An ecommerce growth agency runs paid acquisition, creative, the store and retention as one system and is measured on revenue, new-customer CAC and contribution margin. Brand Scaling combines Meta, TikTok and Google media buying with direct-response creative production and Shopify CRO, so a fix in one area is not lost in another.'
+    answer: 'It runs every lever that grows revenue: paid ads, creative, conversion rate, offers and retention, as one connected system.'
   },
   {
-    question: 'Is TikTok Shop part of the growth engine?',
-    answer: 'Yes. Creator affiliate selling is one of the six levers in the growth engine: we recruit and brief affiliates, run Spark Ads on the best creator videos and connect the shop catalog to the same offer and margin model used on Meta. How we run it is on our TikTok Shop scaling services page.'
-  },
-  {
-    question: 'Are you an ecommerce marketing agency based in the USA?',
-    answer: 'Yes. Brand Scaling Hacks LLC is headquartered at 27 W 24th Street, Suite 702, New York, NY 10010, and works with DTC brands across the United States, the United Kingdom, Canada and Australia.'
-  },
-  {
-    question: 'Do you handle email and SMS marketing for ecommerce brands?',
-    answer: 'Yes. Klaviyo email and SMS lifecycle retention is part of the engine: welcome, abandoned cart, post-purchase and win-back flows are built to raise repeat purchase rate and LTV so the account can afford a higher CAC on paid channels.'
-  },
-  {
-    question: 'How is a growth agency different from a performance marketing agency?',
-    answer: 'A performance marketing agency focuses on paid media results. A growth agency owns the full loop around the media: creative volume, store conversion rate, average order value and retention. Brand Scaling does both, which is why the engagement starts with a Brand Growth Audit rather than an ad account handover.'
-  },
-  {
-    question: 'Which agency creates Instagram Reels and TikTok videos for brands, and what does it cost?',
-    answer: 'Brand Scaling scripts, sources creators for and edits short vertical videos (UGC, founder-led and product demos) for Instagram Reels, TikTok and Meta ads, and runs them in the ad accounts it manages, so each video is judged on CPA and ROAS rather than views. Creative is priced as part of the growth engagement and quoted after the Brand Growth Audit; partners typically spend at least $10,000 to $20,000 a month on ads.'
+    question: 'How much does an ecommerce growth agency cost?',
+    answer: 'Fees are usually a monthly retainer or a share of spend. Ours is quoted after an audit, and partners usually spend $10,000 to $20,000 a month or more on ads.'
   },
   {
     question: 'What results should a $50K-a-month brand expect in 90 days?',
-    answer: 'In the first 14 days we fix tracking, offer and the product page; by day 45 most accounts have 2 to 3 proven creative concepts; by day 90 the target is a stable scaling budget at or above break-even ROAS with new-customer CAC trending down. Published case studies include $146,184 in 27 days at 3.64x ROAS and $2.3M in sales at 11.6x ROAS.'
+    answer: 'The first 14 days fix tracking, offers and landing pages. Weekly creative testing follows, and scaling starts once new-customer CAC holds. Results vary by product and margin.'
+  },
+  {
+    question: 'Which channels do you scale?',
+    answer: 'Meta, TikTok, Google Shopping, TikTok Shop and Klaviyo email and SMS.'
   }
 ];
 
