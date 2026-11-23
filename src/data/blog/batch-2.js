@@ -603,6 +603,7 @@ Usage rights decide where and how long you can run the content. Agree them in wr
     readTime: '8 min read',
     category: 'Meta Ads',
     relatedLinks: [
+      { href: '/blog/how-to-scale-facebook-ads', title: 'How to scale Meta ads for an 8-figure DTC brand', text: 'Consolidate, step budgets and feed creative so spend grows without CPA blowing up.' },
       { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'The ad retrieval system that makes creative variety matter inside Advantage+.' },
       { href: '/glossary/advantage-plus', title: 'What Is Advantage+?', text: 'A short definition of Meta\'s automated campaign options.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Have your Advantage+ and manual campaigns built and managed.' },

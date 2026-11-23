@@ -192,6 +192,7 @@ Whoever you talk to, ask for the quote in writing with the scope attached: chann
     readTime: '8 min read',
     category: 'Meta Ads',
     relatedLinks: [
+      { href: '/viral-creatives', title: 'Video ad creative scaling', text: 'How we test hooks and angles weekly and rebuild winners before they fatigue.' },
       { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'Why creative diversity now decides who wins the auction.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Have the scaling campaigns and creative pipeline run for you.' },
       { href: '/blog/meta-ads-creative-testing', title: 'Meta Ads Creative Testing', text: 'The testing system that feeds new winners into scale.' },
@@ -204,6 +205,7 @@ Whoever you talk to, ask for the quote in writing with the scope attached: chann
       definition: 'Vertical scaling raises the budget on a campaign that already works. Horizontal scaling spreads a winning formula into new campaigns, ads, audiences, placements or countries.'
     },
     tableOfContents: [
+      { id: 'scale-meta-ads-8-figure-dtc-brand', text: 'How to scale Meta ads for an 8-figure DTC brand' },
       { id: 'when-to-scale', text: 'When you are ready to scale' },
       { id: 'vertical-scaling', text: 'Vertical scaling in 20 to 30% steps' },
       { id: 'horizontal-scaling', text: 'Horizontal scaling' },
@@ -215,6 +217,20 @@ Whoever you talk to, ask for the quote in writing with the scope attached: chann
       { id: 'faq-section', text: 'Frequently asked questions' }
     ],
     sections: [
+      {
+        id: 'scale-meta-ads-8-figure-dtc-brand',
+        h2: 'How to scale Meta ads for an 8-figure DTC brand',
+        content: `To scale Meta ads for an 8-figure DTC brand, keep the account to a few broad or Advantage+ campaigns, raise budgets in steps of about 20% while blended MER and new-customer CAC hold, and put most of the work into creative volume. At that spend the limit is new winning ads and margin, not targeting, so every step is judged on contribution margin in Shopify rather than platform ROAS alone.
+
+At this size Meta already has enough purchase data to find buyers. What stops scale is creative fatigue, offers that cannot absorb higher CPMs, and too many small campaigns splitting the budget. This is the structure behind one DTC client's $376,256 in Meta purchase value from 2,508 purchases between 1 and 25 October 2026.`,
+        list: [
+          'Consolidate: one broad or Advantage+ sales campaign for scale, one cost-capped campaign that protects margin, and catalog retargeting kept to a small share of spend.',
+          'Feed creative every week: new angles, hooks and formats tested in a separate campaign, with winners moved into the scale campaign.',
+          'Step budgets instead of jumping them: about 20% at a time, and only while blended MER and new-customer CAC stay inside your limits.',
+          'Protect the offer: bundles and quantity breaks keep order value high enough to pay for higher CPMs as spend rises.',
+          'Add channels when Meta saturates: TikTok, Google Shopping and email capture the demand Meta ads create.'
+        ]
+      },
       {
         id: 'when-to-scale',
         h2: 'When you are ready to scale Facebook ads',
@@ -330,6 +346,22 @@ If you want a second opinion before your next push, a Meta ads audit or a full m
       }
     ],
     faqs: [
+      {
+        question: 'How do you scale Meta ads for an 8-figure DTC brand?',
+        answer: 'Run a few broad or Advantage+ campaigns instead of many small ones, raise budgets about 20% at a time while blended MER and new-customer CAC hold, and test new creative every week so winners replace ads before they fatigue. At that size creative volume and margin limit growth more than targeting does.'
+      },
+      {
+        question: 'How many new creatives does an 8-figure brand need on Meta?',
+        answer: 'Enough to replace ads before they fatigue and to keep testing new angles every week. Brand Scaling partners receive 30 to 50 or more new creatives a month, with volume rising as spend grows.'
+      },
+      {
+        question: 'Should an 8-figure DTC brand use Advantage+ sales campaigns?',
+        answer: 'Usually yes, as the main scale campaign, because the account has enough purchase data for Meta to find buyers. Pair it with a cost-capped campaign so spend slows down on expensive days instead of buying unprofitable sales.'
+      },
+      {
+        question: 'What should you measure when scaling Meta ads past 7 figures?',
+        answer: 'Blended MER, new-customer CAC and contribution margin from Shopify first, platform ROAS second. Platform ROAS over-credits retargeting and existing customers, so it can rise while the business makes less money.'
+      },
       {
         question: 'How much should I increase my Facebook ads budget at once?',
         answer: 'Increase it by 20 to 30% every two to three days on campaigns that are already hitting target. Bigger jumps often push Meta to reach less likely buyers too quickly, which raises CPA. If a step pushes CPA past your tolerance, hold the budget for a few days instead of cutting it back immediately.'
@@ -538,6 +570,7 @@ Ship within the handling time TikTok requires and upload tracking quickly. Keep 
     readTime: '7 min read',
     category: 'Metrics & Unit Economics',
     relatedLinks: [
+      { href: '/blog/how-to-scale-facebook-ads', title: 'How to scale Meta ads for an 8-figure DTC brand', text: 'Consolidate, step budgets and feed creative so spend grows without CPA blowing up.' },
       { href: '/blog/what-is-roas', title: 'What Is ROAS?', text: 'The formula, ROAS vs ROI and the basics behind this guide.' },
       { href: '/benchmarks/ecommerce-roas', title: 'Ecommerce ROAS Benchmarks', text: 'ROAS figures from our published case studies by niche.' },
       { href: '/tools/break-even-roas-calculator', title: 'Break-Even ROAS Calculator', text: 'Enter your margins to find your own break-even line.' },

@@ -3,6 +3,10 @@
 
 export const homeFaqs = [
   {
+    question: 'What does an ecommerce marketing agency do?',
+    answer: 'An ecommerce marketing agency grows online sales for brands that sell their own products. Brand Scaling runs Meta, TikTok and Google ads together with direct-response creative, Shopify conversion work and email, and measures everything on revenue and contribution margin.'
+  },
+  {
     question: 'What does a DTC marketing agency do?',
     answer: 'A DTC marketing agency grows brands that sell direct to consumers online. It plans and runs paid campaigns measured on revenue, new-customer cost and ROAS, and usually also owns the ad creative, the store experience and email. Brand Scaling does this for Shopify brands across Meta, TikTok and Google as one ecommerce growth system.'
   },

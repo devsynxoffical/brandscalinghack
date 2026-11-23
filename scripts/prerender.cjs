@@ -156,8 +156,8 @@ const routes = [
   {
     path: '/viral-creatives',
     outPath: 'viral-creatives/index.html',
-    title: 'Ecommerce Ad Creative & Creative Testing | Brand Scaling',
-    description: 'Ecommerce ad creative for DTC brands: hooks and angles on a testing matrix, and weekly creative testing that lowers CPA as Meta and TikTok spend grows.',
+    title: 'Video Ad Creative Scaling & Testing | Brand Scaling',
+    description: 'Video ad creative scaling for DTC brands: a hook and angle testing matrix and weekly tests, so CPA holds as Meta and TikTok spend grows.',
     h1: 'Ecommerce Ad Creative and Creative Testing for DTC Brands',
     content: `
       <p>Creative is the #1 targeting lever in modern Meta and TikTok advertising. We write, produce, and iterate 30 to 50+ fresh direct-response video angles every month to eliminate ad fatigue.</p>
@@ -168,8 +168,8 @@ const routes = [
   {
     path: '/roas-calculator',
     outPath: 'roas-calculator/index.html',
-    title: 'ROAS Calculator: Break-Even ROAS & Profit for Ecommerce',
-    description: 'A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.',
+    title: 'Ecommerce Profit & Break-Even Calculator | Brand Scaling',
+    description: 'Ecommerce profit calculator: enter price, product cost, fees and CAC to see break-even ROAS, profit per order and monthly profit. Free, no signup.',
     h1: 'Real ROAS Calculator for Ecommerce',
     content: `
       <p>Model your product pricing, product cost (COGS), and target customer acquisition cost (CAC) to calculate break-even ROAS and monthly net profit before scaling paid ad spend.</p>

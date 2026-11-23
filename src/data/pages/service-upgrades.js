@@ -382,6 +382,10 @@ Every week the numbers decide what happens next. Ads that hold attention but do 
     ],
     faqs: [
       {
+        question: 'What is video ad creative scaling?',
+        answer: 'Video ad creative scaling means producing and testing new video ads fast enough to keep CPA steady as ad spend grows. Each winning ad is rebuilt with new hooks, angles and formats, so the account always has fresh winners ready before the current ones fatigue.'
+      },
+      {
         question: 'How many video ads does a DTC brand need each month?',
         answer: 'Enough to replace ads before they fatigue and to keep testing new angles. For brands spending $10K to $20K+ a month on Meta or TikTok, that usually means at least several new ads a week. Brand Scaling partners receive 30 to 50+ new creatives and angles a month, with the volume rising as spend scales.'
       },

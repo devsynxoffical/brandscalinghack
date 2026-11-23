@@ -100,9 +100,9 @@ def service_rows(query_page):
 
 
 def plan_rows(query_page):
-    """The keyword plan (docs/keyword-plan-2026-11-20.csv): impressions and position for each planned keyword."""
+    """The keyword plan (docs/keyword-plan-2026-11-23.csv): impressions and position for each planned keyword."""
     import csv
-    path = os.path.join(ROOT, 'docs', 'keyword-plan-2026-11-20.csv')
+    path = os.path.join(ROOT, 'docs', 'keyword-plan-2026-11-23.csv')
     if not os.path.exists(path):
         return []
     out = []
@@ -188,7 +188,7 @@ def main():
         '',
         table(['Keyword', 'Position', 'Impressions'], [[q, v['position'], v['impressions']] for q, v in low_ctr[:20]]) if low_ctr else 'None this week.',
         '',
-        '## Keyword plan (20 Nov 2026): where each planned keyword ranks (last 7 days)',
+        '## Keyword plan (23 Nov 2026): where each planned keyword ranks (last 7 days)',
         '',
         'Volume and difficulty: Semrush US, from the owner\'s keyword map. Matches any search containing the keyword.',
         '',

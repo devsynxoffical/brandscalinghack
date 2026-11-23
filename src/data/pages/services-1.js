@@ -91,6 +91,7 @@ We quote after a Brand Growth Audit, a 1-on-1 review with Gaurav of your margins
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
+      { question: 'What are TikTok Shop scaling services?', answer: 'TikTok Shop scaling services grow sales inside the TikTok app: affiliate creator programs, Shop ads and GMV Max campaigns, product listings and the content that feeds them. A TikTok Shop agency runs these together and measures them on GMV and profit after commissions and fees.' },
       {
         question: 'What do TikTok Shop scaling services include?',
         answer: 'TikTok Shop scaling services cover the whole shop, not only ads: setting up the shop and product listings, recruiting and briefing affiliate creators, managing free samples and commissions, running LIVE sessions, and putting GMV Max and Spark Ads budget behind the videos that already sell. Budgets rise in steps only while margin after fees, commissions and ads stays positive.'
@@ -333,6 +334,7 @@ CRO agencies usually charge a monthly retainer, a fixed project fee for an audit
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
+      { question: 'What is a DTC ecommerce CRO agency?', answer: 'A DTC ecommerce CRO agency improves conversion rate and order value for brands that sell direct to consumers, usually on Shopify with paid social traffic. It tests product pages, offers, bundles and checkout against the ads that send visitors, and measures results on revenue per session.' },
       {
         question: 'What is a good conversion rate for a Shopify store?',
         answer: 'It depends on traffic source, price point and category, so compare against your own past numbers first. Paid social traffic usually converts lower than email or branded search. One clinical skincare store we work with reached a 5.25% conversion rate in a $61,000 month, but a high-ticket store can be healthy well below that.'

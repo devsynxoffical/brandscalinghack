@@ -62,7 +62,7 @@ export default (post) => {
     tableOfContents: toc,
     faqs: [...(post.faqs || []), ...extraFaqs],
     // 12 Nov: the post now appears at position 23 for "ecommerce performance marketing agency"
-    metaDescription: 'What does an ecommerce performance marketing agency do? How DTC agencies scale Shopify brands with Meta and TikTok ads, CRO, creative testing and profit ROAS.',
+    metaDescription: 'What a DTC performance marketing agency does: Meta, TikTok and Google ads, creative, CRO and margin-based reporting, plus how to choose one.',
     secondaryKeywords: [...(post.secondaryKeywords || []), 'ecommerce performance marketing agency', 'dtc performance marketing agency'],
     updatedDate: '2026-11-12'
   };

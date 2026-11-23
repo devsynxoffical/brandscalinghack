@@ -26,6 +26,8 @@ export default [
     readTime: '9 min read',
     category: 'Meta Ads',
     relatedLinks: [
+      { href: '/blog/meta-andromeda', title: 'Meta Andromeda guide', text: 'What Andromeda changed for ecommerce ads and how to structure accounts for it.' },
+      { href: '/blog/bfcm-meta-ads-playbook', title: 'BFCM ads playbook for Meta', text: 'Dates, budget plan, last-minute checklist and Cyber Monday ads for 2026.' },
       { href: '/blog/meta-advantage-plus-guide', title: 'Meta Advantage+ Guide', text: 'How Advantage+ sales campaigns treat new and existing customers.' },
       { href: '/blog/ecommerce-email-flows', title: 'Ecommerce Email Flows', text: 'The Klaviyo flows that do your cheapest retargeting for you.' },
       { href: '/glossary/attribution-window', title: 'What Is an Attribution Window?', text: 'Why retargeting looks better in Ads Manager than it really is.' },

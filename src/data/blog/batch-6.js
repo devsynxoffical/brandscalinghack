@@ -26,6 +26,8 @@ export default [
     readTime: '9 min read',
     category: 'Meta Ads',
     relatedLinks: [
+      { href: '/blog/meta-andromeda', title: 'Meta Andromeda guide', text: 'What Andromeda changed for ecommerce ads and how to structure accounts for it.' },
+      { href: '/blog/performance-marketing-agency', title: 'DTC performance marketing agency', text: 'What one does, how it charges and how to choose the right one.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'See how we run Meta ads for DTC brands, and put these questions to us.' },
       { href: '/meta-ads-audit', title: 'Meta Ads Audit', text: 'A fixed-scope review of your account before you commit to any agency.' },
       { href: '/blog/how-much-does-a-dtc-agency-cost', title: 'How Much Does a DTC Agency Cost?', text: 'Pricing models and how to judge value against your margins.' },
