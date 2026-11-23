@@ -273,3 +273,14 @@ Queue (next sessions, highest impact first):
 - Indexing API: none in this run (20:37 run). Today's 08:37 run submitted 16 URLs.
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none in this run. Week-1 plan changes (rows 15 to 17) were deployed earlier today and are waiting for Google to recrawl.
+
+## 23 Nov 2026, 08:37 UTC run (Monday)
+
+- Google Search Console (Verified): new data to 22 Nov. 7 days: 632 impressions (previous 7 days 324), 0 clicks (previous 1), 10 keywords in the top 10. Up: dtc shopify agency 46.6 to 38.6, dtc shopify cro 53.2 to 44.6, dtc shopify ecommerce agency 54.7 to 41.8, dtc shopify website design agency 55.3 to 41.6, dtc ecommerce agency 72.7 to 66.8. Down: ecommerce roas improvement agency 63 to 69.5, dtc performance marketing agency 13.5 to 19.2.
+- Weekly KPIs (audit/kpi-2026-11-21.json vs baseline 16 Nov): impressions 655 vs 303, clicks 1 vs 0, average position 36.9 vs 50.5, queries in top 10 12 vs 6, pages with impressions 41 vs 33, sitemap URLs crawled 72 vs 53, indexed 70 vs 53.
+- URL Inspection, 168 sitemap URLs (Verified): 72 crawled, 70 indexed, unchanged from 22 Nov. None of the 16 URLs submitted to the Indexing API on 22 Nov have been crawled yet.
+- Indexing API: 0 submitted today. The only eligible URLs (never-crawled priority, service and tool pages) are the same 16 submitted yesterday. Repeating identical requests a day later adds nothing, so today's allowance was not used.
+- Bing (Verified): 103 in index (was 100), 0 inbound links. Crawl stats for 22 Nov show 8 4xx responses and 11 crawl errors (previous days 0). GetCrawlIssues returns no detail, and the live crawl on 23 Nov found 0 broken internal links, so the URLs are not identified. Owner: check Bing Webmaster Tools, Crawl information.
+- GA4, 16 to 22 Nov (Verified): 52 sessions (Direct 44, Organic Social 4, Referral 3, Organic Search 1), 0 key events.
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none. The week-1 changes (rows 15 to 17, deployed 22 Nov) are not reflected in data yet. The Shopify keyword gains above came before that change could have been recrawled.
