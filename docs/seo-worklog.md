@@ -284,3 +284,11 @@ Queue (next sessions, highest impact first):
 - GA4, 16 to 22 Nov (Verified): 52 sessions (Direct 44, Organic Social 4, Referral 3, Organic Search 1), 0 key events.
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none. The week-1 changes (rows 15 to 17, deployed 22 Nov) are not reflected in data yet. The Shopify keyword gains above came before that change could have been recrawled.
+
+## 23 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data (SAME DATA, still to 22 Nov). Google revised the 7-day totals to 674 impressions, 1 click, 11 keywords in the top 10.
+- Bing (Verified): 103 in index, 0 inbound links. 22 Nov crawl stats still show 8 4xx and 11 crawl errors; GetCrawlIssues gives no detail.
+- Indexing API: not used (owner rule, 23 Nov).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none in this run. Today's owner task file and content file changes (rows 18 to 26) are live and waiting for Google to recrawl.
