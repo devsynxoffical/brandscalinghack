@@ -2,7 +2,7 @@
 
 Brand Scaling (Brand Scaling Hacks LLC) is a DTC ecommerce performance marketing agency founded by Gaurav Kapoor: Meta and TikTok ads, direct-response creative, Shopify CRO. $50M+ in Meta ad spend managed, 150+ verified case studies, 30+ niches. New York, NY. Serves US, UK, Canada and Australia.
 Short index of every page: https://www.brandscalinghacks.com/llms.txt (industries, locations, glossary and all guides are listed there).
-Last generated: 2026-11-22
+Last generated: 2026-11-23
 
 ---
 
@@ -109,6 +109,9 @@ We build the creative, run the ads, fix the tracking, and give you a growth syst
 
 ## Frequently Asked Questions
 
+### What does an ecommerce marketing agency do?
+An ecommerce marketing agency grows online sales for brands that sell their own products. Brand Scaling runs Meta, TikTok and Google ads together with [direct-response creative](https://www.brandscalinghacks.com/viral-creatives), Shopify conversion work and email, and measures everything on revenue and [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin).
+
 ### What does a DTC marketing agency do?
 A DTC marketing agency grows brands that sell direct to consumers online. It plans and runs paid campaigns measured on revenue, new-customer cost and ROAS, and usually also owns the ad creative, the store experience and email. Brand Scaling does this for Shopify brands across Meta, TikTok and Google as one ecommerce growth system.
 
@@ -122,10 +125,10 @@ DTC and ecommerce brands doing roughly $20K to $2M+ a month with proven product-
 The first 7 to 14 days cover the diagnostic audit, account restructure, product page and offer rebuild and tracking setup. Most brands see measurable improvement in CPA, AOV and ROAS within 2 to 4 weeks of the first creative wave.
 
 ### How do you measure marketing performance?
-We report on blended numbers first ([MER](https://www.brandscalinghacks.com/glossary/mer), new customer CAC, [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin)) and on platform ROAS second, because platform ROAS alone over-credits ads.
+We report on blended numbers first ([MER](https://www.brandscalinghacks.com/glossary/mer), new customer CAC, contribution margin) and on platform ROAS second, because platform ROAS alone over-credits ads.
 
 ### Do you handle creative scripting, UGC production, and video editing?
-Yes, 100%. [Direct-response creative](https://www.brandscalinghacks.com/viral-creatives) is the #1 lever for Meta and TikTok ad performance today. We write data-backed scripts, source creators, produce UGC and motion design assets, and deploy 30–50+ angle iterations each month so your ad accounts never hit fatigue.
+Yes, 100%. Direct-response creative is the #1 lever for Meta and TikTok ad performance today. We write data-backed scripts, source creators, produce UGC and motion design assets, and deploy 30–50+ angle iterations each month so your ad accounts never hit fatigue.
 
 ### Which agencies are best for scaling DTC ecommerce brands?
 The best agencies for scaling DTC brands combine algorithmic media buying (Meta Advantage+, [TikTok Shop](https://www.brandscalinghacks.com/tiktok-shop-agency), Google PMax) with in-house direct-response video production and Shopify [conversion rate optimization](https://www.brandscalinghacks.com/cro-agency) (CRO). Unlike traditional marketing agencies that charge for impressions, Brand Scaling aligns media spend directly to contribution margin and blended MER.
@@ -571,7 +574,7 @@ Explore real ad accounts, unedited screen recordings, and verified Shopify reven
 
 # Ecommerce Ad Creative and Creative Testing for DTC Brands
 URL: https://www.brandscalinghacks.com/viral-creatives
-Summary: Ecommerce ad creative for DTC brands: hooks and angles on a testing matrix, and weekly creative testing that lowers CPA as Meta and TikTok spend grows.
+Summary: Video ad creative scaling for DTC brands: a hook and angle testing matrix and weekly tests, so CPA holds as Meta and TikTok spend grows.
 
 Creative is the #1 targeting lever in modern Meta and TikTok advertising. We write, produce, and iterate 30 to 50+ fresh direct-response video angles every month to eliminate ad fatigue.
 
@@ -633,6 +636,9 @@ Every week the numbers decide what happens next. Ads that hold attention but do 
     
 ## More questions
 
+### What is video ad creative scaling?
+Video ad creative scaling means producing and testing new video ads fast enough to keep CPA steady as ad spend grows. Each winning ad is rebuilt with new hooks, angles and formats, so the account always has fresh winners ready before the current ones fatigue.
+
 ### How many video ads does a DTC brand need each month?
 Enough to replace ads before they fatigue and to keep testing new angles. For brands spending $10K to $20K+ a month on Meta or TikTok, that usually means at least several new ads a week. Brand Scaling partners receive 30 to 50+ new creatives and angles a month, with the volume rising as spend scales.
 
@@ -666,7 +672,7 @@ Look at hook rate (3-second views divided by impressions), hold rate, click-thro
 
 # Real ROAS Calculator for Ecommerce
 URL: https://www.brandscalinghacks.com/roas-calculator
-Summary: A real ROAS calculator for ecommerce: enter price, product cost, fees and CAC to get break-even ROAS, profit per order and monthly profit. Free, no signup.
+Summary: Ecommerce profit calculator: enter price, product cost, fees and CAC to see break-even ROAS, profit per order and monthly profit. Free, no signup.
 
 Model your product pricing, product cost (COGS), and target customer acquisition cost (CAC) to calculate break-even ROAS and monthly net profit before scaling paid ad spend.
 
@@ -1387,6 +1393,9 @@ We quote after a [Brand Growth Audit](https://www.brandscalinghacks.com/book), a
         
 ## Frequently asked questions
 
+### What are TikTok Shop scaling services?
+TikTok Shop scaling services grow sales inside the TikTok app: affiliate creator programs, Shop ads and GMV Max campaigns, product listings and the content that feeds them. A TikTok Shop agency runs these together and measures them on GMV and profit after commissions and fees.
+
 ### What do TikTok Shop scaling services include?
 TikTok Shop scaling services cover the whole shop, not only ads: setting up the shop and product listings, recruiting and briefing affiliate creators, managing free samples and commissions, running LIVE sessions, and putting GMV Max and Spark Ads budget behind the videos that already sell. Budgets rise in steps only while margin after fees, commissions and ads stays positive.
 
@@ -1721,6 +1730,9 @@ CRO agencies usually charge a monthly retainer, a fixed project fee for an audit
 
         
 ## Frequently asked questions
+
+### What is a DTC ecommerce CRO agency?
+A DTC ecommerce CRO agency improves conversion rate and order value for brands that sell direct to consumers, usually on Shopify with paid social traffic. It tests product pages, offers, bundles and checkout against the ads that send visitors, and measures results on revenue per session.
 
 ### What is a good conversion rate for a Shopify store?
 It depends on traffic source, price point and category, so compare against your own past numbers first. Paid social traffic usually converts lower than email or branded search. One clinical skincare store we work with reached a 5.25% conversion rate in a $61,000 month, but a high-ticket store can be healthy well below that.
@@ -4936,11 +4948,11 @@ ROAS compares revenue to ad spend only. ROI compares profit to all costs, includ
 
 ---
 
-# What Is a Performance Marketing Agency? DTC Growth Blueprint &amp; ROAS Framework
+# DTC Performance Marketing Agency: What It Does and How to Choose One
 URL: https://www.brandscalinghacks.com/blog/performance-marketing-agency
-Summary: What does an ecommerce performance marketing agency do? How DTC agencies scale Shopify brands with Meta and TikTok ads, CRO, creative testing and profit ROAS.
+Summary: What a DTC performance marketing agency does: Meta, TikTok and Google ads, creative, CRO and margin-based reporting, plus how to choose one.
 
-Direct Answer: A performance marketing agency is a growth firm that drives direct, trackable commercial outcomes, such as verified revenue, ROAS, customer acquisition, and qualified leads, rather than abstract vanity metrics like impressions or follower counts. In modern DTC ecommerce, high tier performance agencies combine algorithmic media buying across Meta and TikTok with in house direct response creative production and Shopify conversion rate optimization.
+Direct Answer: A DTC performance marketing agency runs paid acquisition for brands that sell direct to consumers and is paid to grow revenue, not impressions. More broadly, a performance marketing agency is a growth firm that drives direct, trackable commercial outcomes, such as verified revenue, ROAS, customer acquisition, and qualified leads, rather than abstract vanity metrics like impressions or follower counts. In modern DTC ecommerce, high tier performance agencies combine algorithmic media buying across Meta and TikTok with in house direct response creative production and Shopify conversion rate optimization.
 
       
       Performance Marketing Agency: A specialized digital agency where client compensation, strategy, and daily campaign execution are directly anchored to measurable financial results (ROAS, CPA, MER, Net Margin).
@@ -5093,6 +5105,12 @@ So judge an agency on three things: who makes the ads and how many new ones laun
       
       
 ## Frequently Asked Questions
+
+### What does a DTC performance marketing agency do?
+A DTC performance marketing agency plans and runs paid campaigns on Meta, TikTok and Google for brands that sell direct to consumers, and is judged on revenue, new-customer CAC and contribution margin. The strongest ones also produce the ad creative and improve the store, because ads alone cannot fix a weak offer or a slow product page.
+
+### How do I choose a DTC performance marketing agency?
+Ask for results from brands at your spend level and in your niche, who produces the creative and how many new ads you get each month, how they report (blended MER and contribution margin, not platform ROAS alone), and who owns the ad accounts. Avoid agencies that cannot show verified results from real ad accounts.
 
 ### What is a performance marketing agency?
 A performance marketing agency is a specialized digital marketing partner that designs, executes, and scales paid ad campaigns where success is measured by trackable financial returns such as revenue, ROAS, and customer acquisition costs.
@@ -5572,6 +5590,21 @@ Direct Answer: How to scale Facebook ads profitably: raise budgets on proven cam
 
       
         
+## How to scale Meta ads for an 8-figure DTC brand
+
+        To scale Meta ads for an 8-figure DTC brand, keep the account to a few broad or [Advantage+ campaigns](https://www.brandscalinghacks.com/glossary/advantage-plus), raise budgets in steps of about 20% while blended [MER](https://www.brandscalinghacks.com/glossary/mer) and new-customer CAC hold, and put most of the work into creative volume. At that spend the limit is new winning ads and margin, not targeting, so every step is judged on [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin) in Shopify rather than platform ROAS alone.
+At this size Meta already has enough purchase data to find buyers. What stops scale is [creative fatigue](https://www.brandscalinghacks.com/glossary/creative-fatigue), offers that cannot absorb higher CPMs, and too many small campaigns splitting the budget. This is the structure behind one DTC client's $376,256 in Meta purchase value from 2,508 purchases between 1 and 25 October 2026.
+
+        - Consolidate: one broad or Advantage+ sales campaign for scale, one cost-capped campaign that protects margin, and catalog [retargeting](https://www.brandscalinghacks.com/blog/retargeting-for-dtc-brands) kept to a small share of spend.
+- Feed creative every week: new angles, hooks and formats tested in a separate campaign, with winners moved into the scale campaign.
+- Step budgets instead of jumping them: about 20% at a time, and only while blended MER and new-customer CAC stay inside your limits.
+- Protect the offer: bundles and quantity breaks keep order value high enough to pay for higher CPMs as spend rises.
+- Add channels when Meta saturates: TikTok, [Google Shopping](https://www.brandscalinghacks.com/google-shopping-ads-agency) and email capture the demand Meta ads create.
+
+        
+        
+      
+        
 ## When you are ready to scale Facebook ads
 
         Most guides on how to scale facebook ads start with budget tactics. The better starting point is whether the account deserves more money. Scaling multiplies whatever is already true: a profitable campaign becomes a bigger profitable campaign, and a leaky one loses money faster.
@@ -5579,7 +5612,7 @@ Check these conditions before you add budget. If two or more are missing, fix th
 
         - CPA has held at or below target for at least a week, not just for a lucky day or two.
 - The campaign has exited the learning phase and delivery is stable.
-- You know your break-even CPA and ROAS from real [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin).
+- You know your break-even CPA and ROAS from real contribution margin.
 - [Conversions API](https://www.brandscalinghacks.com/glossary/conversions-api) is sending purchase events and match quality is healthy.
 - You have inventory and fulfilment capacity for a higher order volume.
 - At least three or four ads are carrying spend, not one hero ad.
@@ -5653,12 +5686,12 @@ Variety means more than new hooks on the same video. Mix formats such as [UGC](h
 ## Signals to slow down or stop
 
         Scaling is not a one-way street. Pull back or hold when you see these patterns for more than a couple of days.
-When a signal appears, diagnose before you cut. Check whether the cause is [creative fatigue](https://www.brandscalinghacks.com/glossary/creative-fatigue), a tracking problem, a seasonal rise in CPMs or an issue on the store such as a stock-out or a slow page. Each one has a different fix, and cutting budget only treats the symptom.
+When a signal appears, diagnose before you cut. Check whether the cause is creative fatigue, a tracking problem, a seasonal rise in CPMs or an issue on the store such as a stock-out or a slow page. Each one has a different fix, and cutting budget only treats the symptom.
 
         - CPA sits above target for three days in a row after a budget step.
 - Frequency rises while CTR falls on your top ads, a classic sign of creative fatigue.
 - CPMs climb and conversion rate drops at the same time.
-- Platform ROAS holds but blended [MER](https://www.brandscalinghacks.com/glossary/mer) in Shopify falls, meaning Meta is claiming sales it did not cause.
+- Platform ROAS holds but blended MER in Shopify falls, meaning Meta is claiming sales it did not cause.
 - The share of new customers in your orders drops, so you are mostly paying to reach existing buyers.
 - Stock or fulfilment cannot keep up with the order volume.
 
@@ -5678,6 +5711,18 @@ If you want a second opinion before your next push, a [Meta ads audit](https://w
       
 ## Frequently Asked Questions
 
+### How do you scale Meta ads for an 8-figure DTC brand?
+Run a few broad or Advantage+ campaigns instead of many small ones, raise budgets about 20% at a time while blended MER and new-customer CAC hold, and test new creative every week so winners replace ads before they fatigue. At that size creative volume and margin limit growth more than targeting does.
+
+### How many new creatives does an 8-figure brand need on Meta?
+Enough to replace ads before they fatigue and to keep testing new angles every week. Brand Scaling partners receive 30 to 50 or more new creatives a month, with volume rising as spend grows.
+
+### Should an 8-figure DTC brand use Advantage+ sales campaigns?
+Usually yes, as the main scale campaign, because the account has enough purchase data for Meta to find buyers. Pair it with a cost-capped campaign so spend slows down on expensive days instead of buying unprofitable sales.
+
+### What should you measure when scaling Meta ads past 7 figures?
+Blended MER, new-customer CAC and contribution margin from Shopify first, platform ROAS second. Platform ROAS over-credits retargeting and existing customers, so it can rise while the business makes less money.
+
 ### How much should I increase my Facebook ads budget at once?
 Increase it by 20 to 30% every two to three days on campaigns that are already hitting target. Bigger jumps often push Meta to reach less likely buyers too quickly, which raises CPA. If a step pushes CPA past your tolerance, hold the budget for a few days instead of cutting it back immediately.
 
@@ -5696,6 +5741,7 @@ Duplicating can help when you want to test a different bid strategy or budget, b
       
       
 ## Go deeper
+- [Video ad creative scaling](https://www.brandscalinghacks.com/viral-creatives): How we test hooks and angles weekly and rebuild winners before they fatigue.
 - [Meta Andromeda Explained](https://www.brandscalinghacks.com/blog/meta-andromeda): Why creative diversity now decides who wins the auction.
 - [Meta Ads Agency for Ecommerce](https://www.brandscalinghacks.com/meta-ads-agency): Have the scaling campaigns and creative pipeline run for you.
 - [Meta Ads Creative Testing](https://www.brandscalinghacks.com/blog/meta-ads-creative-testing): The testing system that feeds new winners into scale.
@@ -5996,6 +6042,7 @@ Meta, Google and other platforms each claim sales using their own attribution wi
       
       
 ## Go deeper
+- [How to scale Meta ads for an 8-figure DTC brand](https://www.brandscalinghacks.com/blog/how-to-scale-facebook-ads): Consolidate, step budgets and feed creative so spend grows without CPA blowing up.
 - [What Is ROAS?](https://www.brandscalinghacks.com/blog/what-is-roas): The formula, ROAS vs ROI and the basics behind this guide.
 - [Ecommerce ROAS Benchmarks](https://www.brandscalinghacks.com/benchmarks/ecommerce-roas): ROAS figures from our published case studies by niche.
 - [Break-Even ROAS Calculator](https://www.brandscalinghacks.com/tools/break-even-roas-calculator): Enter your margins to find your own break-even line.
@@ -6457,6 +6504,7 @@ It depends on which cost line is largest. For most paid-acquisition DTC brands, 
       
       
 ## Go deeper
+- [Ecommerce CRO agency](https://www.brandscalinghacks.com/cro-agency): Product page, offer and checkout testing built for paid traffic.
 - [Profit Margin Calculator](https://www.brandscalinghacks.com/tools/profit-margin-calculator): Enter price and costs to see gross, contribution and net margin per order.
 - [What Is Contribution Margin?](https://www.brandscalinghacks.com/glossary/contribution-margin): The margin that tells you what each order can afford to spend on ads.
 - [Break-Even ROAS Calculator](https://www.brandscalinghacks.com/tools/break-even-roas-calculator): Turn your margin into the ROAS your ads need to make money.
@@ -7006,6 +7054,8 @@ Most charge a percentage of ad spend, a flat monthly retainer, a performance fee
       
       
 ## Go deeper
+- [Meta Andromeda guide](https://www.brandscalinghacks.com/blog/meta-andromeda): What Andromeda changed for ecommerce ads and how to structure accounts for it.
+- [DTC performance marketing agency](https://www.brandscalinghacks.com/blog/performance-marketing-agency): What one does, how it charges and how to choose the right one.
 - [Meta Ads Agency for Ecommerce](https://www.brandscalinghacks.com/meta-ads-agency): See how we run Meta ads for DTC brands, and put these questions to us.
 - [Meta Ads Audit](https://www.brandscalinghacks.com/meta-ads-audit): A fixed-scope review of your account before you commit to any agency.
 - [How Much Does a DTC Agency Cost?](https://www.brandscalinghacks.com/blog/how-much-does-a-dtc-agency-cost): Pricing models and how to judge value against your margins.
