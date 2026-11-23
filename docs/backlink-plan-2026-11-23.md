@@ -26,6 +26,7 @@ Why links matter here: the technical audit (docs/technical-audit-2026-11-23.md) 
   - sitewide links from our other websites only to pass authority.
 
   These break Google's spam policies and can get the site demoted.
+
 - **Anchor text:** mostly the brand ("Brand Scaling", "Brand Scaling Hacks"), the founder's name and plain URLs. Only a small share should be keyword anchors such as "Meta ads agency". Never use the same keyword anchor everywhere.
 - **Same details everywhere:** use one name, address, email and description on every profile, so Google can connect them (see the profile kit below).
 
