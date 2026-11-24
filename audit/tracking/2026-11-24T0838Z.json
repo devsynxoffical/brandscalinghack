@@ -1,0 +1,1358 @@
+{
+ "taken_at": "2026-11-24T08:38:49+00:00",
+ "window": [
+  "2026-11-17",
+  "2026-11-23"
+ ],
+ "last_data_date": "2026-11-23",
+ "totals": {
+  "impressions": 662,
+  "clicks": 1
+ },
+ "queries": {
+  "adromeda meta": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 87.5
+  },
+  "agency vs in house media buying": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 19
+  },
+  "andromeda ads": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 61
+  },
+  "andromeda algorithm": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 94.7
+  },
+  "andromeda digital marketing agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 70
+  },
+  "andromeda meta": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 77.2
+  },
+  "andromeda meta ads": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 76
+  },
+  "app cro agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 49
+  },
+  "bands off ads roas calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 20
+  },
+  "benchmark roas": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 78
+  },
+  "best meta andromeda targeting for premium furniture ecommerce": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 5.7
+  },
+  "best profit optimization software for dtc brands": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 53
+  },
+  "best shopify agencies for scaling dtc brands": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 21
+  },
+  "best shopify agency for dtc": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 45
+  },
+  "best tiktok shop agencies for dtc brands": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 71.5
+  },
+  "best video commerce for scaling brands": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 11
+  },
+  "bfcm ad strategy": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 37.5
+  },
+  "bfcm ads": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 18.2
+  },
+  "checkout conversion rate calculator": {
+   "impressions": 9,
+   "clicks": 0,
+   "position": 67
+  },
+  "ctx growth agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 45
+  },
+  "digital cro agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 51
+  },
+  "direct mail roas calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 37
+  },
+  "dotmappers it pvt ltd official website": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 6
+  },
+  "dropshipping product tracking proxy case study": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 75.8
+  },
+  "dropshipping roas calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 20
+  },
+  "dtc affiliate program scaling": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 33
+  },
+  "dtc agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 52
+  },
+  "dtc brand accelerator": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 47.7
+  },
+  "dtc brand email growth stack": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 70
+  },
+  "dtc ecommerce agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 60.4
+  },
+  "dtc ecommerce cro": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 54.5
+  },
+  "dtc ecommerce cro agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 46.3
+  },
+  "dtc ecommerce development agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 59.8
+  },
+  "dtc ecommerce growth agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 51
+  },
+  "dtc growth agency": {
+   "impressions": 16,
+   "clicks": 0,
+   "position": 47.9
+  },
+  "dtc marketing agency": {
+   "impressions": 61,
+   "clicks": 0,
+   "position": 57.9
+  },
+  "dtc performance agency": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 21.3
+  },
+  "dtc performance circle": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 7.3
+  },
+  "dtc performance creative agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 39
+  },
+  "dtc performance marketing": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 25.3
+  },
+  "dtc performance marketing agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 22.8
+  },
+  "dtc shopify agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 37.2
+  },
+  "dtc shopify cro": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 36.6
+  },
+  "dtc shopify ecommerce agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 42
+  },
+  "dtc shopify migration agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 53
+  },
+  "dtc shopify seo": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 47.8
+  },
+  "dtc shopify website design agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 41.2
+  },
+  "dtc woocommerce agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 61.8
+  },
+  "e-commerce performance agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 31
+  },
+  "ecommerce brands affiliate marketing scaling challenges": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 83
+  },
+  "ecommerce cac calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 23
+  },
+  "ecommerce meta ads agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 63.9
+  },
+  "ecommerce roas improvement agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 66
+  },
+  "ecommerce roas tracking tool": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 51
+  },
+  "facebook roas calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 25
+  },
+  "formula roas": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 64.5
+  },
+  "full service dtc digital marketing for shopify e-commerce agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 70
+  },
+  "good roas for ecommerce": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 28
+  },
+  "growth agency to scale my dtc brand": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 3.5
+  },
+  "how can dtc brands scale ugc production": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 18
+  },
+  "how do i scale meta ads for an 8 figure dtc brand?": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 10.7
+  },
+  "how much does a shoppable video platform cost as website traffic grows?": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 10
+  },
+  "how to calculate blended roas across all channels": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 57
+  },
+  "how to scale a dtc brand": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 26.3
+  },
+  "instant scaling": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 40
+  },
+  "marketing efficiency ratio calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 31
+  },
+  "meta ads agency ecommerce": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 57.3
+  },
+  "meta ads agency for e-commerce": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 66
+  },
+  "meta ads agency for ecommerce": {
+   "impressions": 22,
+   "clicks": 0,
+   "position": 62.6
+  },
+  "meta ads roas calculator": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 15
+  },
+  "meta andromeda": {
+   "impressions": 15,
+   "clicks": 0,
+   "position": 76.7
+  },
+  "meta andromeda ads retrieval engine": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 73
+  },
+  "meta andromeda algorithm": {
+   "impressions": 9,
+   "clicks": 0,
+   "position": 90.4
+  },
+  "meta andromeda documentation": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 79
+  },
+  "meta andromeda what is it": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 80
+  },
+  "meta/facebook ads agency for ecommerce": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 61.5
+  },
+  "mutesix scaling case studies ecommerce": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 74
+  },
+  "platforms to uncover high-converting instagram ads for us ecommerce": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 36
+  },
+  "real roas calculator ecommerce": {
+   "impressions": 10,
+   "clicks": 0,
+   "position": 53.3
+  },
+  "retargeting solution for dtc brands": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 72.5
+  },
+  "roae": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 82
+  },
+  "roas": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 66
+  },
+  "roas benchmark": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 89
+  },
+  "roas calculator ecommerce": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 38
+  },
+  "roas calculator facebook": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 20.5
+  },
+  "roas e-commerce": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 86
+  },
+  "roas formula": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 67.7
+  },
+  "roas meaning": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 50.5
+  },
+  "roas means": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 46
+  },
+  "roas ratio": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 92
+  },
+  "roas to acos calculator": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 24.8
+  },
+  "scale affiliate program dtc": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 75.4
+  },
+  "scaling dtc brands with retargeting": {
+   "impressions": 12,
+   "clicks": 0,
+   "position": 33.2
+  },
+  "shopify agency for scaling brands": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 41
+  },
+  "shopify and dtc google ads agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 46
+  },
+  "shopify cro agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 34.4
+  },
+  "tiktok brand lift study cost": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 45
+  },
+  "tiktok brand lift study minimum spend": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 48
+  },
+  "tiktok shop break even roas calculator": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 37
+  },
+  "tiktok shop scaling services": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 64
+  },
+  "tools to scale direct to consumer brands": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 62.2
+  },
+  "video ad creative scaling": {
+   "impressions": 19,
+   "clicks": 0,
+   "position": 20.2
+  },
+  "we're entering tiktok shop and need an agency already running tiktok alongside meta and google for d2c fashion brands, who specializes in this?": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 1
+  },
+  "what are the key strategies for scaling a d2c fashion brand from $1m to $10m in revenue through meta and google ads?": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 9
+  },
+  "what is andromeda meta": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 88
+  },
+  "what is break even roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 26
+  },
+  "what is roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 98
+  },
+  "what is the average roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 84
+  },
+  "what is the difference between a dtc growth agency and a meta ads agency?": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 11
+  }
+ },
+ "pages": {
+  "/cases/148k-day-best-day-whole-career-ending-up-phenomenal": {
+   "impressions": 5,
+   "clicks": 1,
+   "position": 2.8
+  },
+  "/": {
+   "impressions": 73,
+   "clicks": 0,
+   "position": 28.5
+  },
+  "/about": {
+   "impressions": 13,
+   "clicks": 0,
+   "position": 3.2
+  },
+  "/blog": {
+   "impressions": 16,
+   "clicks": 0,
+   "position": 17.3
+  },
+  "/blog/bfcm-meta-ads-playbook": {
+   "impressions": 13,
+   "clicks": 0,
+   "position": 15.6
+  },
+  "/blog/meta-ads-library": {
+   "impressions": 10,
+   "clicks": 0,
+   "position": 8.1
+  },
+  "/blog/meta-andromeda": {
+   "impressions": 59,
+   "clicks": 0,
+   "position": 62.6
+  },
+  "/blog/performance-marketing-agency": {
+   "impressions": 126,
+   "clicks": 0,
+   "position": 38.8
+  },
+  "/blog/tiktok-gmv-max": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 8.2
+  },
+  "/blog/what-is-roas": {
+   "impressions": 28,
+   "clicks": 0,
+   "position": 65
+  },
+  "/case-studies": {
+   "impressions": 18,
+   "clicks": 0,
+   "position": 22.6
+  },
+  "/case-studies/dropshipping-dtc": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 60.4
+  },
+  "/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 10
+  },
+  "/cases/307950-revenue-fitness-brand-2053-units-30-days": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 5
+  },
+  "/cases/376000-25-days-dtc-client-meta-ads": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 1
+  },
+  "/cases/449221-last-49-days-newer-client-dropshipping-brands-starting": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 66
+  },
+  "/cases/5-crucial-things-learned-while-scaling-brand-105000-23-days": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 8
+  },
+  "/cases/DBTXySHSrJa": {
+   "impressions": 31,
+   "clicks": 0,
+   "position": 7.3
+  },
+  "/cases/ecom-world-split-into-two-groups": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 50.2
+  },
+  "/cases/finally-scale-client-almost-1m-sales-6-months": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 6.6
+  },
+  "/cases/meet-com-clients-sasha-whom-have-been-helping-four": {
+   "impressions": 15,
+   "clicks": 0,
+   "position": 18.9
+  },
+  "/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 4
+  },
+  "/cases/pov-curious-pulled-off-40669-sales-7-days-134-high-ticket": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 6
+  },
+  "/compare/agency-vs-in-house-media-buyer": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 13
+  },
+  "/growth": {
+   "impressions": 12,
+   "clicks": 0,
+   "position": 16.8
+  },
+  "/meta-ads-agency": {
+   "impressions": 52,
+   "clicks": 0,
+   "position": 47.6
+  },
+  "/privacy-policy": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 6
+  },
+  "/roas-calculator": {
+   "impressions": 15,
+   "clicks": 0,
+   "position": 31.6
+  },
+  "/services": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 13.8
+  },
+  "/shopify-agency": {
+   "impressions": 103,
+   "clicks": 0,
+   "position": 47.4
+  },
+  "/terms": {
+   "impressions": 13,
+   "clicks": 0,
+   "position": 4.6
+  },
+  "/tiktok-shop-agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 71.5
+  },
+  "/tools": {
+   "impressions": 43,
+   "clicks": 0,
+   "position": 24.5
+  },
+  "/tools/conversion-rate-calculator": {
+   "impressions": 9,
+   "clicks": 0,
+   "position": 67
+  },
+  "/viral-creatives": {
+   "impressions": 25,
+   "clicks": 0,
+   "position": 20.5
+  }
+ },
+ "query_page": {
+  "adromeda meta || /blog/meta-andromeda": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 87.5
+  },
+  "agency vs in house media buying || /compare/agency-vs-in-house-media-buyer": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 19
+  },
+  "andromeda ads || /blog/meta-andromeda": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 61
+  },
+  "andromeda algorithm || /blog/meta-andromeda": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 94.7
+  },
+  "andromeda digital marketing agency || /blog/meta-andromeda": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 70
+  },
+  "andromeda meta || /blog/meta-andromeda": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 77.2
+  },
+  "andromeda meta ads || /blog/meta-andromeda": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 76
+  },
+  "app cro agency || /shopify-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 49
+  },
+  "bands off ads roas calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 20
+  },
+  "benchmark roas || /blog/what-is-roas": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 78
+  },
+  "best meta andromeda targeting for premium furniture ecommerce || /blog/meta-andromeda": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 5.7
+  },
+  "best profit optimization software for dtc brands || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 53
+  },
+  "best shopify agencies for scaling dtc brands || /shopify-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 21
+  },
+  "best shopify agency for dtc || /shopify-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 45
+  },
+  "best tiktok shop agencies for dtc brands || /tiktok-shop-agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 71.5
+  },
+  "best video commerce for scaling brands || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 11
+  },
+  "bfcm ad strategy || /blog/bfcm-meta-ads-playbook": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 37.5
+  },
+  "bfcm ads || /blog/bfcm-meta-ads-playbook": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 18.2
+  },
+  "checkout conversion rate calculator || /tools/conversion-rate-calculator": {
+   "impressions": 9,
+   "clicks": 0,
+   "position": 67
+  },
+  "ctx growth agency || /growth": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 45
+  },
+  "digital cro agency || /shopify-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 51
+  },
+  "direct mail roas calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 37
+  },
+  "dotmappers it pvt ltd official website || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 6
+  },
+  "dropshipping product tracking proxy case study || /case-studies/dropshipping-dtc": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 87
+  },
+  "dropshipping product tracking proxy case study || /cases/449221-last-49-days-newer-client-dropshipping-brands-starting": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 66
+  },
+  "dropshipping product tracking proxy case study || /cases/ecom-world-split-into-two-groups": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 75.8
+  },
+  "dropshipping roas calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 20
+  },
+  "dtc affiliate program scaling || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 26
+  },
+  "dtc affiliate program scaling || /case-studies/dropshipping-dtc": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 69.5
+  },
+  "dtc affiliate program scaling || /cases/meet-com-clients-sasha-whom-have-been-helping-four": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 34.8
+  },
+  "dtc agency || /blog/performance-marketing-agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 52
+  },
+  "dtc brand accelerator || /": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 47.7
+  },
+  "dtc brand email growth stack || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 70
+  },
+  "dtc ecommerce agency || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 60.4
+  },
+  "dtc ecommerce cro || /": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 67.8
+  },
+  "dtc ecommerce cro || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 46.6
+  },
+  "dtc ecommerce cro agency || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 63
+  },
+  "dtc ecommerce cro agency || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 43
+  },
+  "dtc ecommerce development agency || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 59.8
+  },
+  "dtc ecommerce growth agency || /shopify-agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 51
+  },
+  "dtc growth agency || /blog/performance-marketing-agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 42
+  },
+  "dtc growth agency || /shopify-agency": {
+   "impressions": 9,
+   "clicks": 0,
+   "position": 55.9
+  },
+  "dtc marketing agency || /blog/performance-marketing-agency": {
+   "impressions": 61,
+   "clicks": 0,
+   "position": 57.9
+  },
+  "dtc performance agency || /blog/performance-marketing-agency": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 21.3
+  },
+  "dtc performance circle || /blog/performance-marketing-agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 7.3
+  },
+  "dtc performance creative agency || /blog/performance-marketing-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 39
+  },
+  "dtc performance marketing || /blog/performance-marketing-agency": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 25.3
+  },
+  "dtc performance marketing agency || /blog/performance-marketing-agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 22.8
+  },
+  "dtc shopify agency || /shopify-agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 37.2
+  },
+  "dtc shopify cro || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 36.6
+  },
+  "dtc shopify ecommerce agency || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 42
+  },
+  "dtc shopify migration agency || /shopify-agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 53
+  },
+  "dtc shopify seo || /shopify-agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 47.8
+  },
+  "dtc shopify website design agency || /shopify-agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 41.2
+  },
+  "dtc woocommerce agency || /shopify-agency": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 61.8
+  },
+  "e-commerce performance agency || /blog/performance-marketing-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 31
+  },
+  "ecommerce brands affiliate marketing scaling challenges || /case-studies": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 83
+  },
+  "ecommerce cac calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 23
+  },
+  "ecommerce meta ads agency || /meta-ads-agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 63.9
+  },
+  "ecommerce roas improvement agency || /blog/performance-marketing-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 66
+  },
+  "ecommerce roas tracking tool || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 51
+  },
+  "facebook roas calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 25
+  },
+  "formula roas || /blog/what-is-roas": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 64.5
+  },
+  "full service dtc digital marketing for shopify e-commerce agency || /shopify-agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 70
+  },
+  "good roas for ecommerce || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 28
+  },
+  "growth agency to scale my dtc brand || /blog/performance-marketing-agency": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 1
+  },
+  "growth agency to scale my dtc brand || /shopify-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 11
+  },
+  "how can dtc brands scale ugc production || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 18
+  },
+  "how do i scale meta ads for an 8 figure dtc brand? || /": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 10.7
+  },
+  "how much does a shoppable video platform cost as website traffic grows? || /blog": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 10
+  },
+  "how to calculate blended roas across all channels || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 57
+  },
+  "how to scale a dtc brand || /services": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 26.3
+  },
+  "instant scaling || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 40
+  },
+  "marketing efficiency ratio calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 31
+  },
+  "meta ads agency ecommerce || /meta-ads-agency": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 57.3
+  },
+  "meta ads agency for e-commerce || /meta-ads-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 66
+  },
+  "meta ads agency for ecommerce || /meta-ads-agency": {
+   "impressions": 22,
+   "clicks": 0,
+   "position": 62.6
+  },
+  "meta ads roas calculator || /tools": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 15
+  },
+  "meta andromeda || /blog/meta-andromeda": {
+   "impressions": 15,
+   "clicks": 0,
+   "position": 76.7
+  },
+  "meta andromeda ads retrieval engine || /blog/meta-andromeda": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 73
+  },
+  "meta andromeda algorithm || /blog/meta-andromeda": {
+   "impressions": 9,
+   "clicks": 0,
+   "position": 90.4
+  },
+  "meta andromeda documentation || /blog/meta-andromeda": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 79
+  },
+  "meta andromeda what is it || /blog/meta-andromeda": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 80
+  },
+  "meta/facebook ads agency for ecommerce || /meta-ads-agency": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 61.5
+  },
+  "mutesix scaling case studies ecommerce || /case-studies": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 74
+  },
+  "platforms to uncover high-converting instagram ads for us ecommerce || /blog": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 36
+  },
+  "real roas calculator ecommerce || /roas-calculator": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 50.5
+  },
+  "real roas calculator ecommerce || /tools": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 55.2
+  },
+  "retargeting solution for dtc brands || /": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 72.5
+  },
+  "roae || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 82
+  },
+  "roas || /blog/what-is-roas": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 66
+  },
+  "roas benchmark || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 89
+  },
+  "roas calculator ecommerce || /roas-calculator": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 38
+  },
+  "roas calculator facebook || /tools": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 20.5
+  },
+  "roas e-commerce || /blog/what-is-roas": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 86
+  },
+  "roas formula || /blog/what-is-roas": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 67.7
+  },
+  "roas meaning || /blog/what-is-roas": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 50.5
+  },
+  "roas means || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 46
+  },
+  "roas ratio || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 92
+  },
+  "roas to acos calculator || /tools": {
+   "impressions": 5,
+   "clicks": 0,
+   "position": 24.8
+  },
+  "scale affiliate program dtc || /": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 39
+  },
+  "scale affiliate program dtc || /blog/performance-marketing-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 59
+  },
+  "scale affiliate program dtc || /shopify-agency": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 84.2
+  },
+  "scaling dtc brands with retargeting || /": {
+   "impressions": 7,
+   "clicks": 0,
+   "position": 7.6
+  },
+  "scaling dtc brands with retargeting || /blog/performance-marketing-agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 64
+  },
+  "scaling dtc brands with retargeting || /case-studies": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 89
+  },
+  "shopify agency for scaling brands || /shopify-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 41
+  },
+  "shopify and dtc google ads agency || /shopify-agency": {
+   "impressions": 4,
+   "clicks": 0,
+   "position": 46
+  },
+  "shopify cro agency || /shopify-agency": {
+   "impressions": 8,
+   "clicks": 0,
+   "position": 34.4
+  },
+  "tiktok brand lift study cost || /blog": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 45
+  },
+  "tiktok brand lift study minimum spend || /blog": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 48
+  },
+  "tiktok shop break even roas calculator || /roas-calculator": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 44.5
+  },
+  "tiktok shop break even roas calculator || /tools": {
+   "impressions": 3,
+   "clicks": 0,
+   "position": 32
+  },
+  "tiktok shop scaling services || /": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 70
+  },
+  "tiktok shop scaling services || /growth": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 52
+  },
+  "tools to scale direct to consumer brands || /": {
+   "impressions": 6,
+   "clicks": 0,
+   "position": 62.2
+  },
+  "video ad creative scaling || /viral-creatives": {
+   "impressions": 19,
+   "clicks": 0,
+   "position": 20.2
+  },
+  "we're entering tiktok shop and need an agency already running tiktok alongside meta and google for d2c fashion brands, who specializes in this? || /growth": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 1
+  },
+  "what are the key strategies for scaling a d2c fashion brand from $1m to $10m in revenue through meta and google ads? || /case-studies": {
+   "impressions": 2,
+   "clicks": 0,
+   "position": 9
+  },
+  "what is andromeda meta || /blog/meta-andromeda": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 88
+  },
+  "what is break even roas || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 26
+  },
+  "what is roas || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 98
+  },
+  "what is the average roas || /blog/what-is-roas": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 84
+  },
+  "what is the difference between a dtc growth agency and a meta ads agency? || /blog/performance-marketing-agency": {
+   "impressions": 1,
+   "clicks": 0,
+   "position": 11
+  }
+ }
+}

@@ -292,3 +292,13 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule, 23 Nov).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none in this run. Today's owner task file and content file changes (rows 18 to 26) are live and waiting for Google to recrawl.
+
+## 24 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): new data to 23 Nov. 7 days: 662 impressions (previous 7 days 388), 1 click, 7 keywords in the top 10 (down from 11). Up: dtc shopify cro 44.6 to 36.6, dtc shopify seo 57 to 47.8, dtc performance agency 27 to 21.3, meta andromeda 80.6 to 76.7, ecommerce meta ads agency 68.4 to 63.9. Down: dtc brand accelerator 30 to 47.7, dtc performance marketing agency 19.2 to 22.8, dtc performance marketing 21 to 25.3.
+- URL Inspection, 168 sitemap URLs (Verified): 72 crawled, 70 indexed (unchanged). Recrawled since 22 Nov: /blog (24 Nov), /viral-creatives, /terms and one case page (22 Nov). The pages changed on 22 and 23 Nov have not been recrawled yet.
+- Bing (Verified): 111 in index (was 103), 0 inbound links, 1 crawl error (was 11).
+- GA4, 17 to 23 Nov (Verified): 42 sessions (Direct 32, Organic Social 6, Referral 3, AI Assistant 1, Organic Search 1), 0 key events. First recorded session from an AI assistant.
+- Indexing API: not used (owner rule).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none. The keyword drops are on pages changed 22 and 23 Nov that Google has not recrawled, so there is no evidence yet to act on.
