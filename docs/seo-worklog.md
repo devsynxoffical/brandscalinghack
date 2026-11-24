@@ -302,3 +302,11 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none. The keyword drops are on pages changed 22 and 23 Nov that Google has not recrawled, so there is no evidence yet to act on.
+
+## 24 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data (SAME DATA, still to 23 Nov). Revised 7-day totals: 678 impressions, 1 click, 7 keywords in the top 10.
+- Bing (Verified): 111 in index, 0 inbound links, 1 crawl error.
+- Indexing API: not used (owner rule).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none. The AEO/GEO week 1 work (row 27) went live today; week 2 structural work is scheduled for 1 Dec.
