@@ -38,3 +38,20 @@
 Notes
 - Prompts 1, 5, 17 to 20 and 23 to 25 are commercial; being named there is the goal. The rest are informational; a citation link is the goal.
 - If an engine names the brand but cites a competitor page, compare that page's structure with ours (direct answer, table, FAQ) and close the gap.
+
+## AEO and GEO plan, 24 Nov 2026: monthly prompts and baseline
+
+Baseline from the owner's keyword research tool (AI Search panel, US, 24 Nov 2026): AI Visibility 0, AI mentions 0, pages cited by AI 0, Authority Score 2, 1,200 referring domains, most of them spam (disavow file still pending).
+
+Check by hand once a month in ChatGPT, Gemini, Perplexity and Google AI Mode. Record whether Brand Scaling is named and which page is cited.
+
+| # | Prompt | Page that should be cited | 24 Nov 2026 |
+|---|---|---|---|
+| G1 | Best DTC marketing agency for Shopify brands doing $50K a month | / | Not named (baseline) |
+| G2 | What does a TikTok Shop agency do and how much does it cost? | /tiktok-shop-agency | Not named (baseline) |
+| G3 | Best ecommerce CRO agency for Shopify stores | /cro-agency | Not named (baseline) |
+| G4 | Shopify marketing agency vs development agency: which do I need? | /shopify-marketing-agency | Not named (baseline) |
+| G5 | How do I choose an ecommerce growth agency? | /growth | Not named (baseline) |
+| G6 | Agencies with published Meta ads case studies for skincare brands | /case-studies/skincare-beauty | Not named (baseline) |
+
+First monthly check: week of 21 Dec 2026.

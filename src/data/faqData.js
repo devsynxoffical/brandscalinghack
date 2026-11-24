@@ -3,6 +3,10 @@
 
 export const homeFaqs = [
   {
+    question: 'What is DTC marketing?',
+    answer: 'DTC marketing is how brands that sell directly to customers, usually through their own Shopify store, find and keep buyers without retailers in between. It combines paid social and search ads, creative, landing pages, conversion rate work and email or SMS, and it is measured on revenue, new-customer CAC and contribution margin.'
+  },
+  {
     question: 'What does a DTC marketing agency do?',
     answer: 'It plans and runs the paid ads, creative, landing pages and retention that grow a direct-to-consumer brand. A good DTC agency reports on profit metrics like MER and new-customer CAC, not just ROAS.'
   },
@@ -131,6 +135,10 @@ export const SERVICES = [
 ];
 
 export const growthFaqs = [
+  {
+    question: 'How do I choose an ecommerce growth agency?',
+    answer: 'Choose an agency that shows real account results with the ad spend visible, owns creative production, reports profit metrics like MER and new-customer CAC, and has a clear plan for your first 90 days. Also ask who owns your ad accounts and how many new creatives you get each month.'
+  },
   {
     question: 'What does an ecommerce growth agency do?',
     answer: 'It runs every lever that grows revenue: paid ads, creative, conversion rate, offers and retention, as one connected system.'

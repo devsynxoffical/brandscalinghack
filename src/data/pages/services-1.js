@@ -91,6 +91,7 @@ We quote after a Brand Growth Audit, a 1-on-1 review with Gaurav of your margins
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
+      { question: 'What does a TikTok Shop agency do?', answer: 'A TikTok Shop agency sets up and grows your shop: product listings, affiliate creator outreach, sample batches, shoppable videos, GMV Max and Spark Ads. The goal is steady in-app sales, not just views, measured on GMV and on profit after creator commissions and platform fees.' },
       { question: 'How much does a TikTok Shop agency cost?', answer: 'Most charge a monthly management fee, and some add a share of GMV. You also pay ad spend and affiliate creator commissions. We quote after a free audit.' },
       { question: 'What is a TikTok Shop agency partner?', answer: 'It is an agency approved by TikTok to manage shops for brands. Ask any agency to show its partner status and real shop results before you sign.' },
       { question: 'Is TikTok Shop worth it for my brand?', answer: 'It works best for visual, demo-friendly products under about $60. If your product needs a long explanation, start with TikTok ads to your site.' },
@@ -310,6 +311,7 @@ CRO agencies usually charge a monthly retainer, a fixed project fee for an audit
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
+      { question: 'What is ecommerce CRO?', answer: 'Ecommerce CRO (conversion rate optimization) is the work of turning more store visitors into buyers and raising order value. It uses analytics, heatmaps and customer research to find what stops people buying, then tests fixes to speed, product pages, offers and checkout. One clinical skincare store we work with reached a 5.25% conversion rate.' },
       { question: 'What is a good ecommerce conversion rate?', answer: 'It depends on price point and traffic source. One clinical skincare store we work with reached 5.25% in a $61,000 month, but high-ticket stores convert lower and can still be very profitable.' },
       { question: 'What is included in an ecommerce CRO audit?', answer: 'Analytics review, funnel drop-off analysis, speed checks, product page and checkout review, and a ranked list of tests by expected impact.' },
       { question: 'How long does CRO take to show results?', answer: 'Quick fixes like speed and checkout friction can show within weeks. A/B tests need enough traffic to reach a clear result, usually two to four weeks each.' },

@@ -87,6 +87,7 @@ We run Shopify marketing as one system. The same team plans the offer, writes th
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
     ],
     faqs: [
+      { question: 'What are the best Shopify marketing agencies?', answer: 'The best Shopify marketing agencies show verified results from real ad accounts, make their own ad creative, improve product pages and checkout, and report on MER and contribution margin, not just ROAS. Brand Scaling publishes its case studies, such as $146,184 in 27 days at 3.64x ROAS for a skincare brand, so you can check results before you hire.' },
       { question: 'How much does a Shopify marketing agency cost?', answer: 'Expect a monthly retainer plus ad spend. Our fee is set after a Brand Growth Audit, and our partners usually spend $10,000 to $20,000 a month or more on ads.' },
       { question: 'Is it worth hiring a Shopify marketing agency?', answer: 'It is worth it once you have a product people already buy and want to scale beyond what you can run yourself. Below about $20K a month in revenue, a focused freelancer may be enough.' },
       { question: 'Do you build Shopify stores?', answer: 'We improve product pages, landing pages and offers for conversion, but we are not a theme development agency.' },

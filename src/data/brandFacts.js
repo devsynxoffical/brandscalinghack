@@ -6,6 +6,8 @@ export const BRAND = {
   name: 'Brand Scaling',
   legalName: 'Brand Scaling Hacks LLC',
   url: 'https://www.brandscalinghacks.com',
+  // One brand sentence, reused on the site, llms.txt and every directory profile (AEO/GEO plan, 24 Nov)
+  description: 'Brand Scaling is a New York DTC marketing and ecommerce growth agency that runs Meta, TikTok and Google ads, direct-response creative, Shopify CRO and email for brands doing $20K to $2M+ a month.',
   email: 'info@brandscalinghacks.com',
   address: {
     street: '27 W 24th Street, Suite 702',
