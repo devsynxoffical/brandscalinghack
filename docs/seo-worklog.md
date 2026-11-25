@@ -310,3 +310,13 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none. The AEO/GEO week 1 work (row 27) went live today; week 2 structural work is scheduled for 1 Dec.
+
+## 25 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): new data to 24 Nov. 7 days: 690 impressions (previous 7 days 420), 1 click, 10 keywords in the top 10. Up: roas 66 to 58.7, tools to scale direct to consumer brands 62.2 to 57.6. Down: dropshipping roas calculator 20 to 69 and bands off ads roas calculator 20 to 60 (expected after /roas-calculator stopped targeting "roas calculator", owner decision 23 Nov), tiktok shop scaling services 64 to 69.5, dtc agency 52 to 55.
+- URL Inspection, 170 sitemap URLs (Verified): 71 crawled, 69 indexed (24 Nov: 72 and 70 of 168; /locations/san-francisco left the sitemap after its 301). Recrawled since 23 Nov: /blog/bfcm-meta-ads-playbook (25 Nov), /blog and /glossary/contribution-margin (24 Nov). New Austin, Dallas and Shopify Plus pages not yet known to Google.
+- Bing (Verified): 115 in index (was 111), 0 inbound links, 2 crawl errors.
+- GA4, 18 to 24 Nov (Verified): 36 sessions (Direct 27, Referral 4, Organic Social 3, AI Assistant 1, Organic Search 1), 0 key events.
+- Indexing API: not used (owner rule).
+- Change-log checks: none due yet (first due 26 Nov).
+- Changes: none in this run. The city page work (row 28) was deployed earlier today.
