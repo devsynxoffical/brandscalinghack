@@ -320,3 +320,11 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none due yet (first due 26 Nov).
 - Changes: none in this run. The city page work (row 28) was deployed earlier today.
+
+## 25 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data (SAME DATA, still to 24 Nov). Revised 7-day totals: 702 impressions, 1 click, 10 keywords in the top 10.
+- Bing (Verified): 115 in index, 0 inbound links, 2 crawl errors.
+- Indexing API: not used (owner rule).
+- Change-log checks: none due (first due 26 Nov).
+- Changes: none in this run. The city pages and the Shopify Plus page (row 28) went live today.

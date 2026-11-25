@@ -1,14 +1,14 @@
 # SEO tracking: keywords and pages
 
-Snapshot 2026-11-25 08:47 UTC. Search Console window 2026-11-18 to 2026-11-24 (latest day with data: 2026-11-24). Compared with the previous snapshot (2026-11-24 20:39 UTC).
+Snapshot 2026-11-25 20:38 UTC. Search Console window 2026-11-18 to 2026-11-24 (latest day with data: 2026-11-24). Compared with the previous snapshot (2026-11-25 08:47 UTC).
 
-> Search Console updates about once a day with a 2-day lag.
+> Search Console updates about once a day with a 2-day lag. **The data has not changed since the previous snapshot**, so movers below are empty or carried over.
 
 ## Totals (last 7 days vs the 7 days before)
 
 | Metric | Last 7 days | 7 days before |
 |---|---|---|
-| Impressions | 690 | 420 |
+| Impressions | 702 | 420 |
 | Clicks | 1 | 1 |
 | Queries | 105 | 122 |
 | Queries in top 10 | 10 | 12 |
@@ -18,22 +18,22 @@ Snapshot 2026-11-25 08:47 UTC. Search Console window 2026-11-18 to 2026-11-24 (l
 
 | Page | Impressions | Clicks | Avg position | Position before | Change |
 |---|---|---|---|---|---|
-| /blog/performance-marketing-agency | 143 | 0 | 38.5 | 36.1 | -2.4 |
-| /shopify-agency | 112 | 0 | 47.8 | 66.8 | +19.0 |
+| /blog/performance-marketing-agency | 147 | 0 | 38.5 | 36.1 | -2.4 |
+| /shopify-agency | 113 | 0 | 47.6 | 66.8 | +19.2 |
 | / | 72 | 0 | 28.6 | 36.2 | +7.6 |
 | /blog/meta-andromeda | 60 | 0 | 59.0 | 73.3 | +14.3 |
-| /meta-ads-agency | 53 | 0 | 51.5 | 36.7 | -14.8 |
-| /tools | 41 | 0 | 27.3 | 25.2 | -2.1 |
+| /meta-ads-agency | 54 | 0 | 51.7 | 36.7 | -15.0 |
+| /tools | 42 | 0 | 28.2 | 25.2 | -3.0 |
 | /cases/DBTXySHSrJa | 27 | 0 | 7.2 | 6.2 | -1.0 |
 | /case-studies | 25 | 0 | 24.3 | 3.5 | -20.8 |
 | /viral-creatives | 24 | 0 | 20.1 | 12.7 | -7.4 |
 | /blog/what-is-roas | 22 | 0 | 45.6 | 79.6 | +34.0 |
-| /blog | 19 | 0 | 20.4 | 37.1 | +16.7 |
-| /cases/meet-com-clients-sasha-whom-have-been-helping-four | 17 | 0 | 19.6 | new | new |
-| /roas-calculator | 17 | 0 | 37.1 | 41.4 | +4.3 |
+| /blog | 20 | 0 | 19.7 | 37.1 | +17.4 |
+| /cases/meet-com-clients-sasha-whom-have-been-helping-four | 18 | 0 | 20.4 | new | new |
+| /roas-calculator | 18 | 0 | 37.6 | 41.4 | +3.8 |
 | /terms | 12 | 0 | 4.8 | 7.7 | +2.9 |
 | /about | 11 | 0 | 2.7 | 8.8 | +6.1 |
-| /blog/bfcm-meta-ads-playbook | 10 | 0 | 13.7 | 16.7 | +3.0 |
+| /blog/bfcm-meta-ads-playbook | 11 | 0 | 13 | 16.7 | +3.7 |
 | /blog/meta-ads-library | 10 | 0 | 8.1 | 15.5 | +7.4 |
 | /growth | 10 | 0 | 19.4 | 40.5 | +21.1 |
 | /tools/conversion-rate-calculator | 9 | 0 | 67 | new | new |
@@ -41,8 +41,8 @@ Snapshot 2026-11-25 08:47 UTC. Search Console window 2026-11-18 to 2026-11-24 (l
 | /cases/148k-day-best-day-whole-career-ending-up-phenomenal | 6 | 1 | 12 | new | new |
 | /blog/tiktok-gmv-max | 6 | 0 | 8.2 | new | new |
 | /cases/ecom-world-split-into-two-groups | 6 | 0 | 52.2 | 64.5 | +12.3 |
+| /cases/finally-scale-client-almost-1m-sales-6-months | 6 | 0 | 7.3 | new | new |
 | /case-studies/dropshipping-dtc | 5 | 0 | 60.4 | 33.7 | -26.7 |
-| /cases/finally-scale-client-almost-1m-sales-6-months | 5 | 0 | 6.6 | new | new |
 | /privacy-policy | 5 | 0 | 6 | 31.3 | +25.3 |
 | /cases/5-crucial-things-learned-while-scaling-brand-105000-23-days | 4 | 0 | 8 | 4 | -4 |
 | /blog/tiktok-shop-affiliate-commission | 3 | 0 | 9.3 | new | new |
@@ -76,6 +76,7 @@ Snapshot 2026-11-25 08:47 UTC. Search Console window 2026-11-18 to 2026-11-24 (l
 | what are the key strategies for scaling a d2c fashion brand from $1m to $10m in revenue through meta and google ads? || /case-studies | 9 | 3 |
 | how do i scale meta ads for an 8 figure dtc brand? || / | 9.5 | 2 |
 | meta ads roas calculator || /tools | 17.5 | 2 |
+| what is the difference between a dtc growth agency and a meta ads agency? || /blog/performance-marketing-agency | 11 | 2 |
 | agency vs in house media buying || /compare/agency-vs-in-house-media-buyer | 19 | 1 |
 | best video commerce for scaling brands || / | 11 | 1 |
 | brandscaling || / | 8 | 1 |
@@ -84,19 +85,18 @@ Snapshot 2026-11-25 08:47 UTC. Search Console window 2026-11-18 to 2026-11-24 (l
 | how much does a shoppable video platform cost as website traffic grows? || /blog | 10 | 1 |
 | roas to acos calculator || /tools | 7 | 1 |
 | tiktok shop break even roas calculator || /blog | 10 | 1 |
-| what is the difference between a dtc growth agency and a meta ads agency? || /blog/performance-marketing-agency | 11 | 1 |
 
 ## High impressions, no clicks (8+ impressions)
 
 | Keyword | Position | Impressions |
 |---|---|---|
-| dtc marketing agency | 58.8 | 66 |
-| meta ads agency for ecommerce | 62.3 | 25 |
-| dtc growth agency | 48.8 | 19 |
+| dtc marketing agency | 58.4 | 69 |
+| meta ads agency for ecommerce | 62.3 | 26 |
+| dtc growth agency | 47.7 | 20 |
 | video ad creative scaling | 19.7 | 18 |
 | meta andromeda | 74.7 | 15 |
 | scaling dtc brands with retargeting | 30.7 | 15 |
-| real roas calculator ecommerce | 56.8 | 11 |
+| real roas calculator ecommerce | 56.5 | 13 |
 | meta andromeda algorithm | 89.5 | 10 |
 | checkout conversion rate calculator | 67 | 9 |
 | dtc performance circle | 7.4 | 9 |
@@ -114,7 +114,7 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 
 | Keyword | Volume | KD | Priority | Target page | Impressions | Best position (page) | Target page position |
 |---|---|---|---|---|---|---|---|
-| dtc marketing agency | 210 | 10 | P1 | / | 66 | 58.8 (/blog/performance-marketing-agency) | not ranking |
+| dtc marketing agency | 210 | 10 | P1 | / | 69 | 58.4 (/blog/performance-marketing-agency) | not ranking |
 | shopify marketing agency | 480 | 16 | P1 | /shopify-marketing-agency | 0 | - | not ranking |
 | ecommerce growth agency | 320 | 17 | P1 | /growth | 8 | 27 (/blog/performance-marketing-agency) | not ranking |
 | ecommerce cro agency | 590 | 17 | P1 | /cro-agency | 7 | 42.8 (/shopify-agency) | not ranking |
@@ -143,7 +143,7 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 
 | Service | Target page | Impressions | Best position | Best query (page) | Target page position |
 |---|---|---|---|---|---|
-| Meta ads management | /meta-ads-agency | 39 | 11 | what is the difference between a dtc growth agency and a met (/blog/performance-marketing-agency) | 57.3 |
+| Meta ads management | /meta-ads-agency | 41 | 11 | what is the difference between a dtc growth agency and a met (/blog/performance-marketing-agency) | 57.3 |
 | Facebook ads management | /meta-ads-agency | 2 | 61.5 | meta/facebook ads agency for ecommerce (/meta-ads-agency) | 61.5 |
 | Instagram ads | /meta-ads-agency | 0 | - | - | not ranking |
 | Advantage+ shopping campaigns | /meta-ads-agency | 0 | - | - | not ranking |
@@ -174,23 +174,23 @@ Volume and difficulty: Semrush US, from the owner's keyword map. Matches any sea
 | SMS marketing | /klaviyo-email-sms-agency | 0 | - | - | not ranking |
 | Retention marketing | /retention-marketing-agency | 0 | - | - | not ranking |
 | BFCM ads management | /bfcm-ads-management | 5 | 17.7 | bfcm ads (/blog/bfcm-meta-ads-playbook) | not ranking |
-| DTC marketing and ecommerce growth agency | / | 124 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | not ranking |
+| DTC marketing and ecommerce growth agency | / | 129 | 1 | growth agency to scale my dtc brand (/blog/performance-marketing-agency) | not ranking |
 | Ecommerce growth engine | /growth | 0 | - | - | not ranking |
 
 ## Keyword movers (3+ positions, 2+ impressions)
 
-**Up:** roas 66 to 58.7; tools to scale direct to consumer brands 62.2 to 57.6; dropshipping product tracking proxy case study 75.8 to 71.3
+**Up:** none
 
-**Down:** dropshipping roas calculator 20 to 69; bands off ads roas calculator 20 to 60; dtc woocommerce agency 61.8 to 68.2; tiktok shop scaling services 64 to 69.5; andromeda meta 77.2 to 80.5; real roas calculator ecommerce 53.7 to 56.8; dtc agency 52 to 55
+**Down:** none
 
 **New:** none
 
-**Lost:** adromeda meta; andromeda digital marketing agency; roas e-commerce
+**Lost:** none
 
 ## Page movers (3+ positions, 3+ impressions)
 
-**Up:** /blog/what-is-roas 62.9 to 45.6; /blog/meta-andromeda 62.6 to 59.0
+**Up:** none
 
-**Down:** /cases/148k-day-best-day-whole-career-ending-up-phenomenal 2.8 to 12; /roas-calculator 32.5 to 37.1; /meta-ads-agency 47.6 to 51.5; /blog 16.9 to 20.4
+**Down:** none
 
 **New:** none
