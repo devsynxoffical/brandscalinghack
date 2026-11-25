@@ -2,7 +2,7 @@
 
 Brand Scaling (Brand Scaling Hacks LLC) is a DTC ecommerce performance marketing agency founded by Gaurav Kapoor: Meta and TikTok ads, direct-response creative, Shopify CRO. $50M+ in Meta ad spend managed, 150+ verified case studies, 30+ niches. New York, NY. Serves US, UK, Canada and Australia.
 Short index of every page: https://www.brandscalinghacks.com/llms.txt (industries, locations, glossary and all guides are listed there).
-Last generated: 2026-11-24
+Last generated: 2026-11-25
 
 ---
 
@@ -264,7 +264,7 @@ Yes. Brands that rely on Amazon or other marketplaces usually move to owned-chan
 A Shopify agency designs, builds, and optimizes online stores on the Shopify platform. While traditional agencies focus only on visuals, Brand Scaling focuses on conversion rate optimization and unit economics, ensuring every landing page is engineered around the paid ads driving traffic.
 
 ### What is a Shopify Plus agency?
-A Shopify Plus agency works with enterprise and high-volume merchants processing $1M+ annually, configuring checkout extensibility, custom B2B portals, advanced Shopify Flow automations, and international expansion stores.
+A [Shopify Plus agency](https://www.brandscalinghacks.com/shopify-plus-agency) works with enterprise and high-volume merchants processing $1M+ annually, configuring checkout extensibility, custom B2B portals, advanced Shopify Flow automations, and international expansion stores.
 
 ### How much is Shopify Plus per month?
 Shopify Plus standard plans start at approximately $2,000 per month for standard licensing or a variable fee based on transaction volume for high-revenue merchants. Check Shopify's official pricing page for real-time updates.
@@ -1076,6 +1076,7 @@ Work out your break-even ROAS and profit per order before you scale ad spend.
 - [Retention Marketing](https://www.brandscalinghacks.com/retention-marketing-agency): Ecommerce retention marketing for DTC brands: cohorts, post-purchase, subscriptions, loyalty, win-back, email and SMS, built to raise LTV and allowed CAC.
 - [BFCM Ads Management](https://www.brandscalinghacks.com/bfcm-ads-management): Done-for-you BFCM ads management: Q4 planning, a creative bank, early access, peak campaign structure, cost controls and a December follow-on plan.
 - [ROAS Improvement](https://www.brandscalinghacks.com/roas-improvement-agency): Ecommerce ROAS improvement agency for DTC brands: we find why ROAS is falling, set a break-even target from your margin, then fix tracking, creative and offer.
+- [Shopify Plus](https://www.brandscalinghacks.com/shopify-plus-agency): Shopify Plus agency for DTC brands that need growth, not just a build: Meta and TikTok ads, creative and Plus checkout CRO. Book a free Brand Growth Audit.
 - [Shopify Marketing](https://www.brandscalinghacks.com/shopify-marketing-agency): Shopify marketing agency for stores doing $20K to $2M+ a month. Ads, creative, CRO and email, with published results like $146,184 in 27 days.
 - [Ecommerce Advertising](https://www.brandscalinghacks.com/ecommerce-advertising): Ecommerce advertising for DTC brands: Meta, TikTok and Google Shopping ads run by one ecommerce ads agency, with budgets set from your break-even ROAS.
 - [Email Marketing](https://www.brandscalinghacks.com/ecommerce-email-marketing): Ecommerce email marketing for DTC brands: the Klaviyo flows that matter, campaigns, list growth, segmentation and deliverability, tied to your ad spend.
@@ -1286,6 +1287,7 @@ That changes the economics. On TikTok Shop you are paying a platform referral fe
           QuestionTikTok ShopTikTok ads to ShopifyWhere checkout happensInside the TikTok appOn your own storeMain traffic sourceAffiliate creators, LIVE, shop tab, GMV MaxIn-feed and Spark AdsMain cost linesPlatform fee, commission, samples, adsAd spend and creativeCustomer data you keepLimitedFull, including email and SMSBest fitVisual, demo-able, impulse-priced productsMost DTC products with a strong offer
           
           
+          
         
           
 ## TikTok Shop scaling services: what is included
@@ -1308,6 +1310,7 @@ Creator and ad videos are briefed from our 45+ cell hook and angle matrix: each 
 Once affiliate videos are posting, we amplify the ones with real orders. [GMV Max](https://www.brandscalinghacks.com/blog/tiktok-gmv-max) campaigns push shop sales using your catalogue and the creative TikTok can access, and Spark Ads put paid reach behind a specific organic post with the creator's permission. Budget follows proven videos, not guesses.
 
           
+          
         
           
 ## How we scale a TikTok Shop
@@ -1319,6 +1322,7 @@ Once affiliate videos are posting, we amplify the ones with real orders. [GMV Ma
 - Optimise, days 45 to 90: commission rates adjusted by creator tier, bundles and offers tested on listings, LIVE sessions added if the product suits them.
 - Scale, day 90 onward: budget steps of 20% to 30% on proven campaigns, more creators per month, and winning shop videos recut for Meta and TikTok ads.
 
+          
           
           
           
@@ -1334,6 +1338,7 @@ Our typical partners already do about $20K to $2M+ a month in revenue with produ
           
           
           
+          
         
           
 ## How TikTok Shop agency pricing works
@@ -1341,6 +1346,7 @@ Our typical partners already do about $20K to $2M+ a month in revenue with produ
           Pricing is a monthly fee quoted after a free audit, plus your ad spend and creator commissions. Typical partners already do about $20K to $2M+ a month in revenue. Creator programs outside the Shop run through our [influencer marketing](https://www.brandscalinghacks.com/influencer-marketing-agency) team, and brands that want ads, creative and CRO together work with us as a [DTC marketing agency](https://www.brandscalinghacks.com/).
 We quote after a [Brand Growth Audit](https://www.brandscalinghacks.com/book), a 1-on-1 review with Gaurav of your margins, creative, current channels and store. You see the plan and the expected cost structure before any fee is agreed. We have not published TikTok Shop [case studies](https://www.brandscalinghacks.com/case-studies) yet, so we will not quote you shop-specific results. What we can show you is how the same creative system performs across our paid social accounts in our case studies.
 
+          
           
           
           
@@ -1442,6 +1448,7 @@ We fix the feed before we touch bids.
           
           
           
+          
         
           
 ## Brand vs non-brand: the split that changes everything
@@ -1450,6 +1457,7 @@ We fix the feed before we touch bids.
 We separate the two. Branded search gets a modest budget to protect your name from competitors and resellers. Non-branded Shopping and Performance Max, the searches for the product category, get judged on their own ROAS and on new-customer acquisition. Where the account allows, we use brand exclusions on Performance Max and negative keywords on Standard Shopping so the reporting stays honest.
 This matters for budget decisions across channels. If Google takes credit for sales Meta created, you might cut the Meta spend that was feeding it.
 
+          
           
           
           
@@ -1465,6 +1473,7 @@ For most DTC brands we run a mix: Performance Max segmented by margin tier or pr
           
           
           
+          
         
           
 ## Setting target ROAS from your margins
@@ -1476,6 +1485,7 @@ We set targets per margin tier so high-margin products can bid more aggressively
           
           
           
+          
         
           
 ## How Google works alongside Meta and TikTok
@@ -1483,6 +1493,7 @@ We set targets per margin tier so high-margin products can bid more aggressively
           Most of our partners spend the majority of their paid budget on Meta, and Google acts as the capture layer. We read the two together. When a new Meta angle starts scaling, branded and category searches often rise, and Shopping should be ready for it with stock, feed and budget.
 We report blended [MER](https://www.brandscalinghacks.com/glossary/mer) and new-customer CAC across all channels weekly, so you can see whether Google spend is adding customers or mostly collecting ones you already paid for elsewhere. If you are deciding how to split budget, our comparison at /compare/meta-ads-vs-google-ads covers the trade-offs.
 
+          
           
           
           
@@ -1504,6 +1515,7 @@ We report blended [MER](https://www.brandscalinghacks.com/glossary/mer) and new-
           
           
           
+          
         
           
 ## Pricing and what to expect
@@ -1511,6 +1523,7 @@ We report blended [MER](https://www.brandscalinghacks.com/glossary/mer) and new-
           Google Shopping agencies usually charge a monthly retainer, a percentage of ad spend, a performance fee, or a mix. Feed work is sometimes billed as a separate setup project. We quote after a [Brand Growth Audit](https://www.brandscalinghacks.com/book) with Gaurav, which covers your ad accounts, feed, store and unit economics.
 We have not published Google Shopping [case studies](https://www.brandscalinghacks.com/case-studies), so we will not promise you a Google ROAS. What we will show you in the audit is where your current Google spend is going, how much of it is branded, and what the feed changes and structure would be.
 
+          
           
           
           
@@ -1607,6 +1620,7 @@ An ecommerce CRO agency finds why visitors leave without buying and tests fixes.
           
           
           
+          
         
           
 ## Speed and product pages
@@ -1618,6 +1632,7 @@ On the product page, we focus on the first screen. The visitor should see the pr
           
           
           
+          
         
           
 ## Offers, bundles and order value
@@ -1625,6 +1640,7 @@ On the product page, we focus on the first screen. The visitor should see the pr
           A store that converts at 3% instead of 2% can afford to pay much more per click and keep the same margin. Bundles, thresholds and post-purchase offers raise AOV so every ad dollar works harder.
 Post-purchase upsells shown after payment and before the thank-you page are one of the most reliable AOV gains on Shopify, because they add revenue without adding friction to the first purchase. We set them up with products that pair naturally with what was just bought.
 
+          
           
           
           
@@ -1641,6 +1657,7 @@ We judge these pages on revenue per visitor from the ad that feeds them, not on 
           
           
           
+          
         
           
 ## Checkout and A/B testing
@@ -1648,6 +1665,7 @@ We judge these pages on revenue per visitor from the ad that feeds them, not on 
           Shopify checkout is already well built, so the wins here are usually about removing doubt: clear shipping costs and delivery times before checkout, express payment options visible, trust signals near the button, and a cart drawer that does not push people back into browsing.
 For testing, we run one clear hypothesis at a time on high-traffic pages, with a stated metric and a minimum sample before calling a result. Lower-traffic stores test bigger changes, since small tweaks need far more visitors to read. Every test, win or lose, goes into a log so learning compounds instead of being repeated.
 
+          
           
           
           
@@ -1666,6 +1684,7 @@ For testing, we run one clear hypothesis at a time on high-traffic pages, with a
           
           
           
+          
         
           
 ## Who it is for and how pricing works
@@ -1673,6 +1692,7 @@ For testing, we run one clear hypothesis at a time on high-traffic pages, with a
           CRO pays back fastest for brands with steady traffic, typically $20K to $2M+ a month in revenue and at least $10K to $20K a month in ad spend. Pricing is quoted after a CRO audit. Most partners run CRO alongside our [Shopify marketing](https://www.brandscalinghacks.com/shopify-marketing-agency) and [Meta ads agency](https://www.brandscalinghacks.com/meta-ads-agency) work, as one [growth engine](https://www.brandscalinghacks.com/growth).
 CRO agencies usually charge a monthly retainer, a fixed project fee for an audit and rebuild, a performance fee tied to conversion or revenue lift, or a mix. We quote after a [Brand Growth Audit](https://www.brandscalinghacks.com/book), where Gaurav reviews your store, ads and unit economics with you. You can check your current numbers with our conversion rate calculator at /tools/conversion-rate-calculator before the call.
 
+          
           
           
           
@@ -1717,7 +1737,7 @@ Quick fixes like speed and checkout friction can show within weeks. A/B tests ne
 If you spend heavily on ads, yes. Every lift in conversion rate lowers your cost per purchase on all traffic at once.
 
 ### Do you do CRO for Shopify stores?
-Yes. Most of our CRO work is on Shopify and Shopify Plus.
+Yes. Most of our CRO work is on Shopify and [Shopify Plus](https://www.brandscalinghacks.com/shopify-plus-agency).
 
         
 ## Related
@@ -1768,6 +1788,7 @@ In practice, a stronger email and SMS programme means you can accept a higher fi
           
           
           
+          
         
           
 ## The Klaviyo flows we build first
@@ -1785,6 +1806,7 @@ In practice, a stronger email and SMS programme means you can accept a higher fi
           
           
           
+          
         
           
 ## Campaigns and segmentation
@@ -1792,6 +1814,7 @@ In practice, a stronger email and SMS programme means you can accept a higher fi
           Flows catch behaviour; campaigns create demand. We plan a monthly calendar of product launches, education, social proof, restocks and promotions, with [BFCM](https://www.brandscalinghacks.com/blog/bfcm-meta-ads-playbook) and Q4 planned well ahead.
 Segmentation decides who gets what. Engaged subscribers who have never bought get different messages from repeat customers. VIPs see launches first. People who bought one product get content about the products that pair with it. Sending to fewer, more engaged people usually earns more revenue per send and protects your sender reputation.
 
+          
           
           
           
@@ -1807,6 +1830,7 @@ For SMS, we keep frequency lower than email and use it for messages that are tim
           
           
           
+          
         
           
 ## Measuring email and SMS honestly
@@ -1814,6 +1838,7 @@ For SMS, we keep frequency lower than email and use it for messages that are tim
           Klaviyo's default attribution credits a sale to an email if the customer opened or clicked within a set window before buying. That is useful, but it overlaps with paid ads. A customer can click a Meta ad, get a cart reminder, then buy, and both channels will claim the order.
 We report email and SMS in three ways so the numbers are not flattering by accident. First, flow and campaign revenue inside Klaviyo, read against Shopify orders. Second, repeat purchase rate and time between orders by cohort, which show whether customers are actually coming back more. Third, a holdout on key flows where traffic allows, so a small group does not receive the flow and the difference shows the real lift. The last one is the number that should change how much you let your ads spend per new customer.
 
+          
           
           
           
@@ -1832,6 +1857,7 @@ We report email and SMS in three ways so the numbers are not flattering by accid
           
           
           
+          
         
           
 ## Pricing and fit
@@ -1839,6 +1865,7 @@ We report email and SMS in three ways so the numbers are not flattering by accid
           Klaviyo agencies usually charge a monthly retainer, a project fee for the initial flow build, a share of email and SMS revenue, or a mix. Klaviyo's own subscription is billed separately by Klaviyo. We quote after a [Brand Growth Audit](https://www.brandscalinghacks.com/book) with Gaurav.
 This service fits brands with a product people buy more than once, or a range wide enough to cross-sell, typically doing about $20K to $2M+ a month. We have not published email or SMS [case studies](https://www.brandscalinghacks.com/case-studies), so we will not promise you a percentage of revenue from Klaviyo. In the audit we show you what your current flows are missing and what we would build first.
 
+          
           
           
           
@@ -1945,6 +1972,7 @@ We review commissions each cycle, remove returns and cancelled orders, approve p
 We watch for self-referrals, coupon sites posting partner codes, trademark bidding on your brand name, and sudden spikes from unknown sources. Problem partners are removed and leaked codes are replaced.
 
           
+          
         
           
 ## Turning affiliate content into paid ads
@@ -1952,6 +1980,7 @@ We watch for self-referrals, coupon sites posting partner codes, trademark biddi
           The most useful thing an affiliate gives a DTC brand is often not the sale, it is the content. A creator video that already sells to their audience is proven creative. With the creator's permission, we run it as a Meta partnership ad from their handle or as a TikTok Spark Ad on their original post.
 This is where our affiliate service ties into everything else we do. Our paid team already ships 30 to 50+ new creatives a month for partner brands, and affiliate content feeds straight into that testing. Winners get budget, and the hooks that work get briefed back to other affiliates so the whole programme improves. If your affiliates mainly sell through [TikTok Shop](https://www.brandscalinghacks.com/tiktok-shop-agency), that side is covered on our TikTok Shop agency page at /tiktok-shop-agency.
 
+          
           
           
           
@@ -1969,6 +1998,7 @@ This is where our affiliate service ties into everything else we do. Our paid te
           
           
           
+          
         
           
 ## Partner terms and platform set-up
@@ -1976,6 +2006,7 @@ This is where our affiliate service ties into everything else we do. Our paid te
           A programme is only as manageable as its rules. Before recruiting anyone, we write partner terms that cover commission rates and tiers, the cookie or [attribution window](https://www.brandscalinghacks.com/glossary/attribution-window), what counts as a valid sale, how returns are handled, where codes may and may not be posted, whether bidding on your brand name is allowed, and how long you can use their content in ads.
 We work with the affiliate or creator platform you already have where it does the job, or help you choose one that connects cleanly to Shopify, issues unique links and codes, and handles payouts. The aim is that a new partner can be approved, onboarded and tracked in minutes, and that every order in the affiliate report can be matched to a real Shopify order. Clear terms also make the difficult conversations easier, since removing a partner who breaks them is simply applying what both sides agreed.
 
+          
           
           
           
@@ -1991,6 +2022,7 @@ It is less suited to very low-margin products, where commissions eat the profit,
           
           
           
+          
         
           
 ## How affiliate management is priced
@@ -1998,6 +2030,7 @@ It is less suited to very low-margin products, where commissions eat the profit,
           Agencies that run affiliate programmes usually charge a monthly management retainer, a percentage of affiliate revenue, a performance fee, or a mix. Commissions, samples and affiliate platform subscriptions are paid by the brand on top, so compare quotes on total cost per order.
 We quote after a [Brand Growth Audit](https://www.brandscalinghacks.com/book) with Gaurav. We have not published affiliate programme [case studies](https://www.brandscalinghacks.com/case-studies), so we will not promise you a result for the channel itself. We can show you the paid social results that affiliate content feeds into across our case studies.
 
+          
           
           
           
@@ -2092,6 +2125,7 @@ An ecommerce influencer marketing agency finds, briefs and pays creators to feat
           
           
           
+          
         
           
 ## Influencer marketing vs affiliates vs UGC
@@ -2101,6 +2135,7 @@ In practice the three overlap. A seeded creator can become an affiliate, and a p
 
           
           ModelWhat you pay forBest used forInfluencer partnershipAudience reach and the creator's endorsementLaunches, awareness in a new niche, social proofAffiliate programCommission on tracked salesAlways-on revenue from creators who already sellUGC productionThe video file and its rightsHigh-volume ad creative for testing
+          
           
           
         
@@ -2125,6 +2160,7 @@ Each brief gives the creator one angle, the problem the product solves, the proo
 The posts that show buying intent are run as partnership ads, with your spend behind the creator's name. This is where most of the measurable return sits, because you control the budget, the audience and the landing page.
 
           
+          
         
           
 ## Measuring creators on new-customer CAC
@@ -2140,6 +2176,7 @@ To answer it, total cost includes the fee, product, shipping and the ad spend be
           
           
           
+          
         
           
 ## Usage rights, contracts and pricing models
@@ -2151,6 +2188,7 @@ Creator fees are usually flat per deliverable, a flat fee plus commission, or pr
           
           
           
+          
         
           
 ## Who this is for
@@ -2158,6 +2196,7 @@ Creator fees are usually flat per deliverable, a flat fee plus commission, or pr
           Influencer programs work best for brands with product-market fit, a product that films well and enough margin to pay creators and still acquire customers profitably. Our typical partners do about $20K to $2M+ a month and already run paid social, so creator content has an ad account ready to amplify it.
 We do not publish influencer program results, so we will not promise any. What we can show is the creative and media buying system behind it: 30 to 50+ new creatives a month across our client accounts, $50M+ in Meta ad spend managed, and the published [case studies](https://www.brandscalinghacks.com/case-studies) where creator-style video ads did the selling.
 
+          
           
           
           
@@ -2257,6 +2296,7 @@ When an account plateaus, the cause is usually a narrow set of angles, not a lac
           
           
           
+          
         
           
 ## The 45+ hook and angle matrix
@@ -2265,6 +2305,7 @@ When an account plateaus, the cause is usually a narrow set of angles, not a lac
 
           
           LayerExamplesWhat it tests5 anglesProblem, outcome, objection, identity, comparisonWhy a customer buys3 hook stylesBold claim, question or callout, visual pattern interruptHow the ad earns the first seconds3 formatsCreator or UGC talking head, demo or before and after, static or carouselHow the message is delivered
+          
           
           
         
@@ -2281,6 +2322,7 @@ When an account plateaus, the cause is usually a narrow set of angles, not a lac
           
           
           
+          
         
           
 ## Briefs that creators and editors can execute
@@ -2288,6 +2330,7 @@ When an account plateaus, the cause is usually a narrow set of angles, not a lac
           A brief is where strategy becomes production. Ours fit on one page: the angle, the target customer, the hook options, the key proof points, the offer, the format and length, and what the ad must not say. Creators get room to sound like themselves inside that frame. Editors get a clear structure for cuts and text overlays.
 Production can sit with your team, with creators you already use, or with SevenFigureStudio, our sister studio for [UGC video ads](https://www.brandscalinghacks.com/viral-creatives). Our direct-response creatives service covers how we produce and edit at volume, and the guide to [scaling UGC production](https://www.brandscalinghacks.com/blog/scale-ugc-production) explains the weekly production system in detail. This page is about the thinking that decides what gets made.
 
+          
           
           
           
@@ -2311,6 +2354,7 @@ Winners are judged on cost per purchase against break-even. Each winner gets ite
 We review results by angle and hook style, retire angles that never won, and refresh the matrix with new research so the next month starts from what the data taught us.
 
           
+          
         
           
 ## Common creative strategy mistakes we fix
@@ -2327,6 +2371,7 @@ We review results by angle and hook style, retire angles that never won, and ref
           
           
           
+          
         
           
 ## Who it is for and how it is priced
@@ -2334,6 +2379,7 @@ We review results by angle and hook style, retire angles that never won, and ref
           Creative strategy suits DTC brands spending roughly $10K to $20K a month or more on paid social, where creative supply is the bottleneck to scale. Below that spend, there is rarely enough data to read a 45-cell test cleanly.
 Agencies usually price creative strategy as a monthly retainer, either on its own or bundled with media buying and production. Brand Scaling quotes after the [Brand Growth Audit](https://www.brandscalinghacks.com/book), once we know how many concepts a month your budget can test and who will produce them.
 
+          
           
           
           
@@ -2446,6 +2492,7 @@ Mobile speed, product page clarity, offer and bundle structure, and whether the 
 Gross margin, shipping, fees and AOV, turned into a [break-even ROAS](https://www.brandscalinghacks.com/tools/break-even-roas-calculator) and break-even CAC. This sets the real target for the account, instead of a ROAS number copied from someone else.
 
           
+          
         
           
 ## What you receive
@@ -2462,6 +2509,7 @@ Gross margin, shipping, fees and AOV, turned into a [break-even ROAS](https://ww
           
           
           
+          
         
           
 ## Who the audit is for
@@ -2469,6 +2517,7 @@ Gross margin, shipping, fees and AOV, turned into a [break-even ROAS](https://ww
           The audit is built for DTC brands with product-market fit doing roughly $20K to $2M+ a month, usually spending at least $10K to $20K a month on paid ads. That is the range where structure, tracking and creative problems cost real money and where fixing them changes the trajectory of the business.
 It is a good fit if ROAS has dropped and you cannot tell why, if spend will not go up without CPA rising sharply, if Meta and Shopify numbers disagree, or if you are deciding between an agency and an [in-house media buyer](https://www.brandscalinghacks.com/compare/agency-vs-in-house-media-buyer) and want an independent view of the account first. It is a poor fit for pre-launch brands or stores without consistent sales, because there is not yet enough data to audit.
 
+          
           
           
           
@@ -2484,6 +2533,7 @@ Behind those sit commercial issues: a target ROAS set without reference to margi
           
           
           
+          
         
           
 ## How to book and what it costs
@@ -2491,6 +2541,7 @@ Behind those sit commercial issues: a target ROAS set without reference to margi
           It starts with a call. You book through the contact page, we confirm fit, and you grant view access to the ad account, Shopify analytics and any reporting you use. Gaurav then reviews the account and walks you through the findings one-on-one.
 We do not publish a price for the audit or for ongoing management. The scope depends on how many accounts, markets and channels are involved, and any management proposal that follows is quoted after the review, as a monthly retainer, a percentage of ad spend, a performance fee or a mix. You see the plan and the numbers before any fee is agreed.
 
+          
           
           
           
@@ -2506,6 +2557,7 @@ We do not publish a price for the audit or for ongoing management. The scope dep
 - Your current target ROAS or CAC, and how it was set
 - Any recent changes: new offers, price changes, site rebuilds or tracking apps
 
+          
           
           
           
@@ -2603,6 +2655,7 @@ Here is a simple example. A store with a $60 AOV and 50% contribution margin ear
           
           
           
+          
         
           
 ## Start with cohorts, not campaigns
@@ -2610,6 +2663,7 @@ Here is a simple example. A store with a $60 AOV and 50% contribution margin ear
           Before building anything, we group customers by the month of their first order and track what each group spends over time. Cohorts show how many customers come back, how fast, and whether recent buyers behave better or worse than older ones. Blended repeat rate hides all of this.
 Cohort analysis also shows which first products, offers and channels produce the best long-term customers. A discount-led acquisition campaign may bring in cheap first orders that never return, while a full-price bundle buyer from a different angle comes back three times. That insight goes straight back into the ad account, where we shift budget and creative toward the angles and offers that attract customers who reorder, and away from ones that only win cheap first orders.
 
+          
           
           
           
@@ -2635,6 +2689,7 @@ Points, tiers or simple perks give customers a reason to come back to you instea
 Customers who have passed their expected repurchase window get a sequence that reminds, reassures and, if needed, offers a reason to return. Timing is set from your cohort data, not a generic 90-day rule.
 
           
+          
         
           
 ## Email and SMS as the delivery system
@@ -2642,6 +2697,7 @@ Customers who have passed their expected repurchase window get a sequence that r
           Most retention runs through email and SMS, which is why this work sits closely with our Klaviyo email and SMS service. The core flows are welcome, browse and cart abandonment, post-purchase, replenishment, win-back and sunset, plus campaigns for launches and seasonal moments. Each flow is mapped to a stage in the customer journey and measured on revenue per recipient and the repeat purchase rate of the people who receive it.
 SMS is used where speed matters, such as cart recovery and limited offers, and kept lighter than email so it does not drive opt-outs. List health matters too: suppressing unengaged contacts protects deliverability for everyone else.
 
+          
           
           
           
@@ -2661,6 +2717,7 @@ SMS is used where speed matters, such as cart recovery and limited offers, and k
           MetricWhy it mattersSecond-order rateThe biggest drop-off in most DTC customer journeysMargin-based LTVRevenue LTV overstates what you can spend to acquireReturning revenue shareShows how dependent the business is on new customers
           
           
+          
         
           
 ## Who it is for and pricing
@@ -2669,6 +2726,7 @@ SMS is used where speed matters, such as cart recovery and limited offers, and k
 It is also worth doing before a big acquisition push such as Q4. Every customer acquired at peak CPMs costs more, so the flows, offers and win-back timing that bring them back should be ready before the spend goes up, not built in January.
 Retention programs are usually priced as a monthly retainer, on their own or as part of a full growth engagement. We quote after the [Brand Growth Audit](https://www.brandscalinghacks.com/book), once we have looked at your cohorts and current flows.
 
+          
           
           
           
@@ -2768,6 +2826,7 @@ BFCM ads management is a done-for-you service that plans and runs your paid ads 
           
           
           
+          
         
           
 ## Planning starts with the margin, not the discount
@@ -2779,6 +2838,7 @@ From there we choose the offer type that protects margin while still standing ou
           
           
           
+          
         
           
 ## Building the creative bank
@@ -2786,6 +2846,7 @@ From there we choose the offer type that protects margin while still standing ou
           During BFCM there is no time to brief, film and edit from scratch. Every ad needed for the season is ready before November starts, with proven evergreen winners recut with offer overlays, new angles for gifting and urgency, and static versions for fast swaps.
 We build the bank using the same hook and angle matrix we use all year, so the BFCM ads still lean on angles that already convert for your customers. Across our client accounts we produce 30 to 50+ new creatives a month; in Q4 that output is pulled forward so the season starts with depth rather than a handful of ads.
 
+          
           
           
           
@@ -2808,12 +2869,14 @@ During the weekend itself we keep structure simple: a small number of campaigns 
 CPMs rise across the auction during BFCM. Cost caps or [bid caps](https://www.brandscalinghacks.com/cases/why-your-facebook-ads-aren-scaling-fix-these-manual-bidding) on scaling campaigns, daily checks against break-even CPA and clear pause rules keep spend from chasing orders at a loss. Manual bidding has worked well in some of our accounts when automated bidding overspent.
 
           
+          
         
           
 ## The December follow-on
 
           Revenue does not stop on Cyber Monday. December brings shipping cut-off urgency, last-minute gifting, gift cards and the chance to bring BFCM buyers back for a second order. We plan this before November so creative and offers are ready, and we use the new customer list from the weekend as the starting point for retention through email and SMS.
 
+          
           
           
           
@@ -2832,6 +2895,7 @@ Decisions that change your risk, such as raising the budget ceiling, extending t
           
           
           
+          
         
           
 ## Who this is for and how it is priced
@@ -2839,6 +2903,7 @@ Decisions that change your risk, such as raising the budget ceiling, extending t
           The service suits DTC brands with product-market fit, stock to support a spike in demand and a paid social budget of at least $10K to $20K a month going into Q4. Ideally we start by early autumn, because creative and early access need lead time. Later starts are possible but narrow what can be done.
 Agencies usually price seasonal management as a monthly retainer, a percentage of ad spend, a performance fee or a mix. Brand Scaling does not publish prices; we quote after the [Brand Growth Audit](https://www.brandscalinghacks.com/book), once we know your margin, offer and how much spend the plan will carry.
 
+          
           
           
           
@@ -2948,6 +3013,7 @@ Too many campaigns and ad sets split the budget so none exits the learning phase
 Many brands chase a ROAS number copied from someone else. A brand with 60% margins can profit at 1.7x; a brand with 25% margins loses money below 4x. The target has to come from your own unit economics.
 
           
+          
         
           
 ## Set the right target: break-even ROAS by margin
@@ -2957,6 +3023,7 @@ Use the break-even [ROAS calculator](https://www.brandscalinghacks.com/roas-calc
 
           
           Contribution margin per orderBreak-even ROASWhat it means25%4.0xEvery $1 of ads must bring $4 of revenue just to break even33%3.0xA common range for apparel and accessories after shipping and fees40%2.5xRoom to scale prospecting at moderate ROAS50%2.0xProfitable well below what many brands target60%1.67xHigh-margin products can scale aggressively at low ROAS
+          
           
           
         
@@ -2975,6 +3042,7 @@ Use the break-even [ROAS calculator](https://www.brandscalinghacks.com/roas-calc
           
           
           
+          
         
           
 ## What a realistic ROAS improvement looks like
@@ -2986,6 +3054,7 @@ The first 7 to 14 days cover the audit, tracking, offer and product page fixes. 
           
           
           
+          
         
           
 ## When a higher ROAS is the wrong goal
@@ -2993,6 +3062,7 @@ The first 7 to 14 days cover the audit, tracking, offer and product page fixes. 
           ROAS usually falls as spend rises, because each extra dollar reaches people less likely to buy. A brand at 6x on a small budget may make more total profit at 3x on three times the spend. That is why we judge growth on contribution margin and [MER](https://www.brandscalinghacks.com/glossary/mer) (total revenue divided by total marketing spend), and use platform ROAS to manage campaigns, not to judge the business.
 If your ROAS is high but revenue is flat, the problem is usually scale, not efficiency, and the plan looks different: more creative volume, broader targeting and new channels.
 
+          
           
           
           
@@ -3061,6 +3131,151 @@ Book a free Brand Growth Audit. We will calculate your break-even ROAS, review t
 
 ---
 
+# Shopify Plus Agency for High-Volume DTC Brands
+URL: https://www.brandscalinghacks.com/shopify-plus-agency
+Summary: Shopify Plus agency for DTC brands that need growth, not just a build: Meta and TikTok ads, creative and Plus checkout CRO. Book a free Brand Growth Audit.
+
+[Home](https://www.brandscalinghacks.com/) / [Services](https://www.brandscalinghacks.com/services) / Shopify Plus
+
+        
+        Brand Scaling is a Shopify Plus agency for DTC brands that already sell at volume and want profitable growth. We are a growth agency, not a theme development studio: we run Meta, TikTok and Google ads, produce the ad creative, and improve the store, including the parts of checkout that Shopify Plus lets you customize. For heavy custom app work or a platform migration, we work alongside your developer.
+Our partners typically do $20K to $2M+ a month in revenue and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free [Brand Growth Audit](https://www.brandscalinghacks.com/book), and the first 14 days go to tracking, the offer and the landing pages before budgets grow.
+
+        
+## What does a Shopify Plus agency do?
+A Shopify Plus agency helps high-volume brands get more from Shopify's enterprise plan. A build-focused agency handles themes, apps and migrations. A growth-focused one, like Brand Scaling, runs the ads and creative that bring buyers and uses Plus features such as checkout customization to convert more of them.
+
+        
+        
+        
+          
+## When a brand needs a Shopify Plus agency
+
+          Shopify Plus is Shopify's plan for high-volume merchants. Moving to Plus does not grow revenue by itself; it gives more control over checkout, automation and selling in more markets. The brands that get value from a Plus agency are the ones whose growth is limited by conversion and acquisition, not by the platform.
+
+          
+          SituationBuild-focused Plus agencyGrowth-focused Plus agencyMigrating to Plus or rebuilding the themeBest fitWorks alongside your developerAds profitable at low spend but stall when scaledNot their core workBest fitCheckout and offer changes to lift order valueBuilds what you specifyDecides what to test from data, then tests itCreative fatigue on Meta and TikTokNot coveredWeekly creative from a hook and angle matrix
+          
+          
+          
+        
+          
+## What we run for Shopify Plus brands
+
+          The same growth system we run for every partner, adjusted for the scale and the extra control Plus gives:
+
+          
+          
+          
+### Paid acquisition at scale
+Meta as the main engine on broad and [Advantage+ campaigns](https://www.brandscalinghacks.com/glossary/advantage-plus), TikTok for creator-led discovery and [Google Shopping](https://www.brandscalinghacks.com/google-shopping-ads-agency) for search demand. Budgets rise about 20% at a time while blended [MER](https://www.brandscalinghacks.com/glossary/mer) and new-customer CAC hold.
+
+### Creative volume
+30 to 50+ new ad creatives a month, briefed from a 45+ cell hook and angle matrix, so the account never depends on a few tired ads.
+
+### Checkout and offer CRO
+Plus lets brands customize checkout. We use that for trust signals, offers and upsells that lift order value, and test each change on revenue per session.
+
+### Retention
+[Klaviyo email](https://www.brandscalinghacks.com/klaviyo-email-sms-agency) and SMS flows built on Shopify data, so the second order does not depend on more ad spend.
+
+          
+          
+        
+          
+## Published results
+
+          These results come from client ad accounts and stores and are published as [case studies](https://www.brandscalinghacks.com/case-studies). They are not specific to Shopify Plus, and we say so.
+
+          - $2.3M in sales at 11.6x ROAS on $200K of Meta spend in a full year for a DTC brand.
+- $146,184 in 27 days at 3.64x ROAS for a [skincare brand](https://www.brandscalinghacks.com/case-studies/skincare-beauty), 957 orders.
+- A 5.25% store conversion rate in a $61,000 month for a clinical skincare store.
+
+          
+          
+          
+          
+        
+          
+## How Shopify Plus agency pricing works
+
+          Shopify charges for the Plus plan itself; that is separate from any agency. Our fee is a monthly amount quoted after the free Brand Growth Audit, sometimes combined with a share of ad spend, and your ad spend is paid directly to the platforms. Partners typically spend at least $10,000 to $20,000 a month on ads.
+
+          
+          
+          
+          
+          
+        
+          
+## How to choose a Shopify Plus agency
+
+          Decide first whether you need a build or growth. For growth, ask for case studies with ad spend shown, who makes the creative, how profit is reported and what happens in the first 30 days.
+
+          - Verified results from real ad accounts, with spend visible
+- In-house creative production and a weekly testing cadence
+- Reporting on MER, new-customer CAC and [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin), not only ROAS
+- A clear split of work with your developer for custom builds
+
+          
+          
+          
+          
+        
+        
+## Real results from client accounts
+- [Dropshipping Case Study: $2.3M at 11.6x ROAS](https://www.brandscalinghacks.com/cases/finally-built-million-dollar-brand-2022-ending-2-3): $2.3M, 11.6x ROAS
+- [Dropshipping Case Study: $491,798 in One Month](https://www.brandscalinghacks.com/cases/dropshipping-isn-get-rich-quick-scheme-it-path-building): $491,798 / month, 34% margin
+- [DTC Ecommerce Case Study: $374,103 in 16 Days at 2.82x ROAS on $132,832 Ad Spend](https://www.brandscalinghacks.com/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103): $374,103 in 16 days, 2.82x ROAS
+- [Dropshipping Case Study: $185,936 in 21 Days](https://www.brandscalinghacks.com/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond): $185,936 in 21 days, 56% margin
+
+## From first call to scaling, step by step
+- Brand Growth Audit call (Week 0): A 1-on-1 review of your ad account, creative, store and unit economics with Gaurav Kapoor. Free, and you keep the findings.
+- Foundation (Days 1 to 14): Tracking and Conversions API fixes, offer and margin changes, product page fixes and the first creative brief.
+- Test (Days 15 to 45): Weekly creative batches built on a hook and angle matrix, read against your break-even ROAS, not platform vanity numbers.
+- Optimize and scale (Day 45 onward): Conversion rate and AOV work, then budget steps of 20% to 30% on proven ads while MER and new-customer CAC hold.
+
+        
+        
+## Frequently asked questions
+
+### What is a Shopify Plus agency?
+An agency that works with brands on Shopify Plus, Shopify's plan for high-volume merchants. Some focus on builds and migrations; others, like Brand Scaling, focus on growth through ads, creative and conversion work.
+
+### Do you build Shopify Plus stores?
+We improve product pages, landing pages, offers and the parts of checkout Plus lets you customize. For full theme builds, custom apps or migrations we work alongside your developer.
+
+### Do I need Shopify Plus to work with you?
+No. Most partners are on standard Shopify plans. Plus adds checkout customization and more automation, which helps at higher volume, but the growth system is the same.
+
+### How much does a Shopify Plus agency cost?
+Agency fees are separate from Shopify's Plus plan fee. We quote a monthly fee after the free audit; partners typically spend at least $10,000 to $20,000 a month on ads.
+
+### Do you do CRO for Shopify Plus stores?
+Yes. Most of our CRO work is on Shopify and Shopify Plus, including checkout, offers, bundles and post-purchase upsells, measured on revenue per session.
+
+        
+## Related
+
+        
+## Book a Brand Growth Audit
+Book a free audit with Gaurav. We review your ad account, creative, Shopify Plus store and unit economics and tell you what to fix first. [Book a Brand Growth Audit](https://www.brandscalinghacks.com/book).
+
+      
+## Explore more
+
+### Related services
+
+### Industries we scale
+
+### Markets we serve
+
+### Free tools
+
+### Compare and research
+
+---
+
 # Shopify Marketing Agency for DTC Brands
 URL: https://www.brandscalinghacks.com/shopify-marketing-agency
 Summary: Shopify marketing agency for stores doing $20K to $2M+ a month. Ads, creative, CRO and email, with published results like $146,184 in 27 days.
@@ -3105,6 +3320,7 @@ Welcome, abandoned cart, post-purchase and win-back flows, plus campaigns, so cu
 Product page, offer and bundle changes, mobile speed and post-purchase upsells. Paid traffic cannot convert better than the page it lands on.
 
           
+          
         
           
 ## Shopify marketing agency vs Shopify development agency
@@ -3113,6 +3329,7 @@ Product page, offer and bundle changes, mobile speed and post-purchase upsells. 
 
           
           Shopify marketing agencyShopify development agencyMain jobBrings buyers and grows profitable revenueBuilds, themes and maintains the storeWorkAds, creative, email, offers and conversion testsTheme builds, apps, integrations, migrationsJudged onRevenue, new-customer CAC, MER and contribution marginLaunch dates, site speed and stabilityHire whenThe store works but growth has stalled or ads lose moneyThe store is new, broken or being rebuilt
+          
           
           
         
@@ -3131,12 +3348,14 @@ Product page, offer and bundle changes, mobile speed and post-purchase upsells. 
           
           
           
+          
         
           
 ## Who our Shopify marketing is for
 
           It fits Shopify brands with a product people already buy, doing roughly $20K to $2M+ a month, that spend or are ready to spend at least $10K to $20K a month on ads. If your store is pre-launch or has no consistent sales yet, the free calculators and guides on this site will help you more than a retainer, and we will tell you that on the audit call.
 
+          
           
           
           
@@ -3154,6 +3373,7 @@ Product page, offer and bundle changes, mobile speed and post-purchase upsells. 
 - Can we see real results from Shopify brands like ours, with screenshots?
 - What is the notice period, and who owns the ad accounts and creative?
 
+          
           
           
           
@@ -3265,6 +3485,7 @@ Text ads for high-intent searches, including your brand name and competitor term
 Catalog and video [retargeting](https://www.brandscalinghacks.com/blog/retargeting-for-dtc-brands) for visitors who did not buy, kept small and frequency-capped so it does not take credit for sales that would have happened anyway.
 
           
+          
         
           
 ## Which advertising channel should an ecommerce brand start with?
@@ -3273,6 +3494,7 @@ Catalog and video [retargeting](https://www.brandscalinghacks.com/blog/retargeti
 
           
           SituationStart withWhyNew or unique product people do not search forMeta adsYou need to create demand; search volume does not exist yetProduct people already search for by name or typeGoogle ShoppingCapture existing intent at a lower cost per saleVisual product with a younger audienceTikTok ads alongside MetaCreator video sells it; TikTok and Meta share creativeBrand with growing search for its nameGoogle brand search plus MetaProtect the brand term, keep Meta creating demandStrong margins, proven ads, flat growthAll three, budget by MERScale across channels and judge the total, not each platform
+          
           
           
         
@@ -3286,6 +3508,7 @@ We set Google bids from your margin per product, keep brand and non-brand spendi
           
           
           
+          
         
           
 ## How much should an ecommerce brand spend on ads?
@@ -3293,6 +3516,7 @@ We set Google bids from your margin per product, keep brand and non-brand spendi
           Work backwards from your margin and goal, not from a percentage someone else uses. Start with your break-even ROAS, the return at which an order stops losing money after product cost, shipping, fees and returns. Then set the monthly budget your revenue goal needs at a ROAS comfortably above that line.
 The free Meta ads budget calculator turns a revenue goal into daily spend, target CPA and weekly purchases, and the break-even [ROAS calculator](https://www.brandscalinghacks.com/roas-calculator) shows the floor every campaign must stay above. Partner brands typically spend at least $10,000 to $20,000 a month on ads.
 
+          
           
           
           
@@ -3310,6 +3534,7 @@ The free Meta ads budget calculator turns a revenue goal into daily spend, targe
 - Shopify orders versus platform-reported purchases, to catch tracking gaps.
 - [Contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin) after ad spend, week by week.
 
+          
           
           
           
@@ -3418,6 +3643,7 @@ For consumables, a reminder when the customer is likely to run out. For lapsed c
 For repeat buyers: early access, bundles and rewards that keep your best customers buying from you instead of a competitor.
 
           
+          
         
           
 ## Campaigns vs flows
@@ -3428,6 +3654,7 @@ For repeat buyers: early access, bundles and rewards that keep your best custome
           FlowsCampaignsTriggered byWhat the shopper does (signs up, abandons, buys)You, on a scheduleBuiltOnce, then improvedEvery week or monthBest forRecovering carts, onboarding, repeat ordersLaunches, sales, BFCM, contentRisk if overusedLow, they are relevant by designUnsubscribes and spam complaints if sent to everyone too often
           
           
+          
         
           
 ## Growing the list the right way
@@ -3435,6 +3662,7 @@ For repeat buyers: early access, bundles and rewards that keep your best custome
           A bigger list only helps if the people on it want to hear from you. Pop-ups and sign-up forms are set up to collect real addresses and proper SMS consent, with an offer that fits your margin, rather than filling the list with people who never open.
 Paid ads feed the list too: every visitor your Meta and [TikTok ads](https://www.brandscalinghacks.com/tiktok-ads-agency) bring in is a chance to collect an email, so the welcome flow is planned with the ad creative.
 
+          
           
           
           
@@ -3454,6 +3682,7 @@ Paid ads feed the list too: every visitor your Meta and [TikTok ads](https://www
           
           
           
+          
         
           
 ## Why email makes your ads more profitable
@@ -3461,6 +3690,7 @@ Paid ads feed the list too: every visitor your Meta and [TikTok ads](https://www
           Ads pay for the first order; email earns the rest. If repeat purchases raise what a customer is worth over a year, you can pay more to acquire each one and still make money, which lets your ad accounts scale further than a competitor who relies on first orders alone.
 That is why we plan email and paid ads together: the ad creative, the offer and the welcome flow tell one story, and we judge both on [lifetime value](https://www.brandscalinghacks.com/glossary/ltv) and [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin), not on opens and clicks.
 
+          
           
           
           
@@ -3552,6 +3782,7 @@ Most DTC brands spending under roughly $50K a month on ads get more coverage per
           FactorAgencyIn-house media buyerCost structureRetainer, % of ad spend, performance fee or a mixSalary, benefits, tools, creative budget, your management timeTime to startUsually weeks, with an audit and onboardingRecruiting plus ramp-up, often a few monthsSkills coveredBuying, creative strategy, tracking, CRO, email often in one teamUsually one strong skill; the rest must be hired or outsourcedPattern recognitionSees many accounts and niches at onceDeep knowledge of one brandControl and speed of changesShared attention across clientsFull-time focus and fast internal decisionsRisk if it failsNotice period, then switchSeverance, rehiring and a lost quarterKnowledge retentionDepends on documentation and account ownershipStays in the company while the person stays
           
           
+          
         
           
 ## The real cost of each option
@@ -3575,6 +3806,7 @@ Agencies usually charge a monthly retainer, a percentage of ad spend, a performa
 At $150,000 a month in spend, the same hypothetical fee becomes $18,000 a month, and in-house starts to look cheaper. This is why the answer changes with scale.
 
           
+          
         
           
 ## Speed to results
@@ -3587,6 +3819,7 @@ The flip side is that an agency needs time to learn your brand voice and custome
           
           
           
+          
         
           
 ## Skills coverage: one person or a team
@@ -3594,6 +3827,7 @@ The flip side is that an agency needs time to learn your brand voice and custome
           [Scaling a DTC brand](https://www.brandscalinghacks.com/blog/how-to-scale-a-dtc-brand) on paid social needs more than campaign setup. It needs [creative strategy](https://www.brandscalinghacks.com/creative-strategy-agency), a steady supply of new ads, clean tracking, a product page that converts, and usually retention flows that turn first orders into repeat revenue. One person rarely covers all of that at a high level.
 An agency spreads those skills across specialists. As a reference point, Brand Scaling produces 30 to 50+ new ad creatives and angles a month for partner brands and works across Meta, TikTok, Google, [Shopify CRO](https://www.brandscalinghacks.com/cro-agency) and [Klaviyo](https://www.brandscalinghacks.com/klaviyo-email-sms-agency). An in-house media buyer can be excellent at buying, but you will likely need a creative producer, an editor and someone for email as well.
 
+          
           
           
           
@@ -3619,6 +3853,7 @@ An agency spreads those skills across specialists. As a reference point, Brand S
 - You have someone senior who can manage and develop a media buyer.
 
           
+          
         
           
 ## Hybrid models that work
@@ -3630,6 +3865,7 @@ An agency spreads those skills across specialists. As a reference point, Brand S
 - Agency for new channels: keep Meta in-house and use an agency to launch TikTok or [Google Shopping](https://www.brandscalinghacks.com/google-shopping-ads-agency).
 - Audit then decide: start with an account audit, fix the foundation, then choose who runs it.
 
+          
           
           
           
@@ -3717,6 +3953,7 @@ For most DTC brands, Meta is the better first channel because its conversion opt
           FactorMeta (Facebook and Instagram)TikTokAudienceVery broad age range, strong with 25 to 55+ buyersSkews younger, growing older audienceCreative styleUGC, statics, carousels, video, catalog adsNative, sound-on, creator-led vertical videoBuying intentDiscovery, but strong conversion optimizationDiscovery and entertainment firstCreative fatigueModerate; winners can run for weeksFast; winners often need refreshing soonerTrackingPixel plus Conversions API, mature attributionPixel plus Events API, improvingCommerce featuresShops, catalog and Advantage+ campaignsTikTok Shop, Spark Ads, creator affiliatesBest first usePrimary acquisition engineIncremental reach and creative testing ground
           
           
+          
         
           
 ## Audience and buying intent
@@ -3725,6 +3962,7 @@ For most DTC brands, Meta is the better first channel because its conversion opt
 TikTok users are there to be entertained. That does not mean they do not buy, but the ad has to earn attention as content first. Products that are visual, demonstrable, giftable or a little surprising tend to do well. Products that need a lot of explanation, or are bought mainly by older customers, often find Meta easier.
 Neither platform captures existing demand the way search does. Both create demand, which is why creative quality matters so much on both.
 
+          
           
           
           
@@ -3744,6 +3982,7 @@ The practical difference is volume. TikTok creative tends to fatigue faster, so 
           
           
           
+          
         
           
 ## Tracking and attribution
@@ -3755,6 +3994,7 @@ Because TikTok often drives people who later search or come back directly, judge
           
           
           
+          
         
           
 ## Where TikTok Shop fits
@@ -3762,6 +4002,7 @@ Because TikTok often drives people who later search or come back directly, judge
           TikTok Shop lets people buy without leaving the app, and pairs with creator affiliates who earn commission on sales from their videos. For products with an impulse price point and strong demo value, this can remove friction that a website click adds.
 It also adds work: product listings, fulfilment standards, sample shipping to creators and affiliate management. Treat it as a separate channel with its own plan rather than a switch you flip. Our TikTok Shop work covers setup and creator affiliates; see the TikTok Shop agency page for how we approach it.
 
+          
           
           
           
@@ -3780,6 +4021,7 @@ A simple starting split is to keep the large majority of spend on the proven cha
           
           
           
+          
         
           
 ## Common mistakes when running Meta and TikTok together
@@ -3792,6 +4034,7 @@ The other frequent issue is judging TikTok too early or by the wrong number. A c
 - Pausing TikTok after a few days because in-platform ROAS looks low.
 - Launching TikTok before tracking, offer and product page are working on Meta.
 
+          
           
           
           
@@ -3878,6 +4121,7 @@ They do different jobs. Facebook and Instagram ads create demand by showing prod
           FactorMeta (Facebook and Instagram)Google (Search, Shopping, PMax)Primary roleDemand creationDemand captureHow people find youAds in feeds, Stories and ReelsSearch results, Shopping listings, YouTube, DisplayMain leverCreative and offerProduct feed, keywords, bids and search volumeScale ceilingGrows with creative and budgetLimited by how many people searchCreative needsHigh volume of new video and static adsClean feed images and titles, some video for PMaxBest forNew products, new categories, impulse purchasesKnown products, branded search, high-intent buyersAttribution riskUndercounts sales that finish on searchClaims credit for demand Meta created
           
           
+          
         
           
 ## Demand creation vs demand capture
@@ -3886,6 +4130,7 @@ They do different jobs. Facebook and Instagram ads create demand by showing prod
 Google works the other way. Someone searches for a product, a problem or your brand name, and Google shows ads that match. Intent is high, so conversion rates on branded and product searches are often strong, but volume is capped by how many people search. If nobody has heard of your product, there is little search demand to capture.
 The two feed each other. Meta ads make people curious, many of them later search your brand or product name, and Google catches that search. Cut Meta and branded search often falls a few weeks later.
 
+          
           
           
           
@@ -3905,6 +4150,7 @@ The two feed each other. Meta ads make people curious, many of them later search
           
           
           
+          
         
           
 ## Creative: where the work goes
@@ -3917,6 +4163,7 @@ That difference matters when you staff the channels. A great Meta buyer is not a
           
           
           
+          
         
           
 ## Attribution overlap: why the numbers add up to more than 100%
@@ -3924,6 +4171,7 @@ That difference matters when you staff the channels. A great Meta buyer is not a
           Each platform reports conversions using its own rules. A customer might see a Meta ad on Monday, search your brand on Thursday and click a Shopping ad before buying. Meta counts that sale under its [attribution window](https://www.brandscalinghacks.com/glossary/attribution-window). Google counts it too. Add the two dashboards together and you have more revenue than Shopify recorded.
 That is why the most reliable check is blended: total store revenue divided by total ad spend across all channels ([MER](https://www.brandscalinghacks.com/glossary/mer)), and new customers acquired against total spend. Use platform ROAS to optimize inside each platform, and blended numbers to decide how much to give each one.
 
+          
           
           
           
@@ -3943,6 +4191,7 @@ That is why the most reliable check is blended: total store revenue divided by t
           
           
           
+          
         
           
 ## Which to prioritise for your product
@@ -3954,6 +4203,7 @@ That is why the most reliable check is blended: total store revenue divided by t
 - Impulse and visual products such as fashion, beauty and gadgets: Meta first, Google to catch the brand searches it creates.
 - Established brands with strong name recognition: protect branded search on Google and use Meta to keep growing new customer volume.
 
+          
           
           
           
@@ -4040,6 +4290,7 @@ The main DTC agency alternatives are a freelance media buyer, an in-house team, 
           OptionTypical strengthsTypical weaknessesOften fitsFreelance media buyerLower cost, direct contact, flexibleSingle point of failure, limited creative and CROEarly brands with modest spendIn-house teamFull focus, deep brand knowledge, controlHighest fixed cost, slow to hire, skill gapsLarge, stable spend with internal leadershipSpecialist PPC agencyDeep skill on one channel such as GoogleNarrow view, may not handle creative or retentionBrands with one clear channel needFull-service growth agencyBuying, creative, CRO, email under one planHigher fee, needs enough spend to justify itBrands with product-market fit ready to scaleCreative-only studioHigh volume of UGC and ad creativeDoes not run or optimize the adsBrands with a strong buyer who needs more creativeConsultant or coachingLowest cost, builds your own skillYou still do the work and the hoursFounders who want to run ads themselves
           
           
+          
         
           
 ## Freelancers and in-house teams
@@ -4054,6 +4305,7 @@ A good freelancer can be excellent value. You get direct access to the person do
 ### In-house team
 Building your own team gives you full focus and keeps knowledge inside the business. It also carries the highest fixed cost and the slowest start, because hiring and onboarding take months. It tends to make sense once spend is large and stable, and once someone senior can manage the team. Our agency vs in-house comparison breaks down the cost arithmetic in detail.
 
+          
           
         
           
@@ -4070,6 +4322,7 @@ Channel specialists, for example a [Google Shopping](https://www.brandscalinghac
 This is the category Brand Scaling sits in. One team handles paid media, [creative strategy](https://www.brandscalinghacks.com/creative-strategy-agency) and production, tracking, store conversion and retention flows under a single plan. The benefit is that the pieces are joined up: the ads, the product page and the email flows are built to work together. The cost is a higher fee, which only makes sense once you are spending enough on ads for improvements to pay back.
 
           
+          
         
           
 ## Creative studios and consultants
@@ -4084,6 +4337,7 @@ If you already have a strong media buyer and your bottleneck is creative volume,
 ### Consultant or coaching program
 Consultants and coaching programs teach you or your team to run the work. They cost the least and build lasting skill, which suits founders who enjoy the ad account and have the time. The catch is that you still do the execution. If your time is better spent on product, operations or partnerships, coaching can become an expensive way to stay busy.
 
+          
           
         
           
@@ -4101,6 +4355,7 @@ Consultants and coaching programs teach you or your team to run the work. They c
           
           
           
+          
         
           
 ## How to choose between them
@@ -4108,6 +4363,7 @@ Consultants and coaching programs teach you or your team to run the work. They c
           Start with the bottleneck, not the option. If your ads convert but you cannot produce new creative fast enough, the fix is creative. If traffic converts poorly, the fix is the store. If nothing is joined up, you probably need a team that owns the full plan.
 Whoever you consider, ask for published results in brands like yours, a clear process and timeline, who exactly will work on your account, and confirmation that you keep ownership of your ad accounts and data. Compare pricing models carefully: retainers, percentage of spend and performance fees shift risk in different ways.
 
+          
           
           
           
@@ -4202,6 +4458,7 @@ Across the 25 published Brand Scaling case studies that state a ROAS, the median
 One result at 11.6x would pull a simple average upwards and make the typical case look better than it is. The median, the middle value when all 25 are lined up, is less affected by outliers. The middle half shows where most of the published cases cluster.
 
           
+          
         
           
 ## ROAS by niche in our published case studies
@@ -4213,6 +4470,7 @@ One result at 11.6x would pull a simple average upwards and make the typical cas
 - Jewelry is a single case and should not be read as a niche benchmark.
 
           NicheCases with a stated ROASPublished ROAS rangeSupplements43.89x to 4.51xFashion43.56x to 5.49xFitness33.61x to 4.37xSkincare23.64x to 4.39xDropshipping72.53x to 11.6xGeneral DTC42.06x to 3.8xJewelry14.43x
+          
           
           
         
@@ -4234,6 +4492,7 @@ One result at 11.6x would pull a simple average upwards and make the typical cas
 Read these numbers as what success has looked like in our published work, not as the average ecommerce ROAS across all stores. Many profitable brands run below 3.6x, and some accounts need a lower ROAS to grow new customer volume. Your own margins decide what is good.
 
           
+          
         
           
 ## How to compare your own ROAS
@@ -4250,6 +4509,7 @@ Then check blended MER: total store revenue divided by total marketing spend acr
           
           
           
+          
         
           
 ## What moves ROAS up or down in our published cases
@@ -4262,6 +4522,7 @@ Finally, the offer and the product page set the ceiling. The same ads sent to a 
           
           
           
+          
         
           
 ## Why platform ROAS and blended ROAS differ
@@ -4270,6 +4531,7 @@ Finally, the offer and the product page set the ceiling. The same ads sent to a 
 [Blended ROAS](https://www.brandscalinghacks.com/glossary/blended-roas), often called MER, ignores who claims what. It divides total revenue by total ad spend. It includes repeat customers, organic sales and email revenue, and it is not inflated by double counting. It is less precise for deciding which ad to scale, but more honest about whether the business is making money.
 Use platform ROAS to make decisions inside a platform, such as which creative or audience to scale. Use blended MER and new customer cost to decide total budget.
 
+          
           
           
           
@@ -4368,6 +4630,7 @@ Inputs: Selling price per order ($), Product cost (COGS) per order ($), Shipping
           
           
           
+          
         
           
 ## The break-even ROAS formula with a worked example
@@ -4383,6 +4646,7 @@ Example: a [skincare brand](https://www.brandscalinghacks.com/case-studies/skinc
           LineExample valueSelling price per order$60.00COGS per order$18.00Shipping and fulfilment$8.00Payment fee (3%)$1.80Contribution margin per order$32.20 (53.7%)Break-even ROAS1.86xBreak-even CPA$32.20
           
           
+          
         
           
 ## How to read the result
@@ -4390,6 +4654,7 @@ Example: a [skincare brand](https://www.brandscalinghacks.com/case-studies/skinc
           Your break-even ROAS is a floor, not a goal. Running exactly at that number means ads are paying for themselves but nothing is left for salaries, software, returns or profit. Most brands set a target ROAS comfortably above break-even for prospecting and accept something closer to break-even on campaigns that bring in new customers who are likely to reorder.
 The break-even CPA is often more useful day to day than the ROAS figure, because it maps directly to the cost per purchase column in Ads Manager. When a campaign's CPA sits under your break-even CPA, it is contributing profit on the first order. To understand where the margin itself comes from, read our guide to contribution margin at /glossary/contribution-margin.
 
+          
           
           
           
@@ -4407,6 +4672,7 @@ The break-even CPA is often more useful day to day than the ROAS figure, because
           
           
           
+          
         
           
 ## Common mistakes
@@ -4418,6 +4684,7 @@ The break-even CPA is often more useful day to day than the ROAS figure, because
 - Ignoring returns and refunds. If a meaningful share of orders come back, reduce the selling price input to reflect net revenue kept.
 - Judging break-even against platform-reported ROAS only, which can over-count conversions. Check blended numbers too.
 
+          
           
           
           
@@ -4502,6 +4769,7 @@ A note on the referral fee: TikTok Shop rates vary by region, category and date.
           
           
           
+          
         
           
 ## The formula with a worked example
@@ -4519,6 +4787,7 @@ The table keeps everything else the same and changes only the affiliate commissi
           Affiliate commissionFees and commissionProfit before adsMarginBreak-even ROAS0%$2.80$18.2052.0%1.92x10%$6.30$14.7042.0%2.38x15%$8.05$12.9537.0%2.70x20%$9.80$11.2032.0%3.13x25%$11.55$9.4527.0%3.70x
           
           
+          
         
           
 ## How to read the result
@@ -4527,6 +4796,7 @@ The table keeps everything else the same and changes only the affiliate commissi
 Two things change the answer more than people expect. First, affiliate commission: an order that comes through a creator video you also boost pays both the commission and the ad cost, so include the commission when you set ad targets for those orders. If your ad-driven orders pay no commission, run the calculator with affiliate at 0 for your ad floor. Second, price: a low-priced product leaves little room once fixed costs like shipping are paid, which is why bundles often make TikTok Shop maths work.
 If the calculator shows No margin, your fees, commission and costs already use up the whole price, and no ad result can fix that.
 
+          
           
           
           
@@ -4542,6 +4812,7 @@ If the calculator shows No margin, your fees, commission and costs already use u
 - Compare TikTok Shop unit economics with your own site using the break-even [ROAS calculator](https://www.brandscalinghacks.com/roas-calculator) at /tools/break-even-roas-calculator and our TikTok Shop vs Shopify guide at /blog/tiktok-shop-vs-shopify.
 - If you want the shop and creator programme run for you, see our TikTok Shop agency at /tiktok-shop-agency. For in-feed ads that send traffic to your own store, see our TikTok ads agency at /tiktok-ads-agency.
 
+          
           
           
           
@@ -4625,6 +4896,7 @@ Start with break-even ROAS, because it tells you the lowest return your ads can 
 - [Ecommerce Profit Margin Calculator](https://www.brandscalinghacks.com/tools/profit-margin-calculator): Subtract product cost, shipping, payment fees, ad cost per order and expected returns from the selling price, then divide by the price.
 - [TikTok Shop Break Even ROAS Calculator](https://www.brandscalinghacks.com/tools/tiktok-shop-break-even-roas-calculator): Take your selling price and subtract product cost, shipping, the TikTok Shop referral fee and any affiliate commission.
 
+          
         
           
 ## Which calculator answers your question?
@@ -4633,6 +4905,7 @@ Start with break-even ROAS, because it tells you the lowest return your ads can 
 
           
           If you want to work outUseWhat you getEcommerce ROAS, or Facebook and Meta ROAS, with real profitROAS calculator (with profit model)Break-even ROAS, profit per order and monthly profit from price, product cost, fees and CACThe lowest ROAS your ads can run atBreak-even ROAS calculatorBreak-even ROAS from your margin, with the formula and a worked exampleBreak-even ROAS for TikTok Shop ordersTikTok Shop break-even ROAS calculatorBreak-even ROAS after the referral fee and affiliate commissionAdvertising to sales ratio (A/S ratio)MER calculatorMER (revenue divided by marketing spend) and its inverse, the share of sales spent on adsCost to win a new customerCAC calculatorCustomer acquisition cost to compare with first-order profit and LTVDaily ad budget for a revenue goalMeta ads budget calculatorDaily spend, target CPA and weekly purchases neededStore conversion rateConversion rate calculatorConversion rate from sessions and ordersWhether a discount still makes moneyDiscount break-even calculatorExtra orders needed to make the same profit at a given discount
+          
           
           
         
@@ -4693,6 +4966,7 @@ Every number here comes from Brand Scaling's own published case studies, which s
           
           - [Average Ecommerce ROAS: What Our Published Case Studies Show](https://www.brandscalinghacks.com/benchmarks/ecommerce-roas): Across the 25 published Brand Scaling case studies that state a ROAS, the median is 3.97x and the middle half sits between 3.61x and 4.39x, with a full range of 2.06x to 11.6x.
 
+          
         
           
 ## Ecommerce ROAS benchmarks by niche
@@ -4703,12 +4977,14 @@ Every number here comes from Brand Scaling's own published case studies, which s
           NichePublished ROAS rangeWhere to see the casesSupplements3.89x to 4.51xSupplement case studiesFashion and apparel3.56x to 5.49xFashion and jewelry case studiesJewelry4.43x (one case)Fashion and jewelry case studiesFitness3.61x to 4.37xFitness and health case studiesSkincare3.64x to 4.39xSkincare and beauty case studiesDropshipping2.53x to 11.6xDropshipping and DTC store case studiesGeneral DTC2.06x to 3.8xAll case studies
           
           
+          
         
           
 ## What about average ROAS for UK ecommerce?
 
           We have one published UK result, a [skincare brand](https://www.brandscalinghacks.com/case-studies/skincare-beauty) that reached EUR 118,000 in its first month, and that post does not state a ROAS, so we do not publish a UK average. UK brands price with 20 percent VAT included, so calculate ROAS and break-even on revenue excluding VAT, or the number will look about a fifth better than it is. How we work with UK brands is on the [London page](https://www.brandscalinghacks.com/locations/london).
 
+          
           
           
           
@@ -4725,6 +5001,7 @@ The sample is our own client work, so it reflects brands that chose to scale wit
 - Full range 2.06x to 11.6x
 - Every figure links to its source case study
 
+          
           
           
           

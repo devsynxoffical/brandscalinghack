@@ -23,7 +23,7 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^brandscalinghacks\.com$ [NC]
 RewriteRule ^(.*)$ https://www.brandscalinghacks.com/$1 [R=301,L,NE]
 
-# old URLs (131 redirects from vercel.json)
+# old URLs (132 redirects from vercel.json)
 RewriteRule ^book-a-call/?$ /book [R=301,L,NE]
 RewriteRule ^booking/?$ /book [R=301,L,NE]
 RewriteRule ^facebook-ads-agency/?$ /meta-ads-agency [R=301,L,NE]
@@ -155,6 +155,7 @@ RewriteRule ^cases/CaF8d61BZSO/?$ /cases/do-not-be-embarrassed-your-failures-lea
 RewriteRule ^cases/Ce4RHMZBmfi/?$ /cases/aggressively-scaling-towards-6k-day [R=301,L,NE]
 RewriteRule ^cases/CfdomKIgr8Y/?$ /cases/happy-client-closes-116k-sales-june [R=301,L,NE]
 RewriteRule ^cases/CaZWmNEMev9/?$ /cases/commerce-clients-are-killing-game-pure-value-live-view-4kday [R=301,L,NE]
+RewriteRule ^locations/san-francisco/?$ /locations [R=301,L,NE]
 
 # no trailing slash (as on Vercel)
 RewriteCond %{REQUEST_URI} ^/(.+)/$

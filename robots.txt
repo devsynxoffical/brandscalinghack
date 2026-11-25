@@ -50,3 +50,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://www.brandscalinghacks.com/sitemap.xml
+Sitemap: https://www.brandscalinghacks.com/sitemap-locations.xml
