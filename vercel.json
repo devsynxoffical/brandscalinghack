@@ -666,6 +666,11 @@
       "source": "/cases/CaZWmNEMev9",
       "destination": "/cases/commerce-clients-are-killing-game-pure-value-live-view-4kday",
       "statusCode": 301
+    },
+    {
+      "source": "/locations/san-francisco",
+      "destination": "/locations",
+      "statusCode": 301
     }
   ],
   "headers": [

@@ -39,6 +39,7 @@ export const LINK_RULES = [
   { re: /\bGoogle Shopping( ads)?\b|\bPerformance Max\b/i, href: '/google-shopping-ads-agency', title: 'Google Shopping Ads Agency' },
   { re: /\bconversion rate optimi[sz]ation\b|\bShopify CRO\b|\b(DTC |ecommerce )?CRO agency\b/i, href: '/cro-agency', title: 'Ecommerce CRO Agency' },
   { re: /\bShopify marketing( agency)?\b/i, href: '/shopify-marketing-agency', title: 'Shopify Marketing Agency' },
+  { re: /\bShopify Plus( agency)?\b/i, href: '/shopify-plus-agency', title: 'Shopify Plus Agency' },
   { re: /\becommerce (advertising|ads agency|PPC( agency)?)\b/i, href: '/ecommerce-advertising', title: 'Ecommerce Advertising Agency' },
   { re: /\becommerce email marketing\b|\bemail marketing for ecommerce\b/i, href: '/ecommerce-email-marketing', title: 'Ecommerce Email Marketing' },
   { re: /\bShopify (growth )?agency\b/i, href: '/shopify-agency', title: 'DTC Shopify Agency' },

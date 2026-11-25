@@ -4,6 +4,90 @@
 // ecommerce email marketing (1,900, KD 26). Volumes: Semrush US, from the owner's keyword map.
 export default [
   {
+    path: '/shopify-plus-agency',
+    kind: 'service',
+    updated: '2026-11-25',
+    primaryKeyword: 'shopify plus agency',
+    secondaryKeywords: ['shopify plus marketing agency', 'shopify plus cro agency', 'shopify plus growth agency'],
+    titleTag: 'Shopify Plus Agency for DTC Brands | Brand Scaling',
+    metaDescription: 'Shopify Plus agency for DTC brands that need growth, not just a build: Meta and TikTok ads, creative and Plus checkout CRO. Book a free Brand Growth Audit.',
+    h1: 'Shopify Plus Agency for High-Volume DTC Brands',
+    eyebrow: 'Shopify Plus',
+    quickAnswer: {
+      question: 'What does a Shopify Plus agency do?',
+      answer: `A Shopify Plus agency helps high-volume brands get more from Shopify's enterprise plan. A build-focused agency handles themes, apps and migrations. A growth-focused one, like Brand Scaling, runs the ads and creative that bring buyers and uses Plus features such as checkout customization to convert more of them.`
+    },
+    intro: `Brand Scaling is a Shopify Plus agency for DTC brands that already sell at volume and want profitable growth. We are a growth agency, not a theme development studio: we run Meta, TikTok and Google ads, produce the ad creative, and improve the store, including the parts of checkout that Shopify Plus lets you customize. For heavy custom app work or a platform migration, we work alongside your developer.
+
+Our partners typically do $20K to $2M+ a month in revenue and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free Brand Growth Audit, and the first 14 days go to tracking, the offer and the landing pages before budgets grow.`,
+    sections: [
+      {
+        id: 'plus-vs-shopify',
+        h2: 'When a brand needs a Shopify Plus agency',
+        content: `Shopify Plus is Shopify's plan for high-volume merchants. Moving to Plus does not grow revenue by itself; it gives more control over checkout, automation and selling in more markets. The brands that get value from a Plus agency are the ones whose growth is limited by conversion and acquisition, not by the platform.`,
+        table: {
+          headers: ['Situation', 'Build-focused Plus agency', 'Growth-focused Plus agency'],
+          rows: [
+            ['Migrating to Plus or rebuilding the theme', 'Best fit', 'Works alongside your developer'],
+            ['Ads profitable at low spend but stall when scaled', 'Not their core work', 'Best fit'],
+            ['Checkout and offer changes to lift order value', 'Builds what you specify', 'Decides what to test from data, then tests it'],
+            ['Creative fatigue on Meta and TikTok', 'Not covered', 'Weekly creative from a hook and angle matrix']
+          ]
+        }
+      },
+      {
+        id: 'plus-growth',
+        h2: 'What we run for Shopify Plus brands',
+        content: `The same growth system we run for every partner, adjusted for the scale and the extra control Plus gives:`,
+        subsections: [
+          { h3: 'Paid acquisition at scale', content: `Meta as the main engine on broad and Advantage+ campaigns, TikTok for creator-led discovery and Google Shopping for search demand. Budgets rise about 20% at a time while blended MER and new-customer CAC hold.` },
+          { h3: 'Creative volume', content: `30 to 50+ new ad creatives a month, briefed from a 45+ cell hook and angle matrix, so the account never depends on a few tired ads.` },
+          { h3: 'Checkout and offer CRO', content: `Plus lets brands customize checkout. We use that for trust signals, offers and upsells that lift order value, and test each change on revenue per session.` },
+          { h3: 'Retention', content: `Klaviyo email and SMS flows built on Shopify data, so the second order does not depend on more ad spend.` }
+        ]
+      },
+      {
+        id: 'plus-proof',
+        h2: 'Published results',
+        content: `These results come from client ad accounts and stores and are published as case studies. They are not specific to Shopify Plus, and we say so.`,
+        list: [
+          '$2.3M in sales at 11.6x ROAS on $200K of Meta spend in a full year for a DTC brand.',
+          '$146,184 in 27 days at 3.64x ROAS for a skincare brand, 957 orders.',
+          'A 5.25% store conversion rate in a $61,000 month for a clinical skincare store.'
+        ]
+      },
+      {
+        id: 'plus-pricing',
+        h2: 'How Shopify Plus agency pricing works',
+        content: `Shopify charges for the Plus plan itself; that is separate from any agency. Our fee is a monthly amount quoted after the free Brand Growth Audit, sometimes combined with a share of ad spend, and your ad spend is paid directly to the platforms. Partners typically spend at least $10,000 to $20,000 a month on ads.`
+      },
+      {
+        id: 'plus-choose',
+        h2: 'How to choose a Shopify Plus agency',
+        content: `Decide first whether you need a build or growth. For growth, ask for case studies with ad spend shown, who makes the creative, how profit is reported and what happens in the first 30 days.`,
+        list: [
+          'Verified results from real ad accounts, with spend visible',
+          'In-house creative production and a weekly testing cadence',
+          'Reporting on MER, new-customer CAC and contribution margin, not only ROAS',
+          'A clear split of work with your developer for custom builds'
+        ]
+      }
+    ],
+    faqs: [
+      { question: 'What is a Shopify Plus agency?', answer: 'An agency that works with brands on Shopify Plus, Shopify\'s plan for high-volume merchants. Some focus on builds and migrations; others, like Brand Scaling, focus on growth through ads, creative and conversion work.' },
+      { question: 'Do you build Shopify Plus stores?', answer: 'We improve product pages, landing pages, offers and the parts of checkout Plus lets you customize. For full theme builds, custom apps or migrations we work alongside your developer.' },
+      { question: 'Do I need Shopify Plus to work with you?', answer: 'No. Most partners are on standard Shopify plans. Plus adds checkout customization and more automation, which helps at higher volume, but the growth system is the same.' },
+      { question: 'How much does a Shopify Plus agency cost?', answer: 'Agency fees are separate from Shopify\'s Plus plan fee. We quote a monthly fee after the free audit; partners typically spend at least $10,000 to $20,000 a month on ads.' },
+      { question: 'Do you do CRO for Shopify Plus stores?', answer: 'Yes. Most of our CRO work is on Shopify and Shopify Plus, including checkout, offers, bundles and post-purchase upsells, measured on revenue per session.' }
+    ],
+    related: ['/shopify-agency', '/shopify-marketing-agency', '/cro-agency', '/meta-ads-agency', '/locations/new-york', '/services'],
+    cta: {
+      heading: 'Book a Brand Growth Audit',
+      text: 'Book a free audit with Gaurav. We review your ad account, creative, Shopify Plus store and unit economics and tell you what to fix first.'
+    },
+    serviceType: 'Shopify Plus growth agency'
+  },
+  {
     path: '/shopify-marketing-agency',
     kind: 'service',
     updated: '2026-11-20',

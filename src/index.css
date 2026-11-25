@@ -12710,3 +12710,9 @@ a.mobile-drawer-cta { display: flex; width: 100%; }
   .lf-grid { grid-template-columns: 1fr; }
   .lf-modal { padding: 22px 18px; }
 }
+
+/* Footer "Cities we serve" row */
+.st-footer-cities { margin: 0 0 14px; font-size: 13px; line-height: 1.7; color: #94a3b8; }
+.st-footer-cities span { color: #cbd5e1; font-weight: 700; }
+.st-footer-cities a { color: #94a3b8; text-decoration: none; }
+.st-footer-cities a:hover { color: #ff7043; text-decoration: underline; }

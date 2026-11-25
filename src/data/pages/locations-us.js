@@ -1,418 +1,451 @@
-// US location pages: /locations/<city>. Data only.
+// US city pages: /locations/<city>. Data only.
 // Honesty rules: the only office is New York. Every other city is served remotely from New York.
-// No local clients, local statistics or named local companies.
+// No local clients, local reviews or named local companies. Local market facts come from US Census
+// QuickFacts and each one carries its source link. Proof is national and the copy says so.
+// City page plan (owner, 25 Nov 2026): /locations/san-francisco now 301s to /locations.
+
+const CENSUS = (slug) => `https://www.census.gov/quickfacts/fact/table/${slug}`;
+
 export default [
   {
     path: '/locations/new-york',
     kind: 'location',
-    primaryKeyword: 'ecommerce marketing agency new york',
+    updated: '2026-11-25',
+    primaryKeyword: 'shopify agency new york',
+    secondaryKeywords: ['ecommerce agency new york', 'ecommerce marketing agency nyc', 'facebook ads agency new york'],
     location: { city: 'New York', region: 'New York', country: 'US' },
-    titleTag: 'Ecommerce Marketing Agency New York | Brand Scaling',
-    metaDescription: 'Ecommerce marketing agency New York DTC brands can visit: Meta, TikTok, Google and Shopify CRO run from our Manhattan office, with in-person audits.',
-    h1: 'Ecommerce Marketing Agency New York: DTC Growth From Manhattan',
+    titleTag: 'Shopify Agency in New York, NY (NYC) | Brand Scaling',
+    metaDescription: 'Shopify agency in New York for DTC brands: Meta and TikTok ads, creative and Shopify CRO from our Manhattan office. Book your free Brand Growth Audit.',
+    h1: 'Shopify Agency in New York (NYC)',
     eyebrow: 'New York Office',
     quickAnswer: {
-      question: 'Is Brand Scaling an ecommerce marketing agency based in New York?',
-      answer: 'Yes. Brand Scaling is an ecommerce marketing agency headquartered at 27 W 24th Street, Suite 702, New York, NY 10010. We run Meta, TikTok and Google ads, creative, Shopify CRO and Klaviyo retention for DTC brands, and New York founders can book an in-person Brand Growth Audit at the office by appointment.'
+      question: 'Is Brand Scaling a Shopify agency based in New York?',
+      answer: 'Yes. Brand Scaling is headquartered at 27 W 24th Street, Suite 702, New York, NY 10010, and it is our only office. We grow Shopify brands with Meta, TikTok and Google ads, direct-response creative, Shopify CRO and Klaviyo email, and NYC founders can book their audit in person.'
     },
-    intro: `If you want an ecommerce marketing agency New York founders can actually walk into, Brand Scaling is headquartered in Manhattan, and the office at 27 W 24th Street, Suite 702 is the only office we have. Everything we do for brands in London, Toronto, Sydney or California is run from this desk, so a New York brand is simply working with us on home time.
+    intro: `Brand Scaling is a Shopify agency in New York for DTC brands that already sell and want to scale profitably. We run paid acquisition on Meta, TikTok and Google, produce the ad creative, and improve the Shopify store so paid traffic converts. Our partners usually do about $20K to $2M+ a month in revenue and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free Brand Growth Audit, so you see the plan before you commit.
 
-We work with DTC brands selling mostly on Shopify, typically doing about $20K to $2M+ a month and spending at least $10K to $20K a month on paid ads. This page covers what working with us looks like if you are in the city or nearby.`,
+Work starts fast: the first 14 days fix tracking, the offer and the landing pages, and weekly creative testing begins in the first month. New York brands can do the audit at our Manhattan office by appointment.`,
     sections: [
       {
-        id: 'in-person-audit',
-        h2: 'An in-person audit at the office',
-        content: `Every engagement starts with a Brand Growth Audit: a 1-on-1 review with Gaurav of your ad account, creative, store and unit economics. Most audits happen on a video call, but if you are in New York you can ask to do it in person at the office. In-person audits are arranged by appointment, so book first through the contact page and we will confirm a time.
-
-Some founders prefer this because it is easier to open the ad account, the Shopify admin and the margin spreadsheet on one table and work through them together. You leave with a written list of what to fix first, whether or not we work together after.`,
+        id: 'new-york-market',
+        h2: 'New York at a glance for DTC brands',
+        content: `New York City is the most populous city in the US. Three public figures frame the local audience:`,
         list: [
-          'Ad account review: structure, spend split, creative fatigue and what is actually driving purchases',
-          'Creative review: which angles and hooks are carrying the account and which are missing',
-          'Store review: product page, offer, checkout and post-purchase flow',
-          'Unit economics: contribution margin per order and the break-even ROAS your prices allow'
+          'New York City had an estimated 8,478,072 residents on July 1, 2024.',
+          'The 2020 Census counted 8,804,190 people in the city.',
+          'Median household income in the city was $79,713 (2019 to 2023, in 2023 dollars).'
+        ],
+        sources: [{ href: CENSUS('newyorkcitynewyork/PST045224'), text: 'US Census Bureau QuickFacts, New York city' }]
+      },
+      {
+        id: 'office-audit',
+        h2: 'An in-person audit at our Manhattan office',
+        content: `Every engagement starts with a Brand Growth Audit: a 1-on-1 review with founder Gaurav Kapoor of your ad account, creative, Shopify store and unit economics. Most audits run on video, but if you are in the city you can ask to do it at 27 W 24th Street, near Madison Square Park.
+
+Founders often prefer this because the ad account, the Shopify admin and the margin sheet can be opened on one table and worked through together. You leave with a written list of what to fix first, whether or not you hire us.`
+      },
+      {
+        id: 'new-york-services',
+        h2: 'What we run for New York Shopify brands',
+        content: `The work is the same system we run for every partner, set up around your category and margins:`,
+        list: [
+          'Meta ads as the main acquisition engine, with Conversions API tracking checked against Shopify orders',
+          'Shopify CRO: product pages, bundles, post-purchase upsells and a cleaner checkout for paid traffic',
+          'TikTok ads and TikTok Shop for creator-led discovery',
+          'Google Shopping for buyers already searching for the product',
+          'Klaviyo email and SMS so the second order does not depend on more ad spend'
         ]
       },
       {
-        id: 'eastern-time',
-        h2: 'Working on Eastern time',
-        content: `Because the team works on Eastern time, a New York brand gets the same business hours we do. Weekly reporting calls sit in the normal working day, creative feedback can go back and forth within hours, and launch days for drops or sales get watched live rather than reviewed the next morning.
-
-That matters most in Q4. During Black Friday and Cyber Monday we adjust budgets and swap creative through the day, and a brand on the same clock can approve offer changes in real time instead of waiting for a reply from another time zone.`
-      },
-      {
-        id: 'what-we-run',
-        h2: 'What we run for New York brands',
-        content: `New York is commonly associated with fashion, beauty, jewelry and lifestyle brands, and those categories reward the same thing: a steady supply of new creative and a store that converts paid traffic. We run the full growth system rather than one channel in isolation.`,
-        list: [
-          'Meta ads as the main acquisition engine, with Conversions API tracking set up properly',
-          'TikTok ads, Spark Ads and TikTok Shop for creator-led discovery',
-          'Google Shopping and Performance Max for people already searching for the product',
-          'Shopify CRO: product pages, bundles, post-purchase upsells and checkout',
-          'Klaviyo email and SMS flows so the second order does not depend on more ad spend',
-          '30 to 50+ new ad creatives a month built from a 45+ cell hook and angle matrix'
-        ]
-      },
-      {
-        id: 'ninety-days',
-        h2: 'The first 90 days',
-        content: `Foundation runs from day 1 to 14: tracking, offer, margins and the product page. Test runs from day 15 to 45 with weekly creative from the hook and angle matrix. Optimize runs from day 45 to 90 and works on conversion rate, AOV and ROAS. Scale starts after day 90, raising budgets in 20 to 30% steps with cost caps and 40+ assets a month.
-
-Sales tax is worth checking during Foundation. US sales tax is set by states and localities, and once a brand ships enough into other states it can owe tax there too. We do not give tax advice, but we make sure your margin model uses the price the customer actually pays.`
+        id: 'new-york-proof',
+        h2: 'Results from real ad accounts',
+        content: `We have no New York client case studies we can publish, so the proof below is national. Each result links to the full case study with the dashboard screenshots.`
       },
       {
         id: 'pricing-new-york',
-        h2: 'Pricing',
-        content: `We quote after the audit. Agencies usually charge a monthly retainer, a percentage of ad spend, a performance fee or a mix, and the right model depends on your spend and margin. Being local does not change the price; it only changes where the first meeting can happen.`
+        h2: 'Shopify agency pricing in New York',
+        content: `We quote after the audit because the right model depends on your spend and margin. Agencies usually charge a monthly retainer, a percentage of ad spend, a performance fee or a mix. Your ad spend is paid directly to Meta, TikTok and Google on top. Being local does not change the price; it only changes where the audit can happen.`
+      },
+      {
+        id: 'new-york-areas',
+        h2: 'Areas we serve around New York',
+        content: `Manhattan, Brooklyn, Queens, the Bronx and Staten Island, plus Jersey City, Hoboken, Long Island and Westchester. All day-to-day work runs on Eastern time through calls, a shared reporting dashboard and messaging.`
       }
     ],
     proof: [
-      { value: '$50M+', label: 'Meta ad spend managed', note: 'Agency-wide, across our client accounts', href: '/about' },
       { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '150+', label: 'Verified case studies', note: 'Published across 30+ niches', href: '/case-studies' }
+      { value: '$376,256', label: 'Meta purchase value in 25 days', note: 'DTC brand, 2,508 purchases, 1 to 25 Oct 2026', href: '/cases/376000-25-days-dtc-client-meta-ads' },
+      { value: '5.25%', label: 'Store conversion rate', note: 'Clinical skincare store, $61,000 month', href: '/shopify-agency' }
     ],
     faqs: [
-      {
-        question: 'Do you have an office in New York?',
-        answer: 'Yes. Our only office is at 27 W 24th Street, Suite 702, New York, NY 10010. The whole team works from New York on Eastern time, and every client, wherever they are based, is managed from here. If you are in the city, an in-person Brand Growth Audit at the office can be arranged by appointment.'
-      },
-      {
-        question: 'Can I meet the team in person before signing?',
-        answer: 'You can ask for your Brand Growth Audit to happen in person at the office, and we will arrange it by appointment. That is the main in-person meeting we offer. Day-to-day work after that runs through video calls, shared reports and messages, which is how we work with every brand, local or not.'
-      },
-      {
-        question: 'Do you only work with New York brands?',
-        answer: 'No. New York is where we are based, but we work with DTC brands across the US, the UK, Canada and Australia. What matters more than location is fit: a product people already buy, revenue of roughly $20K to $2M+ a month, and a willingness to test creative every week.'
-      },
-      {
-        question: 'What kind of New York brands do you work best with?',
-        answer: 'DTC brands selling on Shopify with product-market fit and at least $10K to $20K a month in paid ad spend. Fashion, beauty, jewelry, supplements and fitness are categories where we have published results, although we have worked in 30+ niches. If you are earlier than that, the audit will still show what to fix first.'
-      },
-      {
-        question: 'How much does an ecommerce marketing agency in New York cost?',
-        answer: 'Agencies in New York and elsewhere usually charge a monthly retainer, a percentage of ad spend, a performance fee or a combination. We quote after the Brand Growth Audit because the right model depends on spend, margin and creative volume. Being based in the city does not change our pricing for local brands.'
-      }
+      { question: 'Do you have an office in New York?', answer: 'Yes. Our only office is at 27 W 24th Street, Suite 702, New York, NY 10010. The whole team works on Eastern time, and every client, wherever they are based, is managed from here.' },
+      { question: 'Can I meet you in person before signing?', answer: 'Yes. You can ask for your Brand Growth Audit to take place at the Manhattan office by appointment. Day-to-day work after that runs through calls and a shared dashboard.' },
+      { question: 'Do you build Shopify stores for NYC brands?', answer: 'We rebuild product pages, landing pages and offers for conversion and handle store builds for paid traffic. For heavy custom app development we work alongside your developer.' },
+      { question: 'Do you run Facebook ads for New York brands?', answer: 'Yes. Meta (Facebook and Instagram) is usually the main acquisition channel, run on broad and Advantage+ campaigns with weekly creative testing and tracking checked against Shopify orders.' },
+      { question: 'How much does a Shopify agency in New York cost?', answer: 'Fees are usually a monthly retainer, a share of ad spend, a performance fee or a mix. We quote after the free audit; partners typically spend at least $10,000 to $20,000 a month on ads.' }
     ],
-    related: [
-      '/locations',
-      '/locations/san-francisco',
-      '/locations/miami',
-      '/meta-ads-agency',
-      '/shopify-agency',
-      '/contact'
-    ],
+    related: ['/locations', '/shopify-agency', '/locations/miami', '/locations/los-angeles', '/for/apparel-fashion', '/for/skincare-beauty'],
     cta: {
       heading: 'Book an audit at our New York office',
       text: 'Book a Brand Growth Audit with Gaurav, on a call or in person at 27 W 24th Street by appointment. You get a clear list of what to fix first.'
     },
-    serviceType: 'Ecommerce performance marketing for brands in New York'
-  },
-  {
-    path: '/locations/san-francisco',
-    kind: 'location',
-    primaryKeyword: 'ecommerce marketing agency san francisco',
-    location: { city: 'San Francisco', region: 'California', country: 'US' },
-    titleTag: 'Ecommerce Marketing Agency San Francisco | Brand Scaling',
-    metaDescription: 'Ecommerce marketing agency San Francisco and Bay Area DTC brands use remotely from New York: paid growth, CCPA-aware tracking and investor-ready reporting.',
-    h1: 'Ecommerce Marketing Agency San Francisco: Remote Growth for Bay Area Brands',
-    eyebrow: 'San Francisco and Bay Area',
-    quickAnswer: {
-      question: 'Can a New York agency be your ecommerce marketing agency in San Francisco?',
-      answer: 'Yes. Brand Scaling has no San Francisco office; we serve Bay Area DTC brands, including Oakland, remotely from New York. We run Meta, TikTok and Google ads, creative, Shopify CRO and retention, schedule calls inside Pacific working hours, and set up tracking with California privacy rules in mind.'
-    },
-    intro: `If you are comparing options for an ecommerce marketing agency San Francisco brands can rely on, be clear on one thing first: Brand Scaling is based in New York and has no office in California. We work with San Francisco, Oakland and wider Bay Area brands remotely, the same way we work with every client outside New York.
-
-What we bring is a paid growth system for DTC brands on Shopify, typically doing about $20K to $2M+ a month. Bay Area brands often come to us with investor targets attached, so this page focuses on how we handle that.`,
-    sections: [
-      {
-        id: 'venture-backed',
-        h2: 'Paid growth for venture-backed DTC brands',
-        content: `Many DTC brands in the Bay Area raise outside capital, and that changes the brief. Investors and boards tend to ask about customer acquisition cost, payback period and contribution margin, not platform ROAS. A Meta dashboard showing 4x can still hide a business that loses money on every first order once shipping, discounts and returns come out.
-
-So we report on the numbers a board actually reads. MER, blended CAC and contribution margin per order sit next to channel ROAS, and we agree the break-even point before scaling budget. That makes it easier to explain a weak week, and harder to fool yourself in a strong one.`,
-        list: [
-          'MER: total revenue divided by total marketing spend, across every channel',
-          'Blended CAC: total marketing spend divided by new customers',
-          'Contribution margin per order after product cost, shipping, fees and discounts',
-          'Payback: how many orders, and how many months, it takes to recover CAC'
-        ]
-      },
-      {
-        id: 'pacific-time',
-        h2: 'How Pacific time scheduling works',
-        content: `San Francisco is three hours behind New York. In practice that gives a comfortable overlap: a late morning call in the Bay Area is early afternoon for us. Weekly reporting calls go in that window, and written reports land before your day starts, so you open the numbers with your coffee rather than waiting for them.
-
-For launches and sale periods we agree who watches what. Budget and creative changes during the US evening are covered by the team in advance, and anything that needs a founder decision is flagged before you log off.`
-      },
-      {
-        id: 'ccpa-tracking',
-        h2: 'CCPA, CPRA and tracking',
-        content: `California brands operate under the California Consumer Privacy Act as amended by the California Privacy Rights Act. Among other things, it gives consumers the right to opt out of the sale or sharing of their personal information, and sharing data for cross-context behavioral advertising can fall under that. Global Privacy Control browser signals are also expected to be honored as an opt-out.
-
-That has a direct effect on ad tracking. Pixels and the Conversions API send customer events to ad platforms, so your consent setup, privacy policy and opt-out link need to match what is actually being sent. We are not lawyers and you should confirm obligations with your own counsel, but during Foundation we map every tag and server event so your legal team can review a real list instead of a guess.`
-      },
-      {
-        id: 'channels-sf',
-        h2: 'What we run',
-        content: `The work is the same system we run for every partner brand. Meta carries most acquisition, TikTok and Spark Ads test creator content, Google Shopping and Performance Max catch active searches, Shopify CRO lifts conversion rate and AOV, and Klaviyo flows bring customers back. Partner brands get 30 to 50+ new creatives a month from a 45+ cell hook and angle matrix.
-
-We start with a Brand Growth Audit on a video call, then move through Foundation, Test, Optimize and Scale over roughly 90 days. Scaling steps are 20 to 30% budget increases with cost caps, which keeps CAC readable for anyone watching it monthly.`
-      },
-      {
-        id: 'pricing-sf',
-        h2: 'Pricing',
-        content: `We quote after the audit. Common agency models are a monthly retainer, a percentage of ad spend, a performance fee or a mix. Funded brands sometimes prefer a fixed retainer because it makes the marketing budget easier to forecast; we will talk through the trade-offs.`
-      }
-    ],
-    proof: [
-      { value: '$374,103', label: 'Revenue in 16 days at 2.82x ROAS', note: 'DTC brand, $132,832 spend, 6,687 units', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
-      { value: '$50M+', label: 'Meta ad spend managed', note: 'Agency-wide, across our client accounts', href: '/about' },
-      { value: '30 to 50+', label: 'New ad creatives a month', note: 'For partner brands, from a 45+ cell matrix', href: '/creative-strategy-agency' }
-    ],
-    faqs: [
-      {
-        question: 'Do you have an office in San Francisco?',
-        answer: 'No. Brand Scaling has one office, in New York at 27 W 24th Street, Suite 702. We serve San Francisco, Oakland and other Bay Area brands remotely from there, with calls scheduled inside Pacific working hours. We do not have a local team or hold local meetings, and we would rather say that plainly up front.'
-      },
-      {
-        question: 'Do you work with brands in Oakland and the rest of the Bay Area?',
-        answer: 'Yes. Because all of our client work is remote from New York, it makes no difference whether a brand is in San Francisco, Oakland, the East Bay or the Peninsula. What matters is fit: a DTC brand with product-market fit, roughly $20K to $2M+ in monthly revenue, and paid ad spend of at least $10K to $20K a month.'
-      },
-      {
-        question: 'How does CCPA affect Meta and TikTok ads for California brands?',
-        answer: 'CCPA, as amended by CPRA, lets California consumers opt out of the sale or sharing of their personal information, which can include data sent to ad platforms for targeting. That affects pixels and Conversions API events. Your consent setup and opt-out handling should match what is sent. We document the tracking; your counsel confirms the legal requirements.'
-      },
-      {
-        question: 'Can you report in a format our investors will understand?',
-        answer: 'Yes. Alongside platform ROAS we report MER, blended CAC, contribution margin per order and payback, which are the figures boards usually ask about. We agree definitions and the break-even point at the start, so the monthly numbers mean the same thing every month and can be dropped straight into an investor update.'
-      },
-      {
-        question: 'What time are calls for a Bay Area brand?',
-        answer: 'San Francisco is three hours behind New York, so we schedule calls from late morning Pacific time, which is early afternoon for our team. Written weekly reports are sent before your working day starts. During sale periods we agree in advance who covers changes in the US evening, so nothing waits overnight for a reply.'
-      }
-    ],
-    related: [
-      '/locations',
-      '/locations/los-angeles',
-      '/locations/new-york',
-      '/meta-ads-agency',
-      '/glossary/conversions-api',
-      '/tools/mer-calculator'
-    ],
-    cta: {
-      heading: 'Book a Brand Growth Audit from the Bay Area',
-      text: 'Book a video audit with Gaurav at a Pacific-friendly time. We review your ad account, creative, store and unit economics and tell you what to fix first.'
-    },
-    serviceType: 'Ecommerce performance marketing for brands in San Francisco and the Bay Area'
+    serviceType: 'Shopify agency and ecommerce marketing for brands in New York'
   },
   {
     path: '/locations/los-angeles',
     kind: 'location',
-    primaryKeyword: 'ecommerce marketing agency los angeles',
+    updated: '2026-11-25',
+    primaryKeyword: 'shopify agency los angeles',
+    secondaryKeywords: ['ecommerce agency los angeles', 'shopify developer los angeles', 'facebook ads agency los angeles'],
     location: { city: 'Los Angeles', region: 'California', country: 'US' },
-    titleTag: 'Ecommerce Marketing Agency Los Angeles | Brand Scaling',
-    metaDescription: 'Ecommerce marketing agency Los Angeles DTC brands work with remotely from New York: TikTok, creator and UGC ads, Meta, Shopify CRO and CCPA-aware tracking.',
-    h1: 'Ecommerce Marketing Agency Los Angeles: Creator-Led DTC Growth',
+    titleTag: 'Shopify and Ecommerce Agency in Los Angeles | Brand Scaling',
+    metaDescription: 'Shopify and ecommerce agency for Los Angeles DTC brands: Meta and TikTok ads, creator content and Shopify CRO, run remotely. Book a free growth audit.',
+    h1: 'Shopify and Ecommerce Agency in Los Angeles',
     eyebrow: 'Los Angeles',
     quickAnswer: {
-      question: 'What does an ecommerce marketing agency do for Los Angeles brands?',
-      answer: 'For Los Angeles DTC brands, an ecommerce marketing agency turns creator and UGC content into paid ads that scale on TikTok and Meta, then fixes the store and email flows behind them. Brand Scaling does this remotely from New York; we have no Los Angeles office, and we schedule calls in Pacific hours.'
+      question: 'Can a New York agency be your Shopify and ecommerce agency in Los Angeles?',
+      answer: 'Yes. Brand Scaling has no Los Angeles office; we serve LA brands remotely from New York with calls scheduled in Pacific time. We run Meta and TikTok ads, creator-led creative, Google Shopping and Shopify CRO for DTC brands doing about $20K to $2M+ a month.'
     },
-    intro: `Brand Scaling works as the ecommerce marketing agency Los Angeles brands can hire without a local office: we serve LA remotely from our only office, in New York. We do not have a team or office in LA, and we do not need one to do the work: ad accounts, creative briefs and Shopify stores are all managed online.
+    intro: `Brand Scaling works as the Shopify and ecommerce agency for Los Angeles DTC brands that want paid growth without hiring a full in-house team. We are based in New York and work with LA brands remotely, so be clear on that from the start: there is no LA office. What you get is one team that runs Meta and TikTok ads, produces the creative, and fixes the store so the traffic converts.
 
-Los Angeles is commonly associated with creator-led categories such as beauty, apparel, wellness and fitness, where content volume decides who scales. That is the angle of this page: how we turn creator content into paid growth, for DTC brands doing roughly $20K to $2M+ a month.`,
+Partners typically do $20K to $2M+ a month and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free Brand Growth Audit, and the first 14 days go to tracking, the offer and the landing pages before scaling starts.`,
     sections: [
       {
-        id: 'creator-ugc',
-        h2: 'Creator and UGC-heavy categories',
-        content: `Brands in creator-led categories usually have plenty of content and not enough system. Posts that did well organically get boosted at random, creators are paid for one video with no plan for the next, and nobody knows which hook actually sold. The fix is to treat creator content as raw material for a testing machine.
-
-We brief creators against a 45+ cell hook and angle matrix (five angles, three hook styles, three formats), so every video tests a specific idea. Partner brands get 30 to 50+ new creatives a month, including UGC produced through our sister studio SevenFigureStudio when a brand needs more volume than its own creators supply.`,
+        id: 'los-angeles-market',
+        h2: 'The Los Angeles market in numbers',
+        content: `Los Angeles is the second largest city in the US. These Census figures show the size of the local audience a Shopify brand can reach with paid social:`,
         list: [
-          'Hooks briefed one per video, so results show which opening worked',
-          'Raw phone footage edited into several cuts instead of one polished ad',
-          'Usage rights agreed in writing before paid use, including length of use',
-          'Winners moved from TikTok to Meta and back, rather than living on one platform'
+          'Los Angeles city had an estimated 3,878,704 residents on July 1, 2024.',
+          'The city counted about 1,419,663 households (2019 to 2023).',
+          'Median household income in the city was $80,366 (2019 to 2023, in 2023 dollars).'
+        ],
+        sources: [{ href: CENSUS('losangelescitycalifornia/PST045224'), text: 'US Census Bureau QuickFacts, Los Angeles city' }]
+      },
+      {
+        id: 'creator-led',
+        h2: 'Creator-led ads for LA brands',
+        content: `Many LA founders already have creators, friends of the brand or a founder face that sells on camera. We turn that into a system: every product gets a hook and angle matrix of 45+ cells, creators film to briefs built from real customer language, and we test 30 to 50+ new ads a month so winners are ready before the current ones fatigue.
+
+The same footage then feeds TikTok Spark Ads, Meta ads and the product page, so one shoot pays three times.`
+      },
+      {
+        id: 'los-angeles-services',
+        h2: 'Services for Los Angeles DTC brands',
+        content: `Most LA partners use a mix of these, set up around the category and margin:`,
+        list: [
+          'Meta and Instagram ads with weekly creative testing',
+          'TikTok ads, Spark Ads and TikTok Shop for beauty, fashion and wellness products',
+          'Shopify store work: product pages, bundles and checkout built for paid traffic',
+          'Google Shopping for people already searching for the product',
+          'Klaviyo email and SMS flows that turn first orders into repeat buyers'
         ]
       },
       {
-        id: 'tiktok-la',
-        h2: 'TikTok, Spark Ads and TikTok Shop',
-        content: `For creator-heavy brands TikTok is usually where new angles are found fastest. Spark Ads let you put paid budget behind an existing organic post, keeping its likes and comments, which often reads as more native than a fresh ad. TikTok Shop adds in-app checkout and a creator affiliate program, where creators earn commission on the sales they drive.
-
-On Meta, partnership ads do a similar job by running ads through a creator's handle with their permission. We run both, and we keep the measurement honest: TikTok often starts demand that converts later on Meta, Google or email, so we look at blended results as well as in-platform numbers.`
+        id: 'pacific-time',
+        h2: 'Working across time zones',
+        content: `New York is three hours ahead of Los Angeles, so we schedule weekly calls in your morning and use the head start to have reports and new creative ready when your day begins. During Q4 we watch budgets through the evening Pacific time, when West Coast shoppers are most active.`
       },
       {
-        id: 'disclosure-privacy',
-        h2: 'Disclosure, CCPA and CPRA',
-        content: `Two rules matter more than usual for creator-led brands. First, the FTC's Endorsement Guides apply nationwide and require creators to disclose a material connection, such as payment or free product. Branded content tools and clear on-screen disclosure handle most of this.
-
-Second, as a California business you operate under CCPA as amended by CPRA, which lets consumers opt out of the sale or sharing of their personal information, including data used for cross-context behavioral advertising. Pixels, Conversions API events and affiliate tracking all send data out, so we map them during Foundation for your counsel to review.`
+        id: 'los-angeles-proof',
+        h2: 'Proof from client ad accounts',
+        content: `We have no Los Angeles case studies we can publish, so these results are national. Each links to the full case study.`
       },
       {
-        id: 'process-la',
-        h2: 'How the work runs from New York',
-        content: `It starts with a Brand Growth Audit on a video call with Gaurav: ad account, creative, store and unit economics. Then Foundation (days 1 to 14) for tracking, offer, margins and product page, Test (days 15 to 45) for weekly creative, Optimize (45 to 90) for conversion rate, AOV and ROAS, and Scale (90+) in 20 to 30% budget steps.
-
-Los Angeles is three hours behind New York. Creative reviews are scheduled in the Pacific late morning, and raw footage from your creators goes into a shared folder so editing can start on our side first thing the next Eastern morning. Weekly reports arrive before your day begins, with the top hooks and the cuts queued for the coming week.`
+        id: 'pricing-los-angeles',
+        h2: 'Pricing for LA brands',
+        content: `We quote after the free audit. The model is a monthly fee, sometimes combined with a share of ad spend or a performance fee, plus your own ad spend paid to the platforms. There is no extra charge for working remotely.`
       },
       {
-        id: 'pricing-la',
-        h2: 'Pricing',
-        content: `We quote after the audit. Agencies typically use a monthly retainer, a percentage of ad spend, a performance fee or a mix. Creator fees and product seeding are usually a separate budget line from management, and we help you plan both.`
+        id: 'los-angeles-areas',
+        h2: 'Areas we serve around Los Angeles',
+        content: `Santa Monica, Venice, Culver City, West Hollywood, Pasadena, Burbank, Glendale, Long Beach and Orange County. Every client is served the same way: remote, with scheduled calls and a shared dashboard.`
       }
     ],
     proof: [
-      { value: '$80,000', label: 'In 24 hours, 862 orders', note: 'DTC fitness brand', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
-      { value: '$12,496', label: 'From $2,210 ad spend in one day', note: 'Fashion apparel brand', href: '/cases/fashion-apparel-brand-cracked-code-2210-ad-spend-turned-into' },
-      { value: '45+', label: 'Cell hook and angle matrix', note: '5 angles x 3 hook styles x 3 formats, agency-wide method', href: '/blog/scale-ugc-production' }
+      { value: '$59,241', label: 'BFCM sales at 3.56x ROAS', note: 'Women’s fashion brand, $16,630 spend', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
+      { value: '$146,184', label: 'Sales in 27 days at 3.64x ROAS', note: 'Skincare brand, 957 orders', href: '/cases/q4-here-it-biggest-money-making-season-year' },
+      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' }
     ],
     faqs: [
-      {
-        question: 'Do you have an office in Los Angeles?',
-        answer: 'No. Our only office is in New York, at 27 W 24th Street, Suite 702. We serve Los Angeles brands remotely, with calls in Pacific working hours and creative shared through online folders. We do not have a local team, run local shoots or hold meetups in LA, and we prefer to be clear about that before you book.'
-      },
-      {
-        question: 'Can you work with the creators we already use?',
-        answer: 'Yes. If you have creators or an affiliate roster, we brief them against the hook and angle matrix so each video tests a clear idea, then cut their footage into multiple ad versions. Where you need more volume, our sister studio SevenFigureStudio produces UGC. Usage rights for paid ads should be agreed with each creator in writing.'
-      },
-      {
-        question: 'Is TikTok or Meta better for a Los Angeles creator-led brand?',
-        answer: 'Usually both, in different roles. TikTok is fast for finding new angles and works well with Spark Ads and TikTok Shop affiliates. Meta tends to carry more of the profitable scale once an angle is proven. We test on both and judge them on blended results, because TikTok often creates demand that is captured on other channels later.'
-      },
-      {
-        question: 'Do creators have to disclose paid partnerships in ads?',
-        answer: "Yes. The FTC's Endorsement Guides require creators to disclose a material connection to the brand, such as payment, commission or free product. On TikTok and Meta that usually means using the platform's branded content or paid partnership label and clear wording in the video or caption. We build disclosure into briefs rather than fixing it after launch."
-      },
-      {
-        question: 'How does CCPA affect tracking for an LA ecommerce brand?',
-        answer: 'CCPA, as amended by CPRA, gives California consumers the right to opt out of the sale or sharing of personal information, including for cross-context behavioral advertising. Pixels, Conversions API events and affiliate links can all involve sharing. We document what each one sends so your counsel can confirm the consent and opt-out setup you need.'
-      }
+      { question: 'Do you have an office in Los Angeles?', answer: 'No. Our only office is in New York. We serve Los Angeles brands remotely, with calls scheduled in Pacific time and a shared reporting dashboard.' },
+      { question: 'Are you a Shopify developer in Los Angeles?', answer: 'We are a growth agency, not a theme development shop. We rebuild product pages, landing pages and offers for conversion, and work with your developer when custom app work is needed.' },
+      { question: 'Can you use our own creators and founder content?', answer: 'Yes. We brief your creators or our network with a hook and angle matrix, then test the footage across Meta, TikTok and the product page.' },
+      { question: 'Do you run Facebook ads for Los Angeles brands?', answer: 'Yes. Meta is usually the main channel, run on broad and Advantage+ campaigns with weekly creative testing and Conversions API tracking.' },
+      { question: 'How much does an ecommerce agency in Los Angeles cost?', answer: 'Most agencies charge a monthly retainer, a share of ad spend or a mix. We quote after the free audit, and partners typically spend at least $10,000 to $20,000 a month on ads.' }
     ],
-    related: [
-      '/locations',
-      '/locations/san-francisco',
-      '/locations/miami',
-      '/tiktok-ads-agency',
-      '/influencer-marketing-agency',
-      '/blog/ugc-ads-for-dtc'
-    ],
+    related: ['/locations', '/shopify-agency', '/locations/new-york', '/locations/miami', '/for/skincare-beauty', '/for/apparel-fashion'],
     cta: {
-      heading: 'Book a Brand Growth Audit from Los Angeles',
-      text: 'Book a video audit with Gaurav at a Pacific-friendly time. We review your creative, ad accounts, store and margins and show you what to fix first.'
+      heading: 'Book a Brand Growth Audit',
+      text: 'Book a video audit with Gaurav at a time that suits Pacific time. We review your ad account, creative, store and unit economics and tell you what to fix first.'
     },
-    serviceType: 'Ecommerce performance marketing for brands in Los Angeles'
+    serviceType: 'Shopify and ecommerce marketing for brands in Los Angeles'
   },
   {
     path: '/locations/miami',
     kind: 'location',
-    primaryKeyword: 'ecommerce marketing agency miami',
+    updated: '2026-11-25',
+    primaryKeyword: 'facebook ads agency miami',
+    secondaryKeywords: ['ecommerce agency miami', 'ecommerce marketing agency miami'],
     location: { city: 'Miami', region: 'Florida', country: 'US' },
-    titleTag: 'Ecommerce Marketing Agency Miami | Brand Scaling',
-    metaDescription: 'Ecommerce marketing agency Miami DTC brands work with from New York on the same Eastern time: bilingual ad creative, Meta, TikTok and LatAm shipping.',
-    h1: 'Ecommerce Marketing Agency Miami: Bilingual DTC Growth on Eastern Time',
+    titleTag: 'Facebook Ads and Ecommerce Agency in Miami | Brand Scaling',
+    metaDescription: 'Facebook ads and ecommerce agency for Miami DTC brands: Meta and Instagram ads, creative testing and Shopify CRO on Eastern time. Book a free audit now.',
+    h1: 'Facebook Ads and Ecommerce Agency in Miami',
     eyebrow: 'Miami',
     quickAnswer: {
-      question: 'Who can be an ecommerce marketing agency for a Miami brand?',
-      answer: 'Brand Scaling works with Miami DTC brands remotely from our New York office, on the same Eastern time zone. We run Meta, TikTok and Google ads, Shopify CRO and retention, and help brands test English and Spanish creative for US Hispanic audiences and plan for shipping into Latin America. We have no Miami office.'
+      question: 'Who runs Facebook ads for Miami ecommerce brands?',
+      answer: 'Brand Scaling runs Facebook and Instagram ads for Miami DTC brands, remotely from our New York office on the same Eastern time zone. We manage Meta campaigns, produce the ad creative and improve the Shopify store for brands doing about $20K to $2M+ a month.'
     },
-    intro: `Brand Scaling is the ecommerce marketing agency Miami brands can work with from New York. We have no office or team in Miami; our only office is at 27 W 24th Street in Manhattan. The upside is that both cities sit on Eastern time, so working hours line up exactly.
+    intro: `Brand Scaling is a Facebook ads and ecommerce agency for Miami DTC brands. We do not have a Miami office; we work with South Florida brands from New York, on the same Eastern time zone, so calls, approvals and Q4 budget changes happen in the same working day.
 
-We work with DTC brands on Shopify, typically doing about $20K to $2M+ a month. For Miami brands two questions come up more often than elsewhere: how to advertise in both English and Spanish, and whether to sell into Latin America. This page covers both.`,
+Meta is usually the main channel: broad and Advantage+ campaigns fed by weekly creative tests, with tracking checked against Shopify orders. Partners typically do $20K to $2M+ a month and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free Brand Growth Audit, and the first 14 days fix tracking, the offer and the landing pages.`,
     sections: [
       {
-        id: 'bilingual-creative',
-        h2: 'Bilingual creative for US Hispanic audiences',
-        content: `Many US Hispanic shoppers are bilingual and move between English and Spanish depending on the platform and the moment, so there is no single right language. The useful question is which version sells better for your product, and that is something to test rather than assume.
-
-We treat Spanish creative as its own set of angles, not a translation of the English ads. A hook that works in English can fall flat when translated word for word, so we brief native-speaking creators and write the script in Spanish from the start. Meta does not allow targeting by ethnicity, so language versions, creative and the audience's response do the work instead.`,
+        id: 'miami-market',
+        h2: 'Miami market facts',
+        content: `The city of Miami sits inside a much larger county market. Public Census figures:`,
         list: [
-          'English, Spanish and mixed-language versions of the same angle tested side by side',
-          'Scripts written natively in Spanish, not machine translated',
-          'Product pages and checkout copy that match the language of the ad',
-          'Email and SMS flows with a language preference captured at signup'
+          'The city of Miami had an estimated 455,924 residents on July 1, 2023, up from 442,241 in the 2020 Census.',
+          'Per capita income in the city was $42,528 (2019 to 2023, in 2023 dollars).',
+          'Miami-Dade County had an estimated 2,802,029 residents on July 1, 2025.'
+        ],
+        sources: [
+          { href: CENSUS('miamicityflorida/PST045223'), text: 'US Census Bureau QuickFacts, Miami city' },
+          { href: CENSUS('miamidadecountyflorida/PST045225'), text: 'Miami-Dade County' }
         ]
       },
       {
-        id: 'latin-america-shipping',
-        h2: 'Shipping into Latin America',
-        content: `Selling from the US into Latin America is a different business from selling domestically. Each country has its own customs process, import duties and taxes, and delivery can take longer with more points of failure. The biggest conversion risk is a surprise charge at the door, so the choice between collecting duties at checkout (DDP) or leaving them to the buyer (DDU) matters for both conversion rate and returns.
+        id: 'facebook-ads-miami',
+        h2: 'How we run Facebook and Instagram ads',
+        content: `We keep the account simple: one main broad or Advantage+ sales campaign for scale, one cost-capped campaign that protects margin on expensive days, and a separate testing campaign where new hooks and angles prove themselves before they get budget. Budgets rise about 20% at a time while blended MER and new-customer CAC hold.
 
-Before we spend on ads in a new country we check the basics: landed cost, delivery times, returns and payment methods. Shopify Markets can show local currency and handle duties for some setups. If the numbers do not work, we say so and keep spend in the US until they do.`,
-        table: {
-          headers: ['Question', 'Why it matters for ads'],
-          rows: [
-            ['Who pays duties and import taxes?', 'Surprise charges on delivery hurt reviews and repeat orders'],
-            ['How long does delivery take?', 'Long waits raise refund requests and chargebacks'],
-            ['Can you show local currency?', 'Prices in US dollars can lower conversion rate'],
-            ['What does a return cost?', 'Expensive returns change your break-even ROAS']
-          ]
-        }
+The real lever is creative volume. Each product gets a 45+ cell hook and angle matrix, and 30 to 50+ new ads a month go into testing so the account never runs on tired ads.`
       },
       {
-        id: 'what-we-run-miami',
-        h2: 'What we run for Miami brands',
-        content: `Miami is commonly associated with fashion, swimwear, beauty, fitness and wellness brands, categories where creative volume and seasonality matter. Florida's warm climate also means summer-style products can sell year round to local buyers while the rest of the country is in winter, so we check where orders actually come from before planning seasonal budgets.
-
-The channel mix is the same system we run everywhere, adjusted for language.`,
+        id: 'miami-services',
+        h2: 'Services for Miami ecommerce brands',
+        content: `Beyond Meta, Miami partners usually add one or more of these:`,
         list: [
-          'Meta ads as the main acquisition channel, with English and Spanish creative in the same campaigns',
-          'TikTok ads and Spark Ads for creator-led content in both languages',
-          'Google Shopping and Performance Max for active product searches',
-          'Shopify CRO and Klaviyo email and SMS flows that respect each customer\'s language'
+          'Shopify CRO: product pages, offers and checkout built to convert paid traffic',
+          'TikTok ads and TikTok Shop for products that sell on camera',
+          'Google Shopping for buyers already searching',
+          'Klaviyo email and SMS flows for repeat orders'
         ]
       },
       {
-        id: 'eastern-time-miami',
-        h2: 'Same time zone, remote team',
-        content: `Because Miami and New York share Eastern time, reporting calls, creative reviews and launch-day changes all happen in the same working day. During Q4 and Black Friday we can adjust budgets and creative while you are online to approve offers, with no overnight gap.
+        id: 'miami-tracking',
+        h2: 'Tracking you can trust before budgets grow',
+        content: `Scaling Facebook ads on broken tracking means scaling the wrong ads. In the first two weeks we check that the Meta pixel and the Conversions API both send purchases, compare Meta's reported orders with Shopify's real orders, and set a break-even ROAS for every product from your actual margins.
 
-The process is the same for every brand: a Brand Growth Audit on a video call, then Foundation, Test, Optimize and Scale over roughly 90 days, with 30 to 50+ new creatives a month for partner brands.`
+From then on, weekly reports lead with blended MER and new-customer CAC from Shopify, with platform ROAS used to manage campaigns rather than to judge them. That keeps decisions honest when several channels claim the same sale.`
+      },
+      {
+        id: 'miami-proof',
+        h2: 'Published results',
+        content: `We have no Miami client case studies we can publish, so this proof is national. Each result links to the case study with the ad account screenshots.`
       },
       {
         id: 'pricing-miami',
-        h2: 'Pricing',
-        content: `We quote after the audit. Agencies usually charge a monthly retainer, a percentage of ad spend, a performance fee or a mix. Adding Spanish creative or a new country is planned as part of the creative and testing budget, not bolted on later.`
+        h2: 'What it costs',
+        content: `We quote after the free audit. Agencies usually charge a monthly retainer, a share of ad spend, a performance fee or a mix, and your ad spend is paid to Meta and the other platforms directly.`
+      },
+      {
+        id: 'miami-areas',
+        h2: 'Areas we serve around Miami',
+        content: `Miami Beach, Brickell, Wynwood, Coral Gables, Doral, Hialeah, Aventura, Fort Lauderdale and Boca Raton, all served remotely on Eastern time.`
       }
     ],
     proof: [
-      { value: '$449,221', label: 'In 49 days', note: 'Dropshipping brand, Q4 run-up', href: '/cases/449221-last-49-days-newer-client-dropshipping-brands-starting' },
-      { value: '30+', label: 'Niches worked in', note: 'Agency-wide, across our client accounts', href: '/case-studies' },
-      { value: '$50M+', label: 'Meta ad spend managed', note: 'Agency-wide, across our client accounts', href: '/about' }
+      { value: '$307,950', label: 'Revenue in 30 days', note: 'Fitness brand, 2,053 units sold', href: '/cases/307950-revenue-fitness-brand-2053-units-30-days' },
+      { value: '$52,000', label: 'Sales in 17 days at 4.51x ROAS', note: 'Supplement brand, $11,586 spend', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '$146,184', label: 'Sales in 27 days at 3.64x ROAS', note: 'Skincare brand, 957 orders', href: '/cases/q4-here-it-biggest-money-making-season-year' }
     ],
     faqs: [
-      {
-        question: 'Do you have an office in Miami?',
-        answer: 'No. Our only office is in New York, at 27 W 24th Street, Suite 702. We serve Miami brands remotely, and because both cities are on Eastern time, calls and reporting happen in the same working hours. We do not have a local team or hold meetings in Miami, and we would rather say so clearly before you book an audit.'
-      },
-      {
-        question: 'Should a Miami brand run ads in English or Spanish?',
-        answer: 'Often both, and the answer comes from testing. Many US Hispanic shoppers are bilingual, so we run English, Spanish and mixed-language versions of the same angle and let purchases decide. Spanish ads should be written natively by Spanish speakers rather than translated, and the product page should match the language of the ad that sent the visitor.'
-      },
-      {
-        question: 'Can you target Hispanic audiences on Meta?',
-        answer: 'Not by ethnicity. Meta does not offer ethnicity-based targeting, so we rely on language, location, creative and broad targeting that learns from who buys. Spanish-language creative with native speakers tends to find its audience through the algorithm. We measure results by purchases and contribution margin, not by assumptions about who is seeing the ads.'
-      },
-      {
-        question: 'Is it worth selling into Latin America from Miami?',
-        answer: 'It can be, but only once landed cost works. Duties, import taxes, delivery times, returns and payment methods vary by country, and any of them can erase the margin. We check those numbers before spending on ads in a new country. If they do not work, we keep budget focused on the US until they do.'
-      },
-      {
-        question: 'What does a Miami brand need to start working with you?',
-        answer: 'A DTC brand on Shopify with product-market fit, roughly $20K to $2M+ a month in revenue and at least $10K to $20K a month in ad spend is the usual fit. The first step is a Brand Growth Audit on a video call with Gaurav, covering your ad account, creative, store and unit economics, with a list of what to fix first.'
-      }
+      { question: 'Do you have an office in Miami?', answer: 'No. Our only office is in New York, on the same Eastern time zone as Miami, and we serve South Florida brands remotely.' },
+      { question: 'Are you a Facebook ads agency for Miami ecommerce brands?', answer: 'Yes. Meta (Facebook and Instagram) is usually the main channel we run, with weekly creative testing, cost controls and tracking checked against Shopify orders.' },
+      { question: 'Which brands do you work with in Miami?', answer: 'DTC brands selling on Shopify with proven demand, doing about $20K to $2M+ a month and spending at least $10,000 to $20,000 a month on ads.' },
+      { question: 'How fast do Miami brands see results?', answer: 'The first 14 days fix tracking, the offer and landing pages. New creative tests start in the first month, and budgets grow once winning ads hold their cost per new customer.' },
+      { question: 'How much does a Facebook ads agency in Miami cost?', answer: 'Fees are usually a monthly retainer, a share of ad spend or a mix, plus your ad spend. We quote after the free Brand Growth Audit.' }
     ],
-    related: [
-      '/locations',
-      '/locations/new-york',
-      '/locations/los-angeles',
-      '/meta-ads-agency',
-      '/creative-strategy-agency',
-      '/tools/break-even-roas-calculator'
-    ],
+    related: ['/locations', '/meta-ads-agency', '/locations/new-york', '/locations/austin', '/for/fitness', '/for/supplements'],
     cta: {
-      heading: 'Book a Brand Growth Audit from Miami',
+      heading: 'Book a Brand Growth Audit',
       text: 'Book a video audit with Gaurav on Eastern time. We review your ad account, creative, store and unit economics and tell you what to fix first.'
     },
-    serviceType: 'Ecommerce performance marketing for brands in Miami'
+    serviceType: 'Facebook ads and ecommerce marketing for brands in Miami'
+  },
+  {
+    path: '/locations/austin',
+    kind: 'location',
+    updated: '2026-11-25',
+    primaryKeyword: 'shopify agency austin',
+    secondaryKeywords: ['facebook ads agency austin', 'ecommerce agency austin'],
+    location: { city: 'Austin', region: 'Texas', country: 'US' },
+    titleTag: 'Shopify and Facebook Ads Agency in Austin | Brand Scaling',
+    metaDescription: 'Shopify and Facebook ads agency for Austin DTC brands: Meta and TikTok ads, creative and Shopify CRO, run remotely on Central time. Book a free audit.',
+    h1: 'Shopify and Facebook Ads Agency in Austin',
+    eyebrow: 'Austin',
+    quickAnswer: {
+      question: 'Is there a Shopify and Facebook ads agency for Austin DTC brands?',
+      answer: 'Brand Scaling works with Austin DTC brands remotely from New York, one hour ahead of Central time. We run Facebook, Instagram and TikTok ads, produce the creative and improve the Shopify store for brands doing about $20K to $2M+ a month that want profitable scale.'
+    },
+    intro: `Brand Scaling is a Shopify and Facebook ads agency for Austin DTC brands that have found product-market fit and now need paid growth that stays profitable. We have no Austin office; we work with Texas brands remotely from New York, and the one-hour time difference means calls and approvals fit easily in the same working day.
+
+We run Meta and TikTok ads, produce the ad creative and fix the Shopify store so paid traffic converts. Partners typically do $20K to $2M+ a month and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free Brand Growth Audit, and the first 14 days fix tracking, the offer and the landing pages before budgets grow.`,
+    sections: [
+      {
+        id: 'austin-market',
+        h2: 'Austin by the numbers',
+        content: `Austin has grown quickly over the last decade. Census figures:`,
+        list: [
+          'Austin had an estimated 979,882 residents on July 1, 2023.',
+          'The city grew from 790,390 people in the 2010 Census to 961,855 in the 2020 Census.',
+          'Median household income was $91,461 (2019 to 2023, in 2023 dollars).'
+        ],
+        sources: [{ href: CENSUS('austincitytexas/PST045223'), text: 'US Census Bureau QuickFacts, Austin city' }]
+      },
+      {
+        id: 'austin-early-stage',
+        h2: 'From founder-run ads to a growth system',
+        content: `Many brands reach us after the founder has run the ads alone for the first year. The account works, but it has too many small campaigns, tracking that does not match Shopify, and creative that depends on whoever had time that week. We consolidate the account, fix tracking against real orders, and set up a weekly creative cadence from a 45+ cell hook and angle matrix so new winners keep arriving.
+
+The goal for the first 90 days is simple: a stable CPA at a higher daily budget, measured on blended MER and contribution margin, not just platform ROAS.`
+      },
+      {
+        id: 'austin-services',
+        h2: 'What we run for Austin brands',
+        content: `Depending on the category and margin, Austin partners use:`,
+        list: [
+          'Facebook and Instagram ads as the main acquisition engine',
+          'Shopify CRO: product pages, bundles, upsells and checkout',
+          'TikTok ads and TikTok Shop for demo-friendly products',
+          'Google Shopping for search demand',
+          '30 to 50+ new ad creatives a month'
+        ]
+      },
+      {
+        id: 'austin-proof',
+        h2: 'Published results',
+        content: `We have no Austin client case studies we can publish, so these results are national. Each links to the full case study.`
+      },
+      {
+        id: 'pricing-austin',
+        h2: 'Pricing',
+        content: `A monthly fee quoted after the free audit, sometimes combined with a share of ad spend, plus your ad spend paid directly to the platforms. Working remotely does not change the price.`
+      },
+      {
+        id: 'austin-areas',
+        h2: 'Areas we serve around Austin',
+        content: `Round Rock, Cedar Park, Georgetown, Pflugerville, Leander, Kyle, San Marcos and the rest of Central Texas, all served remotely.`
+      }
+    ],
+    proof: [
+      { value: '$376,256', label: 'Meta purchase value in 25 days', note: 'DTC brand, 2,508 purchases, 1 to 25 Oct 2026', href: '/cases/376000-25-days-dtc-client-meta-ads' },
+      { value: '$54K', label: 'Sales in 7 days with manual bidding', note: 'Jewelry brand', href: '/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry' },
+      { value: '5.25%', label: 'Store conversion rate', note: 'Clinical skincare store, $61,000 month', href: '/shopify-agency' }
+    ],
+    faqs: [
+      { question: 'Do you have an office in Austin?', answer: 'No. Our only office is in New York. We serve Austin and Central Texas brands remotely, one hour ahead of Central time.' },
+      { question: 'Are you a Shopify agency for Austin brands?', answer: 'Yes, for growth: we improve product pages, offers and checkout for paid traffic and run the ads that bring the traffic. For custom app development we work with your developer.' },
+      { question: 'Do you run Facebook ads for Austin ecommerce brands?', answer: 'Yes. Meta is usually the main channel, run on broad and Advantage+ campaigns with weekly creative testing and tracking checked against Shopify orders.' },
+      { question: 'What size of Austin brand do you work with?', answer: 'DTC brands with proven demand, doing about $20K to $2M+ a month and spending at least $10,000 to $20,000 a month on ads.' },
+      { question: 'Can you take over ads the founder has been running?', answer: 'Yes. We keep what already works, consolidate the account into fewer campaigns, fix tracking against Shopify orders and add a weekly creative cadence, so results do not dip during the handover.' },
+      { question: 'How much does a Facebook ads agency in Austin cost?', answer: 'Usually a monthly retainer, a share of ad spend or a mix, plus your ad spend. We quote after the free Brand Growth Audit.' }
+    ],
+    related: ['/locations', '/shopify-agency', '/locations/dallas', '/locations/miami', '/for/jewelry', '/for/outdoor'],
+    cta: {
+      heading: 'Book a Brand Growth Audit',
+      text: 'Book a video audit with Gaurav at a time that suits Central time. We review your ad account, creative, store and unit economics and tell you what to fix first.'
+    },
+    serviceType: 'Shopify and Facebook ads agency for brands in Austin'
+  },
+  {
+    path: '/locations/dallas',
+    kind: 'location',
+    updated: '2026-11-25',
+    primaryKeyword: 'shopify agency dallas',
+    secondaryKeywords: ['facebook ads agency dallas', 'ecommerce agency dallas'],
+    location: { city: 'Dallas', region: 'Texas', country: 'US' },
+    titleTag: 'Shopify and Facebook Ads Agency in Dallas | Brand Scaling',
+    metaDescription: 'Shopify and Facebook ads agency for Dallas and DFW DTC brands: Meta ads, creative testing, Google Shopping and Shopify CRO. Book a free Brand Growth Audit.',
+    h1: 'Shopify and Facebook Ads Agency in Dallas',
+    eyebrow: 'Dallas',
+    quickAnswer: {
+      question: 'Who can run Shopify growth and Facebook ads for a Dallas brand?',
+      answer: 'Brand Scaling runs Facebook and Instagram ads, Google Shopping and Shopify CRO for Dallas and DFW DTC brands, remotely from New York. We work with brands doing about $20K to $2M+ a month and quote our fee after a free audit of the ad account and store.'
+    },
+    intro: `Brand Scaling is a Shopify and Facebook ads agency for Dallas and Dallas-Fort Worth DTC brands. There is no Dallas office: we work with Texas brands remotely from New York, one hour ahead of Central time, with weekly calls and a shared reporting dashboard.
+
+The work covers the whole funnel: Meta ads with weekly creative tests, Google Shopping for search demand, and Shopify changes that lift conversion rate and order value. Partners typically do $20K to $2M+ a month and spend at least $10,000 to $20,000 a month on ads. The fee is quoted after a free Brand Growth Audit, and the first 14 days fix tracking, the offer and the landing pages.`,
+    sections: [
+      {
+        id: 'dallas-market',
+        h2: 'Dallas market snapshot',
+        content: `Dallas is one of the largest cities in Texas and the center of the DFW metro. Census figures for the city itself:`,
+        list: [
+          'Dallas had an estimated 1,302,868 residents on July 1, 2023.',
+          'The 2020 Census counted 1,304,379 people, up from 1,197,816 in 2010.',
+          'Median household income was $67,760 (2019 to 2023, in 2023 dollars).'
+        ],
+        sources: [{ href: CENSUS('dallascitytexas/PST045223'), text: 'US Census Bureau QuickFacts, Dallas city' }]
+      },
+      {
+        id: 'dallas-full-funnel',
+        h2: 'Search and social working together',
+        content: `Meta ads create demand; Google Shopping catches the people who search for the product afterwards. We run both from one plan, split brand and non-brand search so branded clicks do not inflate results, and judge the whole system on blended MER and new-customer CAC.
+
+On the store side, we rebuild the first screen of the product page, add bundles and post-purchase offers, and remove checkout friction, because every lift in conversion rate makes every ad dollar cheaper.`
+      },
+      {
+        id: 'dallas-services',
+        h2: 'Services for Dallas DTC brands',
+        content: `Dallas partners usually work with us on:`,
+        list: [
+          'Facebook and Instagram ads with weekly creative testing',
+          'Google Shopping and search for existing demand',
+          'Shopify CRO for product pages, offers and checkout',
+          'Klaviyo email and SMS for repeat revenue'
+        ]
+      },
+      {
+        id: 'dallas-first-90-days',
+        h2: 'The first 90 days with a Dallas brand',
+        content: `Days 1 to 14 are the foundation: tracking checked against Shopify orders, the offer and margins reviewed, and the product page rebuilt for paid traffic. Days 15 to 45 are testing, with new hooks and angles going live every week. Days 45 to 90 move budget into the winners in steps of about 20% while new-customer CAC holds, and add Google Shopping and email where they pay back.
+
+You see the plan, the numbers it is judged on and what changed each week in one shared dashboard.`
+      },
+      {
+        id: 'dallas-proof',
+        h2: 'Proof from real accounts',
+        content: `We have no Dallas client case studies we can publish, so this proof is national. Each result links to its case study.`
+      },
+      {
+        id: 'pricing-dallas',
+        h2: 'Pricing for Dallas brands',
+        content: `We quote after the free audit. Expect a monthly fee, sometimes combined with a share of ad spend or a performance fee, plus your ad spend paid to the platforms directly.`
+      },
+      {
+        id: 'dallas-areas',
+        h2: 'Areas we serve around Dallas',
+        content: `Fort Worth, Plano, Frisco, Irving, Arlington, McKinney, Richardson and the wider DFW metro, all served remotely.`
+      }
+    ],
+    proof: [
+      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '$307,950', label: 'Revenue in 30 days', note: 'Fitness brand, 2,053 units sold', href: '/cases/307950-revenue-fitness-brand-2053-units-30-days' },
+      { value: '$59,241', label: 'BFCM sales at 3.56x ROAS', note: 'Women’s fashion brand, $16,630 spend', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' }
+    ],
+    faqs: [
+      { question: 'Do you have an office in Dallas?', answer: 'No. Our only office is in New York. We serve Dallas and DFW brands remotely, one hour ahead of Central time.' },
+      { question: 'Do you run Facebook ads for Dallas brands?', answer: 'Yes. Meta is usually the main acquisition channel, with weekly creative testing, cost controls and tracking checked against Shopify orders.' },
+      { question: 'Do you run Google Shopping as well?', answer: 'Yes. Google Shopping catches the search demand that Meta ads create, and we split brand and non-brand so the results are not inflated.' },
+      { question: 'Do you work with brands across Dallas-Fort Worth?', answer: 'Yes. We work with DTC brands anywhere in DFW, including Fort Worth, Plano, Frisco and Irving, remotely with weekly calls on Central time.' },
+      { question: 'How much does a Shopify agency in Dallas cost?', answer: 'Usually a monthly retainer, a share of ad spend or a mix, plus your ad spend. We quote after the free Brand Growth Audit; partners typically spend at least $10,000 to $20,000 a month on ads.' }
+    ],
+    related: ['/locations', '/shopify-agency', '/locations/austin', '/locations/new-york', '/for/home-goods', '/for/apparel-fashion'],
+    cta: {
+      heading: 'Book a Brand Growth Audit',
+      text: 'Book a video audit with Gaurav at a time that suits Central time. We review your ad account, creative, store and unit economics and tell you what to fix first.'
+    },
+    serviceType: 'Shopify and Facebook ads agency for brands in Dallas'
   }
-]
+];

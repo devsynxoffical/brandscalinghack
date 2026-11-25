@@ -171,6 +171,14 @@ export default function ContentPage({ path, onNavigate, onOpenBooking }) {
                 </table>
               </div>
             )}
+            {(s.sources || []).length > 0 && (
+              <p style={{ margin: '0 0 16px', fontSize: '13.5px', color: '#94a3b8' }}>
+                Source:{' '}
+                {s.sources.map((x, i) => (
+                  <React.Fragment key={x.href}>{i > 0 && ', '}<a href={x.href} target="_blank" rel="noopener nofollow" style={{ color: '#ff7043' }}>{x.text}</a></React.Fragment>
+                ))}
+              </p>
+            )}
             {(s.subsections || []).length >= 3 && (
               <div className="seo-feature-grid">
                 {s.subsections.map((sub, i) => (

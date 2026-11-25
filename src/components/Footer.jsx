@@ -4,6 +4,13 @@ import InteractiveDotMatrixFooter from './InteractiveDotMatrixFooter';
 import BrandLogo from './BrandLogo';
 import PreferredSourceButton from './PreferredSourceButton';
 import { openLeadForm } from './LeadForm';
+import { CONTENT_INDEX } from '../data/contentIndex';
+
+// "Cities we serve" row, built from the live location pages (city page plan, 25 Nov 2026)
+const CITY_LINKS = CONTENT_INDEX.filter((p) => p.kind === 'location').map((p) => ({
+  href: p.path,
+  label: p.path.split('/').pop().split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+}));
 
 export default function Footer({ onNavigate, onOpenBooking }) {
   const [email, setEmail] = useState('');
@@ -145,6 +152,15 @@ export default function Footer({ onNavigate, onOpenBooking }) {
 
         {/* Bottom Policy Row */}
         <div className="st-footer-container">
+          <p className="st-footer-cities">
+            <span>Cities we serve:</span>{' '}
+            {CITY_LINKS.map((c, i) => (
+              <React.Fragment key={c.href}>
+                {i > 0 && ' · '}
+                <a href={c.href} onClick={(e) => { e.preventDefault(); onNavigate && onNavigate(c.href.slice(1)); }}>{c.label}</a>
+              </React.Fragment>
+            ))}
+          </p>
           <div className="st-footer-policy">
             <a className="st-footer-link st-footer-link-small" href="/privacy-policy" onClick={(e) => { e.preventDefault(); onNavigate && onNavigate('privacy-policy'); }}>
               Privacy Policy

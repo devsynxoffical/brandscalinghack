@@ -89,6 +89,14 @@ export const CONTENT_INDEX = [
     "eyebrow": "ROAS Improvement"
   },
   {
+    "path": "/shopify-plus-agency",
+    "kind": "service",
+    "titleTag": "Shopify Plus Agency for DTC Brands | Brand Scaling",
+    "metaDescription": "Shopify Plus agency for DTC brands that need growth, not just a build: Meta and TikTok ads, creative and Plus checkout CRO. Book a free Brand Growth Audit.",
+    "h1": "Shopify Plus Agency for High-Volume DTC Brands",
+    "eyebrow": "Shopify Plus"
+  },
+  {
     "path": "/shopify-marketing-agency",
     "kind": "service",
     "titleTag": "Shopify Marketing Agency for DTC Brands | Brand Scaling",
@@ -475,34 +483,42 @@ export const CONTENT_INDEX = [
   {
     "path": "/locations/new-york",
     "kind": "location",
-    "titleTag": "Ecommerce Marketing Agency New York | Brand Scaling",
-    "metaDescription": "Ecommerce marketing agency New York DTC brands can visit: Meta, TikTok, Google and Shopify CRO run from our Manhattan office, with in-person audits.",
-    "h1": "Ecommerce Marketing Agency New York: DTC Growth From Manhattan",
+    "titleTag": "Shopify Agency in New York, NY (NYC) | Brand Scaling",
+    "metaDescription": "Shopify agency in New York for DTC brands: Meta and TikTok ads, creative and Shopify CRO from our Manhattan office. Book your free Brand Growth Audit.",
+    "h1": "Shopify Agency in New York (NYC)",
     "eyebrow": "New York Office"
-  },
-  {
-    "path": "/locations/san-francisco",
-    "kind": "location",
-    "titleTag": "Ecommerce Marketing Agency San Francisco | Brand Scaling",
-    "metaDescription": "Ecommerce marketing agency San Francisco and Bay Area DTC brands use remotely from New York: paid growth, CCPA-aware tracking and investor-ready reporting.",
-    "h1": "Ecommerce Marketing Agency San Francisco: Remote Growth for Bay Area Brands",
-    "eyebrow": "San Francisco and Bay Area"
   },
   {
     "path": "/locations/los-angeles",
     "kind": "location",
-    "titleTag": "Ecommerce Marketing Agency Los Angeles | Brand Scaling",
-    "metaDescription": "Ecommerce marketing agency Los Angeles DTC brands work with remotely from New York: TikTok, creator and UGC ads, Meta, Shopify CRO and CCPA-aware tracking.",
-    "h1": "Ecommerce Marketing Agency Los Angeles: Creator-Led DTC Growth",
+    "titleTag": "Shopify and Ecommerce Agency in Los Angeles | Brand Scaling",
+    "metaDescription": "Shopify and ecommerce agency for Los Angeles DTC brands: Meta and TikTok ads, creator content and Shopify CRO, run remotely. Book a free growth audit.",
+    "h1": "Shopify and Ecommerce Agency in Los Angeles",
     "eyebrow": "Los Angeles"
   },
   {
     "path": "/locations/miami",
     "kind": "location",
-    "titleTag": "Ecommerce Marketing Agency Miami | Brand Scaling",
-    "metaDescription": "Ecommerce marketing agency Miami DTC brands work with from New York on the same Eastern time: bilingual ad creative, Meta, TikTok and LatAm shipping.",
-    "h1": "Ecommerce Marketing Agency Miami: Bilingual DTC Growth on Eastern Time",
+    "titleTag": "Facebook Ads and Ecommerce Agency in Miami | Brand Scaling",
+    "metaDescription": "Facebook ads and ecommerce agency for Miami DTC brands: Meta and Instagram ads, creative testing and Shopify CRO on Eastern time. Book a free audit now.",
+    "h1": "Facebook Ads and Ecommerce Agency in Miami",
     "eyebrow": "Miami"
+  },
+  {
+    "path": "/locations/austin",
+    "kind": "location",
+    "titleTag": "Shopify and Facebook Ads Agency in Austin | Brand Scaling",
+    "metaDescription": "Shopify and Facebook ads agency for Austin DTC brands: Meta and TikTok ads, creative and Shopify CRO, run remotely on Central time. Book a free audit.",
+    "h1": "Shopify and Facebook Ads Agency in Austin",
+    "eyebrow": "Austin"
+  },
+  {
+    "path": "/locations/dallas",
+    "kind": "location",
+    "titleTag": "Shopify and Facebook Ads Agency in Dallas | Brand Scaling",
+    "metaDescription": "Shopify and Facebook ads agency for Dallas and DFW DTC brands: Meta ads, creative testing, Google Shopping and Shopify CRO. Book a free Brand Growth Audit.",
+    "h1": "Shopify and Facebook Ads Agency in Dallas",
+    "eyebrow": "Dallas"
   },
   {
     "path": "/locations/london",
