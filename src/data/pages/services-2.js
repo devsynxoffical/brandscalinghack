@@ -95,7 +95,7 @@ We do not publish influencer program results, so we will not promise any. What w
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, where whitelisted creator posts are amplified', href: '/meta-ads-agency' },
       { value: '30 to 50+', label: 'New creatives a month', note: 'Agency-wide creative output for partner brands', href: '/viral-creatives' },
-      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 for a skincare brand on video-led Meta ads', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' }
+      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 for a skincare brand on video-led Meta ads', href: '/cases/skincare-case-study-115416-in-20-days' }
     ],
     faqs: [
       {
@@ -235,7 +235,7 @@ Agencies usually price creative strategy as a monthly retainer, either on its ow
       { value: '45+', label: 'Cell hook and angle matrix', note: '5 angles x 3 hook styles x 3 formats per research round', href: '/viral-creatives' },
       { value: '30 to 50+', label: 'New creatives a month', note: 'Agency-wide output for partner brands', href: '/viral-creatives' },
       { value: '$376,000', label: 'In 25 days', note: 'Vitamin C serum brand, 2,508 units, built from ad library research', href: '/blog/meta-ads-library' },
-      { value: '3.64x', label: 'ROAS in 27 days', note: '$146,184 on $40,124 spend, skincare, 957 orders', href: '/cases/q4-here-it-biggest-money-making-season-year' }
+      { value: '3.64x', label: 'ROAS in 27 days', note: '$146,184 on $40,124 spend, skincare, 957 orders', href: '/cases/skincare-case-study-146184-in-27-days' }
     ],
     faqs: [
       {
@@ -365,7 +365,7 @@ We do not publish a price for the audit or for ongoing management. The scope dep
     ],
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years in ecommerce', href: '/meta-ads-agency' },
-      { value: '11.6x', label: 'ROAS on $200K spend', note: '$2.3M in sales in a year, DTC brand', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '11.6x', label: 'ROAS on $200K spend', note: '$2.3M in sales in a year, DTC brand', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
       { value: '4.43x', label: 'ROAS with manual bidding', note: '$54K in 7 days, jewelry brand', href: '/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry' },
       { value: '150+', label: 'Verified case studies', note: 'Published results across 30+ niches', href: '/case-studies' }
     ],
@@ -499,7 +499,7 @@ Retention programs are usually priced as a monthly retainer, on their own or as 
     proof: [
       { value: '12+ years', label: 'In ecommerce', note: 'Retention planned alongside paid acquisition across our client accounts', href: '/about' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Agency-wide, the acquisition side retention helps fund', href: '/meta-ads-agency' },
-      { value: '$1.6M', label: 'Year for a DTC brand', note: 'Published client result from our growth work', href: '/cases/finally-client-touched-1-6m-year-mark-insane-roas' }
+      { value: '$1.6M', label: 'Year for a DTC brand', note: 'Published client result from our growth work', href: '/cases/skincare-case-study-1-6m-in-one-year' }
     ],
     faqs: [
       {
@@ -621,10 +621,10 @@ Agencies usually price seasonal management as a monthly retainer, a percentage o
       }
     ],
     proof: [
-      { value: '3.56x', label: 'ROAS during BFCM', note: '$59,241 on $16,630 spend, women\'s fashion', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
-      { value: '$112,866', label: 'In 13 days', note: 'On $28,391 spend with early BFCM offers', href: '/cases/it-12-57-am-here-have-successfully-scaled-brand-early-bfcm' },
-      { value: '4.06x', label: 'ROAS in 7 Q4 days', note: '$133,420 on $32,857 spend, dropshipping', href: '/cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve' },
-      { value: '$449,221', label: 'In 49 days', note: 'Dropshipping brand in the Q4 run-up', href: '/cases/449221-last-49-days-newer-client-dropshipping-brands-starting' }
+      { value: '3.56x', label: 'ROAS during BFCM', note: '$59,241 on $16,630 spend, women\'s fashion', href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' },
+      { value: '$112,866', label: 'In 13 days', note: 'On $28,391 spend with early BFCM offers', href: '/cases/dropshipping-case-study-112866-in-13-days' },
+      { value: '4.06x', label: 'ROAS in 7 Q4 days', note: '$133,420 on $32,857 spend, dropshipping', href: '/cases/dropshipping-case-study-133420-in-7-days' },
+      { value: '$449,221', label: 'In 49 days', note: 'Dropshipping brand in the Q4 run-up', href: '/cases/dropshipping-case-study-449221-in-49-days' }
     ],
     faqs: [
       {
@@ -662,7 +662,7 @@ Agencies usually price seasonal management as a monthly retainer, a percentage o
     primaryKeyword: 'ecommerce roas improvement agency',
     secondaryKeywords: ['improve roas', 'increase roas ecommerce', 'roas optimization agency', 'why is my roas dropping'],
     titleTag: 'Ecommerce ROAS Improvement Agency | Brand Scaling',
-    metaDescription: 'Ecommerce ROAS improvement agency for DTC brands: we find why ROAS is falling, set a break-even target from your margin, then fix tracking, creative and offer.',
+    metaDescription: 'Ecommerce ROAS improvement agency for DTC brands: we find why ROAS is falling, set a break-even target from margin, then fix tracking, creative and offer.',
     h1: 'Ecommerce ROAS Improvement Agency for DTC Brands',
     eyebrow: 'ROAS Improvement',
     quickAnswer: {
@@ -732,9 +732,9 @@ If your ROAS is high but revenue is flat, the problem is usually scale, not effi
       }
     ],
     proof: [
-      { value: '11.6x', label: 'ROAS on $2.3M in sales', note: 'Dropshipping brand, one year', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 in 20 days, skincare brand', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
-      { value: '3.89x', label: 'ROAS in one month', note: '$137,620, supplement brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '11.6x', label: 'ROAS on $2.3M in sales', note: 'Dropshipping brand, one year', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
+      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 in 20 days, skincare brand', href: '/cases/skincare-case-study-115416-in-20-days' },
+      { value: '3.89x', label: 'ROAS in one month', note: '$137,620, supplement brand', href: '/cases/supplement-case-study-137620-in-one-month' },
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
     ],
     faqs: [

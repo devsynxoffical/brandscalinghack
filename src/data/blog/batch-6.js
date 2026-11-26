@@ -18,7 +18,7 @@ export default [
     slug: 'questions-to-ask-meta-ads-agency',
     title: 'Questions to Ask a Meta Ads Agency Before You Hire One',
     titleTag: 'Questions to Ask a Meta Ads Agency | Brand Scaling',
-    metaDescription: '19 questions to ask a Meta ads agency before you hire, grouped by proof, creative, access, reporting, pricing and onboarding, with the red flags to watch for.',
+    metaDescription: '19 questions to ask a Meta ads agency before you hire, grouped by proof, creative, access, reporting, pricing and onboarding, with red flags to watch for.',
     primaryKeyword: 'questions to ask a meta ads agency',
     secondaryKeywords: ['how to choose a meta ads agency for ecommerce', 'meta ads agency red flags', 'facebook ads agency questions', 'hiring a facebook ads agency', 'meta ads agency pricing models'],
     publishDate: '2026-11-11',

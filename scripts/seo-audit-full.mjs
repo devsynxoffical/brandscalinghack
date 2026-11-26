@@ -153,7 +153,7 @@ files.childSitemaps = fs.readdirSync(DIST).filter((f) => /^sitemap-.*\.xml$/.tes
 
 let uaChecks = null;
 if (uaBase) {
-  const top = ['/', '/meta-ads-agency', '/tiktok-ads-agency', '/tiktok-shop-agency', '/shopify-agency', '/cro-agency', '/growth', '/services', '/about', '/book', '/case-studies', '/blog', '/roas-calculator', '/tools', '/benchmarks/ecommerce-roas', '/blog/what-is-roas', '/blog/meta-ads-library', '/blog/performance-marketing-agency', '/for/skincare-beauty', '/cases/structure-campaigns-50000-day-profits'];
+  const top = ['/', '/meta-ads-agency', '/tiktok-ads-agency', '/tiktok-shop-agency', '/shopify-agency', '/cro-agency', '/growth', '/services', '/about', '/book', '/case-studies', '/blog', '/roas-calculator', '/tools', '/benchmarks/ecommerce-roas', '/blog/what-is-roas', '/blog/meta-ads-library', '/blog/performance-marketing-agency', '/for/skincare-beauty', '/cases/dtc-case-study-66168-in-one-day'];
   uaChecks = [];
   for (const u of top) {
     const res = {};

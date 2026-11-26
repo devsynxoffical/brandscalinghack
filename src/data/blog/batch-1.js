@@ -196,7 +196,7 @@ Whoever you talk to, ask for the quote in writing with the scope attached: chann
       { href: '/blog/meta-andromeda', title: 'Meta Andromeda Explained', text: 'Why creative diversity now decides who wins the auction.' },
       { href: '/meta-ads-agency', title: 'Meta Ads Agency for Ecommerce', text: 'Have the scaling campaigns and creative pipeline run for you.' },
       { href: '/blog/meta-ads-creative-testing', title: 'Meta Ads Creative Testing', text: 'The testing system that feeds new winners into scale.' },
-      { href: '/cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve', title: '$133,420 in 7 Days at 4.06x', text: 'A Q4 scaling week on $32,857 of spend.' }
+      { href: '/cases/dropshipping-case-study-133420-in-7-days', title: '$133,420 in 7 Days at 4.06x', text: 'A Q4 scaling week on $32,857 of spend.' }
     ],
     author: AUTHOR,
     directAnswer: 'How to scale Facebook ads profitably: raise budgets on proven campaigns in 20 to 30% steps every few days, expand winners into new audiences, placements and markets, and use cost caps or bid caps to protect CPA. The real lever is creative volume: a steady supply of new winning ads lets budget grow without efficiency collapsing.',

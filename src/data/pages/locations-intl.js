@@ -253,7 +253,7 @@ Distance is the other constant. Australia is large, and delivery times between c
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, agency-wide', href: '/meta-ads-agency' },
       { value: '45+', label: 'Cell hook and angle matrix', note: '5 angles x 3 hook styles x 3 formats, agency-wide', href: '/creative-strategy-agency' },
-      { value: '$59,241', label: 'BFCM revenue at 3.56x ROAS', note: 'Women\'s fashion brand, agency-wide result, not an Australian client', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' }
+      { value: '$59,241', label: 'BFCM revenue at 3.56x ROAS', note: 'Women\'s fashion brand, agency-wide result, not an Australian client', href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' }
     ],
     faqs: [
       {

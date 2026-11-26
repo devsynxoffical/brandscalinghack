@@ -65,7 +65,7 @@ Raise conversion rate and average order value first, because they lift revenue f
     ],
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years in ecommerce' },
-      { value: '11.6x', label: 'ROAS on $200K Meta spend', note: '$2.3M in sales in a year, DTC brand', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '11.6x', label: 'ROAS on $200K Meta spend', note: '$2.3M in sales in a year, DTC brand', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
       { value: '3.97x', label: 'Median published case ROAS', note: 'Middle half of 25 published cases sits between 3.61x and 4.39x', href: '/case-studies' },
     ],
     faqs: [
@@ -146,8 +146,8 @@ Third, signal quality. A clean Conversions API setup and a focus on new customer
     ],
     proof: [
       { value: '30-50+', label: 'New ad creatives a month', note: 'Produced for partner brands to keep acquisition costs stable' },
-      { value: '957', label: 'Orders in 27 days', note: '$146,184 on $40,124 spend, 3.64x ROAS, skincare brand', href: '/cases/q4-here-it-biggest-money-making-season-year' },
-      { value: '369', label: 'Orders in 17 days', note: '$52,000 at 4.51x ROAS on $11,586 spend, supplement brand', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '957', label: 'Orders in 27 days', note: '$146,184 on $40,124 spend, 3.64x ROAS, skincare brand', href: '/cases/skincare-case-study-146184-in-27-days' },
+      { value: '369', label: 'Orders in 17 days', note: '$52,000 at 4.51x ROAS on $11,586 spend, supplement brand', href: '/cases/supplement-case-study-52000-in-17-days' },
     ],
     faqs: [
       { question: 'What is the difference between CAC and CPA?', answer: 'CPA, or cost per acquisition, usually means cost per conversion in an ad platform, and that conversion can be any purchase, including repeat buyers. CAC counts only new customers and is normally calculated from your store data. CPA is useful for optimising campaigns day to day, while CAC is the number you use to judge whether growth is profitable.' },
@@ -224,8 +224,8 @@ Retention also depends on the first experience. Fast shipping, clear expectation
       },
     ],
     proof: [
-      { value: '$1.6M', label: 'Revenue in one year', note: 'DTC brand scaled with paid social and retention', href: '/cases/finally-client-touched-1-6m-year-mark-insane-roas' },
-      { value: '$137,620', label: 'Revenue in one month', note: '3.89x ROAS, supplement brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '$1.6M', label: 'Revenue in one year', note: 'DTC brand scaled with paid social and retention', href: '/cases/skincare-case-study-1-6m-in-one-year' },
+      { value: '$137,620', label: 'Revenue in one month', note: '3.89x ROAS, supplement brand', href: '/cases/supplement-case-study-137620-in-one-month' },
       { value: '12+', label: 'Years in ecommerce', note: 'Agency-wide experience across 30+ niches' },
     ],
     faqs: [
@@ -305,7 +305,7 @@ Next, add a free shipping threshold set a little above your current AOV, so it n
     proof: [
       { value: '~$150', label: 'AOV on a skincare launch', note: '$376,000 in 25 days, 2,508 units of a vitamin C serum', href: '/blog/meta-ads-library' },
       { value: '5.25%', label: 'Store conversion rate', note: '$61,000 month, clinical skincare store', href: '/shopify-agency' },
-      { value: '6,687', label: 'Units sold in 16 days', note: '$374,103 revenue on $132,832 spend, 2.82x ROAS', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
+      { value: '6,687', label: 'Units sold in 16 days', note: '$374,103 revenue on $132,832 spend, 2.82x ROAS', href: '/cases/dtc-case-study-374103-in-16-days' },
     ],
     faqs: [
       { question: 'Does AOV include shipping and tax?', answer: 'It depends on how you define revenue. Many brands calculate AOV on product revenue after discounts and exclude shipping and tax, because those do not reflect what the customer chose to buy. Shopify offers several revenue views, so pick one, document it and use it consistently when comparing periods or testing offers.' },
@@ -383,8 +383,8 @@ Broad targeting with strong creative usually delivers cheaper impressions than s
     ],
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts and 30+ niches' },
-      { value: '4.06x', label: 'ROAS during Q4', note: '$133,420 in 7 days on $32,857 spend while CPMs peaked', href: '/cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve' },
-      { value: '3.56x', label: 'ROAS during BFCM', note: '$59,241 on $16,630 spend, women\'s fashion', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
+      { value: '4.06x', label: 'ROAS during Q4', note: '$133,420 in 7 days on $32,857 spend while CPMs peaked', href: '/cases/dropshipping-case-study-133420-in-7-days' },
+      { value: '3.56x', label: 'ROAS during BFCM', note: '$59,241 on $16,630 spend, women\'s fashion', href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' },
     ],
     faqs: [
       { question: 'What does CPM stand for?', answer: 'CPM stands for cost per mille, with mille meaning thousand in Latin. It is the cost of 1,000 ad impressions. You will sometimes see it written as cost per thousand. It is used on almost every ad platform, including Meta, TikTok, Google display and YouTube, as a standard way to compare the price of reaching people.' },
@@ -543,8 +543,8 @@ A simple weekly routine ties these together. Sort active ads by spend, then note
     ],
     proof: [
       { value: '30-50+', label: 'New creatives a month', note: 'Hook and angle tests run for partner brands' },
-      { value: '3.77x', label: 'ROAS in a single day', note: '$19,977 on $5,294 spend, body contouring brand', href: '/cases/rule-thumb-scaling-facebook-ads-hit-3-77-roas-body-contouring' },
-      { value: '862', label: 'Orders in 24 hours', note: '$80,000 day for a fitness brand', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
+      { value: '3.77x', label: 'ROAS in a single day', note: '$19,977 on $5,294 spend, body contouring brand', href: '/cases/fitness-case-study-19977-in-one-day' },
+      { value: '862', label: 'Orders in 24 hours', note: '$80,000 day for a fitness brand', href: '/cases/fitness-case-study-80k-in-24-hours' },
     ],
     faqs: [
       { question: 'What is the difference between CTR and link CTR?', answer: 'CTR (all) counts every click on the ad, including likes, comments, shares, profile taps and expanding the caption. Link CTR counts only clicks that send people to your website. For ecommerce, link CTR is the version that matters because it measures real store visits. CTR (all) can look healthy even when very few people reach your product page.' },
@@ -624,7 +624,7 @@ When you report conversion rate, split it at least by device and by traffic sour
     ],
     proof: [
       { value: '5.25%', label: 'Store conversion rate', note: '$61,000 month, clinical skincare store', href: '/shopify-agency' },
-      { value: '4.39x', label: 'ROAS for a skincare brand', note: '$115,416 on $26,271 spend', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
+      { value: '4.39x', label: 'ROAS for a skincare brand', note: '$115,416 on $26,271 spend', href: '/cases/skincare-case-study-115416-in-20-days' },
       { value: '€118,000', label: 'First month revenue', note: 'UK skincare brand', href: '/cases/118k-first-month-scaling-uk-skincare-brand' },
     ],
     faqs: [
@@ -704,7 +704,7 @@ One practical check is worth building into your weekly review. Compare the new c
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years' },
       { value: '3.97x', label: 'Median published case ROAS', note: '25 published cases, range 2.06x to 11.6x', href: '/case-studies' },
-      { value: '$449,221', label: 'Revenue in 49 days', note: 'Dropshipping brand during the Q4 run-up', href: '/cases/449221-last-49-days-newer-client-dropshipping-brands-starting' },
+      { value: '$449,221', label: 'Revenue in 49 days', note: 'Dropshipping brand during the Q4 run-up', href: '/cases/dropshipping-case-study-449221-in-49-days' },
     ],
     faqs: [
       { question: 'Are Advantage plus shopping campaigns still available?', answer: 'Meta has merged Advantage+ Shopping Campaigns into a broader Advantage+ sales campaign setup, so you may now see the automation applied when you choose a sales objective rather than as a separate campaign type. The core features remain: automated targeting and placements, creative testing within one campaign and controls for existing customer spend.' },
@@ -783,7 +783,7 @@ A simple monthly health check keeps tracking honest. Pull store orders and Meta-
     proof: [
       { value: 'Days 1-14', label: 'Tracking and CAPI setup', note: 'Part of the Foundation phase in every engagement' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts' },
-      { value: '2.82x', label: 'ROAS at high spend', note: '$374,103 revenue on $132,832 spend in 16 days', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
+      { value: '2.82x', label: 'ROAS at high spend', note: '$374,103 revenue on $132,832 spend in 16 days', href: '/cases/dtc-case-study-374103-in-16-days' },
     ],
     faqs: [
       { question: 'Do I still need the Meta pixel if I use the Conversions API?', answer: 'Yes. Meta recommends using both together. The pixel captures browser events and some details the server may not have, while the Conversions API fills gaps when the browser blocks tracking. With deduplication through matching event IDs, Meta combines the two into one more complete record of what customers did on your site.' },
@@ -861,8 +861,8 @@ A useful habit is to keep a single reporting sheet that records platform ROAS on
     ],
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years' },
-      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, supplement brand', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
-      { value: '3.64x', label: 'ROAS in 27 days', note: '$146,184 on $40,124 spend, skincare brand', href: '/cases/q4-here-it-biggest-money-making-season-year' },
+      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, supplement brand', href: '/cases/supplement-case-study-52000-in-17-days' },
+      { value: '3.64x', label: 'ROAS in 27 days', note: '$146,184 on $40,124 spend, skincare brand', href: '/cases/skincare-case-study-146184-in-27-days' },
     ],
     faqs: [
       { question: 'What is the default attribution window on Meta?', answer: 'For most sales campaigns Meta uses 7-day click and 1-day view as the standard setting. That means a purchase is credited if it happens within seven days of a click or one day of a view. You can compare other windows in Ads Manager reporting to see how results change, which helps you judge how much credit is coming from views.' },
@@ -939,7 +939,7 @@ When an ad shows signs of fatigue, try new hooks on the same body first, since t
     proof: [
       { value: '30-50+', label: 'New creatives a month', note: 'Produced for partner brands to stay ahead of fatigue' },
       { value: '45+', label: 'Cell hook and angle matrix', note: '5 angles x 3 hook styles x 3 formats' },
-      { value: '$185,936', label: 'Revenue in 21 days', note: '56% profit margin, scaled dropshipping store', href: '/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond' },
+      { value: '$185,936', label: 'Revenue in 21 days', note: '56% profit margin, scaled dropshipping store', href: '/cases/dropshipping-case-study-185936-in-21-days' },
     ],
     faqs: [
       { question: 'How do I know if my ad has creative fatigue?', answer: 'Look at the same ad over time. Rising frequency, falling link CTR and climbing cost per purchase together are the classic signs. CPM often rises too, as Meta sees lower engagement. If only one metric moves, the cause may be something else, such as a seasonal cost spike or a landing page problem, so check them together.' },
@@ -1019,7 +1019,7 @@ It also helps to keep a simple creative log. For every UGC video, record the cre
     ],
     proof: [
       { value: '30-50+', label: 'New ad creatives a month', note: 'Including UGC, for partner brands' },
-      { value: '$80,000', label: 'Revenue in 24 hours', note: '862 orders, fitness brand', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
+      { value: '$80,000', label: 'Revenue in 24 hours', note: '862 orders, fitness brand', href: '/cases/fitness-case-study-80k-in-24-hours' },
       { value: '$12,496', label: 'Revenue in one day', note: 'From $2,210 ad spend, fashion apparel brand', href: '/cases/fashion-apparel-brand-cracked-code-2210-ad-spend-turned-into' },
     ],
     faqs: [
@@ -1101,9 +1101,9 @@ A useful monthly habit is to report contribution margin in dollars, not just as 
       },
     ],
     proof: [
-      { value: '56%', label: 'Profit margin in 21 days', note: '$185,936 revenue, scaled dropshipping store', href: '/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond' },
-      { value: '67%', label: 'Profit margin in 5 days', note: '$99,576 on $26,594 spend', href: '/cases/these-5days-has-been-fire-spent-26594-generated-99576-profit' },
-      { value: '37%', label: 'Net margin on a $294K month', note: 'Including a $148K single day', href: '/cases/148k-day-best-day-whole-career-ending-up-phenomenal' },
+      { value: '56%', label: 'Profit margin in 21 days', note: '$185,936 revenue, scaled dropshipping store', href: '/cases/dropshipping-case-study-185936-in-21-days' },
+      { value: '67%', label: 'Profit margin in 5 days', note: '$99,576 on $26,594 spend', href: '/cases/dropshipping-case-study-99576-in-5-days' },
+      { value: '37%', label: 'Net margin on a $294K month', note: 'Including a $148K single day', href: '/cases/dropshipping-case-study-148k-in-one-day' },
     ],
     faqs: [
       { question: 'What is the difference between gross margin and contribution margin?', answer: 'Gross margin subtracts only the cost of goods sold from revenue. Contribution margin also subtracts other variable costs such as shipping, fulfilment, payment fees, discounts and returns, and often marketing. For DTC brands, contribution margin is the more realistic measure because those extra costs can be large and they rise with every order.' },
@@ -1185,8 +1185,8 @@ In practice, the strongest reporting setup uses blended ROAS as the headline, pl
     ],
     proof: [
       { value: '3.97x', label: 'Median published case ROAS', note: '25 cases; middle half 3.61x to 4.39x', href: '/case-studies' },
-      { value: '11.6x', label: 'Highest published ROAS', note: '$2.3M in sales on $200K Meta spend in a year', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '4.39x', label: 'ROAS for a skincare brand', note: '$115,416 on $26,271 spend', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
+      { value: '11.6x', label: 'Highest published ROAS', note: '$2.3M in sales on $200K Meta spend in a year', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
+      { value: '4.39x', label: 'ROAS for a skincare brand', note: '$115,416 on $26,271 spend', href: '/cases/skincare-case-study-115416-in-20-days' },
     ],
     faqs: [
       { question: 'What is the difference between blended ROAS and platform ROAS?', answer: 'Platform ROAS is calculated by one ad platform using only the sales it attributes to its own ads. Blended ROAS divides all store revenue by all ad spend, with no attribution involved. Platform ROAS helps you optimise within a channel, while blended ROAS tells you whether total advertising is paying off for the business.' },

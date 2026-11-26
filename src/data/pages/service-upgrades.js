@@ -109,8 +109,8 @@ Brand Scaling quotes after the audit, because the right scope depends on which s
           ]
         },
         links: [
-          { href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it', text: '$115,416 at 4.39x ROAS, skincare' },
-          { href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women', text: '$59,241 at 3.56x ROAS in BFCM, women\'s fashion' },
+          { href: '/cases/skincare-case-study-115416-in-20-days', text: '$115,416 at 4.39x ROAS, skincare' },
+          { href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas', text: '$59,241 at 3.56x ROAS in BFCM, women\'s fashion' },
           { href: '/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry', text: '$54K in 7 days with manual bidding, jewelry' }
         ]
       },
@@ -305,9 +305,9 @@ Most brands need both, in order. The rebuild fixes the obvious problems quickly.
           ]
         },
         links: [
-          { href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3', text: '$2.3M at 11.6x ROAS' },
-          { href: '/cases/q4-here-it-biggest-money-making-season-year', text: '$146,184 in 27 days, skincare' },
-          { href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money', text: '$52,000 in 17 days, supplements' },
+          { href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas', text: '$2.3M at 11.6x ROAS' },
+          { href: '/cases/skincare-case-study-146184-in-27-days', text: '$146,184 in 27 days, skincare' },
+          { href: '/cases/supplement-case-study-52000-in-17-days', text: '$52,000 in 17 days, supplements' },
           { href: '/shopify-agency', text: '5.25% store conversion rate' }
         ]
       },

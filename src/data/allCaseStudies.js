@@ -98,7 +98,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cft79TLpxyk",
-    "slug": "finally-scale-client-almost-1m-sales-6-months",
+    "slug": "dtc-case-study-1m-in-6-months",
     "shortcode": "Cft79TLpxyk",
     "type": "video",
     "title": "Finally We Scale One More Client to Almost 1M$ in Sales in Just 6 Months",
@@ -146,7 +146,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C-4VFNmBfUA",
-    "slug": "449221-last-49-days-newer-client-dropshipping-brands-starting",
+    "slug": "dropshipping-case-study-449221-in-49-days",
     "shortcode": "C-4VFNmBfUA",
     "type": "image",
     "title": "🔥$449,221 in the Last 49 days>>One of our newer client dropshipping brands is starting to boss up.",
@@ -194,7 +194,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CkaJ5hCju2s",
-    "slug": "148k-day-best-day-whole-career-ending-up-phenomenal",
+    "slug": "dropshipping-case-study-148k-in-one-day",
     "shortcode": "CkaJ5hCju2s",
     "type": "video",
     "title": "$148K in One Day - The Best Day in my Whole Career! Ending Up this Phenomenal Mont...",
@@ -242,7 +242,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DMLC9R1Bn-m",
-    "slug": "new-dtc-client-results-last-16-days-132832-ad-spend-374103",
+    "slug": "dtc-case-study-374103-in-16-days",
     "shortcode": "DMLC9R1Bn-m",
     "type": "image",
     "title": "New DTC client results (last 16 days): 💸 $132,832 ad spend → 💰 $374,103 in revenue 📦 6,687 units sold 🔥 ROAS: 2.82",
@@ -290,7 +290,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cm_skHlDG4T",
-    "slug": "finally-built-million-dollar-brand-2022-ending-2-3",
+    "slug": "dtc-case-study-2-3m-sales-at-11-6x-roas",
     "shortcode": "Cm_skHlDG4T",
     "type": "video",
     "title": "Finally, We built another Million Dollar Brand this 2022, ending with $2.3 Million...",
@@ -338,7 +338,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DCpIoi0hNhx",
-    "slug": "185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond",
+    "slug": "dropshipping-case-study-185936-in-21-days",
     "shortcode": "DCpIoi0hNhx",
     "type": "image",
     "title": "$185,936 in 21 Days with 56% Profit Margin: Scaled Another Dropshipping Store Beyond 6-Figure Month",
@@ -386,7 +386,7 @@ export const allCaseStudies = [
   },
   {
     "id": "Cra8LBbphRB",
-    "slug": "meet-com-clients-sasha-whom-have-been-helping-four",
+    "slug": "dtc-case-study-165k-in-22-days",
     "shortcode": "Cra8LBbphRB",
     "type": "video",
     "title": "Meet one of our E-Com Clients, \"Sasha,\" whom we have been helping for four months,...",
@@ -434,7 +434,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DD6Q21fh3oi",
-    "slug": "26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it",
+    "slug": "skincare-case-study-115416-in-20-days",
     "shortcode": "DD6Q21fh3oi",
     "type": "image",
     "title": "📊 $26,271 spent, $115,416 generated, 4.39 ROAS—this skincare brand crushed it in just 20 days. Sounds unreal, right? ...",
@@ -482,7 +482,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C2J6Xe5Ml-E",
-    "slug": "finally-client-touched-1-6m-year-mark-insane-roas",
+    "slug": "skincare-case-study-1-6m-in-one-year",
     "shortcode": "C2J6Xe5Ml-E",
     "type": "video",
     "title": "Finally, Another Client touched the $1.6M Year Mark with Insane ROAS",
@@ -770,7 +770,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CiF19_MJwhT",
-    "slug": "finally-have-closed-117k-month-client",
+    "slug": "dropshipping-case-study-117k-in-one-month",
     "shortcode": "CiF19_MJwhT",
     "type": "video",
     "title": "Finally We have closed $117K this month with another client",
@@ -914,7 +914,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGZwsH3z7-D",
-    "slug": "21k-day-4month-old-dropshipping-store-here-did-it",
+    "slug": "dropshipping-case-study-21k-in-one-day",
     "shortcode": "DGZwsH3z7-D",
     "type": "image",
     "title": "🔥 $21K IN ONE DAY WITH A 4MONTH-OLD DROPSHIPPING STORE! HERE’S HOW WE DID IT… 🔥",
@@ -962,7 +962,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CoUCFM1PIlN",
-    "slug": "5-crucial-things-learned-while-scaling-brand-105000-23-days",
+    "slug": "dropshipping-case-study-105000-in-23-days",
     "shortcode": "CoUCFM1PIlN",
     "type": "video",
     "title": "5 Crucial things we learned while scaling the brand to 105,000 in 23 days!",
@@ -1154,7 +1154,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CfQ6ZWxPGwy",
-    "slug": "bombshell-update-100k-hit-month",
+    "slug": "skincare-case-study-100k-in-one-month",
     "shortcode": "CfQ6ZWxPGwy",
     "type": "video",
     "title": "BOMBSHELL UPDATE 100K$ HIT THIS MONTH!!!",
@@ -1202,7 +1202,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8rGKA8Sk-R",
-    "slug": "massive-win-books-98k-23-days",
+    "slug": "fashion-case-study-98k-in-23-days",
     "shortcode": "C8rGKA8Sk-R",
     "type": "image",
     "title": "Another Massive Win in the Books: $98K in Just 23 Days",
@@ -1298,7 +1298,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C8oIOnUy4Fz",
-    "slug": "hit-100k-month",
+    "slug": "high-ticket-case-study-100k-in-23-days",
     "shortcode": "C8oIOnUy4Fz",
     "type": "image",
     "title": "One More Hit with $100K+ This Month🔥🔥",
@@ -1538,7 +1538,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CxqUP36gaEo",
-    "slug": "finally-have-taken-brand-128k-14days-insane-profits",
+    "slug": "dtc-case-study-128k-in-14-days",
     "shortcode": "CxqUP36gaEo",
     "type": "video",
     "title": "Finally we have taken this brand to $128K in Just 14Days with Insane Profits...Thi...",
@@ -1586,7 +1586,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDSbgXjB5Ll",
-    "slug": "generated-61960-3-80-roas-single-day-what-you-can-learn-from-it",
+    "slug": "dtc-case-study-61960-in-one-day",
     "shortcode": "DDSbgXjB5Ll",
     "type": "image",
     "title": "How We Generated $61,960 with a 3.80 ROAS in a Single Day (And What You Can Learn From It) 💡",
@@ -1634,7 +1634,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C2hk_plyrcZ",
-    "slug": "journey-client-behind-touching-way-100000-month-mark",
+    "slug": "dtc-case-study-64000-in-24-days",
     "shortcode": "C2hk_plyrcZ",
     "type": "video",
     "title": "Journey of This Client Behind Touching the way to the $100,000/Month mark with thi...",
@@ -1778,7 +1778,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZ3yXdciv63",
-    "slug": "it-safe-say-figured-out-make-supplement-brand-print-money",
+    "slug": "supplement-case-study-52000-in-17-days",
     "shortcode": "DZ3yXdciv63",
     "type": "image",
     "title": "It's safe to say we figured out how to make a supplement brand print money.",
@@ -1970,7 +1970,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DW1JuKLlAgI",
-    "slug": "day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders",
+    "slug": "fitness-case-study-80k-in-24-hours",
     "shortcode": "DW1JuKLlAgI",
     "type": "image",
     "title": "Just another day inside one of our DTC fitness brands $80K clocked in 24 hours. 862 orders moving out.",
@@ -2066,7 +2066,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGgZKPbSjNa",
-    "slug": "dropshipping-isn-get-rich-quick-scheme-it-path-building",
+    "slug": "dropshipping-case-study-491798-in-one-month",
     "shortcode": "DGgZKPbSjNa",
     "type": "image",
     "title": "💡 Dropshipping Isn’t a Get-Rich-Quick Scheme, It’s a Path to Building Something Big. 💡",
@@ -2450,7 +2450,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGSpTQEBodh",
-    "slug": "winning-product-can-change-everything-here-made-product-5-figure",
+    "slug": "dropshipping-case-study-10809-in-24-hours",
     "shortcode": "DGSpTQEBodh",
     "type": "image",
     "title": "One Winning Product Can Change Everything. 🚀 Here’s How We Made One Product a 5-Figure Winner in 24 Hours for this Dr...",
@@ -2546,7 +2546,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DGSmcZRBic3",
-    "slug": "why-do-fitness-brands-struggle-scale-hint-it-not-about-ads",
+    "slug": "fitness-case-study-19167-in-one-day",
     "shortcode": "DGSmcZRBic3",
     "type": "image",
     "title": "Why Do Fitness Brands Struggle to Scale? (Hint: It’s Not Just About Ads)",
@@ -3122,7 +3122,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DD9QNibynah",
-    "slug": "rule-thumb-scaling-facebook-ads-hit-3-77-roas-body-contouring",
+    "slug": "fitness-case-study-19977-in-one-day",
     "shortcode": "DD9QNibynah",
     "type": "image",
     "title": "Rule of thumb for Scaling Facebook Ads: How We Hit 3.77 ROAS for a Body Contouring Brand",
@@ -3314,7 +3314,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDbZt7PB-0o",
-    "slug": "if-you-re-brand-owner-or-media-buyer-looking-viral-strategy-make",
+    "slug": "fashion-case-study-79859-in-one-day",
     "shortcode": "DDbZt7PB-0o",
     "type": "image",
     "title": "If you’re a brand owner or a media buyer looking for that ONE VIRAL strategy to make your campaigns wildly profitable...",
@@ -3410,7 +3410,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DDL5Tr5hb-g",
-    "slug": "structure-campaigns-50000-day-profits",
+    "slug": "dtc-case-study-66168-in-one-day",
     "shortcode": "DDL5Tr5hb-g",
     "type": "image",
     "title": "How to Structure Campaigns for $50,000+/Day Profits 🚀",
@@ -3602,7 +3602,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DC_4HWphVxX",
-    "slug": "16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women",
+    "slug": "fashion-case-study-59241-bfcm-at-3-56x-roas",
     "shortcode": "DC_4HWphVxX",
     "type": "image",
     "title": "📊 $16,630 spent, $59,241 generated, 3.56 ROAS—even in the chaos of BFCM for this women’s fashion brand.",
@@ -3746,7 +3746,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CkdyaHbst7s",
-    "slug": "1st-day-november-seems-very-great-42k-day",
+    "slug": "dtc-case-study-42k-in-one-day",
     "shortcode": "CkdyaHbst7s",
     "type": "video",
     "title": "1st Day of November Seems Very Great..$42K a Day 🔥",
@@ -4274,7 +4274,7 @@ export const allCaseStudies = [
   },
   {
     "id": "C_MqSqcSpUb",
-    "slug": "pov-curious-pulled-off-40669-sales-7-days-134-high-ticket",
+    "slug": "high-ticket-case-study-40669-in-7-days",
     "shortcode": "C_MqSqcSpUb",
     "type": "image",
     "title": "🚨 POV: Curious how we pulled off $40,669 in sales in just 7 days with a $134 high-ticket product.",
@@ -4418,7 +4418,7 @@ export const allCaseStudies = [
   },
   {
     "id": "CquiFM0uqQb",
-    "slug": "massive-success-once-again-didn-expected-dfy-program",
+    "slug": "dtc-case-study-153163-in-one-month",
     "shortcode": "CquiFM0uqQb",
     "type": "video",
     "title": "Massive Success Once Again (DIDN'T EXPECTED WITH OUR DFY PROGRAM)",
@@ -4466,7 +4466,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DZXMWaeEgLe",
-    "slug": "ecom-world-split-into-two-groups",
+    "slug": "dropshipping-case-study-80227-in-7-days",
     "shortcode": "DZXMWaeEgLe",
     "type": "image",
     "title": "The ecom world is split into two groups.",
@@ -4562,7 +4562,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DWX7z6ADP86",
-    "slug": "if-you-re-ecom-brand-owner-read-carefully-16k-single-day-2-06",
+    "slug": "dtc-case-study-16k-in-one-day",
     "shortcode": "DWX7z6ADP86",
     "type": "image",
     "title": "If you’re an ecom brand owner… read this carefully. $16K in a single day at a 2.06 ROAS (And that’s underreported tha...",
@@ -4898,7 +4898,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBE4BLBo-U-",
-    "slug": "it-12-57-am-here-have-successfully-scaled-brand-early-bfcm",
+    "slug": "dropshipping-case-study-112866-in-13-days",
     "shortcode": "DBE4BLBo-U-",
     "type": "video",
     "title": "It’s 12:57 AM Here & We have successfully scaled this brand’s Early BFCM Offers to...",
@@ -4946,7 +4946,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBHKX5TooJZ",
-    "slug": "massive-alert-guys-it-9-11-pm-ve-already-crossed-53387-33",
+    "slug": "dtc-case-study-53387-in-one-day",
     "shortcode": "DBHKX5TooJZ",
     "type": "video",
     "title": "Massive Alert Guys: It’s 9:11 PM, and we’ve already crossed $53,387.33 in sales on...",
@@ -4994,7 +4994,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBJ9ZuTIgnG",
-    "slug": "after-8-months-optimizing-testing-refining-strategies-helped",
+    "slug": "dtc-case-study-68510-in-one-day",
     "shortcode": "DBJ9ZuTIgnG",
     "type": "video",
     "title": "After 8 months of optimizing, testing, and refining strategies, we helped a client...",
@@ -5042,7 +5042,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBTXySHSrJa",
-    "slug": "q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve",
+    "slug": "dropshipping-case-study-133420-in-7-days",
     "shortcode": "DBTXySHSrJa",
     "type": "video",
     "title": "Q4 is shaping up to be incredible! While many slow down for the weekend, we’ve bee...",
@@ -5138,7 +5138,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBWiTtwSvgw",
-    "slug": "these-5days-has-been-fire-spent-26594-generated-99576-profit",
+    "slug": "dropshipping-case-study-99576-in-5-days",
     "shortcode": "DBWiTtwSvgw",
     "type": "video",
     "title": "These 5days has been on fire! 🚀Spent: $26,594 💵 Generated: $99,576 🔥 Profit Margin...",
@@ -5234,7 +5234,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DBve7QoIiI9",
-    "slug": "record-breaking-month-generating-137620-25-revenue-roas-3",
+    "slug": "supplement-case-study-137620-in-one-month",
     "shortcode": "DBve7QoIiI9",
     "type": "video",
     "title": "Record-Breaking Month: Generating $137,620.25 in Revenue with a ROAS of 3.89 for O...",
@@ -5282,7 +5282,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DB8LF0QyepD",
-    "slug": "happy-monday-everyone-let-kick-off-week-some-serious-momentum",
+    "slug": "dtc-case-study-43970-in-one-day",
     "shortcode": "DB8LF0QyepD",
     "type": "video",
     "title": "Happy Monday, everyone! 🌟 Let’s kick off the week with some serious momentum.",
@@ -5474,7 +5474,7 @@ export const allCaseStudies = [
   },
   {
     "id": "DPI2h3TARq_",
-    "slug": "q4-here-it-biggest-money-making-season-year",
+    "slug": "skincare-case-study-146184-in-27-days",
     "shortcode": "DPI2h3TARq_",
     "type": "video",
     "title": "Q4 is here and it’s the biggest money-making season of the year.",
@@ -5714,7 +5714,7 @@ export const allCaseStudies = [
   },
   {
     "id": "ClalPbeN0Xz",
-    "slug": "brand-exploding-black-friday-20k-day-39-healthy-margins",
+    "slug": "dropshipping-case-study-20k-black-friday-day",
     "shortcode": "ClalPbeN0Xz",
     "type": "video",
     "title": "Another Brand is exploding Black Friday with $20K Day & 39% Healthy Margins!🔥🔥🔥",

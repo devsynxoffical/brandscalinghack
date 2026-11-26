@@ -73,7 +73,7 @@ Founders often prefer this because the ad account, the Shopify admin and the mar
       }
     ],
     proof: [
-      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
       { value: '$376,256', label: 'Meta purchase value in 25 days', note: 'DTC brand, 2,508 purchases, 1 to 25 Oct 2026', href: '/cases/376000-25-days-dtc-client-meta-ads' },
       { value: '5.25%', label: 'Store conversion rate', note: 'Clinical skincare store, $61,000 month', href: '/shopify-agency' }
     ],
@@ -162,9 +162,9 @@ The same footage then feeds TikTok Spark Ads, Meta ads and the product page, so 
       }
     ],
     proof: [
-      { value: '$59,241', label: 'BFCM sales at 3.56x ROAS', note: 'Women’s fashion brand, $16,630 spend', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
-      { value: '$146,184', label: 'Sales in 27 days at 3.64x ROAS', note: 'Skincare brand, 957 orders', href: '/cases/q4-here-it-biggest-money-making-season-year' },
-      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' }
+      { value: '$59,241', label: 'BFCM sales at 3.56x ROAS', note: 'Women’s fashion brand, $16,630 spend', href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' },
+      { value: '$146,184', label: 'Sales in 27 days at 3.64x ROAS', note: 'Skincare brand, 957 orders', href: '/cases/skincare-case-study-146184-in-27-days' },
+      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' }
     ],
     faqs: [
       { question: 'Do you have an office in Los Angeles?', answer: 'No. Our only office is in New York. We serve Los Angeles brands remotely, with calls scheduled in Pacific time and a shared reporting dashboard.' },
@@ -256,8 +256,8 @@ From then on, weekly reports lead with blended MER and new-customer CAC from Sho
     ],
     proof: [
       { value: '$307,950', label: 'Revenue in 30 days', note: 'Fitness brand, 2,053 units sold', href: '/cases/307950-revenue-fitness-brand-2053-units-30-days' },
-      { value: '$52,000', label: 'Sales in 17 days at 4.51x ROAS', note: 'Supplement brand, $11,586 spend', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
-      { value: '$146,184', label: 'Sales in 27 days at 3.64x ROAS', note: 'Skincare brand, 957 orders', href: '/cases/q4-here-it-biggest-money-making-season-year' }
+      { value: '$52,000', label: 'Sales in 17 days at 4.51x ROAS', note: 'Supplement brand, $11,586 spend', href: '/cases/supplement-case-study-52000-in-17-days' },
+      { value: '$146,184', label: 'Sales in 27 days at 3.64x ROAS', note: 'Skincare brand, 957 orders', href: '/cases/skincare-case-study-146184-in-27-days' }
     ],
     faqs: [
       { question: 'Do you have an office in Miami?', answer: 'No. Our only office is in New York, on the same Eastern time zone as Miami, and we serve South Florida brands remotely.' },
@@ -430,9 +430,9 @@ You see the plan, the numbers it is judged on and what changed each week in one 
       }
     ],
     proof: [
-      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC brand, $200K Meta spend', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
       { value: '$307,950', label: 'Revenue in 30 days', note: 'Fitness brand, 2,053 units sold', href: '/cases/307950-revenue-fitness-brand-2053-units-30-days' },
-      { value: '$59,241', label: 'BFCM sales at 3.56x ROAS', note: 'Women’s fashion brand, $16,630 spend', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' }
+      { value: '$59,241', label: 'BFCM sales at 3.56x ROAS', note: 'Women’s fashion brand, $16,630 spend', href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' }
     ],
     faqs: [
       { question: 'Do you have an office in Dallas?', answer: 'No. Our only office is in New York. We serve Dallas and DFW brands remotely, one hour ahead of Central time.' },

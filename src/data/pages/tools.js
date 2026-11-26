@@ -88,8 +88,8 @@ The break-even CPA is often more useful day to day than the ROAS figure, because
     ],
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years in ecommerce' },
-      { value: '56%', label: 'Profit margin', note: '$185,936 in 21 days for a dropshipping store', href: '/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond' },
-      { value: '4.39x', label: 'ROAS', note: '$115,416 on $26,271 spend for a skincare brand', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
+      { value: '56%', label: 'Profit margin', note: '$185,936 in 21 days for a dropshipping store', href: '/cases/dropshipping-case-study-185936-in-21-days' },
+      { value: '4.39x', label: 'ROAS', note: '$115,416 on $26,271 spend for a skincare brand', href: '/cases/skincare-case-study-115416-in-20-days' },
     ],
     faqs: [
       {
@@ -205,8 +205,8 @@ The two answer the same question from opposite sides: MER says how much revenue 
       },
     ],
     proof: [
-      { value: '11.6x', label: 'ROAS on $200K Meta spend', note: '$2.3M in sales in a year for a DTC brand', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '3.89x', label: 'ROAS in a record month', note: '$137,620 in a month for a supplement brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '11.6x', label: 'ROAS on $200K Meta spend', note: '$2.3M in sales in a year for a DTC brand', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
+      { value: '3.89x', label: 'ROAS in a record month', note: '$137,620 in a month for a supplement brand', href: '/cases/supplement-case-study-137620-in-one-month' },
       { value: '30+', label: 'Niches managed', note: 'Across our client accounts over 12+ years in ecommerce' },
     ],
     faqs: [
@@ -324,8 +324,8 @@ Track CAC monthly and alongside spend. CAC almost always rises as budgets grow, 
       },
     ],
     proof: [
-      { value: '3.64x', label: 'ROAS over 27 days', note: '$146,184 on $40,124 spend, 957 orders, skincare', href: '/cases/q4-here-it-biggest-money-making-season-year' },
-      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, 369 orders, supplement brand', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '3.64x', label: 'ROAS over 27 days', note: '$146,184 on $40,124 spend, 957 orders, skincare', href: '/cases/skincare-case-study-146184-in-27-days' },
+      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, 369 orders, supplement brand', href: '/cases/supplement-case-study-52000-in-17-days' },
       { value: '30 to 50+', label: 'New ad creatives a month', note: 'Produced for partner brands to keep acquisition costs in check' },
     ],
     faqs: [
@@ -441,7 +441,7 @@ LTV:CAC tells you how much value each acquisition dollar creates over time. Payb
       },
     ],
     proof: [
-      { value: '$1.6M', label: 'Year in sales', note: 'A DTC brand that reached the $1.6M year mark', href: '/cases/finally-client-touched-1-6m-year-mark-insane-roas' },
+      { value: '$1.6M', label: 'Year in sales', note: 'A DTC brand that reached the $1.6M year mark', href: '/cases/skincare-case-study-1-6m-in-one-year' },
       { value: '€118,000', label: 'First month', note: 'Scaling a UK skincare brand', href: '/cases/118k-first-month-scaling-uk-skincare-brand' },
       { value: '12+', label: 'Years in ecommerce', note: 'Across our client accounts in 30+ niches' },
     ],
@@ -672,8 +672,8 @@ Target CPA is the number to manage daily. If cost per purchase holds at or below
       },
     ],
     proof: [
-      { value: '2.82x', label: 'ROAS on $132,832 spend', note: '$374,103 revenue in 16 days, 6,687 units', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
-      { value: '4.06x', label: 'ROAS in 7 days', note: '$133,420 on $32,857 spend during Q4, dropshipping', href: '/cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve' },
+      { value: '2.82x', label: 'ROAS on $132,832 spend', note: '$374,103 revenue in 16 days, 6,687 units', href: '/cases/dtc-case-study-374103-in-16-days' },
+      { value: '4.06x', label: 'ROAS in 7 days', note: '$133,420 on $32,857 spend during Q4, dropshipping', href: '/cases/dropshipping-case-study-133420-in-7-days' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years in ecommerce' },
     ],
     faqs: [
@@ -790,7 +790,7 @@ Revenue per session is often the better single measure, because it captures both
     ],
     proof: [
       { value: '5.25%', label: 'Store conversion rate', note: '$61,000 month for a clinical skincare store', href: '/shopify-agency' },
-      { value: '862', label: 'Orders in 24 hours', note: '$80,000 in a day for a fitness brand', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
+      { value: '862', label: 'Orders in 24 hours', note: '$80,000 in a day for a fitness brand', href: '/cases/fitness-case-study-80k-in-24-hours' },
       { value: '150+', label: 'Verified case studies', note: 'Published across our client accounts in 30+ niches' },
     ],
     faqs: [

@@ -118,7 +118,7 @@ An agency spreads those skills across specialists. As a reference point, Brand S
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years in ecommerce', href: '/about' },
       { value: '30 to 50+', label: 'New ad creatives a month', note: 'Produced for partner brands', href: '/viral-creatives' },
-      { value: '$374,103', label: 'Revenue in 16 days', note: '$132,832 spend, 6,687 units, 2.82x ROAS, DTC brand', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
+      { value: '$374,103', label: 'Revenue in 16 days', note: '$132,832 spend, 6,687 units, 2.82x ROAS, DTC brand', href: '/cases/dtc-case-study-374103-in-16-days' },
       { value: '30+', label: 'Niches worked in', note: 'Agency-wide pattern recognition', href: '/case-studies' },
     ],
     faqs: [
@@ -249,7 +249,7 @@ The other frequent issue is judging TikTok too early or by the wrong number. A c
     ],
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts', href: '/meta-ads-agency' },
-      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, 369 orders, supplement brand', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, 369 orders, supplement brand', href: '/cases/supplement-case-study-52000-in-17-days' },
       { value: '45+', label: 'Cell hook and angle matrix', note: '5 angles x 3 hook styles x 3 formats', href: '/viral-creatives' },
     ],
     faqs: [
@@ -377,7 +377,7 @@ That is why the most reliable check is blended: total store revenue divided by t
       },
     ],
     proof: [
-      { value: '$137,620', label: 'Month at 3.89x ROAS', note: 'Supplement brand on Meta', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '$137,620', label: 'Month at 3.89x ROAS', note: 'Supplement brand on Meta', href: '/cases/supplement-case-study-137620-in-one-month' },
       { value: '$54K', label: 'In 7 days at 4.43x ROAS', note: 'Jewelry brand using manual bidding campaigns', href: '/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry' },
       { value: '30 to 50+', label: 'New ad creatives a month', note: 'Produced for partner brands', href: '/viral-creatives' },
     ],
@@ -509,7 +509,7 @@ Whoever you consider, ask for published results in brands like yours, a clear pr
     proof: [
       { value: '150+', label: 'Verified case studies', note: 'The agency\'s published client results', href: '/case-studies' },
       { value: '12+ years', label: 'In ecommerce', note: '$50M+ in Meta ad spend managed across client accounts', href: '/about' },
-      { value: '$2.3M', label: 'Sales in a year at 11.6x ROAS', note: '$200K Meta spend, DTC and dropshipping brand', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '$2.3M', label: 'Sales in a year at 11.6x ROAS', note: '$200K Meta spend, DTC and dropshipping brand', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
     ],
     faqs: [
       {
@@ -652,9 +652,9 @@ Use platform ROAS to make decisions inside a platform, such as which creative or
     ],
     proof: [
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies with a stated ROAS', href: '/case-studies' },
-      { value: '11.6x', label: 'Highest published ROAS', note: '$2.3M in sales on $200K Meta spend in a year', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '4.39x', label: 'Skincare ROAS', note: '$115,416 generated on $26,271 spend', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
-      { value: '2.82x', label: 'ROAS at high spend', note: '$374,103 on $132,832 spend in 16 days, DTC brand', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
+      { value: '11.6x', label: 'Highest published ROAS', note: '$2.3M in sales on $200K Meta spend in a year', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
+      { value: '4.39x', label: 'Skincare ROAS', note: '$115,416 generated on $26,271 spend', href: '/cases/skincare-case-study-115416-in-20-days' },
+      { value: '2.82x', label: 'ROAS at high spend', note: '$374,103 on $132,832 spend in 16 days, DTC brand', href: '/cases/dtc-case-study-374103-in-16-days' },
     ],
     faqs: [
       {

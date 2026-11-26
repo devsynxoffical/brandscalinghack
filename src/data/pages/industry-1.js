@@ -102,8 +102,8 @@ Foundation (days 1 to 14) fixes Conversions API tracking, the offer and the prod
       }
     ],
     proof: [
-      { value: '$146,184', label: 'Revenue in 27 days at 3.64x ROAS', note: 'Skincare brand, $40,124 spend, 957 orders', href: '/cases/q4-here-it-biggest-money-making-season-year' },
-      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 revenue, skincare brand', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
+      { value: '$146,184', label: 'Revenue in 27 days at 3.64x ROAS', note: 'Skincare brand, $40,124 spend, 957 orders', href: '/cases/skincare-case-study-146184-in-27-days' },
+      { value: '4.39x', label: 'ROAS on $26,271 spend', note: '$115,416 revenue, skincare brand', href: '/cases/skincare-case-study-115416-in-20-days' },
       { value: '€118,000', label: 'First month for a UK skincare brand', note: 'New account, scaled from the foundation phase', href: '/cases/118k-first-month-scaling-uk-skincare-brand' },
       { value: '$376,000', label: 'In 25 days for a vitamin C serum', note: '2,508 units at about $150 AOV', href: '/blog/meta-ads-library' }
     ],
@@ -135,7 +135,7 @@ Foundation (days 1 to 14) fixes Conversions API tracking, the offer and the prod
     ],
     related: [
       '/case-studies/skincare-beauty',
-      '/cases/q4-here-it-biggest-money-making-season-year',
+      '/cases/skincare-case-study-146184-in-27-days',
       '/meta-ads-agency',
       '/creative-strategy-agency',
       '/tools/break-even-roas-calculator',
@@ -246,8 +246,8 @@ One supplement brand we work with did $52,000 in 17 days at 4.51x ROAS on $11,58
       }
     ],
     proof: [
-      { value: '$137,620', label: 'Revenue in a month at 3.89x ROAS', note: 'DTC supplement brand, record month', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
-      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, 369 orders, supplement brand', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '$137,620', label: 'Revenue in a month at 3.89x ROAS', note: 'DTC supplement brand, record month', href: '/cases/supplement-case-study-137620-in-one-month' },
+      { value: '4.51x', label: 'ROAS in 17 days', note: '$52,000 on $11,586 spend, 369 orders, supplement brand', href: '/cases/supplement-case-study-52000-in-17-days' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years' }
     ],
     faqs: [
@@ -278,7 +278,7 @@ One supplement brand we work with did $52,000 in 17 days at 4.51x ROAS on $11,58
     ],
     related: [
       '/case-studies/supplements-nutrition',
-      '/cases/record-breaking-month-generating-137620-25-revenue-roas-3',
+      '/cases/supplement-case-study-137620-in-one-month',
       '/meta-ads-agency',
       '/retention-marketing-agency',
       '/tools/ltv-calculator',
@@ -372,7 +372,7 @@ We also track sell-through by collection, so ad spend can move toward stock that
       }
     ],
     proof: [
-      { value: '$59,241', label: 'Revenue at 3.56x ROAS during BFCM', note: "Women's fashion brand, $16,630 spend", href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
+      { value: '$59,241', label: 'Revenue at 3.56x ROAS during BFCM', note: "Women's fashion brand, $16,630 spend", href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' },
       { value: '$12,496', label: 'In one day from $2,210 ad spend', note: 'Fashion apparel brand', href: '/cases/fashion-apparel-brand-cracked-code-2210-ad-spend-turned-into' },
       { value: '30 to 50+', label: 'New creatives a month', note: 'Per partner brand, from a 45+ cell hook and angle matrix' }
     ],
@@ -400,7 +400,7 @@ We also track sell-through by collection, so ad spend can move toward stock that
     ],
     related: [
       '/case-studies/apparel-fashion',
-      '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women',
+      '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas',
       '/meta-ads-agency',
       '/bfcm-ads-management',
       '/tools/aov-calculator',
@@ -504,8 +504,8 @@ Steady scaling matters too: a body contouring brand we run did $19,977 in one da
       }
     ],
     proof: [
-      { value: '$80,000', label: 'Revenue in 24 hours', note: 'DTC fitness brand, 862 orders on one flash sale', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
-      { value: '3.77x', label: 'ROAS in a single day', note: '$19,977 on $5,294 spend, body contouring brand', href: '/cases/rule-thumb-scaling-facebook-ads-hit-3-77-roas-body-contouring' },
+      { value: '$80,000', label: 'Revenue in 24 hours', note: 'DTC fitness brand, 862 orders on one flash sale', href: '/cases/fitness-case-study-80k-in-24-hours' },
+      { value: '3.77x', label: 'ROAS in a single day', note: '$19,977 on $5,294 spend, body contouring brand', href: '/cases/fitness-case-study-19977-in-one-day' },
       { value: '12+ years', label: 'In ecommerce', note: 'Across our client accounts, $50M+ in Meta spend managed' }
     ],
     faqs: [
@@ -532,7 +532,7 @@ Steady scaling matters too: a body contouring brand we run did $19,977 in one da
     ],
     related: [
       '/case-studies/fitness-health',
-      '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders',
+      '/cases/fitness-case-study-80k-in-24-hours',
       '/meta-ads-agency',
       '/tiktok-ads-agency',
       '/tools/meta-ads-budget-calculator',
@@ -630,7 +630,7 @@ We also use customer data from gifting peaks carefully. Someone who bought a nec
     ],
     proof: [
       { value: '$54K', label: 'Revenue in 7 days at 4.43x ROAS', note: 'Jewelry brand, manual bidding campaigns', href: '/cases/drove-54k-7-days-using-manual-bidding-campaigns-jewelry' },
-      { value: '$59,241', label: 'BFCM revenue at 3.56x ROAS', note: "Adjacent category: women's fashion brand", href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
+      { value: '$59,241', label: 'BFCM revenue at 3.56x ROAS', note: "Adjacent category: women's fashion brand", href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' },
       { value: '30 to 50+', label: 'New creatives a month', note: 'Per partner brand, across our client accounts' }
     ],
     faqs: [
@@ -749,10 +749,10 @@ Offers lean on bundles and quantity breaks rather than deep discounts, and we wa
       }
     ],
     proof: [
-      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC dropshipping brand, $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '$449,221', label: 'Revenue in 49 days', note: 'Newer dropshipping client, Q4 run-up', href: '/cases/449221-last-49-days-newer-client-dropshipping-brands-starting' },
-      { value: '56%', label: 'Profit margin on $185,936 in 21 days', note: 'Scaled dropshipping store', href: '/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond' },
-      { value: '$148K', label: 'Revenue in one day', note: '$294K month at 37% net margin', href: '/cases/148k-day-best-day-whole-career-ending-up-phenomenal' }
+      { value: '$2.3M', label: 'Sales at 11.6x ROAS in a year', note: 'DTC dropshipping brand, $200K Meta spend', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
+      { value: '$449,221', label: 'Revenue in 49 days', note: 'Newer dropshipping client, Q4 run-up', href: '/cases/dropshipping-case-study-449221-in-49-days' },
+      { value: '56%', label: 'Profit margin on $185,936 in 21 days', note: 'Scaled dropshipping store', href: '/cases/dropshipping-case-study-185936-in-21-days' },
+      { value: '$148K', label: 'Revenue in one day', note: '$294K month at 37% net margin', href: '/cases/dropshipping-case-study-148k-in-one-day' }
     ],
     faqs: [
       {
@@ -782,7 +782,7 @@ Offers lean on bundles and quantity breaks rather than deep discounts, and we wa
     ],
     related: [
       '/case-studies/dropshipping-dtc',
-      '/cases/finally-built-million-dollar-brand-2022-ending-2-3',
+      '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas',
       '/meta-ads-agency',
       '/creative-strategy-agency',
       '/tools/break-even-roas-calculator',
@@ -881,9 +881,9 @@ The adjacent results show what this approach does in practice. A supplement bran
       }
     ],
     proof: [
-      { value: '$137,620', label: 'Month at 3.89x ROAS', note: 'Adjacent category: supplement brand, not a wellness brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
-      { value: '$80,000', label: 'Revenue in 24 hours', note: 'Adjacent category: fitness brand, 862 orders', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
-      { value: '4.51x', label: 'ROAS in 17 days', note: 'Adjacent category: supplement brand, $52,000 on $11,586 spend', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '$137,620', label: 'Month at 3.89x ROAS', note: 'Adjacent category: supplement brand, not a wellness brand', href: '/cases/supplement-case-study-137620-in-one-month' },
+      { value: '$80,000', label: 'Revenue in 24 hours', note: 'Adjacent category: fitness brand, 862 orders', href: '/cases/fitness-case-study-80k-in-24-hours' },
+      { value: '4.51x', label: 'ROAS in 17 days', note: 'Adjacent category: supplement brand, $52,000 on $11,586 spend', href: '/cases/supplement-case-study-52000-in-17-days' },
       { value: '30+', label: 'Niches served', note: 'Across our client accounts over 12+ years' }
     ],
     faqs: [

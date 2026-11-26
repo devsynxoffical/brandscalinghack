@@ -186,7 +186,7 @@ Finally, write down the real numbers while they are fresh: orders, AOV, contribu
       { href: '/tools/profit-margin-calculator', title: 'Profit Margin Calculator', text: 'Enter price and costs to see gross, contribution and net margin per order.' },
       { href: '/glossary/contribution-margin', title: 'What Is Contribution Margin?', text: 'The margin that tells you what each order can afford to spend on ads.' },
       { href: '/tools/break-even-roas-calculator', title: 'Break-Even ROAS Calculator', text: 'Turn your margin into the ROAS your ads need to make money.' },
-      { href: '/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond', title: '$185,936 in 21 Days at 56% Margin', text: 'A store scaled while keeping profit margin in view.' }
+      { href: '/cases/dropshipping-case-study-185936-in-21-days', title: '$185,936 in 21 Days at 56% Margin', text: 'A store scaled while keeping profit margin in view.' }
     ],
     author,
     directAnswer: 'Ecommerce profit margin is the share of each order you keep after costs. Gross margin subtracts only product cost, contribution margin also subtracts shipping, fulfilment and payment fees, and net margin per order then subtracts ad cost, returns and discounts. Contribution margin is the one that sets your break-even CPA and ROAS.',

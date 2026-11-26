@@ -80,7 +80,7 @@ Agency pricing is quoted after the audit. Common models are a monthly retainer, 
     proof: [
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '30+', label: 'Niches served', note: 'Across our client accounts' },
-      { value: '3.89x', label: 'ROAS in a $137,620 month', note: 'Supplement brand, a different niche but a repeat-purchase consumable', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '3.89x', label: 'ROAS in a $137,620 month', note: 'Supplement brand, a different niche but a repeat-purchase consumable', href: '/cases/supplement-case-study-137620-in-one-month' },
       { value: '30 to 50+', label: 'New ad creatives a month', note: 'Typical output for partner brands' },
     ],
     faqs: [
@@ -110,7 +110,7 @@ Agency pricing is quoted after the audit. Common models are a monthly retainer, 
       },
     ],
     related: [
-      '/cases/record-breaking-month-generating-137620-25-revenue-roas-3',
+      '/cases/supplement-case-study-137620-in-one-month',
       '/case-studies/supplements-nutrition',
       '/meta-ads-agency',
       '/klaviyo-email-sms-agency',
@@ -201,8 +201,8 @@ Pinterest-style inspiration happens everywhere now, so we treat room and lifesty
       },
     ],
     proof: [
-      { value: '$374,103', label: 'Revenue in 16 days', note: 'DTC brand, a different niche: $132,832 spend, 6,687 units', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
-      { value: '$449,221', label: 'Revenue in 49 days', note: 'Dropshipping brand in the Q4 run-up, a different niche', href: '/cases/449221-last-49-days-newer-client-dropshipping-brands-starting' },
+      { value: '$374,103', label: 'Revenue in 16 days', note: 'DTC brand, a different niche: $132,832 spend, 6,687 units', href: '/cases/dtc-case-study-374103-in-16-days' },
+      { value: '$449,221', label: 'Revenue in 49 days', note: 'Dropshipping brand in the Q4 run-up, a different niche', href: '/cases/dropshipping-case-study-449221-in-49-days' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '45+', label: 'Cell hook and angle matrix', note: '5 angles x 3 hook styles x 3 formats' },
     ],
@@ -229,7 +229,7 @@ Pinterest-style inspiration happens everywhere now, so we treat room and lifesty
       },
     ],
     related: [
-      '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103',
+      '/cases/dtc-case-study-374103-in-16-days',
       '/case-studies/dropshipping-dtc',
       '/google-shopping-ads-agency',
       '/cro-agency',
@@ -316,7 +316,7 @@ Alcohol and some functional drinks carry extra platform restrictions on age targ
       },
     ],
     proof: [
-      { value: '4.51x', label: 'ROAS in 17 days', note: 'Supplement brand, a different niche: $52,000 on $11,586 spend, 369 orders', href: '/cases/it-safe-say-figured-out-make-supplement-brand-print-money' },
+      { value: '4.51x', label: 'ROAS in 17 days', note: 'Supplement brand, a different niche: $52,000 on $11,586 spend, 369 orders', href: '/cases/supplement-case-study-52000-in-17-days' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '3.97x', label: 'Median published ROAS', note: 'Across 25 published case studies in other niches' },
       { value: '30+', label: 'Niches served', note: 'Across our client accounts' },
@@ -344,7 +344,7 @@ Alcohol and some functional drinks carry extra platform restrictions on age targ
       },
     ],
     related: [
-      '/cases/it-safe-say-figured-out-make-supplement-brand-print-money',
+      '/cases/supplement-case-study-52000-in-17-days',
       '/case-studies/supplements-nutrition',
       '/retention-marketing-agency',
       '/tiktok-shop-agency',
@@ -434,7 +434,7 @@ When you compare agencies for a baby brand, ask how they handle claims and rejec
     ],
     proof: [
       { value: '5.25%', label: 'Store conversion rate', note: 'Clinical skincare store, a different claims-sensitive niche: $61,000 month', href: '/shopify-agency' },
-      { value: '3.64x', label: 'ROAS over 27 days', note: 'Skincare brand, a different niche: $146,184 on $40,124 spend', href: '/cases/q4-here-it-biggest-money-making-season-year' },
+      { value: '3.64x', label: 'ROAS over 27 days', note: 'Skincare brand, a different niche: $146,184 on $40,124 spend', href: '/cases/skincare-case-study-146184-in-27-days' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '30+', label: 'Niches served', note: 'Across our client accounts' },
     ],
@@ -461,7 +461,7 @@ When you compare agencies for a baby brand, ask how they handle claims and rejec
       },
     ],
     related: [
-      '/cases/q4-here-it-biggest-money-making-season-year',
+      '/cases/skincare-case-study-146184-in-27-days',
       '/case-studies/skincare-beauty',
       '/meta-ads-agency',
       '/influencer-marketing-agency',
@@ -550,7 +550,7 @@ Inventory deserves its own conversation. Outdoor brands often order stock months
       },
     ],
     proof: [
-      { value: '$80,000', label: 'Revenue in 24 hours', note: 'Fitness brand, a different active lifestyle niche: 862 orders', href: '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders' },
+      { value: '$80,000', label: 'Revenue in 24 hours', note: 'Fitness brand, a different active lifestyle niche: 862 orders', href: '/cases/fitness-case-study-80k-in-24-hours' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '20 to 30%', label: 'Budget steps when scaling', note: 'Our standard scaling approach across client accounts' },
       { value: '30+', label: 'Niches served', note: 'Across our client accounts' },
@@ -578,7 +578,7 @@ Inventory deserves its own conversation. Outdoor brands often order stock months
       },
     ],
     related: [
-      '/cases/day-inside-dtc-fitness-brands-80k-clocked-24-hours-862-orders',
+      '/cases/fitness-case-study-80k-in-24-hours',
       '/case-studies/fitness-health',
       '/google-shopping-ads-agency',
       '/creative-strategy-agency',
@@ -675,7 +675,7 @@ Margins in electronics vary widely. A proprietary gadget with its own design can
     ],
     proof: [
       { value: '$376,000', label: 'Revenue in 25 days', note: 'Skincare product at about $150 AOV, a different niche: 2,508 units', href: '/blog/meta-ads-library' },
-      { value: '11.6x', label: 'ROAS over a year', note: 'DTC dropshipping brand, a different niche: $2.3M on $200K Meta spend', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
+      { value: '11.6x', label: 'ROAS over a year', note: 'DTC dropshipping brand, a different niche: $2.3M on $200K Meta spend', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '30 to 50+', label: 'New ad creatives a month', note: 'Typical output for partner brands' },
     ],
@@ -702,7 +702,7 @@ Margins in electronics vary widely. A proprietary gadget with its own design can
       },
     ],
     related: [
-      '/cases/finally-built-million-dollar-brand-2022-ending-2-3',
+      '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas',
       '/case-studies/dropshipping-dtc',
       '/google-shopping-ads-agency',
       '/tiktok-ads-agency',
@@ -789,8 +789,8 @@ Cash flow matters as much as the ratio. A brand that pays back in two boxes can 
       },
     ],
     proof: [
-      { value: '3.89x', label: 'ROAS in a $137,620 month', note: 'Supplement brand, a different repeat-purchase niche', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
-      { value: '$1.6M', label: 'Revenue in a year', note: 'DTC brand, a different niche', href: '/cases/finally-client-touched-1-6m-year-mark-insane-roas' },
+      { value: '3.89x', label: 'ROAS in a $137,620 month', note: 'Supplement brand, a different repeat-purchase niche', href: '/cases/supplement-case-study-137620-in-one-month' },
+      { value: '$1.6M', label: 'Revenue in a year', note: 'DTC brand, a different niche', href: '/cases/skincare-case-study-1-6m-in-one-year' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts, all niches' },
       { value: '12+', label: 'Years in ecommerce', note: 'Agency-wide experience' },
     ],
@@ -821,8 +821,8 @@ Cash flow matters as much as the ratio. A brand that pays back in two boxes can 
       },
     ],
     related: [
-      '/cases/record-breaking-month-generating-137620-25-revenue-roas-3',
-      '/cases/finally-client-touched-1-6m-year-mark-insane-roas',
+      '/cases/supplement-case-study-137620-in-one-month',
+      '/cases/skincare-case-study-1-6m-in-one-year',
       '/retention-marketing-agency',
       '/meta-ads-agency',
       '/tools/ltv-calculator',

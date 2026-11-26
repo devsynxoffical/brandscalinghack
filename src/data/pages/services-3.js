@@ -165,9 +165,9 @@ We run Shopify marketing as one system. The same team plans the offer, writes th
       }
     ],
     proof: [
-      { value: '$146,184', label: 'In 27 days at 3.64x ROAS', note: 'Skincare brand', href: '/cases/q4-here-it-biggest-money-making-season-year' },
-      { value: '$137,620', label: 'In one month at 3.89x ROAS', note: 'Supplement brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
-      { value: '4.39x', label: 'ROAS on $26,271 ad spend', note: '$115,416 in 20 days, skincare brand', href: '/cases/26271-spent-115416-generated-4-39-roas-skincare-brand-crushed-it' },
+      { value: '$146,184', label: 'In 27 days at 3.64x ROAS', note: 'Skincare brand', href: '/cases/skincare-case-study-146184-in-27-days' },
+      { value: '$137,620', label: 'In one month at 3.89x ROAS', note: 'Supplement brand', href: '/cases/supplement-case-study-137620-in-one-month' },
+      { value: '4.39x', label: 'ROAS on $26,271 ad spend', note: '$115,416 in 20 days, skincare brand', href: '/cases/skincare-case-study-115416-in-20-days' },
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
     ],
     faqs: [
@@ -257,9 +257,9 @@ The free Meta ads budget calculator turns a revenue goal into daily spend, targe
       }
     ],
     proof: [
-      { value: '11.6x', label: 'ROAS on $2.3M in sales', note: 'Dropshipping brand, one year', href: '/cases/finally-built-million-dollar-brand-2022-ending-2-3' },
-      { value: '$374,103', label: 'In 16 days at 2.82x ROAS', note: 'On $132,832 ad spend, DTC brand', href: '/cases/new-dtc-client-results-last-16-days-132832-ad-spend-374103' },
-      { value: '4.06x', label: 'ROAS on $32,857 spend', note: '$133,420 in 7 days, dropshipping store', href: '/cases/q4-shaping-up-be-incredible-while-many-slow-down-weekend-ve' },
+      { value: '11.6x', label: 'ROAS on $2.3M in sales', note: 'Dropshipping brand, one year', href: '/cases/dtc-case-study-2-3m-sales-at-11-6x-roas' },
+      { value: '$374,103', label: 'In 16 days at 2.82x ROAS', note: 'On $132,832 ad spend, DTC brand', href: '/cases/dtc-case-study-374103-in-16-days' },
+      { value: '4.06x', label: 'ROAS on $32,857 spend', note: '$133,420 in 7 days, dropshipping store', href: '/cases/dropshipping-case-study-133420-in-7-days' },
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
     ],
     faqs: [
@@ -346,8 +346,8 @@ That is why we plan email and paid ads together: the ad creative, the offer and 
       }
     ],
     proof: [
-      { value: '$1.6M', label: 'In one year', note: 'Skincare brand', href: '/cases/finally-client-touched-1-6m-year-mark-insane-roas' },
-      { value: '$137,620', label: 'In one month at 3.89x ROAS', note: 'Supplement brand', href: '/cases/record-breaking-month-generating-137620-25-revenue-roas-3' },
+      { value: '$1.6M', label: 'In one year', note: 'Skincare brand', href: '/cases/skincare-case-study-1-6m-in-one-year' },
+      { value: '$137,620', label: 'In one month at 3.89x ROAS', note: 'Supplement brand', href: '/cases/supplement-case-study-137620-in-one-month' },
       { value: '3.97x', label: 'Median ROAS', note: 'Across 25 published case studies', href: '/benchmarks/ecommerce-roas' }
     ],
     faqs: [

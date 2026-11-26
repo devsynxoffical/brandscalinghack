@@ -132,6 +132,16 @@ const trimTo = (s, max) => {
   return (sp > max * 0.6 ? cut.slice(0, sp) : cut).replace(/[,;:\-–]$/, '') + '…';
 };
 
+// Meta descriptions end on a full sentence (or a whole word plus a full stop), never on an ellipsis
+const metaTrim = (s, max = 155) => {
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const end = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '));
+  if (end > max * 0.6) return cut.slice(0, end + 1);
+  const sp = cut.slice(0, max - 1).lastIndexOf(' ');
+  return cut.slice(0, sp).replace(/[,;:\-–]+$/, '') + '.';
+};
+
 const titleCase = (w) => (w.length > 3 && w === w.toUpperCase() && /[A-Z]/.test(w) ? w.charAt(0) + w.slice(1).toLowerCase() : w);
 
 function topicFromTitle(title, max, ellipsis = false) {
@@ -212,37 +222,37 @@ const cache = new Map();
 // Cases where the headline figure is a goal, not a result. Values are quoted from the caption.
 const FACT_OVERRIDES = {
   // "$50,000+/Day Profits" is the goal; the client spent $19,118 and made $66,168 in one day
-  'structure-campaigns-50000-day-profits': {
+  'dtc-case-study-66168-in-one-day': {
     facts: { revenue: { value: 66168, text: '$66,168' }, spend: { value: 19118, text: '$19,118' }, timeframe: 'one day' }
   },
   // "$100,000/Month mark" is where the brand is heading; the result is $64,000 in 24 days of January.
   // "supplementary products" in the caption are upsells, not the brand's niche.
-  'journey-client-behind-touching-way-100000-month-mark': {
+  'dtc-case-study-64000-in-24-days': {
     facts: { revenue: { value: 64000, text: '$64,000' }, timeframe: '24 days' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   },
   // "$261K" belongs to his friend Julia; Albert's own result is "$153,163 per month". He only
   // "tried" dropshipping before; the caption does not name his store's niche.
-  'massive-success-once-again-didn-expected-dfy-program': {
+  'dtc-case-study-153163-in-one-month': {
     facts: { revenue: { value: 153163, text: '$153,163' }, timeframe: 'one month' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   },
   // Headline is a question; the result is "$19,167 in a SINGLE day with just $5,310 in ad spend (3.61 ROAS)"
-  'why-do-fitness-brands-struggle-scale-hint-it-not-about-ads': {
+  'fitness-case-study-19167-in-one-day': {
     facts: { revenue: { value: 19167, text: '$19,167' }, spend: { value: 5310, text: '$5,310' }, timeframe: 'one day' }
   },
   // "$43,970 in sales from $10,077 in a single day"; the niche came only from a hashtag (#apparelbrand)
-  'happy-monday-everyone-let-kick-off-week-some-serious-momentum': {
+  'dtc-case-study-43970-in-one-day': {
     facts: { spend: { value: 10077, text: '$10,077' } },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   },
   // "$100K+ This Month" was reached "in just 23Days"; the store sells a high-ticket product
-  'hit-100k-month': {
+  'high-ticket-case-study-100k-in-23-days': {
     facts: { timeframe: '23 days' }
   },
   // "$53,387.33 in sales on $12,943.33 in ad spend" by 9:11 PM of one day; the niche came only
   // from a hashtag (#dropshipping)
-  'massive-alert-guys-it-9-11-pm-ve-already-crossed-53387-33': {
+  'dtc-case-study-53387-in-one-day': {
     facts: { timeframe: 'one day' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   },
@@ -254,7 +264,7 @@ const FACT_OVERRIDES = {
     facts: { orders: '2,508' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   },
-  'after-8-months-optimizing-testing-refining-strategies-helped': {
+  'dtc-case-study-68510-in-one-day': {
     facts: { revenue: { value: 68510, text: '$68,510' }, spend: { value: 17764, text: '$17,764' }, timeframe: 'one day' },
     niche: { label: 'DTC Ecommerce', long: 'DTC ecommerce brand' }
   }
@@ -335,7 +345,7 @@ export function caseSeo(cs) {
   parts.push(`Proof is the original ${cs.videoType === 'image' ? 'dashboard screenshot' : 'screen recording'} published on Instagram by @gauravecomm.`);
   const summary = editorial ? editorial.summary : parts.join(' ');
 
-  // ---- Meta description (140 to 158 chars) ----
+  // ---- Meta description (140 to 155 chars) ----
   let meta;
   pad = (key || '').split('').reduce((a, c) => a + c.charCodeAt(0), 0);
   if (editorial) {
@@ -344,7 +354,7 @@ export function caseSeo(cs) {
     meta = '';
     for (const sn of sentences) {
       const next = meta ? `${meta} ${sn}` : sn;
-      if (next.length > 158) break;
+      if (next.length > 155) break;
       meta = next;
     }
     if (!meta) {
@@ -357,14 +367,14 @@ export function caseSeo(cs) {
       // say what the write-up actually covers (only sections this case has)
       const has = [editorial.challenge && 'the starting point', editorial.approach && 'the approach', editorial.whatWeDid && editorial.whatWeDid.length && 'what the team changed'].filter(Boolean);
       const inside = has.length ? `Covers ${has.length > 1 ? `${has.slice(0, -1).join(', ')} and ${has.at(-1)}` : has[0]}.` : '';
-      if (inside && meta.length + inside.length + 1 <= 158) meta = `${meta} ${inside}`;
+      if (inside && meta.length + inside.length + 1 <= 155) meta = `${meta} ${inside}`;
     }
     if (meta.length < 120) {
       // never repeat what the "Covers ..." line already says
       const covered = /Covers /.test(meta);
       const cta = [CASE_CTA[pad % CASE_CTA.length], ...CASE_CTA, 'Full breakdown inside.']
         .filter((c) => !(covered && /changed|steps behind/.test(c)))
-        .find((c) => meta.length + c.length + 1 <= 158);
+        .find((c) => meta.length + c.length + 1 <= 155);
       if (cta) meta = `${meta} ${cta}`;
     }
   } else {
@@ -373,11 +383,11 @@ export function caseSeo(cs) {
       : facts.roas
         ? `${niche.label} case study: ${facts.roas} ROAS from Meta ads.`
         : `${lessonLabel} lesson from Gaurav Kapoor: ${topicFromTitle(cs.title, 80)}.`;
-    const how = takeaways[0] ? ` ${trimTo(takeaways[0].replace(/([^.!?])$/, '$1.'), 158 - lead.length - 2)}` : '';
+    const how = takeaways[0] ? ` ${trimTo(takeaways[0].replace(/([^.!?])$/, '$1.'), 155 - lead.length - 2)}` : '';
     meta = (lead + how).trim();
     if (meta.length < 125) meta = `${meta} ${PAD[pad % PAD.length].replace('{n}', niche.long)}`;
     if (meta.length < 125) meta = `${meta} Proof from the live dashboard.`;
-    meta = trimTo(meta, 155);
+    meta = metaTrim(meta.replace(/…$/, '.'));
   }
 
   const factRows = [

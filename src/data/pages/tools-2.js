@@ -101,8 +101,8 @@ The break-even ROAS after the discount becomes your new floor for every campaign
       },
     ],
     proof: [
-      { value: '3.56x', label: 'ROAS during BFCM', note: '$59,241 on $16,630 spend for a women\'s fashion brand', href: '/cases/16630-spent-59241-generated-3-56-roas-even-chaos-bfcm-women' },
-      { value: '$112,866', label: 'Revenue in 13 days', note: 'On $28,391 spend with early BFCM offers', href: '/cases/it-12-57-am-here-have-successfully-scaled-brand-early-bfcm' },
+      { value: '3.56x', label: 'ROAS during BFCM', note: '$59,241 on $16,630 spend for a women\'s fashion brand', href: '/cases/fashion-case-study-59241-bfcm-at-3-56x-roas' },
+      { value: '$112,866', label: 'Revenue in 13 days', note: 'On $28,391 spend with early BFCM offers', href: '/cases/dropshipping-case-study-112866-in-13-days' },
       { value: '$50M+', label: 'Meta ad spend managed', note: 'Across our client accounts over 12+ years in ecommerce' },
     ],
     faqs: [
@@ -220,9 +220,9 @@ A negative net profit does not always mean stop. A first order can lose a little
       },
     ],
     proof: [
-      { value: '56%', label: 'Profit margin', note: '$185,936 in 21 days for a dropshipping store', href: '/cases/185936-21-days-56-profit-margin-scaled-dropshipping-store-beyond' },
-      { value: '37%', label: 'Net margin', note: '$294K month including a $148K day', href: '/cases/148k-day-best-day-whole-career-ending-up-phenomenal' },
-      { value: '67%', label: 'Profit margin', note: '$99,576 on $26,594 spend in 5 days', href: '/cases/these-5days-has-been-fire-spent-26594-generated-99576-profit' },
+      { value: '56%', label: 'Profit margin', note: '$185,936 in 21 days for a dropshipping store', href: '/cases/dropshipping-case-study-185936-in-21-days' },
+      { value: '37%', label: 'Net margin', note: '$294K month including a $148K day', href: '/cases/dropshipping-case-study-148k-in-one-day' },
+      { value: '67%', label: 'Profit margin', note: '$99,576 on $26,594 spend in 5 days', href: '/cases/dropshipping-case-study-99576-in-5-days' },
     ],
     faqs: [
       {

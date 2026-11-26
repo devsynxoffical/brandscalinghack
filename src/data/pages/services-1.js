@@ -307,7 +307,7 @@ CRO agencies usually charge a monthly retainer, a fixed project fee for an audit
     proof: [
       { value: '5.25%', label: 'Store conversion rate', note: '$61,000 month, clinical skincare store', href: '/shopify-agency' },
       { value: '$376,000', label: 'In 25 days', note: '2,508 units at about $150 AOV, vitamin C serum brand', href: '/blog/meta-ads-library' },
-      { value: '957', label: 'Orders in 27 days', note: '$146,184 on $40,124 spend, 3.64x ROAS, skincare', href: '/cases/q4-here-it-biggest-money-making-season-year' },
+      { value: '957', label: 'Orders in 27 days', note: '$146,184 on $40,124 spend, 3.64x ROAS, skincare', href: '/cases/skincare-case-study-146184-in-27-days' },
       { value: '150+', label: 'Verified case studies', note: 'Agency-wide results across our client accounts', href: '/case-studies' }
     ],
     faqs: [
