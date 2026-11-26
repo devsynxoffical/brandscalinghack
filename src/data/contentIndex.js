@@ -131,17 +131,17 @@ export const CONTENT_INDEX = [
   {
     "path": "/for/supplements",
     "kind": "industry",
-    "titleTag": "Supplement Brand Marketing Agency | Brand Scaling",
-    "metaDescription": "Supplement brand marketing agency: compliant Meta and TikTok ads, subscription offers and retention flows. Results include $137,620 in a month at 3.89x.",
-    "h1": "Supplement Brand Marketing Agency for DTC Nutrition Brands",
+    "titleTag": "Supplement Marketing Agency for DTC Brands | Brand Scaling",
+    "metaDescription": "Supplement marketing agency: compliant Meta and TikTok ads, subscription offers and retention flows. Results include $137,620 in a month at 3.89x ROAS.",
+    "h1": "Supplement Marketing Agency for DTC Nutrition Brands",
     "eyebrow": "Supplements and Nutrition"
   },
   {
     "path": "/for/apparel-fashion",
     "kind": "industry",
-    "titleTag": "Fashion Brand Ads Agency for DTC Apparel | Brand Scaling",
-    "metaDescription": "Fashion brand ads agency for DTC apparel: Meta and TikTok ads for drops, collections and BFCM, with fit-first creative and lower-return funnels.",
-    "h1": "Fashion Brand Ads Agency for DTC Apparel Brands",
+    "titleTag": "Fashion Marketing Agency for DTC Brands | Brand Scaling",
+    "metaDescription": "Fashion marketing agency for DTC apparel brands: Meta and TikTok ads for drops, collections and BFCM, with fit-first creative and lower-return funnels.",
+    "h1": "Fashion Marketing Agency for DTC Apparel Brands",
     "eyebrow": "Apparel and Fashion"
   },
   {
@@ -155,9 +155,9 @@ export const CONTENT_INDEX = [
   {
     "path": "/for/jewelry",
     "kind": "industry",
-    "titleTag": "Jewelry Brand Ads Management | Brand Scaling",
-    "metaDescription": "Jewelry brand ads for DTC jewelers: Meta and TikTok campaigns built for gifting seasons, high AOV and trust, including $54K in 7 days at 4.43x ROAS.",
-    "h1": "Jewelry Brand Ads That Sell Through Gifting Seasons",
+    "titleTag": "Jewelry Marketing Agency for DTC Brands | Brand Scaling",
+    "metaDescription": "Jewelry marketing agency for DTC jewelers: Meta and TikTok ads built for gifting seasons, high AOV and trust, including $54K in 7 days at 4.43x ROAS.",
+    "h1": "Jewelry Marketing Agency for Gifting-Season Growth",
     "eyebrow": "Jewelry Brands"
   },
   {
@@ -203,9 +203,9 @@ export const CONTENT_INDEX = [
   {
     "path": "/for/food-beverage",
     "kind": "industry",
-    "titleTag": "Food and Beverage DTC Marketing Agency | Brand Scaling",
+    "titleTag": "Food and Beverage Marketing Agency | Brand Scaling",
     "metaDescription": "Food and beverage DTC marketing for Shopify brands: sampling offers, taste-led creative, shipping cost strategy, subscriptions and repeat rate growth.",
-    "h1": "Food and Beverage DTC Marketing That Builds Repeat Customers",
+    "h1": "Food and Beverage Marketing Agency for DTC and CPG Brands",
     "eyebrow": "Food and Beverage"
   },
   {

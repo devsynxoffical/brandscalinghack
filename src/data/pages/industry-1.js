@@ -152,10 +152,11 @@ Foundation (days 1 to 14) fixes Conversions API tracking, the offer and the prod
   {
     path: '/for/supplements',
     kind: 'industry',
-    primaryKeyword: 'supplement brand marketing agency',
-    titleTag: 'Supplement Brand Marketing Agency | Brand Scaling',
-    metaDescription: 'Supplement brand marketing agency: compliant Meta and TikTok ads, subscription offers and retention flows. Results include $137,620 in a month at 3.89x.',
-    h1: 'Supplement Brand Marketing Agency for DTC Nutrition Brands',
+    primaryKeyword: 'supplement marketing agency',
+    secondaryKeywords: ['supplement brand marketing agency'],
+    titleTag: 'Supplement Marketing Agency for DTC Brands | Brand Scaling',
+    metaDescription: 'Supplement marketing agency: compliant Meta and TikTok ads, subscription offers and retention flows. Results include $137,620 in a month at 3.89x ROAS.',
+    h1: 'Supplement Marketing Agency for DTC Nutrition Brands',
     eyebrow: 'Supplements and Nutrition',
     quickAnswer: {
       question: 'What should a supplement brand marketing agency handle?',
@@ -295,10 +296,11 @@ One supplement brand we work with did $52,000 in 17 days at 4.51x ROAS on $11,58
   {
     path: '/for/apparel-fashion',
     kind: 'industry',
-    primaryKeyword: 'fashion brand ads agency',
-    titleTag: 'Fashion Brand Ads Agency for DTC Apparel | Brand Scaling',
-    metaDescription: 'Fashion brand ads agency for DTC apparel: Meta and TikTok ads for drops, collections and BFCM, with fit-first creative and lower-return funnels.',
-    h1: 'Fashion Brand Ads Agency for DTC Apparel Brands',
+    primaryKeyword: 'fashion marketing agency',
+    secondaryKeywords: ['fashion brand ads agency'],
+    titleTag: 'Fashion Marketing Agency for DTC Brands | Brand Scaling',
+    metaDescription: 'Fashion marketing agency for DTC apparel brands: Meta and TikTok ads for drops, collections and BFCM, with fit-first creative and lower-return funnels.',
+    h1: 'Fashion Marketing Agency for DTC Apparel Brands',
     eyebrow: 'Apparel and Fashion',
     quickAnswer: {
       question: 'What does a fashion brand ads agency do differently?',
@@ -549,10 +551,11 @@ Steady scaling matters too: a body contouring brand we run did $19,977 in one da
   {
     path: '/for/jewelry',
     kind: 'industry',
-    primaryKeyword: 'jewelry brand ads',
-    titleTag: 'Jewelry Brand Ads Management | Brand Scaling',
-    metaDescription: 'Jewelry brand ads for DTC jewelers: Meta and TikTok campaigns built for gifting seasons, high AOV and trust, including $54K in 7 days at 4.43x ROAS.',
-    h1: 'Jewelry Brand Ads That Sell Through Gifting Seasons',
+    primaryKeyword: 'jewelry marketing agency',
+    secondaryKeywords: ['jewelry brand ads'],
+    titleTag: 'Jewelry Marketing Agency for DTC Brands | Brand Scaling',
+    metaDescription: 'Jewelry marketing agency for DTC jewelers: Meta and TikTok ads built for gifting seasons, high AOV and trust, including $54K in 7 days at 4.43x ROAS.',
+    h1: 'Jewelry Marketing Agency for Gifting-Season Growth',
     eyebrow: 'Jewelry Brands',
     quickAnswer: {
       question: 'How should a DTC jeweler run jewelry brand ads?',

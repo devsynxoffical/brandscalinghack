@@ -249,10 +249,11 @@ Pinterest-style inspiration happens everywhere now, so we treat room and lifesty
   {
     path: '/for/food-beverage',
     kind: 'industry',
-    primaryKeyword: 'food and beverage dtc marketing',
-    titleTag: 'Food and Beverage DTC Marketing Agency | Brand Scaling',
+    primaryKeyword: 'food and beverage marketing agency',
+    secondaryKeywords: ['food and beverage dtc marketing', 'cpg marketing agency'],
+    titleTag: 'Food and Beverage Marketing Agency | Brand Scaling',
     metaDescription: `Food and beverage DTC marketing for Shopify brands: sampling offers, taste-led creative, shipping cost strategy, subscriptions and repeat rate growth.`,
-    h1: 'Food and Beverage DTC Marketing That Builds Repeat Customers',
+    h1: 'Food and Beverage Marketing Agency for DTC and CPG Brands',
     eyebrow: 'Food and Beverage',
     quickAnswer: {
       question: 'What is food and beverage DTC marketing?',
@@ -322,6 +323,7 @@ Alcohol and some functional drinks carry extra platform restrictions on age targ
       { value: '30+', label: 'Niches served', note: 'Across our client accounts' },
     ],
     faqs: [
+      { question: 'Are you a CPG marketing agency?', answer: 'For consumer packaged goods brands that sell direct to consumers online, yes: food, beverage, supplement and personal care brands on Shopify. We run Meta, TikTok and Google ads, creative, the store and email. We do not run retail trade marketing or in-store promotions.' },
       {
         question: 'How do you sell food online when people cannot taste it?',
         answer: `Lower the risk and make the taste vivid. Sampler and variety packs let people try several flavours for a modest price, while sensory video with sound, close-ups and honest first bite reactions helps them imagine eating it. Clear ingredient and dietary information answers the practical questions. Then follow up quickly so a good first experience becomes a second order.`,

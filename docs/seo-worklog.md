@@ -336,3 +336,4 @@ Queue (next sessions, highest impact first):
 - Technical: layout shift fixed (home CLS 0.166 to 0.021 in throttled lab tests; other pages 0 to 0.001).
 - GEO: Organization knowsAbout and a services OfferCatalog in the sitewide schema.
 - AEO: confirmed every content page and blog post opens with a direct answer (0 missing).
+- Day 2 items done the same day: 4 industry pages retargeted to buyer keywords from the owner plan (fashion, jewelry, supplement, food and beverage marketing agency), CPG scope FAQ, 5 keywords added to tracking.
