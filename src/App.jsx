@@ -521,7 +521,8 @@ function App() {
       />
 
       {/* Main Dynamic Page View */}
-      <main><Suspense fallback={<PageFallback />}>{renderActivePage()}</Suspense></main>
+      {/* min-height keeps the footer out of the first screen while lazy page sections load (layout shift fix) */}
+      <main style={{ minHeight: activePage === 'home' ? '150vh' : 'calc(100vh + 80px)' }}><Suspense fallback={<PageFallback />}>{renderActivePage()}</Suspense></main>
 
       {/* Quick answer, extra sections and FAQs for the original service pages */}
       {UPGRADED_PAGES.has(activePage) && (

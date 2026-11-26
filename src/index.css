@@ -12716,3 +12716,7 @@ a.mobile-drawer-cta { display: flex; width: 100%; }
 .st-footer-cities span { color: #cbd5e1; font-weight: 700; }
 .st-footer-cities a { color: #94a3b8; text-decoration: none; }
 .st-footer-cities a:hover { color: #ff7043; text-decoration: underline; }
+
+/* Reserve a full screen for page content so the footer never paints inside the first screen
+   while lazy page sections load (home page layout shift fix, 26 Nov 2026) */
+#root > main, main { min-height: calc(100vh + 80px); }
