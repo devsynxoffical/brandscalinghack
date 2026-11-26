@@ -328,3 +328,11 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none due (first due 26 Nov).
 - Changes: none in this run. The city pages and the Shopify Plus page (row 28) went live today.
+
+## 26 Nov 2026: two-day SEO, AEO and GEO work (day 1)
+
+- Metadata audit of all 253 built pages (172 indexable): titles all at 60 characters or fewer and unique; fixed 4 descriptions over 155 characters and 2 ending in an ellipsis.
+- Slugs: 41 indexable case studies renamed to keyword-led slugs with 301s; 2 duplicate case pages 301 to their originals; 174 redirects tested, 0 failures, 0 chains.
+- Technical: layout shift fixed (home CLS 0.166 to 0.021 in throttled lab tests; other pages 0 to 0.001).
+- GEO: Organization knowsAbout and a services OfferCatalog in the sitewide schema.
+- AEO: confirmed every content page and blog post opens with a direct answer (0 missing).
