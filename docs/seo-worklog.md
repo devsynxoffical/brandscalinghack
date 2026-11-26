@@ -347,3 +347,11 @@ Queue (next sessions, highest impact first):
 - Change-log checks due 26 Nov (rows 1, 2, 6): not measurable with the connected tools; details in the change log.
 - Indexing API: not used (owner rule).
 - Changes: none in this run beyond the owner-requested day 1 and day 2 work logged as rows 29 to 32.
+
+## 26 Nov 2026, 20:37 UTC run
+
+- Google Search Console (Verified): no new day of data (SAME DATA, still to 25 Nov). Revised 7-day totals: 719 impressions, 1 click, 9 keywords in the top 10.
+- Bing (Verified): 137 in index, 0 inbound links, 0 crawl errors.
+- Indexing API: not used (owner rule).
+- Change-log checks: none newly due (rows 1, 2 and 6 were checked this morning).
+- Changes: none in this run; today's slug, metadata, layout shift, schema and industry work (rows 29 to 32) is live.
