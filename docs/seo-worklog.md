@@ -337,3 +337,13 @@ Queue (next sessions, highest impact first):
 - GEO: Organization knowsAbout and a services OfferCatalog in the sitewide schema.
 - AEO: confirmed every content page and blog post opens with a direct answer (0 missing).
 - Day 2 items done the same day: 4 industry pages retargeted to buyer keywords from the owner plan (fashion, jewelry, supplement, food and beverage marketing agency), CPG scope FAQ, 5 keywords added to tracking.
+
+## 26 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): new data to 25 Nov. 7 days: 705 impressions (previous 7 days 484), 1 click, 9 keywords in the top 10. Up: tiktok shop scaling services 69.5 to 51. Down: dtc performance marketing 28.2 to 34.3, dtc growth agency 47.7 to 50.9, dtc woocommerce agency 68.2 to 75.3.
+- URL Inspection, 170 sitemap URLs (Verified): 59 crawled, 59 indexed (25 Nov: 71 and 69). The drop is the 41 renamed case URLs (26 Nov): their new URLs are not known to Google yet, and the old URLs now 301. Non-case pages: 57 crawled and indexed. New on 25 Nov: /locations/austin, /locations/dallas and /shopify-plus-agency crawled and indexed (Verified).
+- Bing (Verified): 137 in index (was 115), 0 inbound links, 0 crawl errors.
+- GA4, 19 to 25 Nov (Verified): 41 sessions (Direct 29, Organic Social 5, Referral 4, Organic Search 2, AI Assistant 1), 0 key events.
+- Change-log checks due 26 Nov (rows 1, 2, 6): not measurable with the connected tools; details in the change log.
+- Indexing API: not used (owner rule).
+- Changes: none in this run beyond the owner-requested day 1 and day 2 work logged as rows 29 to 32.
