@@ -7,6 +7,10 @@ export const homeFaqs = [
     answer: 'DTC marketing is how brands that sell directly to customers, usually through their own Shopify store, find and keep buyers without retailers in between. It combines paid social and search ads, creative, landing pages, conversion rate work and email or SMS, and it is measured on revenue, new-customer CAC and contribution margin.'
   },
   {
+    question: 'How do you scale DTC brands with retargeting?',
+    answer: 'Keep retargeting small and let prospecting do the scaling. We run catalog retargeting for recent visitors and cart abandoners at about 10% to 15% of spend, exclude recent buyers, change the message to the offer and deadline, and judge it on blended MER, because retargeting takes credit for many sales that would happen anyway.'
+  },
+  {
     question: 'What does a DTC marketing agency do?',
     answer: 'It plans and runs the paid ads, creative, landing pages and retention that grow a direct-to-consumer brand. A good DTC agency reports on profit metrics like MER and new-customer CAC, not just ROAS.'
   },

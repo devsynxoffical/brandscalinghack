@@ -364,4 +364,4 @@ Queue (next sessions, highest impact first):
 - GA4, 20 to 26 Nov (Verified): 49 sessions (Direct 35, Organic Social 6, Referral 4, Organic Search 3, AI Assistant 1), 0 key events.
 - Indexing API: not used (owner rule).
 - Change-log checks: none due today.
-- Changes: none. No plan keyword met the bar on a page outside the 7-day window.
+- Changes: 1. Home FAQ on retargeting restored (change-log row 33): "scaling dtc brands with retargeting" had 9 impressions, 0 clicks at position 6.7 after the answer was removed on 23 Nov.
