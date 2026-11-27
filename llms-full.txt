@@ -2,7 +2,7 @@
 
 Brand Scaling (Brand Scaling Hacks LLC) is a DTC ecommerce performance marketing agency founded by Gaurav Kapoor: Meta and TikTok ads, direct-response creative, Shopify CRO. $50M+ in Meta ad spend managed, 150+ verified case studies, 30+ niches. New York, NY. Serves US, UK, Canada and Australia.
 Short index of every page: https://www.brandscalinghacks.com/llms.txt (industries, locations, glossary and all guides are listed there).
-Last generated: 2026-11-26
+Last generated: 2026-11-27
 
 ---
 
@@ -112,8 +112,11 @@ We build the creative, run the ads, fix the tracking, and give you a growth syst
 ### What is DTC marketing?
 DTC marketing is how brands that sell directly to customers, usually through their own Shopify store, find and keep buyers without retailers in between. It combines paid social and search ads, creative, landing pages, conversion rate work and email or SMS, and it is measured on revenue, new-customer CAC and [contribution margin](https://www.brandscalinghacks.com/glossary/contribution-margin).
 
+### How do you scale DTC brands with retargeting?
+Keep [retargeting](https://www.brandscalinghacks.com/blog/retargeting-for-dtc-brands) small and let prospecting do the scaling. We run catalog retargeting for recent visitors and cart abandoners at about 10% to 15% of spend, exclude recent buyers, change the message to the offer and deadline, and judge it on blended [MER](https://www.brandscalinghacks.com/glossary/mer), because retargeting takes credit for many sales that would happen anyway.
+
 ### What does a DTC marketing agency do?
-It plans and runs the paid ads, creative, landing pages and retention that grow a direct-to-consumer brand. A good DTC agency reports on profit metrics like [MER](https://www.brandscalinghacks.com/glossary/mer) and new-customer CAC, not just ROAS.
+It plans and runs the paid ads, creative, landing pages and retention that grow a direct-to-consumer brand. A good DTC agency reports on profit metrics like MER and new-customer CAC, not just ROAS.
 
 ### How much does a DTC marketing agency cost?
 Most charge a monthly retainer, sometimes plus a share of ad spend or revenue. Our fee is quoted after a [Brand Growth Audit](https://www.brandscalinghacks.com/book), and partners typically spend at least $10,000 to $20,000 a month on ads.
