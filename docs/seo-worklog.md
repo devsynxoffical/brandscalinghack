@@ -365,3 +365,12 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none due today.
 - Changes: 1. Home FAQ on retargeting restored (change-log row 33): "scaling dtc brands with retargeting" had 9 impressions, 0 clicks at position 6.7 after the answer was removed on 23 Nov.
+
+## 27 Nov 2026, 20:37 UTC run
+
+- The scratchpad was cleared by a container restart: the Search Console service-account file and the Bing key are gone, so scripts/seo-track.py and the Bing API checks could not run. Search Console data came from the OpenSEO connector instead (routine fallback).
+- Google Search Console via OpenSEO (Verified): 20 to 26 Nov: 814 impressions (desktop 607, mobile 203, tablet 4), 2 clicks; desktop position 41.1, mobile 26.6. Daily impressions: 21 Nov 82, 22 Nov 94, 23 Nov 105, 24 Nov 100, 25 Nov 113, 26 Nov 188 (highest day so far). OpenSEO totals can differ slightly from the tracker script's because of how rows are aggregated.
+- Bing: not checked (key no longer available in this session).
+- Indexing API: not used (owner rule).
+- Change-log checks: none due.
+- Changes: none.
