@@ -355,3 +355,13 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none newly due (rows 1, 2 and 6 were checked this morning).
 - Changes: none in this run; today's slug, metadata, layout shift, schema and industry work (rows 29 to 32) is live.
+
+## 27 Nov 2026, 08:37 UTC run
+
+- Google Search Console (Verified): new data to 26 Nov. 7 days: 768 impressions (previous 7 days 545), 2 clicks (previous 1), 10 keywords in the top 10. Up: dtc ecommerce agency 58.5 to 50.1, andromeda meta 80.5 to 73, how to scale a dtc brand 26.3 to 22.5. Down: dtc brand accelerator 47.7 to 61, dtc shopify agency 35.1 to 38.9.
+- URL Inspection, 170 sitemap URLs (Verified): 65 crawled, 65 indexed (26 Nov: 59 and 59). Google crawled 6 of the renamed case URLs on 26 Nov (dtc-case-study-2-3m-sales-at-11-6x-roas, dtc-case-study-374103-in-16-days, dtc-case-study-1m-in-6-months, dropshipping-case-study-148k-in-one-day, -185936-in-21-days, -449221-in-49-days), all indexed; /shopify-agency recrawled 27 Nov.
+- Bing (Verified): 139 in index, 0 inbound links, 0 crawl errors.
+- GA4, 20 to 26 Nov (Verified): 49 sessions (Direct 35, Organic Social 6, Referral 4, Organic Search 3, AI Assistant 1), 0 key events.
+- Indexing API: not used (owner rule).
+- Change-log checks: none due today.
+- Changes: none. No plan keyword met the bar on a page outside the 7-day window.
