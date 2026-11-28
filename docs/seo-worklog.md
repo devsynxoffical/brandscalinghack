@@ -374,3 +374,30 @@ Queue (next sessions, highest impact first):
 - Indexing API: not used (owner rule).
 - Change-log checks: none due.
 - Changes: none.
+
+## 28 Nov 2026, 08:37 UTC run
+
+- Service-account and Bing keys are still missing because the scratchpad was cleared, so Search Console, URL Inspection and GA4 data came from the OpenSEO connector (routine fallback).
+- Google Search Console via OpenSEO (Verified), 21 to 27 Nov: 810 impressions and 2 clicks. Daily impressions: 82, 94, 105, 100, 113, 188 and 128 (27 Nov, average position 41.7). Searches in the top 10:
+  - scaling dtc brands with retargeting: 8 impressions, position 8, Home
+  - best meta andromeda targeting for premium furniture ecommerce: 5, position 7
+  - dtc performance circle: 5, position 7.6
+  - brandscaling: 3, position 7.7
+  - ecommerce roas calculator: position 7, /tools
+  - ecommerce roas improvement agency: position 9
+  - dtc growth agency case studies: position 6
+- Largest impression counts: dtc marketing agency 65 (position 61.4, /blog/performance-marketing-agency) and meta ads agency for ecommerce 28 (position 62.1, /meta-ads-agency).
+- URL Inspection, 10 key URLs (Verified): all 10 are "Submitted and indexed" with the canonical Google chose matching ours. Covered:
+  - Home, /shopify-marketing-agency, /cro-agency, /tiktok-shop-agency and /growth
+  - The New York, Los Angeles and Miami city pages
+  - The $376K case and the renamed $2.3M case. Google recrawled the $2.3M case on 26 Nov.
+- GA4, 21 to 27 Nov (Verified): 56 sessions and 0 key events.
+  - Direct 39
+  - Organic Social 6
+  - AI Assistant 4 (previous 7 days 1)
+  - Referral 4
+  - Organic Search 3
+- Bing: not checked, because the key is not available in this session.
+- Indexing API: not used (owner rule).
+- Change-log checks: none due (next due 3 Dec).
+- Changes: none. No page met the bar outside the 7-day window. The pages with the most impressions sit at position 60 or worse, which is a link and authority gap rather than a title or meta problem.
